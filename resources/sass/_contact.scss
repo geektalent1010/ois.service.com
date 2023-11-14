@@ -1,0 +1,254 @@
+.main-bg {
+  .contact-section {
+    position: absolute;
+    z-index: 1;
+    color: $main-color;
+    width: 50vw;
+    overflow-y: scroll;
+    top: 80px;
+    height: calc(100vh - 120px);
+    .contact-icon {
+      margin-top: 33px;
+      width: 100px;
+      opacity: 0.35;
+    }
+    .page-title {
+      color: $main-color;
+      font-family: "DinPro", sans-serif;
+      font-size: 12px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 25px;
+      margin-bottom: 0px;
+      color: white;
+    }
+    .page-subtitle {
+      color: $main-color;
+      font-family: "DinPro", sans-serif;
+      font-size: 14px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 0px;
+    }
+    .info-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      .info-box {
+        width: 49%;
+        .search-field {
+          position: relative;
+          .search-circle {
+            position: absolute;
+            width: 34px;
+            height: 34px;
+            background: $main-color-75;
+            border-radius: 50%;
+            display: inline-block;
+            right: 5px;
+            top: 18px;
+          }
+          .search-icon {
+            visibility: visible;
+            width: 20px;
+            position: absolute;
+            top: 25px;
+            right: 11px;
+          }
+        }
+        .input-field {
+          width: 100%;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          padding-left: 30px;
+          padding-right: 30px;
+          background-color: $white-15;
+          -webkit-border-radius: 20px;
+          -moz-border-radius: 20px;
+          -ms-border-radius: 20px;
+          border-radius: 20px;
+          font-size: 16px;
+          font-family: 'DinPro', sans-serif;
+          border: none;
+          color: $white;
+          margin-top: 15px;
+          outline: none;
+        }
+        .input-field::placeholder {
+          color: $white;
+        }
+        .input-field:hover {
+          box-shadow: none;
+          border: none;
+        }
+        .input-field:focus {
+          box-shadow: none;
+          border: none;
+        }
+        .field-label {
+          color: $main-color;
+          font-family: "DinPro", sans-serif;
+          font-size: 16px;
+          text-transform: uppercase;
+          margin-left: 20px;
+          margin-bottom: 10px;
+          margin-top: 32px;
+        }
+        .phone-label {
+          margin-top: 10px;
+        }
+        .country-label {
+          margin-top: 10px;
+        }
+        .offices-body {
+          width: 100%;
+          p {
+            color: white;
+            font-family: 'Montserrat Regular', sans-serif;
+            font-size: 16px;
+            margin-left: 30px;
+          }
+          label {
+            color: white;
+            font-family: 'Montserrat Regular', sans-serif;
+            font-size: 16px;
+          }
+          span {
+            color: white;
+            margin-left: 30px;
+          }
+          .country  {
+            font-family: 'Montserrat SemiBold', sans-serif;
+            margin-top: 38px;
+          }
+          .contact-btn-section {
+            .contact-btn {
+              width: 100%;
+              padding-top: 8px;
+              padding-bottom: 8px;
+              background-color: $hover-color;
+              color: #ffffff;
+              -webkit-border-radius: 20px;
+              -moz-border-radius: 20px;
+              -ms-border-radius: 20px;
+              border-radius: 20px;
+              font-size: 16px;
+              font-family: 'DinPro', sans-serif;
+              cursor: pointer;
+              border: 0.1rem solid $hover-color;
+              text-decoration: none;
+            }
+            .contact-btn:hover {
+              background: $main-color;
+              border: 0.1rem solid $main-color;
+            }
+          }
+        }
+      }
+      .message-section {
+        width: 49%;
+        margin-top: 10px;
+        margin-bottom: 40px;
+      }
+      .btn-section {
+        justify-content: flex-end;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        text-align: center;
+        .send-btn {
+          width: 100%;
+          margin-bottom: 45px;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          background-color: $hover-color;
+          color: white;
+          -webkit-border-radius: 20px;
+          -moz-border-radius: 20px;
+          -ms-border-radius: 20px;
+          border-radius: 20px;
+          font-size: 16px;
+          font-family: 'DinPro', sans-serif;
+          cursor: pointer;
+          border: 0.1rem solid $hover-color;
+          text-decoration: none;
+        }
+        .send-btn:hover {
+          background: $main-color;
+          border: 0.1rem solid $main-color;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1080px) {
+  .main-bg {
+    .contact-section {
+      width: 45vw;
+      .page-title {
+        line-height: 22px;
+        margin-bottom: 8px;
+      }
+      .info-container {
+        display: block;
+        .info-box {
+          width: 100%;
+          .field-label {
+            margin-top: 10px;
+          }
+          .message-label {
+            margin-top: 20px;
+          }
+          .first-name-label {
+            margin-top: 25px;
+          }
+        }
+        .btn-section {
+          width: 100%;
+          .send-btn {
+            width: 100%;
+          }
+        }
+      }
+      .desktop-version {
+        display: none;
+      }
+      .mobile-version {
+        display: block;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 575.98px) {
+  .main-bg {
+    .contact-section {
+      width: 90vw;
+      .page-title {
+        line-height: 22px;
+        margin-bottom: 8px;
+      }
+      .info-container {
+        display: block;
+        .info-box {
+          width: 100%;
+          .field-label {
+            margin-top: 10px;
+          }
+          .message-label {
+            margin-top: 20px;
+          }
+          .first-name-label {
+            margin-top: 25px;
+          }
+        }
+        .btn-section {
+          width: 100%;
+          .send-btn {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
