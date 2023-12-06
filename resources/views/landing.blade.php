@@ -19,17 +19,17 @@
             <div class="landing-text text-center">Everyone thinks of changing the world,</br> here at OIS, we do!</div>
             <div class="landing-text text-center">We don't predict the future,</br>we create it!</div>
             <div class="landing-text text-center">Service is not a department,</br>it's our entire company.</div>
-        </div>   
+        </div>
         <div class="w-100 d-flex flex-column justify-content-center align-items-center">
-            <p class="continue-text text-center">GO TO MENU</p>
-            <a href="{{ route('menu.index') }}">
+            <p class="continue-text text-center">GO TO Dashboard</p>
+            <a href="{{ route('dashboard.index') }}">
                 <img class="go-to-menu" src="{{ asset('images/IconMENU.svg') }}"/>
             </a>
             <p class="continue-text text-center">GO TO LOGIN</p>
             <a href="{{ route('login') }}">
                 <img class="go-to-login" src="{{ asset('images/IconLOGIN.svg') }}"/>
             </a>
-        </div>      
+        </div>
     </div>
 </div>
 @endsection

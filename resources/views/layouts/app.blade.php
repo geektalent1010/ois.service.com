@@ -13,11 +13,14 @@
     <link href="{{ asset('css/bootstrap_4.1.3.min.css') }}" rel="stylesheet">
     <link href="{{ asset('fontawesome/css/all.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
     @yield('PAGE_LEVEL_STYLES')
     <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/bootstrap_4.1.3.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/moment.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('plugin/combodate-1.0.7/combodate.js') }}"></script>
 </head>
 <body>
     @include('_includes.navbar')
@@ -75,6 +78,7 @@
     }
     function toggleTermsModal() {
         terms_modal.classList.toggle("show-modal");
+        console.log("df")
     }
     function toggleDataModal() {
         data_modal.classList.toggle("show-modal");
@@ -130,8 +134,8 @@
         }
         return null;
     }
-    function removeCookie(name) {   
-        document.cookie = name+'=; Max-Age=-99999999;';  
+    function removeCookie(name) {
+        document.cookie = name+'=; Max-Age=-99999999;';
     }
 
     if (!getCookie('cookieAll')) {
@@ -194,7 +198,7 @@
         $('.cookie-modal').removeClass('show-modal');
     }
 
-    const countries = 
+    const countries =
     [
         {
             name: 'India',
@@ -248,7 +252,7 @@
                     town: 'APT12',
                     phone: '+9611845138',
                     email: 'infobeirut@oisservices.com'
-                }          
+                }
             ]
         },
         {
@@ -260,7 +264,7 @@
                     town: 'The Hague Central station',
                     phone: '0031 7089 15324',
                     email: 'infothehague@oisservices.com'
-                }          
+                }
             ]
         },
         {
@@ -272,7 +276,7 @@
                     town: 'Cankaya',
                     phone: '(0312) 4382175',
                     email: 'infoankara@oisservices.com'
-                }          
+                }
             ]
         },
         {
@@ -284,7 +288,7 @@
                     town: 'Jumeirah Lakes Towers',
                     phone: '97142765448',
                     email: 'infodubai@oisservices.com'
-                }          
+                }
             ]
         },
         {
@@ -296,7 +300,7 @@
                     town: 'London',
                     phone: '2078320000',
                     email: 'info@oisservices.com'
-                }          
+                }
             ]
         },
         {
@@ -315,19 +319,19 @@
                     town: 'Yuexiu District',
                     phone: '8620 37812021',
                     email: 'oisservicesgz@163.com'
-                },   
+                },
                 {
                     name: 'Shanghai',
                     street: 'No.2911 North Zhongshan Road',
                     town: 'Putuo District',
                     phone: '0086 16621335462',
                     email: 'shoisservices@163.com'
-                }              
+                }
             ]
         },
         {
             name: 'United States',
-            cities: [   
+            cities: [
                 {
                     name: 'Atlanta GA',
                     street: '918 Holcomb Bridge Rd Ste 204',
@@ -348,21 +352,21 @@
                     town: 'Los Angeles',
                     phone: '8620 37812021',
                     email: 'oisservicesgz@163.com'
-                },  
+                },
                 {
                     name: 'New York NY',
                     street: '370 Lexington Avenue Ste 613',
                     town: 'New York',
                     phone: '8620 37812021',
                     email: 'oisservicesgz@163.com'
-                },      
+                },
                 {
                     name: 'Washington DC',
                     street: '11900 Parklawn Drive Ste 160 Rockville MD',
                     town: 'Washington',
                     phone: '8610 84004549',
                     email: 'oisservicesbj@163.com'
-                },        
+                },
             ]
         },
         {
@@ -592,7 +596,7 @@
     function showOfficeModal(selected_country) {
         country = selected_country;
         countryInfo = countries.filter(country => country.name === selected_country);
-        
+
         selectedCityIndex = 0;
         updateModalContent(selected_country, countryInfo[0].cities[selectedCityIndex]);
 
@@ -653,11 +657,11 @@
             `);
         }
 
-        
+
     }
 
     function hideModal() {
-        $('.office-modal').removeClass('show-modal');     
+        $('.office-modal').removeClass('show-modal');
         // $('.video-modal').removeClass('show-modal');
         // let video = document.querySelector(".intro-video");
         // video.pause();
@@ -680,20 +684,20 @@
     logo_icon.addEventListener('mouseout', function() {
         logo_icon.src = '/images/Logo/LogoOIS1.svg';
     });
-    
-    play_icon.addEventListener('mouseover', function() {
-        play_icon.src = '/images/IconPLAY2.svg';
-    });
-    play_icon.addEventListener('mouseout', function() {
-        play_icon.src = '/images/Play.svg';
-    });
 
-    stop_icon.addEventListener('mouseover', function() {
-        stop_icon.src = '/images/IconSTOP2.svg';
-    });
-    stop_icon.addEventListener('mouseout', function() {
-        stop_icon.src = '/images/Stop.svg';
-    });
+    // play_icon.addEventListener('mouseover', function() {
+    //     play_icon.src = '/images/IconPLAY2.svg';
+    // });
+    // play_icon.addEventListener('mouseout', function() {
+    //     play_icon.src = '/images/Play.svg';
+    // });
+
+    // stop_icon.addEventListener('mouseover', function() {
+    //     stop_icon.src = '/images/IconSTOP2.svg';
+    // });
+    // stop_icon.addEventListener('mouseout', function() {
+    //     stop_icon.src = '/images/Stop.svg';
+    // });
 
     menu_icon.addEventListener('mouseover', function() {
         menu_icon.src = '/images/IconMENU2.svg';
@@ -709,25 +713,25 @@
         login_icon.src = '/images/IconLOGIN.svg';
     });
 
-    go_to_menu.addEventListener('mouseover', function() {
-        go_to_menu.src = '/images/IconMENU2.svg';
-    });
-    go_to_menu.addEventListener('mouseout', function() {
-        go_to_menu.src = '/images/IconMENU.svg';
-    });
+    // go_to_menu.addEventListener('mouseover', function() {
+    //     go_to_menu.src = '/images/IconMENU2.svg';
+    // });
+    // go_to_menu.addEventListener('mouseout', function() {
+    //     go_to_menu.src = '/images/IconMENU.svg';
+    // });
 
-    go_to_login.addEventListener('mouseover', function() {
-        go_to_login.src = '/images/IconLOGIN2.svg';
-    });
-    go_to_login.addEventListener('mouseout', function() {
-        go_to_login.src = '/images/IconLOGIN.svg';
-    });
+    // go_to_login.addEventListener('mouseover', function() {
+    //     go_to_login.src = '/images/IconLOGIN2.svg';
+    // });
+    // go_to_login.addEventListener('mouseout', function() {
+    //     go_to_login.src = '/images/IconLOGIN.svg';
+    // });
 
-    logout_icon.addEventListener('mouseover', function() {
-        logout_icon.src = '/images/IconLOGOUT2.svg';
-    });
-    logout_icon.addEventListener('mouseout', function() {
-        logout_icon.src = '/images/IconLOGOUT.svg';
-    });
+    // logout_icon.addEventListener('mouseover', function() {
+    //     logout_icon.src = '/images/IconLOGOUT2.svg';
+    // });
+    // logout_icon.addEventListener('mouseout', function() {
+    //     logout_icon.src = '/images/IconLOGOUT.svg';
+    // });
 
 </script>
