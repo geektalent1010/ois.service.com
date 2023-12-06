@@ -15,7 +15,7 @@
                 <p>SECURE CLIENT PORTAL</p>
                 <span>FOR REGISTERED CLIENTS ONLY</span>
             </div>
-            
+
             <form method="POST" action="{{ route('login') }}">
                 @csrf
 

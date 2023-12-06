@@ -12,10 +12,10 @@
                 <div class="main-info-section">
                 </div>
                 <div class="contact-btn">
-                    <a href="{{ route('contact.index') }}">CONTACT US</a>
+                    <a href="">CONTACT US</a>
                 </div>
             </div>
-            
+
             <div class="arrow-section d-flex flex-column align-items-center justify-content-center">
                 <img class="cancel" src="{{ asset('images/cancel.svg') }}" onclick="hideModal()">
                 <img class="right-arrow" src="{{ asset('images/ArrowRight.svg') }}">
