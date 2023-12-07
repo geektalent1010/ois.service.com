@@ -67,7 +67,6 @@
         <div class="col-md-6 form-group d-flex flex-column">
           <p class="form-label">PHONE NUMBER</p>
           <div class="d-flex">
-            <input type="text" id="real-phone" name="real_phone" placeholder="Phone Number" hidden>
             <select class="form-control phone-select webkit-style small" id="pre-phone" name="pre_phone">
               @foreach ($phoneCodes as $code)
                 @if(old('pre_phone') == $code)

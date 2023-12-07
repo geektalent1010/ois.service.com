@@ -7,11 +7,11 @@ let emailTimer = null;
 
 const register = {
     init: function () {
-        this.variables();
+        this.letiables();
         this.addEventListeners();
         this.firstInputFocus();
     },
-    variables: function () {
+    letiables: function () {
         this.form = $('[data-form="register"]');
         this.submitButton = $("[data-button='submit']");
         this.firstNameInput = $("#first-name");
@@ -176,8 +176,8 @@ const register = {
         );
     },
     validateLastNameInput: function () {
-        var validationMessage = "";
-        var value = this.lastNameInput.val();
+        let validationMessage = "";
+        let value = this.lastNameInput.val();
         if (
             /^[a-zA-Z\-0-9 ]{2,50}$/.test(value) ||
             /^[\p{L}\d\- ]{2,50}$/u.test(value)
@@ -203,8 +203,8 @@ const register = {
         );
     },
     validatePhoneInput: function () {
-        var validationMessage = "";
-        var value = this.phoneInput.val();
+        let validationMessage = "";
+        let value = this.phoneInput.val();
         if (
             /^[0-9 ]{7,50}$/.test(value.trim()) ||
             /^(\+)?[0-9 ]{6,50}$/.test(value.trim())
@@ -229,8 +229,8 @@ const register = {
         );
     },
     validateEmailInput: function () {
-        var validationMessage = "";
-        var value = this.emailInput.val();
+        let validationMessage = "";
+        let value = this.emailInput.val();
         if (
             /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
                 value
@@ -256,8 +256,8 @@ const register = {
         );
     },
     validateStreetInput: function () {
-        var validationMessage = "";
-        var value = this.streetInput.val();
+        let validationMessage = "";
+        let value = this.streetInput.val();
         if (
             /^[a-zA-Z\-0-9 ]{3,50}$/.test(value) ||
             /^[\p{L}\d\- ]{3,50}$/u.test(value)
@@ -283,8 +283,8 @@ const register = {
         );
     },
     validateHouseNumberInput: function () {
-        var validationMessage = "";
-        var value = this.houseNumberInput.val();
+        let validationMessage = "";
+        let value = this.houseNumberInput.val();
         if (/^.{1,50}$/.test(value)) {
             validationMessage = "Now, that's a good house number.\n";
             this.houseNumberError.addClass("valid");
@@ -304,8 +304,8 @@ const register = {
         return /^.{1,50}$/.test(value);
     },
     validatePostalCodeInput: function () {
-        var validationMessage = "";
-        var value = this.postalCodeInput.val();
+        let validationMessage = "";
+        let value = this.postalCodeInput.val();
         if (/^.{3,50}$/.test(value)) {
             validationMessage = "Now, that' a good zip code.\n";
             this.postalCodeError.addClass("valid");
@@ -324,8 +324,8 @@ const register = {
         return /^.{3,50}$/.test(value);
     },
     validateCityInput: function () {
-        var validationMessage = "";
-        var value = this.cityInput.val();
+        let validationMessage = "";
+        let value = this.cityInput.val();
         if (
             /^[a-zA-Z\-0-9 ]{3,50}$/.test(value) ||
             /^[\p{L}\d\- ]{3,50}$/u.test(value)
@@ -351,8 +351,8 @@ const register = {
         );
     },
     validateCountrySelect: function () {
-        var validationMessage = "";
-        var value = this.countrySelect.val();
+        let validationMessage = "";
+        let value = this.countrySelect.val();
         if (value != 0) {
             validationMessage = "Now, that's a good country name.\n";
             this.countryError.addClass("valid");
@@ -367,8 +367,8 @@ const register = {
         return value != 0;
     },
     validatePasswordInput: function () {
-        var validationMessage = "";
-        var value = this.passwordInput.val();
+        let validationMessage = "";
+        let value = this.passwordInput.val();
         if (
             /\d/.test(value) &&
             /[a-zA-Z]/.test(value) &&
@@ -425,10 +425,21 @@ const register = {
         );
     },
     validateBirthdayInput: function () {
-        var validationMessage = "";
-        var value = this.birthdayInput.val();
+        let validationMessage = "";
+        let value = this.birthdayInput.val();
         if (/^(\d{2})-(\d{2})-(\d{4})$/.test(value)) {
             validationMessage = "Now, that's a birthday.";
+            this.birthdayInput.val(
+                value.split('-')[2] + '-' +
+                value.split('-')[1] + '-' +
+                value.split('-')[0]
+            );
+            value = this.birthdayInput.val();
+            this.birthdayError.addClass("valid");
+            this.birthdayError.hide();
+        } else if(/^(\d{4})-(\d{2})-(\d{2})$/.test(value)) {
+            validationMessage = "Now, that's a birthday.";
+            value = this.birthdayInput.val();
             this.birthdayError.addClass("valid");
             this.birthdayError.hide();
         } else {
@@ -438,26 +449,23 @@ const register = {
         }
         this.birthdayError.html(validationMessage);
         this.scrollToError = this.birthdayInput;
-        return /^(\d{2})-(\d{2})-(\d{4})$/.test(value);
+        return /^(\d{4})-(\d{2})-(\d{2})$/.test(value);
     },
 };
+
 $(document).ready(function () {
     register.init();
     const currentDate = new Date();
-    $('#birthday').val(`${$('#birthday').val().split("-")[2]}-${$('#birthday').val().split("-")[1]}-${$('#birthday').val().split("-")[0]}`);
-    $('#birthday').combodate({
-      minYear: 1900,
-      maxYear: currentDate.getFullY
+    $("#birthday").combodate({
+        minYear: 1900,
+        maxYear: currentDate.getFullY,
     });
-    $('select.day').addClass('webkit-style');
-    $('select.month').addClass('webkit-style');
-    $('select.year').addClass('webkit-style');
 
-    $('select.day').addClass('editable');
-    $('select.month').addClass('editable');
-    $('select.year').addClass('editable');
+    $(".birthday-group select.day").addClass("webkit-style");
+    $(".birthday-group select.month").addClass("webkit-style");
+    $(".birthday-group select.year").addClass("webkit-style");
 
-  });
-
-    const play_icon = document.querySelector('.play-video');
-    play_icon.src = '/images/IconLock.svg';
+    $(".birthday-group select.day").addClass("editable");
+    $(".birthday-group select.month").addClass("editable");
+    $(".birthday-group select.year").addClass("editable");
+});
