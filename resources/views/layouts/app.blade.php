@@ -15,12 +15,14 @@
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link href="{{ asset('plugin/bootstrap-toastr/toastr.css') }}" rel="stylesheet" type="text/css" />
 
     @yield('PAGE_LEVEL_STYLES')
     <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/bootstrap_4.1.3.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/moment.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('plugin/combodate-1.0.7/combodate.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('plugin/bootstrap-toastr/toastr.min.js') }}"></script>
 </head>
 <body>
     @include('_includes.navbar')
@@ -739,3 +741,14 @@
     }
 
 </script>
+
+@if($message = Session::get('success'))
+<script>
+    toastr['success']('{{ $message }}', 'Success');
+</script>
+@endif
+@if($message = Session::get('error'))
+<script>
+    toastr['error']('{{ $message }}', 'Error');
+</script>
+@endif

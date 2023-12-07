@@ -24,6 +24,7 @@ Route::group(['middleware' => ['auth']], function () {
   Route::get('/dashboard', 'DashboardController@index')->name('dashboard.index');
 
   Route::get('/profile', 'ProfileController@index')->name('profile.index');
+  Route::post('/profile/update', 'ProfileController@updateProfile')->name('profile.update');
 
   Route::get('/calendar', 'CalendarController@index')->name('calendar.index');
 
