@@ -17,7 +17,7 @@ class CreateCountriesTable extends Migration
             $table->id();
             $table->string('code', 10)->index();
             $table->string('name');
-            $table->char('phonecode', 10);
+            $table->char('phone_code', 10);
             $table->boolean('active')->default(true);
         });
     }

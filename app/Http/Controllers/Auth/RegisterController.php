@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\User;
-use App\Office;
+use App\Profile;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Hash;
@@ -56,12 +56,12 @@ class RegisterController extends Controller
         $countries = Country::where('active', 1)->get();
         $phoneCodes = Country::
             where('active', 1)->
-            where('phonecode', '<>', 0) ->
-            orderBy('phonecode', 'asc') ->
-            select('phonecode') ->
+            where('phone_code', '<>', 0) ->
+            orderBy('phone_code', 'asc') ->
+            select('phone_code') ->
             distinct() ->
             get() ->
-            pluck('phonecode') ->
+            pluck('phone_code') ->
             all();
         return view('auth.register')
             ->with('countries', $countries)
@@ -91,10 +91,6 @@ class RegisterController extends Controller
      * @return mixed
      */
     protected function registered(Request $request, $user) {
-        $userData = [
-            'first_name' => $user->first_name,
-            'last_name' => $user->last_name
-        ];
         return true;
     }
 
@@ -107,10 +103,11 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'first_name' => ['required', 'string','min: 2', 'max:50'],
-            'last_name' => ['required', 'string','min: 2', 'max:50'],
+            'first_name' => ['required', 'string', 'min: 2', 'max:50'],
+            'last_name' => ['required', 'string', 'min: 2', 'max:50'],
+            'birthday' => ['required', 'date'],
             'phone' => ['required', 'digits_between:7,50'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users', 'unique:offices'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users', 'unique:users'],
             'street' => ['required', 'string', 'min:3', 'max:50'],
             'house_number' => ['required', 'string', 'min:1', 'max:50'],
             'postal_code' => ['required', 'string', 'min:3', 'max:50'],
@@ -127,22 +124,25 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        // dd($data);
         $user = User::create([
-            'name' => $data['first_name'].' '.$data['last_name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
 
-        $office = Office::create([
-            'country' => $data['country'],
+        Profile::create([
+            'user_id' => $user->id,
+            'country_id' => $data['country'],
+            'first_name' => $data['first_name'],
+            'last_name' => $data['last_name'],
+            'birthday' => $data['birthday'],
+            'gender' => $data['gender'],
+            'phone_number' => $data['pre_phone'].' '.$data['phone'],
+            'street' => $data['street'],
+            'house_number' => $data['house_number'],
+            'postal_code' => $data['postal_code'],
             'city' => $data['city'],
-            'address' => $data['street'].' '.$data['house_number'],
-            'email' => $data['email'],
-            'phone' => $data['pre_phone'].' '.$data['phone'],
-            'postal' => $data['postal_code'],
-            'providedby' => ""
         ]);
+
         return $user;
     }
 
