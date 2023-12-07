@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers\Auth;
 
+use Mail;
 use App\Http\Controllers\Controller;
+use App\Mail\Welcome;
 use App\Providers\RouteServiceProvider;
 use App\User;
 use App\Profile;
@@ -91,7 +93,19 @@ class RegisterController extends Controller
      * @return mixed
      */
     protected function registered(Request $request, $user) {
-        return true;
+        $userData = [
+            'first_name' => $user->profile->first_name,
+            'last_name' => $user->profile->last_name
+        ];
+
+        try {
+            Mail::to($user->email)->send(new Welcome($userData));
+
+            return true;
+        } catch (Exception $e) {
+            echo "Message could not be sent. Mailer Error: {$e->ErrorInfo}";
+            return false;
+        }
     }
 
     /**
