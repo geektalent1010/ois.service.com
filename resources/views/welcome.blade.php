@@ -48,7 +48,7 @@
     <img class="welcome-bg" src="{{ asset('images/Globe.png') }}" alt="">
     <img class="welcome-bg-mobile" src="{{ asset('images/Globe.png') }}" alt="">
     <div class="welcome-section">
-      <div class="welcome-greet">Hi Name</div>
+      <div class="welcome-greet">Hi {{$userData['first_name']}} {{$userData['last_name']}}</div>
       <div class="welcome-greet">We are very happy to welcome you to the OIS community.</div>
       <div class="welcome-greet">Text</div>
       <div class="visit-website">
@@ -64,7 +64,7 @@
         <div class="office-right-sec">
           <span>SOCIAL</span>
           <a href=""><img src="{{asset('images/Facebook.svg')}}" alt="facebook" /></a>
-          <a href=""><img src="{{asset('images/Linkedin.svg')}}" alt="facebook" /></a>
+          <a href=""><img src="{{asset('images/Linkedin.svg')}}" alt="Linkedin" /></a>
           <a href=""><img src="{{asset('images/Insta.svg')}}" alt="facebook" /></a>
           <a href=""><img src="{{asset('images/Twitter.svg')}}" alt="twitter" /></a>
         </div>
