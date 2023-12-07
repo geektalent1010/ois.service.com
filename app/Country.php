@@ -9,11 +9,11 @@ class Country extends Model
     protected $fillable = [
         'code',
         'name',
-        'phonecode',
+        'phone_code',
         'active'
     ];
 
-    // public function states() {
-    //     return $this->hasMany('App\State');
-    // }
+    public function profile() {
+        return $this->hasOne('profile');
+    }
 }
