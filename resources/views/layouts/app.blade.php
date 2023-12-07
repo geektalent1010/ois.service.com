@@ -706,12 +706,14 @@
         menu_icon.src = '/images/IconMENU.svg';
     });
 
-    login_icon.addEventListener('mouseover', function() {
+    if(login_icon) {
+        login_icon.addEventListener('mouseover', function() {
         login_icon.src = '/images/IconLOGIN2.svg';
-    });
-    login_icon.addEventListener('mouseout', function() {
-        login_icon.src = '/images/IconLOGIN.svg';
-    });
+        });
+        login_icon.addEventListener('mouseout', function() {
+            login_icon.src = '/images/IconLOGIN.svg';
+        });
+    }
 
     // go_to_menu.addEventListener('mouseover', function() {
     //     go_to_menu.src = '/images/IconMENU2.svg';
@@ -727,11 +729,13 @@
     //     go_to_login.src = '/images/IconLOGIN.svg';
     // });
 
-    // logout_icon.addEventListener('mouseover', function() {
-    //     logout_icon.src = '/images/IconLOGOUT2.svg';
-    // });
-    // logout_icon.addEventListener('mouseout', function() {
-    //     logout_icon.src = '/images/IconLOGOUT.svg';
-    // });
+    if(logout_icon) {
+        logout_icon.addEventListener('mouseover', function() {
+            logout_icon.src = '/images/IconLOGOUT2.svg';
+        });
+        logout_icon.addEventListener('mouseout', function() {
+            logout_icon.src = '/images/IconLOGOUT.svg';
+        });
+    }
 
 </script>

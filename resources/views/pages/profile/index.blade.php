@@ -43,12 +43,12 @@
             </div>
             <div class="col-md-6 form-group">
                 <input type="text" name="first_name" class="form-control" id="first-name" placeholder="First Name"
-                tabindex="1" value="{{old('first_name')}}">
+                tabindex="1" value="{{$user->profile->first_name}}">
                 <label id="first-name-error" class="has-error" for="first-name" style="display: none "></label>
             </div>
             <div class="col-md-6 form-group">
                 <input type="text" name="last_name" class="form-control" id="last-name" placeholder="Last Name" tabindex="1"
-                value="{{old('last_name')}}">
+                value="{{$user->profile->last_name}}">
                 <label id="last-name-error" class="has-error" for="last-name" style="display: none"></label>
             </div>
             </div>
@@ -56,19 +56,19 @@
             <div class="row mb-24px">
             <div class="col-md-6 form-group">
                 <p class="form-label">DATE OF BIRTH</p>
-                <input type="text" id="birthday" data-format="DD-MM-YYYY" data-template="D MMM YYYY" name="birthday" value="{{old('birthday')}}" hidden>
+                <input type="text" id="birthday" data-format="YYYY-MM-DD" data-template="D MMM YYYY" name="birthday" value="{{$user->profile->birthday}}" hidden>
                 <label id="birthday-error" class="has-error" for="birthday" style="display: none"></label>
             </div>
             <div class="col-md-6 form-group d-flex flex-column">
                 <p class="form-label">GENDER</p>
                 <div class="d-flex h-100 pl-30px">
                 <label class="checkbox-container">
-                    <input type="radio" name="gender" id="gender-female" checked value="f" />
+                    <input type="radio" name="gender" id="gender-female" value="f" {{ $user->profile->gender == 'f' ? 'checked': '' }} />
                     <span class="checkbox-circle"></span>
                     <span class="checkbox-name">{{ __('FEMALE') }}</span>
                 </label>
                 <label class="checkbox-container pl-5">
-                    <input type="radio" name="gender" id="gender-male" value="m" />
+                    <input type="radio" name="gender" id="gender-male" value="m" {{ $user->profile->gender == 'm' ? 'checked': '' }} />
                     <span class="checkbox-circle"></span>
                     <span class="checkbox-name">{{ __('MALE') }}</span>
                 </label>
@@ -80,24 +80,27 @@
             <div class="col-md-6 form-group d-flex flex-column">
                 <p class="form-label">PHONE NUMBER</p>
                 <div class="d-flex">
-                <input type="text" id="real-phone" name="real_phone" placeholder="Phone Number" hidden>
-                <select class="form-control phone-select webkit-style small" id="pre-phone" name="pre_phone">
-                    @foreach ($phoneCodes as $code)
-                    @if(old('pre_phone') == $code)
-                        <option selected value="+{{$code}}">+{{$code}}</option>
-                    @else
-                        <option value="+{{$code}}">+{{$code}}</option>
-                    @endif
+                    @php
+                        $firstNumber = (explode(" ", $user->profile->phone_number))[0];
+                        $lastNumber = (explode(" ", $user->profile->phone_number))[1];
+                    @endphp
+                    <select class="form-control phone-select webkit-style small" id="pre-phone" name="pre_phone">
+                        @foreach ($phoneCodes as $code)
+                        @if($firstNumber == $code)
+                            <option selected value="+{{$code}}">+{{$code}}</option>
+                        @else
+                            <option value="+{{$code}}">+{{$code}}</option>
+                        @endif
 
-                    @endforeach
-                </select>
-                <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone Number" tabindex="6" value="{{old('phone')}}">
+                        @endforeach
+                    </select>
+                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone Number" tabindex="6" value="{{$lastNumber}}">
                 </div>
                 <label id="phone-error" class="has-error" for="phone-name" style="display: none"></label>
             </div>
             <div class="col-md-6 form-group">
                 <p class="form-label">EMAIL</p>
-                <input type="text" name="email" class="form-control" id="email" placeholder="Email" tabindex="1" value="{{old('email')}}">
+                <input type="text" name="email" class="form-control" id="email" placeholder="Email" tabindex="1" value="{{$user->email}}">
                 <label id="email-error" class="has-error" for="email" style="display: none"></label>
             </div>
             </div>
@@ -107,31 +110,31 @@
                 <p class="form-label">ADDRESS</p>
             </div>
             <div class="col-md-6 form-group">
-                <input type="text" id="street" name="street" class="form-control" placeholder="Street" value="{{old('street')}}">
+                <input type="text" id="street" name="street" class="form-control" placeholder="Street" value="{{$user->profile->street}}">
                 <label id="street-error" class="has-error" for="street" style="display: none"></label>
             </div>
             <div class="col-md-6 form-group">
-                <input type="text" id="house-number" name="house_number" class="form-control" placeholder="House Number" value="{{old('house_number')}}">
+                <input type="text" id="house-number" name="house_number" class="form-control" placeholder="House Number" value="{{$user->profile->house_number}}">
                 <label id="house-number-error" class="has-error" for="house-number" style="display: none"></label>
             </div>
             <div class="col-md-6 form-group">
-                <input type="text" id="postal-code" name="postal_code" class="form-control" placeholder="Postal Code" value="{{old('postal_code')}}">
+                <input type="text" id="postal-code" name="postal_code" class="form-control" placeholder="Postal Code" value="{{$user->profile->postal_code}}">
                 <label id="postal-code-error" class="has-error" for="postal-code" style="display: none"></label>
             </div>
             <div class="col-md-6 form-group">
-                <input type="text" id="city" name="city" class="form-control" placeholder="City" value="{{old('city')}}">
+                <input type="text" id="city" name="city" class="form-control" placeholder="City" value="{{$user->profile->city}}">
                 <label id="city-error" class="has-error" for="city" style="display: none"></label>
             </div>
             <div class="col-md-6 form-group">
                 <select class="form-control webkit-style country-select w-100" name="country" id="country">
-                <option value="0">Country</option>
-                @foreach($countries as $country)
-                    @if(old('country') == $country->id)
-                    <option selected value="{{$country->id}}">{{$country['name']}}</option>
-                    @else
-                    <option value="{{$country->id}}">{{$country['name']}}</option>
-                    @endif
-                @endforeach
+                    <option value="0">Country</option>
+                    @foreach($countries as $country)
+                        @if($user->profile->country_id == $country->id)
+                        <option selected value="{{$country->id}}">{{$country['name']}}</option>
+                        @else
+                        <option value="{{$country->id}}">{{$country['name']}}</option>
+                        @endif
+                    @endforeach
                 </select>
                 <label id="country-error" class="has-error" for="country" style="display: none"></label>
             </div>
@@ -142,10 +145,10 @@
                 <p class="form-label">LOGIN DETAILS</p>
             </div>
             <div class="col-md-6 form-group">
-                <input type="text" id="login-email" name="login_email" class="form-control" placeholder="Email" readonly value="{{old('login_email')}}">
+                <input type="text" id="login-email" name="login_email" class="form-control" placeholder="Email" readonly value="{{$user->email}}">
             </div>
             <div class="col-md-6 form-group">
-                <input type="text" id="password" name="password" class="form-control" placeholder="Password" value="{{old('password')}}">
+                <input type="password" id="password" name="password" class="form-control" placeholder="Password" value="">
                 <label id="password-error" class="has-error" for="password" style="display: none"></label>
             </div>
             </div>
