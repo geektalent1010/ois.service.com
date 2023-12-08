@@ -24,7 +24,7 @@
     <img class="welcome-bg" src="{{ asset('images/Globe.png') }}" alt="">
     <div class="welcome-section">
         <div class="greet-section">
-            <div class="welcome-greet">Hi </div>
+            <div class="welcome-greet">Hi {{ $userData['first_name'] }}{{ $userData['last_name'] }}</div>
             <div class="welcome-greet">We are very happy to welcome you to the OIS community.</div>
             <div class="welcome-greet">Text</div>
         </div>

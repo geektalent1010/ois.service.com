@@ -31,7 +31,7 @@ class Welcome extends Mailable
     public function build()
     {
         return $this->subject('Welcome to OIS')
-            ->markdown('emails.confirm')
+            ->markdown('emails.welcome')
             ->with('userData', $this->userData);
     }
 }
