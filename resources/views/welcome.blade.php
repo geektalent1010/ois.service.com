@@ -29,6 +29,7 @@
             margin-bottom: 0;
             padding: 0 0;
             width: 100%;
+            font-size: 25px;
         }
 
         .header-body {
@@ -76,7 +77,7 @@
 
         .welcome-body {
             background-color: #338dc9;
-            font-size: 16px;
+            font-size: 20px;
         }
 
         .welcome-body .welcome-bg {
@@ -152,21 +153,12 @@
             font-family: "DinPro Bold", sans-serif;
         }
 
-        .register-button a{
-            color: white;
-            text-decoration: none;
-            width: 100%;
-            height: 100%;
-            display: inline-block;
-            padding-top: 13px;
-        }
-
         .welcome-body .social-section {
             background-color: #005696;
             padding-top: 50px;
             padding-bottom: 50px;
             width: 100%;
-            font-size: 16px;
+            font-size: 20px;
             padding-left: 10%;
             padding-right: 10%;
             text-align: center;
@@ -237,6 +229,12 @@
                 padding-right: 10px;
             }
 
+            .welcome-body .social-section .office-section {
+            }
+
+            .welcome-body .social-section .contact-section {
+            }
+
             .welcome-body .social-section .contact-section a:nth-child(even) {
                 display: none;
             }
@@ -283,7 +281,7 @@
                 <div class="welcome-greet">Text</div>
             </div>
             <div class="visit-website">
-                <button class="btn btn-primary register-button button-submit"><a href="{{route('landing')}}">VISIT WEBSITE</a></button>
+                <button onclick="location.href=('{{route('landing')}}')" class="btn btn-primary register-button button-submit">VISIT WEBSITE</button>
             </div>
         </div>
         <div class="social-section">
