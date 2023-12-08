@@ -24,12 +24,13 @@
     <img class="welcome-bg" src="{{ asset('images/Globe.png') }}" alt="">
     <div class="welcome-section">
         <div class="greet-section">
-            <div class="welcome-greet">Hi {{ $userData['first_name'] }} {{ $userData['last_name'] }}</div>
+            <div class="welcome-greet">Hi </div>
             <div class="welcome-greet">We are very happy to welcome you to the OIS community.</div>
             <div class="welcome-greet">Text</div>
         </div>
         <div class="visit-website">
-            <button class="btn btn-primary register-button button-submit"><a href="{{route('landing')}}">VISIT WEBSITE</a></button>
+            <button onclick="location.href=('{{ route('landing') }}')"
+                class="btn btn-primary register-button button-submit">VISIT WEBSITE</button>
         </div>
     </div>
     <div class="social-section">
