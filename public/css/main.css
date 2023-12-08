@@ -46,6 +46,12 @@ body {
     margin-bottom: 0px;
     margin-right: 5px;
 }
+
+.video-wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
 .video-wrapper .content .play-video {
     width: 40px;
 }

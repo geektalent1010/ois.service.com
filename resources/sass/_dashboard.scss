@@ -6,6 +6,7 @@
         object-fit: cover;
         z-index: 1;
     }
+
     .video-section-mobile {
         position: absolute;
         display: none;
@@ -14,14 +15,18 @@
         object-fit: cover;
         z-index: 1;
     }
+
     .menu-bg {
         position: absolute;
         top: 80px;
         width: 100%;
         height: calc(100vh - 120px);
         object-fit: cover;
+        z-index: 1;
     }
+
     .menu-bg-mobile {
+        z-index: 1;
         position: absolute;
         top: 80px;
         width: 100%;
@@ -29,6 +34,7 @@
         object-fit: cover;
         display: none;
     }
+
     .menu-section {
         position: absolute;
         width: 100vw;
@@ -38,40 +44,48 @@
         justify-content: center;
         overflow-y: scroll;
         flex-wrap: wrap;
+
         .backoffice-body {
             width: 35vw !important;
             padding-top: 15px !important;
+
             .navItem {
                 width: 33.3333% !important;
             }
         }
+
         .backoffice-title {
             font-size: 24px;
             color: white;
             font-family: 'DinPro Medium', sans-serif;
             margin-top: 20px;
         }
+
         .backoffice-subtitle {
             font-size: 12px;
             color: white;
             font-family: 'DinPro', sans-serif;
             margin-bottom: 0px;
         }
+
         .menu-body {
             width: 50vw;
             z-index: 1;
             color: white;
             padding-top: 40px;
             align-content: center;
+
             .navItem {
                 width: 25%;
                 padding: 0;
-                .navItemWrap { 
+
+                .navItemWrap {
                     height: 0;
                     padding-bottom: 100%;
                     transition: 0.6s ease-in-out;
-                    transform-style: preserve-3d;                    
+                    transform-style: preserve-3d;
                     border: 0.1rem solid transparent;
+
                     .navItemWrap-front {
                         position: absolute;
                         width: 100%;
@@ -79,6 +93,7 @@
                         background-color: $white-15;
                         backface-visibility: hidden;
                         transition: 0.2s ease-in-out;
+
                         .menu-num {
                             font-size: 56px;
                             font-family: 'DinPro Bold', sans-serif;
@@ -87,6 +102,7 @@
                             left: 20px;
                             bottom: 20px;
                         }
+
                         .menu-title {
                             font-size: 18px;
                             font-family: 'DinPro Medium', sans-serif;
@@ -95,6 +111,7 @@
                             margin-top: 10px;
                             text-align: center;
                         }
+
                         .menu-detail {
                             font-size: 12px;
                             font-family: 'DinPro', sans-serif;
@@ -102,11 +119,13 @@
                             margin-bottom: 0px;
                             text-align: center;
                         }
+
                         img {
                             width: 45px;
                             margin-top: 5px;
                         }
                     }
+
                     .navItemWrap-back {
                         position: absolute;
                         width: 100%;
@@ -115,17 +134,20 @@
                         -webkit-transform: rotateY(0.5turn);
                         opacity: 0;
                         transition: opacity 0.6s ease-in-out;
+
                         .empty-part {
                             background-color: $main-color;
                             opacity: 0.6;
                             width: 100%;
                             height: 100%;
                         }
+
                         .text-part {
                             background-color: $main-color;
                             opacity: 0.6;
                             width: 100%;
                             height: 80%;
+
                             .menu-num {
                                 font-size: 56px;
                                 font-family: 'DinPro Bold', sans-serif;
@@ -134,12 +156,14 @@
                                 left: 20px;
                                 top: 0px;
                             }
+
                             .menu-title {
                                 font-size: 16px;
                                 font-family: 'DinPro Bold', sans-serif;
                                 color: white;
                                 margin-left: 10px;
                             }
+
                             .menu-detail {
                                 font-size: 12px;
                                 font-family: 'DinPro', sans-serif;
@@ -149,12 +173,14 @@
                                 text-align: center;
                             }
                         }
+
                         .go-to-page {
                             background-color: $main-color;
                             height: 20%;
                             display: flex;
                             align-items: center;
                             vertical-align: middle;
+
                             a {
                                 font-size: 16px;
                                 font-family: 'DinPro', sans-serif;
@@ -165,6 +191,7 @@
                                 text-decoration: none;
                             }
                         }
+
                         @media only screen and (max-width: 575.98px) {
                             .text-part {
                                 .menu-num {
@@ -172,12 +199,14 @@
                                     left: 10px;
                                     font-family: 'DinPro Medium', sans-serif;
                                 }
+
                                 .menu-title {
                                     font-size: 16px;
                                     top: 68px;
                                     left: 10px;
                                     font-family: 'DinPro Medium', sans-serif;
                                 }
+
                                 .menu-detail {
                                     font-size: 14px;
                                     top: 98px;
@@ -185,6 +214,7 @@
                                     font-family: 'DinPro Light', sans-serif;
                                 }
                             }
+
                             .go-to-page {
                                 a {
                                     font-size: 16px;
@@ -192,6 +222,7 @@
                             }
                         }
                     }
+
                     .menu-item {
                         background: transparent;
                         opacity: 1;
@@ -199,8 +230,10 @@
                     }
                 }
             }
+
             .navItem:hover {
                 .navItemWrap {
+
                     // transform: rotateY(0.5turn);
                     // -webkit-transform:  rotateY(0.5turn);
                     // .navItemWrap-back {
@@ -211,28 +244,34 @@
                     }
                 }
             }
+
             .last-panel {
                 margin-bottom: 40px;
             }
+
             @media only screen and (max-width: 1080px) {
                 .navItem {
                     width: 25%;
                 }
+
                 .last-panel {
                     margin-bottom: 0px !important;
                 }
             }
+
             @media only screen and (max-width: 575.98px) {
                 .navItem {
                     width: 50%;
                 }
+
                 .last-panel {
                     margin-bottom: 0px !important;
                 }
             }
         }
-        
+
     }
+
     @media only screen and (max-width: 1080px) {
         .menu-section {
             .menu-body {
@@ -241,13 +280,16 @@
                 padding-top: 0px !important;
             }
         }
+
         .video-section {
             display: block;
         }
+
         .video-section-mobile {
             display: none;
         }
     }
+
     @media only screen and (max-width: 575.98px) {
         .menu-section {
             .menu-body {
@@ -256,15 +298,52 @@
                 padding-top: 0px !important;
             }
         }
+
         .video-section {
             display: none;
         }
+
         .video-section-mobile {
             display: block;
         }
+
         .menu-bg {
             display: none;
         }
+
+        .menu-bg-mobile {
+            display: block;
+        }
+    }
+}
+
+.video-wrapper {
+    .menu-bg {
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        height: calc(100vh - 120px);
+        object-fit: cover;
+        z-index: 1;
+    }
+
+    .menu-bg-mobile {
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        height: calc(100vh - 120px);
+        object-fit: cover;
+        display: none;
+        z-index: 1;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .video-wrapper {
+        .menu-bg {
+            display: none;
+        }
+
         .menu-bg-mobile {
             display: block;
         }
