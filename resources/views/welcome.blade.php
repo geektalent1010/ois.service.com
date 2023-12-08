@@ -1,82 +1,329 @@
 <!doctype html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#003366" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <style>
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
 
-  <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>{{ config('app.name', 'BUDDIES') }} WELCOME</title>
+        body {
+            font-family: "DinPro", sans-serif;
+            background-color: #003366;
+            color: white;
+            margin: 0;
+        }
 
-  <link rel="stylesheet" type="text/css" href="{{ asset('css/font.css') }}" />
+        .header-section {
+            position: relative;
+            width: 100%;
+            z-index: 99;
+        }
 
-  <link href="{{ asset('css/bootstrap_4.1.3.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('fontawesome/css/all.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('css/main.css') }}" rel="stylesheet">
-  <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+        .navbar {
+            height: 80px;
+            background-color: #003366;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            padding: 0 0;
+            width: 100%;
+        }
 
-  <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
-  <script type="text/javascript" src="{{ asset('js/bootstrap_4.1.3.min.js') }}"></script>
+        .header-body {
+            padding: 0 20px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .header-body div {
+            width: 33.3%;
+        }
+
+        .brand-sec {
+            display: inline-block;
+            float: left;
+            padding-top: 15px;
+        }
+
+        .title-sec {
+            padding-top: 30px;
+            display: inline-block;
+            float: left;
+            text-align: center;
+        }
+
+        .navbar-brand img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .login-section {
+            display: inline-block;
+            padding-top: 29px;
+            float: left;
+        }
+
+        .login-section a {
+            float: right;
+        }
+
+        .login-section img {
+            width: 22px;
+            height: 22px;
+        }
+
+        .welcome-body {
+            background-color: #338dc9;
+            font-size: 16px;
+        }
+
+        .welcome-body .welcome-bg {
+            width: 100%;
+            height: auto;
+        }
+
+        .welcome-body .welcome-section {
+            padding-left: 5%;
+            padding-right: 5%;
+            width: 100%;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            text-align: center;
+        }
+
+        .greet-section {
+            text-align: left;
+        }
+
+        .welcome-body .welcome-section .welcome-greet {
+            padding: 15px 0;
+        }
+
+        .welcome-body .welcome-section .visit-website {
+            width: 100%;
+            margin: 30px auto 0 auto;
+            padding: 0 auto;
+            text-align: center;
+        }
+
+        .welcome-body .welcome-section .visit-website .register-button {
+            width: 33%;
+            margin-left: 33%;
+            height: 44px;
+            display: block;
+            text-transform: uppercase;
+            border-radius: 10rem;
+            font-size: 16px;
+            font-family: "DinPro", sans-serif;
+            background: #003366;
+            color: #ffffff;
+            border-color: #003366;
+            cursor: pointer;
+            text-decoration: none;
+            outline: none;
+            border: none;
+            transition: 0.3s;
+        }
+
+        .welcome-body .welcome-section .visit-website .register-button:hover {
+            color: #ffffff;
+            background: #00a9ea;
+            border: 0.1rem solid #00a9ea;
+        }
+
+        .welcome-body .welcome-section .visit-website .register-button:focus,
+        .welcome-body .welcome-section .visit-website .register-button:active {
+            background: #003366;
+            color: #ffffff;
+            border-color: #003366 !important;
+            outline: none;
+            box-shadow: none;
+        }
+
+        .welcome-body .welcome-section .visit-website .register-button.disabled,
+        .welcome-body .welcome-section .visit-website .register-button:disabled,
+        .welcome-body .welcome-section .visit-website .register-button[disabled] {
+            opacity: 1 !important;
+        }
+
+        .welcome-body .welcome-section .visit-website .register-button span {
+            font-family: "DinPro Bold", sans-serif;
+        }
+
+        .register-button a{
+            color: white;
+            text-decoration: none;
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            padding-top: 13px;
+        }
+
+        .welcome-body .social-section {
+            background-color: #005696;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            width: 100%;
+            font-size: 16px;
+            padding-left: 10%;
+            padding-right: 10%;
+            text-align: center;
+        }
+
+        .welcome-body .social-section span {
+            color: white;
+        }
+
+        .welcome-body .social-section a {
+            color: #338dc9;
+            text-decoration: none;
+        }
+
+        .welcome-body .social-section img {
+            width: 40px;
+        }
+
+        .welcome-body .social-section table {
+            text-align: center;
+            display: inline-block;
+        }
+
+        .sec-table tr td {
+            padding: 5px 10px;
+        }
+
+        .welcome-body .social-section .contact-section {
+            width: 100%;
+            text-align: center;
+            vertical-align: middle;
+            margin-top: 20px;
+        }
+
+        .welcome-body .social-section .contact-section a:nth-child(odd) {
+            color: #338dc9;
+        }
+
+        .welcome-body .social-section .contact-section a:nth-child(even) {
+            color: #ffffff;
+        }
+
+        .welcome-body .footer-section {
+            background-color: #003366;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .welcome-body .footer-section a {
+            color: #338dc9;
+            text-decoration: none;
+        }
+
+        @media only screen and (max-width: 575.98px) {
+            .welcome-body .welcome-section {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .welcome-body .welcome-section .visit-website .register-button {
+                width: 100%;
+            }
+
+            .welcome-body .social-section {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .welcome-body .social-section .contact-section a:nth-child(even) {
+                display: none;
+            }
+
+            .welcome-body .footer-section {
+                display: block;
+                text-align: center;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <div class="headerSection" style="position:relative">
-    <nav class="navbar">
-      <div class="container-fluid d-flex align-items-center justify-content-between">
-        <div class="navbarItem">
-          <a class="navbar-brand pl-1" href="{{ route('landing') }}">
-            <img src="{{ asset('images/Logo/LogoOIS1.svg') }}" class="img-fluid logo-ois" alt="" />
-          </a>
+    <div class="header-section" style="position:relative">
+        <div class="navbar">
+            <div class="header-body">
+                <div class="brand-sec">
+                    <a class="navbar-brand pl-1" href="{{ route('landing') }}">
+                        <img src="{{ asset('images/Icon1.png') }}" alt="" />
+                    </a>
+                </div>
+                <div class="title-sec">
+                    <span class="navbar-title">
+                        WELCOME
+                    </span>
+                </div>
+                <div class="login-section">
+                    <a href="{{ route('login') }}" class="d-flex align-items-center">
+                        <img class="login-icon" src="{{ asset('images/Icon2.png') }}" alt="" />
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="navbarItem text-center">
-          <span class="navbar-title">
-            WELCOME
-          </span>
-        </div>
-        <div class="navbarItem d-flex justify-content-end">
-          <a href="{{ route('login') }}" class="d-flex align-items-center">
-            <img class="login-icon" src="{{ asset('images/IconLOGIN.svg') }}" alt="" />
-          </a>
-        </div>
-      </div>
-    </nav>
-  </div>
-
-  <div class="main-bg welcome-body">
-    <img class="welcome-bg" src="{{ asset('images/Globe.png') }}" alt="">
-    <img class="welcome-bg-mobile" src="{{ asset('images/Globe.png') }}" alt="">
-    <div class="welcome-section">
-      <div class="welcome-greet">Hi {{$userData['first_name']}} {{$userData['last_name']}}</div>
-      <div class="welcome-greet">We are very happy to welcome you to the OIS community.</div>
-      <div class="welcome-greet">Text</div>
-      <div class="visit-website">
-        <button class="btn btn-primary register-button button-submit">VISIT WEBSITE</button>
-      </div>
     </div>
-    <div class="social-section">
-      <div class="office-section">
-        <div class="office-left-sec">
-          <span>OFFICES</span>
-          <a href="">Click here</a>
-        </div>
-        <div class="office-right-sec">
-          <span>SOCIAL</span>
-          <a href=""><img src="{{asset('images/Facebook.svg')}}" alt="facebook" /></a>
-          <a href=""><img src="{{asset('images/Linkedin.svg')}}" alt="Linkedin" /></a>
-          <a href=""><img src="{{asset('images/Insta.svg')}}" alt="facebook" /></a>
-          <a href=""><img src="{{asset('images/Twitter.svg')}}" alt="twitter" /></a>
-        </div>
-      </div>
-      <div class="contact-section">
-        <a href="">Terms of Use</a> <a>|</a> <a href="">Privacy Policy</a> <a>|</a> <a href="">Data Protection Policy</a>
-      </div>
-    </div>
-    <div class="footer-section">If you don’t wish to receive future community emails, click here : <a href="">&nbsp;unsubscribe</a></div>
-  </div>
 
-  <script type="text/javascript" src="{{asset('js/util.js')}}"></script>
+    <div class="main-bg welcome-body">
+        <img class="welcome-bg" src="{{ asset('images/Globe.png') }}" alt="">
+        <div class="welcome-section">
+            <div class="greet-section">
+                <div class="welcome-greet">Hi </div>
+                <div class="welcome-greet">We are very happy to welcome you to the OIS community.</div>
+                <div class="welcome-greet">Text</div>
+            </div>
+            <div class="visit-website">
+                <button class="btn btn-primary register-button button-submit"><a href="{{route('landing')}}">VISIT WEBSITE</a></button>
+            </div>
+        </div>
+        <div class="social-section">
+            <table class="fir-table">
+                <tr>
+                    <td>OFFICES <a href="" style="margin-left: 15px">Click here</a></td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><span style="margin-right: 15px">SOCIAL</span></td>
+                                <td>
+                                    <a href=""><img src="{{ asset('images/Face.png') }}" alt="facebook" /></a>
+                                    <a href=""><img src="{{ asset('images/Link.png') }}" alt="Linkedin" /></a>
+                                    <a href=""><img src="{{ asset('images/Insta.png') }}" alt="facebook" /></a>
+                                    <a href=""><img src="{{ asset('images/Twit.png') }}" alt="twitter" /></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table class="sec-table">
+                            <tr>
+                                <td><a href="">Terms of Use</a></td>
+                                <td>|</td>
+                                <td><a href="">Privacy Policy</a></td>
+                                <td>|</td>
+                                <td><a href="">Data Protection Policy</a></td>
+                            </tr>
+                        </table>
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+        <div class="footer-section">If you don’t wish to receive future community emails, click here : <a
+                href="">&nbsp;unsubscribe</a></div>
+    </div>
+
 
 </body>
 
