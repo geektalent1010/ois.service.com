@@ -7,20 +7,18 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class Welcome extends Mailable
+class Confirmation extends Mailable
 {
     use Queueable, SerializesModels;
-
-    private $userData;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($userData)
+    public function __construct()
     {
-        $this->userData = $userData;
+        //
     }
 
     /**
@@ -30,8 +28,6 @@ class Welcome extends Mailable
      */
     public function build()
     {
-        return $this->subject('Welcome to OIS')
-            ->markdown('emails.confirm')
-            ->with('userData', $this->userData);
+        return $this->markdown('emails.confirm');
     }
 }

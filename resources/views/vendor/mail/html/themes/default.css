@@ -1,0 +1,246 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DinPro", sans-serif;
+    background-color: #003366;
+    color: white;
+    margin: 0;
+}
+
+.header-section {
+    position: relative;
+    width: 100%;
+    z-index: 99;
+}
+
+.navbar {
+    height: 80px;
+    background-color: #003366;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 0 0;
+    width: 100%;
+}
+
+.header-body {
+    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.header-body div {
+    width: 33.3%;
+}
+
+.brand-sec {
+    display: inline-block;
+    float: left;
+    padding-top: 15px;
+}
+
+.title-sec {
+    padding-top: 30px;
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+}
+
+.login-section {
+    display: inline-block;
+    padding-top: 29px;
+    float: left;
+}
+
+.login-section a {
+    float: right;
+}
+
+.login-section img {
+    width: 22px;
+    height: 22px;
+}
+
+.welcome-body {
+    background-color: #338dc9;
+    font-size: 16px;
+}
+
+.welcome-body .welcome-bg {
+    width: 100%;
+    height: auto;
+}
+
+.welcome-body .welcome-section {
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.greet-section {
+    text-align: left;
+}
+
+.welcome-body .welcome-section .welcome-greet {
+    padding: 15px 0;
+}
+
+.welcome-body .welcome-section .visit-website {
+    width: 100%;
+    margin: 30px auto 0 auto;
+    padding: 0 auto;
+    text-align: center;
+}
+
+.welcome-body .welcome-section .visit-website .register-button {
+    width: 33%;
+    margin-left: 33%;
+    height: 44px;
+    display: block;
+    text-transform: uppercase;
+    border-radius: 10rem;
+    font-size: 16px;
+    font-family: "DinPro", sans-serif;
+    background: #003366;
+    color: #ffffff;
+    border-color: #003366;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: 0.3s;
+}
+
+.welcome-body .welcome-section .visit-website .register-button:hover {
+    color: #ffffff;
+    background: #00a9ea;
+    border: 0.1rem solid #00a9ea;
+}
+
+.welcome-body .welcome-section .visit-website .register-button:focus,
+.welcome-body .welcome-section .visit-website .register-button:active {
+    background: #003366;
+    color: #ffffff;
+    border-color: #003366 !important;
+    outline: none;
+    box-shadow: none;
+}
+
+.welcome-body .welcome-section .visit-website .register-button.disabled,
+.welcome-body .welcome-section .visit-website .register-button:disabled,
+.welcome-body .welcome-section .visit-website .register-button[disabled] {
+    opacity: 1 !important;
+}
+
+.welcome-body .welcome-section .visit-website .register-button span {
+    font-family: "DinPro Bold", sans-serif;
+}
+
+.register-button a {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    padding-top: 13px;
+}
+
+.welcome-body .social-section {
+    background-color: #005696;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    font-size: 16px;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+.welcome-body .social-section span {
+    color: white;
+}
+
+.welcome-body .social-section a {
+    color: #338dc9;
+    text-decoration: none;
+}
+
+.welcome-body .social-section img {
+    width: 40px;
+}
+
+.welcome-body .social-section table {
+    text-align: center;
+    display: inline-block;
+}
+
+.sec-table tr td {
+    padding: 5px 10px;
+}
+
+.welcome-body .social-section .contact-section {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+
+.welcome-body .social-section .contact-section a:nth-child(odd) {
+    color: #338dc9;
+}
+
+.welcome-body .social-section .contact-section a:nth-child(even) {
+    color: #ffffff;
+}
+
+.welcome-body .footer-section {
+    background-color: #003366;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.welcome-body .footer-section a {
+    color: #338dc9;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 575.98px) {
+    .welcome-body .welcome-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .welcome-body .welcome-section .visit-website .register-button {
+        width: 100%;
+    }
+
+    .welcome-body .social-section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .welcome-body .social-section .contact-section a:nth-child(even) {
+        display: none;
+    }
+
+    .welcome-body .footer-section {
+        display: block;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
