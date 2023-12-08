@@ -81,7 +81,7 @@
                     <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="{{ route('profile.index') }}">
                         <div class="h-100">
                             <div class="d-flex justify-content-center h-50 align-items-end">
-                                <img src="{{ asset('images/logo/IconProfile.svg') }}" alt="">
+                                <img src="{{ asset('images/Logo/IconProfile.svg') }}" alt="">
                             </div>
                             <p class="back-unvisible menu-title">PROFILE</p>
                         </div>
