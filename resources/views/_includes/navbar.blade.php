@@ -2,10 +2,13 @@
     <nav class="navbar">
         <div class="container-fluid d-flex align-items-center justify-content-between">
             <div class="navbarItem">
+                @guest
                     <a class="navbar-brand pl-1" href="{{ route('landing') }}">
+                @else
+                    <a class="navbar-brand pl-1" href="{{ route('dashboard.index') }}">
+                @endguest
                         <img src="{{ asset('images/Logo/LogoOIS1.svg') }}" class="img-fluid logo-ois" />
                     </a>
-
             </div>
             <div class="navbarItem text-center">
                 @if (isset($ACTIVE_TITLE))
