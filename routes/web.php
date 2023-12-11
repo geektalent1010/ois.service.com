@@ -66,7 +66,6 @@ Route::get('/faq', 'FaqController@index')->name('faq.index');
 Route::get('/book', 'BookController@index')->name('book.index');
 Route::get('/contact/reviewing', 'ContactController@reviewing')->name('contact.reviewing');
 Route::get('/backoffice', 'BackOfficeController@index')->name('backoffice.index');
-Route::get('/offices', 'OfficesController@index')->name('offices.index');
 Route::post('/offices/office-filter', 'OfficesController@officeFilter')->name('offices.search');
 
 

@@ -974,6 +974,7 @@
   font-family: "DinPro", sans-serif;
   color: white;
   opacity: 0.5;
+  text-decoration: none;
 }
 
 .main-bg .intro-section .content-section .foot-section a {
@@ -982,6 +983,7 @@
   color: white;
   opacity: 0.5;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .main-bg .intro-section .content-section .foot-section a:hover {

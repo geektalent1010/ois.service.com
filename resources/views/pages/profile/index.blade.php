@@ -54,7 +54,7 @@
             </div>
 
             <div class="row mb-24px">
-            <div class="col-md-6 form-group">
+            <div class="col-md-6 form-group birthday-group">
                 <p class="form-label">DATE OF BIRTH</p>
                 <input type="text" id="birthday" data-format="YYYY-MM-DD" data-template="D MMM YYYY" name="birthday" value="{{$user->profile->birthday}}" hidden>
                 <label id="birthday-error" class="has-error" for="birthday" style="display: none"></label>

@@ -1,4 +1,4 @@
-.main-bg {  
+.main-bg {
   .intro-section {
     position: absolute;
     width: 100vw;
@@ -81,8 +81,8 @@
               background: $hover-color;
               border: 0.1rem solid $hover-color;
             }
-          }          
-        }      
+          }
+        }
       }
       .foot-section {
         padding: 80px 0px;
@@ -97,6 +97,7 @@
           font-family: 'DinPro', sans-serif;
           color: $white;
           opacity: 0.5;
+          text-decoration: none;
         }
         a {
           font-size: 14px;
@@ -104,6 +105,7 @@
           color: $white;
           opacity: 0.5;
           cursor: pointer;
+          text-decoration: none;
         }
         a:hover {
           opacity: 1;
@@ -150,10 +152,10 @@
   height: 5px;
   -ms-transform: rotate(45deg); /* IE 9 */
   -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
-  transform: rotate(45deg);   
+  transform: rotate(45deg);
   border-right: 2px solid white;
   border-bottom: 2px solid white;
-  margin: 0 0 3px 4px;  
+  margin: 0 0 3px 4px;
   width: 16px;
   height: 16px;
 }
@@ -165,7 +167,7 @@
   animation: mouse-scroll 1s infinite;
   -webkit-animation-delay: .1s;
   -moz-animation-delay: .1s;
-  -webkit-animation-direction: alternate;  
+  -webkit-animation-direction: alternate;
   animation-direction: alternate;
   animation-delay: alternate;
 }
@@ -173,12 +175,12 @@
 {
   -webkit-animation: mouse-scroll 1s infinite;
   -moz-animation: mouse-scroll 1s infinite;
-  animation: mouse-scroll 1s infinite;  
+  animation: mouse-scroll 1s infinite;
   -webkit-animation-delay: .2s;
   -moz-animation-delay: .2s;
-  -webkit-animation-direction: alternate;  
+  -webkit-animation-direction: alternate;
   animation-delay: .2s;
-  animation-direction: alternate;  
+  animation-direction: alternate;
   margin-top: -6px;
 }
 .trei
@@ -188,10 +190,10 @@
   animation: mouse-scroll 1s infinite;
   -webkit-animation-delay: .3s;
   -moz-animation-delay: .3s;
-  -webkit-animation-direction: alternate;  
+  -webkit-animation-direction: alternate;
   animation-delay: .3s;
   animation-direction: alternate;
-  margin-top: -6px;  
+  margin-top: -6px;
 }
 .mouse {
   height: 42px;
@@ -207,7 +209,7 @@
   display: block;
   margin: 5px auto;
   background: white;
-  position: relative;  
+  position: relative;
   height: 4px;
   width: 4px;
   border: 2px solid #fff;
@@ -328,7 +330,7 @@
         }
       }
     }
-  } 
+  }
   [data-aos=fade-left] {
     transform: translate3d(42vw,0,0);
   }
@@ -393,7 +395,7 @@
         }
       }
     }
-  } 
+  }
   [data-aos=fade-left] {
     transform: translate3d(35vw,0,0);
   }

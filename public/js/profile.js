@@ -461,6 +461,13 @@ $(document).ready(function () {
         maxYear: currentDate.getFullY,
     });
 
+    var date = $("#birthday").val();
+    if(/^(\d{4})-(\d{2})-(\d{2})$/.test(date)) {
+        $(".birthday-group select.day").val(date.split('-')[2]);
+        $(".birthday-group select.month").val(date.split('-')[1] - 1);
+        $(".birthday-group select.year").val(date.split('-')[0]);
+    }
+
     $(".birthday-group select.day").addClass("webkit-style");
     $(".birthday-group select.month").addClass("webkit-style");
     $(".birthday-group select.year").addClass("webkit-style");
