@@ -495,7 +495,7 @@ footer .social-section .icon-section .social-icon:hover {
     margin-top: 80px;
     padding-bottom: 40px;
 }
-.main-bg-login .login-bg {
+.main-bg-login .menu-bg {
     position: absolute;
     top: 80px;
     width: 100%;
@@ -503,7 +503,7 @@ footer .social-section .icon-section .social-icon:hover {
     object-fit: cover;
     z-index: -1;
 }
-.main-bg-login .login-bg-mobile {
+.main-bg-login .menu-bg-mobile {
     position: absolute;
     top: 80px;
     width: 100%;

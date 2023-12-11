@@ -19,7 +19,7 @@
     </video>
     <img class="menu-bg" src="{{ asset('images/Image1H.png') }}" alt="">
     <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt="">
-    <div class="news-section">
+    <div class="news-section body-section">
         <div>NEWS PAGE</div>
     </div>
 </div>

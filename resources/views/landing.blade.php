@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'WELCOME'], ['VIDEO_STATUS' => true])
+@extends('layouts.app', ['ACTIVE_TITLE' => 'WELCOME'], ['VIDEO_BACKGROUND' => true], 'VIDEO_PLAY_TEXT' => true)
 
 @section('PAGE_START')
 @endsection
@@ -15,7 +15,7 @@
         </video>
         <img class="menu-bg d-none" src="{{ asset('images/Image1H.png') }}" alt="">
         <img class="menu-bg-mobile d-none" src="{{ asset('images/Image1V.png') }}" alt="">
-        <img class="cancel-video d-none" src="{{ asset('images/Stop.svg') }}" onclick="stopVideo()">
+        <img class="cancel-video d-none" src="{{ asset('images/Stop.svg') }}" onclick="stopVideo_landing()">
         <div class="content">
             <div id="text-container">
                 <div class="landing-text text-center">Everyone thinks of changing the world,</br> here at OIS, we do!</div>

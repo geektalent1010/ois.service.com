@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'INNOVATION'])
+@extends('layouts.app', ['ACTIVE_TITLE' => 'INNOVATION'], ['VIDEO_BACKGROUND' => true])
 
 @section('PAGE_LEVEL_STYLES')
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -15,7 +15,7 @@
     <video autoplay muted loop class="video-section-mobile" playsinline>
         <source src="{{ asset('Video/InnovationVM.mp4') }}" type="video/mp4">
     </video>
-    <div class="m-0 intro-section">
+    <div class="m-0 intro-section body-section">
         <div class="title-section d-flex flex-column justify-content-center align-items-center">
             <p class="title desktop-version">The future of virtual reality<br>is here.</p>
             <p class="title mobile-version">The future of<br>virtual reality is here.</p>
@@ -143,57 +143,5 @@
 @endsection
 
 @section('PAGE_LEVEL_SCRIPTS')
-<script type="text/javascript">
-    const privacy = document.querySelector(".privacy-modal");
-    function showPrivacy() {
-        privacy.classList.toggle("show-modal");
-    }
-    const terms_use = document.querySelector(".terms-modal");
-    function showTerms() {
-        terms_use.classList.toggle("show-modal");
-    }
-    const data_policy = document.querySelector(".data-modal");
-    function showData() {
-        data_policy.classList.toggle("show-modal");
-    }
-
-	let video = document.querySelector('.video-section');
-    let video_mobile = document.querySelector('.video-section-mobile');
-    function playVideo() {
-        if (window.innerWidth > 769) {
-            video.querySelector('source').src = '/Video/OISH.mp4';
-            video.load();
-            video.play();
-            video.muted = false;
-        }
-        else {
-            video_mobile.querySelector('source').src = '/Video/OISV.mp4';
-            video_mobile.load();
-            video_mobile.play();
-            video_mobile.muted = false;
-        }
-
-        $('.play').addClass('d-none');
-        $('.stop').removeClass('d-none');
-        $('.intro-section').addClass('d-none');
-    }
-    function stopVideo() {
-        if (window.innerWidth > 769) {
-            video.querySelector('source').src = '/Video/AboutHD.mp4';
-            video.load();
-            video.play();
-            video.muted = true;
-        }
-        else {
-            video_mobile.querySelector('source').src = '/Video/AboutVM.mp4';
-            video_mobile.load();
-            video_mobile.play();
-            video_mobile.muted = true;
-        }
-
-        $('.stop').addClass('d-none');
-        $('.play').removeClass('d-none');
-        $('.intro-section').removeClass('d-none');
-    }
-</script>
+<script type="text/javascript" src="{{asset('js/util.js')}}">
 @endsection

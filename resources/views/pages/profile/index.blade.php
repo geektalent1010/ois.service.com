@@ -23,7 +23,7 @@
         <div class="main-title">
             MY DETAILS
         </div>
-        <div class="section-body mt-30px">
+        <div class="section-body body-section mt-30px">
             <form class="form-section" data-form="register" autocomplete="off" method="POST" action="{{route('profile.update')}}">
 
             @if ($errors->any())

@@ -7,10 +7,16 @@
 
 @section('PAGE_CONTENT')
 <div class="main-bg-login d-flex justify-content-center align-items-center">
-    <img class="login-bg" src="{{ asset('images/Image1H.png') }}">
-    <img class="login-bg-mobile" src="{{ asset('images/Image1V.png') }}">
-    <div class="row justify-content-center">
-        <div class="login-page">
+    <video autoplay muted loop class="video-section d-none" playsinline>
+        <source type="video/mp4">
+    </video>
+    <video autoplay muted loop class="video-section-mobile d-none" playsinline>
+        <source type="video/mp4">
+    </video>
+    <img class="menu-bg" src="{{ asset('images/Image1H.png') }}">
+    <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}">
+    <div class="row justify-content-center m-0 p-0">
+        <div class="login-page body-section">
             <div class="login-title text-center">
                 <p>SECURE CLIENT PORTAL</p>
                 <span>FOR REGISTERED CLIENTS ONLY</span>
@@ -83,8 +89,5 @@
 @endsection
 
 @section('PAGE_LEVEL_SCRIPTS')
-<script>
-    const play_icon = document.querySelector('.play-video');
-    play_icon.src = '/images/IconLock.svg';
-</script>
+<script type="text/javascript" src="{{asset('js/util.js')}}"></script>
 @endsection

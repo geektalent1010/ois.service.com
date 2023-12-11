@@ -13,6 +13,14 @@
             background-color: #003366;
             color: white;
             margin: 0;
+            width: 100%;
+            background-color: white;
+            font-size: 14px;
+        }
+
+        .main-body {
+            width: 50%;
+            margin-left: 25%;
         }
 
         .header-section {
@@ -29,13 +37,13 @@
             margin-bottom: 0;
             padding: 0 0;
             width: 100%;
-            font-size: 25px;
         }
 
         .header-body {
             padding: 0 20px;
             width: 100%;
             height: 100%;
+            font-size: 25px;
         }
 
         .header-body div {
@@ -49,7 +57,7 @@
         }
 
         .title-sec {
-            padding-top: 30px;
+            padding-top: 25px;
             display: inline-block;
             float: left;
             text-align: center;
@@ -62,7 +70,7 @@
 
         .login-section {
             display: inline-block;
-            padding-top: 29px;
+            padding-top: 26px;
             float: left;
         }
 
@@ -77,7 +85,6 @@
 
         .welcome-body {
             background-color: #338dc9;
-            font-size: 20px;
         }
 
         .welcome-body .welcome-bg {
@@ -111,12 +118,12 @@
 
         .welcome-body .welcome-section .visit-website .register-button {
             width: 33%;
+            padding-top: 15px;
             margin-left: 33%;
             height: 44px;
             display: block;
             text-transform: uppercase;
             border-radius: 10rem;
-            font-size: 16px;
             font-family: "DinPro", sans-serif;
             background: #003366;
             color: #ffffff;
@@ -158,9 +165,8 @@
             padding-top: 50px;
             padding-bottom: 50px;
             width: 100%;
-            font-size: 20px;
-            padding-left: 10%;
-            padding-right: 10%;
+            padding-left: 30px;
+            padding-right: 30px;
             text-align: center;
         }
 
@@ -174,7 +180,7 @@
         }
 
         .welcome-body .social-section img {
-            width: 40px;
+            width: 20px;
         }
 
         .welcome-body .social-section table {
@@ -205,13 +211,17 @@
             background-color: #003366;
             padding-top: 20px;
             padding-bottom: 20px;
-            font-size: 16px;
             text-align: center;
+            font-size:12px;
         }
 
         .welcome-body .footer-section a {
             color: #338dc9;
             text-decoration: none;
+        }
+
+        .wp-0 {
+            padding: 0 0 !important;
         }
 
         @media only screen and (max-width: 575.98px) {
@@ -229,11 +239,9 @@
                 padding-right: 10px;
             }
 
-            .welcome-body .social-section .office-section {
-            }
+            .welcome-body .social-section .office-section {}
 
-            .welcome-body .social-section .contact-section {
-            }
+            .welcome-body .social-section .contact-section {}
 
             .welcome-body .social-section .contact-section a:nth-child(even) {
                 display: none;
@@ -250,77 +258,83 @@
 </head>
 
 <body>
-    <div class="header-section" style="position:relative">
-        <div class="navbar">
-            <div class="header-body">
-                <div class="brand-sec">
-                    <a class="navbar-brand pl-1" href="{{ route('landing') }}">
-                        <img src="{{ asset('images/Icon1.png') }}" alt="" />
-                    </a>
-                </div>
-                <div class="title-sec">
-                    <span class="navbar-title">
-                        WELCOME
-                    </span>
-                </div>
-                <div class="login-section">
-                    <a href="{{ route('login') }}" class="d-flex align-items-center">
-                        <img class="login-icon" src="{{ asset('images/Icon2.png') }}" alt="" />
-                    </a>
+
+    <div class="main-body">
+
+        <div class="header-section" style="position:relative">
+            <div class="navbar">
+                <div class="header-body">
+                    <div class="brand-sec">
+                        <a class="navbar-brand pl-1" href="{{ route('landing') }}">
+                            <img src="{{ asset('images/Icon1.png') }}" alt="" />
+                        </a>
+                    </div>
+                    <div class="title-sec">
+                        <span class="navbar-title">
+                            WELCOME
+                        </span>
+                    </div>
+                    <div class="login-section">
+                        <a href="{{ route('login') }}" class="d-flex align-items-center">
+                            <img class="login-icon" src="{{ asset('images/Icon2.png') }}" alt="" />
+                        </a>
+                    </div>
                 </div>
             </div>
+        </div>
+
+        <div class="main-bg welcome-body">
+            <img class="welcome-bg" src="{{ asset('images/Globe.png') }}" alt="">
+            <div class="welcome-section">
+                <div class="greet-section">
+                    <div class="welcome-greet">Hi </div>
+                    <div class="welcome-greet">We are very happy to welcome you to the OIS community.</div>
+                    <div class="welcome-greet">Text</div>
+                </div>
+                <div class="visit-website">
+                    <a href="{{ route('landing') }}" class="btn btn-primary register-button button-submit">VISIT
+                        WEBSITE</a>
+                </div>
+            </div>
+            <div class="social-section">
+                <table class="fir-table">
+                    <tr>
+                        <td>OFFICES <a href="" style="margin-left: 15px">Click here</a></td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td><span style="margin-right: 15px">SOCIAL</span></td>
+                                    <td>
+                                        <a href=""><img src="{{ asset('images/Face.png') }}" alt="facebook" /></a>
+                                        <a href=""><img src="{{ asset('images/Link.png') }}" alt="Linkedin" /></a>
+                                        <a href=""><img src="{{ asset('images/Insta.png') }}" alt="facebook" /></a>
+                                        <a href=""><img src="{{ asset('images/Twit.png') }}" alt="twitter" /></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <table class="sec-table">
+                                <tr>
+                                    <td><a href="">Terms of Use</a></td>
+                                    <td class="wp-0">|</td>
+                                    <td><a href="">Privacy Policy</a></td>
+                                    <td class="wp-0">|</td>
+                                    <td><a href="">Data Protection Policy</a></td>
+                                </tr>
+                            </table>
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+            <div class="footer-section">If you don’t wish to receive future community emails, click here : <a
+                    href="">&nbsp;unsubscribe</a></div>
         </div>
     </div>
 
-    <div class="main-bg welcome-body">
-        <img class="welcome-bg" src="{{ asset('images/Globe.png') }}" alt="">
-        <div class="welcome-section">
-            <div class="greet-section">
-                <div class="welcome-greet">Hi </div>
-                <div class="welcome-greet">We are very happy to welcome you to the OIS community.</div>
-                <div class="welcome-greet">Text</div>
-            </div>
-            <div class="visit-website">
-                <button onclick="location.href=('{{route('landing')}}')" class="btn btn-primary register-button button-submit">VISIT WEBSITE</button>
-            </div>
-        </div>
-        <div class="social-section">
-            <table class="fir-table">
-                <tr>
-                    <td>OFFICES <a href="" style="margin-left: 15px">Click here</a></td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td><span style="margin-right: 15px">SOCIAL</span></td>
-                                <td>
-                                    <a href=""><img src="{{ asset('images/Face.png') }}" alt="facebook" /></a>
-                                    <a href=""><img src="{{ asset('images/Link.png') }}" alt="Linkedin" /></a>
-                                    <a href=""><img src="{{ asset('images/Insta.png') }}" alt="facebook" /></a>
-                                    <a href=""><img src="{{ asset('images/Twit.png') }}" alt="twitter" /></a>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <table class="sec-table">
-                            <tr>
-                                <td><a href="">Terms of Use</a></td>
-                                <td>|</td>
-                                <td><a href="">Privacy Policy</a></td>
-                                <td>|</td>
-                                <td><a href="">Data Protection Policy</a></td>
-                            </tr>
-                        </table>
-                    </td>
-
-                </tr>
-            </table>
-        </div>
-        <div class="footer-section">If you don’t wish to receive future community emails, click here : <a
-                href="">&nbsp;unsubscribe</a></div>
-    </div>
 
 
 </body>
