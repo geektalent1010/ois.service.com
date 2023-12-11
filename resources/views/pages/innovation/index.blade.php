@@ -1,4 +1,5 @@
 @extends('layouts.app', ['ACTIVE_TITLE' => 'INNOVATION'], ['VIDEO_BACKGROUND' => true])
+@extends('layouts.app', ['ACTIVE_TITLE' => 'INNOVATION'], ['VIDEO_STATUS' => true])
 
 @section('PAGE_LEVEL_STYLES')
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -144,4 +145,19 @@
 
 @section('PAGE_LEVEL_SCRIPTS')
 <script type="text/javascript" src="{{asset('js/util.js')}}">
+<script type="text/javascript">
+    const privacy = document.querySelector(".privacy-modal");
+    function showPrivacy() {
+        privacy.classList.toggle("show-modal");
+    }
+    const terms_use = document.querySelector(".terms-modal");
+    function showTerms() {
+        terms_use.classList.toggle("show-modal");
+    }
+    const data_policy = document.querySelector(".data-modal");
+    function showData() {
+        data_policy.classList.toggle("show-modal");
+    }
+
+</script>
 @endsection

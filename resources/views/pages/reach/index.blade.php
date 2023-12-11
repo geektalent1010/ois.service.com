@@ -1,4 +1,5 @@
 @extends('layouts.app', ['ACTIVE_TITLE' => 'OUR REACH'], ['VIDEO_BACKGROUND' => true])
+@extends('layouts.app', ['ACTIVE_TITLE' => 'OUR REACH'], ['VIDEO_STATUS' => true])
 
 @section('PAGE_LEVEL_STYLES')
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -111,6 +112,7 @@
     function showData() {
         data_policy.classList.toggle("show-modal");
     }
+
 </script>
 <script type="text/javascript" src="{{asset('js/util.js')}}">
 

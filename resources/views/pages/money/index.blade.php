@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'MONEY'])
+@extends('layouts.app', ['ACTIVE_TITLE' => 'MONEY'], ['VIDEO_STATUS' => true])
 
 @section('PAGE_LEVEL_STYLES')
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
