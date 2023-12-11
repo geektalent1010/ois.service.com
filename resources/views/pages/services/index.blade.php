@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'SERVICES'])
+@extends('layouts.app', ['ACTIVE_TITLE' => 'SERVICES'], ['VIDEO_STATUS' => true])
 
 @section('PAGE_LEVEL_STYLES')
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -204,13 +204,13 @@
     }
     function stopVideo() {
         if (window.innerWidth > 769) {
-            video.querySelector('source').src = '/Video/AboutHD.mp4';
+            video.querySelector('source').src = '/Video/ServicesHD.mp4';
             video.load();
             video.play();
             video.muted = true;
         }
         else {
-            video_mobile.querySelector('source').src = '/Video/AboutVM.mp4';
+            video_mobile.querySelector('source').src = '/Video/ServicesVM.mp4';
             video_mobile.load();
             video_mobile.play();
             video_mobile.muted = true;
