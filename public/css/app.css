@@ -986,6 +986,7 @@
 
 .main-bg .intro-section .content-section .foot-section a:hover {
   opacity: 1;
+  text-decoration: none;
 }
 
 .main-bg .intro-section .content-section .foot-section img {
