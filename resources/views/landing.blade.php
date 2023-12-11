@@ -23,7 +23,7 @@
                 <div class="landing-text text-center">Service is not a department,</br>it's our entire company.</div>
             </div>
             <div class="w-100 d-flex flex-column justify-content-center align-items-center">
-                <p class="continue-text text-center">GO TO Dashboard</p>
+                <p class="continue-text text-center">GO TO DASHBOARD</p>
                 <a href="{{ route('dashboard.index') }}">
                     <img class="go-to-menu" src="{{ asset('images/IconMENU.svg') }}" />
                 </a>
