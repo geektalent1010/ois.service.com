@@ -2519,7 +2519,7 @@ body[data-aos-easing=ease-out-back] [data-aos] {
 
 .main-bg .contact-section {
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   color: #003366;
   width: 50vw;
   overflow-y: scroll;
