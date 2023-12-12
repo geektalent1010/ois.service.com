@@ -12,7 +12,6 @@ class CountriesTableSeeder extends Seeder
     public function run()
     {
         $sql = "
-        DELETE FROM `countries`;
         INSERT INTO `countries` (`id`, `code`, `name`, `phone_code`) VALUES
         (1, 'AF', 'Afghanistan', 93),
         (2, 'AL', 'Albania', 355),

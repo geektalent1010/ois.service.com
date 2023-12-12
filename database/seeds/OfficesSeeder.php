@@ -12,29 +12,63 @@ class OfficesSeeder extends Seeder
     public function run()
     {
         $sql = "
-					INSERT INTO `offices` (`id`, `country`, `city`, `address`, `postal`, `phone`, `email`, `providedby`) VALUES
-					(1, 'INDIA', 'NEW DELHI', 'C/O Central Board of Irrigation and Power, Plot No.4, Institutional Area, Malcha Marg, Chanakyapuri', '110021', '0091 8800530119', 'INFODELHI@OISSERVICES.CO', 'IBRAHIM'),
-					(2, 'INDIA', 'BANGALORE', 'No. 14/2, Rajesh Chambers, Brunton Road, Ashok Nagar, MG Road, Craig Park Layout', '560025', '0091 8800530119', 'INFODELHI@OISSERVICES.CO', 'IBRAHIM'),
-					(3, 'Egypt', 'Cairo', '2nd Floor at 51 - Elnoor Street, Eldoki, Giza', '', '002002376627293', 'INFOCAIRO@OISSERVICES.CO', 'IBRAHIM'),
-					(4, 'LEBANON', 'BEIRUT', 'JNAH FACING RAFIC HARIRI HOSPITAL,MAIS 6 BLDG ,3RD FLOOR,APT12', '', '+9611845138', 'infobeirut@oisservices.com', 'MIRNA SIBAI'),
-					(5, 'TURKEY', 'ANKARA', 'Ugur Mumcu\'nun Sokagı, Büyükesat Mahallesi, No:49/3 Gazisomanpara Cankaya/Ankara', '6680', '(0312) 4382175', 'infoankara@oisservices.com', 'İlhan Polat'),
-					(6, 'FRANCE', 'PARIS', '9 RUE PAUL VALERY, GROUND FLOOR,75116 PARIS, FRANCE.', '75116', '33183927781', 'infoparis@oisservices.com', 'Clement'),
-					(7, 'SOUTH AFRICA', 'JOHANNESBURG', 'No. 6 Bolton road, Rosebank, Johannesburg', '2193', '27112682470', 'infojoburg@oisservices.com', 'Emmanuel'),
-					(8, 'SOUTH AFRICA', 'CAPETOWN', 'No. 50 Long Street, Capetown', '7806', '27210133161', 'infocpt@oisservices.com', 'Emmanuel'),
-					(9, 'UNITED ARAB EMIRATES', 'DUBAI', 'Jumeirah Lakes Towers, Cluster I, Silver Tower, Office 22A, 22nd floor, Dubai, United Arab Emirates', 'PO BOX 73049', '97142765448', 'infodubai@oisservices.com', 'Abba'),
-					(10, 'UNITED KINGDOM', 'LONDON', '56-57 Fleet Street, London, United Kindom', 'EC4Y 1JU', '2078320000', 'info@oisservices.com', 'Roy'),
-					(11, 'NETHERLANDS', 'THE HAGUE', 'The First Floor, Regus Building, Koningin Juliana Plein 10, The Hague Central station, Netherlands', '2595 AA', '0031 7089 15324', 'infothehague@oisservices.com', 'David'),
-					(12, 'CHINA', 'SHANGHAI', 'Room 506A, Zhongguancun Science Building, No.2911 North Zhongshan Road, Putuo District, Shanghai, China', '200063', '0086 16621335462', 'shoisservices@163.com', 'Lily'),
-					(13, 'CHINA', 'BEIJING', 'Suite 908 Unit B Kun Sha Building, No.16 Xin Yuan Li Street, Chaoyang District, Beijing, P.R.China', '100027', '8610 84004549', 'oisservicesbj@163.com', 'Lily'),
-					(14, 'CHINA', 'GUANGZHOU', 'Room 8E， 8th floor，Wingkin Square, No.29 Jianshe6malu, Yuexiu District, Guangzhou, Guangdong, China', '510060', '8620 37812021', 'oisservicesgz@163.com', 'Lily'),
-					(15, 'United States', 'Washington DC', '11900 Parklawn Drive Ste 160 Rockville MD', '20852', '+ 1 301-231-7000', 'infowashiingtondc@oisservices.com', 'Jerry'),
-					(16, 'United States', 'New York', '370 Lexington Avenue Ste 613, New York NY', '10017', '+ 1 917-900-1114', 'infony@oisservices.com', 'Jerry'),
-					(17, 'United States', 'Atlanta', '918 Holcomb Bridge Rd Ste 204, Roswell GA', '30076', '+ 1 404-695-6373', 'infoatlanta@oisservices.com', 'Jerry'),
-					(18, 'United States', 'Los Angeles', '5757 West Century Blvd Ste 718, Los Angeles CA', '90045', '+ 1 301-231-7000', 'infola@oisservices.com', 'Jerry'),
-					(19, 'United States', 'Houston', '9894 Bissonnet Street Ste 745, Houston TX', '77036', '+ 1 713-771-1871', 'infohouston@oisservices.com', 'Jerry'),
-					(20, 'Germany', 'Berlin', '1 Alexander Street', '10178', 'Coming Soon', 'Coming Soon', 'Coming Soon'),
-					(21, 'Spain', 'Madrid', 'Maudes, 62', '28003', 'Coming Soon', 'Coming Soon', 'Coming Soon'),
-					(22, 'Italy', 'Roma', 'Via Sicilia, 30', '187', '390642012121', 'inforome@oisservices.com', 'Rabih Nakad');
+        INSERT INTO `offices` VALUES (1, 'Nigeria', 'Abuja', 'No.5 Onitsha Crescent, Off Gimbiya Street, Area 11, Garki, Abuja', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (2, 'Netherlands', 'Amsterdam/ The Hague', 'First Floor, Regus Building, Koningin Juliana Plein 10. Postcode 2595AA, The Hague Central station,', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (3, 'Turkey', 'Ankara', 'Buyukesat Mahallesi, Ugur Mumcu\'nun Sokagi, Konak Apartmani, No:49/3 CANKAYA/ANKARA', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (4, 'USA', 'Atlanta', 'OIS Atlanta. GA, 918 Holcomb Bridge Road, Suite 204, Roswell, Atlanta, GA 30076', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (5, 'China', 'Beijing', 'Suite 908, Building B Kunsha Centre, No. 16 Xin Yuan Li Street, Chaoyang District, Beijing.', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (6, 'Lebanon', 'Beirut', 'OIS Services, Beirut, Lebanon Jnah-Beirut Opposite Rafik Hariri University Hospital Mais 6', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (7, 'Egypt', 'Cairo', '2ND FLOOR AT 51-ELNOOR ST, ELDOKI, GIZA, EGYPT.', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (8, 'South Africa', 'Cape Town', 'No 50, Long Street, Cape Town.', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (9, 'USA', 'Chicago', '4001 West Devon, Suite 509. Chicago IL 60646 ', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (10, 'UAE', 'Dubai', '22A (22nd floor), Silver Tower, Cluster I, Jumeirah Lake Towers, Dubai, U.A.E', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (11, 'China', 'Guangzhou', 'Room 8E, 8th floor, Wingkin Square, No.29 Jianshe6malu, Yuexiu District, Guangzhou.', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (12, 'USA', 'Houston', 'OIS Services, 9894 Bissonnet Street, Suite 745 Houston TX 77036.', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (13, 'South Africa', 'Johannesburg', '6 Bolton Road Parkwood Rosebank, 2193, Johannesburg, South Africa', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (14, 'UK', 'London', '56-57 Fleet Street, London, EC4Y 1JU', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (15, 'USA', 'Los Angeles', 'OIS Los Angeles 5757 West Century Blvd, Suite 718 Los Angeles CA 90045 ', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (16, 'Spain', 'Madrid', 'C.de Maudes, 62. 28003, Madrid', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (17, 'India', 'Mumbai', 'Plot No. C-38/39, Parinee Crescenzo, G-Block, 12th Floor, Bandra Kurla Complex, Bandra East, Taluka-Andheri, Mumbai - 400051, Maharashtra.', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (18, 'India', 'New Delhi', 'C/O Central Board of Irrigation & Power Plot No. 4, Ground Floor, Institutional Area, Malcha Marg, Chanakyapuri New Delhi-110021', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (19, 'USA', 'New York', 'OIS New York, 370 Lexington Ave, Suite 613 New York, NY 10017.', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (20, 'France', 'Paris', '9 Rue Paul Valery 75116 Paris, France', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (21, 'Italy', 'Rome', 'Solutions S.R.L., Via Sicilia, 30 00187 Rome, Italy', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (22, 'China', 'Shanghai', 'Room 506A, Zhongguancun Science Building, No.2911 North Zhongshan Road, Putuo', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (23, 'USA', 'Washington DC', 'OIS WASHINGTON DC, 11900 Parklawn Drive Suite 160, Rockville MD 20852.', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (24, 'Germany', 'Berlin', 'Warmensteinacherstraße Straße 59 a, 12349 Berlin, Germany', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (25, 'Morocco', 'Rabat', 'Millennium Business Centre, Av. Mehdi Ben Barka, Rabat 10170. Morocco', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (26, 'Turkey', 'Istanbul', 'OIS Istanbul Sahrayıcedit Mahallesi, Atatürk Caddesi, Onur İş Merkezi, B Blok, No:3/7 Kadıköy/İstanbul', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (27, 'Manchester', 'UK', 'OIS SERVICES Regus ST JAMES TOWER 7 Charlotte Street Manchester M1 4DZ United Kingdom ', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (28, 'Germany ', 'Frankfurt', 'COMING SOON….!', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (29, 'Hungary ', 'Budapest', 'COMING SOON….!', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (30, 'Ireland ', 'Dublin', 'COMING SOON….!', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (31, 'Belgium ', 'Brussels', 'COMING SOON….!', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (32, 'Sweden ', 'Stockholm', 'COMING SOON….!', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (33, 'Austria ', 'Vienna', 'COMING SOON….!', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (34, 'Romania ', 'Bucharest', 'COMING SOON….!', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (35, 'Poland ', 'Warsaw', 'COMING SOON….!', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (36, 'Portugal ', 'Lisbon', 'COMING SOON….!', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (37, 'Greece ', 'Athens', 'COMING SOON….!', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (38, 'Cyprus ', 'Nicosia', 'COMING SOON….!', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (39, 'Switzerland ', 'Bern', 'COMING SOON….!', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (40, 'Qatar ', 'Doha', 'COMING SOON….!', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (41, 'Japan ', 'Tokyo', 'COMING SOON….!', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (42, 'South Korea ', 'Seoul', 'COMING SOON….!', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (43, 'Thailand ', 'Bangkok', 'COMING SOON….!', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (44, 'Hong Kong ', 'Hong Kong', 'COMING SOON….!', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (45, 'Singapore ', 'Singapore', 'COMING SOON….!', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (46, 'Australia ', 'Canberra and Sidney', 'COMING SOON….!', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (47, 'Brazil ', 'Brasilia', 'COMING SOON….!', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (48, 'Jamaica ', 'Kingston', 'COMING SOON….!', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (49, 'Uganda ', 'Kampala', 'COMING SOON….!', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (50, 'Sudan ', 'Khartoum', 'COMING SOON….!', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (51, 'Pakistan ', 'Islamabad', 'COMING SOON….!', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (52, 'Russia ', 'Moscow', 'COMING SOON….!', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (53, 'Senegal ', 'Dakar', 'COMING SOON….!', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (54, 'Saudi Arabia ', 'Riyadh, Jeddah and Makkah', 'COMING SOON….!', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (55, 'USA ', 'Minneapolis', 'COMING SOON….!', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (56, 'CANADA', 'Ottawa ', 'COMING SOON….!', '', '', '', '', NULL, NULL);
+        INSERT INTO `offices` VALUES (57, 'MAURITIUS', 'Port Louis ', 'COMING SOON….!', '', '', '', '', NULL, NULL);
           ";
         DB::unprepared($sql);
     }
