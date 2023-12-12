@@ -64,16 +64,16 @@
         <div class="social-section">
             <table class="fir-table">
                 <tr>
-                    <td>OFFICES <a href="" style="margin-left: 15px">Click here</a></td>
+                    <td>OFFICES <a href="{{ route('offices.index') }}" style="margin-left: 15px">Click here</a></td>
                     <td>
                         <table>
                             <tr>
                                 <td><span style="margin-right: 15px">SOCIAL</span></td>
                                 <td>
-                                    <a href=""><img src="{{ asset('images/Face.png') }}" alt="facebook" /></a>
-                                    <a href=""><img src="{{ asset('images/Link.png') }}" alt="Linkedin" /></a>
-                                    <a href=""><img src="{{ asset('images/Insta.png') }}" alt="facebook" /></a>
-                                    <a href=""><img src="{{ asset('images/Twit.png') }}" alt="twitter" /></a>
+                                    <a href="https://www.facebook.com"><img src="{{ asset('images/Face.png') }}" alt="facebook" /></a>
+                                    <a href="https://www.linkedin.com/"><img src="{{ asset('images/Link.png') }}" alt="Linkedin" /></a>
+                                    <a href="https://www.instagram.com"><img src="{{ asset('images/Insta.png') }}" alt="facebook" /></a>
+                                    <a href="https://twitter.com"><img src="{{ asset('images/Twit.png') }}" alt="twitter" /></a>
                                 </td>
                             </tr>
                         </table>
