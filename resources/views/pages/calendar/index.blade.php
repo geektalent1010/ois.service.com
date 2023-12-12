@@ -19,7 +19,7 @@
     </video>
     <img class="menu-bg" src="{{ asset('images/Image1H.png') }}" alt="">
     <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt="">
-    <div class="calendar-section">
+    <div class="calendar-section body-section">
         <div>CALENDAR SHOWING</div><div?>ACTUAL APPOINTMENT</div>
     </div>
 </div>

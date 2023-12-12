@@ -4,7 +4,7 @@
   height: calc(100vh - 10px);
   -o-object-fit: cover;
      object-fit: cover;
-  z-index: 1;
+  z-index: 2;
 }
 
 .main-bg .video-section-mobile {
@@ -14,7 +14,7 @@
   height: calc(100vh - 10px);
   -o-object-fit: cover;
      object-fit: cover;
-  z-index: 1;
+  z-index: 2;
 }
 
 .main-bg .menu-bg {
@@ -47,6 +47,7 @@
   justify-content: center;
   overflow-y: scroll;
   flex-wrap: wrap;
+  z-index: 3;
 }
 
 .main-bg .menu-section .backoffice-body {
@@ -974,6 +975,7 @@
   font-family: "DinPro", sans-serif;
   color: white;
   opacity: 0.5;
+  text-decoration: none;
 }
 
 .main-bg .intro-section .content-section .foot-section a {
@@ -982,6 +984,7 @@
   color: white;
   opacity: 0.5;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .main-bg .intro-section .content-section .foot-section a:hover {

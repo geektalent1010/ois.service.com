@@ -88,19 +88,21 @@ body {
     height: calc(100vh - 10px);
     object-fit: cover;
     z-index: 2;
+    position: absolute;
 }
 .video-section-mobile {
     width: 100%;
     height: calc(100vh - 10px);
     object-fit: cover;
     display: none;
+    position: absolute;
 }
 .content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
+    z-index: 3;
     color: white;
     width: 90%;
 }
@@ -495,7 +497,7 @@ footer .social-section .icon-section .social-icon:hover {
     margin-top: 80px;
     padding-bottom: 40px;
 }
-.main-bg-login .login-bg {
+.main-bg-login .menu-bg {
     position: absolute;
     top: 80px;
     width: 100%;
@@ -503,7 +505,7 @@ footer .social-section .icon-section .social-icon:hover {
     object-fit: cover;
     z-index: -1;
 }
-.main-bg-login .login-bg-mobile {
+.main-bg-login .menu-bg-mobile {
     position: absolute;
     top: 80px;
     width: 100%;
@@ -514,6 +516,7 @@ footer .social-section .icon-section .social-icon:hover {
 }
 .login-page {
     min-width: 300px;
+    z-index: 3;
 }
 
 .login-title {
@@ -774,10 +777,10 @@ footer .social-section .icon-section .social-icon:hover {
     .video-section-mobile {
         display: block;
     }
-    .main-bg-login .login-bg {
+    .main-bg-login .menu-bg {
         display: none;
     }
-    .main-bg-login .login-bg-mobile {
+    .main-bg-login .menu-bg-mobile {
         display: block;
     }
     #text-container {

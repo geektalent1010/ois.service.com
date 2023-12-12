@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'FAQ'])
+@extends('layouts.app', ['ACTIVE_TITLE' => 'FAQ'], ['VIDEO_BACKGROUND' => true])
 
 @section('PAGE_LEVEL_STYLES')
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -8,13 +8,13 @@
 @endsection
 
 @section('PAGE_CONTENT')
-<div class="main-bg">   
+<div class="main-bg">
     <video autoplay muted loop class="video-section" playsinline>
         <source src="{{ asset('Video/TechPlexusDesk.mp4') }}" type="video/mp4">
-    </video>   
+    </video>
     <video autoplay muted loop class="video-section-mobile" playsinline>
         <source src="{{ asset('Video/TechPlexusPhone.mp4') }}" type="video/mp4">
-    </video>   
+    </video>
     <div class="m-0 faq-section">
         <div class="content-section">
             <p class="question mt-5 mb-2">What is data mining?</p>
@@ -28,10 +28,14 @@
             <p class="question mb-2">What are some common applications of data mining?</p>
             <p class="answer mb-5">Data mining is commonly used for customer segmentation, fraud detection, market basket analysis, risk assessment, and predictive modeling. It can also be used for sentiment analysis and text mining to analyze social media posts and other unstructured data.</p>
         </div>
-        
+
     </div>
 </div>
 @endsection
 
 @section('PAGE_END')
+@endsection
+
+@section('PAGE_LEVEL_SCRIPTS')
+<script type="text/javascript" src="{{asset('js/util.js')}}">
 @endsection

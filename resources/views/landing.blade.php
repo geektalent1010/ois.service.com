@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'WELCOME'], ['VIDEO_STATUS' => true])
+@extends('layouts.app', ['ACTIVE_TITLE' => 'WELCOME'], ['VIDEO_BACKGROUND' => true], ['VIDEO_PLAY_TEXT' => true])
 
 @section('PAGE_START')
 @endsection
@@ -13,10 +13,10 @@
         <video class="video-section-mobile" id="landing-video-mobile" muted loop playsinline>
             <source src="{{ asset('Video/LandingVM.mp4') }}" type="video/mp4">
         </video>
-        <img class="menu-bg d-none" src="{{ asset('images/Image1H.png') }}" alt="">
-        <img class="menu-bg-mobile d-none" src="{{ asset('images/Image1V.png') }}" alt="">
-        <img class="cancel-video d-none" src="{{ asset('images/Stop.svg') }}" onclick="stopVideo()">
-        <div class="content">
+        <img class="menu-bg" src="{{ asset('images/Image1H.png') }}" alt="">
+        <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt="">
+        <img class="cancel-video d-none" src="{{ asset('images/Stop.svg') }}" onclick="stopVideo_landing()">
+        <div class="content body-section">
             <div id="text-container">
                 <div class="landing-text text-center">Everyone thinks of changing the world,</br> here at OIS, we do!</div>
                 <div class="landing-text text-center">We don't predict the future,</br>we create it!</div>

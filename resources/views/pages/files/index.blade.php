@@ -19,7 +19,7 @@
     </video>
     <img class="menu-bg" src="{{ asset('images/Image1H.png') }}" alt="">
     <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt="">
-    <div class="files-section">
+    <div class="files-section body-section">
         <div>FILES PAGE</div>
     </div>
 </div>

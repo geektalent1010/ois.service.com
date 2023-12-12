@@ -18,7 +18,7 @@
     <img class="menu-bg" src="{{ asset('images/Image1H.png') }}">
     <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}">
     <div class="d-flex justify-content-center">
-        <div class="contact-section">
+        <div class="contact-section body-section">
             <p class="page-title">SEND A MESSAGE</p>
             <div class="info-container w-100 d-flex justify-content-center">
                 <div class="info-box">
@@ -43,43 +43,5 @@
 @endsection
 
 @section('PAGE_LEVEL_SCRIPTS')
-<script type="text/javascript">
-
-    let video = document.querySelector('.video-section');
-    let video_mobile = document.querySelector('.video-section-mobile');
-    function playVideo() {
-        if (window.innerWidth > 769) {
-            video.querySelector('source').src = '/Video/OISH.mp4';
-            video.load();
-            video.play();
-            video.muted = false;
-        }
-        else {
-            video_mobile.querySelector('source').src = '/Video/OISV.mp4';
-            video_mobile.load();
-            video_mobile.play();
-            video_mobile.muted = false;
-        }
-
-        $('.play').addClass('d-none');
-        $('.stop').removeClass('d-none');
-        $('.contact-section').addClass('d-none');
-    }
-    function stopVideo() {
-        if (window.innerWidth > 769) {
-            video.querySelector('source').src = '';
-            video.load();
-            video.muted = true;
-        }
-        else {
-            video_mobile.querySelector('source').src = '';
-            video_mobile.load();
-            video_mobile.muted = true;
-        }
-
-        $('.stop').addClass('d-none');
-        $('.play').removeClass('d-none');
-        $('.contact-section').removeClass('d-none');
-    }
-</script>
+<script type="text/javascript" src="{{asset('js/util.js')}}">
 @endsection
