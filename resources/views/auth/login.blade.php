@@ -7,10 +7,10 @@
 
 @section('PAGE_CONTENT')
 <div class="main-bg-login d-flex justify-content-center align-items-center">
-    <video autoplay muted loop class="video-section d-none" playsinline>
+    <video autoplay muted loop class="video-section" playsinline>
         <source type="video/mp4">
     </video>
-    <video autoplay muted loop class="video-section-mobile d-none" playsinline>
+    <video autoplay muted loop class="video-section-mobile" playsinline>
         <source type="video/mp4">
     </video>
     <img class="menu-bg" src="{{ asset('images/Image1H.png') }}">

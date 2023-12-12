@@ -1,5 +1,4 @@
 @extends('layouts.app', ['ACTIVE_TITLE' => 'INNOVATION'], ['VIDEO_BACKGROUND' => true])
-@extends('layouts.app', ['ACTIVE_TITLE' => 'INNOVATION'], ['VIDEO_STATUS' => true])
 
 @section('PAGE_LEVEL_STYLES')
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -16,6 +15,8 @@
     <video autoplay muted loop class="video-section-mobile" playsinline>
         <source src="{{ asset('Video/InnovationVM.mp4') }}" type="video/mp4">
     </video>
+    <img class="menu-bg" src="{{ asset('images/Image1H.png') }}" alt="">
+    <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt="">
     <div class="m-0 intro-section body-section">
         <div class="title-section d-flex flex-column justify-content-center align-items-center">
             <p class="title desktop-version">The future of virtual reality<br>is here.</p>
