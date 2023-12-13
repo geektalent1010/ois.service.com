@@ -3313,6 +3313,10 @@ body {
   padding-left: 16px;
 }
 
+.terms-body .scroll-body .main-body .sub-body .sub-section .para-list li {
+  padding-left: 20px;
+}
+
 @media only screen and (max-width: 1080px) {
   .terms-body .scroll-body {
     width: 70%;
@@ -3386,6 +3390,10 @@ body {
 
 .policy-body .scroll-body .main-body .sub-body .sub-section .para-list {
   padding-left: 16px;
+}
+
+.policy-body .scroll-body .main-body .sub-body .sub-section .para-list li {
+  padding-left: 20px;
 }
 
 @media only screen and (max-width: 1080px) {
