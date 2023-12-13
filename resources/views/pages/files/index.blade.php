@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'FILES'])
+@extends('layouts.app', ['ACTIVE_TITLE' => 'FILES'], ['VIDEO_LOCK' => true])
 
 @section('title', __('- FILES'))
 

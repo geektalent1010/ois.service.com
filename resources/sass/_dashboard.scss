@@ -35,6 +35,13 @@
         display: none;
     }
 
+    .dashboard-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     .menu-section {
         position: absolute;
         width: 100vw;
@@ -55,7 +62,7 @@
             }
         }
 
-        .backoffice-title {
+        .backoffice-title, .dashboard-title {
             font-size: 21px;
             color: white;
             font-family: 'DinPro Medium', sans-serif;
@@ -274,11 +281,17 @@
     }
 
     @media only screen and (max-width: 1080px) {
+        .dashboard-section {
+            flex-direction: row;
+        }
         .menu-section {
             .menu-body {
                 width: 100vw;
                 overflow-y: scroll;
                 padding-top: 0px !important;
+            }
+            .dashboard-title {
+                display: none;
             }
         }
 
