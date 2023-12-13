@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'NEWS'])
+@extends('layouts.app', ['ACTIVE_TITLE' => 'NEWS'], ['VIDEO_LOCK' => true])
 
 @section('title', __('- NEWS'))
 
