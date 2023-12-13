@@ -38,6 +38,13 @@
   display: none;
 }
 
+.main-bg .body-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .main-bg .menu-section {
   position: absolute;
   width: 100vw;
@@ -59,8 +66,9 @@
   width: 33.3333% !important;
 }
 
-.main-bg .menu-section .backoffice-title {
-  font-size: 24px;
+.main-bg .menu-section .backoffice-title,
+.main-bg .menu-section .dashboard-title {
+  font-size: 21px;
   color: white;
   font-family: "DinPro Medium", sans-serif;
   margin-top: 20px;
@@ -262,10 +270,18 @@
 }
 
 @media only screen and (max-width: 1080px) {
+  .main-bg .body-section {
+    flex-direction: row;
+  }
+
   .main-bg .menu-section .menu-body {
     width: 100vw;
     overflow-y: scroll;
     padding-top: 0px !important;
+  }
+
+  .main-bg .menu-section .dashboard-title {
+    display: none;
   }
 
   .main-bg .video-section {
@@ -348,8 +364,8 @@
 }
 
 .register-section .title {
-  font-size: 24px;
-  font-family: "Montserrat Medium", sans-serif;
+  font-size: 21px;
+  font-family: "DinPro Medium", sans-serif;
   margin-top: 40px;
   margin-bottom: 40px;
   color: white;
@@ -489,7 +505,8 @@
 }
 
 .profile-section .main-title {
-  font-size: 24px;
+  font-size: 21px;
+  font-family: "DinPro Medium", sans-serif;
   height: 50px;
   min-height: 50px;
   display: flex;

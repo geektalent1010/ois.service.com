@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'BOOKING'])
+@extends('layouts.app', ['ACTIVE_TITLE' => 'BOOKING'], ['VIDEO_LOCK' => true])
 
 @section('title', __('- BOOKING'))
 

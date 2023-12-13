@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'CALENDAR'])
+@extends('layouts.app', ['ACTIVE_TITLE' => 'CALENDAR'], ['VIDEO_LOCK' => true])
 
 @section('title', __('- CALENDAR'))
 
