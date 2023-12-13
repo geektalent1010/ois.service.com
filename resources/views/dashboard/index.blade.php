@@ -17,7 +17,7 @@
     </video>
     <img class="menu-bg" src="{{ asset('images/Image1H.png') }}" alt="">
     <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt="">
-    <div class="m-0 menu-section body-section">
+    <div class="m-0 menu-section body-section dashboard-section">
         <p class="dashboard-title my-0">WELCOME TO THE CLIENT PORTAL</p>
         <div class="row m-0 menu-body">
             <div class="navItem" onclick="">
