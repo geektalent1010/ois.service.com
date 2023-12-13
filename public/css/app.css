@@ -38,7 +38,7 @@
   display: none;
 }
 
-.main-bg .body-section {
+.main-bg .dashboard-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -270,7 +270,7 @@
 }
 
 @media only screen and (max-width: 1080px) {
-  .main-bg .body-section {
+  .main-bg .dashboard-section {
     flex-direction: row;
   }
 

@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'LOGIN'])
+@extends('layouts.app', ['ACTIVE_TITLE' => 'LOGIN'], ['VIDEO_LOCK' => true])
 
 @section('title', __('- Log In'))
 
