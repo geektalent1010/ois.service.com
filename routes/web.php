@@ -59,7 +59,11 @@ Route::get('/contact', 'ContactController@index')->name('contact.index');
 
 Route::get('/offices', 'OfficesController@index')->name('offices.index');
 
+Route::get('/terms', 'TermsController@index')->name('terms.index');
 
+Route::get('/policy', 'PolicyController@index')->name('policy.index');
+
+Route::get('/protection', 'ProtectionController@index')->name('protection.index');
 
 Route::get('/solutions', 'SolutionsController@index')->name('solutions.index');
 Route::get('/faq', 'FaqController@index')->name('faq.index');

@@ -24,6 +24,9 @@ class HomeController extends Controller
     public function index()
     {
         // return view('home');
-        return view('welcome');
+        $userData['first_name'] = 'Yu';
+        $userData['last_name'] = 'Guobin';
+        return view('welcome')
+            ->with('userData', $userData);
     }
 }

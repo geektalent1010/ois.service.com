@@ -1,5 +1,4 @@
 <div class="main-body">
-
     <div class="header-section" style="position:relative">
         <div class="navbar">
             <div class="header-body">
@@ -83,11 +82,11 @@
                     <td colspan="2">
                         <table class="sec-table">
                             <tr>
-                                <td><a href="">Terms of Use</a></td>
+                                <td><a href="{{route('terms.index')}}">Terms of Use</a></td>
                                 <td class="wp-0">|</td>
-                                <td><a href="">Privacy Policy</a></td>
+                                <td><a href="{{route('policy.index')}}">Privacy Policy</a></td>
                                 <td class="wp-0">|</td>
-                                <td><a href="">Data Protection Policy</a></td>
+                                <td><a href="{{route('protection.index')}}">Data Protection Policy</a></td>
                             </tr>
                         </table>
                     </td>

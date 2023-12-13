@@ -1,0 +1,70 @@
+body {
+    font-family: "DinPro", sans-serif;
+    background-color: #003366;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+.policy-body {
+    width: 100%;
+    height: 100vh;
+    .scroll-body {
+        width: 50%;
+        height: 94vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow-y: auto;
+        border-radius: 10px;
+        .main-body {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -47vh);
+            background-color: white;
+            padding: 50px 50px;
+            .main-title {
+                font-size: 24px;
+                padding-bottom: 16px;
+                font-weight: bold;
+            }
+            .sub-body {
+                .sub-title {
+                    font-size: 16px;
+                    padding-bottom: 16px;
+                    padding-left: 32px;
+                    font-weight: bold;
+                }
+                .sub-section {
+                    font-size: 16px;
+                    text-align: justify;
+                    .para-list {
+                        padding-left: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .policy-body {
+        .scroll-body {
+            width: 70%;
+        }
+    }
+}
+@media only screen and (max-width: 575.98px) {
+    .policy-body {
+        .scroll-body {
+            height: 80vh;
+            width: 90%;
+            .main-body {
+                padding: 30px;
+                transform: translate(-50%, -40vh);
+            }
+        }
+    }
+}

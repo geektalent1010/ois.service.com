@@ -3256,3 +3256,258 @@ body[data-aos-easing=ease-out-back] [data-aos] {
   }
 }
 
+body {
+  font-family: "DinPro", sans-serif;
+  background-color: #003366;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.terms-body {
+  width: 100%;
+  height: 100vh;
+}
+
+.terms-body .scroll-body {
+  width: 50%;
+  height: 94vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: auto;
+  border-radius: 10px;
+}
+
+.terms-body .scroll-body .main-body {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -47vh);
+  background-color: white;
+  padding: 50px 50px;
+}
+
+.terms-body .scroll-body .main-body .main-title {
+  font-size: 24px;
+  padding-bottom: 16px;
+  font-weight: bold;
+}
+
+.terms-body .scroll-body .main-body .sub-body .sub-title {
+  font-size: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  font-weight: bold;
+}
+
+.terms-body .scroll-body .main-body .sub-body .sub-section {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.terms-body .scroll-body .main-body .sub-body .sub-section .para-list {
+  padding-left: 16px;
+}
+
+@media only screen and (max-width: 1080px) {
+  .terms-body .scroll-body {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .terms-body .scroll-body {
+    height: 80vh;
+    width: 90%;
+  }
+
+  .terms-body .scroll-body .main-body {
+    padding: 30px;
+    transform: translate(-50%, -40vh);
+  }
+}
+
+body {
+  font-family: "DinPro", sans-serif;
+  background-color: #003366;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.policy-body {
+  width: 100%;
+  height: 100vh;
+}
+
+.policy-body .scroll-body {
+  width: 50%;
+  height: 94vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: auto;
+  border-radius: 10px;
+}
+
+.policy-body .scroll-body .main-body {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -47vh);
+  background-color: white;
+  padding: 50px 50px;
+}
+
+.policy-body .scroll-body .main-body .main-title {
+  font-size: 24px;
+  padding-bottom: 16px;
+  font-weight: bold;
+}
+
+.policy-body .scroll-body .main-body .sub-body .sub-title {
+  font-size: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  font-weight: bold;
+}
+
+.policy-body .scroll-body .main-body .sub-body .sub-section {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.policy-body .scroll-body .main-body .sub-body .sub-section .para-list {
+  padding-left: 16px;
+}
+
+@media only screen and (max-width: 1080px) {
+  .policy-body .scroll-body {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .policy-body .scroll-body {
+    height: 80vh;
+    width: 90%;
+  }
+
+  .policy-body .scroll-body .main-body {
+    padding: 30px;
+    transform: translate(-50%, -40vh);
+  }
+}
+
+body {
+  font-family: "DinPro", sans-serif;
+  background-color: #003366;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.protection-body {
+  width: 100%;
+  height: 100vh;
+}
+
+.protection-body .scroll-body {
+  width: 50%;
+  height: 94vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: auto;
+  border-radius: 10px;
+}
+
+.protection-body .scroll-body .main-body {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -47vh);
+  background-color: white;
+  padding: 50px 50px;
+}
+
+.protection-body .scroll-body .main-body .main-title {
+  font-size: 24px;
+  padding-bottom: 16px;
+  font-weight: bold;
+}
+
+.protection-body .scroll-body .main-body .sub-body .sub-title {
+  font-size: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  font-weight: bold;
+}
+
+.protection-body .scroll-body .main-body .sub-body .sub-section {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.protection-body .scroll-body .main-body .sub-body .sub-section .para-list {
+  padding-left: 16px;
+}
+
+.protection-body .scroll-body .main-body .sub-body .sub-section .para-list li {
+  padding-left: 20px;
+}
+
+.protection-body .scroll-body .main-body .sub-body .sub-section .para-list-digit {
+  list-style-type: decimal;
+  padding-left: 16px;
+}
+
+.protection-body .scroll-body .main-body .sub-body .sub-section .para-list-digit li {
+  padding-left: 20px;
+}
+
+.protection-body .scroll-body .main-body .sub-body .sub-section table,
+.protection-body .scroll-body .main-body .sub-body .sub-section tr,
+.protection-body .scroll-body .main-body .sub-body .sub-section td,
+.protection-body .scroll-body .main-body .sub-body .sub-section th {
+  border: 1px solid black;
+  text-align: left;
+}
+
+.protection-body .scroll-body .main-body .sub-body .sub-section td,
+.protection-body .scroll-body .main-body .sub-body .sub-section th {
+  padding: 8px;
+}
+
+.protection-body .scroll-body .main-body .sub-body .sub-section th {
+  background-color: rgba(0, 60, 113, 0.3019607843);
+}
+
+@media only screen and (max-width: 1080px) {
+  .protection-body .scroll-body {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .protection-body .scroll-body {
+    height: 80vh;
+    width: 90%;
+  }
+
+  .protection-body .scroll-body .main-body {
+    padding: 30px;
+    transform: translate(-50%, -40vh);
+  }
+}
+
