@@ -2,7 +2,7 @@
     <div class="modal-header">
         <div class="close-but">
             <a class="d-flex align-items-center" onclick="toggleTerms()">
-                <img class="close-icon" src="{{ asset('images/logo/IconCLOSE.svg') }}" alt="" />
+                <img class="close-icon" src="{{ asset('images/Logo/IconCLOSE.svg') }}" alt="" />
             </a>
         </div>
     </div>
