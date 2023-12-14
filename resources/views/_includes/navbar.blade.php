@@ -22,6 +22,9 @@
                     <a href="{{ route('dashboard.index') }}" class="d-flex align-items-center">
                         <img class="menu-icon" src="{{ asset('images/IconMENU.svg') }}" alt="" />
                     </a>
+                    <a onclick="toggleChatbotModal()" class="d-flex align-items-center">
+                        <img class="chatbot-icon" src="{{ asset('images/Logo/IconCHATBOT1.svg') }}" alt="" />
+                    </a>
                     @if (!isset($ACTIVE_LOGOUT))
                     <a href="{{ route('login') }}" class="d-flex align-items-center">
                         <img class="login-icon" src="{{ asset('images/IconLOGIN.svg') }}" alt="" />
@@ -39,6 +42,9 @@
                     <a href="{{ route('dashboard.index') }}" class="d-flex align-items-center">
                         <img class="menu-icon" src="{{ asset('images/IconMENU.svg') }}" alt="" />
                     </a>
+                    <a onclick="toggleChatbotModal()" class="d-flex align-items-center">
+                        <img class="chatbot-icon" src="{{ asset('images/Logo/IconCHATBOT1.svg') }}" alt="" />
+                    </a>
                     <a href="{{ route('logout') }}" class="d-flex align-items-center"
                         onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                         <img src="{{ asset('images/IconLOGOUT.svg') }}" alt="Logout" class="logout" />
@@ -51,3 +57,4 @@
         </div>
     </nav>
 </div>
+
