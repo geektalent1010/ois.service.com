@@ -1109,10 +1109,10 @@ th {
         min-width: 100%;
     }
     .headerSection nav.navbar .navbarItem a .menu-icon {
-        margin-right: 7px;
+        margin-right: 12px;
     }
     .headerSection nav.navbar .navbarItem a .chatbot-icon {
-        margin-right: 7px;
+        margin-right: 12px;
     }
 }
 
