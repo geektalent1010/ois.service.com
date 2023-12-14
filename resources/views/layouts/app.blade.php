@@ -77,15 +77,13 @@
     const privacy_trigger = document.querySelector(".privacy-trigger");
     const terms_trigger = document.querySelector(".terms-trigger");
     const data_trigger = document.querySelector(".data-trigger");
-
-    function togglePrivacyModal() {
+    function togglePrivacy() {
         privacy_modal.classList.toggle("show-modal");
     }
-    function toggleTermsModal() {
+    function toggleTerms() {
         terms_modal.classList.toggle("show-modal");
-        console.log("df")
     }
-    function toggleDataModal() {
+    function toggleData() {
         data_modal.classList.toggle("show-modal");
     }
     function toggleCookieModal() {
@@ -94,13 +92,13 @@
 
     function windowOnClick(event) {
         if (event.target === privacy_modal) {
-            togglePrivacyModal();
+            togglePrivacy();
         }
         else if (event.target === terms_modal) {
-            toggleTermsModal();
+            toggleTerms();
         }
         else if (event.target === data_modal) {
-            toggleDataModal();
+            toggleData();
         }
         else if (event.target === cookie_modal) {
             toggleCookieModal();
@@ -689,7 +687,7 @@
         logo_icon.addEventListener('mouseout', function () {
             logo_icon.src = '/images/Logo/LogoOIS1.svg';
         });
-        logo_icon.addEventListener('mousedown', function() {
+        logo_icon.addEventListener('mousedown', function () {
             logo_icon.src = '/images/Logo/LogoOIS2.svg';
         });
         logo_icon.addEventListener('mouseup', function () {
