@@ -43,6 +43,8 @@
 
     @include('_includes.data_policy')
 
+    @include('_includes.chatbot')
+
     @include('_includes.cookies')
 
     @include('_includes.offices')
@@ -73,10 +75,12 @@
     const data_modal = document.querySelector(".data-modal");
     const cookie_modal = document.querySelector(".cookie-modal");
     const office_modal = document.querySelector(".office-modal");
+    const chatbot_modal = document.querySelector(".chatbot-modal");
 
     const privacy_trigger = document.querySelector(".privacy-trigger");
     const terms_trigger = document.querySelector(".terms-trigger");
     const data_trigger = document.querySelector(".data-trigger");
+
     function togglePrivacy() {
         privacy_modal.classList.toggle("show-modal");
     }
@@ -88,6 +92,9 @@
     }
     function toggleCookieModal() {
         cookie_modal.classList.toggle("show-modal");
+    }
+    function toggleChatbotModal() {
+        chatbot_modal.classList.toggle("show-modal");
     }
 
     function windowOnClick(event) {
@@ -105,6 +112,9 @@
         }
         else if (event.target === office_modal) {
             $('.office-modal').removeClass('show-modal');
+        }
+        else if (event.target === chatbot_modal) {
+            toggleChatbotModal();
         }
     }
 
@@ -679,6 +689,7 @@
     const go_to_login = document.querySelector('.go-to-login');
     const logout_icon = document.querySelector('.logout');
     const logo_icon = document.querySelector('.logo-ois');
+    const chatbot_icon = document.querySelector('.chatbot-icon');
 
     if (logo_icon) {
         logo_icon.addEventListener('mouseover', function () {
@@ -761,6 +772,15 @@
         });
         logout_icon.addEventListener('mouseout', function () {
             logout_icon.src = '/images/IconLOGOUT.svg';
+        });
+    }
+
+    if (chatbot_icon) {
+        chatbot_icon.addEventListener('mouseover', function () {
+            chatbot_icon.src = '/images/Logo/IconCHATBOT2.svg';
+        });
+        chatbot_icon.addEventListener('mouseout', function () {
+            chatbot_icon.src = '/images/Logo/IconCHATBOT1.svg';
         });
     }
 

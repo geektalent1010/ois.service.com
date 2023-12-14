@@ -36,6 +36,11 @@ body {
     width: 20px;
     margin-right: 20px;
 }
+.headerSection nav.navbar .navbarItem a .chatbot-icon {
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
 .headerSection nav.navbar .navbarItem a .login-icon {
     width: 22px;
 }
@@ -345,6 +350,7 @@ footer .social-section .icon-section .social-icon:hover {
     transform: scale(1);
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
     display: block;
+    transition: 0.5s;
 }
 
 .disc-ul {
@@ -777,6 +783,109 @@ th {
     font-size: 12px;
     margin: 0 0 0 24px;
     font-family: "DinPro", sans-serif;
+}
+
+.chatbot-modal {
+    background-color: rgba(0, 51, 102, 0.5);
+}
+
+.chatbot-modal .modal-section {
+    width: 320px;
+    height: 340px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.chatbot-modal .modal-header {
+    height: 80px;
+    background-color: #00c6ff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 15px;
+    padding-left: 20px;
+}
+
+.chatbot-modal .modal-header .chatbot-logo {
+    width: 40px;
+}
+
+.chatbot-modal .modal-header span {
+  font-family: "DinPro Medium", sans-serif;
+  font-size: 21px;
+}
+
+.chatbot-modal .modal-header .close-but {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.chatbot-modal .modal-header .close-but img {
+    width: 22px;
+}
+
+.chatbot-modal .modal-content {
+    height: 180px;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    font-family: "DinPro", sans-serif;
+}
+
+.chatbot-modal .modal-content .chat-group {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    text-align: justify;
+}
+
+.chatbot-modal .modal-content .chat-group img {
+    width: 22px;
+}
+
+.chatbot-modal .modal-content .chat-group .chat-description {
+    margin-top: 15px;
+}
+
+.chatbot-modal .modal-footer {
+    height: 80px;
+    border: none;
+    background-color: #338dc9;
+    color: white;
+    padding: 20px;
+    position: relative;
+    font-size: 16px;
+    font-family: "DinPro", sans-serif;
+}
+
+.chatbot-modal .modal-footer .chat-input-section {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: calc(100% - 50px);
+}
+
+.chatbot-modal .modal-footer .chat-input-section textarea {
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.chatbot-modal .modal-footer .chat-input-section textarea::placeholder {
+    color: white;
+  }
+
+.chatbot-modal .modal-footer .send-icon {
+    width: 22px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 1080px) {
