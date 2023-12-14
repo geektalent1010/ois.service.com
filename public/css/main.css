@@ -29,7 +29,7 @@ body {
 .headerSection nav.navbar .navbarItem a {
     color: #fff;
     font-size: 18px;
-    font-family: 'DinPro', sans-serif;
+    font-family: "DinPro", sans-serif;
     text-decoration: none;
 }
 .headerSection nav.navbar .navbarItem a .menu-icon {
@@ -44,7 +44,7 @@ body {
 }
 .headerSection nav.navbar .navbarItem a .nav-menu {
     font-size: 12px;
-    font-family: 'Montserrat Regular', sans-serif;
+    font-family: "Montserrat Regular", sans-serif;
     color: white;
     margin-bottom: 0px;
     margin-right: 5px;
@@ -72,7 +72,7 @@ body {
 }
 .headerSection nav.navbar .navbarItem .navbar-title {
     font-size: 18px;
-    font-family: 'Montserrat Regular', sans-serif;
+    font-family: "Montserrat Regular", sans-serif;
 }
 .video-wrapper {
     position: relative;
@@ -85,7 +85,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 1;
-  }
+}
 .video-section {
     width: 100%;
     height: calc(100vh - 10px);
@@ -111,7 +111,7 @@ body {
 }
 .landing-text {
     font-size: 28px;
-    font-family: 'Montserrat Medium', sans-serif;
+    font-family: "Montserrat Medium", sans-serif;
     line-height: 46px;
     width: 100%;
 }
@@ -122,24 +122,42 @@ body {
     height: 100px;
 }
 #text-container > * {
-    position: absolute; left: 100%; top: 0;
-    animation: 30s autoplay infinite ease-in-out
+    position: absolute;
+    left: 100%;
+    top: 0;
+    animation: 30s autoplay infinite ease-in-out;
 }
 @keyframes autoplay {
-    0% {left: 100%}
-    2% {left: 0%}
-    33.33% {left: 0%}
-    35.33% {left: -100%}
-    100% {left: -100%}
+    0% {
+        left: 100%;
+    }
+    2% {
+        left: 0%;
+    }
+    33.33% {
+        left: 0%;
+    }
+    35.33% {
+        left: -100%;
+    }
+    100% {
+        left: -100%;
+    }
 }
-#text-container > *:nth-child(1) {animation-delay: 0s}
-#text-container > *:nth-child(2) {animation-delay: 10s}
-#text-container > *:nth-child(3) {animation-delay: 20s}
+#text-container > *:nth-child(1) {
+    animation-delay: 0s;
+}
+#text-container > *:nth-child(2) {
+    animation-delay: 10s;
+}
+#text-container > *:nth-child(3) {
+    animation-delay: 20s;
+}
 .continue-text {
     font-size: 12px;
     margin-top: 20px;
     margin-bottom: 5px;
-    font-family: 'DinPro', sans-serif;
+    font-family: "DinPro", sans-serif;
 }
 footer {
     position: fixed;
@@ -147,7 +165,7 @@ footer {
     width: 100%;
     height: 40px;
     z-index: 9;
-    color: #FFFFFF;
+    color: #ffffff;
     background-color: #003366;
     padding: 8px 16px;
     display: flex;
@@ -223,19 +241,19 @@ footer .social-section .icon-section .social-icon {
     margin-right: 15px;
     opacity: 0.5;
 }
-footer .office-section .country-column{
+footer .office-section .country-column {
     width: 25%;
 }
 .footer-title {
     font-size: 16px;
-    font-family: 'DinPro Medium', sans-serif;
+    font-family: "DinPro Medium", sans-serif;
     margin-bottom: 0px;
     margin-left: 30px;
 }
 .footer-content {
     font-size: 14px;
     cursor: pointer;
-    font-family: 'DinPro', sans-serif;
+    font-family: "DinPro", sans-serif;
     color: #ffffff80;
     margin-bottom: 0px;
     margin-top: 5px;
@@ -267,28 +285,29 @@ footer .social-section .icon-section .social-icon:hover {
 
 .modal-header {
     height: 50px;
-    position: absolute;
-    top: 2.5vh;
     z-index: 3;
-    width: 50vw;
     border: none;
-    left: 50%;
-    transform: translate(-50%, 0);
     padding: 0;
 }
 
-.modal-content {
+.modal-section {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 50px;
     width: 50vw;
     height: 95vh;
     border-radius: 0.5rem;
+    background-color: white;
+}
+
+.modal-content {
+    padding: 50px;
+    height: calc(95vh - 100px);
     color: #003366;
     overflow-y: auto;
+    border: none;
+    padding-top: 0;
 }
 
 .modal-header .close-but {
@@ -305,7 +324,7 @@ footer .social-section .icon-section .social-icon:hover {
 .video-modal-content {
     position: absolute;
     top: 50%;
-    left:50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     padding: 0px;
     width: auto;
@@ -322,7 +341,7 @@ footer .social-section .icon-section .social-icon:hover {
 .show-modal {
     opacity: 1;
     visibility: visible;
-    transform: scale(1.0);
+    transform: scale(1);
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
     display: block;
 }
@@ -339,47 +358,48 @@ footer .social-section .icon-section .social-icon:hover {
 
 .mod-header {
     font-size: 24px;
-    font-family: 'DinPro Medium', sans-serif;
+    font-family: "DinPro Medium", sans-serif;
     text-align: justify;
 }
 .mod-title {
     font-size: 16px;
-    font-family: 'DinPro Medium', sans-serif;
+    font-family: "DinPro Medium", sans-serif;
     margin-left: 40px;
     text-align: justify;
 }
 .mod-subtitle {
     font-size: 16px;
-    font-family: 'DinPro Medium', sans-serif;
+    font-family: "DinPro Medium", sans-serif;
     text-align: justify;
 }
 .mod-text {
     font-size: 16px;
-    font-family: 'DinPro Light', sans-serif;
+    font-family: "DinPro Light", sans-serif;
     text-align: justify;
 }
 .mod-subtext {
     font-size: 16px;
-    font-family: 'DinPro Light', sans-serif;
+    font-family: "DinPro Light", sans-serif;
     margin-bottom: 0px;
     text-indent: 0em;
     padding-left: 1em;
     text-align: justify;
 }
 .data-table {
-    font-family: 'DinPro Light', sans-serif;
+    font-family: "DinPro Light", sans-serif;
     font-size: 16px;
     border-collapse: collapse;
     width: 100%;
 }
-.data-table td, th {
-    border: 1px solid #003C71;
+.data-table td,
+th {
+    border: 1px solid #003c71;
     text-align: left;
     padding: 8px;
     width: 50%;
 }
 .data-table th {
-    font-family: 'DinPro Medium', sans-serif;
+    font-family: "DinPro Medium", sans-serif;
     background-color: #003c714d;
 }
 .cookie-btn {
@@ -388,16 +408,16 @@ footer .social-section .icon-section .social-icon:hover {
     margin-bottom: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #003C71;
+    background-color: #003c71;
     color: white;
     -webkit-border-radius: 10rem;
     -moz-border-radius: 10rem;
     -ms-border-radius: 10rem;
     border-radius: 10rem;
     font-size: 12px;
-    font-family: 'DinPro Light', sans-serif;
+    font-family: "DinPro Light", sans-serif;
     cursor: pointer;
-    border: 0.1rem solid #003C71;
+    border: 0.1rem solid #003c71;
 }
 
 .cookie-btn:hover {
@@ -412,7 +432,7 @@ footer .social-section .icon-section .social-icon:hover {
     transform: translate(-50%, -50%);
     background-color: white;
     width: 45vw;
-    color: #003C71;
+    color: #003c71;
     overflow-y: auto;
 }
 .office-info-section {
@@ -437,11 +457,11 @@ footer .social-section .icon-section .social-icon:hover {
     width: 60%;
 }
 .information-section {
-    color:#003C71;
+    color: #003c71;
     width: 80%;
     padding-left: 20px;
 }
-.arrow-section{
+.arrow-section {
     width: 10%;
 }
 .arrow-section img {
@@ -498,16 +518,16 @@ footer .social-section .icon-section .social-icon:hover {
 }
 .contact-btn a {
     padding: 6px 40px;
-    background-color: #003C71;
+    background-color: #003c71;
     color: white;
     -webkit-border-radius: 8rem;
     -moz-border-radius: 8rem;
     -ms-border-radius: 8rem;
     border-radius: 8rem;
     font-size: 14px;
-    font-family: 'Montserrat Regular', sans-serif;
+    font-family: "Montserrat Regular", sans-serif;
     cursor: pointer;
-    border: 0.1rem solid #003C71;
+    border: 0.1rem solid #003c71;
     text-decoration: none;
     text-align: center;
 }
@@ -558,7 +578,7 @@ footer .social-section .icon-section .social-icon:hover {
 }
 
 .login-title p {
-    font-family: 'DinPro Medium', sans-serif;
+    font-family: "DinPro Medium", sans-serif;
     font-size: 21px;
     text-transform: uppercase;
     margin-top: 20px;
@@ -566,13 +586,13 @@ footer .social-section .icon-section .social-icon:hover {
 }
 
 .login-title span {
-    font-family: 'DinPro', sans-serif;
+    font-family: "DinPro", sans-serif;
     font-size: 12px;
     text-transform: uppercase;
 }
 
 .login-title .join-desc {
-    font-family: 'DinPro', sans-serif;
+    font-family: "DinPro", sans-serif;
     font-size: 16px;
     text-transform: none;
 }
@@ -591,7 +611,7 @@ footer .social-section .icon-section .social-icon:hover {
     padding-left: 40px;
     padding-right: 40px;
     font-size: 16px;
-    font-family: 'DinPro', sans-serif;
+    font-family: "DinPro", sans-serif;
     line-height: 1.4;
     color: #fff;
     -webkit-transition: all 0.2s ease-in-out;
@@ -608,20 +628,21 @@ footer .social-section .icon-section .social-icon:hover {
     transition: background-color 5000s ease-in-out 0s;
 }
 
-.login-page .form-group .form-control:hover, .login-page .form-group .form-control:focus {
-  box-shadow: none;
+.login-page .form-group .form-control:hover,
+.login-page .form-group .form-control:focus {
+    box-shadow: none;
 }
 .login-page .form-group .form-control::-webkit-input-placeholder {
-  color: #fff !important;
+    color: #fff !important;
 }
 .login-page .form-group .form-control::-moz-placeholder {
-  color: #fff !important;
+    color: #fff !important;
 }
 .login-page .form-group .form-control:-moz-placeholder {
-  color: #fff !important;
+    color: #fff !important;
 }
 .login-page .form-group .form-control:-ms-input-placeholder {
-  color: #fff !important;
+    color: #fff !important;
 }
 
 .login-page .login-button {
@@ -630,13 +651,13 @@ footer .social-section .icon-section .social-icon:hover {
     background: #00a9ea;
     display: block;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #ffffff;
     -webkit-border-radius: 10rem;
     -moz-border-radius: 10rem;
     -ms-border-radius: 10rem;
     border-radius: 10rem;
     font-size: 16px;
-    font-family: 'DinPro', sans-serif;
+    font-family: "DinPro", sans-serif;
     border: 0.1rem solid #00a9ea;
     cursor: pointer;
 }
@@ -648,19 +669,22 @@ footer .social-section .icon-section .social-icon:hover {
     color: #ffffff !important;
     border-color: #003366 !important;
 }
-.login-page .login-button:focus, .login-page .login-button:active {
+.login-page .login-button:focus,
+.login-page .login-button:active {
     background: #003366;
     color: #ffffff;
     border-color: #003366 !important;
     outline: none;
     box-shadow: none;
 }
-.login-page .login-button.disabled, .login-page .login-button:disabled, .login-page .login-button[disabled]{
+.login-page .login-button.disabled,
+.login-page .login-button:disabled,
+.login-page .login-button[disabled] {
     opacity: 1 !important;
 }
 
 .login-page .login-button span {
-    font-family: 'DinPro Bold', sans-serif;
+    font-family: "DinPro Bold", sans-serif;
 }
 
 .devices-img {
@@ -668,7 +692,7 @@ footer .social-section .icon-section .social-icon:hover {
 }
 
 .login-page a {
-    font-family: 'DinPro', sans-serif;
+    font-family: "DinPro", sans-serif;
     font-size: 12px;
     text-transform: uppercase;
     margin-top: 10px;
@@ -706,7 +730,7 @@ footer .social-section .icon-section .social-icon:hover {
     display: inline-block;
     padding: 0;
     vertical-align: middle;
-    transition: border .2s ease-in-out;
+    transition: border 0.2s ease-in-out;
 }
 
 /* On mouse-over, add a grey background color */
@@ -715,8 +739,7 @@ footer .social-section .icon-section .social-icon:hover {
     background: #00a9ea;
 }
 
-.checkbox-container input:disabled ~ .checkbox-circle
-{
+.checkbox-container input:disabled ~ .checkbox-circle {
     background-color: #ccc;
 }
 /* When the checkbox button is checked, add a blue background */
@@ -724,7 +747,7 @@ footer .social-section .icon-section .social-icon:hover {
     border: 1px solid #00a9ea;
     background: #00a9ea;
     box-shadow: 0 0 0 1px #00a9ea;
-    transition: background .2s ease-in-out;
+    transition: background 0.2s ease-in-out;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -752,9 +775,8 @@ footer .social-section .icon-section .social-icon:hover {
     display: inline-block;
     font-size: 12px;
     margin: 0 0 0 24px;
-    font-family: 'DinPro', sans-serif;
+    font-family: "DinPro", sans-serif;
 }
-
 
 @media only screen and (max-width: 1080px) {
     #text-container {
@@ -866,10 +888,10 @@ footer .social-section .icon-section .social-icon:hover {
         padding-left: 0px;
         width: 100%;
     }
-    footer .social-section .icon-section{
+    footer .social-section .icon-section {
         margin-left: 0px;
     }
-    footer .social-section .icon-section .social-icon{
+    footer .social-section .icon-section .social-icon {
         margin-top: 10px;
         margin-bottom: 10px;
     }
@@ -880,19 +902,18 @@ footer .social-section .icon-section .social-icon:hover {
     footer .office-section .right {
         padding-left: 50px;
     }
-    .modal-content {
+
+    .modal-section {
         width: 90vw;
         height: 80vh;
+    }
+    .modal-content {
         padding: 30px;
+        padding-top: 0;
+        height: calc(80vh - 60px);
     }
     .modal-header {
         height: 30px;
-        position: absolute;
-        top: 10vh;
-        width: 90vw;
-        border: none;
-        left: 50%;
-        transform: translate(-50%, 0);
         padding: 0;
     }
     .modal-header .close-but {
@@ -979,13 +1000,14 @@ footer .social-section .icon-section .social-icon:hover {
     }
 }
 
-
 .form-group .combodate {
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
-.form-group select.day, .form-group select.month, .form-group select.year {
+.form-group select.day,
+.form-group select.month,
+.form-group select.year {
     background: #04246b40;
     border: none;
     -webkit-border-radius: 10rem;
@@ -1047,7 +1069,7 @@ label.has-error {
     font-size: 14px;
     color: #00ffff;
     text-align: left;
-    font-family: 'DinPro Light', sans-serif;
+    font-family: "DinPro Light", sans-serif;
     margin: 0;
 }
 label.valid {
@@ -1055,7 +1077,7 @@ label.valid {
     font-size: 14px;
     color: #00ffff;
     text-align: left;
-    font-family: 'DinPro Light', sans-serif;
+    font-family: "DinPro Light", sans-serif;
     margin: 0;
 }
 
