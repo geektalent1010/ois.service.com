@@ -100,23 +100,6 @@
 @endsection
 
 @section('PAGE_LEVEL_SCRIPTS')
-<script type="text/javascript">
-    const privacy = document.querySelector(".privacy-modal");
-    function togglePrivacy() {
-        privacy.classList.toggle("show-modal");
-    }
-
-    const terms_use = document.querySelector(".terms-modal");
-    function toggleTerms() {
-        terms_use.classList.toggle("show-modal");
-    }
-
-    const data_policy = document.querySelector(".data-modal");
-    function toggleData() {
-        data_policy.classList.toggle("show-modal");
-    }
-
-</script>
-<script type="text/javascript" src="{{asset('js/util.js')}}">
+<script src="{{asset('js/util.js')}}"></script>
 
 @endsection

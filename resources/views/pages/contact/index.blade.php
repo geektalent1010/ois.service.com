@@ -43,5 +43,5 @@
 @endsection
 
 @section('PAGE_LEVEL_SCRIPTS')
-<script type="text/javascript" src="{{asset('js/util.js')}}">
+<script type="text/javascript" src="{{asset('js/util.js')}}"></script>
 @endsection
