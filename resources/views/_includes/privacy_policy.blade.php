@@ -1,4 +1,11 @@
 <div class="modal privacy-modal">
+    <div class="modal-header">
+        <div class="close-but">
+            <a class="d-flex align-items-center" onclick="togglePrivacy()">
+                <img class="close-icon" src="{{ asset('images/logo/IconCLOSE.svg') }}" alt="" />
+            </a>
+        </div>
+    </div>
     <div class="modal-content">
         <p class="mod-header">Privacy Policy</p>
         <p class="mod-title">1. Introduction</p>
@@ -15,7 +22,7 @@
             <li class="mod-subtext">Health information (for e-health services)</li>
             <li class="mod-subtext">Interactions with our services and websites</li>
             <li class="mod-subtext">Employment or professional details (for recruitment purposes)</li>
-        </ul>        
+        </ul>
         <p class="mod-subtitle">2.2 Purpose of Data Processing</p>
         <p class="mod-text">We process personal data for the following purposes:</p>
         <ul class="disc-ul">
@@ -36,7 +43,7 @@
             <li class="mod-subtext">Consent provided by individuals for specific processing activities.</li>
             <li class="mod-subtext">Legitimate interests pursued by OIS or a third party, provided that such interests are not overrid den by the individual's rights and interests.</li>
         </ul>
-        
+
         <p class="mod-title">3. Data Sharing and Disclosure</p>
         <p class="mod-subtitle">3.1 Third-Party Service Providers</p>
         <p class="mod-text">We may share personal data with trusted third-party service providers who assist us in delivering our services and fulfilling our obligations. These service providers are contractually bound to only process personal data on our behalf and in accordance with our instructions.</p>

@@ -265,6 +265,18 @@ footer .social-section .icon-section .social-icon:hover {
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 }
 
+.modal-header {
+    height: 50px;
+    position: absolute;
+    top: 2.5vh;
+    z-index: 3;
+    width: 50vw;
+    border: none;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 0;
+}
+
 .modal-content {
     position: absolute;
     top: 50%;
@@ -278,6 +290,18 @@ footer .social-section .icon-section .social-icon:hover {
     color: #003366;
     overflow-y: auto;
 }
+
+.modal-header .close-but {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.modal-header .close-but img {
+    width: 25px;
+    cursor: pointer;
+}
+
 .video-modal-content {
     position: absolute;
     top: 50%;
@@ -860,6 +884,20 @@ footer .social-section .icon-section .social-icon:hover {
         width: 90vw;
         height: 80vh;
         padding: 30px;
+    }
+    .modal-header {
+        height: 30px;
+        position: absolute;
+        top: 10vh;
+        width: 90vw;
+        border: none;
+        left: 50%;
+        transform: translate(-50%, 0);
+        padding: 0;
+    }
+    .modal-header .close-but {
+        top: 5px;
+        right: 5px;
     }
     .office-modal-content {
         width: 90vw;

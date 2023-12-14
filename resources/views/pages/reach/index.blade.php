@@ -58,11 +58,11 @@
                     <a href="https://twitter.com/oisservices"><img class="social-icon ml-2" src="{{ asset('images/Logo/LogoTwitter.svg') }}"/></a>
                 </div>
                 <div class="d-flex justify-content-center align-items-center mt-4">
-                    <a onclick="showTerms()">Terms of Use</a>
+                    <a onclick="toggleTerms()">Terms of Use</a>
                     <p class="mx-2 mb-0">|</p>
-                    <a onclick="showPrivacy()">Privacy Policy</a>
+                    <a onclick="togglePrivacy()">Privacy Policy</a>
                     <p class="mx-2 mb-0">|</p>
-                    <a onclick="showData()">Data Protect Policy</a>
+                    <a onclick="toggleData()">Data Protect Policy</a>
                 </div>
                 <div class="d-flex justify-content-center align-items-center mt-4">
                     <a class="company" href="https://brandfields.com">Powered by Brandfields.com</a>
@@ -83,9 +83,9 @@
                     </div>
                 </div>
                 <div class="d-flex flex-column align-items-center mt-4">
-                    <a class="mb-1" onclick="showTerms()">Terms of Use</a>
-                    <a class="mb-1" onclick="showPrivacy()">Privacy Policy</a>
-                    <a class="mb-1" onclick="showData()">Data Protect Policy</a>
+                    <a class="mb-1" onclick="toggleTerms()">Terms of Use</a>
+                    <a class="mb-1" onclick="togglePrivacy()">Privacy Policy</a>
+                    <a class="mb-1" onclick="toggleData()">Data Protect Policy</a>
                 </div>
                 <div class="d-flex justify-content-center align-items-center mt-4">
                     <a class="company" href="https://brandfields.com">Powered by Brandfields.com</a>
@@ -102,15 +102,17 @@
 @section('PAGE_LEVEL_SCRIPTS')
 <script type="text/javascript">
     const privacy = document.querySelector(".privacy-modal");
-    function showPrivacy() {
+    function togglePrivacy() {
         privacy.classList.toggle("show-modal");
     }
+
     const terms_use = document.querySelector(".terms-modal");
-    function showTerms() {
+    function toggleTerms() {
         terms_use.classList.toggle("show-modal");
     }
+
     const data_policy = document.querySelector(".data-modal");
-    function showData() {
+    function toggleData() {
         data_policy.classList.toggle("show-modal");
     }
 
