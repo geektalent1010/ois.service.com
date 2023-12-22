@@ -28,9 +28,9 @@
 
         <div class="mt-5 mb-4">I WANT TO BOOK AN APPOINTMENT</div>
         
-        <button class="click-here-button" onclick="window.location.href='{{ route('application.index') }}'">
+        <a class="btn btn-primary click-here-button" href="https://user.staging-oisservices.com/" target="_blank">
             CLICK HERE
-        </button>
+        </a>
     </div>
 </div>
 @endsection
