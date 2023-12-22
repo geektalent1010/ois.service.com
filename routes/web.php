@@ -32,6 +32,11 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/news', 'NewsController@index')->name('news.index');
 
     Route::get('/booking', 'BookingController@index')->name('booking.index');
+
+    Route::get('/application', 'ApplicationController@index')->name('application.index');
+
+    Route::get('/checklists', 'ApplicationController@checklists')->name('checklists.index');
+    Route::post('/checklists/filter', 'ApplicationController@checklistFilter')->name('checklists.filter');
 });
 
 

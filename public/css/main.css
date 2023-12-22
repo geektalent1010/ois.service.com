@@ -1227,3 +1227,6 @@ label.valid {
 .mb-35px {
     margin-bottom: 35px;
 }
+.cursor-pointer {
+    cursor: pointer;
+}
