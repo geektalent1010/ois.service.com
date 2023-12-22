@@ -363,3 +363,82 @@
         }
     }
 }
+
+.nis-visa-modal {
+    background-color: rgba(0, 51, 102, 0.5);
+    .modal-section {
+        width: 100%;
+        max-width: 636px;
+        height: 100%;
+        max-height: 520px;
+        overflow: hidden;
+        border-radius: 24px;
+        padding: 32px;
+        text-align: justify;    
+        .modal-content {
+            height: 100%;
+            border: none;
+            padding: 0;
+            font-size: 12px;
+            font-family: "DinPro", sans-serif;
+            color: $main-color;
+            .title {
+                font-size: 20px;
+                font-family: "DinPro Medium", sans-serif;
+                color: $main-color;
+                margin-bottom: 12px;
+            }
+            .description {
+                margin-bottom: 12px;
+            }
+
+            ul {
+                padding-left: 20px;
+                list-style: decimal;
+                ::marker {
+                    font-family: "DinPro Bold", sans-serif;
+                }
+                li {
+                    padding-left: 10px;
+                    margin-bottom: 12px;
+                    span {
+                        font-family: "DinPro Bold", sans-serif;
+                    }
+                }
+            }
+            
+            .agree-button {
+                width: 50%;
+                height: 44px;
+                background: $hover-color;
+                display: block;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $white;
+                -webkit-border-radius: 10rem;
+                -moz-border-radius: 10rem;
+                -ms-border-radius: 10rem;
+                border-radius: 10rem;
+                font-size: 16px;
+                font-family: "DinPro", sans-serif;
+                border: 0.1rem solid $hover-color;
+                cursor: pointer;
+                &:hover {
+                    background: $main-color !important;
+                    color: $white !important;
+                    border-color: $main-color !important;
+                }
+                &:focus, &:active {
+                    background: $main-color;
+                    color: $white;
+                    border-color: $main-color !important;
+                    outline: none;
+                    box-shadow: none;
+                }
+                &.disabled, &:disabled, &[disabled] {
+                    opacity: 1 !important;
+                }
+            }
+        }
+    }
+}
