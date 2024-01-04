@@ -38,12 +38,13 @@
                 <img src="{{ asset('images/IconFingerprint.svg') }}">
                 <div class="text-section d-flex justify-content-center">
                     <div class="description-section">
-                        <p class="sub-title">Visa and Passport Application Processing</p>
-                        <p class="description">As a world-leading provider of ground-breaking software solutions, Online Integrated Solutions (OIS) is committed to helping businesses and individuals overcome complex challenges. One key area of significant impact is in the VISA application processing, by the use of advanced machine learning (ML) algorithms, we believe we can improve the efficiency, accuracy, and scalability of the VISA application process and improve the overall customer experience. Here are some of the specific areas where we believe machine learning can make a difference:</p>
-                        <p class="description mt-4 mb-0">- Data Processing and Validation</p>
-                        <p class="description mb-0">- Fraud Detection</p>
-                        <p class="description mb-0">- Biometric Identification</p>
-                        <p class="description mb-5">- Application Status Tracking</p>
+                        <p class="sub-title">VISA AND PASSPORT APPLICATION PROCESSING:</p>
+                        <p class="description mb-0">At Online Integrated Solutions (OIS), we stand as a global trailblazer in revolutionary software solutions, dedicated to empowering businesses and individuals in overcoming intricate challenges. Our profound impact is particularly evident in the realm of VISA application processing, where we harness the power of advanced machine learning (ML) algorithms to enhance efficiency, accuracy, and scalability, ultimately elevating the overall customer experience. Here are key areas where our innovative approach to machine learning can bring about transformative improvements:</p>
+                        <p class="description mt-0 mb-0 ml-4">• Data Processing and Validation.</p>
+                        <p class="description mb-0 ml-4">• Fraud Detection.</p>
+                        <p class="description mb-0 ml-4">• Biometric Identification.</p>
+                        <p class="description mb-0 ml-4">• Application Status Tracking.</p>
+                        <p class="description mb-5 mt-4">At OIS, we envision a future where technology not only meets but exceeds expectations, and our commitment to pushing the boundaries of innovation ensures that our clients and users benefit from the most advanced, efficient, and secure visa and passport application processing solutions available.</p>
                         <div class="button-section d-flex justify-content-center">
                             <a href="{{ route('login') }}">APPLY HERE</a>
                         </div>
@@ -54,12 +55,12 @@
                 <img src="{{ asset('images/IconSCAN.svg') }}">
                 <div class="text-section d-flex justify-content-center">
                     <div class="description-section">
-                        <p class="sub-title">BVN Application Processing</p>
-                        <p class="description">One of the areas where we believe machine learning can have a significant impact is in our Bank Verification Number (BVN) process. We understand how important it is for our customers to have quick and easy access to their BVN numbers, so we always seek for ways to streamline the process.</p>
-                        <p class="description mt-4">By leveraging machine learning, we can improve the accuracy and speed of the BVN registration process, while also reducing the risk of errors and fraud. Here are some of the specific areas where we believe machine learning can make a difference:</p>
-                        <p class="description mt-4 mb-0">- Data Processing and Validation</p>
-                        <p class="description mb-0">- Predictive Analytics</p>
-                        <p class="description mb-5">- Fraud Detection</p>
+                        <p class="sub-title">BANK VERIFICATION NUMBER (BVN) APPLICATION PROCESSING:</p>
+                        <p class="description mb-0">In our relentless pursuit of seamless services, we recognize the transformative potential of machine learning, particularly in optimizing our Bank Verification Number (BVN) application process. We comprehend the paramount importance of swift and accessible BVN issuance for our customers, propelling us to continually refine and expedite this crucial procedure. Harnessing the capabilities of machine learning, we aim to elevate both the accuracy and efficiency of BVN registrations, concurrently mitigating the risks associated with errors and fraudulent activities. Here are key domains where our incorporation of machine learning promises a substantial impact:</p>
+                        <p class="description mt-0 mb-0 ml-4">• Data Processing and Validation.</p>
+                        <p class="description mt-0 mb-0 ml-4">• Predictive Analytics.</p>
+                        <p class="description mt-0 mb-0 ml-4">• Fraud Detection.</p>
+                        <p class="description mt-4 mb-5">At the heart of our commitment lies the dedication to providing our customers with an unparalleled BVN application experience—prompt, precise, and fortified against potential risks. Through the infusion of machine learning, we embark on a journey to redefine the standards of efficiency and security in BVN issuance.</p>
                         <div class="button-section d-flex justify-content-center">
                             <a href="{{ route('login') }}">APPLY HERE</a>
                         </div>
@@ -70,9 +71,14 @@
                 <img src="{{ asset('images/IconChatBot.svg') }}">
                 <div class="text-section d-flex justify-content-center">
                     <div class="description-section">
-                        <p class="sub-title">AI Chatbots for Improved Service Delivery and Customer Support</p>
-                        <p class="description">We are excited to introduce our new AI Chatbot. This Chabot is a revolutionary tool that utilizes machine learning algorithms to provide customers with personalized support and assistance. With our Chatbot, customers can get quick and accurate responses to their inquiries and resolve issues without the need for human intervention. This reduces wait times, eliminates the need for customers to navigate complex phone menus, and allows them to access help 24/7.</p>
-                        <p class="description mt-4 mb-5">The Chabot is trained on a vast dataset of customer queries and is designed to provide accurate and timely responses to a wide range of inquiries, including inquiries about our services, billing and payments, and technical support.</p>
+                        <p class="sub-title">ELEVATING SERVICE EXCELLENCE WITH AI-POWERED CHATBOTS:</p>
+                        <p class="description">We are thrilled to unveil our latest innovation—the AI Chatbot—an instrumental advancement poised to transform customer service and support. This state-of-the-art Chatbot harnesses the power of machine learning algorithms, presenting customers with a personalized and efficient avenue for assistance. Our Chatbot is designed to revolutionize the customer experience by delivering prompt and precise responses to inquiries and resolving issues with minimal reliance on human intervention.</p>
+                        <p class="description mt-4 mb-0">Key Features and Benefits:</p>
+                        <p class="description mt-0 mb-0 ml-4">• Quick and Accurate Responses.</p>
+                        <p class="description mt-0 mb-0 ml-4">• 24/7 Accessibility.</p>
+                        <p class="description mt-0 mb-0 ml-4">• Elimination of Wait Times.</p>
+                        <p class="description mt-0 mb-0 ml-4">• Versatile Inquiry Handling.</p>
+                        <p class="description mt-4 mb-5">This AI Chatbot represents a commitment to redefining service standards, ensuring that our customers experience a seamless and efficient interaction with our brand. As technology continues to evolve, we remain at the forefront, leveraging innovative solutions to enhance your customer journey. Welcome to a new era of personalized and responsive customer support with our AI-powered Chatbot.</p>
                         <div class="button-section d-flex justify-content-center">
                             <a href="{{ route('contact.index') }}">CHAT HERE</a>
                         </div>
@@ -83,20 +89,16 @@
                 <img src="{{ asset('images/IconEHEALTH.svg') }}">
                 <div class="text-section d-flex justify-content-center">
                     <div class="description-section">
-                        <p class="sub-title">Improved E-health and Wellness</p>
-                        <p class="description">We are exploring innovative ways to improve our E-health and Wellness Services by deploying advanced technology. Below are some practical ways this can help you stay healthy and well:</p>
-                        <div class="d-flex">
-                            <p class="description mr-2">- </p>
-                            <p class="description">Telemedicine Services: Our advanced systems can accurately diagnose and provide personalized solutions and treatment plans.</p>
-                        </div>
-                        <div class="d-flex">
-                            <p class="description mr-2">- </p>
-                            <p class="description">Wellness Program: Our wellness program is designed to leverage the power of Blockchain and Web3 technology to provide a secure, decentralized platform that offers personalized diet plans, exercise regimes, and mental health support.</p>
-                        </div>
-                        <div class="d-flex">
-                            <p class="description mr-2">- </p>
-                            <p class="description mb-5">Health Monitoring Devices: Our AI-powered systems can analyze the data collected from these devices to provide personalized feedback and recommendations.</p>
-                        </div>
+                        <p class="sub-title">ELEVATING E-HEALTH AND WELLNESS THROUGH CUTTING-EDGE TECHNOLOGY</p>
+                        <p class="description mb-0">Embarking on a journey of continuous improvement, we are committed to revolutionizing our E-health and Wellness Services through the integration of advanced technology. Explore the myriad ways in which these innovations can empower you to maintain optimal health and well-being:</p>
+                        <p class="description mt-0 mb-0">1. Telemedicine Services:</p>
+                        <p class="description mb-0 ml-4">• Immerse yourself in the future of healthcare with our advanced systems. Precision and personalization are at the forefront as our telemedicine services accurately diagnose health concerns and deliver bespoke treatment plans tailored to your unique needs.</p>
+                        <p class="description mt-0 mb-0">2. Wellness Program:</p>
+                        <p class="description mb-0 ml-4">• Embrace a holistic approach to well-being through our ground breaking wellness program. Leveraging the transformative potential of Blockchain and Web3 technology, our secure and decentralized platform offers personalized diet plans, tailored exercise regimes, and comprehensive mental health support. Step into a wellness journey that is as individual as you are.</p>
+                        <p class="description mt-0 mb-0">3. Health Monitoring Devices:</p>
+                        <p class="description mb-0 ml-4">• Unleash the power of AI with our health monitoring devices. These intelligent systems analyze data collected from a range of devices, providing you with personalized feedback and insightful recommendations. Transform the way you monitor your health, with technology that evolves with you.</p>
+                        <p class="description mt-4 mb-5">At the intersection of innovation and health, we envision a future where technology enhances every facet of your well-being journey. Our commitment is to empower you with personalized, secure, and cutting-edge solutions that redefine the standards of E-health and Wellness. Welcome to a realm where your health is not just a priority—it's a personalized experience.</p>
+
                         <div class="button-section d-flex justify-content-center">
                             <a href="{{ route('ehealth.index') }}">APPLY HERE</a>
                         </div>
@@ -107,9 +109,13 @@
                 <img src="{{ asset('images/IconMONEYTRANSFER.svg') }}">
                 <div class="text-section d-flex justify-content-center">
                     <div class="description-section">
-                        <p class="sub-title">Electronic Money Transfer</p>
-                        <p class="description">OIS is excited to announce the incorporation of Blockchain and Web3 technologies to our Electronic Money Transfer service. With the use of blockchain technology, we can ensure that every transaction is recorded in an immutable ledger, providing complete transparency and security for our customers.</p>
-                        <p class="description mt-4 mb-5">Our Electronic Money Transfer service already offers a range of fast, secure, and low-cost options for sending money online, including cash pick-up, bank transfer, mobile money, airtime top-up, and now, with the integration of blockchain and Web3, our customers will have even more flexibility and convenience when it comes to sending money.range of inquiries, including inquiries about our services, billing and payments, and technical support.</p>
+                        <p class="sub-title">REVOLUTIONIZING ELECTRONIC MONEY TRANSFER WITH BLOCKCHAIN AND WEB3 TECHNOLOGIES</p>
+                        <p class="description">OIS proudly announces a ground breaking enhancement to our Electronic Money Transfer service through the integration of cutting-edge Blockchain and Web3 technologies. This strategic evolution elevates the standard of our service, providing customers with an unprecedented level of transparency and security.</p>
+                        <p class="description mt-4 mb-0">Key Advancements:</p>
+                        <p class="description mt-0 mb-0 ml-4">• Immutable Ledger Recording.</p>
+                        <p class="description mt-0 mb-0 ml-4">• Fast, Secure, and Low-Cost Options.</p>
+                        <p class="description mt-0 mb-0 ml-4">• Enhanced Flexibility and Convenience.</p>
+                        <p class="description mt-4 mb-5">At OIS, we are committed to redefining the landscape of electronic financial services. The integration of Blockchain and Web3 is a testament to our dedication to innovation, ensuring that our customers experience the utmost in security, transparency, and convenience when entrusting us with their financial transactions. Welcome to a new era of Electronic Money Transfer—where technology meets trust.</p>
                         <div class="button-section">
                             <a href="{{ route('money.index') }}">TRANSFER HERE</a>
                             <a href="{{ route('dashboard.index') }}">GO TO DASHBOARD</a>
