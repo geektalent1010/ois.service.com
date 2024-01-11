@@ -15,289 +15,367 @@ class ChecklistsSeeder2 extends Seeder
     public function run()
     {
         Checklist::create([
-            'center_id' => 2,
+            'center_id' => 3,
             'visa_type' => 'Diplomatic',
-            'title' => 'R1A – ACCREDITED DIPLOMAT VISA',
+            'title' => 'Diplomatic（Non-Accredited） Visa---F2A ',
             'description' => 'REQUIREMENTS:<br/><br/>
-            1.ORIGINAL PASSPORT:<br/>
-            Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
-            2.PASSPORT PHOTO:<br/>
-            Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
-            3.ONLINE VISA APPLICATION FORM:<br/>
-            Complete the visa application form online at visa.immigration.gov.ng<br/>
-            Once completed, must be printed out, signed, and dated by the applicant.<br/>
-            A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
-            4.PASSPORT DATA PAGE:<br/>
-            Copy of Passport Data-Page<br/><br/>
-            5.REGUEST LETTER (NOTE VERBAL):<br/>
-            Request letter from the ministry of foreign affairs in Nigeria.',
-            'file_name' => 'ACCREDITED DIPLOMAT VISA R1A.docx',
+            •	ORIGINAL PASSPORT:<br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-Chinese passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
+            •	PASSPORT PHOTO:<br/>
+            Two (2) recent passport sized (35x40mm) photographs <br/><br/>
+            •	Online Payment <br/>
+            A copy of the Acknowledgment slip must be Printed from https://portal.immigration.gov.ng/<br/><br/>
+            •	Application form <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+            •	Return Ticket <br/><br/>
+            •	Evidence of sufficient fund  <br/>
+            Original evidence of sufficient fund of applicant, with bank\'s stamp<br/><br/>
+            •	Evidence of Hotel Reservation/host address in Nigeria<br/><br/>
+            •	Note Verbal ',
+            'file_name' => '1.F2A - Non-Accredited Diplomatic Visa.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'center_id' => 3,
             'visa_type' => 'Diplomatic',
-            'title' => 'R1D – DEPENDANT (18 & ABOVE) OF ACCREDITED DIPLOMAT VISA',
+            'title' => 'Accredited Diplomat Visa- R1A ',
             'description' => 'REQUIREMENTS:<br/><br/>
-            1.ORIGINAL PASSPORT:<br/>
-            Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
-            2.PASSPORT PHOTO:<br/>
-            Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
-            3.ONLINE VISA APPLICATION FORM:<br/>
-            Complete the visa application form online at visa.immigration.gov.ng<br/>
-            Once completed, must be printed out, signed, and dated by the applicant.<br/>
-            A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
-            4.PASSPORT DATA PAGE:<br/>
-            Copy of Passport Data-Page<br/><br/>
-            5.REGUEST LETTER (NOTE VERBAL):<br/>
-            Request letter from the ministry of foreign affairs in Nigeria.',
-            'file_name' => 'DEPENDANT (18 & ABOVE) OF ACCREDITED DIPLOMAT VISA R1D.docx',
+            •	ORIGINAL PASSPORT:<br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-Chinese passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
+            •	PASSPORT PHOTO:<br/>
+            Two (2) recent passport sized (35x40mm) photographs <br/><br/>
+            •	Online Payment <br/>
+            A copy of the Acknowledgment slip must be Printed from https://portal.immigration.gov.ng/<br/><br/>
+            •	Application form <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+            •	Return Ticket <br/><br/>
+            •	Evidence of sufficient fund  <br/>
+            Original evidence of sufficient fund of applicant, with bank\'s stamp<br/><br/>
+            •	Evidence of Hotel Reservation/host address in Nigeria<br/><br/>
+            •	Note Verbal ',
+            'file_name' => '2.R1A - Accredited Diplomatic Visa.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'center_id' => 3,
             'visa_type' => 'Diplomatic',
-            'title' => 'R1E – DEPENDANT (AGED PARENTS – 65 & ABOVE) OF ACCREDITED DIPLOMAT VISA',
+            'title' => 'Spouse of Accredited Diplomat Visa- R1B ',
             'description' => 'REQUIREMENTS:<br/><br/>
-            1.ORIGINAL PASSPORT:<br/>
-            Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
-            2.PASSPORT PHOTO:<br/>
-            Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
-            3.ONLINE VISA APPLICATION FORM:<br/>
-            Complete the visa application form online at visa.immigration.gov.ng<br/>
-            Once completed, must be printed out, signed, and dated by the applicant.<br/>
-            A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
-            4.PASSPORT DATA PAGE:<br/>
-            Copy of Passport Data-Page<br/><br/>
-            5.REGUEST LETTER (NOTE VERBAL):<br/>
-            Request letter from the ministry of foreign affairs in Nigeria.',
-            'file_name' => 'DEPENDANT (AGED PARENTS - 65 ABOVE) OF ACCREDITED DIPLOMAT VISA R1E.docx',
+            •	ORIGINAL PASSPORT:<br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-Chinese passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
+            •	PASSPORT PHOTO:<br/>
+            Two (2) recent passport sized (35x40mm) photographs <br/><br/>
+            •	Online Payment <br/>
+            A copy of the Acknowledgment slip must be Printed from https://portal.immigration.gov.ng/<br/><br/>
+            •	Application form <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+            •	Return Ticket <br/><br/>
+            •	Evidence of sufficient fund  <br/>
+            Original evidence of sufficient fund of applicant, with bank\'s stamp<br/><br/>
+            •	Evidence of Hotel Reservation/host address in Nigeria<br/><br/>
+            •	Note Verbal ',
+            'file_name' => '3.R1B - Spouse of Accredited Diplomat.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'center_id' => 3,
             'visa_type' => 'Diplomatic',
-            'title' => 'R1C – DEPENDANT (MONIR) OF ACCREDITED DIPLOMAT VISA',
+            'title' => 'Dependant (Minor) of Accredited Diplomat Visa- R1C ',
             'description' => 'REQUIREMENTS:<br/><br/>
-            1.ORIGINAL PASSPORT:<br/>
-            Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
-            2.PASSPORT PHOTO:<br/>
-            Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
-            3.ONLINE VISA APPLICATION FORM:<br/>
-            Complete the visa application form online at visa.immigration.gov.ng<br/>
-            Once completed, must be printed out, signed, and dated by the applicant.<br/>
-            A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
-            4.PASSPORT DATA PAGE:<br/>
-            Copy of Passport Data-Page<br/><br/>
-            5.REGUEST LETTER (NOTE VERBAL):<br/>
-            Request letter from the ministry of foreign affairs in Nigeria.',
-            'file_name' => 'DEPENDANT MINOR OF ACCREDITED DIPLOMAT VISA R1C.docx',
+            •	ORIGINAL PASSPORT:<br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-Chinese passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
+            •	PASSPORT PHOTO:<br/>
+            Two (2) recent passport sized (35x40mm) photographs <br/><br/>
+            •	Online Payment <br/>
+            A copy of the Acknowledgment slip must be Printed from https://portal.immigration.gov.ng/<br/><br/>
+            •	Application form <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+            •	Return Ticket <br/><br/>
+            •	Evidence of sufficient fund  <br/>
+            Original evidence of sufficient fund of applicant, with bank\'s stamp<br/><br/>
+            •	Evidence of Hotel Reservation/host address in Nigeria<br/><br/>
+            •	Note Verbal ',
+            'file_name' => '4.R1C - Dependant of Diplomat (Minor) Visa.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'center_id' => 3,
             'visa_type' => 'Diplomatic',
-            'title' => 'F2A – DIPLOMATIC (NON-ACCREDITED) VISA',
+            'title' => 'Dependant (18 years & above) of Accredited Diplomat Visa-R1D',
             'description' => 'REQUIREMENTS:<br/><br/>
-            1.ORIGINAL PASSPORT:<br/>
-            Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
-            2.PASSPORT PHOTO:<br/>
-            Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
-            3.ONLINE VISA APPLICATION FORM:<br/>
-            Complete the visa application form online at visa.immigration.gov.ng<br/>
-            Once completed, must be printed out, signed, and dated by the applicant.<br/>
-            A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
-            4.PASSPORT DATA PAGE:<br/>
-            Copy of Passport Data-Page<br/><br/>
-            5.REGUEST LETTER (NOTE VERBAL):<br/>
-            Request letter from the ministry of foreign affairs in Nigeria.',
-            'file_name' => 'NON ACREDITED DIPLOMAT VISA F2A.docx',
+            •	ORIGINAL PASSPORT:<br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-Chinese passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
+            •	PASSPORT PHOTO:<br/>
+            Two (2) recent passport sized (35x40mm) photographs <br/><br/>
+            •	Online Payment <br/>
+            A copy of the Acknowledgment slip must be Printed from https://portal.immigration.gov.ng/<br/><br/>
+            •	Application form <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+            •	Return Ticket <br/><br/>
+            •	Evidence of sufficient fund  <br/>
+            Original evidence of sufficient fund of applicant, with bank\'s stamp<br/><br/>
+            •	Evidence of Hotel Reservation/host address in Nigeria<br/><br/>
+            •	Note Verbal ',
+            'file_name' => '5.R1D - Dependant of Diplomat (18 years and above) Visa.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'center_id' => 3,
             'visa_type' => 'Diplomatic',
-            'title' => 'R1B – SPOUSE OF ACCREDITED DIPLOMAT VISA',
-            'description' => 'REQUIREMENTS:<br/><br/>
-            1.ORIGINAL PASSPORT:<br/>
-            Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
-            2.PASSPORT PHOTO:<br/>
-            Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
-            3.ONLINE VISA APPLICATION FORM:<br/>
-            Complete the visa application form online at visa.immigration.gov.ng<br/>
-            Once completed, must be printed out, signed, and dated by the applicant.<br/>
-            A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
-            4.PASSPORT DATA PAGE:<br/>
-            Copy of Passport Data-Page<br/><br/>
-            5.REGUEST LETTER (NOTE VERBAL):<br/>
-            Request letter from the ministry of foreign affairs in Nigeria.',
-            'file_name' => 'SPOUSE OF ACCREDITED DIPLOMAT VISA R1B.docx',
+            'title' => 'Dependant (Aged Parents – 65 years & above) of Accredited Diplomat Visa-R1E',
+            'description' => 'R1E : Visa is issued to aged parents (65 years and above) of accredited diplomat as dependants with each case treated on its merit.<br/><br/>
+            Eligibility：<br/>
+            Aged Parents (65 years and above) of Accredited Diplomats<br/><br/>
+            REQUIREMENTS:<br/><br/>
+            •	ORIGINAL PASSPORT:<br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-Chinese passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
+            •	PASSPORT PHOTO:<br/>
+            Two (2) recent passport sized (35x40mm) photographs <br/><br/>
+            •	Online Payment <br/>
+            A copy of the Acknowledgment slip must be Printed from https://portal.immigration.gov.ng/<br/><br/>
+            •	Application form <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+            •	Return Ticket <br/><br/>
+            •	Evidence of sufficient fund  <br/>
+            Original evidence of sufficient fund of applicant, with bank\'s stamp<br/><br/>
+            •	Evidence of Hotel Reservation/host address in Nigeria<br/><br/>
+            •	Note Verbal ',
+            'file_name' => '6.R1E - Dependant of Diplomat - Aged Parents (65 years and above Visa).docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'center_id' => 3,
             'visa_type' => 'Official',
-            'title' => 'R4D – DEPENDANT OF EXPATRIATE (18 & ABOVE) VISA – (GOVT. OFFICIAL)',
+            'title' => 'Employment Visa – Expatriate (Government Official) Visa: R4A',
             'description' => 'REQUIREMENTS:<br/><br/>
-            1.ORIGINAL PASSPORT:<br/>
-            Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
-            2.PASSPORT PHOTO:<br/>
-            Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
-            3.ONLINE VISA APPLICATION FORM:<br/>
-            Complete the visa application form online at visa.immigration.gov.ng<br/>
-            Once completed, must be printed out, signed, and dated by the applicant.<br/>
-            A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
-            4.PASSPORT DATA PAGE:<br/>
-            Copy of Passport Data-Page<br/><br/>
-            5.REGUEST LETTER (NOTE VERBAL):<br/>
-            Request letter from the government.',
-            'file_name' => 'DEPENDANT OF EXPATRIATE (18 & ABOVE) (GOVERNMENT OFFICIAL) VISA R4D.docx',
+            •	ORIGINAL PASSPORT:<br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-Chinese passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
+            •	PASSPORT PHOTO:<br/>
+            Two (2) recent passport sized (35x40mm) photographs <br/><br/>
+            •	Online Payment <br/>
+            A copy of the Acknowledgment slip must be Printed from https://portal.immigration.gov.ng/<br/><br/>
+            •	Application form <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+            •	Return Ticket <br/><br/>
+            •	Evidence of sufficient fund  <br/>
+            Original evidence of sufficient fund of applicant, with bank\'s stamp<br/><br/>
+            •	Evidence of Hotel Reservation/host address in Nigeria<br/><br/>
+            •	Note Verbal ',
+            'file_name' => '1.R4A - Employment Expatriate (Government Official) Visa.docx',
         ]);
         Checklist::create([
-          'center_id' => 2,
+          'center_id' => 3,
           'visa_type' => 'Official',
-          'title' => 'R4E – DEPENDANT OF EXPATRIATE (AGEND PARENT 65 & ABOVE) VISA – (GOVT. OFFICIAL)',
+          'title' => 'Spouse of Expatriate Expatriate (Government Official) Visa – R4B',
           'description' => 'REQUIREMENTS:<br/><br/>
-          1.ORIGINAL PASSPORT:<br/>
-          Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
-          2.PASSPORT PHOTO:<br/>
-          Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
-          3.ONLINE VISA APPLICATION FORM:<br/>
-          Complete the visa application form online at visa.immigration.gov.ng<br/>
-          Once completed, must be printed out, signed, and dated by the applicant.<br/>
-          A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
-          4.PASSPORT DATA PAGE:<br/>
-          Copy of Passport Data-Page<br/><br/>
-          5.REGUEST LETTER (NOTE VERBAL):<br/>
-          Request letter from the government.',
-          'file_name' => 'DEPENDANT OF EXPATRIATE (AGED PARENTS 65 & ABOVE) (GOVERNMENT OFFICIAL) VISA R4E.docx',
+          •	ORIGINAL PASSPORT:<br/>
+          Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-Chinese passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
+          •	PASSPORT PHOTO:<br/>
+          Two (2) recent passport sized (35x40mm) photographs <br/><br/>
+          •	Online Payment <br/>
+          A copy of the Acknowledgment slip must be Printed from https://portal.immigration.gov.ng/<br/><br/>
+          •	Application form <br/>
+          Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+          •	Return Ticket <br/><br/>
+          •	Evidence of sufficient fund  <br/>
+          Original evidence of sufficient fund of applicant, with bank\'s stamp<br/><br/>
+          •	Evidence of Hotel Reservation/host address in Nigeria<br/><br/>
+          •	Note Verbal ',
+          'file_name' => '2.R4B - Spouse of GO Visa.docx',
         ]);
         Checklist::create([
-          'center_id' => 2,
+          'center_id' => 3,
           'visa_type' => 'Official',
-          'title' => 'R4C – DEPENDANT OF EXPATRIATE MINOR VISA – (GOVT. OFFICIAL)',
+          'title' => 'Dependant (Minor) of Employed Expatriate (Government Official) Visa – R4C',
           'description' => 'REQUIREMENTS:<br/><br/>
-          1.ORIGINAL PASSPORT:<br/>
-          Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
-          2.PASSPORT PHOTO:<br/>
-          Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
-          3.ONLINE VISA APPLICATION FORM:<br/>
-          Complete the visa application form online at visa.immigration.gov.ng<br/>
-          Once completed, must be printed out, signed, and dated by the applicant.<br/>
-          A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
-          4.PASSPORT DATA PAGE:<br/>
-          Copy of Passport Data-Page<br/><br/>
-          5.REGUEST LETTER (NOTE VERBAL):<br/>
-          Request letter from the government.',
-          'file_name' => 'DEPENDANT OF EXPATRIATE MINOR (GOVERNMENT OFFICIAL) VISA R4C.docx',
+          •	ORIGINAL PASSPORT:<br/>
+          Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-Chinese passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
+          •	PASSPORT PHOTO:<br/>
+          Two (2) recent passport sized (35x40mm) photographs <br/><br/>
+          •	Online Payment <br/>
+          A copy of the Acknowledgment slip must be Printed from https://portal.immigration.gov.ng/<br/><br/>
+          •	Application form <br/>
+          Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+          •	Return Ticket <br/><br/>
+          •	Evidence of sufficient fund  <br/>
+          Original evidence of sufficient fund of applicant, with bank\'s stamp<br/><br/>
+          •	Evidence of Hotel Reservation/host address in Nigeria<br/><br/>
+          •	Note Verbal ',
+          'file_name' => '3.R4C - Dependant of GO (Minor) Visa.docx',
         ]);
         Checklist::create([
-          'center_id' => 2,
+          'center_id' => 3,
           'visa_type' => 'Official',
-          'title' => 'R4A – EMPLOYMENT VISA – EXPATRIATE (GOVT. OFFICIAL)',
+          'title' => 'Dependant of (18 years and above) of Employed Expatriate (GO) Visa – R4D',
           'description' => 'REQUIREMENTS:<br/><br/>
-          1.ORIGINAL PASSPORT:<br/>
-          Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
-          2.PASSPORT PHOTO:<br/>
-          Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
-          3.ONLINE VISA APPLICATION FORM:<br/>
-          Complete the visa application form online at visa.immigration.gov.ng<br/>
-          Once completed, must be printed out, signed, and dated by the applicant.<br/>
-          A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
-          4.PASSPORT DATA PAGE:<br/>
-          Copy of Passport Data-Page<br/><br/>
-          5.REGUEST LETTER (NOTE VERBAL):<br/>
-          Request letter from the government.',
-          'file_name' => 'EMPLOYMENT VISA - EXPATRIATE (GOVERNMENT OFFICIAL) VISA R4A .docx',
+          •	ORIGINAL PASSPORT:<br/>
+          Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-Chinese passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
+          •	PASSPORT PHOTO:<br/>
+          Two (2) recent passport sized (35x40mm) photographs <br/><br/>
+          •	Online Payment <br/>
+          A copy of the Acknowledgment slip must be Printed from https://portal.immigration.gov.ng/<br/><br/>
+          •	Application form <br/>
+          Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+          •	Return Ticket <br/><br/>
+          •	Evidence of sufficient fund  <br/>
+          Original evidence of sufficient fund of applicant, with bank\'s stamp<br/><br/>
+          •	Evidence of Hotel Reservation/host address in Nigeria<br/><br/>
+          •	Note Verbal ',
+          'file_name' => '4.R4D - Dependant of GO (18 years and above) Visa.docx',
         ]);
         Checklist::create([
-          'center_id' => 2,
+          'center_id' => 3,
           'visa_type' => 'Official',
-          'title' => 'R4B – SPOUSE OF EXPATRIATE VISA – (GOVT. OFFICIAL)',
+          'title' => 'Dependant (Aged Parents – 65 years and above) of Employed Expatriate (GO) Visa – R4E',
           'description' => 'REQUIREMENTS:<br/><br/>
-          1.ORIGINAL PASSPORT:<br/>
-          Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
-          2.PASSPORT PHOTO:<br/>
-          Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
-          3.ONLINE VISA APPLICATION FORM:<br/>
-          Complete the visa application form online at visa.immigration.gov.ng<br/>
-          Once completed, must be printed out, signed, and dated by the applicant.<br/>
-          A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
-          4.PASSPORT DATA PAGE:<br/>
-          Copy of Passport Data-Page<br/><br/>
-          5.REGUEST LETTER (NOTE VERBAL):<br/>
-          Request letter from the government.',
-          'file_name' => 'SPOUSE OF EXPATRIATE (GOVERNMENT OFFICIAL) VISA R4B.docx',
+          •	ORIGINAL PASSPORT:<br/>
+          Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-Chinese passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
+          •	PASSPORT PHOTO:<br/>
+          Two (2) recent passport sized (35x40mm) photographs <br/><br/>
+          •	Online Payment <br/>
+          A copy of the Acknowledgment slip must be Printed from https://portal.immigration.gov.ng/<br/><br/>
+          •	Application form <br/>
+          Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+          •	Return Ticket <br/><br/>
+          •	Evidence of sufficient fund  <br/>
+          Original evidence of sufficient fund of applicant, with bank\'s stamp<br/><br/>
+          •	Evidence of Hotel Reservation/host address in Nigeria<br/><br/>
+          •	Note Verbal ',
+          'file_name' => '5.R4E - Dependant of GO (Aged Parents - 65 years and above) Visa.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
-            'visa_type' => 'Standard',
-            'title' => 'TF7H – ACADEMIC EXCHANGE PROGRAMME VISA  ',
-            'description' => 'REQUIREMENTS:<br/><br/>
-            1.ORIGINAL PASSPORT:<br/>
-            Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
-            2.PASSPORT PHOTO:<br/>
-            Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
-            3.ONLINE VISA APPLICATION FORM:<br/>
-            Complete the visa application form online at visa.immigration.gov.ng<br/>
-            Once completed, must be printed out, signed, and dated by the applicant.<br/>
-            A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
-            4.PASSPORT DATA PAGE:<br/>
-            Copy of Passport Data-Page<br/><br/>
-            5.REGUEST LETTER (NOTE VERBAL):<br/>
-            Request letter from the government.',
-            'file_name' => 'ACADEMIC EXCHANGE PROGRAMME F7H.docx',
-        ]);
-        Checklist::create([
-            'center_id' => 2,
-            'visa_type' => 'Standard',
-            'title' => 'R8A– ACADEMIC EXCHANGE PROGRAMME VISA',
-            'description' => 'REQUIREMENTS:<br/><br/>
-            1.ORIGINAL PASSPORT:<br/>
-            Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
-            2.PASSPORT PHOTO:<br/>
-            Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
-            3.ONLINE VISA APPLICATION FORM:<br/>
-            Complete the visa application form online at visa.immigration.gov.ng<br/>
-            Once completed, must be printed out, signed, and dated by the applicant.<br/>
-            A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
-            4.PASSPORT DATA PAGE:<br/>
-            Copy of Passport Data-Page<br/><br/>
-            5.REGUEST LETTER (NOTE VERBAL):<br/>
-            Request letter from the government.',
-            'file_name' => 'ACADEMIC EXCHANGE PROGRAMME VISA - R8A.docx',
-        ]);
-        Checklist::create([
-            'center_id' => 2,
+            'center_id' => 3,
             'visa_type' => 'UN',
-            'title' => 'R5D – DEPENDANT (18 & ABOVE) EMPLOYMENT VISA - INGO  ',
+            'title' => 'Employment Visa – INGO : R5A',
             'description' => 'REQUIREMENTS:<br/><br/>
-            1.ORIGINAL PASSPORT:<br/>
-            Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
-            2.PASSPORT PHOTO:<br/>
-            Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
-            3.ONLINE VISA APPLICATION FORM:<br/>
-            Complete the visa application form online at visa.immigration.gov.ng<br/>
-            Once completed, must be printed out, signed, and dated by the applicant.<br/>
-            A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
-            4.PASSPORT DATA PAGE:<br/>
-            Copy of Passport Data-Page<br/><br/>
-            5.REGUEST LETTER (NOTE VERBAL):<br/>
-            Request letter from the government.',
-            'file_name' => 'EMPLOYMENT VISA - (18 & ABOVE) OF INGO STAFF R5D.docx',
+            •	ORIGINAL PASSPORT:<br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-Chinese passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
+            •	PASSPORT PHOTO:<br/>
+            Two (2) recent passport sized (35x40mm) photographs <br/><br/>
+            •	Online Payment <br/>
+            A copy of the Acknowledgment slip must be Printed from https://portal.immigration.gov.ng/<br/><br/>
+            •	Application form <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+            •	Return Ticket <br/><br/>
+            •	Evidence of sufficient fund  <br/>
+            Original evidence of sufficient fund of applicant, with bank\'s stamp<br/><br/>
+            •	Evidence of Hotel Reservation/host address in Nigeria<br/><br/>
+            •	Note Verbal ',
+            'file_name' => '1.R5A - Employment (INGO) Visa.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'center_id' => 3,
             'visa_type' => 'UN',
-            'title' => 'R5E– DEPENDANT (AGED PARENT 65 & ABOVE) EMPLOYMENT VISA - INGO  ',
+            'title' => 'Employment Visa – Spouse of INGO Staff: R5B',
             'description' => 'REQUIREMENTS:<br/><br/>
-            1.ORIGINAL PASSPORT:<br/>
-            Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
-            2.PASSPORT PHOTO:<br/>
-            Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
-            3.ONLINE VISA APPLICATION FORM:<br/>
-            Complete the visa application form online at visa.immigration.gov.ng<br/>
-            Once completed, must be printed out, signed, and dated by the applicant.<br/>
-            A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
-            4.PASSPORT DATA PAGE:<br/>
-            Copy of Passport Data-Page<br/><br/>
-            5.REGUEST LETTER (NOTE VERBAL):<br/>
-            Request letter from the government.',
-            'file_name' => 'EMPLOYMENT VISA - (AGED PARENTD 65 & ABOVE) OF INGO STAFF R5E.docx',
+            •	ORIGINAL PASSPORT:<br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-Chinese passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
+            •	PASSPORT PHOTO:<br/>
+            Two (2) recent passport sized (35x40mm) photographs <br/><br/>
+            •	Online Payment <br/>
+            A copy of the Acknowledgment slip must be Printed from https://portal.immigration.gov.ng/<br/><br/>
+            •	Application form <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+            •	Return Ticket <br/><br/>
+            •	Evidence of sufficient fund  <br/>
+            Original evidence of sufficient fund of applicant, with bank\'s stamp<br/><br/>
+            •	Evidence of Hotel Reservation/host address in Nigeria<br/><br/>
+            •	Note Verbal ',
+            'file_name' => '2.R5B - Spouse of INGO Staff Visa.docx',
+        ]);
+        Checklist::create([
+            'center_id' => 3,
+            'visa_type' => 'UN',
+            'title' => 'Employment Visa – Dependant (Minor) of INGO Staff: R5C',
+            'description' => 'REQUIREMENTS:<br/><br/>
+            •	ORIGINAL PASSPORT:<br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-Chinese passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
+            •	PASSPORT PHOTO:<br/>
+            Two (2) recent passport sized (35x40mm) photographs <br/><br/>
+            •	Online Payment <br/>
+            A copy of the Acknowledgment slip must be Printed from https://portal.immigration.gov.ng/<br/><br/>
+            •	Application form <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+            •	Return Ticket <br/><br/>
+            •	Evidence of sufficient fund  <br/>
+            Original evidence of sufficient fund of applicant, with bank\'s stamp<br/><br/>
+            •	Evidence of Hotel Reservation/host address in Nigeria<br/><br/>
+            •	Note Verbal ',
+            'file_name' => '3.R5C - Dependant of INGO (Minor) Visa.docx',
+        ]);
+        Checklist::create([
+            'center_id' => 3,
+            'visa_type' => 'UN',
+            'title' => 'Employment Visa – Dependant (18 years and above) of INGO Staff: R5D',
+            'description' => 'REQUIREMENTS:<br/><br/>
+            •	ORIGINAL PASSPORT:<br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-Chinese passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
+            •	PASSPORT PHOTO:<br/>
+            Two (2) recent passport sized (35x40mm) photographs <br/><br/>
+            •	Online Payment <br/>
+            A copy of the Acknowledgment slip must be Printed from https://portal.immigration.gov.ng/<br/><br/>
+            •	Application form <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+            •	Return Ticket <br/><br/>
+            •	Evidence of sufficient fund  <br/>
+            Original evidence of sufficient fund of applicant, with bank\'s stamp<br/><br/>
+            •	Evidence of Hotel Reservation/host address in Nigeria<br/><br/>
+            •	Note Verbal ',
+            'file_name' => '4.R5D - Dependant of INGO (18 years and above) Visa.docx',
+        ]);
+        Checklist::create([
+            'center_id' => 3,
+            'visa_type' => 'UN',
+            'title' => 'Employment Visa – Dependant (aged parents, 65 years and above) of INGO Staff: R5E',
+            'description' => 'REQUIREMENTS:<br/><br/>
+            •	ORIGINAL PASSPORT:<br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-Chinese passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
+            •	PASSPORT PHOTO:<br/>
+            Two (2) recent passport sized (35x40mm) photographs <br/><br/>
+            •	Online Payment <br/>
+            A copy of the Acknowledgment slip must be Printed from https://portal.immigration.gov.ng/<br/><br/>
+            •	Application form <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+            •	Return Ticket <br/><br/>
+            •	Evidence of sufficient fund  <br/>
+            Original evidence of sufficient fund of applicant, with bank\'s stamp<br/><br/>
+            •	Evidence of Hotel Reservation/host address in Nigeria<br/><br/>
+            •	Note Verbal ',
+            'file_name' => '5.R5E - Dependant of INGO (Aged Parent - 65 years and above) Visa.docx',
+        ]);
+        Checklist::create([
+            'center_id' => 3,
+            'visa_type' => 'Standard',
+            'title' => 'Transit Visa-F3B ',
+            'description' => 'REQUIREMENTS:<br/><br/>
+            •	ORIGINAL PASSPORT:<br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-Chinese passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
+            •	PASSPORT PHOTO:<br/>
+            Two (2) recent passport sized (35x40mm) photographs <br/><br/>
+            •	Online Payment <br/>
+            A copy of the Acknowledgment slip must be Printed from https://portal.immigration.gov.ng/<br/><br/>
+            •	Application form <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+            •	Return Ticket <br/><br/>
+            •	Evidence of sufficient fund  <br/>
+            Original evidence of sufficient fund of applicant, with bank\'s stamp<br/><br/>
+            •	Evidence of Hotel Reservation/host address in Nigeria<br/><br/>
+            •	Note Verbal ',
+            'file_name' => '1.F3B - Transit Visa.docx',
+        ]);
+        Checklist::create([
+            'center_id' => 3,
+            'visa_type' => 'Standard',
+            'title' => 'Business –Multiple Entry Visa-F4B ',
+            'description' => 'REQUIREMENTS:<br/><br/>
+            •	ORIGINAL PASSPORT:<br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-Chinese passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
+            •	PASSPORT PHOTO:<br/>
+            Two (2) recent passport sized (35x40mm) photographs <br/><br/>
+            •	Online Payment <br/>
+            A copy of the Acknowledgment slip must be Printed from https://portal.immigration.gov.ng/<br/><br/>
+            •	Application form <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+            •	Return Ticket <br/><br/>
+            •	Evidence of sufficient fund  <br/>
+            Original evidence of sufficient fund of applicant, with bank\'s stamp<br/><br/>
+            •	Evidence of Hotel Reservation/host address in Nigeria<br/><br/>
+            •	Note Verbal ',
+            'file_name' => '1.F4B - Business - Visa.docx',
         ]);
     }
 }

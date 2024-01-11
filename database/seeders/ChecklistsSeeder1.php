@@ -15,64 +15,346 @@ class ChecklistsSeeder1 extends Seeder
     public function run()
     {
         Checklist::create([
-            'center_id' => 1,
-            'visa_type' => 'UN',
-            'title' => 'Employment Visa- INGO – R5A',
-            'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
-            APPLICATIONS SUBMITTED AFTER 11.30 PM FOR EXPRESS AND APPLICATIONS SUBMITTED AFTER 14.30 FOR REGULAR WILL BE TREATED AS NEXT DAY APPLICATIONS.<br/><br/>
-            ALL DOCUMENTS INCLUDING OIS APPOINTMENT BOOKING SLIP MUST BE PROVIDED OR YOUR APPLICATION WILL NOT BE ACCEPTED.<br/><br/>
-            NON-TURKISH CITIZENS MUST HAVE A TURKISH RESIDENCE PERMIT.<br/><br/>
-            EVERY DOCUMENT MUST BE PROVIDED WITH 2 COPIES.<br/><br/>
-            1. Passport/Travel Document a minimum of 6 months validity.<br/>
-            Must have three blank facing pages<br/>
-            If non-Turkish passport holder please see below for additional notes.<br/><br/>
-            2. 2.	Copy of the first page of the Passport. (2 copies)<br/><br/>
-            3. Two Recent Passport sized photographs with white background.<br/><br/>
-            4. Complete application form online at https://visa.immigration.gov.ng/<br/>
-            Once completed this must be printed out, signed and dated by applicant.<br/><br/>
-            5. Payment and acknowledgement slips available once online payment is complete – Printed from https://portal.immigration.gov.ng/visa/OnlineQueryStatus<br/><br/>
-            6. A letter of invitation from Nigeria. This must be addressed to the Nigerian Embassy Ankara. It must be on letter headed paper stating the address of the company, the reason for the visit and must be signed and dated by the inviter. (2 Copies)<br/><br/>
-            7. Copy of passport or National Identity Card of the signatory who signed the invitation letter.<br/><br/>
-            8. MoU with Nigerian Planning Commision (NPC) and appropriate security clearence (for special security cases)  <br/><br/>
-            IMPORTANT INFORMATION<br/><br/>
-            PROCESSING TIME;<br/>
-            10 working days minimum<br/><br/>
-            DOCUMENTS NOT IN ENGLISH MUST BE SUBMITTED WITH A CERTIFIED TRANSLATED COPY<br/><br/>
-            ALL LETTERS MUST BE SIGNED AND DATED<br/><br/>
-            NON-TURKISH PASSPORT HOLDER – MUST PROVIDE LEGAL RESIDENCE (Resident Visa/Permit).<br/><br/>
-            Must provide copy of Airline ticket or Flight Itinerary<br/><br/>
-            PLEASE CHECK OUR OPENING HOURS TO AVOID DELAYS AND FOR ANY ADDITIONAL INFORMATION PLEASE VISIT OUR WEBSITE OISSERVICES.COM',
-            'file_name' => 'R5A Employment Visa- INGO.doc',
+            'center_id' => 2,
+            'visa_type' => 'Diplomatic',
+            'title' => 'R1A – ACCREDITED DIPLOMAT VISA',
+            'description' => 'REQUIREMENTS:<br/><br/>
+            1.ORIGINAL PASSPORT:<br/>
+            Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
+            2.PASSPORT PHOTO:<br/>
+            Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
+            3.ONLINE VISA APPLICATION FORM:<br/>
+            Complete the visa application form online at visa.immigration.gov.ng<br/>
+            Once completed, must be printed out, signed, and dated by the applicant.<br/>
+            A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
+            4.PASSPORT DATA PAGE:<br/>
+            Copy of Passport Data-Page<br/><br/>
+            5.REGUEST LETTER (NOTE VERBAL):<br/>
+            Request letter from the ministry of foreign affairs in Nigeria.',
+            'file_name' => 'ACCREDITED DIPLOMAT VISA R1A.docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'center_id' => 2,
+            'visa_type' => 'Diplomatic',
+            'title' => 'R1D – DEPENDANT (18 & ABOVE) OF ACCREDITED DIPLOMAT VISA',
+            'description' => 'REQUIREMENTS:<br/><br/>
+            1.ORIGINAL PASSPORT:<br/>
+            Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
+            2.PASSPORT PHOTO:<br/>
+            Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
+            3.ONLINE VISA APPLICATION FORM:<br/>
+            Complete the visa application form online at visa.immigration.gov.ng<br/>
+            Once completed, must be printed out, signed, and dated by the applicant.<br/>
+            A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
+            4.PASSPORT DATA PAGE:<br/>
+            Copy of Passport Data-Page<br/><br/>
+            5.REGUEST LETTER (NOTE VERBAL):<br/>
+            Request letter from the ministry of foreign affairs in Nigeria.',
+            'file_name' => 'DEPENDANT (18 & ABOVE) OF ACCREDITED DIPLOMAT VISA R1D.docx',
+        ]);
+        Checklist::create([
+            'center_id' => 2,
+            'visa_type' => 'Diplomatic',
+            'title' => 'R1E – DEPENDANT (AGED PARENTS – 65 & ABOVE) OF ACCREDITED DIPLOMAT VISA',
+            'description' => 'REQUIREMENTS:<br/><br/>
+            1.ORIGINAL PASSPORT:<br/>
+            Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
+            2.PASSPORT PHOTO:<br/>
+            Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
+            3.ONLINE VISA APPLICATION FORM:<br/>
+            Complete the visa application form online at visa.immigration.gov.ng<br/>
+            Once completed, must be printed out, signed, and dated by the applicant.<br/>
+            A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
+            4.PASSPORT DATA PAGE:<br/>
+            Copy of Passport Data-Page<br/><br/>
+            5.REGUEST LETTER (NOTE VERBAL):<br/>
+            Request letter from the ministry of foreign affairs in Nigeria.',
+            'file_name' => 'DEPENDANT (AGED PARENTS - 65 ABOVE) OF ACCREDITED DIPLOMAT VISA R1E.docx',
+        ]);
+        Checklist::create([
+            'center_id' => 2,
+            'visa_type' => 'Diplomatic',
+            'title' => 'R1C – DEPENDANT (MONIR) OF ACCREDITED DIPLOMAT VISA',
+            'description' => 'REQUIREMENTS:<br/><br/>
+            1.ORIGINAL PASSPORT:<br/>
+            Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
+            2.PASSPORT PHOTO:<br/>
+            Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
+            3.ONLINE VISA APPLICATION FORM:<br/>
+            Complete the visa application form online at visa.immigration.gov.ng<br/>
+            Once completed, must be printed out, signed, and dated by the applicant.<br/>
+            A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
+            4.PASSPORT DATA PAGE:<br/>
+            Copy of Passport Data-Page<br/><br/>
+            5.REGUEST LETTER (NOTE VERBAL):<br/>
+            Request letter from the ministry of foreign affairs in Nigeria.',
+            'file_name' => 'DEPENDANT MINOR OF ACCREDITED DIPLOMAT VISA R1C.docx',
+        ]);
+        Checklist::create([
+            'center_id' => 2,
+            'visa_type' => 'Diplomatic',
+            'title' => 'F2A – DIPLOMATIC (NON-ACCREDITED) VISA',
+            'description' => 'REQUIREMENTS:<br/><br/>
+            1.ORIGINAL PASSPORT:<br/>
+            Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
+            2.PASSPORT PHOTO:<br/>
+            Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
+            3.ONLINE VISA APPLICATION FORM:<br/>
+            Complete the visa application form online at visa.immigration.gov.ng<br/>
+            Once completed, must be printed out, signed, and dated by the applicant.<br/>
+            A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
+            4.PASSPORT DATA PAGE:<br/>
+            Copy of Passport Data-Page<br/><br/>
+            5.REGUEST LETTER (NOTE VERBAL):<br/>
+            Request letter from the ministry of foreign affairs in Nigeria.',
+            'file_name' => 'NON ACREDITED DIPLOMAT VISA F2A.docx',
+        ]);
+        Checklist::create([
+            'center_id' => 2,
+            'visa_type' => 'Diplomatic',
+            'title' => 'R1B – SPOUSE OF ACCREDITED DIPLOMAT VISA',
+            'description' => 'REQUIREMENTS:<br/><br/>
+            1.ORIGINAL PASSPORT:<br/>
+            Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
+            2.PASSPORT PHOTO:<br/>
+            Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
+            3.ONLINE VISA APPLICATION FORM:<br/>
+            Complete the visa application form online at visa.immigration.gov.ng<br/>
+            Once completed, must be printed out, signed, and dated by the applicant.<br/>
+            A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
+            4.PASSPORT DATA PAGE:<br/>
+            Copy of Passport Data-Page<br/><br/>
+            5.REGUEST LETTER (NOTE VERBAL):<br/>
+            Request letter from the ministry of foreign affairs in Nigeria.',
+            'file_name' => 'SPOUSE OF ACCREDITED DIPLOMAT VISA R1B.docx',
+        ]);
+        Checklist::create([
+            'center_id' => 2,
+            'visa_type' => 'Official',
+            'title' => 'R4D – DEPENDANT OF EXPATRIATE (18 & ABOVE) VISA – (GOVT. OFFICIAL)',
+            'description' => 'REQUIREMENTS:<br/><br/>
+            1.ORIGINAL PASSPORT:<br/>
+            Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
+            2.PASSPORT PHOTO:<br/>
+            Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
+            3.ONLINE VISA APPLICATION FORM:<br/>
+            Complete the visa application form online at visa.immigration.gov.ng<br/>
+            Once completed, must be printed out, signed, and dated by the applicant.<br/>
+            A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
+            4.PASSPORT DATA PAGE:<br/>
+            Copy of Passport Data-Page<br/><br/>
+            5.REGUEST LETTER (NOTE VERBAL):<br/>
+            Request letter from the government.',
+            'file_name' => 'DEPENDANT OF EXPATRIATE (18 & ABOVE) (GOVERNMENT OFFICIAL) VISA R4D.docx',
+        ]);
+        Checklist::create([
+          'center_id' => 2,
+          'visa_type' => 'Official',
+          'title' => 'R4E – DEPENDANT OF EXPATRIATE (AGEND PARENT 65 & ABOVE) VISA – (GOVT. OFFICIAL)',
+          'description' => 'REQUIREMENTS:<br/><br/>
+          1.ORIGINAL PASSPORT:<br/>
+          Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
+          2.PASSPORT PHOTO:<br/>
+          Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
+          3.ONLINE VISA APPLICATION FORM:<br/>
+          Complete the visa application form online at visa.immigration.gov.ng<br/>
+          Once completed, must be printed out, signed, and dated by the applicant.<br/>
+          A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
+          4.PASSPORT DATA PAGE:<br/>
+          Copy of Passport Data-Page<br/><br/>
+          5.REGUEST LETTER (NOTE VERBAL):<br/>
+          Request letter from the government.',
+          'file_name' => 'DEPENDANT OF EXPATRIATE (AGED PARENTS 65 & ABOVE) (GOVERNMENT OFFICIAL) VISA R4E.docx',
+        ]);
+        Checklist::create([
+          'center_id' => 2,
+          'visa_type' => 'Official',
+          'title' => 'R4C – DEPENDANT OF EXPATRIATE MINOR VISA – (GOVT. OFFICIAL)',
+          'description' => 'REQUIREMENTS:<br/><br/>
+          1.ORIGINAL PASSPORT:<br/>
+          Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
+          2.PASSPORT PHOTO:<br/>
+          Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
+          3.ONLINE VISA APPLICATION FORM:<br/>
+          Complete the visa application form online at visa.immigration.gov.ng<br/>
+          Once completed, must be printed out, signed, and dated by the applicant.<br/>
+          A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
+          4.PASSPORT DATA PAGE:<br/>
+          Copy of Passport Data-Page<br/><br/>
+          5.REGUEST LETTER (NOTE VERBAL):<br/>
+          Request letter from the government.',
+          'file_name' => 'DEPENDANT OF EXPATRIATE MINOR (GOVERNMENT OFFICIAL) VISA R4C.docx',
+        ]);
+        Checklist::create([
+          'center_id' => 2,
+          'visa_type' => 'Official',
+          'title' => 'R4A – EMPLOYMENT VISA – EXPATRIATE (GOVT. OFFICIAL)',
+          'description' => 'REQUIREMENTS:<br/><br/>
+          1.ORIGINAL PASSPORT:<br/>
+          Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
+          2.PASSPORT PHOTO:<br/>
+          Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
+          3.ONLINE VISA APPLICATION FORM:<br/>
+          Complete the visa application form online at visa.immigration.gov.ng<br/>
+          Once completed, must be printed out, signed, and dated by the applicant.<br/>
+          A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
+          4.PASSPORT DATA PAGE:<br/>
+          Copy of Passport Data-Page<br/><br/>
+          5.REGUEST LETTER (NOTE VERBAL):<br/>
+          Request letter from the government.',
+          'file_name' => 'EMPLOYMENT VISA - EXPATRIATE (GOVERNMENT OFFICIAL) VISA R4A .docx',
+        ]);
+        Checklist::create([
+          'center_id' => 2,
+          'visa_type' => 'Official',
+          'title' => 'R4B – SPOUSE OF EXPATRIATE VISA – (GOVT. OFFICIAL)',
+          'description' => 'REQUIREMENTS:<br/><br/>
+          1.ORIGINAL PASSPORT:<br/>
+          Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
+          2.PASSPORT PHOTO:<br/>
+          Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
+          3.ONLINE VISA APPLICATION FORM:<br/>
+          Complete the visa application form online at visa.immigration.gov.ng<br/>
+          Once completed, must be printed out, signed, and dated by the applicant.<br/>
+          A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
+          4.PASSPORT DATA PAGE:<br/>
+          Copy of Passport Data-Page<br/><br/>
+          5.REGUEST LETTER (NOTE VERBAL):<br/>
+          Request letter from the government.',
+          'file_name' => 'SPOUSE OF EXPATRIATE (GOVERNMENT OFFICIAL) VISA R4B.docx',
+        ]);
+        Checklist::create([
+            'center_id' => 2,
             'visa_type' => 'UN',
-            'title' => 'Employment Visa- Spouse of INGO Staff – R5B',
-            'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
-            APPLICATIONS SUBMITTED AFTER 11.30 PM FOR EXPRESS AND APPLICATIONS SUBMITTED AFTER 14.30 FOR REGULAR WILL BE TREATED AS NEXT DAY APPLICATIONS.<br/><br/>
-            ALL DOCUMENTS INCLUDING OIS APPOINTMENT BOOKING SLIP MUST BE PROVIDED OR YOUR APPLICATION WILL NOT BE ACCEPTED.<br/><br/>
-            NON-TURKISH CITIZENS MUST HAVE A TURKISH RESIDENCE PERMIT.<br/><br/>
-            EVERY DOCUMENT MUST BE PROVIDED WITH 2 COPIES.<br/><br/>
-            1. Passport/Travel Document a minimum of 6 months validity.<br/>
-            Must have three blank facing pages<br/>
-            If non-Turkish passport holder please see below for additional notes.<br/><br/>
-            2. 2.	Copy of the first page of the Passport. (2 copies)<br/><br/>
-            3. Two Recent Passport sized photographs with white background.<br/><br/>
-            4. Complete application form online at https://visa.immigration.gov.ng/<br/>
-            Once completed this must be printed out, signed and dated by applicant.<br/><br/>
-            5. Payment and acknowledgement slips available once online payment is complete – Printed from https://portal.immigration.gov.ng/visa/OnlineQueryStatus<br/><br/>
-            6. A letter of invitation from Nigeria. This must be addressed to the Nigerian Embassy Ankara. It must be on letter headed paper stating the address of the company, the reason for the visit and must be signed and dated by the inviter. (2 Copies)<br/><br/>
-            7. Copy of passport or National Identity Card of the signatory who signed the invitation letter.<br/><br/>
-            8. MoU with Nigerian Planning Commision (NPC) and appropriate security clearence (for special security cases)  <br/><br/>
-            IMPORTANT INFORMATION<br/><br/>
-            PROCESSING TIME;<br/>
-            10 working days minimum<br/><br/>
-            DOCUMENTS NOT IN ENGLISH MUST BE SUBMITTED WITH A CERTIFIED TRANSLATED COPY<br/><br/>
-            ALL LETTERS MUST BE SIGNED AND DATED<br/><br/>
-            NON-TURKISH PASSPORT HOLDER – MUST PROVIDE LEGAL RESIDENCE (Resident Visa/Permit).<br/><br/>
-            Must provide copy of Airline ticket or Flight Itinerary<br/><br/>
-            PLEASE CHECK OUR OPENING HOURS TO AVOID DELAYS AND FOR ANY ADDITIONAL INFORMATION PLEASE VISIT OUR WEBSITE OISSERVICES.COM',
-            'file_name' => 'R5B Employment Visa- Spouse of INGO.doc',
+            'title' => 'R5D – DEPENDANT (18 & ABOVE) EMPLOYMENT VISA - INGO  ',
+            'description' => 'REQUIREMENTS:<br/><br/>
+            1.ORIGINAL PASSPORT:<br/>
+            Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
+            2.PASSPORT PHOTO:<br/>
+            Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
+            3.ONLINE VISA APPLICATION FORM:<br/>
+            Complete the visa application form online at visa.immigration.gov.ng<br/>
+            Once completed, must be printed out, signed, and dated by the applicant.<br/>
+            A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
+            4.PASSPORT DATA PAGE:<br/>
+            Copy of Passport Data-Page<br/><br/>
+            5.REGUEST LETTER (NOTE VERBAL):<br/>
+            Request letter from the government.',
+            'file_name' => 'EMPLOYMENT VISA - (18 & ABOVE) OF INGO STAFF R5D.docx',
+        ]);
+        Checklist::create([
+            'center_id' => 2,
+            'visa_type' => 'UN',
+            'title' => 'R5E– DEPENDANT (AGED PARENT 65 & ABOVE) EMPLOYMENT VISA - INGO  ',
+            'description' => 'REQUIREMENTS:<br/><br/>
+            1.ORIGINAL PASSPORT:<br/>
+            Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
+            2.PASSPORT PHOTO:<br/>
+            Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
+            3.ONLINE VISA APPLICATION FORM:<br/>
+            Complete the visa application form online at visa.immigration.gov.ng<br/>
+            Once completed, must be printed out, signed, and dated by the applicant.<br/>
+            A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
+            4.PASSPORT DATA PAGE:<br/>
+            Copy of Passport Data-Page<br/><br/>
+            5.REGUEST LETTER (NOTE VERBAL):<br/>
+            Request letter from the government.',
+            'file_name' => 'EMPLOYMENT VISA - (AGED PARENTD 65 & ABOVE) OF INGO STAFF R5E.docx',
+        ]);
+        Checklist::create([
+            'center_id' => 2,
+            'visa_type' => 'UN',
+            'title' => 'R5A – EMPLOYMENT VISA - INGO',
+            'description' => 'REQUIREMENTS:<br/><br/>
+            1.ORIGINAL PASSPORT:<br/>
+            Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
+            2.PASSPORT PHOTO:<br/>
+            Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
+            3.ONLINE VISA APPLICATION FORM:<br/>
+            Complete the visa application form online at visa.immigration.gov.ng<br/>
+            Once completed, must be printed out, signed, and dated by the applicant.<br/>
+            A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
+            4.PASSPORT DATA PAGE:<br/>
+            Copy of Passport Data-Page<br/><br/>
+            5.REGUEST LETTER (NOTE VERBAL):<br/>
+            Request letter from the government.',
+            'file_name' => 'EMPLOYMENT VISA - INGO R5A.docx',
+        ]);
+        Checklist::create([
+            'center_id' => 2,
+            'visa_type' => 'UN',
+            'title' => 'R5C – MINOR EMPLOYMENT VISA - INGO',
+            'description' => 'REQUIREMENTS:<br/><br/>
+            1.ORIGINAL PASSPORT:<br/>
+            Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
+            2.PASSPORT PHOTO:<br/>
+            Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
+            3.ONLINE VISA APPLICATION FORM:<br/>
+            Complete the visa application form online at visa.immigration.gov.ng<br/>
+            Once completed, must be printed out, signed, and dated by the applicant.<br/>
+            A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
+            4.PASSPORT DATA PAGE:<br/>
+            Copy of Passport Data-Page<br/><br/>
+            5.REGUEST LETTER (NOTE VERBAL):<br/>
+            Request letter from the government.',
+            'file_name' => 'EMPLOYMENT VISA - MINOR OF INGO STAFF R5C.docx',
+        ]);
+        Checklist::create([
+            'center_id' => 2,
+            'visa_type' => 'UN',
+            'title' => 'R5B – SPOUSE EMPLOYMENT VISA - INGO',
+            'description' => 'REQUIREMENTS:<br/><br/>
+            1.ORIGINAL PASSPORT:<br/>
+            Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
+            2.PASSPORT PHOTO:<br/>
+            Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
+            3.ONLINE VISA APPLICATION FORM:<br/>
+            Complete the visa application form online at visa.immigration.gov.ng<br/>
+            Once completed, must be printed out, signed, and dated by the applicant.<br/>
+            A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
+            4.PASSPORT DATA PAGE:<br/>
+            Copy of Passport Data-Page<br/><br/>
+            5.REGUEST LETTER (NOTE VERBAL):<br/>
+            Request letter from the government.',
+            'file_name' => 'EMPLOYMENT VISA - SPOUSE OF INGO STAFF R5B.docx',
+        ]);
+        Checklist::create([
+            'center_id' => 2,
+            'visa_type' => 'Standard',
+            'title' => 'TF7H – ACADEMIC EXCHANGE PROGRAMME VISA  ',
+            'description' => 'REQUIREMENTS:<br/><br/>
+            1.ORIGINAL PASSPORT:<br/>
+            Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
+            2.PASSPORT PHOTO:<br/>
+            Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
+            3.ONLINE VISA APPLICATION FORM:<br/>
+            Complete the visa application form online at visa.immigration.gov.ng<br/>
+            Once completed, must be printed out, signed, and dated by the applicant.<br/>
+            A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
+            4.PASSPORT DATA PAGE:<br/>
+            Copy of Passport Data-Page<br/><br/>
+            5.REGUEST LETTER (NOTE VERBAL):<br/>
+            Request letter from the government.',
+            'file_name' => 'ACADEMIC EXCHANGE PROGRAMME F7H.docx',
+        ]);
+        Checklist::create([
+            'center_id' => 2,
+            'visa_type' => 'Standard',
+            'title' => 'R8A– ACADEMIC EXCHANGE PROGRAMME VISA',
+            'description' => 'REQUIREMENTS:<br/><br/>
+            1.ORIGINAL PASSPORT:<br/>
+            Passport/Travel Document with a minimum of 6 months validity. Must have two blank facing pages If non-Indian passport holder please see the below IMPORTANT INFORMATION section.<br/><br/>
+            2.PASSPORT PHOTO:<br/>
+            Two recent passport-sized photographs, taken no more than 1 Month before submission, with the applicant\'s full name written on the back. (Photographs older than 1 month are not acceptable)<br/><br/>
+            3.ONLINE VISA APPLICATION FORM:<br/>
+            Complete the visa application form online at visa.immigration.gov.ng<br/>
+            Once completed, must be printed out, signed, and dated by the applicant.<br/>
+            A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
+            4.PASSPORT DATA PAGE:<br/>
+            Copy of Passport Data-Page<br/><br/>
+            5.REGUEST LETTER (NOTE VERBAL):<br/>
+            Request letter from the government.',
+            'file_name' => 'ACADEMIC EXCHANGE PROGRAMME VISA - R8A.docx',
         ]);
     }
 }
