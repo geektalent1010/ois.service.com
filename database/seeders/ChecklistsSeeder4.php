@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use App\Checklist;
 use Illuminate\Database\Seeder;
 
-class ChecklistsSeeder5 extends Seeder
+class ChecklistsSeeder4 extends Seeder
 {
     /**
      * Run the database seeds.
