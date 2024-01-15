@@ -207,162 +207,230 @@ class ChecklistsSeeder5 extends Seeder
         Checklist::create([
           'center_id' => 6,
           'visa_type' => 'Official',
-          'title' => 'Spouse of Expatriate Expatriate (Government Official) Visa – R4B',
-          'description' => 'REQUIREMENTS:<br/><br/>
-          •	ORIGINAL PASSPORT:<br/>
-          Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-Chinese passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
-          •	PASSPORT PHOTO:<br/>
-          Two (2) recent passport sized (35x40mm) photographs <br/><br/>
-          •	Online Payment <br/>
-          A copy of the Acknowledgment slip must be Printed from https://portal.immigration.gov.ng/<br/><br/>
-          •	Application form <br/>
-          Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
-          •	Return Ticket <br/><br/>
-          •	Evidence of sufficient fund  <br/>
-          Original evidence of sufficient fund of applicant, with bank\'s stamp<br/><br/>
-          •	Evidence of Hotel Reservation/host address in Nigeria<br/><br/>
-          •	Note Verbal ',
+          'title' => 'Spouse of Employed Expatriate (Government Official) Visa − R4B',
+          'description' => 'R4A − Spouse of Employed Expatriate (Government Official) Visa is issued to spouse of Expatriate employed by Government as Government Official in Nigeria<br/><br/>
+          Eligibility<br/><br/>
+          Spouse accompanying Expatriates employed by Government in Nigeria<br/><br/>
+          Requirements<br/><br/>
+          1.	Passport valid for at least 6 months with at least 2 blank visa pages for endorsement<br/>
+          2.	Formal application for R4B Visa by the Employer (Government) accepting Immigration Responsibility<br/>
+          3.	Letter from the principal immigrant<br/>
+          4.	Two recent passport sized photographs. (White background)<br/>
+          5.	Payment and acknowledgement slips are available once the application is complete-Printed from www.immigration.gov.ng or portal.immigration.gov.ng/ visa/ OnlineQueryStatus<br/><br/>
+          PLEASE CHECK OUR OPENING HOURS TO AVOID DELAYS AND FOR ANY ADDITIONALINFORMATION, PLEASE CALL US ON +97142765448 OR VISIT OUR WEBSITE WWW.OISSERVICES.COM
+          ',
           'file_name' => 'R4B- SPOUSE OF GO VISA.docx',
         ]);
         Checklist::create([
           'center_id' => 6,
           'visa_type' => 'Official',
           'title' => 'Dependant (Minor) of Employed Expatriate (Government Official) Visa – R4C',
-          'description' => 'REQUIREMENTS:<br/><br/>
-          •	ORIGINAL PASSPORT:<br/>
-          Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-Chinese passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
-          •	PASSPORT PHOTO:<br/>
-          Two (2) recent passport sized (35x40mm) photographs <br/><br/>
-          •	Online Payment <br/>
-          A copy of the Acknowledgment slip must be Printed from https://portal.immigration.gov.ng/<br/><br/>
-          •	Application form <br/>
-          Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
-          •	Return Ticket <br/><br/>
-          •	Evidence of sufficient fund  <br/>
-          Original evidence of sufficient fund of applicant, with bank\'s stamp<br/><br/>
-          •	Evidence of Hotel Reservation/host address in Nigeria<br/><br/>
-          •	Note Verbal ',
+          'description' => 'R4C− Dependants (Minor) of Employed Expatriate (Government Official) Visa is visa issued to dependants of expatriates employed by Government, who are less than 18 years of age<br/><br/>
+          Eligibility<br/><br/>
+          Dependants (less than 18 years) accompanying Expatriates employed by Government in Nigeria<br/><br/>
+          Requirements<br/><br/>
+          1.	Passport valid for at least 6 months with at least 2 blank visa pages for endorsement<br/>
+          2.	Formal application for R4C Visa by the Employer (Government) accepting Immigration Responsibility<br/>
+          3.	Letter from the principal immigrant<br/>
+          4.	Payment and acknowledgement slips are available once the application is complete-Printed from www.immigration.gov.ng or portal.immigration.gov.ng/ visa/ OnlineQueryStatus<br/>
+          5.	Two recent passport sized photographs. (White background)<br/><br/>
+          PLEASE CHECK OUR OPENING HOURS TO AVOID DELAYS AND FOR ANY ADDITIONALINFORMATION, PLEASE CALL US ON +97142765448 OR VISIT OUR WEBSITE WWW.OISSERVICES.COM
+          ',
           'file_name' => 'R4C- DEPENDANT OF GO(MINOR) VISA.docx',
         ]);
         Checklist::create([
           'center_id' => 6,
           'visa_type' => 'Official',
           'title' => 'Dependant of (18 years and above) of Employed Expatriate (GO) Visa – R4D',
-          'description' => 'REQUIREMENTS:<br/><br/>
-          •	ORIGINAL PASSPORT:<br/>
-          Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-Chinese passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
-          •	PASSPORT PHOTO:<br/>
-          Two (2) recent passport sized (35x40mm) photographs <br/><br/>
-          •	Online Payment <br/>
-          A copy of the Acknowledgment slip must be Printed from https://portal.immigration.gov.ng/<br/><br/>
-          •	Application form <br/>
-          Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
-          •	Return Ticket <br/><br/>
-          •	Evidence of sufficient fund  <br/>
-          Original evidence of sufficient fund of applicant, with bank\'s stamp<br/><br/>
-          •	Evidence of Hotel Reservation/host address in Nigeria<br/><br/>
-          •	Note Verbal ',
+          'description' => 'R4D−Dependant of Employed Expatriate (GO) Visa is issued to dependants of expatriates employed by Government, who are 18 years and above<br/><br/>
+          Eligibility:<br/><br/>
+          Dependants (18 years and above) accompanying Expatriates employed by Government in Nigeria<br/><br/>
+          Requirements:<br/><br/>
+          1.	Passport valid for at least 6 months with at least 2 blank visa pages for endorsement<br/>
+          2.	Two recent passport sized photographs. (White background)<br/>
+          3.	Formal application for R4D Visa by the Employer (Government) accepting Immigration Responsibility<br/>
+          4.	Letter from the principal immigrant<br/>
+          5.	Payment and acknowledgement slips are available once the application is complete-Printed from www.immigration.gov.ng or portal.immigration.gov.ng/ visa/ OnlineQueryStatus<br/><br/>
+          PLEASE CHECK OUR OPENING HOURS TO AVOID DELAYS AND FOR ANY ADDITIONALINFORMATION, PLEASE CALL US ON +97142765448 OR VISIT OUR WEBSITE WWW.OISSERVICES.COM
+          ',
           'file_name' => 'R4D- DEPENDANT OF GO(18 YEARS AND ABOVE) VISA.docx',
         ]);
         Checklist::create([
           'center_id' => 6,
           'visa_type' => 'Official',
           'title' => 'Dependant (Aged Parents – 65 years and above) of Employed Expatriate (GO) Visa – R4E',
-          'description' => 'REQUIREMENTS:<br/><br/>
-          •	ORIGINAL PASSPORT:<br/>
-          Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-Chinese passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
-          •	PASSPORT PHOTO:<br/>
-          Two (2) recent passport sized (35x40mm) photographs <br/><br/>
-          •	Online Payment <br/>
-          A copy of the Acknowledgment slip must be Printed from https://portal.immigration.gov.ng/<br/><br/>
-          •	Application form <br/>
-          Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
-          •	Return Ticket <br/><br/>
-          •	Evidence of sufficient fund  <br/>
-          Original evidence of sufficient fund of applicant, with bank\'s stamp<br/><br/>
-          •	Evidence of Hotel Reservation/host address in Nigeria<br/><br/>
-          •	Note Verbal ',
+          'description' => 'R4E Visa is issued to aged parents (65 years and above) of expatriates employed by Government.<br/><br/>
+          Eligibility:<br/><br/>
+          Aged parents (65 years and above) accompanying employed Expatriates employed by Government in Nigeria<br/><br/>
+          Requirements:<br/><br/>
+          1. International Passport with a minimum of 6 months validity and valid UAE residence visa with minimum 1 month validity. Must have 3 continuous blank facing pages.<br/>
+          2. Two recent passport sized photographs. (White background)<br/>
+          3.Formal application for R4E Visa by the Employer (Government) accepting Immigration<br/>
+          4. Payment and acknowledgement slips are available once the application is complete printed from www.immigration.gov.ng ORortal.immigration.gov.ng/visa/OnlineQueryStatus.<br/>
+          5. Letter from the principal immigrant<br/><br/>
+          
+          
+          PLEASE CHECK OUR OPENING HOURS TO AVOID DELAYS AND FOR ANY ADDITIONAL INFORMATION, PLEASE CALL US ON +97142765448 OR VISIT OUR WEBSITE.
+          ',
           'file_name' => 'R4E- DEPENDANT OF GO(AGED PARENTS-65 YEARS AND ABOVE) VISA.docx',
-        ]);
-        Checklist::create([
-            'center_id' => 6,
-            'visa_type' => 'Standard',
-            'title' => 'Transit Visa-F3B ',
-            'description' => 'REQUIREMENTS:<br/><br/>
-            •	ORIGINAL PASSPORT:<br/>
-            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-Chinese passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
-            •	PASSPORT PHOTO:<br/>
-            Two (2) recent passport sized (35x40mm) photographs <br/><br/>
-            •	Online Payment <br/>
-            A copy of the Acknowledgment slip must be Printed from https://portal.immigration.gov.ng/<br/><br/>
-            •	Application form <br/>
-            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
-            •	Return Ticket <br/><br/>
-            •	Evidence of sufficient fund  <br/>
-            Original evidence of sufficient fund of applicant, with bank\'s stamp<br/><br/>
-            •	Evidence of Hotel Reservation/host address in Nigeria<br/><br/>
-            •	Note Verbal ',
-            'file_name' => 'F3B- TRANSIT VISA.docx',
-        ]);
-        Checklist::create([
-            'center_id' => 6,
-            'visa_type' => 'Standard',
-            'title' => 'Business –Single Entry Visa-F4A ',
-            'description' => 'REQUIREMENTS:<br/><br/>
-            •	ORIGINAL PASSPORT:<br/>
-            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-Chinese passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
-            •	PASSPORT PHOTO:<br/>
-            Two (2) recent passport sized (35x40mm) photographs <br/><br/>
-            •	Online Payment <br/>
-            A copy of the Acknowledgment slip must be Printed from https://portal.immigration.gov.ng/<br/><br/>
-            •	Application form <br/>
-            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
-            •	Return Ticket <br/><br/>
-            •	Evidence of sufficient fund  <br/>
-            Original evidence of sufficient fund of applicant, with bank\'s stamp<br/><br/>
-            •	Evidence of Hotel Reservation/host address in Nigeria<br/><br/>
-            •	Note Verbal ',
-            'file_name' => 'F4A- BUSINESS VISA.docx',
         ]);
         Checklist::create([
             'center_id' => 6,
             'visa_type' => 'UN',
             'title' => 'Employment Visa – INGO : R5A',
-            'description' => 'REQUIREMENTS:<br/><br/>
-            •	ORIGINAL PASSPORT:<br/>
-            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-Chinese passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
-            •	PASSPORT PHOTO:<br/>
-            Two (2) recent passport sized (35x40mm) photographs <br/><br/>
-            •	Online Payment <br/>
-            A copy of the Acknowledgment slip must be Printed from https://portal.immigration.gov.ng/<br/><br/>
-            •	Application form <br/>
-            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
-            •	Return Ticket <br/><br/>
-            •	Evidence of sufficient fund  <br/>
-            Original evidence of sufficient fund of applicant, with bank\'s stamp<br/><br/>
-            •	Evidence of Hotel Reservation/host address in Nigeria<br/><br/>
-            •	Note Verbal ',
+            'description' => 'R5A - Employment Visa (INGO) is issued to expatriates who wish to obtain employment with International Non-Governmental Organisations operating in Nigeria.<br/><br/>
+
+            Eligibility: <br/><br/>
+              
+              INGO workers<br/><br/>
+            
+            Requirements:<br/><br/>
+            
+            1. International Passport with a minimum of 6 months validity and valid UAE residence visa with minimum 1 month validity. Must have 3 continuous blank facing pages.<br/>
+            2. Two recent passport sized photographs. (White background)<br/>
+            3.MoU with Nigeria National Planning Commission (NPC) and appropriate security clearance (for special security cases)<br/>
+            4. Formal application for R5A Visa by the Employer accepting Immigration Responsibility.<br/>
+            5. Payment and acknowledgement slips are available once the application is complete Printed from www.immigration.gov.ng ORortal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
+            
+            PLEASE CHECK OUR OPENING HOURS TO AVOID DELAYS AND FOR ANY ADDITIONAL INFORMATION, PLEASE CALL US ON +97142765448 OR VISIT OUR WEBSITE.
+            ',
             'file_name' => 'R5A-EMPLOYMENT (INGO) VISA.docx',
         ]);
         Checklist::create([
             'center_id' => 6,
             'visa_type' => 'UN',
             'title' => 'Employment Visa – Spouse of INGO Staff: R5B',
-            'description' => 'REQUIREMENTS:<br/><br/>
-            •	ORIGINAL PASSPORT:<br/>
-            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-Chinese passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
-            •	PASSPORT PHOTO:<br/>
-            Two (2) recent passport sized (35x40mm) photographs <br/><br/>
-            •	Online Payment <br/>
-            A copy of the Acknowledgment slip must be Printed from https://portal.immigration.gov.ng/<br/><br/>
-            •	Application form <br/>
-            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
-            •	Return Ticket <br/><br/>
-            •	Evidence of sufficient fund  <br/>
-            Original evidence of sufficient fund of applicant, with bank\'s stamp<br/><br/>
-            •	Evidence of Hotel Reservation/host address in Nigeria<br/><br/>
-            •	Note Verbal ',
+            'description' => 'R5B - Employment Visa - Spouse of INGO Staff is issued to spouse of INGO Staff<br/><br/>
+
+            Eligibility:<br/><br/>
+            
+            Spouse accompanying INGO Staff<br/><br/>
+            
+            Requirements:<br/><br/>
+            
+            1. International Passport with a minimum of 6 months validity and valid UAE residence visa with minimum 1 month validity. Must have 3 continuous blank facing pages.<br/>
+            2. Two recent passport sized photographs. (White background)<br/>
+            3. Formal application for R5B Visa by the Employer of spouse, accepting Immigration Responsibility<br/>
+            4. Letter from the principal immigrant<br/>
+            5. Payment and acknowledgement slips are available once the application is complete<br/>
+            Printed from www.immigration.gov.ng ORortal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
+            
+            PLEASE CHECK OUR OPENING HOURS TO AVOID DELAYS AND FOR ANY ADDITIONAL INFORMATION, PLEASE CALL US ON +97142765448 OR VISIT OUR WEBSITE.
+            ',
             'file_name' => 'R5B-SPOUSE OF INGO STAFF VISA.docx',
+        ]);
+        Checklist::create([
+            'center_id' => 6,
+            'visa_type' => 'UN',
+            'title' => 'Employment Visa - Dependant (Minor) of INGO Staff: R5C',
+            'description' => 'R5C - Employment Visa - Dependant (Minor) of INGO Staff is visa issued to dependants of INGO Staff, who are less than 18 years of age.<br/><br/>
+
+            Eligibility:<br/><br/>
+            
+            Dependants (less than 18 years) accompanying INGO Staff<br/><br/>
+            
+            Requirements:<br/><br/>
+            
+            1. International Passport with a minimum of 6 months validity and valid UAE residence visa with minimum 1 month validity. Must have 3 continuous blank facing pages.<br/>
+            2. Two recent passport sized photographs. (White background)<br/>
+            3. Formal application for R5C Visa by the Employer accepting Immigration responsibility.<br/>
+            4. Letter from the principal immigrant<br/>
+            5. Payment and acknowledgement slips are available once the application is complete<br/>            Printed from www.immigration.gov.ng ORortal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
+            
+            PLEASE CHECK OUR OPENING HOURS TO AVOID DELAYS AND FOR ANY ADDITIONAL INFORMATION, PLEASE CALL US ON +97142765448 OR VISIT OUR WEBSITE.            
+            ',
+            'file_name' => 'R5C- DEPENDANT OF INGO(MINOR) VISA.docx',
+        ]);
+        Checklist::create([
+            'center_id' => 6,
+            'visa_type' => 'UN',
+            'title' => 'Employment Visa - Dependant (18 years and above) of INGO Staff: R5D',
+            'description' => 'R5D - Employment Visa - Dependant (18 years and above) of INGO Staff is issued to dependants of INGO Staff who are 18 years and above.<br/><br/>
+
+            Eligibility:<br/><br/>
+            
+            Dependants (18 years and above) accompanying INGO Staff<br/><br/>
+            
+            Requirements:<br/><br/>
+            
+             1. International Passport with a minimum of 6 months validity and valid UAE residence visa with minimum 1 month validity. Must have 3 continuous blank facing pages.<br/>
+             2. Two recent passport sized photographs. (White background)<br/>
+             3. Formal application for R5D Visa by the Employer (Government) accepting Immigration Responsibility<br/>
+             4. Letter from the principal immigrant<br/>
+             5. Payment and acknowledgement slips are available once the application is complete <br/>           Printed from www.immigration.gov.ng ORortal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
+            
+            
+            PLEASE CHECK OUR OPENING HOURS TO AVOID DELAYS AND FOR ANY ADDITIONAL INFORMATION, PLEASE CALL US ON +97142765448 OR VISIT OUR WEBSITE.
+            ',
+            'file_name' => 'R5D- DEPENDANT OF INGO(18 YEARS AND ABOVE) VISA.docx',
+        ]);
+        Checklist::create([
+            'center_id' => 6,
+            'visa_type' => 'UN',
+            'title' => 'Employment Visa - Dependant (aged parents, 65 years and above) of INGO Staff: R5E',
+            'description' => 'R5E - Employment Visa - Dependant (18 years and above) of INGO Staff is issued to aged parents (65 years and above) of INGO Staff<br/><br/>
+
+            Eligibility:<br/><br/>
+            
+            Aged parents (65 years and above) accompanying INGO Staff<br/><br/>
+            
+            Requirements:<br/><br/>
+            
+            1. International Passport with a minimum of 6 months validity and valid UAE residence visa with minimum 1 month validity. Must have 3 continuous blank facing pages.<br/>
+            2. Two recent passport sized photographs. (White background)<br/>
+            3. Formal application for R5E Visa by the Employer accepting Immigration Responsibility<br/>
+            4. Letter from the principal immigrant<br/>
+            5.Payment and acknowledgement slips are available once the application is complete  <br/>          Printed from www.immigration.gov.ng ORortal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
+            
+            PLEASE CHECK OUR OPENING HOURS TO AVOID DELAYS AND FOR ANY ADDITIONAL INFORMATION, PLEASE CALL US ON +97142765448 OR VISIT OUR WEBSITE.            
+            ',
+            'file_name' => 'R5E- DEPENDANT OF INGO(AGED PARENT-65 YEARS AND ABOVE) VISA.docx',
+        ]);
+        Checklist::create([
+            'center_id' => 6,
+            'visa_type' => 'Standard',
+            'title' => 'Transit Visa-F3B ',
+            'description' => 'Transit Visa-F3B is for the passengers with onward ticket to the next destination.<br/><br/>
+            Eligibility:<br/><br/>
+            Transit Passengers who have onward ticket to the next destination and wish to enter Nigeria before proceeding on the onward journey.<br/><br/>
+            Requirements:<br/><br/>
+            1.	International Passport with a minimum of 6 months validity<br/>
+            2.	Two recent passport sized photographs. (White background)<br/>
+            3.	Onward ticket to the next destination<br/>
+            4.	Payment and acknowledgement slips are available once the application is complete-Printed from www.immigration.gov.ng or portal.immigration.gov.ng/ visa/ OnlineQueryStatus.<br/><br/>
+            
+            PLEASE CHECK OUR OPENING HOURS TO AVOID DELAYS AND FOR ANY ADDITIONAL INFORMATION, PLEASE CALL US ON +97142765448 OR VISIT OUR WEBSITE.
+            ',
+            'file_name' => 'F3B- TRANSIT VISA.docx',
+        ]);
+        Checklist::create([
+            'center_id' => 6,
+            'visa_type' => 'Standard',
+            'title' => 'Business –Single Entry Visa-F4A ',
+            'description' => 'F4A: Business-Single Entry Visa is for those who wish to visit Nigeria for business meetings, Conference, Seminar, Contract negotiation, marketing, sales procurement of Nigerian goods/Services, trade fairs and job interview.<br/><br/>
+            Eligibility:<br/><br/>
+            Foreign Travellers who wish to visit Nigeria for the purpose of attending meetings, Conference, Seminar, Contract negotiation, marketing, sales, procurement of Nigerian goods/Services, trade fairs and job interview.<br/><br/>
+             Requirements:<br/><br/>
+            1.	International Passport with a minimum of 6 months validity and valid UAE residence visa with minimum 1 month validity. Must have 3 continuous blank facing pages.<br/>
+            2.	Two recent passport sized photographs. (White background)<br/>
+            3.	Letter of invitation from Nigeria (signed and dated), addressed to the processing center (Nigerian Embassy Abu Dhabi or Nigerian Consulate Dubai) selected on the online application form, accepting full immigration responsibility/evidence of sustaining self while in Nigeria. Letter must state the exact reason of travel, as well as Nigerian contact number and address.<br/>
+            4.	If invitee is Nigerian, please provide Passport copy. (Please note that invitee’s signature must match the signature in their passport). In the event the invitee has no valid passport then provide their voters ID or NIN slip. On condition that the invitee’s not Nigerian, please provide proof of residency in Nigeria i.e., Nigeria CERPAC card and their valid passport data page copy)<br/>
+            5.	Letter of incorporation from Nigeria (Inviting-company Business License).<br/>
+            6.	Provide original NOC (letter from Company/Sponsor) addressed to the processing center (Nigerian Embassy Abu Dhabi or Nigerian Consulate Dubai) selected on the online application signed and stamped with the signatory’s name. Additionally attach copies of NOC signatories;<br/>
+            •	Emirates ID (front & back)<br/>
+            •	Residence Visa<br/>
+            •	Passport data page NOC must state the current immigration and employment of the applicant’s status. The employer must also clearly state that he is aware of the employee trip to Nigeria.<br/>
+            7.	UAE company Trade license.<br/>
+            8.	State the intended date of arrival and the duration of stay in both letters.<br/>
+            9.	Return ticket<br/>
+            10.	Evidence of sufficient fund<br/>
+            11.	Evidence of Hotel Reservation/host address in Nigeria<br/>
+            12.	Payment and acknowledgement slips are available once the application is complete – Printed from www.immigration.gov.ng ORortal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
+            
+            PLEASE CHECK OUR OPENING HOURS TO AVOID DELAYS AND FOR ANY ADDITIONAL
+            INFORMATION, PLEASE CALL US ON +97142765448 OR VISIT OUR WEBSITE.
+            ',
+            'file_name' => 'F4A- BUSINESS VISA.docx',
         ]);
     }
 }
