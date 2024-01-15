@@ -205,23 +205,7 @@ class ChecklistsSeeder8 extends Seeder
         Checklist::create([
             'center_id' => 14,
             'visa_type' => 'UN',
-            'title' => 'Employment Visa − Dependant (18 years and above) of INGO Staff: R5D',
-            'description' => 'R5C − Employment Visa − Dependant (Minor) of INGO Staff is visa issued to dependants of INGO Staff, who are less than 18 years of age<br/><br/>
-
-            Eligibility <br/>
-            Dependants (less than 18 years) accompanying INGO Staff<br/><br/>
-            
-            Requirements<br/><br/>
-            1.	Passport valid for at least 6 months with at least 2 blank visa pages for endorsement<br/>
-            2.	Formal application for R5C Visa by the Employer accepting Immigration Responsibility<br/>
-            3.	Letter from the principal immigrant
-            ',
-            'file_name' => 'Employment Visa _ Dependant (aged parents, 65 years and above) of INGO Staff_R5E.docx',
-        ]);
-        Checklist::create([
-            'center_id' => 14,
-            'visa_type' => 'UN',
-            'title' => 'Employment Visa − Dependant (18 years and above) of INGO Staff: R5D',
+            'title' => 'Employment Visa − Dependant (Minor) of INGO Staff_R5C',
             'description' => 'R5C − Employment Visa − Dependant (Minor) of INGO Staff is visa issued to dependants of INGO Staff, who are less than 18 years of age<br/><br/>
 
             Eligibility <br/>
