@@ -31,7 +31,7 @@
                         <select class="form-control webkit-style country-select w-100" name="center" id="center">
                             <option value="">Country</option>
                             @foreach($centers as $center)
-                                <option value="{{$center->id}}">{{$center['name']}}, {{$center['country']}}</option>
+                                <option value="{{$center->id}}">{{$center['city']}}, {{$center['country']}}</option>
                             @endforeach
                         </select>
                     </div>

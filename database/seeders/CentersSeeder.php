@@ -70,7 +70,7 @@ class CentersSeeder extends Seeder
             'country' => 'South Africa',
         ]);
         Center::create([
-            'name' => 'THE HAGUE',
+            'name' => 'THE_HAGUE',
             'city' => 'THE HAGUE',
             'country' => 'Netherlands',
         ]);
