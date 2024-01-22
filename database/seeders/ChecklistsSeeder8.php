@@ -205,7 +205,7 @@ class ChecklistsSeeder8 extends Seeder
         Checklist::create([
             'center_id' => 14,
             'visa_type' => 'UN',
-            'title' => 'Employment Visa − Dependant (Minor) of INGO Staff_R5C',
+            'title' => 'Employment Visa − Dependant (Minor) of INGO Staff: R5C',
             'description' => 'R5C − Employment Visa − Dependant (Minor) of INGO Staff is visa issued to dependants of INGO Staff, who are less than 18 years of age<br/><br/>
 
             Eligibility <br/>
