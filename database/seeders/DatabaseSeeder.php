@@ -25,5 +25,11 @@ class DatabaseSeeder extends Seeder
         $this->call(ChecklistsSeeder6::class);
         $this->call(ChecklistsSeeder7::class);
         $this->call(ChecklistsSeeder8::class);
+        $this->call(ChecklistsSeeder9::class);
+        $this->call(ChecklistsSeeder10::class);
+        $this->call(ChecklistsSeeder11::class);
+        $this->call(ChecklistsSeeder12::class);
+        $this->call(ChecklistsSeeder13::class);
+        $this->call(ChecklistsSeeder14::class);
     }
 }
