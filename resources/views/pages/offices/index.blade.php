@@ -102,7 +102,7 @@
                      html += '<p class="mb-0">' + res[resIndex].address + '</p>';
                   } else {
                      html += '<p class="mb-0">' + res[resIndex].address + '</p>';
-                     html += '<p>' + res[resIndex].city + '</p>';
+                     html += '<p class="mb-0">' + res[resIndex].city + '</p>';
                      html += '<p class="country mt-4">Opening Hours</p>';
                      html += '<p class="mb-0">' + res[resIndex].working_days + ':</p>';
                      const times = res[resIndex].working_time.split(' & ');
