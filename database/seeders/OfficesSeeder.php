@@ -29,7 +29,7 @@ class OfficesSeeder extends Seeder
         ]);
         Office::create([
             'country' => 'Netherlands',
-            'city' => 'Amsterdam/ The Hague',
+            'city' => 'The Hague',
             'key' => 'THE_HAGUE',
             'flag' => 'Netherlands.svg',
             'address' => 'First Floor, Regus Building, Koningin Juliana Plein 10. Postcode 2595AA, The Hague Central station,',

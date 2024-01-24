@@ -23,8 +23,8 @@
             <div class="info-container w-100 d-flex justify-content-center">
                <div class="info-box">
                   <div class="search-field">
-                     <input type="text" class="input-field office-input cursor-pointer" placeholder="Country + City" />
-                     <img class="search-icon" src="{{ asset('images/select-arrows.svg') }}">
+                     <input type="text" class="input-field office-input cursor-default" placeholder="Country + City" />
+                     <img class="search-icon cursor-default" src="{{ asset('images/select-arrows.svg') }}">
                   </div>
                   <div class="offices-menus d-none">
                      @foreach($offices as $country => $cities)
@@ -63,12 +63,16 @@
       $(".offices-menus").removeClass('d-none');
    });
 
+   $('.search-icon').click(function () {
+      $(".offices-menus").removeClass('d-none');
+   });
+
    function windowOnClick(event) {
       $('.offices-menus').addClass('d-none');
    }
 
    $(document).on('click', '.main-bg', function (event) {
-      if(!$(event.target).hasClass('office-input')) {
+      if(!$(event.target).hasClass('office-input') && !$(event.target).hasClass('search-icon')) {
          $('.offices-menus').addClass('d-none');
       }
    });
@@ -103,7 +107,6 @@
                      html += '<p class="mb-0">' + res[resIndex].working_days + ':</p>';
                      const times = res[resIndex].working_time.split(' & ');
                      times.forEach((element) => { html += '<p class="mb-0">' + element + '</p>'; });
-                     // html += '<p class="mb-0">' + res[resIndex].working_time + '</p>';
                      html += '</div></div>';
                      html += '<div class="contact-btn-section"><a href="{{ route('contact.index') }}" class="contact-btn">CONTACT US</a></div>';
                   }
