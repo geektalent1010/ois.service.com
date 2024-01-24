@@ -19,4 +19,9 @@ class Office extends Model
         'working_time',
         'working_days',
     ];
+
+    public function checklists(): HasMany
+    {
+        return $this->hasMany('App\Checklist');
+    }
 }

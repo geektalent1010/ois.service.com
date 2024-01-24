@@ -15,7 +15,7 @@ class ChecklistsSeeder11 extends Seeder
     public function run()
     {
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Diplomatic',
             'title' => 'Accredited Diplomat Visa- R1A',
             'description' => 'R1A: Accredited Diplomat Visa is issued to accredited Diplomats to Nigeria <br/><br/>
@@ -52,7 +52,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Accredited Diplomat Visa- R1A.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Diplomatic',
             'title' => 'Dependant (Aged Parents – 65 years & above) of Accredited Diplomat Visa-R1E',
             'description' => 'R1E : Visa is issued to aged parents (65 years and above) of accredited diplomat as dependants with each case treated on its merit. <br/><br/>
@@ -91,7 +91,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Dependant (Aged Parents – 65 years & above) of Accredited Diplomat Visa-R1E.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Diplomatic',
             'title' => 'Dependent (18 years & above) of Accredited Diplomat Visa-R1D',
             'description' => 'R1D: Visa is issued to dependents of accredited diplomat who are less than 18 years of age <br/><br/>
@@ -125,7 +125,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Dependent (18 years & above) of Accredited Diplomat Visa-R1D.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Diplomatic',
             'title' => 'Dependent (Minor) of Accredited Diplomat Visa- R1C',
             'description' => 'R1C: Visa is a type of visa issued to dependents of accredited diplomat who are less than 18 years of age <br/><br/>
@@ -161,7 +161,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Dependent (Minor) of Accredited Diplomat Visa- R1C.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Diplomatic',
             'title' => 'Diplomatic（Non-Accredited） Visa---F2A',
             'description' => 'F2A: Diplomatic (Non-accredited) Visa is a single-entry short visit visa for non-accredited Diplomats who wish to enter Nigeria for official business. <br/><br/>
@@ -195,7 +195,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Diplomatic（Non-Accredited） Visa---F2A.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Diplomatic',
             'title' => 'Spouse of Accredited Diplomat Visa- R1B',
             'description' => 'R1B: Spouse of Accredited Diplomat Visa is issued to spouse of accredited Diplomats to Nigeria <br/><br/>
@@ -232,7 +232,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Spouse of Accredited Diplomat Visa- R1B.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Official',
             'title' => 'Dependent (Aged Parents – 65 years and above) of Employed Expatriate (GO) Visa – R4E',
             'description' => 'R4E: Visa is issued to aged parents (65 years and above) of expatriates employed by Government <br/><br/>
@@ -274,7 +274,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Dependent (Aged Parents – 65 years and above) of Employed Expatriate (GO) Visa – R4E.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Official',
             'title' => 'Dependent (Minor) of Employed Expatriate (Government Official) Visa – R4C',
             'description' => 'R4C: Dependent (Minor) of employed Expatriate (Government Official) Visa is visa issued to dependent of expatriate employed by Government, who are less than 18 years of age <br/><br/>
@@ -322,7 +322,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Dependent (Minor) of Employed Expatriate (Government Official) Visa – R4C.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Official',
             'title' => 'Dependent of (18 years and above) of Employed Expatriate (GO) Visa – R4D',
             'description' => 'R4D: Dependent of Employed Expatriate (GO) Visa is issued to dependents of expatriate employed by Government, who are 18 years and above <br/><br/>
@@ -368,7 +368,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Dependent of (18 years and above) of Employed Expatriate (GO) Visa – R4D.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Official',
             'title' => 'Employment Visa – Expatriate (Government Official) Visa: R4A',
             'description' => 'R4A: Employment Visa – Expatriate (Government Official) is issued to expatriates who wish to obtain employment with Government as Government Official in Nigeria <br/><br/>
@@ -423,7 +423,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Employment Visa – Expatriate (Government Official) Visa- R4A.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Official',
             'title' => 'Spouse of Expatriate Expatriate (Government Official) Visa – R4B',
             'description' => 'R4B: Spouse of Employed Expatriate (Government Official) Visa is issued to spouse of expatriate employed by Government as Government Official in Nigeria <br/><br/>
@@ -468,7 +468,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Spouse of Expatriate Expatriate (Government Official) Visa – R4B.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'UN',
             'title' => 'Employment Visa – Dependent (18 years and above) of INGO Staff: R5D',
             'description' => 'R5D: Employment Visa – Dependent (18 years and above) of INGO Staff is issued to dependents of INGO Staff, who are 18 years and above<br/><br/>
@@ -515,7 +515,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Employment Visa – Dependent (18 years and above) of INGO Staff- R5D.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'UN',
             'title' => 'Employment Visa – Dependent (aged parents, 65 years and above) of INGO Staff: R5E',
             'description' => 'R5E: Employment Visa – Dependent (65 years and above) of INGO Staff is issued to aged parents (65 years and above) of INGO Staff,  <br/><br/>
@@ -559,7 +559,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Employment Visa – Dependent (aged parents- 65 years and above) of INGO Staff- R5E.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'UN',
             'title' => 'Employment Visa – Dependent (Minor) of INGO Staff: R5C',
             'description' => 'R5C: Employment Visa – Dependent (Minor) of INGO Staff is visa issued to dependents of INGO Staff, who are less than 18 years of age <br/><br/>
@@ -605,7 +605,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Employment Visa – Dependent (Minor) of INGO Staff- R5C.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'UN',
             'title' => 'Employment Visa – INGO: R5A',
             'description' => 'R5A: Employment Visa (INGO) is issued to expatriates who wish to obtain employment with International Non-Government Organizations operating in Nigeria. <br/><br/>
@@ -645,7 +645,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Employment Visa – INGO- R5A.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'UN',
             'title' => 'Employment Visa – Spouse of INGO Staff: R5B',
             'description' => 'R5B: Employment Visa – Spouse of INGO Staff is issued to spouse of INGO Staff (INGO) <br/><br/>
@@ -685,7 +685,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Employment Visa – Spouse of INGO Staff -R5B.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Academic Exchange Programme (AEP)Visa --- R8A',
             'description' => 'R8A: AEP Visa is visa issued for the purpose of Resident Academic Exchange Programme (AEP) in Nigeria. <br/><br/>
@@ -725,7 +725,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Academic Exchange Programme (AEP)Visa --- R8A.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Academic Exchange Programme(AEP) Visa-F7H',
             'description' => 'F7H: Academic Exchange Programme (AEP) Visa is a single entry visa to visit Nigeria for the purpose of academic exchange programme<br/><br/>
@@ -760,7 +760,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Academic Exchange Programme(AEP) Visa-F7H.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Artist(e)/Entertainer/Musician Visa-F7F',
             'description' => 'F7F: Artist (e)/Entertainer/Musician Visa is a single entry visa issue to visit Nigeria for the purpose of performance as an artist (e), entertainer or musician <br/><br/>
@@ -794,7 +794,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Artist(e)_Entertainer_Musician Visa-F7F.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Business –Frequently   Travelled Executives Visa-F4C',
             'description' => 'F4C: Business –Frequently Travelled Executives Visa is for frequently travelled business persons of international repute with investment (USD 250,000) remaining in Nigeria <br/><br/>
@@ -831,7 +831,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Business –Frequently   Travelled Executives Visa-F4C.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Business –Multiple Entry Visa-F4B',
             'description' => 'F4B: Business –Multiple Entry Visa is to be issued on the basis of reciprocity <br/><br/>
@@ -868,7 +868,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Business –Multiple Entry Visa-F4B.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Business –Single Entry Visa-F4A',
             'description' => 'F4A: Business-single Entry Visa is for those who wish to visit Nigeria for business meeting, conference, seminar, contract negotiation, marketing, sales, procurement of  Nigeria goods/services, trade fairs and job interview.  <br/><br/>
@@ -905,7 +905,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Business –Single Entry Visa-F4A.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Cleric Visa-F7B',
             'description' => 'F7B: Cleric Visa is a single entry visa issued to religious officials who wish to visit Nigeria for the purpose of religious services like preaching, religious seminar,  religious conference <br/><br/>
@@ -945,7 +945,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Cleric Visa-F7B.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Dependent of Expatriate – Free Zone (Minor) Visa – R3C',
             'description' => 'R3C: Dependent of Expatriate – Free Zone Visa is issued to dependent of employed expatriate in Free Zone who are less than 18 years of age <br/><br/>
@@ -990,7 +990,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Dependent of Expatriate – Free Zone (Minor) Visa – R3C.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Dependent of Expatriate – Free Zone (Aged Parents – 65 years and above) Visa – R3E',
             'description' => 'R3E: Visa is issued to aged parents (65 years and above) of employed expatriate in Free Zones <br/><br/>
@@ -1035,7 +1035,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Dependent of Expatriate – Free Zone -Aged Parents – 65 years and above- Visa – R3E.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Dependent of Expatriate (18 years and above) Visa – R2D',
             'description' => 'R2D: Dependent of Expatriate (18 years and above) Visa is issued to dependents of employed expatriate on quota who are 18 years and above <br/><br/>
@@ -1080,7 +1080,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Dependent of Expatriate (18 years and above) Visa – R2D.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Dependent of Expatriate (18 years and above) Visa – R3D',
             'description' => 'R3D: Visa is issued to dependents of employed expatriate in Free Zone who are 18 years and above <br/><br/>
@@ -1125,7 +1125,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Dependent of Expatriate (18 years and above) Visa – R3D.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Dependent of Expatriate (Minor) Visa – R2C',
             'description' => 'R2C: Dependent of Expatriate (Minor) Visa is issued to dependent of employed expatriate on quota who are less than 18 years of age <br/><br/>
@@ -1170,7 +1170,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Dependent of Expatriate (Minor) Visa – R2C.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Dependent of Expatriate (Aged Parents – 65 years and above) Visa – R2E',
             'description' => 'R2E: Visa is issued to aged parents (65 years and above) of employed expatriate on quotas as dependents <br/><br/>
@@ -1215,7 +1215,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Dependent of Expatriate -Aged Parents – 65 years and above- Visa – R2E.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Employment Visa – Cleric: R6A ',
             'description' => 'R6A: Employment Visa (Cleric) is issued to expatriates who wish to obtain employment as a cleric in Nigeria. <br/><br/>
@@ -1269,7 +1269,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Employment Visa  Cleric R6A.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Employment Visa Expatriate (Free Zone): R3A',
             'description' => 'R3A: Employment Visa – Expatriate (Free Zone) is a type of visa issued to expatriates who wish to obtain employment within Free Zone in Nigeria <br/><br/>
@@ -1317,7 +1317,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Employment Visa Expatriate - Free Zone - R3A.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Employment Visa (Expatriate): R2A',
             'description' => 'R2A: Employment Visa (Expatriate) is a type of visa issued to persons who wish to take up employment in Nigeria, based on expatriate quota. <br/><br/>
@@ -1367,7 +1367,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Employment Visa -Expatriate R2A.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Employment Visa--- Spouse of Cleric (18 years and above) ---R6D',
             'description' => 'R6E: Employment Visa (Cleric) is issued to dependents of employed cleric in Nigeria who are 18 years and above. <br/><br/>
@@ -1416,7 +1416,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Employment Visa Spouse of Cleric (18 years and above) R6D.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Employment Visa--- Spouse of Cleric (Aged Parents 65 years and above) ---R6E',
             'description' => 'R6E: Employment Visa (Cleric) is issued to aged parents (65 years and above) of employed cleric in Nigeria as dependants.<br/><br/>
@@ -1465,7 +1465,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Employment Visa Spouse of Cleric (Aged Parents 65 years and above) R6E.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Employment Visa- Spouse of Cleric (Minor)---R6C (less than 18years)',
             'description' => 'R6C: Employment Visa (Cleric) is issued to dependents of employed cleric in Nigeria who are less than 18years of age.<br/><br/>
@@ -1514,7 +1514,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Employment Visa Spouse of Cleric (Minor) R6C.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Employment Visa – Spouse of Cleric: R6B',
             'description' => 'R6B: Employment Visa (Cleric) is issued to Spouse of employed cleric in Nigeria.<br/><br/>
@@ -1563,7 +1563,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Employment Visa Spouse of Cleric R6B.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Humanitarian Services Visa-F7J',
             'description' => 'F7J： Humanitarian Visa is a single entry visa to visit Nigeria for the purpose of humanitarian services <br/><br/>
@@ -1597,7 +1597,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Humanitarian Services Visa-F7J.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Intern Visa --- R9A ',
             'description' => 'R9A: Intern Visa is issued to persons who wish to undergo resident intern ship programme in Nigeria. <br/><br/>
@@ -1639,7 +1639,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Intern Visa --- R9A.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'International Cultural Exchange Visa-F7I',
             'description' => 'F7I: International Cultural Exchange Visa is a single entry visa to visit Nigeria for the purpose of cultural exchange activities <br/><br/>
@@ -1675,7 +1675,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'International Cultural Exchange Visa-F7I.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Journalist Visa-F7A',
             'description' => 'F7A: Journalist Visit is a single entry visa issues to those who wish to visit Nigeria for the purpose of media and journalism <br/><br/>
@@ -1711,7 +1711,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Journalist Visa-F7A.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Medical Tourism Visa-F7C',
             'description' => 'F7C:Medical Tourist Visa is to enable visit to Nigeria for the purpose of receiving medical care <br/><br/>
@@ -1748,7 +1748,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Medical Tourism Visa-F7C.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Religious Tourism Visa-F7D',
             'description' => 'F7D: Religious Tourism Visa is a single-entry visa issued to religious faithful/adherents/followers who wish to visit Nigeria for the purpose of attending religious activities / programmes/ pilgrimages <br/><br/>
@@ -1784,7 +1784,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Religious Tourism Visa-F7D.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Sport Visa-F7E',
             'description' => 'F7E: Sports Visa is a single-entry visa issued to those who wish to visit Nigeria for the purpose of sporting activities  <br/><br/>
@@ -1820,7 +1820,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Sport Visa-F7E.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Spouse of AEP Visa --- R8B ',
             'description' => 'R8B: Spouse of AEP Visa is issued to Spouse of Academic Exchange Programme (AEP)participants to reside in Nigeria. <br/><br/>
@@ -1865,7 +1865,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Spouse of AEP Visa --- R8B.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Spouse of Expatriate – Free Zone Visa – R3B',
             'description' => 'R3B: Spouse of Expatriate – Free Zone Visa is issued to spouse of employed expatriate placed on quota in Nigeria <br/><br/>
@@ -1902,7 +1902,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Spouse of Expatriate – Free Zone Visa – R3B.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Spouse of Expatriate Visa - R2B',
             'description' => 'R2B: Spouse of Expatriate Visa is a type of visa issued to spouse of employed expatriate placed on quota in Nigeria  <br/><br/>
@@ -1951,7 +1951,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Spouse of Expatriate Visa - R2B.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Spouse of Student Visa--- R7B',
             'description' => 'R7B: Spouse of Student Visa is issued to spouse of international student in Nigeria.<br/><br/>
@@ -1997,7 +1997,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Spouse of Student Visa R7B.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Staff of INGO  Visa-F7L',
             'description' => 'F7L： Staff of INGO Visa is a single entry visa issue to staff of International Non-Governmental Organizations for the purpose of INGO activities. <br/><br/>
@@ -2037,7 +2037,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Staff of INGO  Visa-F7L.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Staff of NGO Visa-F7M',
             'description' => 'F7M：Staff of NGO Visa is a single entry visa issued to visiting staff of Non-Governmental Organizations (NGOs) <br/><br/>
@@ -2077,7 +2077,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Staff of NGO Visa-F7M.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Student Visa--- R7A',
             'description' => 'R7A: Student Visa is issued for the purpose of schooling in Nigeria. <br/><br/>
@@ -2120,7 +2120,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Student Visa R7A.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Temporary Work Permit Visa-F8A  ',
             'description' => 'F8A:Temporary Work Permit (TWP) Visa is a single entry visa issued to experts invited by corporate bodies for short period of time for the purpose of providing specialized skilled services, such as after sales Installation/Commissioning/Upgrading/Maintenance/Repairs of equipment and machinery, Training/capacity building for Nigerian staff, Audit of machinery/equipment and financial records. It is an authorized visa issued at Nigerian Embassy after the approval of the Comptroller General of Immigration <br/><br/>
@@ -2168,7 +2168,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Temporary Work Permit Visa - F8A.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Tourism Visa-F5A',
             'description' => 'F5A：Tourism visa is a single entry visa for the purpose of tourism in Nigeria <br/><br/>
@@ -2201,7 +2201,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Tourism Visa-F5A.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Transit Visa-F3B',
             'description' => 'Transit visa: F3B is for the passengers with onward ticket to the next destination. <br/><br/>
@@ -2234,7 +2234,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Transit Visa-F3B.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Transit Without Visa-F3A ',
             'description' => 'F3A: is for transfer/direct transit passengers not staying beyond 48 hours.  <br/><br/>
@@ -2267,7 +2267,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'TRANSIT WITHOUT VISA.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Visiting (Multiple Entry) Visa-F6B',
             'description' => 'F6B: Visiting (Multiple Entry) Visa is to visit Nigeria for the purpose of social visit to family and friends  <br/><br/>
@@ -2310,7 +2310,7 @@ class ChecklistsSeeder11 extends Seeder
             'file_name' => 'Visiting (Multiple Entry) Visa-F6B.docx',
         ]);
         Checklist::create([
-            'center_id' => 11,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Visiting (Single Entry)Visa-F6A  ',
             'description' => 'F6A: Visting (Single Entry)visa is to visit Nigeria for the purpose of social visit to family and friends <br/><br/>

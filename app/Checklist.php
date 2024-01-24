@@ -8,15 +8,15 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Checklist extends Model
 {
     protected $fillable = [
-        'center_id',
+        'office_id',
         'visa_type',
         'title',
         'description',
         'file_name'
     ];
 
-    public function center(): BelongsTo
+    public function office(): BelongsTo
     {
-        return $this->belongsTo('App\Center');
+        return $this->belongsTo('App\Office');
     }
 }

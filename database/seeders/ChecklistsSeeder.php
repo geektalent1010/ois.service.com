@@ -15,7 +15,7 @@ class ChecklistsSeeder extends Seeder
     public function run()
     {
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Diplomatic',
             'title' => 'Diplomatic (Non-Accredited) Visa – F2A',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -42,7 +42,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'F2A Diplomatic (Non-Accredited) Visa.doc.docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Diplomatic',
             'title' => 'Accredited Diplomat Visa – R1A',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -69,7 +69,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'R1A Acreditted Diplomat Visa.docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Diplomatic',
             'title' => 'Dependant (Minor) of Accredited Diplomat Visa– R1C',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -97,7 +97,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'R1C Dependat (Minor) of Accredited Diplomat Visa.docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Diplomatic',
             'title' => 'Dependant (18years&above) of Accredited Diplomat Visa– R1D',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -125,7 +125,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'R1D Dependat (18years&above) of Accredited Diplomat Visa.docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Diplomatic',
             'title' => 'Dependant (Aged Parents – 65years&above) of Accredited Diplomat Visa– R1E',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -153,7 +153,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'R1E Dependat (Aged Parents – 65years&above) of Accredited Diplomat Visa.docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Official',
             'title' => 'Employment Visa (Expatriate – Government Official) – R4A',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -184,7 +184,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'R4A Employment Visa (Expatriate – Government Official).docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Official',
             'title' => 'Spouse of Employment  Expatriate Visa (Expatriate – Government Official) – R4B',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -214,7 +214,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'R4B Spouse of Employment  Expatriate Visa (Expatriate – Government Official).docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Official',
             'title' => 'Dependant (Minor) of Employment  Expatriate Visa (Government Official) – R4C',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -244,7 +244,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'R4C Dependat (Minor) of Employment  Expatriate Visa - Government Official.docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Official',
             'title' => 'Dependant (18year&above) of Employment  Expatriate Visa (Government Official) – R4D',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -274,7 +274,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'R4D Dependat (18year&above) of Employment  Expatriate Visa (Government Official).docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Official',
             'title' => 'Dependant (Aged Parent- 65years&Above) of Employment  Expatriate Visa (Government Official) – R4E',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -304,7 +304,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'R4E Dependat (Aged Parent- 65years&Above) of Employment  Expatriate Visa (Government Official).docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'UN',
             'title' => 'Employment Visa- INGO – R5A',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -334,7 +334,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'R5A Employment Visa- INGO.doc',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'UN',
             'title' => 'Employment Visa- Spouse of INGO Staff – R5B',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -364,7 +364,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'R5B Employment Visa- Spouse of INGO.doc',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'UN',
             'title' => 'Employment Visa- Dependant (Minor) of INGO Staff – R5C',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -394,7 +394,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'R5C Employment Visa- Dependant (Minor) of INGO Staff.doc',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'UN',
             'title' => 'Employment Visa- Dependant (18years&above) of INGO Staff – R5D',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -424,7 +424,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'R5D Employment Visa- Dependant (18years&above) of INGO Staff.doc',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'UN',
             'title' => 'Employment Visa- Dependant (Aged Parents- 65 years&above)) of INGO Staff – R5E',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -454,7 +454,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'R5E Employment Visa- Dependant (Aged Parents- 65 years&above)) of INGO Staff.doc',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Standard',
             'title' => 'Transit Visa – F3B',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -482,7 +482,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'F3B Transit Visa.docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Standard',
             'title' => 'Business Single Entry Visa – F4A',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -520,7 +520,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'F4A Business Single Entry Visa.docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Standard',
             'title' => 'Business Multiple Entry Visa – F4B',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -558,7 +558,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'F4B Business Multiple Entry Visa.docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Standard',
             'title' => 'Business Frequently Travelled Executives Visa – F4C',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -596,7 +596,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'F4C Business Frequently Travelled Executives Visa.docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Standard',
             'title' => 'Tourism Visa – F5A',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -634,7 +634,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'F5A Tourism Checklist Ankara.docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Standard',
             'title' => 'Visiting Visa (Single Entry) – F6A',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -672,7 +672,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'F6A Visiting Visa (Single Entry).docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Standard',
             'title' => 'Visiting Visa (Multiple Entry) – F6B',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -710,7 +710,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'F6B Visiting Visa (Multiple Entry).docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Standard',
             'title' => 'Journalist Visa – F7A',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -748,7 +748,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'F7A Journalist Visa.docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Standard',
             'title' => 'Cleric Visa – F7B',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -786,7 +786,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'F7B Cleric Visa.docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Standard',
             'title' => 'Medical Tourism – F7C',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -824,7 +824,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'F7C Medical Tourism.docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Standard',
             'title' => 'Religious Tourism – F7D',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -862,7 +862,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'F7D Religious Tourism.docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Standard',
             'title' => 'Sports Visa – F7E',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -900,7 +900,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'F7E Sports Visa.docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Standard',
             'title' => 'Artist, Entertainer, Musician Visa – F7F',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -938,7 +938,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'F7F Artist, Entertainer, Musician Visa.docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Standard',
             'title' => 'Study Tour Visa – F7G',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -976,7 +976,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'F7G Study Tour Visa.docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Standard',
             'title' => 'Academic Exchange Programme Visa  (AEP) – R8A',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -1014,7 +1014,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'F7H Academic Exchange Programme Visa (AEP).docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Standard',
             'title' => 'Humanitarian Services Visa – F7J',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -1052,7 +1052,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'F7J Humanitarian Services Visa.docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Standard',
             'title' => 'Emergency/Relief Work Visa – F7K',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -1090,7 +1090,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'F7K Emergency, Relief Work Visa.docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Standard',
             'title' => 'Staff of INGO Visa – F7L',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -1128,7 +1128,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'F7L Staff of INGO Visa.docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Standard',
             'title' => 'Staff of NGO Visa – F7M',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -1166,7 +1166,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'F7M Staff of NGO Visa.docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Standard',
             'title' => 'Temporary Work Permit Visa – F8A',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -1204,7 +1204,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'F8A Temporary Work Permit Visa.docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Standard',
             'title' => 'International Cultural Exchange Visa  - F7I',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>
@@ -1242,7 +1242,7 @@ class ChecklistsSeeder extends Seeder
             'file_name' => 'F71 International Cultural Exchange Visa.docx',
         ]);
         Checklist::create([
-            'center_id' => 1,
+            'office_id' => 3,
             'visa_type' => 'Standard',
             'title' => 'Employment Visa (Expatriate) – R2A',
             'description' => 'ALL APPLICATIONS TO BE SUBMITTED TO OIS SERVICES IN ANKARA.<br/><br/>

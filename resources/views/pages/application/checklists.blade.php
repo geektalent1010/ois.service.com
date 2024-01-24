@@ -30,6 +30,7 @@
                         <p class="form-label">SELECT COUNTRY + CITY APPLYING FROM</p>
                         <div class="info-box">
                             <div class="search-field">
+                                <input type="text" class="input-field office-id-input" name="office" hidden />
                                 <input type="text" class="input-field office-input cursor-pointer" placeholder="Country + City" />
                                 <img class="search-icon" src="{{ asset('images/select-arrows.svg') }}">
                             </div>
@@ -50,10 +51,6 @@
                         <p class="form-label">SELECT PASSPORT TYPE APPLYING WITH</p>
                         <select class="form-control webkit-style country-select w-100" name="visa_type" id="visaType">
                             <option value="">Pasport Type</option>
-                            <option value="Diplomatic">Diplomatic Passport</option>
-                            <option value="Official">Official Passport</option>
-                            <option value="Standard">Standard Passport</option>
-                            <option value="UN">UN Passport</option>
                         </select>
                     </div>
                 </div>
@@ -91,69 +88,89 @@
 
     var officeId = '';
 
-   $('.office-input').click(function () {
-      $(".offices-menus").removeClass('d-none');
-   });
+    $('.office-input').click(function () {
+        $(".offices-menus").removeClass('d-none');
+    });
 
-   function windowOnClick(event) {
-      $('.offices-menus').addClass('d-none');
-   }
+    function windowOnClick(event) {
+        $('.offices-menus').addClass('d-none');
+    }
 
-   $(document).on('click', '.main-bg', function (event) {
-      if(!$(event.target).hasClass('office-input')) {
-         $('.offices-menus').addClass('d-none');
-      }
-   });
+    $(document).on('click', '.main-bg', function (event) {
+        if(!$(event.target).hasClass('office-input')) {
+            $('.offices-menus').addClass('d-none');
+        }
+    });
 
-   $('.office-menu-item').click(function () {
-      $('.input-field').val($(this).data('country'));
-      officeId = $(this).data('id');
-      showOffices();
-   });
+    $('.office-menu-item').click(function () {
+        $('.input-field').val($(this).data('country'));
+        officeId = $(this).data('id');
+        $('.office-id-input').val(officeId);
+        showOffices();
+    });
 
-   function showOffices() {
-      let country_name = $('.input-field').val();
-      var send_data = {};
-      send_data['office_id'] = officeId;
-      $.ajax({
-         url: '{{ route("offices.search") }}',
-         method: "POST",
-         data: send_data,
-         success:function(res){
-            if (res.length) {
-               var html = '';
-               for(var resIndex = 0; resIndex < res.length; resIndex++) {
-                  html += '<div class="d-flex align-items-start"><img class="country-flag" src="{{ asset('images/Flags') }}/' + res[resIndex].flag +'">';
-                  html += '<div><p class="country mb-0">' + res[resIndex].country + '</p>';
-                  if (res[resIndex].address == 'COMING SOON….!') {
-                     html += '<p class="mb-0">' + res[resIndex].city + '</p>';
-                     html += '<p class="mb-0">' + res[resIndex].address + '</p>';
-                  } else {
-                     html += '<p class="mb-0">' + res[resIndex].address + '</p>';
-                     html += '<p>' + res[resIndex].city + '</p>';
-                     html += '<p class="country mt-4">Opening Hours</p>';
-                     html += '<p class="mb-0">' + res[resIndex].working_days + ':</p>';
-                     html += '<p class="mb-0">' + res[resIndex].working_time + '</p>';
-                     html += '</div></div>';
-                  }
-               }
-               $('.offices-body').html(html);
-               $('.offices-body').show();
+    function showOffices() {
+        let country_name = $('.input-field').val();
+        var send_data = {};
+        send_data['office_id'] = officeId;
+        $.ajax({
+            url: '{{ route("offices.search") }}',
+            method: "POST",
+            data: send_data,
+            success:function(res){
+                var html = '';
+                var visaType = '';
+                if (res.length) {
+                    for(var resIndex = 0; resIndex < res.length; resIndex++) {
+                        html += '<div class="d-flex align-items-start"><img class="country-flag" src="{{ asset('images/Flags') }}/' + res[resIndex].flag +'">';
+                        html += '<div><p class="country mb-0">' + res[resIndex].country + '</p>';
+                        if (res[resIndex].address == 'COMING SOON….!') {
+                            html += '<p class="mb-0">' + res[resIndex].city + '</p>';
+                            html += '<p class="mb-0">' + res[resIndex].address + '</p>';
+                            visaType += '<option value="">Coming soon</option>';
+                            $('#visaType').html(visaType);
+                            checklistsFilters();
+                        } else {
+                            html += '<p class="mb-0">' + res[resIndex].address + '</p>';
+                            html += '<p>' + res[resIndex].city + '</p>';
+                            html += '<p class="country mt-4">Opening Hours</p>';
+                            html += '<p class="mb-0">' + res[resIndex].working_days + ':</p>';
+                            html += '<p class="mb-0">' + res[resIndex].working_time + '</p>';
+                            html += '</div></div>';
+                            visaType += '<option value="">Pasport Type</option>';
+                            visaType += '<option value="Diplomatic">Diplomatic Passport</option>';
+                            visaType += '<option value="Official">Official Passport</option>';
+                            visaType += '<option value="Standard">Standard Passport</option>';
+                            visaType += '<option value="UN">UN Passport</option>';
+                        }
+                    }
+                    $('.offices-body').html(html);
+                    $('.offices-body').show();
+                    
+                    $('#visaType').html(visaType);
+                } else {
+                    html += '<p class="country mt-5">No Office</p>';
+                    $('.offices-body').html(html);
+                    $('.offices-body').show();
+                    
+                    visaType += '<option value="">Coming soon</option>';
+                    
+                    $('#visaType').html(visaType);
+                }
+            },
+            error:function(err){
             }
-            else {
-               var html = '';
-               html += '<p class="country mt-5">No Office</p>';
-               $('.offices-body').html(html);
-               $('.offices-body').show();
-            }
-         },
-         error:function(err){
-         }
-      });
+        });
     }
 
     $('.button-submit').click(function () {
         checklistsFilters();
+    });
+
+    $('#visaType').on('change', function() {
+        if (officeId && this.value) {
+            checklistsFilters();
+        }
     });
 
     function checklistsFilters() {
