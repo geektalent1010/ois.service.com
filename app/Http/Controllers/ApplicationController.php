@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Center;
 use App\Checklist;
 use App\Office;
 use Illuminate\Http\Request;
@@ -18,13 +17,11 @@ class ApplicationController extends Controller
     }
 
     public function checklists() {
-        $centers = Center::all();
         $offices = Office::get()->groupBy(function($data) {
             return $data->country;
         });
         return view('pages.application.checklists')
-            -> with('offices', $offices)
-            -> with('centers', $centers);
+            -> with('offices', $offices);
     }
 
     public function checklistFilter(Request $request) {
