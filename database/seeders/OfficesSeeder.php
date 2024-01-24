@@ -756,7 +756,7 @@ class OfficesSeeder extends Seeder
             'providedby' => '',
         ]);
         Office::create([
-            'country' => 'MAURITIUS',
+            'country' => 'Mauritius',
             'city' => 'Port Louis',
             'key' => '',
             'flag' => 'Mauritius.svg',
