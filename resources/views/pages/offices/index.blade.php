@@ -19,13 +19,23 @@
     <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}">
     <div class="d-flex justify-content-center">
         <div class="contact-section body-section">
-            <p class="page-title">FIND AN OFFICE IN YOUR COUNTRY</p>
+            <p class="page-title">FIND AN OFFICE</p>
             <div class="info-container w-100 d-flex justify-content-center">
                <div class="info-box">
                   <div class="search-field">
-                     <input type="text" class="input-field" placeholder="Country"/>
-                     <span class="search-circle"></span>
-                     <img class="search-icon" src="{{ asset('images/IconSEARCH.svg') }}" onClick="showOffices()">
+                     <input type="text" class="input-field office-input cursor-pointer" placeholder="Country + City" />
+                     <img class="search-icon" src="{{ asset('images/select-arrows.svg') }}">
+                  </div>
+                  <div class="offices-menus d-none">
+                     @foreach($offices as $country => $cities)
+                        @foreach($cities as $key => $office)
+                           <div class="d-flex office-menu-item" data-country="{{$office->country}} - {{$office->city}}" data-id="{{$office->id}}">
+                              <div class="office-country">@if ($key < 1){{ $country }}@endif</div>
+                              <div>- </div>
+                              <div class="pl-2">{{ $office->city }}</div>
+                           </div>
+                        @endforeach
+                     @endforeach
                   </div>
                   <div class="offices-body"></div>
                </div>
@@ -47,11 +57,32 @@
          'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
       }
    });
+   var officeId = '';
+
+   $('.office-input').click(function () {
+      $(".offices-menus").removeClass('d-none');
+   });
+
+   function windowOnClick(event) {
+      $('.offices-menus').addClass('d-none');
+   }
+
+   $(document).on('click', '.main-bg', function (event) {
+      if(!$(event.target).hasClass('office-input')) {
+         $('.offices-menus').addClass('d-none');
+      }
+   });
+
+   $('.office-menu-item').click(function () {
+      $('.input-field').val($(this).data('country'));
+      officeId = $(this).data('id');
+      showOffices();
+   });
 
    function showOffices() {
       let country_name = $('.input-field').val();
       var send_data = {};
-      send_data['country_name'] = country_name;
+      send_data['office_id'] = officeId;
       $.ajax({
          url: '{{ route("offices.search") }}',
          method: "POST",
@@ -60,19 +91,27 @@
             if (res.length) {
                var html = '';
                for(var resIndex = 0; resIndex < res.length; resIndex++) {
-                  html += '<p class="country">' + res[resIndex].country + '</p>';
-                  html += '<p class="mb-0">' + res[resIndex].city + '</p>';
-                  html += '<p class="mb-0">' + res[resIndex].address + '</p>';
-                  html += '<p>' + res[resIndex].country + '</p>';
-                  html += '<div class="d-flex"><span class="mr-2"><i class="fa fa-phone" aria-hidden="true"></i></span><label class="mb-0">' + res[resIndex].phone + '</label></div>';
-                  html += '<div class="contact-btn-section"><a href="{{ route('contact.index') }}" class="contact-btn">CONTACT US</a></div>';
+                  html += '<div class="d-flex align-items-start mt-5"><img class="country-flag" src="{{ asset('images/Flags') }}/' + res[resIndex].flag +'">';
+                  html += '<div><p class="country mb-0">' + res[resIndex].country + '</p>';
+                  if (res[resIndex].address == 'COMING SOON….!') {
+                     html += '<p class="mb-0">' + res[resIndex].city + '</p>';
+                     html += '<p class="mb-0">' + res[resIndex].address + '</p>';
+                  } else {
+                     html += '<p class="mb-0">' + res[resIndex].address + '</p>';
+                     html += '<p>' + res[resIndex].city + '</p>';
+                     html += '<p class="country mt-4">Opening Hours</p>';
+                     html += '<p class="mb-0">' + res[resIndex].working_days + ':</p>';
+                     html += '<p class="mb-0">' + res[resIndex].working_time + '</p>';
+                     html += '</div></div>';
+                     html += '<div class="contact-btn-section"><a href="{{ route('contact.index') }}" class="contact-btn">CONTACT US</a></div>';
+                  }
                }
                $('.offices-body').html(html);
                $('.offices-body').show();
             }
             else {
                var html = '';
-               html += '<p class="country mt-5">No Office in ' + country_name + '</p>';
+               html += '<p class="country mt-5">No Office</p>';
                $('.offices-body').html(html);
                $('.offices-body').show();
             }

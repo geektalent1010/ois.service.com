@@ -2705,7 +2705,9 @@ body[data-aos-easing=ease-out-back] [data-aos] {
 }
 
 .main-bg .contact-section .info-container .info-box {
-  width: 49%;
+  position: relative;
+  width: 100%;
+  max-width: 360px;
 }
 
 .main-bg .contact-section .info-container .info-box .search-field {
@@ -2787,6 +2789,10 @@ body[data-aos-easing=ease-out-back] [data-aos] {
   width: 100%;
 }
 
+.main-bg .contact-section .info-container .info-box .offices-body .country-flag {
+  width: 120px;
+}
+
 .main-bg .contact-section .info-container .info-box .offices-body p {
   color: white;
   font-family: "Montserrat Regular", sans-serif;
@@ -2807,7 +2813,6 @@ body[data-aos-easing=ease-out-back] [data-aos] {
 
 .main-bg .contact-section .info-container .info-box .offices-body .country {
   font-family: "Montserrat SemiBold", sans-serif;
-  margin-top: 38px;
 }
 
 .main-bg .contact-section .info-container .info-box .offices-body .contact-btn-section .contact-btn {
@@ -2827,6 +2832,31 @@ body[data-aos-easing=ease-out-back] [data-aos] {
 .main-bg .contact-section .info-container .info-box .offices-body .contact-btn-section .contact-btn:hover {
   background: #003366;
   border: 0.1rem solid #003366;
+}
+
+.main-bg .contact-section .info-container .info-box .offices-menus {
+  position: absolute;
+  top: 12px;
+  width: 100%;
+  background-color: #b2c8db;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.main-bg .contact-section .info-container .info-box .offices-menus .office-menu-item {
+  display: flex;
+  padding: 2px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.main-bg .contact-section .info-container .info-box .offices-menus .office-menu-item:hover {
+  background-color: #003366;
+  color: white;
+}
+
+.main-bg .contact-section .info-container .info-box .offices-menus .office-menu-item .office-country {
+  min-width: 40%;
 }
 
 .main-bg .contact-section .info-container .message-section {

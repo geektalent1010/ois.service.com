@@ -35,7 +35,9 @@
       justify-content: space-between;
       width: 100%;
       .info-box {
-        width: 49%;
+        position: relative;
+        width: 100%;
+        max-width: 360px;
         .search-field {
           position: relative;
           .search-circle {
@@ -102,6 +104,9 @@
         }
         .offices-body {
           width: 100%;
+          .country-flag {
+            width: 120px;
+          }
           p {
             color: white;
             font-family: 'Montserrat Regular', sans-serif;
@@ -119,7 +124,7 @@
           }
           .country  {
             font-family: 'Montserrat SemiBold', sans-serif;
-            margin-top: 38px;
+            // margin-top: 38px;
           }
           .contact-btn-section {
             .contact-btn {
@@ -141,6 +146,27 @@
             .contact-btn:hover {
               background: $main-color;
               border: 0.1rem solid $main-color;
+            }
+          }
+        }
+        .offices-menus {
+          position: absolute;
+          top: 12px;
+          width: 100%;
+          background-color: $menu-bg;
+          padding: 12px;
+          border-radius: 8px;
+          .office-menu-item {
+            display: flex;
+            padding: 2px 6px;
+            border-radius: 4px;
+            cursor: pointer;
+            &:hover {
+              background-color: $main-color;
+              color: $white;
+            }
+            .office-country {
+              min-width: 40%;
             }
           }
         }
