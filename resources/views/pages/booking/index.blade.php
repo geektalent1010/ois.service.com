@@ -20,7 +20,11 @@
     <img class="menu-bg" src="{{ asset('images/Image1H.png') }}" alt="">
     <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt="">
     <div class="booking-section body-section">
-        <div>START BOOKING SCREEN</div>
+        <div class="mb-4">I WANT TO BOOK AN APPOINTMENT</div>
+        
+        <a class="btn btn-primary click-here-button" href="https://sea-turtle-app-e6m4o.ondigitalocean.app/" target="_blank">
+            CLICK HERE
+        </a>
     </div>
 </div>
 @endsection

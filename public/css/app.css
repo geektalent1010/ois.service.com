@@ -765,6 +765,45 @@
   overflow-y: auto;
   z-index: 2;
   justify-content: center;
+  font-size: 12px;
+  font-family: "DinPro", sans-serif;
+}
+
+.booking-section .click-here-button {
+  width: 100%;
+  max-width: 300px;
+  height: 44px;
+  background: #00a9ea;
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  border-radius: 10rem;
+  font-size: 16px;
+  font-family: "DinPro", sans-serif;
+  border: 0.1rem solid #00a9ea;
+  cursor: pointer;
+}
+
+.booking-section .click-here-button:hover {
+  background: #003366 !important;
+  color: white !important;
+  border-color: #003366 !important;
+}
+
+.booking-section .click-here-button:focus,
+.booking-section .click-here-button:active {
+  background: #003366;
+  color: white;
+  border-color: #003366 !important;
+  outline: none;
+  box-shadow: none;
+}
+
+.booking-section .click-here-button.disabled,
+.booking-section .click-here-button:disabled,
+.booking-section .click-here-button[disabled] {
+  opacity: 1 !important;
 }
 
 .welcome-body {
