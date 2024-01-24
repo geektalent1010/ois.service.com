@@ -2795,14 +2795,14 @@ body[data-aos-easing=ease-out-back] [data-aos] {
 
 .main-bg .contact-section .info-container .info-box .offices-body p {
   color: white;
-  font-family: "Montserrat Regular", sans-serif;
+  font-family: "DinPro", sans-serif;
   font-size: 16px;
   margin-left: 30px;
 }
 
 .main-bg .contact-section .info-container .info-box .offices-body label {
   color: white;
-  font-family: "Montserrat Regular", sans-serif;
+  font-family: "DinPro", sans-serif;
   font-size: 16px;
 }
 
@@ -2812,7 +2812,7 @@ body[data-aos-easing=ease-out-back] [data-aos] {
 }
 
 .main-bg .contact-section .info-container .info-box .offices-body .country {
-  font-family: "Montserrat SemiBold", sans-serif;
+  font-family: "DinPro Medium", sans-serif;
 }
 
 .main-bg .contact-section .info-container .info-box .offices-body .contact-btn-section .contact-btn {
@@ -3924,14 +3924,14 @@ body {
 
 .checklists-section .form-section .form-group .offices-body p {
   color: white;
-  font-family: "Montserrat Regular", sans-serif;
+  font-family: "DinPro", sans-serif;
   font-size: 16px;
   margin-left: 30px;
 }
 
 .checklists-section .form-section .form-group .offices-body label {
   color: white;
-  font-family: "Montserrat Regular", sans-serif;
+  font-family: "DinPro", sans-serif;
   font-size: 16px;
 }
 
@@ -3941,7 +3941,7 @@ body {
 }
 
 .checklists-section .form-section .form-group .offices-body .country {
-  font-family: "Montserrat SemiBold", sans-serif;
+  font-family: "DinPro Medium", sans-serif;
 }
 
 .checklists-section .form-section .form-group .offices-body .contact-btn-section .contact-btn {

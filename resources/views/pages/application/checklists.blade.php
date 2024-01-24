@@ -134,7 +134,8 @@
                             html += '<p>' + res[resIndex].city + '</p>';
                             html += '<p class="country mt-4">Opening Hours</p>';
                             html += '<p class="mb-0">' + res[resIndex].working_days + ':</p>';
-                            html += '<p class="mb-0">' + res[resIndex].working_time + '</p>';
+                            const times = res[resIndex].working_time.split(' & ');
+                            times.forEach((element) => { html += '<p class="mb-0">' + element + '</p>'; });
                             html += '</div></div>';
                             visaType += '<option value="">Pasport Type</option>';
                             visaType += '<option value="Diplomatic">Diplomatic Passport</option>';

@@ -17,7 +17,7 @@ class ApplicationController extends Controller
     }
 
     public function checklists() {
-        $offices = Office::get()->groupBy(function($data) {
+        $offices = Office::orderBy('country', 'asc')->get()->groupBy(function($data) {
             return $data->country;
         });
         return view('pages.application.checklists')

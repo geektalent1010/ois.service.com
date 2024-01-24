@@ -101,7 +101,9 @@
                      html += '<p>' + res[resIndex].city + '</p>';
                      html += '<p class="country mt-4">Opening Hours</p>';
                      html += '<p class="mb-0">' + res[resIndex].working_days + ':</p>';
-                     html += '<p class="mb-0">' + res[resIndex].working_time + '</p>';
+                     const times = res[resIndex].working_time.split(' & ');
+                     times.forEach((element) => { html += '<p class="mb-0">' + element + '</p>'; });
+                     // html += '<p class="mb-0">' + res[resIndex].working_time + '</p>';
                      html += '</div></div>';
                      html += '<div class="contact-btn-section"><a href="{{ route('contact.index') }}" class="contact-btn">CONTACT US</a></div>';
                   }
