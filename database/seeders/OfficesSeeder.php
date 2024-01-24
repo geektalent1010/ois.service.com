@@ -614,7 +614,7 @@ class OfficesSeeder extends Seeder
         ]);
         Office::create([
             'country' => 'Australia',
-            'city' => 'Canberra and Sidney',
+            'city' => 'Canberra',
             'key' => '',
             'flag' => 'Australia.svg',
             'address' => 'COMING SOON….!',
@@ -743,7 +743,7 @@ class OfficesSeeder extends Seeder
             'providedby' => '',
         ]);
         Office::create([
-            'country' => 'CANADA',
+            'country' => 'Canada',
             'city' => 'Ottawa',
             'key' => '',
             'flag' => 'Canada.svg',
@@ -760,6 +760,19 @@ class OfficesSeeder extends Seeder
             'city' => 'Port Louis',
             'key' => '',
             'flag' => 'Mauritius.svg',
+            'address' => 'COMING SOON….!',
+            'email' => '',
+            'phone' => '',
+            'working_time' => '',
+            'working_days' => '',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Australia',
+            'city' => 'Sidney',
+            'key' => '',
+            'flag' => 'Australia.svg',
             'address' => 'COMING SOON….!',
             'email' => '',
             'phone' => '',
