@@ -28,12 +28,6 @@
                 <div class="row mb-24px">
                     <div class="col-md-6 form-group">
                         <p class="form-label">SELECT COUNTRY + CITY APPLYING FROM</p>
-                        <!-- <select class="form-control webkit-style country-select w-100" name="center" id="center">
-                            <option value="">Country + City</option>
-                            @foreach($centers as $center)
-                                <option value="{{$center->id}}">{{$center['city']}}, {{$center['country']}}</option>
-                            @endforeach
-                        </select> -->
                         <div class="info-box">
                             <div class="search-field">
                                 <input type="text" class="input-field office-input cursor-pointer" placeholder="Country + City" />
