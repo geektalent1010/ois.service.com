@@ -15,7 +15,7 @@ class ChecklistsSeeder8 extends Seeder
     public function run()
     {
         Checklist::create([
-            'center_id' => 14,
+            'office_id' => 9,
             'visa_type' => 'Diplomatic',
             'title' => 'Accredited Diplomat Visa – R1A',
             'description' => 'R1A − Accredited Diplomat Visa is issued to accredited Diplomats to Nigeria<br/><br/>
@@ -32,7 +32,7 @@ class ChecklistsSeeder8 extends Seeder
             'file_name' => 'Accredited Diplomat Visa _ R1A.docx',
         ]);
         Checklist::create([
-            'center_id' => 14,
+            'office_id' => 9,
             'visa_type' => 'Diplomatic',
             'title' => 'Dependent (18 Years & above) of Accredited Diplomat Visa – R1D',
             'description' => 'R1D − Visa is issued to dependants of accredited Diplomat who are 18 years and above<br/><br/>
@@ -49,7 +49,7 @@ class ChecklistsSeeder8 extends Seeder
             'file_name' => 'Dependent (18 Years & above) of Accredited Diplomat Visa _R1D.docx',
         ]);
         Checklist::create([
-            'center_id' => 14,
+            'office_id' => 9,
             'visa_type' => 'Diplomatic',
             'title' => 'Dependent (Aged Parents-65years & above) of Accredited Diplomat Visa – R1E',
             'description' => 'R1E − Visa is issued to aged parents (65 years and above) of accredited Diplomat as dependants with each case treated on its merit.<br/><br/>
@@ -66,7 +66,7 @@ class ChecklistsSeeder8 extends Seeder
             'file_name' => 'Dependent (Aged Parents-65years & above) of Accredited Diplomat Visa –_R1E.docx',
         ]);
         Checklist::create([
-            'center_id' => 14,
+            'office_id' => 9,
             'visa_type' => 'Diplomatic',
             'title' => 'Dependent (Minor) Accredited Diplomat Visa – R1C',
             'description' => 'R1C − Visa is a type of visa issued to dependants of accredited Diplomat who are less than 18 years of age<br/><br/>
@@ -83,7 +83,7 @@ class ChecklistsSeeder8 extends Seeder
             'file_name' => 'Dependent (Minor) Accredited Diplomat Visa _R1C.docx',
         ]);
         Checklist::create([
-            'center_id' => 14,
+            'office_id' => 9,
             'visa_type' => 'Diplomatic',
             'title' => 'Spouse of Accredited Diplomat Visa – R1B',
             'description' => 'R1A − Accredited Diplomat Visa is issued to accredited Diplomats to Nigeria<br/><br/>
@@ -100,7 +100,7 @@ class ChecklistsSeeder8 extends Seeder
             'file_name' => 'Spouse of Accredited Diplomat Visa _ R1B.docx',
         ]);
         Checklist::create([
-            'center_id' => 14,
+            'office_id' => 9,
             'visa_type' => 'Diplomatic',
             'title' => 'Staff of INGO Visa − F7M',
             'description' => 'F7M − Staff of NGO Visa is a single entry visa issued to visiting staff of Non−Governmental Organisations (NGOs)<br/><br/>
@@ -118,7 +118,7 @@ class ChecklistsSeeder8 extends Seeder
             'file_name' => 'Staff of NGO Visa _ F7M.docx',
         ]);
         Checklist::create([
-            'center_id' => 14,
+            'office_id' => 9,
             'visa_type' => 'Official',
             'title' => 'Dependant (18 Years and above) of Employed Expatriate (GO) Visa − R4D',
             'description' => 'R4D	−Dependant of Employed Expatriate (GO) Visa is issued to dependants of expatriates employed by Government, who are 18 years and above<br/><br/>
@@ -135,7 +135,7 @@ class ChecklistsSeeder8 extends Seeder
             'file_name' => 'Dependant (18 Years and above) of Employed Expatriate (GO) Visa _ R4D.docx',
         ]);
         Checklist::create([
-          'center_id' => 14,
+          'office_id' => 9,
           'visa_type' => 'Official',
           'title' => 'Dependant (Aged Parents − 65 years and above) of Employed Expatriate (GO) Visa − R4E',
           'description' => 'R4E Visa is issued to aged parents (65 years and above) of expatriates employed by Government<br/><br/>
@@ -152,7 +152,7 @@ class ChecklistsSeeder8 extends Seeder
           'file_name' => 'Dependant (Aged Parents _ 65 years and above) of Employed Expatriate (GO) Visa _ R4E.docx',
         ]);
         Checklist::create([
-          'center_id' => 14,
+          'office_id' => 9,
           'visa_type' => 'Official',
           'title' => 'Dependant (Minor) of Employed Expatriate (Government Official) Visa − R4C',
           'description' => 'R4B − Dependants (Minor) of Employed Expatriate (Government Official) Visa is visa issued to dependants of expatriates employed by Government, who are less than 18 years of age<br/><br/>
@@ -169,7 +169,7 @@ class ChecklistsSeeder8 extends Seeder
           'file_name' => 'Dependant (Minor) of Employed Expatriate (Government Official) Visa _ R4C.docx',
         ]);
         Checklist::create([
-          'center_id' => 14,
+          'office_id' => 9,
           'visa_type' => 'Official',
           'title' => 'Employment Visa-Expatriate (Government Officials) Visa: R4A',
           'description' => 'R4A − Employment Visa − Expatriate (Government Official) is issued to expatriates who wish to obtain employment with Government as Government Official in Nigeria<br/><br/>
@@ -186,7 +186,7 @@ class ChecklistsSeeder8 extends Seeder
           'file_name' => 'Employment Visa − Expatriate (Government Official) Visa R4A.docx',
         ]);
         Checklist::create([
-          'center_id' => 14,
+          'office_id' => 9,
           'visa_type' => 'Official',
           'title' => 'Spouse of Employed Expatriate (Government Official) Visa − R4B',
           'description' => 'R4A − Spouse of Employed Expatriate (Government Official) Visa is issued to spouse of Expatriate employed by Government as Government Official in Nigeria<br/><br/>
@@ -203,7 +203,7 @@ class ChecklistsSeeder8 extends Seeder
           'file_name' => 'Spouse of Employed Expatriate (Government Official) Visa _ R4B.docx',
         ]);
         Checklist::create([
-            'center_id' => 14,
+            'office_id' => 9,
             'visa_type' => 'UN',
             'title' => 'Employment Visa − Dependant (Minor) of INGO Staff: R5C',
             'description' => 'R5C − Employment Visa − Dependant (Minor) of INGO Staff is visa issued to dependants of INGO Staff, who are less than 18 years of age<br/><br/>
@@ -219,7 +219,7 @@ class ChecklistsSeeder8 extends Seeder
             'file_name' => 'Employment Visa _ Dependant (Minor) of INGO Staff_R5C.docx',
         ]);
         Checklist::create([
-            'center_id' => 14,
+            'office_id' => 9,
             'visa_type' => 'UN',
             'title' => 'Employment Visa − Spouse of INGO Staff: R5B',
             'description' => 'R5B − Employment Visa − Spouse of INGO Staff is issued to spouse of INGO Staff<br/><br/>
@@ -235,7 +235,7 @@ class ChecklistsSeeder8 extends Seeder
             'file_name' => 'Employment Visa _ Spouse of INGO Staff_ R5B.docx',
         ]);
         Checklist::create([
-            'center_id' => 14,
+            'office_id' => 9,
             'visa_type' => 'UN',
             'title' => 'Employment Visa − INGO: R5A',
             'description' => 'R5A − Employment Visa (INGO) is issued to expatriates who wish to obtain employment with International Non−Governmental Organisations operating in Nigeria<br/><br/>
@@ -252,7 +252,7 @@ class ChecklistsSeeder8 extends Seeder
             'file_name' => 'Employment Visa _INGO R5A.docx',
         ]);
         Checklist::create([
-            'center_id' => 14,
+            'office_id' => 9,
             'visa_type' => 'Standard',
             'title' => 'Academic Exchange Programme (AEP) Visa − F7H',
             'description' => 'F7H − Academic Exchange Programme (AEP) Visa is a single entry visa to visit Nigeria for the purpose of academic exchange programme<br/><br/>
@@ -269,7 +269,7 @@ class ChecklistsSeeder8 extends Seeder
             'file_name' => 'Academic Exchange Programme (AEP) Visa _ F7H.docx',
         ]);
         Checklist::create([
-            'center_id' => 14,
+            'office_id' => 9,
             'visa_type' => 'Standard',
             'title' => 'Academic Exchange Programme (AEP) Visa − R8A',
             'description' => 'R8A − AEP Visa is visa issued for the purpose of Resident Academic Exchange Programme (AEP) in Nigeria<br/><br/>

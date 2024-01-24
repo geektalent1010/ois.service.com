@@ -25,10 +25,14 @@ class ApplicationController extends Controller
     }
 
     public function checklistFilter(Request $request) {
-        $center = $request->get('center');
+        $office = $request->get('office');
         $visaType = $request->get('visa_type');
-        if ($center && $visaType) {
-            $data['checklists'] = Checklist::where('center_id', $center)->where('visa_type', $visaType)->get();
+        if ($office && $visaType) {
+            $data['checklists'] = Checklist::where('office_id', $office)->where('visa_type', $visaType)->get();
+
+            return view('pages.application.partials.documents', $data);
+        } else {
+            $data['checklists'] = Checklist::where('office_id', -1)->get();
 
             return view('pages.application.partials.documents', $data);
         }

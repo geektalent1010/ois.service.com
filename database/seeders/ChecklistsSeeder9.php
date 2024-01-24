@@ -15,7 +15,7 @@ class ChecklistsSeeder9 extends Seeder
     public function run()
     {
         Checklist::create([
-            'center_id' => 9,
+            'office_id' => 20,
             'visa_type' => 'Diplomatic',
             'title' => 'F2A - Non-Accredited Diplomatic Visa',
             'description' => '•	Valid Official / Diplomatic Passport with at least 2 blank pages. <br/><br/>
@@ -31,7 +31,7 @@ class ChecklistsSeeder9 extends Seeder
             'file_name' => 'F2A - Non-Accredited Diplomatic Visa Checklist.docx',
         ]);
         Checklist::create([
-            'center_id' => 9,
+            'office_id' => 20,
             'visa_type' => 'Diplomatic',
             'title' => 'R1A - Accredited Diplomatic Visa',
             'description' => '•	Valid Official / Diplomatic Passport with at least 2 blank pages. <br/><br/>
@@ -47,7 +47,7 @@ class ChecklistsSeeder9 extends Seeder
             'file_name' => 'R1A - Accredited Diplomatic Visa Checklist.docx',
         ]);
         Checklist::create([
-            'center_id' => 9,
+            'office_id' => 20,
             'visa_type' => 'Diplomatic',
             'title' => 'R1B - Spouse of Accredited Diplomat',
             'description' => '•	Valid Official / Diplomatic Passport with at least 2 blank pages. <br/><br/>
@@ -63,7 +63,7 @@ class ChecklistsSeeder9 extends Seeder
             'file_name' => 'R1B - Spouse of Accredited Diplomat Checklist.docx',
         ]);
         Checklist::create([
-            'center_id' => 9,
+            'office_id' => 20,
             'visa_type' => 'Diplomatic',
             'title' => 'R1C - Dependant of Diplomat (Minor) Visa',
             'description' => '•	Valid Official / Diplomatic Passport with at least 2 blank pages. <br/><br/>
@@ -79,7 +79,7 @@ class ChecklistsSeeder9 extends Seeder
             'file_name' => 'R1C - Dependant of Diplomat (Minor) Visa Checklist.docx',
         ]);
         Checklist::create([
-            'center_id' => 9,
+            'office_id' => 20,
             'visa_type' => 'Diplomatic',
             'title' => 'R1D - Dependant of Diplomat (18 years and above) Visa',
             'description' => '•	Valid Official / Diplomatic Passport with at least 2 blank pages. <br/><br/>
@@ -95,7 +95,7 @@ class ChecklistsSeeder9 extends Seeder
             'file_name' => 'R1D - Dependant of Diplomat (18 years and above) Visa Checklist.docx',
         ]);
         Checklist::create([
-            'center_id' => 9,
+            'office_id' => 20,
             'visa_type' => 'Diplomatic',
             'title' => 'R1E - Dependant of Diplomat - Aged Parents (65 years and above Visa)',
             'description' => '•	Valid Official / Diplomatic Passport with at least 2 blank pages. <br/><br/>
@@ -111,7 +111,7 @@ class ChecklistsSeeder9 extends Seeder
             'file_name' => 'R1E - Dependant of Diplomat - Aged Parents (65 years and above Visa) Checklist.docx',
         ]);
         Checklist::create([
-            'center_id' => 9,
+            'office_id' => 20,
             'visa_type' => 'Official',
             'title' => 'R4A - Employment Expatriate ( Government Official) Visa',
             'description' => 'FOR OFFICIAL PASSPORT HOLDERS :<br/><br/>
@@ -139,7 +139,7 @@ class ChecklistsSeeder9 extends Seeder
             'file_name' => 'R4A - Employment Expatriate ( Government Official) Visa  Checklist.docx',
         ]);
         Checklist::create([
-            'center_id' => 9,
+            'office_id' => 20,
             'visa_type' => 'Official',
             'title' => 'R4B - Spouse of GO Visa',
             'description' => 'Eligibility<br/>
@@ -197,7 +197,7 @@ class ChecklistsSeeder9 extends Seeder
             'file_name' => 'R4B - Spouse of GO Visa Checklist.docx',
         ]);
         Checklist::create([
-            'center_id' => 9,
+            'office_id' => 20,
             'visa_type' => 'Official',
             'title' => 'R4B - Spouse of GO Visa',
             'description' => 'Eligibility<br/>
@@ -255,7 +255,7 @@ class ChecklistsSeeder9 extends Seeder
             'file_name' => 'R4C - Dependant of GO (Minor) Visa Checklist.docx',
         ]);
         Checklist::create([
-            'center_id' => 9,
+            'office_id' => 20,
             'visa_type' => 'Official',
             'title' => 'R4D - Dependant of GO (18 years and above) Visa',
             'description' => 'Eligibility<br/>
@@ -312,7 +312,7 @@ class ChecklistsSeeder9 extends Seeder
             'file_name' => 'R4D - Dependant of GO (18 years and above) Visa Checklist.docx',
         ]);
         Checklist::create([
-            'center_id' => 9,
+            'office_id' => 20,
             'visa_type' => 'Official',
             'title' => 'R4E - Dependant of GO (Aged Parents - 65 years and above) Visa',
             'description' => 'Eligibility<br/>
@@ -369,7 +369,7 @@ class ChecklistsSeeder9 extends Seeder
             'file_name' => 'R4E - Dependant of GO (Aged Parents - 65 years and above) Visa Checklist.docx',
         ]);
         Checklist::create([
-            'center_id' => 9,
+            'office_id' => 20,
             'visa_type' => 'UN',
             'title' => 'R5A - Employment (INGO) Visa',
             'description' => 'Eligibility<br/>
@@ -426,7 +426,7 @@ class ChecklistsSeeder9 extends Seeder
             'file_name' => 'R5A - Employment (INGO) Visa Checklist.docx',
         ]);
         Checklist::create([
-            'center_id' => 9,
+            'office_id' => 20,
             'visa_type' => 'UN',
             'title' => 'R5B - Spouse of INGO Staff Visa',
             'description' => 'APPLICANTS FOR VISA/S ARE TO SUBMIT THEIR APPLICATION IN PERSON AS YOU`RE NOW REQUIRED TO CAPTURE YOUR BIOMETRICS AS PART OF THE VISA REQUIREMENTS<br/>
@@ -484,7 +484,7 @@ class ChecklistsSeeder9 extends Seeder
             'file_name' => 'R5B - Spouse of INGO Staff Visa Checklist.docx',
         ]);
         Checklist::create([
-            'center_id' => 9,
+            'office_id' => 20,
             'visa_type' => 'UN',
             'title' => 'R5C - Dependant of INGO (Minor) Visa',
             'description' => 'APPLICANTS FOR VISA/S ARE TO SUBMIT THEIR APPLICATION IN PERSON AS YOU`RE NOW REQUIRED TO CAPTURE YOUR BIOMETRICS AS PART OF THE VISA REQUIREMENTS<br/>
@@ -540,7 +540,7 @@ class ChecklistsSeeder9 extends Seeder
             'file_name' => 'R5C - Dependant of INGO (Minor) Visa Checklist.docx',
         ]);
         Checklist::create([
-            'center_id' => 9,
+            'office_id' => 20,
             'visa_type' => 'UN',
             'title' => 'R5E - Dependant of INGO (Aged Parent - 65 years and above) Visa',
             'description' => 'Eligibility<br/>
@@ -597,7 +597,7 @@ class ChecklistsSeeder9 extends Seeder
             'file_name' => 'R5E - Dependant of INGO (Aged Parent - 65 years and above) Visa Checklist.docx',
         ]);
         Checklist::create([
-            'center_id' => 9,
+            'office_id' => 20,
             'visa_type' => 'Standard',
             'title' => 'F3B - Transit Visa',
             'description' => 'Short Visit Visa<br/><br/>
@@ -617,7 +617,7 @@ class ChecklistsSeeder9 extends Seeder
             'file_name' => 'F3B - Transit Visa Checklist.docx',
         ]);
         Checklist::create([
-            'center_id' => 9,
+            'office_id' => 20,
             'visa_type' => 'Standard',
             'title' => 'F4A - Business – Single Entry Visa',
             'description' => 'Apply for a Business Visa if you are travelling to Nigeria for:-<br/>

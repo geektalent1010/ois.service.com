@@ -15,7 +15,7 @@ class ChecklistsSeeder1 extends Seeder
     public function run()
     {
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Diplomatic',
             'title' => 'R1A – ACCREDITED DIPLOMAT VISA',
             'description' => 'REQUIREMENTS:<br/><br/>
@@ -34,7 +34,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'ACCREDITED DIPLOMAT VISA R1A.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Diplomatic',
             'title' => 'R1D – DEPENDANT (18 & ABOVE) OF ACCREDITED DIPLOMAT VISA',
             'description' => 'REQUIREMENTS:<br/><br/>
@@ -53,7 +53,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'DEPENDANT (18 & ABOVE) OF ACCREDITED DIPLOMAT VISA R1D.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Diplomatic',
             'title' => 'R1E – DEPENDANT (AGED PARENTS – 65 & ABOVE) OF ACCREDITED DIPLOMAT VISA',
             'description' => 'REQUIREMENTS:<br/><br/>
@@ -72,7 +72,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'DEPENDANT (AGED PARENTS - 65 ABOVE) OF ACCREDITED DIPLOMAT VISA R1E.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Diplomatic',
             'title' => 'R1C – DEPENDANT (MONIR) OF ACCREDITED DIPLOMAT VISA',
             'description' => 'REQUIREMENTS:<br/><br/>
@@ -91,7 +91,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'DEPENDANT MINOR OF ACCREDITED DIPLOMAT VISA R1C.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Diplomatic',
             'title' => 'F2A – DIPLOMATIC (NON-ACCREDITED) VISA',
             'description' => 'REQUIREMENTS:<br/><br/>
@@ -110,7 +110,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'NON ACREDITED DIPLOMAT VISA F2A.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Diplomatic',
             'title' => 'R1B – SPOUSE OF ACCREDITED DIPLOMAT VISA',
             'description' => 'REQUIREMENTS:<br/><br/>
@@ -129,7 +129,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'SPOUSE OF ACCREDITED DIPLOMAT VISA R1B.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Official',
             'title' => 'R4D – DEPENDANT OF EXPATRIATE (18 & ABOVE) VISA – (GOVT. OFFICIAL)',
             'description' => 'REQUIREMENTS:<br/><br/>
@@ -148,7 +148,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'DEPENDANT OF EXPATRIATE (18 & ABOVE) (GOVERNMENT OFFICIAL) VISA R4D.docx',
         ]);
         Checklist::create([
-          'center_id' => 2,
+          'office_id' => 7,
           'visa_type' => 'Official',
           'title' => 'R4E – DEPENDANT OF EXPATRIATE (AGEND PARENT 65 & ABOVE) VISA – (GOVT. OFFICIAL)',
           'description' => 'REQUIREMENTS:<br/><br/>
@@ -167,7 +167,7 @@ class ChecklistsSeeder1 extends Seeder
           'file_name' => 'DEPENDANT OF EXPATRIATE (AGED PARENTS 65 & ABOVE) (GOVERNMENT OFFICIAL) VISA R4E.docx',
         ]);
         Checklist::create([
-          'center_id' => 2,
+          'office_id' => 7,
           'visa_type' => 'Official',
           'title' => 'R4C – DEPENDANT OF EXPATRIATE MINOR VISA – (GOVT. OFFICIAL)',
           'description' => 'REQUIREMENTS:<br/><br/>
@@ -186,7 +186,7 @@ class ChecklistsSeeder1 extends Seeder
           'file_name' => 'DEPENDANT OF EXPATRIATE MINOR (GOVERNMENT OFFICIAL) VISA R4C.docx',
         ]);
         Checklist::create([
-          'center_id' => 2,
+          'office_id' => 7,
           'visa_type' => 'Official',
           'title' => 'R4A – EMPLOYMENT VISA – EXPATRIATE (GOVT. OFFICIAL)',
           'description' => 'REQUIREMENTS:<br/><br/>
@@ -205,7 +205,7 @@ class ChecklistsSeeder1 extends Seeder
           'file_name' => 'EMPLOYMENT VISA - EXPATRIATE (GOVERNMENT OFFICIAL) VISA R4A .docx',
         ]);
         Checklist::create([
-          'center_id' => 2,
+          'office_id' => 7,
           'visa_type' => 'Official',
           'title' => 'R4B – SPOUSE OF EXPATRIATE VISA – (GOVT. OFFICIAL)',
           'description' => 'REQUIREMENTS:<br/><br/>
@@ -224,7 +224,7 @@ class ChecklistsSeeder1 extends Seeder
           'file_name' => 'SPOUSE OF EXPATRIATE (GOVERNMENT OFFICIAL) VISA R4B.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'UN',
             'title' => 'R5D – DEPENDANT (18 & ABOVE) EMPLOYMENT VISA - INGO  ',
             'description' => 'REQUIREMENTS:<br/><br/>
@@ -243,7 +243,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'EMPLOYMENT VISA - (18 & ABOVE) OF INGO STAFF R5D.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'UN',
             'title' => 'R5E– DEPENDANT (AGED PARENT 65 & ABOVE) EMPLOYMENT VISA - INGO  ',
             'description' => 'REQUIREMENTS:<br/><br/>
@@ -262,7 +262,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'EMPLOYMENT VISA - (AGED PARENTD 65 & ABOVE) OF INGO STAFF R5E.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'UN',
             'title' => 'R5A – EMPLOYMENT VISA - INGO',
             'description' => 'REQUIREMENTS:<br/><br/>
@@ -281,7 +281,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'EMPLOYMENT VISA - INGO R5A.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'UN',
             'title' => 'R5C – MINOR EMPLOYMENT VISA - INGO',
             'description' => 'REQUIREMENTS:<br/><br/>
@@ -300,7 +300,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'EMPLOYMENT VISA - MINOR OF INGO STAFF R5C.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'UN',
             'title' => 'R5B – SPOUSE EMPLOYMENT VISA - INGO',
             'description' => 'REQUIREMENTS:<br/><br/>
@@ -319,7 +319,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'EMPLOYMENT VISA - SPOUSE OF INGO STAFF R5B.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'TF7H – ACADEMIC EXCHANGE PROGRAMME VISA  ',
             'description' => 'REQUIREMENTS:<br/><br/>
@@ -338,7 +338,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'ACADEMIC EXCHANGE PROGRAMME F7H.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'R8A– ACADEMIC EXCHANGE PROGRAMME VISA',
             'description' => 'REQUIREMENTS:<br/><br/>
@@ -357,7 +357,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'ACADEMIC EXCHANGE PROGRAMME VISA - R8A.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'F7F – ARTIST/ENTERTAINMENT/MUSIC VISA',
             'description' => 'F7F Description – This is a single entry Visa issued to those who  wish to visit Nigeria for the purpose of Performance as an artis(e), Entertainers Or Musician.<br/><br/>
@@ -414,7 +414,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'ARTIST ENTERTAINMENT MUSIC VISA F7F.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'F4A - Business Visa',
             'description' => 'REQUIREMENTS:<br/><br/>
@@ -472,7 +472,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'BUSINESS VISA F4A.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'F4B - Business Visa',
             'description' => 'REQUIREMENTS:<br/><br/>
@@ -530,7 +530,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'BUSINESS VISA F4B.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'F4C - Business Visa',
             'description' => 'REQUIREMENTS:<br/><br/>
@@ -588,7 +588,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'BUSINESS VISA F4C.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'F7B – CLERIC VISA',
             'description' => 'REQUIREMENTS:<br/><br/>
@@ -636,7 +636,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'CLERIC VISA  - F7B.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'F7K – EMERGENCY/RELIEF WORK VISA',
             'description' => 'ELIGIBILITY: Apply for this Visa if you wish to travel to Nigeria for the purpose of emergency/relief work.<br/><br/>
@@ -686,7 +686,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'EMERGENCY_RELIEVE WORK VISA F7K.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'R6A– EMPLOYMENT VISA CLERIC',
             'description' => 'REQUIREMENTS:<br/><br/>
@@ -728,7 +728,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'EMPLOYMENT VISA - CLERIC R6A.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'R6D– EMPLOYMENT VISA DEPENDANT (18 & ABOVE) OF CLERIC',
             'description' => 'REQUIREMENTS:<br/><br/>
@@ -770,7 +770,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'EMPLOYMENT VISA - DEPENDANT (18 & ABOVE) OF CLERIC R6D.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'R6E– EMPLOYMENT VISA DEPENDANT (AGE PARENTS 65 & ABOVE) OF CLERIC',
             'description' => 'REQUIREMENTS:<br/><br/>
@@ -813,7 +813,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'EMPLOYMENT VISA - DEPENDANT (AGED PARENT 65 & ABOVE) OF CLERIC R6E.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'R6C– EMPLOYMENT VISA MINOR OF CLERIC',
             'description' => 'REQUIREMENTS:<br/><br/>
@@ -858,7 +858,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'EMPLOYMENT VISA - MINOR OF CLERIC R6C.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'R6B– EMPLOYMENT VISA SPOUSE OF CLERIC',
             'description' => 'REQUIREMENTS:<br/><br/>
@@ -905,7 +905,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'EMPLOYMENT VISA - SPOUSE OF CLERIC R6B.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'F7J – HUMANITERIAN SERVICES VISA',
             'description' => 'F7J – Apply for this Visa if you wish to visit for the purpose of humanitarian services in Nigeria.<br/><br/>
@@ -959,7 +959,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'HUMANITERIAN SERVICES - F7J.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'R9A– INTERN VISA',
             'description' => '
@@ -1009,7 +1009,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'INTERN VISA - R9A.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'F71 – INTERNATIONAL CULTURAL EXCHANGE VISA',
             'description' => 'F71- Apply for this visa if you wish to visit Nigeria for the purpose of cultural exchange activities.<br/><br/>
@@ -1062,7 +1062,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'INTERNATIONAL CUTURAL EXCHANGE VISA F71.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'F7A - Journalist Visa',
             'description' => '
@@ -1112,7 +1112,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'JOURNALIST VISA F7A.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'F7C – MEDICAL TOURISM VISA',
             'description' => 'Medical Tourism Visa is to enable visit to Nigeria for the purpose of receiving medical care.<br/><br/>
@@ -1165,7 +1165,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'MEDICAL TOURISM VISA F7C.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'RELIGIOUS TOURISM VISA - F7D',
             'description' => 'F7D - This is a single entry Visa issued to religious faithful’s/adherents/followers who wish to visit Nigeria for the purpose of attending religious activities/programmes/pilgrimages.<br/><br/>
@@ -1218,7 +1218,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'RELIGIOUS TOURISM VISA F7D.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'SPORTS VISA  - F7E',
             'description' => 'F7E Description – This is a single entry Visa issued to those who  wish to visit Nigeria for the purpose of sporting activities.<br/><br/>
@@ -1273,7 +1273,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'SPORTS VISA F7E.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'R8B– SPOUSE OF ACADEMIC EXCHANGE PROGRAMME VISA ',
             'description' => '
@@ -1319,7 +1319,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'SPOUSE OF ACADEMIC EXCHANGE PROGRAMME VISA - R8B.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'R7B– SPOUSE OF STUDENT VISA ',
             'description' => '
@@ -1365,7 +1365,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'SPOUSE OF STUDENT VISA - R7B.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'F7L – STAFF OF INGO VISA',
             'description' => 'ELIGIBILITY: This Visa is issued to staff of International Non-Government Organisation for the purpose of INGO activities.<br/><br/>
@@ -1419,7 +1419,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'STAFF OF INGO VISA F7L.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'F7M – STAFF OF NGO VISA',
             'description' => 'ELIGIBILITY: This Visa is issued to staff of Non-Government Organisation for the purpose of NGO activities.<br/><br/>
@@ -1469,7 +1469,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'STAFF OF NGO VISA F7M.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'R2E – Dependant of Expatriate (AGED PARENTS 65 Years And Above Visa)',
             'description' => 'ELIGIBILITY: Aged Parents (65 Years And Above Visa) accompanying employed expatriates in Free Zones.<br/><br/>
@@ -1523,7 +1523,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'STR AGED PARENTS 65 AND ABOVE VISA R2E.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'R2D – Dependant of Expatriate (18 Years And Above Visa)',
             'description' => 'ELIGIBILITY: Dependant (18 Years And Above Visa) accompanying employed expatriates in Free Zones.<br/><br/>
@@ -1574,7 +1574,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'STR DEPENDANT 18 AND ABOVE VISA R2D.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'R2C – Dependant of Expatriate Visa (STR Minor)',
             'description' => 'ELIGIBILITY: Dependant less than 18 years accompanying employed expatriates in Free Zones.<br/><br/>
@@ -1628,7 +1628,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'STR MINOR VISA R2C.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'R2A – Employment (Expatriate) Visa',
             'description' => 'ELIGIBILITY: Employed expatriates to be place on quota.<br/><br/>
@@ -1706,7 +1706,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'STR R2A VISA.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'R3A – EMPLOYMENT VISA – EXPATRIATE (FREE ZONE)',
             'description' => 'ELIGIBILITY: Expatriates wishing to work within Free Zones in Nigeria.<br/><br/>
@@ -1786,7 +1786,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'STR R3A VISA.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'R3B – EMPLOYMENT VISA – EXPATRIATE (FREE ZONE)',
             'description' => 'ELIGIBILITY: Spouse of employed expatriates in Free Zones in Nigeria.<br/><br/>
@@ -1843,7 +1843,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'STR R3B VISA.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'R3C – DEPENDANT MINOR OF EXPATRIATE VISA',
             'description' => 'ELIGIBILITY: Dependant less than 18 years accompanying employed expatriates in Free Zones.<br/><br/>
@@ -1904,7 +1904,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'STR R3C VISA.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'R3D – DEPENDANT OF EXPATRIATE (FREE ZONE)',
             'description' => 'ELIGIBILITY: Dependant (18 years & above) accompanying employed expatriates in Free Zones.<br/><br/>
@@ -1954,7 +1954,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'STR R3D VISA.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'R3E – DEPENDANT  OF EXPATRIATE (FREE ZONE)',
             'description' => 'ELIGIBILITY: Aged Parents (65 years & above) accompanying employed expatriates in Free Zones.<br/><br/>
@@ -2008,7 +2008,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'STR R3E VISA.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'R2B – Spouse of Expatriate Visa',
             'description' => 'ELIGIBILITY: Spouse of employed expatriates on Quota in Nigeria.<br/><br/>
@@ -2062,7 +2062,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'STR SPOUSE VISA R2B.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'STUDENT VISA - R7A',
             'description' => 'R7A – Student Visa is issued for the purpose of schooling in Nigeria.<br/><br/>
@@ -2113,7 +2113,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'STUDENT VISA - R7A.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'F7G – STUDY TOUR VISA',
             'description' => 'This is a single entry Visa issued to those who  wish to visit Nigeria for the purpose of study tour.<br/><br/>
@@ -2170,7 +2170,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'STUDY TOUR VISA F7G.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'F5A - Tourism Visa',
             'description' => 'REQUIREMENTS:<br/><br/>
@@ -2217,7 +2217,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'TOURISM VISA F5A.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'F3B – Transit Visa',
             'description' => 'REQUIREMENTS:<br/><br/>
@@ -2269,7 +2269,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'TRANSIT VISA F3B.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'F8A – Temporary Work Permit Visa',
             'description' => 'REQUIREMENTS:<br/><br/>
@@ -2321,7 +2321,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'TWP VISA F8A.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'F6A - VISITING Visa',
             'description' => 'REQUIREMENTS:<br/><br/>
@@ -2377,7 +2377,7 @@ class ChecklistsSeeder1 extends Seeder
             'file_name' => 'VISIT VISA F6A.docx',
         ]);
         Checklist::create([
-            'center_id' => 2,
+            'office_id' => 7,
             'visa_type' => 'Standard',
             'title' => 'F6B - VISITING Visa',
             'description' => 'REQUIREMENTS:<br/><br/>

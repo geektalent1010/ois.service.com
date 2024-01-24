@@ -22,7 +22,7 @@
                                     </a>
                                 </div>
                                 <div class="col-md-6 form-group mt-5 mb-4">
-                                    <a class="btn btn-primary confirm-button" href="{{ asset('documents/'.$item->center->name.'/'.$item->visa_type.'/'.$item->file_name) }}" download>
+                                    <a class="btn btn-primary confirm-button" href="{{ asset('documents/'.$item->office->key.'/'.$item->visa_type.'/'.$item->file_name) }}" download>
                                         {{ __('DOWNLOAD FILE') }}
                                     </a>
                                 </div>
@@ -34,5 +34,5 @@
         </div>
     </div>
 @else
-    <div class="no-documents main-title text-center">No checklists found</div>
+    <!-- <div class="no-documents main-title text-center">No checklists found</div> -->
 @endif
