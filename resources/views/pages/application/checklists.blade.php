@@ -27,18 +27,18 @@
             <form class="form-section">
                 <div class="row mb-24px">
                     <div class="col-md-6 form-group">
-                        <p class="form-label">SELECT COUNTRY</p>
+                        <p class="form-label">SELECT COUNTRY + CITY APPLYING FROM</p>
                         <select class="form-control webkit-style country-select w-100" name="center" id="center">
-                            <option value="">Country</option>
+                            <option value="">Country + City</option>
                             @foreach($centers as $center)
                                 <option value="{{$center->id}}">{{$center['city']}}, {{$center['country']}}</option>
                             @endforeach
                         </select>
                     </div>
                     <div class="col-md-6 form-group">
-                        <p class="form-label">SELECT VISA TYPE</p>
+                        <p class="form-label">SELECT PASSPORT TYPE APPLYING WITH</p>
                         <select class="form-control webkit-style country-select w-100" name="visa_type" id="visaType">
-                            <option value="">Type</option>
+                            <option value="">Pasport Type</option>
                             <option value="Diplomatic">Diplomatic Passport</option>
                             <option value="Official">Official Passport</option>
                             <option value="Standard">Standard Passport</option>
@@ -47,13 +47,13 @@
                     </div>
                 </div>
 
-                <div class="row justify-content-center">
+                <!-- <div class="row justify-content-center">
                     <div class="col-md-6 form-group mt-19px mb-30px">
                         <button type="button" class="btn btn-primary confirm-button button-submit">
                             {{ __('CONFIRM') }}
                         </button>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="row mt-19px">
                     <div class="col-md-12 checklistsFilters">
