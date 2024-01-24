@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Support\Facades\DB;
+use App\Office;
 use Illuminate\Database\Seeder;
 
 class OfficesSeeder extends Seeder
@@ -14,65 +14,759 @@ class OfficesSeeder extends Seeder
      */
     public function run()
     {
-        $sql = "
-        INSERT INTO `offices` VALUES (1, 'Nigeria', 'Abuja', 'No.5 Onitsha Crescent, Off Gimbiya Street, Area 11, Garki, Abuja', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (2, 'Netherlands', 'Amsterdam/ The Hague', 'First Floor, Regus Building, Koningin Juliana Plein 10. Postcode 2595AA, The Hague Central station,', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (3, 'Turkey', 'Ankara', 'Buyukesat Mahallesi, Ugur Mumcu\'nun Sokagi, Konak Apartmani, No:49/3 CANKAYA/ANKARA', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (4, 'USA', 'Atlanta', 'OIS Atlanta. GA, 918 Holcomb Bridge Road, Suite 204, Roswell, Atlanta, GA 30076', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (5, 'China', 'Beijing', 'Suite 908, Building B Kunsha Centre, No. 16 Xin Yuan Li Street, Chaoyang District, Beijing.', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (6, 'Lebanon', 'Beirut', 'OIS Services, Beirut, Lebanon Jnah-Beirut Opposite Rafik Hariri University Hospital Mais 6', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (7, 'Egypt', 'Cairo', '2ND FLOOR AT 51-ELNOOR ST, ELDOKI, GIZA, EGYPT.', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (8, 'South Africa', 'Cape Town', 'No 50, Long Street, Cape Town.', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (9, 'USA', 'Chicago', '4001 West Devon, Suite 509. Chicago IL 60646 ', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (10, 'UAE', 'Dubai', '22A (22nd floor), Silver Tower, Cluster I, Jumeirah Lake Towers, Dubai, U.A.E', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (11, 'China', 'Guangzhou', 'Room 8E, 8th floor, Wingkin Square, No.29 Jianshe6malu, Yuexiu District, Guangzhou.', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (12, 'USA', 'Houston', 'OIS Services, 9894 Bissonnet Street, Suite 745 Houston TX 77036.', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (13, 'South Africa', 'Johannesburg', '6 Bolton Road Parkwood Rosebank, 2193, Johannesburg, South Africa', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (14, 'UK', 'London', '56-57 Fleet Street, London, EC4Y 1JU', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (15, 'USA', 'Los Angeles', 'OIS Los Angeles 5757 West Century Blvd, Suite 718 Los Angeles CA 90045 ', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (16, 'Spain', 'Madrid', 'C.de Maudes, 62. 28003, Madrid', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (17, 'India', 'Mumbai', 'Plot No. C-38/39, Parinee Crescenzo, G-Block, 12th Floor, Bandra Kurla Complex, Bandra East, Taluka-Andheri, Mumbai - 400051, Maharashtra.', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (18, 'India', 'New Delhi', 'C/O Central Board of Irrigation & Power Plot No. 4, Ground Floor, Institutional Area, Malcha Marg, Chanakyapuri New Delhi-110021', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (19, 'USA', 'New York', 'OIS New York, 370 Lexington Ave, Suite 613 New York, NY 10017.', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (20, 'France', 'Paris', '9 Rue Paul Valery 75116 Paris, France', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (21, 'Italy', 'Rome', 'Solutions S.R.L., Via Sicilia, 30 00187 Rome, Italy', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (22, 'China', 'Shanghai', 'Room 506A, Zhongguancun Science Building, No.2911 North Zhongshan Road, Putuo', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (23, 'USA', 'Washington DC', 'OIS WASHINGTON DC, 11900 Parklawn Drive Suite 160, Rockville MD 20852.', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (24, 'Germany', 'Berlin', 'Warmensteinacherstraße Straße 59 a, 12349 Berlin, Germany', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (25, 'Morocco', 'Rabat', 'Millennium Business Centre, Av. Mehdi Ben Barka, Rabat 10170. Morocco', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (26, 'Turkey', 'Istanbul', 'OIS Istanbul Sahrayıcedit Mahallesi, Atatürk Caddesi, Onur İş Merkezi, B Blok, No:3/7 Kadıköy/İstanbul', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (27, 'Manchester', 'UK', 'OIS SERVICES Regus ST JAMES TOWER 7 Charlotte Street Manchester M1 4DZ United Kingdom ', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (28, 'Germany ', 'Frankfurt', 'COMING SOON….!', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (29, 'Hungary ', 'Budapest', 'COMING SOON….!', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (30, 'Ireland ', 'Dublin', 'COMING SOON….!', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (31, 'Belgium ', 'Brussels', 'COMING SOON….!', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (32, 'Sweden ', 'Stockholm', 'COMING SOON….!', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (33, 'Austria ', 'Vienna', 'COMING SOON….!', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (34, 'Romania ', 'Bucharest', 'COMING SOON….!', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (35, 'Poland ', 'Warsaw', 'COMING SOON….!', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (36, 'Portugal ', 'Lisbon', 'COMING SOON….!', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (37, 'Greece ', 'Athens', 'COMING SOON….!', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (38, 'Cyprus ', 'Nicosia', 'COMING SOON….!', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (39, 'Switzerland ', 'Bern', 'COMING SOON….!', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (40, 'Qatar ', 'Doha', 'COMING SOON….!', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (41, 'Japan ', 'Tokyo', 'COMING SOON….!', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (42, 'South Korea ', 'Seoul', 'COMING SOON….!', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (43, 'Thailand ', 'Bangkok', 'COMING SOON….!', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (44, 'Hong Kong ', 'Hong Kong', 'COMING SOON….!', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (45, 'Singapore ', 'Singapore', 'COMING SOON….!', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (46, 'Australia ', 'Canberra and Sidney', 'COMING SOON….!', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (47, 'Brazil ', 'Brasilia', 'COMING SOON….!', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (48, 'Jamaica ', 'Kingston', 'COMING SOON….!', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (49, 'Uganda ', 'Kampala', 'COMING SOON….!', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (50, 'Sudan ', 'Khartoum', 'COMING SOON….!', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (51, 'Pakistan ', 'Islamabad', 'COMING SOON….!', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (52, 'Russia ', 'Moscow', 'COMING SOON….!', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (53, 'Senegal ', 'Dakar', 'COMING SOON….!', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (54, 'Saudi Arabia ', 'Riyadh, Jeddah and Makkah', 'COMING SOON….!', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (55, 'USA ', 'Minneapolis', 'COMING SOON….!', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (56, 'CANADA', 'Ottawa ', 'COMING SOON….!', '', '', '', '', NULL, NULL);
-        INSERT INTO `offices` VALUES (57, 'MAURITIUS', 'Port Louis ', 'COMING SOON….!', '', '', '', '', NULL, NULL);
-          ";
-        DB::unprepared($sql);
+        Office::create([
+            'country' => 'Nigeria',
+            'city' => 'Abuja',
+            'key' => '',
+            'flag' => '',
+            'address' => 'No.5 Onitsha Crescent, Off Gimbiya Street, Area 11, Garki, Abuja',
+            'email' => 'infoabuja@oisservices.com',
+            'phone' => '+2348174477018',
+            'working_time' => '8:30 am -  4:30 pm',
+            'working_days' => 'MONDAYS - FRIDAYS',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Netherlands',
+            'city' => 'Amsterdam/ The Hague',
+            'key' => 'THE_HAGUE',
+            'flag' => '',
+            'address' => 'First Floor, Regus Building, Koningin Juliana Plein 10. Postcode 2595AA, The Hague Central station,',
+            'email' => 'infothehague@oisservices.com',
+            'phone' => '0031708915324 - 0031687382130',
+            'working_time' => '9:00 am - 12:00 pm & 2:00 pm - 5:00 pm',
+            'working_days' => 'MONDAYS - FRIDAYS',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Turkey',
+            'city' => 'Ankara',
+            'key' => 'ANKARA',
+            'flag' => '',
+            'address' => 'Buyukesat Mahallesi, Ugur Mumcu\'nun Sokagi, Konak Apartmani, No:49/3 CANKAYA/ANKARA',
+            'email' => 'infoankara@oisservices.com',
+            'phone' => '00903124382175 - 00903124382176',
+            'working_time' => '9:00 am - 12:00 pm & 2:00 pm - 5:00 pm',
+            'working_days' => 'MONDAYS - FRIDAYS',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'USA',
+            'city' => 'Atlanta',
+            'key' => '',
+            'flag' => '',
+            'address' => 'OIS Atlanta. GA, 918 Holcomb Bridge Road, Suite 204, Roswell, Atlanta, GA 30076',
+            'email' => 'infoatlanta@oisservices.com',
+            'phone' => '+1 404-695-6373',
+            'working_time' => '9:00 am - 12:00 pm & 2:00 pm - 5:00 pm',
+            'working_days' => 'MONDAYS - FRIDAYS',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'China',
+            'city' => 'Beijing',
+            'key' => 'BEIJING',
+            'flag' => 'China.svg',
+            'address' => 'Suite 908, Building B Kunsha Centre, No. 16 Xin Yuan Li Street, Chaoyang District, Beijing.',
+            'email' => 'infobeijing@oisservices.com',
+            'phone' => '+010-84004549',
+            'working_time' => '9:00 am -  4:00 pm',
+            'working_days' => 'MONDAYS - FRIDAYS',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Lebanon',
+            'city' => 'Beirut',
+            'key' => 'BEIRUT',
+            'flag' => '',
+            'address' => 'OIS Services, Beirut, Lebanon Jnah-Beirut Opposite Rafik Hariri University Hospital Mais 6',
+            'email' => 'infobeirut@oisservices.com',
+            'phone' => '009611845138',
+            'working_time' => '9:00 am -  4:00 pm',
+            'working_days' => 'MONDAYS - FRIDAYS',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Egypt',
+            'city' => 'Cairo',
+            'key' => 'CAIRO',
+            'flag' => 'Egypt.svg',
+            'address' => '   2ND FLOOR AT 51-ELNOOR ST, ELDOKI, GIZA, EGYPT.',
+            'email' => 'infocairo@oisservices.com',
+            'phone' => '+20 237627293 - +20 237627294',
+            'working_time' => '9:00 am - 12:00 pm & 2:00 pm - 5:00 pm',
+            'working_days' => 'SUNDAYS - THURSDAYS',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'South Africa',
+            'city' => 'Cape Town',
+            'key' => '',
+            'flag' => '',
+            'address' => 'No 50, Long Street, Cape Town.',
+            'email' => 'infocpt@oisservices.com',
+            'phone' => '+27 210133161',
+            'working_time' => '9:00 am - 12:00 pm & 1:00 pm - 4:30 pm',
+            'working_days' => 'MONDAYS - WEDNESSDAY - FRIDAYS',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'USA',
+            'city' => 'Chicago',
+            'key' => 'CHICAGO',
+            'flag' => '',
+            'address' => '4001 West Devon, Suite 509. Chicago IL 60646 ',
+            'email' => 'Infochicago@oisservices.com',
+            'phone' => '+1 (773) 733-4600',
+            'working_time' => 'N.A',
+            'working_days' => 'N.A',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'UAE',
+            'city' => 'Dubai',
+            'key' => 'DUBAI',
+            'flag' => '',
+            'address' => '22A (22nd floor), Silver Tower, Cluster I, Jumeirah Lake Towers, Dubai, U.A.E',
+            'email' => 'infodubai@oisservices.com',
+            'phone' => '+971 4 276 5448',
+            'working_time' => '9:00 am -  3:00 pm',
+            'working_days' => 'MONDAYS - FRIDAYS',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'China',
+            'city' => 'Guangzhou',
+            'key' => 'GUANGZHOU',
+            'flag' => 'China.svg',
+            'address' => 'Room 8E, 8th floor, Wingkin Square, No.29 Jianshe6malu, Yuexiu District, Guangzhou.',
+            'email' => 'infoguangzhou@oisservices.com',
+            'phone' => '+8620-37812021',
+            'working_time' => '9:00 am -  4:00 pm',
+            'working_days' => 'MONDAYS - FRIDAYS',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'USA',
+            'city' => 'Houston',
+            'key' => 'Houston',
+            'flag' => '',
+            'address' => 'OIS Services, 9894 Bissonnet Street, Suite 745 Houston TX 77036.',
+            'email' => 'infohouston@oisservices.com',
+            'phone' => '+1 713 771 1871',
+            'working_time' => '9:00 am - 12:00 pm & 2:00 pm - 5:00 pm',
+            'working_days' => 'MONDAYS - FRIDAYS',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'South Africa',
+            'city' => 'Johannesburg',
+            'key' => 'JOHANNESBURG',
+            'flag' => '',
+            'address' => '6 Bolton Road Parkwood Rosebank, 2193, Johannesburg, South Africa',
+            'email' => 'infojoburg@oisservices.com',
+            'phone' => '+27112682376, +27112682470',
+            'working_time' => '9:00 am - 12:00 pm & 2:00 pm - 4:30 pm',
+            'working_days' => 'MONDAYS - FRIDAYS',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'UK',
+            'city' => 'London',
+            'key' => 'LONDON',
+            'flag' => '',
+            'address' => '56-57 Fleet Street, London, EC4Y 1JU',
+            'email' => 'info@oisservices.com',
+            'phone' => '02078320000',
+            'working_time' => '9:00 am - 12:00 pm & 2:00 pm - 5:00 pm',
+            'working_days' => 'MONDAYS - FRIDAYS',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'USA',
+            'city' => 'Los Angeles',
+            'key' => '',
+            'flag' => '',
+            'address' => 'OIS Los Angeles 5757 W. Century Boulevard, 90045 Los Angeles, California.',
+            'email' => 'infola@oisservices.com',
+            'phone' => '+1 301231 7000',
+            'working_time' => '9:00 am - 12:00 pm & 2:00 pm - 5:00 pm',
+            'working_days' => 'MONDAYS - FRIDAYS',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Spain',
+            'city' => 'Madrid',
+            'key' => '',
+            'flag' => '',
+            'address' => 'C.de Maudes, 62. 28003, Madrid',
+            'email' => 'infomadrid@oisservices.com',
+            'phone' => '+442078320014',
+            'working_time' => 'N.A',
+            'working_days' => 'N.A',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'India',
+            'city' => 'Mumbai',
+            'key' => 'MUMBAI',
+            'flag' => '',
+            'address' => 'Plot No. C-38/39, Parinee Crescenzo, G-Block, 12th Floor, Bandra Kurla Complex, Bandra East, Taluka-Andheri, Mumbai - 400051, Maharashtra.',
+            'email' => 'infodelhi@oisservices.com',
+            'phone' => '+91 8800530119',
+            'working_time' => '9:00 am - 12:00 pm & 2:00 pm - 4:00 pm',
+            'working_days' => 'MONDAYS - FRIDAYS',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'India',
+            'city' => 'New Delhi',
+            'key' => '',
+            'flag' => '',
+            'address' => 'C/O Central Board of Irrigation & Power Plot No. 4, Ground Floor, Institutional Area, Malcha Marg, Chanakyapuri New Delhi-110021',
+            'email' => 'infodelhi@oisservices.com',
+            'phone' => '+91 8800530119',
+            'working_time' => '9:00 am - 12:00 pm & 2:00 pm - 4:30 pm',
+            'working_days' => 'MONDAYS - FRIDAYS',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'USA',
+            'city' => 'New York',
+            'key' => '',
+            'flag' => '',
+            'address' => 'OIS New York, 370 Lexington Ave, Suite 613 New York, NY 10017.',
+            'email' => 'infony@oisservices.com',
+            'phone' => '(+1)917-900-1114',
+            'working_time' => '9:00 am - 12:00 pm & 2:00 pm - 5:00 pm',
+            'working_days' => 'MONDAYS - FRIDAYS',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'France',
+            'city' => 'Paris',
+            'key' => 'PARIS',
+            'flag' => 'France.svg',
+            'address' => '9 Rue Paul Valery 75116 Paris, France',
+            'email' => 'infoparis@oisservices.com',
+            'phone' => '+33 1 83 92 77 81',
+            'working_time' => '9:00 am - 12:00 pm & 2:00 pm - 5:00 pm',
+            'working_days' => 'MONDAYS - FRIDAYS',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'South Africa',
+            'city' => 'Pretoria',
+            'key' => '',
+            'flag' => '',
+            'address' => '3rd Floor, Building 2 Brooklyn Bridge Office Park Pretoria, 570 Fehrsen South Africa',
+            'email' => 'infopret@oisservices.com',
+            'phone' => '0270124336314',
+            'working_time' => '9:00 am - 12:00 pm & 1:30 pm - 4:40 pm',
+            'working_days' => 'MONDAYS - FRIDAYS',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Italy',
+            'city' => 'Rome',
+            'key' => 'ROME',
+            'flag' => '',
+            'address' => 'Solutions S.R.L., Via Sicilia, 30 00187 Rome, Italy',
+            'email' => 'inforome@oisservices.com',
+            'phone' => '+39 (0)6 4201 2121',
+            'working_time' => '9:30 am - 12:30 pm & 2:00 pm - 3:30 pm',
+            'working_days' => 'MONDAYS - FRIDAYS',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'China',
+            'city' => 'Shanghai',
+            'key' => 'SHANGHAI',
+            'flag' => 'China.svg',
+            'address' => 'Room 506A, Zhongguancun Science Building, No.2911 North Zhongshan Road, Putuo',
+            'email' => 'infoshanghai@oisservices.com',
+            'phone' => '+86-2161670991',
+            'working_time' => '9:00 am -  4:00 pm',
+            'working_days' => 'MONDAYS - FRIDAYS',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'USA',
+            'city' => 'Washington DC',
+            'key' => '',
+            'flag' => '',
+            'address' => 'OIS WASHINGTON DC, 11900 Parklawn Drive Suite 160, Rockville MD 20852.',
+            'email' => 'infowashingtondc@oisservices.com',
+            'phone' => '(+1) 301-231-7000',
+            'working_time' => '9:00 am - 12:00 pm & 2:00 pm - 5:00 pm',
+            'working_days' => 'MONDAYS - FRIDAYS',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Germany',
+            'city' => 'Berlin',
+            'key' => '',
+            'flag' => 'Germany.svg',
+            'address' => 'Warmensteinacherstraße Straße 59 a, 12349 Berlin, Germany',
+            'email' => 'N.A',
+            'phone' => 'N.A',
+            'working_time' => 'N.A',
+            'working_days' => 'N.A',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Morocco',
+            'city' => 'Rabat',
+            'key' => '',
+            'flag' => '',
+            'address' => 'Millennium Business Centre, Av. Mehdi Ben Barka, Rabat 10170. Morocco',
+            'email' => 'N.A',
+            'phone' => 'N.A',
+            'working_time' => 'N.A',
+            'working_days' => 'N.A',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Turkey',
+            'city' => 'Istanbul',
+            'key' => '',
+            'flag' => '',
+            'address' => 'OIS Istanbul Sahrayıcedit Mahallesi, Atatürk Caddesi, Onur İş Merkezi, B Blok, No:3/7 Kadıköy/İstanbul',
+            'email' => 'infoistanbul@oisservices.com',
+            'phone' => '009 0216 385 79 41',
+            'working_time' => '9:00 am - 12:00 pm & 2:00 pm - 5:00 pm',
+            'working_days' => 'MONDAYS - FRIDAYS',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'UK',
+            'city' => 'Manchester',
+            'key' => '',
+            'flag' => '',
+            'address' => 'OIS SERVICES Regus ST JAMES TOWER 7 Charlotte Street Manchester M1 4DZ United Kingdom ',
+            'email' => 'infomanchester@oisservices.com',
+            'phone' => 'N.A',
+            'working_time' => '9:00 am - 12:00 pm & 2:00 pm - 5:00 pm',
+            'working_days' => 'MONDAYS - FRIDAYS',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Germany',
+            'city' => 'Frankfurt',
+            'key' => '',
+            'flag' => 'Germany.svg',
+            'address' => 'COMING SOON….!',
+            'email' => '',
+            'phone' => '',
+            'working_time' => '',
+            'working_days' => '',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Hungary',
+            'city' => 'Budapest',
+            'key' => '',
+            'flag' => '',
+            'address' => 'COMING SOON….!',
+            'email' => '',
+            'phone' => '',
+            'working_time' => '',
+            'working_days' => '',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Ireland',
+            'city' => 'Dublin',
+            'key' => '',
+            'flag' => '',
+            'address' => 'COMING SOON….!',
+            'email' => '',
+            'phone' => '',
+            'working_time' => '',
+            'working_days' => '',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Belgium',
+            'city' => 'Brussels',
+            'key' => '',
+            'flag' => 'Belgium.svg',
+            'address' => 'COMING SOON….!',
+            'email' => '',
+            'phone' => '',
+            'working_time' => '',
+            'working_days' => '',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Sweden',
+            'city' => 'Stockholm',
+            'key' => '',
+            'flag' => '',
+            'address' => 'COMING SOON….!',
+            'email' => '',
+            'phone' => '',
+            'working_time' => '',
+            'working_days' => '',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Austria',
+            'city' => 'Vienna',
+            'key' => '',
+            'flag' => 'Austria.svg',
+            'address' => 'COMING SOON….!',
+            'email' => '',
+            'phone' => '',
+            'working_time' => '',
+            'working_days' => '',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Romania',
+            'city' => 'Bucharest',
+            'key' => '',
+            'flag' => '',
+            'address' => 'COMING SOON….!',
+            'email' => '',
+            'phone' => '',
+            'working_time' => '',
+            'working_days' => '',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Poland',
+            'city' => 'Warsaw',
+            'key' => '',
+            'flag' => '',
+            'address' => 'COMING SOON….!',
+            'email' => '',
+            'phone' => '',
+            'working_time' => '',
+            'working_days' => '',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Portugal',
+            'city' => 'Lisbon',
+            'key' => '',
+            'flag' => '',
+            'address' => 'COMING SOON….!',
+            'email' => '',
+            'phone' => '',
+            'working_time' => '',
+            'working_days' => '',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Greece',
+            'city' => 'Athens',
+            'key' => '',
+            'flag' => 'Greece.svg',
+            'address' => 'COMING SOON….!',
+            'email' => '',
+            'phone' => '',
+            'working_time' => '',
+            'working_days' => '',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Cyprus',
+            'city' => 'Nicosia',
+            'key' => '',
+            'flag' => 'Cyprus.svg',
+            'address' => 'COMING SOON….!',
+            'email' => '',
+            'phone' => '',
+            'working_time' => '',
+            'working_days' => '',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Switzerland',
+            'city' => 'Bern',
+            'key' => '',
+            'flag' => '',
+            'address' => 'COMING SOON….!',
+            'email' => '',
+            'phone' => '',
+            'working_time' => '',
+            'working_days' => '',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Qatar',
+            'city' => 'Doha',
+            'key' => '',
+            'flag' => '',
+            'address' => 'COMING SOON….!',
+            'email' => '',
+            'phone' => '',
+            'working_time' => '',
+            'working_days' => '',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Japan',
+            'city' => 'Tokyo',
+            'key' => '',
+            'flag' => '',
+            'address' => 'COMING SOON….!',
+            'email' => '',
+            'phone' => '',
+            'working_time' => '',
+            'working_days' => '',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'South Korea',
+            'city' => 'Seoul',
+            'key' => '',
+            'flag' => '',
+            'address' => 'COMING SOON….!',
+            'email' => '',
+            'phone' => '',
+            'working_time' => '',
+            'working_days' => '',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Thailand',
+            'city' => 'Bangkok',
+            'key' => '',
+            'flag' => '',
+            'address' => 'COMING SOON….!',
+            'email' => '',
+            'phone' => '',
+            'working_time' => '',
+            'working_days' => '',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Hong Kong',
+            'city' => 'Hong Kong',
+            'key' => '',
+            'flag' => 'HongKong.svg',
+            'address' => 'COMING SOON….!',
+            'email' => '',
+            'phone' => '',
+            'working_time' => '',
+            'working_days' => '',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Singapore',
+            'city' => 'Singapore',
+            'key' => '',
+            'flag' => '',
+            'address' => 'COMING SOON….!',
+            'email' => '',
+            'phone' => '',
+            'working_time' => '',
+            'working_days' => '',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Australia',
+            'city' => 'Canberra and Sidney',
+            'key' => '',
+            'flag' => 'Australia.svg',
+            'address' => 'COMING SOON….!',
+            'email' => '',
+            'phone' => '',
+            'working_time' => '',
+            'working_days' => '',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Brazil',
+            'city' => 'Brasilia',
+            'key' => '',
+            'flag' => 'Brazil.svg',
+            'address' => 'COMING SOON….!',
+            'email' => '',
+            'phone' => '',
+            'working_time' => '',
+            'working_days' => '',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Jamaica',
+            'city' => 'Kingston',
+            'key' => '',
+            'flag' => '',
+            'address' => 'COMING SOON….!',
+            'email' => '',
+            'phone' => '',
+            'working_time' => '',
+            'working_days' => '',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Uganda',
+            'city' => 'Kampala',
+            'key' => '',
+            'flag' => '',
+            'address' => 'COMING SOON….!',
+            'email' => '',
+            'phone' => '',
+            'working_time' => '',
+            'working_days' => '',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Sudan',
+            'city' => 'Khartoum',
+            'key' => '',
+            'flag' => '',
+            'address' => 'COMING SOON….!',
+            'email' => '',
+            'phone' => '',
+            'working_time' => '',
+            'working_days' => '',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Pakistan',
+            'city' => 'Islamabad',
+            'key' => '',
+            'flag' => '',
+            'address' => 'COMING SOON….!',
+            'email' => '',
+            'phone' => '',
+            'working_time' => '',
+            'working_days' => '',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Russia',
+            'city' => 'Moscow',
+            'key' => '',
+            'flag' => '',
+            'address' => 'COMING SOON….!',
+            'email' => '',
+            'phone' => '',
+            'working_time' => '',
+            'working_days' => '',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Senegal',
+            'city' => 'Dakar',
+            'key' => '',
+            'flag' => '',
+            'address' => 'COMING SOON….!',
+            'email' => '',
+            'phone' => '',
+            'working_time' => '',
+            'working_days' => '',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'Saudi Arabia',
+            'city' => 'Riyadh, Jeddah and Makkah',
+            'key' => '',
+            'flag' => '',
+            'address' => 'COMING SOON….!',
+            'email' => '',
+            'phone' => '',
+            'working_time' => '',
+            'working_days' => '',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'USA',
+            'city' => 'Minneapolis',
+            'key' => '',
+            'flag' => '',
+            'address' => 'COMING SOON….!',
+            'email' => '',
+            'phone' => '',
+            'working_time' => '',
+            'working_days' => '',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'CANADA',
+            'city' => 'Ottawa',
+            'key' => '',
+            'flag' => 'Canada.svg',
+            'address' => 'COMING SOON….!',
+            'email' => '',
+            'phone' => '',
+            'working_time' => '',
+            'working_days' => '',
+            'postal' => '',
+            'providedby' => '',
+        ]);
+        Office::create([
+            'country' => 'MAURITIUS',
+            'city' => 'Port Louis',
+            'key' => '',
+            'flag' => '',
+            'address' => 'COMING SOON….!',
+            'email' => '',
+            'phone' => '',
+            'working_time' => '',
+            'working_days' => '',
+            'postal' => '',
+            'providedby' => '',
+        ]);
     }
 }

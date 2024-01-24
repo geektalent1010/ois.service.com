@@ -12,6 +12,10 @@ class ApplicationController extends Controller
         return view ('pages.application.index');
     }
 
+    public function bvn() {
+        return view ('pages.application.bvnApplication');
+    }
+
     public function checklists() {
         $centers = Center::all();
         return view('pages.application.checklists')

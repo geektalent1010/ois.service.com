@@ -47,13 +47,13 @@
                     </div>
                 </div>
 
-                <div class="row justify-content-center">
+                <!-- <div class="row justify-content-center">
                     <div class="col-md-6 form-group mt-19px mb-30px">
                         <button type="button" class="btn btn-primary confirm-button button-submit">
                             {{ __('CONFIRM') }}
                         </button>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="row mt-19px">
                     <div class="col-md-12 checklistsFilters">

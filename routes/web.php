@@ -35,6 +35,8 @@ Route::group(['middleware' => ['auth']], function () {
 
     Route::get('/application', 'ApplicationController@index')->name('application.index');
 
+    Route::get('/bvn-application', 'ApplicationController@bvn')->name('application.bvn');
+
     Route::get('/checklists', 'ApplicationController@checklists')->name('checklists.index');
     Route::post('/checklists/filter', 'ApplicationController@checklistFilter')->name('checklists.filter');
 });
