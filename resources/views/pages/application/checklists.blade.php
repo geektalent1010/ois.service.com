@@ -28,12 +28,29 @@
                 <div class="row mb-24px">
                     <div class="col-md-6 form-group">
                         <p class="form-label">SELECT COUNTRY + CITY APPLYING FROM</p>
-                        <select class="form-control webkit-style country-select w-100" name="center" id="center">
+                        <!-- <select class="form-control webkit-style country-select w-100" name="center" id="center">
                             <option value="">Country + City</option>
                             @foreach($centers as $center)
                                 <option value="{{$center->id}}">{{$center['city']}}, {{$center['country']}}</option>
                             @endforeach
-                        </select>
+                        </select> -->
+                        <div class="info-box">
+                            <div class="search-field">
+                                <input type="text" class="input-field office-input cursor-pointer" placeholder="Country + City" />
+                                <img class="search-icon" src="{{ asset('images/select-arrows.svg') }}">
+                            </div>
+                            <div class="offices-menus d-none">
+                                @foreach($offices as $country => $cities)
+                                    @foreach($cities as $key => $office)
+                                    <div class="d-flex office-menu-item" data-country="{{$office->country}} - {{$office->city}}" data-id="{{$office->id}}">
+                                        <div class="office-country">@if ($key < 1){{ $country }}@endif</div>
+                                        <div>- </div>
+                                        <div class="pl-2">{{ $office->city }}</div>
+                                    </div>
+                                    @endforeach
+                                @endforeach
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-6 form-group">
                         <p class="form-label">SELECT PASSPORT TYPE APPLYING WITH</p>
@@ -47,13 +64,14 @@
                     </div>
                 </div>
 
-                <!-- <div class="row justify-content-center">
-                    <div class="col-md-6 form-group mt-19px mb-30px">
-                        <button type="button" class="btn btn-primary confirm-button button-submit">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 form-group mt-19px mb-30px">
+                        <div class="offices-body"></div>
+                        <!-- <button type="button" class="btn btn-primary confirm-button button-submit">
                             {{ __('CONFIRM') }}
-                        </button>
+                        </button> -->
                     </div>
-                </div> -->
+                </div>
 
                 <div class="row mt-19px">
                     <div class="col-md-12 checklistsFilters">
@@ -76,6 +94,69 @@
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         }
     });
+
+    var officeId = '';
+
+   $('.office-input').click(function () {
+      $(".offices-menus").removeClass('d-none');
+   });
+
+   function windowOnClick(event) {
+      $('.offices-menus').addClass('d-none');
+   }
+
+   $(document).on('click', '.main-bg', function (event) {
+      if(!$(event.target).hasClass('office-input')) {
+         $('.offices-menus').addClass('d-none');
+      }
+   });
+
+   $('.office-menu-item').click(function () {
+      $('.input-field').val($(this).data('country'));
+      officeId = $(this).data('id');
+      showOffices();
+   });
+
+   function showOffices() {
+      let country_name = $('.input-field').val();
+      var send_data = {};
+      send_data['office_id'] = officeId;
+      $.ajax({
+         url: '{{ route("offices.search") }}',
+         method: "POST",
+         data: send_data,
+         success:function(res){
+            if (res.length) {
+               var html = '';
+               for(var resIndex = 0; resIndex < res.length; resIndex++) {
+                  html += '<div class="d-flex align-items-start"><img class="country-flag" src="{{ asset('images/Flags') }}/' + res[resIndex].flag +'">';
+                  html += '<div><p class="country mb-0">' + res[resIndex].country + '</p>';
+                  if (res[resIndex].address == 'COMING SOON….!') {
+                     html += '<p class="mb-0">' + res[resIndex].city + '</p>';
+                     html += '<p class="mb-0">' + res[resIndex].address + '</p>';
+                  } else {
+                     html += '<p class="mb-0">' + res[resIndex].address + '</p>';
+                     html += '<p>' + res[resIndex].city + '</p>';
+                     html += '<p class="country mt-4">Opening Hours</p>';
+                     html += '<p class="mb-0">' + res[resIndex].working_days + ':</p>';
+                     html += '<p class="mb-0">' + res[resIndex].working_time + '</p>';
+                     html += '</div></div>';
+                  }
+               }
+               $('.offices-body').html(html);
+               $('.offices-body').show();
+            }
+            else {
+               var html = '';
+               html += '<p class="country mt-5">No Office</p>';
+               $('.offices-body').html(html);
+               $('.offices-body').show();
+            }
+         },
+         error:function(err){
+         }
+      });
+    }
 
     $('.button-submit').click(function () {
         checklistsFilters();
