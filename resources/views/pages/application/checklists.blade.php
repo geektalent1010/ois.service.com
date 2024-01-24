@@ -129,7 +129,6 @@
                             html += '<p class="mb-0">' + res[resIndex].address + '</p>';
                             visaType += '<option value="">Coming soon</option>';
                             $('#visaType').html(visaType);
-                            checklistsFilters();
                         } else {
                             html += '<p class="mb-0">' + res[resIndex].address + '</p>';
                             html += '<p>' + res[resIndex].city + '</p>';
@@ -157,6 +156,7 @@
                     
                     $('#visaType').html(visaType);
                 }
+                checklistsFilters();
             },
             error:function(err){
             }
