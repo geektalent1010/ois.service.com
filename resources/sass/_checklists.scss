@@ -154,13 +154,13 @@
                 }
                 p {
                     color: white;
-                    font-family: 'Montserrat Regular', sans-serif;
+                    font-family: 'DinPro', sans-serif;
                     font-size: 16px;
                     margin-left: 30px;
                 }
                 label {
                     color: white;
-                    font-family: 'Montserrat Regular', sans-serif;
+                    font-family: 'DinPro', sans-serif;
                     font-size: 16px;
                 }
                 span {
@@ -168,29 +168,29 @@
                     margin-left: 30px;
                 }
                 .country  {
-                    font-family: 'Montserrat SemiBold', sans-serif;
+                    font-family: 'DinPro Medium', sans-serif;
                     // margin-top: 38px;
                 }
                 .contact-btn-section {
                     .contact-btn {
-                    width: 100%;
-                    padding-top: 8px;
-                    padding-bottom: 8px;
-                    background-color: $hover-color;
-                    color: #ffffff;
-                    -webkit-border-radius: 20px;
-                    -moz-border-radius: 20px;
-                    -ms-border-radius: 20px;
-                    border-radius: 20px;
-                    font-size: 16px;
-                    font-family: 'DinPro', sans-serif;
-                    cursor: pointer;
-                    border: 0.1rem solid $hover-color;
-                    text-decoration: none;
+                        width: 100%;
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                        background-color: $hover-color;
+                        color: #ffffff;
+                        -webkit-border-radius: 20px;
+                        -moz-border-radius: 20px;
+                        -ms-border-radius: 20px;
+                        border-radius: 20px;
+                        font-size: 16px;
+                        font-family: 'DinPro', sans-serif;
+                        cursor: pointer;
+                        border: 0.1rem solid $hover-color;
+                        text-decoration: none;
                     }
                     .contact-btn:hover {
-                    background: $main-color;
-                    border: 0.1rem solid $main-color;
+                        background: $main-color;
+                        border: 0.1rem solid $main-color;
                     }
                 }
             }

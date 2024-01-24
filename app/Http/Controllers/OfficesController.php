@@ -8,7 +8,7 @@ use App\Office;
 class OfficesController extends Controller
 {
     public function index() {
-        $offices = Office::get()->groupBy(function($data) {
+        $offices = Office::orderBy('country', 'asc')->get()->groupBy(function($data) {
             return $data->country;
         });
         return view ('pages.offices.index')
