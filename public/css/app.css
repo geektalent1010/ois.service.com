@@ -2790,6 +2790,7 @@ body[data-aos-easing=ease-out-back] [data-aos] {
 }
 
 .main-bg .contact-section .info-container .info-box .offices-body .country-flag {
+  padding-top: 6px;
   width: 120px;
 }
 
@@ -3919,6 +3920,7 @@ body {
 }
 
 .checklists-section .form-section .form-group .offices-body .country-flag {
+  padding-top: 6px;
   width: 120px;
 }
 

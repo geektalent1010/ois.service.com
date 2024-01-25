@@ -108,7 +108,7 @@
                      const times = res[resIndex].working_time.split(' & ');
                      times.forEach((element) => { html += '<p class="mb-0">' + element + '</p>'; });
                      html += '</div></div>';
-                     html += '<div class="contact-btn-section"><a href="{{ route('contact.index') }}" class="contact-btn mt-4">CONTACT US</a></div>';
+                     html += '<div class="contact-btn-section pt-3"><a href="{{ route('contact.index') }}" class="contact-btn mt-4">CONTACT US</a></div>';
                   }
                }
                $('.offices-body').html(html);
