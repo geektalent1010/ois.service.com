@@ -21,7 +21,7 @@
     <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt="">
     <div class="m-0 checklists-section">
         <div class="main-title">
-            CHECKLISTS
+            VISA CHECKLIST
         </div>
         <div class="section-body body-section mt-30px">
             <form class="form-section">
@@ -58,9 +58,6 @@
                 <div class="row justify-content-center">
                     <div class="col-md-7 form-group mt-19px mb-30px">
                         <div class="offices-body"></div>
-                        <!-- <button type="button" class="btn btn-primary confirm-button button-submit">
-                            {{ __('CONFIRM') }}
-                        </button> -->
                     </div>
                 </div>
 

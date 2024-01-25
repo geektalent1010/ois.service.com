@@ -17,7 +17,9 @@
         max-width: 300px;
         height: 44px;
         background: $hover-color;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-transform: uppercase;
         text-decoration: none;
         color: $white;
