@@ -13,4 +13,8 @@ class BookingController extends Controller
     public function iframeBooking() {
         return view('pages.booking.iframeBooking');
     }
+
+    public function iframeAdmin() {
+        return view('pages.booking.iframeAdmin');
+    }
 }
