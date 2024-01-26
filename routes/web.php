@@ -35,6 +35,8 @@ Route::group(['middleware' => ['auth']], function () {
 
     Route::get('/iframe-booking', 'BookingController@iframeBooking')->name('booking.iframe');
 
+    Route::get('/admin', 'BookingController@iframeAdmin')->name('booking.iframe.admin');
+
     Route::get('/application', 'ApplicationController@index')->name('application.index');
 
     Route::get('/bvn-application', 'ApplicationController@bvn')->name('application.bvn');
