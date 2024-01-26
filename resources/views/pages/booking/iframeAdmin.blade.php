@@ -20,7 +20,7 @@
     <img class="menu-bg" src="{{ asset('images/Image1H.png') }}" alt="">
     <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt="">
     <div class="booking-section body-section">
-      <iframe width="100%" height="100%" frameborder="0" src="https://admin.staging-oisservices.com" id="iFrame1"></iframe>
+      <iframe width="100%" height="100%" frameborder="0" src="https://admin-app-ew2wz.ondigitalocean.app" id="iFrame1"></iframe>
     </div>
 </div>
 @endsection
