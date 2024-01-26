@@ -28,9 +28,13 @@
 
         <div class="mt-5 mb-4">I WANT TO BOOK AN APPOINTMENT</div>
         
-        <a class="btn btn-primary click-here-button" href="https://user.staging-oisservices.com/" target="_blank">
+        <!-- <a class="btn btn-primary click-here-button" href="https://user.staging-oisservices.com/" target="_blank">
             CLICK HERE
-        </a>
+        </a> -->
+        
+        <button class="click-here-button" onclick="window.location.href='{{ route('booking.iframe') }}'">
+            CLICK HERE
+        </button>
     </div>
 </div>
 @endsection
