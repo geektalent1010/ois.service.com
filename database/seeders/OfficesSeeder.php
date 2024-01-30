@@ -154,7 +154,7 @@ class OfficesSeeder extends Seeder
             'city' => 'Guangzhou',
             'key' => 'GUANGZHOU',
             'flag' => 'China.svg',
-            'address' => 'Room 8E, 8th floor && Wingkin Square && No.29 Jianshe6malu && Yuexiu District',
+            'address' => 'Room 8E, 8th floor && Wingkin Square && No.29 Jianshe 6 malu && Yuexiu District',
             'email' => 'infoguangzhou@oisservices.com',
             'phone' => '+8620-37812021',
             'working_time' => '9:00 am -  4:00 pm',
