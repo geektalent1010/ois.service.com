@@ -125,13 +125,17 @@
                     for(var resIndex = 0; resIndex < res.length; resIndex++) {
                         html += '<div class="d-flex align-items-start"><img class="country-flag" src="{{ asset('images/Flags') }}/' + res[resIndex].flag +'">';
                         html += '<div><p class="country mb-0">' + res[resIndex].country + '</p>';
-                        if (res[resIndex].address == 'COMING SOON….!') {
+                        if (res[resIndex].address == 'COMING SOON') {
                             html += '<p class="mb-0">' + res[resIndex].city + '</p>';
-                            html += '<p class="mb-0">' + res[resIndex].address + '</p>';
+                            for(const add of res[resIndex].address.split(' && ')) {
+                                html += '<p class="mb-0">' + add + '</p>';
+                            }
                             visaType += '<option value="">Coming soon</option>';
                             $('#visaType').html(visaType);
                         } else {
-                            html += '<p class="mb-0">' + res[resIndex].address + '</p>';
+                            for(const add of res[resIndex].address.split(' && ')) {
+                                html += '<p class="mb-0">' + add + '</p>'
+                            }
                             html += '<p>' + res[resIndex].city + '</p>';
                             html += '<p class="country mt-4">Opening Hours</p>';
                             html += '<p class="mb-0">' + res[resIndex].working_days + ':</p>';
@@ -147,15 +151,15 @@
                     }
                     $('.offices-body').html(html);
                     $('.offices-body').show();
-                    
+
                     $('#visaType').html(visaType);
                 } else {
                     html += '<p class="country mt-5">No Office</p>';
                     $('.offices-body').html(html);
                     $('.offices-body').show();
-                    
+
                     visaType += '<option value="">Coming soon</option>';
-                    
+
                     $('#visaType').html(visaType);
                 }
                 checklistsFilters();
