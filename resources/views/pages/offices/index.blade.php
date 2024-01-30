@@ -21,8 +21,8 @@
             <div class="contact-section body-section">
                 <p class="page-title">FIND AN OFFICE</p>
                 <div class="info-container w-100 d-flex justify-content-center">
-                    <div class="info-box">
-                        <div class="search-field">
+                    <div class="info-box office-box">
+                        <div class="search-field office-search">
                             <input type="text" class="input-field office-input cursor-default"
                                 placeholder="Country + City" />
                             <img class="search-icon cursor-default" src="{{ asset('images/select-arrows.svg') }}">
@@ -103,7 +103,7 @@
                         var html = '';
                         for (var resIndex = 0; resIndex < res.length; resIndex++) {
                             html +=
-                                '<div class="d-flex align-items-start mt-5"><img class="country-flag" src="{{ asset('images/Flags') }}/' +
+                                '<div class="d-flex align-items-start mt-5 detail-section"><img class="country-flag" src="{{ asset('images/Flags') }}/' +
                                 res[resIndex].flag + '">';
                             html += '<div><p class="country mb-0">' + res[resIndex].country + '</p>';
 
@@ -129,7 +129,7 @@
 
                                 html += '</div></div>';
                                 html +=
-                                    '<div class="contact-btn-section pt-3"><a href="{{ route('contact.index') }}" class="contact-btn mt-4">CONTACT US</a></div>';
+                                    '<div class="contact-btn-section pt-3"><a href="{{ route('contact.index') }}" class="contact-btn office-contact-btn mt-4">CONTACT US</a></div>';
                             }
                         }
                         $('.offices-body').html(html);

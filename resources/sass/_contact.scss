@@ -7,11 +7,13 @@
     overflow-y: scroll;
     top: 80px;
     height: calc(100vh - 120px);
+
     .contact-icon {
       margin-top: 33px;
       width: 100px;
       opacity: 0.35;
     }
+
     .page-title {
       color: $main-color;
       font-family: "DinPro", sans-serif;
@@ -22,6 +24,7 @@
       margin-bottom: 0px;
       color: white;
     }
+
     .page-subtitle {
       color: $main-color;
       font-family: "DinPro", sans-serif;
@@ -30,16 +33,20 @@
       text-align: center;
       margin-bottom: 0px;
     }
+
     .info-container {
       display: flex;
       justify-content: space-between;
       width: 100%;
+
       .info-box {
         position: relative;
         width: 100%;
         max-width: 360px;
+
         .search-field {
           position: relative;
+
           .search-circle {
             position: absolute;
             width: 34px;
@@ -50,6 +57,7 @@
             right: 5px;
             top: 18px;
           }
+
           .search-icon {
             visibility: visible;
             width: 20px;
@@ -58,6 +66,7 @@
             right: 11px;
           }
         }
+
         .input-field {
           width: 100%;
           padding-top: 8px;
@@ -76,17 +85,21 @@
           margin-top: 15px;
           outline: none;
         }
+
         .input-field::placeholder {
           color: $white;
         }
+
         .input-field:hover {
           box-shadow: none;
           border: none;
         }
+
         .input-field:focus {
           box-shadow: none;
           border: none;
         }
+
         .field-label {
           color: $main-color;
           font-family: "DinPro", sans-serif;
@@ -96,38 +109,58 @@
           margin-bottom: 10px;
           margin-top: 32px;
         }
+
         .phone-label {
           margin-top: 10px;
         }
+
         .country-label {
           margin-top: 10px;
         }
+
         .offices-body {
           width: 100%;
+          display: flex;
+          flex-direction: column;
+
+          .detail-section {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+          }
+
           .country-flag {
             padding-top: 6px;
             width: 120px;
           }
+
           p {
             color: white;
             font-family: 'DinPro', sans-serif;
             font-size: 16px;
             margin-left: 30px;
           }
+
           label {
             color: white;
             font-family: 'DinPro', sans-serif;
             font-size: 16px;
           }
+
           span {
             color: white;
             margin-left: 30px;
           }
-          .country  {
+
+          .country {
             font-family: 'DinPro Medium', sans-serif;
             // margin-top: 38px;
           }
+
           .contact-btn-section {
+            display: flex;
+            justify-content: center;
+
             .contact-btn {
               width: 100%;
               padding-top: 8px;
@@ -144,39 +177,61 @@
               border: 0.1rem solid $hover-color;
               text-decoration: none;
             }
+
             .contact-btn:hover {
               background: $main-color;
               border: 0.1rem solid $main-color;
             }
+
+            .office-contact-btn {
+              width: 50%;
+            }
           }
         }
+
         .offices-menus {
           position: absolute;
           top: 12px;
-          width: 100%;
+          width: 50%;
           background-color: $menu-bg;
           padding: 12px;
           border-radius: 8px;
+
           .office-menu-item {
             display: flex;
             padding: 2px 6px;
             border-radius: 4px;
             cursor: pointer;
+
             &:hover {
               background-color: $main-color;
               color: $white;
             }
+
             .office-country {
               min-width: 40%;
             }
           }
         }
       }
+
+      .office-box {
+        max-width: 680px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .office-search {
+          width: 50%;
+        }
+      }
+
       .message-section {
         width: 49%;
         margin-top: 10px;
         margin-bottom: 40px;
       }
+
       .btn-section {
         justify-content: flex-end;
         display: flex;
@@ -184,6 +239,7 @@
         align-items: center;
         margin-top: 10px;
         text-align: center;
+
         .send-btn {
           width: 100%;
           margin-bottom: 45px;
@@ -201,6 +257,7 @@
           border: 0.1rem solid $hover-color;
           text-decoration: none;
         }
+
         .send-btn:hover {
           background: $main-color;
           border: 0.1rem solid $main-color;
@@ -209,68 +266,126 @@
     }
   }
 }
+
 @media only screen and (max-width: 1080px) {
   .main-bg {
     .contact-section {
-      width: 45vw;
+      width: 70vw;
+
       .page-title {
         line-height: 22px;
         margin-bottom: 8px;
       }
+
       .info-container {
         display: block;
+
+        .office-box {
+          .office-search {
+            width: 70%;
+          }
+        }
+
         .info-box {
           width: 100%;
+
           .field-label {
             margin-top: 10px;
           }
+
           .message-label {
             margin-top: 20px;
           }
+
           .first-name-label {
             margin-top: 25px;
           }
+
+          .offices-body {
+            .contact-btn-section {
+              .office-contact-btn {
+                width: 70%;
+              }
+            }
+          }
         }
+
         .btn-section {
           width: 100%;
+
           .send-btn {
             width: 100%;
           }
         }
       }
+
       .desktop-version {
         display: none;
       }
+
       .mobile-version {
         display: block;
       }
     }
   }
 }
+
 @media only screen and (max-width: 575.98px) {
   .main-bg {
     .contact-section {
       width: 90vw;
+
       .page-title {
         line-height: 22px;
         margin-bottom: 8px;
       }
+
       .info-container {
         display: block;
+
+        .office-box {
+          .office-search {
+            width: 100%;
+          }
+        }
+
         .info-box {
           width: 100%;
+
+          .offices-menus {
+            width: 100%;
+          }
+
           .field-label {
             margin-top: 10px;
           }
+
           .message-label {
             margin-top: 20px;
           }
+
           .first-name-label {
             margin-top: 25px;
           }
+
+          .offices-body {
+            .contact-btn-section {
+              .office-contact-btn {
+                width: 100%;
+              }
+            }
+            p {
+              font-size: 14px;
+            }
+            .detail-section {
+              font-size: 12px;
+            }
+          }
         }
+
         .btn-section {
           width: 100%;
+
           .send-btn {
             width: 100%;
           }
