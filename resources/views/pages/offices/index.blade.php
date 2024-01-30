@@ -117,11 +117,16 @@
 
                                 html += '<p class="mb-0">' + res[resIndex].city + '</p>';
                                 html += '<p class="country mt-4">Opening Hours</p>';
-                                html += '<p class="mb-0">' + res[resIndex].working_days + ':</p>';
-                                const times = res[resIndex].working_time.split(' && ');
-                                times.forEach((element) => {
-                                    html += '<p class="mb-0">' + element + '</p>';
-                                });
+                                if(res[resIndex].working_days == 'N.A') {
+                                    html += '<p class="mb-0">' + res[resIndex].working_days + '</p>';
+                                } else {
+                                    html += '<p class="mb-0">' + res[resIndex].working_days + ':</p>';
+                                    const times = res[resIndex].working_time.split(' && ');
+                                    times.forEach((element) => {
+                                        html += '<p class="mb-0">' + element + '</p>';
+                                    });
+                                }
+
                                 html += '</div></div>';
                                 html +=
                                     '<div class="contact-btn-section pt-3"><a href="{{ route('contact.index') }}" class="contact-btn mt-4">CONTACT US</a></div>';
