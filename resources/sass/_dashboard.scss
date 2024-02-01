@@ -62,7 +62,8 @@
             }
         }
 
-        .backoffice-title, .dashboard-title {
+        .backoffice-title,
+        .dashboard-title {
             font-size: 21px;
             color: white;
             font-family: 'DinPro Medium', sans-serif;
@@ -284,12 +285,14 @@
         .dashboard-section {
             flex-direction: row;
         }
+
         .menu-section {
             .menu-body {
                 width: 100vw;
                 overflow-y: scroll;
                 padding-top: 0px !important;
             }
+
             .dashboard-title {
                 display: none;
             }
@@ -366,6 +369,7 @@
 
 .nis-visa-modal {
     background-color: rgba(0, 51, 102, 0.5);
+
     .modal-section {
         width: 100%;
         max-width: 636px;
@@ -375,6 +379,7 @@
         border-radius: 24px;
         padding: 32px;
         text-align: justify;
+
         .modal-content {
             height: 100%;
             border: none;
@@ -382,12 +387,14 @@
             font-size: 12px;
             font-family: "DinPro", sans-serif;
             color: $main-color;
+
             .title {
                 font-size: 20px;
                 font-family: "DinPro Medium", sans-serif;
                 color: $main-color;
                 margin-bottom: 12px;
             }
+
             .description {
                 margin-bottom: 12px;
             }
@@ -395,12 +402,15 @@
             ul {
                 padding-left: 20px;
                 list-style: decimal;
+
                 ::marker {
                     font-family: "DinPro Bold", sans-serif;
                 }
+
                 li {
                     padding-left: 10px;
                     margin-bottom: 12px;
+
                     span {
                         font-family: "DinPro Bold", sans-serif;
                     }
@@ -423,19 +433,25 @@
                 font-family: "DinPro", sans-serif;
                 border: 0.1rem solid $hover-color;
                 cursor: pointer;
+
                 &:hover {
                     background: $main-color !important;
                     color: $white !important;
                     border-color: $main-color !important;
                 }
-                &:focus, &:active {
+
+                &:focus,
+                &:active {
                     background: $main-color;
                     color: $white;
                     border-color: $main-color !important;
                     outline: none;
                     box-shadow: none;
                 }
-                &.disabled, &:disabled, &[disabled] {
+
+                &.disabled,
+                &:disabled,
+                &[disabled] {
                     opacity: 1 !important;
                 }
             }
