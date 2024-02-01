@@ -84,37 +84,6 @@
           }
         }
       }
-      .foot-section {
-        padding: 80px 0px;
-        background-color: #005696;
-        p {
-          font-size: 14px;
-          font-family: 'Montserrat Regular', sans-serif;
-          color: $white;
-        }
-        .company {
-          font-size: 12px;
-          font-family: 'DinPro', sans-serif;
-          color: $white;
-          opacity: 0.5;
-          text-decoration: none;
-        }
-        a {
-          font-size: 14px;
-          font-family: 'Montserrat Regular', sans-serif;
-          color: $white;
-          opacity: 0.5;
-          cursor: pointer;
-          text-decoration: none;
-        }
-        a:hover {
-          opacity: 1;
-          text-decoration: none;
-        }
-        img {
-          width: 25px;
-        }
-      }
     }
   }
 }
@@ -355,10 +324,6 @@
         }
       }
       .content-section {
-        .foot-section {
-          padding-bottom: 50px;
-          padding-top: 50px;
-        }
         .block-section {
           display: flex;
           flex-direction: column;
