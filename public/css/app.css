@@ -271,6 +271,13 @@
   display: none;
 }
 
+@media only screen and (max-width: 1024px) {
+  .main-bg .landing-section .menu-body {
+    width: 100vw;
+    padding: 0px;
+  }
+}
+
 @media only screen and (max-width: 575.98px) {
   .foot-section {
     padding-bottom: 50px;
