@@ -1,48 +1,7 @@
 .main-bg {
-    .video-section {
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        object-fit: cover;
-        z-index: 2;
-    }
+    position: relative;
 
-    .video-section-mobile {
-        position: absolute;
-        display: none;
-        width: 100%;
-        height: 100vh;
-        object-fit: cover;
-        z-index: 2;
-    }
-
-    .menu-bg {
-        position: absolute;
-        top: 80px;
-        width: 100%;
-        height: calc(100vh - 80px);
-        object-fit: cover;
-        z-index: 1;
-    }
-
-    .menu-bg-mobile {
-        z-index: 1;
-        position: absolute;
-        top: 80px;
-        width: 100%;
-        height: calc(100vh - 80px);
-        object-fit: cover;
-        display: none;
-    }
-
-    .dashboard-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .menu-section {
+    .landing-section {
         position: absolute;
         width: 100vw;
         height: calc(100vh - 120px);
@@ -62,7 +21,8 @@
             }
         }
 
-        .backoffice-title, .dashboard-title {
+        .backoffice-title,
+        .dashboard-title {
             font-size: 21px;
             color: white;
             font-family: 'DinPro Medium', sans-serif;
@@ -280,165 +240,58 @@
 
     }
 
-    @media only screen and (max-width: 1080px) {
-        .dashboard-section {
-            flex-direction: row;
-        }
-        .menu-section {
-            .menu-body {
-                width: 100vw;
-                overflow-y: scroll;
-                padding-top: 0px !important;
-            }
-            .dashboard-title {
-                display: none;
-            }
-        }
+}
 
-        .video-section {
-            display: block;
-        }
 
-        .video-section-mobile {
-            display: none;
-        }
+.foot-section {
+    padding: 80px 0px;
+    background-color: #005696;
+
+    p {
+        font-size: 14px;
+        font-family: 'Montserrat Regular', sans-serif;
+        color: $white;
     }
 
-    @media only screen and (max-width: 575.98px) {
-        .menu-section {
-            .menu-body {
-                width: 100vw;
-                overflow-y: scroll;
-                padding-top: 0px !important;
-            }
-        }
+    .company {
+        font-size: 12px;
+        font-family: 'DinPro', sans-serif;
+        color: $white;
+        opacity: 0.5;
+        text-decoration: none;
+    }
 
-        .video-section {
-            display: none;
-        }
+    a {
+        font-size: 14px;
+        font-family: 'Montserrat Regular', sans-serif;
+        color: $white;
+        opacity: 0.5;
+        cursor: pointer;
+        text-decoration: none;
+    }
 
-        .video-section-mobile {
-            display: block;
-        }
+    a:hover {
+        opacity: 1;
+        text-decoration: none;
+    }
 
-        .menu-bg {
-            display: none;
-        }
-
-        .menu-bg-mobile {
-            display: block;
-        }
+    img {
+        width: 25px;
     }
 }
 
-.video-wrapper {
-    .menu-bg {
-        position: absolute;
-        top: 80px;
-        width: 100%;
-        height: calc(100vh - 80px);
-        object-fit: cover;
-        z-index: 1;
-    }
-
-    .menu-bg-mobile {
-        position: absolute;
-        top: 80px;
-        width: 100%;
-        height: calc(100vh - 80px);
-        object-fit: cover;
-        display: none;
-        z-index: 1;
-    }
+.desktop-version {
+    display: block;
 }
+
+.mobile-version {
+    display: none;
+}
+
 
 @media only screen and (max-width: 575.98px) {
-    .video-wrapper {
-        .menu-bg {
-            display: none;
-        }
-
-        .menu-bg-mobile {
-            display: block;
-        }
-    }
-}
-
-.nis-visa-modal {
-    background-color: rgba(0, 51, 102, 0.5);
-    .modal-section {
-        width: 100%;
-        max-width: 636px;
-        height: 100%;
-        max-height: 520px;
-        overflow: hidden;
-        border-radius: 24px;
-        padding: 32px;
-        text-align: justify;
-        .modal-content {
-            height: 100%;
-            border: none;
-            padding: 0;
-            font-size: 12px;
-            font-family: "DinPro", sans-serif;
-            color: $main-color;
-            .title {
-                font-size: 20px;
-                font-family: "DinPro Medium", sans-serif;
-                color: $main-color;
-                margin-bottom: 12px;
-            }
-            .description {
-                margin-bottom: 12px;
-            }
-
-            ul {
-                padding-left: 20px;
-                list-style: decimal;
-                ::marker {
-                    font-family: "DinPro Bold", sans-serif;
-                }
-                li {
-                    padding-left: 10px;
-                    margin-bottom: 12px;
-                    span {
-                        font-family: "DinPro Bold", sans-serif;
-                    }
-                }
-            }
-
-            .agree-button {
-                width: 50%;
-                height: 44px;
-                background: $hover-color;
-                display: block;
-                text-transform: uppercase;
-                text-decoration: none;
-                color: $white;
-                -webkit-border-radius: 10rem;
-                -moz-border-radius: 10rem;
-                -ms-border-radius: 10rem;
-                border-radius: 10rem;
-                font-size: 16px;
-                font-family: "DinPro", sans-serif;
-                border: 0.1rem solid $hover-color;
-                cursor: pointer;
-                &:hover {
-                    background: $main-color !important;
-                    color: $white !important;
-                    border-color: $main-color !important;
-                }
-                &:focus, &:active {
-                    background: $main-color;
-                    color: $white;
-                    border-color: $main-color !important;
-                    outline: none;
-                    box-shadow: none;
-                }
-                &.disabled, &:disabled, &[disabled] {
-                    opacity: 1 !important;
-                }
-            }
-        }
+    .foot-section {
+        padding-bottom: 50px;
+        padding-top: 50px;
     }
 }

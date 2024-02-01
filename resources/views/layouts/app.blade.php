@@ -87,7 +87,7 @@
     <!-- BEGIN PAGE LEVEL SCRIPTS -->
     @yield('PAGE_LEVEL_SCRIPTS')
     <!-- END PAGE LEVEL SCRIPTS -->
-    
+
 
     <script>
         const privacy_modal = document.querySelector(".privacy-modal");

@@ -25,13 +25,12 @@
                             class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center">
                         </div>
                         <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center"
-                            href="{{ route('login') }}">
+                            href="{{ route('introduction.index') }}">
                             <div class="h-100">
                                 <div class="d-flex justify-content-center h-50 align-items-end">
                                     <img src="{{ asset('images/Logo/OISIcon.svg') }}">
                                 </div>
-                                <p class="back-unvisible menu-title">VISA</p>
-                                <p class="menu-detail">APPLICATION</p>
+                                <p class="back-unvisible menu-title">ABOUT OIS</p>
                             </div>
                         </a>
                     </div>
@@ -93,12 +92,13 @@
                             class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center">
                         </div>
                         <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center"
-                            href="{{ route('introduction.index') }}">
+                            href="{{ route('login') }}">
                             <div class="h-100">
                                 <div class="d-flex justify-content-center h-50 align-items-end">
                                     <img src="{{ asset('images/Logo/OISIcon.svg') }}">
                                 </div>
-                                <p class="back-unvisible menu-title">ABOUT OIS</p>
+                                <p class="back-unvisible menu-title">VISA</p>
+                                <p class="menu-detail">APPLICATION</p>
                             </div>
                         </a>
                     </div>
@@ -208,12 +208,13 @@
                             class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center">
                         </div>
                         <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center"
-                            href="{{ route('reach.index') }}">
+                            href="{{ route('contact.index') }}">
                             <div class="h-100">
                                 <div class="d-flex justify-content-center h-50 align-items-end">
                                     <img src="{{ asset('images/Logo/OISIcon.svg') }}">
                                 </div>
-                                <p class="back-unvisible menu-title">OUR REACH</p>
+                                <p class="back-unvisible menu-title">CUSTOMER</p>
+                                <p class="menu-detail">SUPPORT</p>
                             </div>
                         </a>
                     </div>
