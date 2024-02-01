@@ -40,7 +40,6 @@ body {
 
 .headerSection nav.navbar .navbarItem a .menu-icon {
     width: 20px;
-    margin-right: 20px;
 }
 
 .headerSection nav.navbar .navbarItem a .chatbot-icon {
@@ -67,31 +66,44 @@ body {
 
 .headerSection nav.navbar .navbarItem a.locate-button {
     cursor: pointer;
-    font-family: 'DinPro';
-    font-size: 16px;
+    font-family: 'DinPro Bold';
+    font-size: 12px;
+    display: inline-block;
+    padding: 1px 5px;
+    background-color: white;
+    color: #003366;
+    border-radius: 5px;
 }
 
 .headerSection nav.navbar .navbarItem .navbar-menu-item {
     display: flex;
-    gap: 10px;
-    font-family: 'Din Pro Medium', sans-serif;
-    font-size: 16px;
+    flex-direction: column;
+    gap: 5px;
+    font-family: 'Din Pro', sans-serif;
+    font-size: 12px;
     cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
 }
 
 .headerSection nav.navbar .navbarItem .navbar-login-item {
     display: flex;
-    gap: 10px;
-    font-family: 'Din Pro Medium', sans-serif;
-    font-size: 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Din Pro', sans-serif;
+    font-size: 12px;
     cursor: pointer;
 }
 
 .headerSection nav.navbar .navbarItem .navbar-logout-item {
     display: flex;
-    gap: 10px;
-    font-family: 'Din Pro Medium', sans-serif;
-    font-size: 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Din Pro', sans-serif;
+    font-size: 12px;
     cursor: pointer;
 }
 
@@ -1383,14 +1395,6 @@ th {
 
     .login-page {
         min-width: 100%;
-    }
-
-    .headerSection nav.navbar .navbarItem a .menu-icon {
-        margin-right: 12px;
-    }
-
-    .headerSection nav.navbar .navbarItem a .chatbot-icon {
-        margin-right: 12px;
     }
 }
 
