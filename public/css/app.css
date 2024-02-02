@@ -79,11 +79,10 @@
 
 .main-bg .landing-section .menu-body .navItem .navItemWrap .navItemWrap-front .menu-title {
   font-size: 16px;
-  font-family: "DinPro", sans-serif;
+  font-family: "DinPro Medium", sans-serif;
   color: white;
-  margin-bottom: 0px;
-  margin-top: 10px;
   text-align: center;
+  margin: 0;
 }
 
 .main-bg .landing-section .menu-body .navItem .navItemWrap .navItemWrap-front .menu-detail {

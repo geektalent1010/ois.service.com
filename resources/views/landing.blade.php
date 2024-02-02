@@ -82,6 +82,7 @@
                             href="{{ route('login') }}">
                             <div class="h-100 flex-column  d-flex justify-content-center align-items-center">
                                 <p class="back-unvisible menu-title">CLIENT</p>
+                                <p class="menu-detail">PORTAL</p>
                             </div>
                         </a>
                     </div>

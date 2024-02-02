@@ -57,6 +57,7 @@
         </div>
     </nav>
     <div class="left-menubar" id="left-menubar">
+        <img class="close-icon" id="left-menu-close" src="{{ asset('images/Logo/IconCLOSE.svg') }}" alt="" />
         <div class="lang-section" id="menu-list">
             <div class="lang-item"><a class="item">CHINESE</a></div>
             <div class="lang-item"><a class="item active">ENGLISH</a></div>
@@ -68,6 +69,7 @@
     </div>
 
     <div class="right-menubar" id="right-menubar">
+        <img class="close-icon" id="right-menu-close" src="{{ asset('images/Logo/IconCLOSE.svg') }}" alt="" />
         <div class="lang-section">
             <div class="lang-item"><a class="item" href="{{ route('introduction.index') }}">ABOUT OIS</a></div>
             <div class="lang-item"><a class="item" href="{{ route('services.index') }}">SERVICES</a></div>
@@ -99,6 +101,8 @@
     // ------------------start left navbar script(author:YU)----------------------
     const leftMenuBar = document.getElementById('left-menubar');
     const rightMenuBar = document.getElementById('right-menubar');
+    const leftMenuCloseBut = document.getElementById('left-menu-close');
+    const rightMenuCloseBut = document.getElementById('right-menu-close');
     const locateButton = document.getElementById('locate-button');
     const menuList = document.getElementById('menu-list');
     const menuItems = leftMenuBar.getElementsByClassName('item');
@@ -128,11 +132,15 @@
         darkBg.classList.remove('block');
     });
 
-
+    leftMenuCloseBut.addEventListener('click', (event) => {
+        leftMenuBar.classList.remove('open');
+        darkBg.classList.remove('block');
+    })
 
     const menuButton = document.getElementById('menu-item');
     const rightMenuItems = rightMenuBar.getElementsByClassName('item');
     menuButton.addEventListener('mouseover', () => {
+        console.log(rightMenuBar)
         rightMenuBar.classList.add('open');
         leftMenuBar.classList.remove('open');
         darkBg.classList.add('block');
@@ -152,6 +160,11 @@
     });
 
     darkBg.addEventListener('click', (event) => {
+        rightMenuBar.classList.remove('open');
+        darkBg.classList.remove('block');
+    })
+
+    rightMenuCloseBut.addEventListener('click', (event) => {
         rightMenuBar.classList.remove('open');
         darkBg.classList.remove('block');
     })
