@@ -73,6 +73,13 @@ body {
     background-color: white;
     color: #003366;
     border-radius: 5px;
+    transition: .3s;
+}
+
+.headerSection nav.navbar .navbarItem a.locate-button:hover {
+    background-color: #00c6ff;
+    color: white;
+    transition: .3s;
 }
 
 .headerSection nav.navbar .navbarItem .navbar-menu-item {
@@ -149,7 +156,7 @@ body {
 
 .headerSection nav.navbar .navbarItem .navbar-title {
     font-size: 18px;
-    font-family: "Montserrat Regular", sans-serif;
+    font-family: "DinPro", sans-serif;
 }
 
 .video-wrapper {
