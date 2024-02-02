@@ -78,8 +78,8 @@
 }
 
 .main-bg .landing-section .menu-body .navItem .navItemWrap .navItemWrap-front .menu-title {
-  font-size: 18px;
-  font-family: "DinPro Medium", sans-serif;
+  font-size: 16px;
+  font-family: "DinPro", sans-serif;
   color: white;
   margin-bottom: 0px;
   margin-top: 10px;
@@ -218,7 +218,7 @@
 
 @media only screen and (max-width: 575.98px) {
   .main-bg .landing-section .menu-body .navItem {
-    width: 50%;
+    width: 33.33%;
   }
 
   .main-bg .landing-section .menu-body .last-panel {
