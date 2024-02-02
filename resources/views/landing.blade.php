@@ -81,7 +81,7 @@
                         <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center"
                             href="{{ route('login') }}">
                             <div class="h-100 flex-column  d-flex justify-content-center align-items-center">
-                                <p class="back-unvisible menu-title">LOGIN</p>
+                                <p class="back-unvisible menu-title">CLIENT</p>
                             </div>
                         </a>
                     </div>
