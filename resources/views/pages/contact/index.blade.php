@@ -25,7 +25,12 @@
                     <input type="text" class="input-field" placeholder="First Name, Last Name"/>
                     <input type="email" class="input-field" placeholder="Email"/>
                     <input type="text" class="input-field" placeholder="Phone"/>
-                    <input type="text" class="input-field" placeholder="Country"/>
+                    <select class="country-select webkit-style">
+                        <option value="-1">Country + Subject</option>
+                    </select>
+                    <select class="subject-select webkit-style">
+                        <option value="-1">Subject</option>
+                    </select>
                     <textarea type="text" class="input-field" placeholder="Message" rows="4"></textarea>
                     <div class="btn-section">
                         <a href="{{ route('contact.reviewing') }}" class="send-btn">SEND</a>

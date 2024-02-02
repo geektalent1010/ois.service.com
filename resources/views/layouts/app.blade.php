@@ -642,10 +642,13 @@
 
         const play_icon = document.querySelector('.play-video');
         const stop_icon = document.querySelector('.stop-video');
+        const menu_icon_part = document.querySelector('.navbar-menu-item');
         const menu_icon = document.querySelector('.menu-icon');
+        const login_icon_part = document.querySelector('.navbar-login-item');
         const login_icon = document.querySelector('.login-icon');
         const go_to_menu = document.querySelector('.go-to-menu');
         const go_to_login = document.querySelector('.go-to-login');
+        const logout_icon_part = document.querySelector('navbar-logout-item');
         const logout_icon = document.querySelector('.logout');
         const logo_icon = document.querySelector('.logo-ois');
         const chatbot_icon = document.querySelector('.chatbot-icon');
@@ -689,20 +692,20 @@
             });
         }
 
-        if (menu_icon) {
-            menu_icon.addEventListener('mouseover', function() {
+        if (menu_icon_part) {
+            menu_icon_part.addEventListener('mouseover', function() {
                 menu_icon.src = '/images/IconMENU2.svg';
             });
-            menu_icon.addEventListener('mouseout', function() {
+            menu_icon_part.addEventListener('mouseout', function() {
                 menu_icon.src = '/images/IconMENU.svg';
             });
         }
 
-        if (login_icon) {
-            login_icon.addEventListener('mouseover', function() {
+        if (login_icon_part) {
+            login_icon_part.addEventListener('mouseover', function() {
                 login_icon.src = '/images/IconLOGIN2.svg';
             });
-            login_icon.addEventListener('mouseout', function() {
+            login_icon_part.addEventListener('mouseout', function() {
                 login_icon.src = '/images/IconLOGIN.svg';
             });
         }
@@ -725,11 +728,11 @@
             });
         }
 
-        if (logout_icon) {
-            logout_icon.addEventListener('mouseover', function() {
+        if (logout_icon_part) {
+            logout_icon_part.addEventListener('mouseover', function() {
                 logout_icon.src = '/images/IconLOGOUT2.svg';
             });
-            logout_icon.addEventListener('mouseout', function() {
+            logout_icon_part.addEventListener('mouseout', function() {
                 logout_icon.src = '/images/IconLOGOUT.svg';
             });
         }
