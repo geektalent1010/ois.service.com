@@ -43,6 +43,87 @@
                             class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center">
                         </div>
                         <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center"
+                            href="{{ route('services.index') }}">
+                            <div class="h-100">
+                                <div class="d-flex justify-content-center h-50 align-items-end">
+                                    <img src="{{ asset('images/Logo/OISIcon.svg') }}">
+                                </div>
+                                <p class="back-unvisible menu-title">SERVICES</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="navItem" onclick="">
+                    <div class="navItemWrap" onclick="">
+                        <div
+                            class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center">
+                        </div>
+                        <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center"
+                            href="{{ route('innovation.index') }}">
+                            <div class="h-100">
+                                <div class="d-flex justify-content-center h-50 align-items-end">
+                                    <img src="{{ asset('images/Logo/OISIcon.svg') }}">
+                                </div>
+                                <p class="back-unvisible menu-title">INNOVATION</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="navItem" onclick="">
+                    <div class="navItemWrap" onclick="">
+                        <div
+                            class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center">
+                        </div>
+                        <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center"
+                            href="{{ route('security.index') }}">
+                            <div class="h-100">
+                                <div class="d-flex justify-content-center h-50 align-items-end">
+                                    <img src="{{ asset('images/Logo/OISIcon.svg') }}">
+                                </div>
+                                <p class="back-unvisible menu-title">SECURITY</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="navItem" onclick="">
+                    <div class="navItemWrap" onclick="">
+                        <div
+                            class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center">
+                        </div>
+                        <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center"
+                            href="{{ route('login') }}">
+                            <div class="h-100">
+                                <div class="d-flex justify-content-center h-50 align-items-end">
+                                    <img src="{{ asset('images/Logo/OISIcon.svg') }}">
+                                </div>
+                                <p class="back-unvisible menu-title">LOGIN</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="navItem" onclick="">
+                    <div class="navItemWrap" onclick="">
+                        <div
+                            class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center">
+                        </div>
+                        <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center"
+                            href="{{ route('login') }}">
+                            <div class="h-100">
+                                <div class="d-flex justify-content-center h-50 align-items-end">
+                                    <img src="{{ asset('images/Logo/OISIcon.svg') }}">
+                                </div>
+                                <p class="back-unvisible menu-title">VISA</p>
+                                <p class="menu-detail">APPLICATION</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="navItem" onclick="">
+                    <div class="navItemWrap" onclick="">
+                        <div
+                            class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center">
+                        </div>
+                        <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center"
                             href="{{ route('login') }}">
                             <div class="h-100">
                                 <div class="d-flex justify-content-center h-50 align-items-end">
@@ -82,7 +163,7 @@
                                 <div class="d-flex justify-content-center h-50 align-items-end">
                                     <img src="{{ asset('images/Logo/OISIcon.svg') }}">
                                 </div>
-                                <p class="back-unvisible menu-title">TRACK VISA</p>
+                                <p class="back-unvisible menu-title">NIN</p>
                                 <p class="menu-detail">APPLICATION</p>
                             </div>
                         </a>
@@ -99,56 +180,8 @@
                                 <div class="d-flex justify-content-center h-50 align-items-end">
                                     <img src="{{ asset('images/Logo/OISIcon.svg') }}">
                                 </div>
-                                <p class="back-unvisible menu-title">VISA</p>
+                                <p class="back-unvisible menu-title">TRACK VISA</p>
                                 <p class="menu-detail">APPLICATION</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="navItem" onclick="">
-                    <div class="navItemWrap" onclick="">
-                        <div
-                            class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center">
-                        </div>
-                        <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center"
-                            href="{{ route('services.index') }}">
-                            <div class="h-100">
-                                <div class="d-flex justify-content-center h-50 align-items-end">
-                                    <img src="{{ asset('images/Logo/OISIcon.svg') }}">
-                                </div>
-                                <p class="back-unvisible menu-title">SERVICES</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="navItem" onclick="">
-                    <div class="navItemWrap" onclick="">
-                        <div
-                            class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center">
-                        </div>
-                        <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center"
-                            href="{{ route('innovation.index') }}">
-                            <div class="h-100">
-                                <div class="d-flex justify-content-center h-50 align-items-end">
-                                    <img src="{{ asset('images/Logo/OISIcon.svg') }}">
-                                </div>
-                                <p class="back-unvisible menu-title">INNOVATION</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="navItem" onclick="">
-                    <div class="navItemWrap" onclick="">
-                        <div
-                            class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center">
-                        </div>
-                        <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center"
-                            href="{{ route('security.index') }}">
-                            <div class="h-100">
-                                <div class="d-flex justify-content-center h-50 align-items-end">
-                                    <img src="{{ asset('images/Logo/OISIcon.svg') }}">
-                                </div>
-                                <p class="back-unvisible menu-title">SECURITY</p>
                             </div>
                         </a>
                     </div>
@@ -200,6 +233,23 @@
                                 </div>
                                 <p class="back-unvisible menu-title">SHOPPING</p>
                                 <p class="menu-detail">PORTAL</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="navItem last-panel" onclick="">
+                    <div class="navItemWrap" onclick="">
+                        <div
+                            class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center">
+                        </div>
+                        <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center"
+                            href="{{ route('login') }}">
+                            <div class="h-100">
+                                <div class="d-flex justify-content-center h-50 align-items-end">
+                                    <img src="{{ asset('images/Logo/OISIcon.svg') }}">
+                                </div>
+                                <p class="back-unvisible menu-title">GOLBAL</p>
+                                <p class="menu-detail">CENTERS</p>
                             </div>
                         </a>
                     </div>

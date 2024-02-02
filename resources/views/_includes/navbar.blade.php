@@ -69,27 +69,27 @@
 
     <div class="right-menubar" id="right-menubar">
         <div class="lang-section">
-            <div class="lang-item"><a class="item">ABOUT OIS</a></div>
-            <div class="lang-item"><a class="item active">SERVICES</a></div>
-            <div class="lang-item"><a class="item">INNOVATION</a></div>
-            <div class="lang-item"><a class="item">SECURITY</a></div>
+            <div class="lang-item"><a class="item" href="{{ route('introduction.index') }}">ABOUT OIS</a></div>
+            <div class="lang-item"><a class="item" href="{{ route('services.index') }}">SERVICES</a></div>
+            <div class="lang-item"><a class="item" href="{{ route('innovation.index') }}">INNOVATION</a></div>
+            <div class="lang-item"><a class="item" href="{{ route('security.index') }}">SECURITY</a></div>
         </div>
         <div class="lang-section">
-            <div class="lang-item"><a class="item">VISA APPLICATION</a></div>
-            <div class="lang-item"><a class="item">PASSPORT APPLICATION</a></div>
-            <div class="lang-item"><a class="item">BVN APPLICATION</a></div>
-            <div class="lang-item"><a class="item">TRACK VISA APPLICATION</a></div>
+            <div class="lang-item"><a class="item" href="{{ route('login') }}">VISA APPLICATION</a></div>
+            <div class="lang-item"><a class="item" href="{{ route('login') }}">PASSPORT APPLICATION</a></div>
+            <div class="lang-item"><a class="item" href="{{ route('login') }}">BVN APPLICATION</a></div>
+            <div class="lang-item"><a class="item" href="{{ route('login') }}">TRACK VISA APPLICATION</a></div>
         </div>
         <div class="lang-section">
-            <div class="lang-item"><a class="item">E-HEALTH PORTAL</a></div>
-            <div class="lang-item"><a class="item">MONEY PORTAL</a></div>
-            <div class="lang-item"><a class="item">SHOPPING PORTAL</a></div>
+            <div class="lang-item"><a class="item" href="{{ route('ehealth.index') }}">E-HEALTH PORTAL</a></div>
+            <div class="lang-item"><a class="item" href="{{ route('money.index') }}">MONEY PORTAL</a></div>
+            <div class="lang-item"><a class="item" href="{{ route('shopping.index') }}">SHOPPING PORTAL</a></div>
         </div>
         <div class="lang-section">
-            <div class="lang-item"><a class="item">CUSTOMER SUPPORT</a></div>
+            <div class="lang-item"><a class="item" href="{{ route('contact.index') }}">CUSTOMER SUPPORT</a></div>
         </div>
         <div class="lang-section">
-            <div class="lang-item"><a class="item">OIS GLOBAL CETERS</a></div>
+            <div class="lang-item"><a class="item" href="{{ route('login') }}">OIS GLOBAL CETERS</a></div>
         </div>
     </div>
     <div class="dark-bg" id="dark-bg"></div>
@@ -98,12 +98,14 @@
 <script>
     // ------------------start left navbar script(author:YU)----------------------
     const leftMenuBar = document.getElementById('left-menubar');
+    const rightMenuBar = document.getElementById('right-menubar');
     const locateButton = document.getElementById('locate-button');
     const menuList = document.getElementById('menu-list');
     const menuItems = leftMenuBar.getElementsByClassName('item');
     const darkBg = document.getElementById('dark-bg');
     locateButton.addEventListener('mouseover', () => {
         leftMenuBar.classList.add('open');
+        rightMenuBar.classList.remove('open');
         darkBg.classList.add('block');
     });
 
@@ -125,13 +127,14 @@
         leftMenuBar.classList.remove('open');
         darkBg.classList.remove('block');
     });
-    // ------------------end left navbar script(author:YU)----------------------
-    // ------------------start right navbar script(author:YU)----------------------
-    const rightMenuBar = document.getElementById('right-menubar');
+
+
+
     const menuButton = document.getElementById('menu-item');
     const rightMenuItems = rightMenuBar.getElementsByClassName('item');
     menuButton.addEventListener('mouseover', () => {
         rightMenuBar.classList.add('open');
+        leftMenuBar.classList.remove('open');
         darkBg.classList.add('block');
     });
 
