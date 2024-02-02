@@ -1065,6 +1065,8 @@ th {
 .left-menubar .lang-section .lang-item a.item {
     cursor: pointer;
     transition: .3s;
+    color: white;
+    text-decoration: none;
 }
 
 .left-menubar .lang-section a.item.active {
@@ -1110,6 +1112,8 @@ th {
 .right-menubar .lang-section .lang-item a.item {
     cursor: pointer;
     transition: .3s;
+    color: white;
+    text-decoration: none;
 }
 
 .right-menubar .lang-section a.item.active {
