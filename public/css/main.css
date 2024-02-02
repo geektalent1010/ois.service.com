@@ -1190,6 +1190,12 @@ th {
 }
 
 @media only screen and (max-width: 575.98px) {
+
+
+    .headerSection nav.navbar .navbarItem span {
+        display: none;
+    }
+
     .video-section {
         display: none;
     }
@@ -1442,7 +1448,7 @@ th {
     appearance: none;
 }
 
-.form-group select.webkit-style {
+select.webkit-style {
     background: #ffffff26 url("../images/select-arrows.svg") no-repeat !important;
     background-position: 94% 50% !important;
     background-size: 16px !important;

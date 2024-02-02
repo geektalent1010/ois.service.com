@@ -3026,6 +3026,21 @@ body[data-aos-easing=ease-out-back] [data-aos] {
   border: none;
 }
 
+.main-bg .contact-section .info-container .info-box select {
+  border: none;
+  border-radius: 10em;
+  background-color: rgba(255, 255, 255, 0.1490196078);
+  color: white;
+  width: 100%;
+  padding: 8px 30px;
+  margin-top: 15px;
+  font-family: "DinPro", sans-serif;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
 .main-bg .contact-section .info-container .info-box .field-label {
   color: #003366;
   font-family: "DinPro", sans-serif;

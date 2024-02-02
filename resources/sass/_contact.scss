@@ -102,6 +102,19 @@
                     border: none;
                 }
 
+                select {
+                    border: none;
+                    border-radius: 10em;
+                    background-color: $white-15;
+                    color: white;
+                    width: 100%;
+                    padding: 8px 30px;
+                    margin-top: 15px;
+                    font-family: "DinPro", sans-serif;
+                    outline: none;
+                    appearance: none;
+                }
+
                 .field-label {
                     color: $main-color;
                     font-family: "DinPro", sans-serif;

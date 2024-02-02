@@ -22,18 +22,18 @@
                 @guest
                     <a id="menu-item" class="d-flex align-items-center navbar-menu-item">
                         <img class="menu-icon" src="{{ asset('images/IconMENU.svg') }}" alt="" />
-                        MENU
+                        <span>MENU</span>
                     </a>
                     @if (!isset($ACTIVE_LOGOUT))
                         <a href="{{ route('login') }}" class="d-flex align-items-center navbar-login-item">
                             <img class="login-icon" src="{{ asset('images/IconLOGIN.svg') }}" alt="" />
-                            LOGIN
+                            <span>LOGIN</span>
                         </a>
                     @else
                         <a href="{{ route('logout') }}" class="d-flex align-items-center navbar-logout-item"
                             onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                             <img src="{{ asset('images/IconLOGOUT.svg') }}" alt="Logout" class="logout" />
-                            LOGOUT
+                            <span>LOGOUT</span>
                         </a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                             @csrf
@@ -42,12 +42,12 @@
                 @else
                     <a id="menu-item" class="d-flex align-items-center navbar-menu-item">
                         <img class="menu-icon" src="{{ asset('images/IconMENU.svg') }}" alt="" />
-                        MENU
+                        <span>MENU</span>
                     </a>
                     <a href="{{ route('logout') }}" class="d-flex align-items-center navbar-logout-item"
                         onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                         <img src="{{ asset('images/IconLOGOUT.svg') }}" alt="Logout" class="logout" />
-                        LOGOUT
+                        <span>LOGOUT</span>
                     </a>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                         @csrf
