@@ -3359,6 +3359,7 @@ body[data-aos-easing=ease-out-back] [data-aos] {
   flex-direction: column;
   align-items: center;
   z-index: 2;
+  top: 80px;
   overflow-y: scroll;
 }
 
