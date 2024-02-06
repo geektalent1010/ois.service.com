@@ -3450,6 +3450,8 @@ body[data-aos-easing=ease-out-back] [data-aos] {
 .container-section .money-section {
   width: 100%;
   height: calc(100vh - 120px);
+  position: absolute;
+  top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3488,7 +3490,7 @@ body[data-aos-easing=ease-out-back] [data-aos] {
 
 @media only screen and (max-width: 1080px) {
   .container-section .money-section {
-    width: 90vw;
+    width: 100vw;
   }
 
   .container-section .money-section .title {
@@ -3508,7 +3510,7 @@ body[data-aos-easing=ease-out-back] [data-aos] {
   }
 
   .container-section .money-section {
-    width: 90vw;
+    width: 100%;
   }
 
   .container-section .money-section .title {

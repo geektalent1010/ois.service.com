@@ -90,7 +90,10 @@
                             href="{{ route('login') }}">
                             <div class="menu-detail">
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}">
-                                <p class="back-unvisible menu-title">CLIENT</p>
+                                <div>
+                                    <p class="back-unvisible menu-title">CLIENT</p>
+                                    <p class="menu-detail">PORTAL</p>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -104,7 +107,10 @@
                             href="{{ route('login') }}">
                             <div class="menu-detail">
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}">
-                                <p class="back-unvisible menu-title">VISA</p>
+                                <div>
+                                    <p class="back-unvisible menu-title">VISA</p>
+                                    <p class="menu-detail">APPLICATION</p>
+                                </div>
                             </div>
                         </a>
                     </div>
