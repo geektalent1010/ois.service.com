@@ -1326,6 +1326,12 @@
   width: 60px;
 }
 
+.main-bg .intro-section .content-section .content-section-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .main-bg .intro-section .content-section .block-section {
   display: flex;
   flex-direction: column;
@@ -2377,6 +2383,15 @@ body[data-aos-easing=ease-out-back] [data-aos] {
   flex-wrap: wrap;
 }
 
+.main-bg .security-section .security-section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: calc(100vh - 80px);
+}
+
 .main-bg .security-section .title-section {
   color: white;
   width: 100%;
@@ -2927,12 +2942,17 @@ body[data-aos-easing=ease-out-back] [data-aos] {
   margin-bottom: 80px;
   overflow-y: scroll;
   height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-bg .contact-section .contact-section-content {
   display: flex;
   min-height: calc(100vh - 120px);
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-bg .contact-section .contact-icon {
@@ -3258,6 +3278,10 @@ body[data-aos-easing=ease-out-back] [data-aos] {
 
 @media only screen and (max-width: 575.98px) {
   .main-bg .contact-section {
+    width: 100vw;
+  }
+
+  .main-bg .contact-section .contact-section-content {
     width: 90vw;
   }
 
@@ -3332,6 +3356,7 @@ body[data-aos-easing=ease-out-back] [data-aos] {
 
 .container-section .shopping-section .video-section-mobile {
   min-height: calc(100vh - 120px);
+  top: 80px;
 }
 
 .container-section .shopping-section .menu-bg {
@@ -3340,6 +3365,7 @@ body[data-aos-easing=ease-out-back] [data-aos] {
 
 .container-section .shopping-section .menu-bg-mobile {
   min-height: calc(100vh - 120px);
+  top: 80px;
 }
 
 .container-section .shopping-section .shopping-section-content {
@@ -3372,10 +3398,6 @@ body[data-aos-easing=ease-out-back] [data-aos] {
 }
 
 @media only screen and (max-width: 1080px) {
-  .container-section .shopping-section {
-    width: 90vw;
-  }
-
   .container-section .shopping-section .title {
     font-size: 24px;
     margin-top: 25px;
@@ -3390,10 +3412,6 @@ body[data-aos-easing=ease-out-back] [data-aos] {
 
   .container-section .video-section-mobile {
     display: block;
-  }
-
-  .container-section .shopping-section {
-    width: 90vw;
   }
 }
 
@@ -3697,9 +3715,7 @@ body[data-aos-easing=ease-out-back] [data-aos] {
 
 .main-bg .container-section {
   width: 100vw;
-  height: calc(100vh - 120px);
-  position: absolute;
-  top: 80px;
+  height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -3709,7 +3725,7 @@ body[data-aos-easing=ease-out-back] [data-aos] {
 .main-bg .container-section .video-section {
   position: absolute;
   width: 100%;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 120px);
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 1;
@@ -3719,7 +3735,7 @@ body[data-aos-easing=ease-out-back] [data-aos] {
   position: absolute;
   display: none;
   width: 100%;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 120px);
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 1;
@@ -3728,7 +3744,8 @@ body[data-aos-easing=ease-out-back] [data-aos] {
 .main-bg .container-section .menu-bg {
   position: absolute;
   width: 100%;
-  height: calc(100vh - 80px);
+  top: 80px;
+  height: calc(100vh - 120px);
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -3736,7 +3753,7 @@ body[data-aos-easing=ease-out-back] [data-aos] {
 .main-bg .container-section .menu-bg-mobile {
   position: absolute;
   width: 100%;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 120px);
   -o-object-fit: cover;
      object-fit: cover;
   display: none;
@@ -3747,13 +3764,16 @@ body[data-aos-easing=ease-out-back] [data-aos] {
   width: 100%;
   display: flex;
   flex-direction: column;
+  top: 80px;
   align-items: center;
   z-index: 2;
   overflow-y: scroll;
+  min-height: calc(100vh - 120px);
   height: calc(100vh - 120px);
 }
 
 .main-bg .container-section .ehealth-section .ehealth-section-content {
+  width: 90vw;
   min-height: calc(100vh - 120px);
   display: flex;
   flex-direction: column;
@@ -3795,7 +3815,7 @@ body[data-aos-easing=ease-out-back] [data-aos] {
 
 @media only screen and (max-width: 1080px) {
   .main-bg .container-section .ehealth-section {
-    width: 90vw;
+    width: 100vw;
   }
 
   .main-bg .container-section .ehealth-section .title {
@@ -3820,10 +3840,6 @@ body[data-aos-easing=ease-out-back] [data-aos] {
 
   .main-bg .container-section .menu-bg-mobile {
     display: block;
-  }
-
-  .main-bg .container-section .ehealth-section {
-    width: 90vw;
   }
 }
 

@@ -8,6 +8,14 @@
     justify-content: center;
     overflow-y: scroll;
     flex-wrap: wrap;
+    .security-section-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: calc(100vh - 80px);
+    }
     .title-section {
       color: $white;
       width: 100%;

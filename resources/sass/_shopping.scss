@@ -14,12 +14,14 @@
         }
         .video-section-mobile {
             min-height: calc(100vh - 120px);
+            top: 80px;
         }
         .menu-bg {
             min-height: calc(100vh - 120px);
         }
         .menu-bg-mobile {
             min-height: calc(100vh - 120px);
+            top: 80px;
         }
 
         .shopping-section-content {
@@ -56,7 +58,6 @@
 @media only screen and (max-width: 1080px) {
     .container-section {
         .shopping-section {
-            width: 90vw;
 
             .title {
                 font-size: 24px;
@@ -78,7 +79,6 @@
         }
 
         .shopping-section {
-            width: 90vw;
         }
     }
 }

@@ -18,7 +18,7 @@
     </video>
     <img class="menu-bg" src="{{ asset('images/Image1H.png') }}" alt="">
     <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt="">
-    <div class="m-0 intro-section body-section">
+    <div class="m-0 intro-section">
         <div class="title-section d-flex flex-column justify-content-center align-items-center">
             <p class="title">With OIS<br>your data is secure.</p>
             <p class="more-info-text my-3">MORE INFO</p>
@@ -34,7 +34,7 @@
             </div>
         </div>
         <div class="content-section aos-init">
-            <div class="block-section">
+            <div class="block-section body-section">
                 <img src="{{ asset('images/IconSECURITY.svg') }}">
                 <div class="text-section d-flex justify-content-center">
                     <div class="description-section">

@@ -19,10 +19,9 @@
         </video>
         <img class="menu-bg" src="{{ asset('images/Image1H.png') }}" alt="">
         <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt="">
-        <div class="news-section body-section">
+        <div class="news-section">
 
-            <div
-                style=" min-height: calc(100vh - 120px); display:flex; flex-direction:column;align-items:center;justify-content:center">
+            <div class="body-section" style=" min-height: calc(100vh - 120px); display:flex; flex-direction:column;align-items:center;justify-content:center">
                 <div>NEWS PAGE</div>
             </div>
             @include('_includes.footer')

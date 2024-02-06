@@ -19,8 +19,8 @@
         </video>
         <img class="menu-bg" src="{{ asset('images/Image1H.png') }}" alt="">
         <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt="">
-        <div class="application-section body-section">
-            <div class="application-section-content">
+        <div class="application-section">
+            <div class="application-section-content body-section">
                 <div class="mb-4">I WANT TO APPLY FOR VISA</div>
 
                 <button class="click-here-button" onclick="window.location.href='{{ route('checklists.index') }}'">

@@ -19,9 +19,8 @@
     </video>
     <img class="menu-bg" src="{{ asset('images/Image1H.png') }}" alt="">
     <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt="">
-    <div class="booking-section body-section">
-        <div
-                style=" min-height: calc(100vh - 120px); display:flex; flex-direction:column;align-items:center;justify-content:center">
+    <div class="booking-section">
+        <div class="body-section" style=" min-height: calc(100vh - 120px); display:flex; flex-direction:column;align-items:center;justify-content:center">
                 <div>START BOOKING SCREEN</div>
             </div>
             @include('_includes.footer')

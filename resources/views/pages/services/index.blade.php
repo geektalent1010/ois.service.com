@@ -17,7 +17,7 @@
     </video>
     <img class="menu-bg" src="{{ asset('images/Image1H.png') }}" alt="">
     <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt="">
-    <div class="m-0 intro-section body-section">
+    <div class="m-0 intro-section">
         <div class="title-section d-flex flex-column justify-content-center align-items-center">
             <p class="title desktop-version">Helping businesses and individuals<br>overcome complex challenges.</p>
             <p class="title mobile-version">Helping businesses and<br>individuals overcome<br>complex challenges.</p>
@@ -33,7 +33,7 @@
                 </div>
             </div>
         </div>
-        <div class="content-section aos-init">
+        <div class="content-section aos-init body-section">
             <div class="block-section">
                 <img src="{{ asset('images/IconFingerprint.svg') }}">
                 <div class="text-section d-flex justify-content-center">
@@ -123,8 +123,8 @@
                     </div>
                 </div>
             </div>
-            @include('_includes.footer')
         </div>
+        @include('_includes.footer')
     </div>
 </div>
 @endsection

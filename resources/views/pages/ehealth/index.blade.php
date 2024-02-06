@@ -18,8 +18,8 @@
             </video>
             <img class="menu-bg" src="{{ asset('images/Image1H.png') }}" alt="">
             <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt="">
-            <div class="ehealth-section body-section">
-                <div class="ehealth-section-content">
+            <div class="ehealth-section">
+                <div class="ehealth-section-content body-section">
                     <img class="icon" src="{{ asset('images/IconEHEALTH.svg') }}" alt="">
                     <p class="title">Your portal<br>to better health and wellness</p>
                     <p class="subtitle">COMING SOON</p>
