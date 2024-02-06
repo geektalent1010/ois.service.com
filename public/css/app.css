@@ -197,6 +197,22 @@
   text-decoration: none;
 }
 
+.main-bg .landing-section .menu-body .navItem .navItemWrap .menu-item .menu-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-bg .landing-section .menu-body .navItem .navItemWrap .menu-item .menu-detail img {
+  opacity: 0.3;
+}
+
+.main-bg .landing-section .menu-body .navItem .navItemWrap .menu-item:hover .menu-detail img {
+  opacity: 1;
+}
+
 .main-bg .landing-section .menu-body .navItem:hover .navItemWrap .navItemWrap-front {
   background-color: rgba(0, 51, 102, 0.5019607843);
 }
