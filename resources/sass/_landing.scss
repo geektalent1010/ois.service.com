@@ -194,6 +194,25 @@
                         background: transparent;
                         opacity: 1;
                         text-decoration: none;
+                        .menu-detail {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                            justify-content: center;
+                            align-items: center;
+                            img{
+                                opacity: 0.3;
+
+                            }
+                        }
+                    }
+
+                    .menu-item:hover {
+                        .menu-detail {
+                            img {
+                                opacity: 1;
+                            }
+                        }
                     }
                 }
             }
