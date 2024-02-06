@@ -35,6 +35,8 @@
 
     @yield('PAGE_END')
 
+    @include('_includes.bottomBar')
+
     @include('_includes.privacy_policy')
 
     @include('_includes.terms_use')
