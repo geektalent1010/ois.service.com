@@ -20,10 +20,10 @@
         <div class="d-flex justify-content-center" style="height:100%">
             <div class="m-0 intro-section">
                 <div class="title-section d-flex flex-column justify-content-center align-items-center">
-                    <p class="title desktop-version">Innovative software solutions<br>across industries.</p>
-                    <p class="title mobile-version">Innovative<br>software solutions<br>across industries.</p>
-                    <p class="more-info-text my-3">MORE INFO</p>
-                    <div class="mouse_scroll">
+                    <p class="title desktop-version body-section">Innovative software solutions<br>across industries.</p>
+                    <p class="title mobile-version body-section">Innovative<br>software solutions<br>across industries.</p>
+                    <p class="more-info-text my-3 body-section">MORE INFO</p>
+                    <div class="mouse_scroll body-section">
                         <div class="mouse">
                             <div class="wheel"></div>
                         </div>
@@ -34,8 +34,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="content-section aos-init">
-                    <div class="body-section conent-section-con">
+                <div class="body-section content-section aos-init">
+                    <div class="conent-section-con">
                         <div class="block-section">
                             <img src="{{ asset('images/IconFingerprint.svg') }}">
                             <div class="text-section d-flex justify-content-center">
@@ -121,8 +121,8 @@
                             </div>
                         </div>
                     </div>
-                    @include('_includes.footer')
                 </div>
+                @include('_includes.footer', ['VIDEO_BACKGROUND' => true])
             </div>
         </div>
     </div>

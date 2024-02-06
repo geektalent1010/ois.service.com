@@ -17,12 +17,12 @@
     </video>
     <img class="menu-bg" src="{{ asset('images/Image1H.png') }}" alt="">
     <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt="">
-    <div class="m-0 intro-section body-section">
+    <div class="m-0 intro-section">
         <div class="title-section d-flex flex-column justify-content-center align-items-center">
-            <p class="title desktop-version">The future of virtual reality<br>is here.</p>
-            <p class="title mobile-version">The future of<br>virtual reality is here.</p>
-            <p class="more-info-text my-3">MORE INFO</p>
-            <div class="mouse_scroll">
+            <p class="title desktop-version body-section">The future of virtual reality<br>is here.</p>
+            <p class="title mobile-version body-section">The future of<br>virtual reality is here.</p>
+            <p class="more-info-text my-3 body-section">MORE INFO</p>
+            <div class="mouse_scroll body-section">
                 <div class="mouse">
                     <div class="wheel"></div>
                 </div>
@@ -34,7 +34,7 @@
             </div>
         </div>
         <div class="content-section aos-init">
-            <div class="block-section">
+            <div class="block-section body-section">
                 <img src="{{ asset('images/IconAi.svg') }}">
                 <div class="text-section d-flex justify-content-center">
                     <div class="description-section">
@@ -43,7 +43,7 @@
                     </div>
                 </div>
             </div>
-            <div class="block-section">
+            <div class="block-section body-section">
                 <img src="{{ asset('images/IconSECURITY.svg') }}">
                 <div class="text-section d-flex justify-content-center">
                     <div class="description-section">
@@ -52,7 +52,7 @@
                     </div>
                 </div>
             </div>
-            <div class="block-section">
+            <div class="block-section body-section">
                 <img src="{{ asset('images/IconBlockchain.svg') }}">
                 <div class="text-section d-flex justify-content-center">
                     <div class="description-section">
@@ -61,7 +61,7 @@
                     </div>
                 </div>
             </div>
-            <div class="block-section">
+            <div class="block-section body-section">
                 <img src="{{ asset('images/IconWeb3.svg') }}">
                 <div class="text-section d-flex justify-content-center">
                     <div class="description-section">
@@ -70,7 +70,7 @@
                     </div>
                 </div>
             </div>
-            <div class="block-section">
+            <div class="block-section body-section">
                 <img src="{{ asset('images/IconResearch.svg') }}">
                 <div class="text-section d-flex justify-content-center">
                     <div class="description-section">
@@ -79,7 +79,7 @@
                     </div>
                 </div>
             </div>
-            <div class="block-section">
+            <div class="block-section body-section">
                 <img src="{{ asset('images/IconVR.svg') }}">
                 <div class="text-section d-flex justify-content-center">
                     <div class="description-section">
@@ -92,8 +92,8 @@
                     </div>
                 </div>
             </div>
-            @include('_includes.footer')
         </div>
+        @include('_includes.footer', ['VIDEO_BACKGROUND' => true])
     </div>
 </div>
 @endsection
