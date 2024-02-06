@@ -3326,6 +3326,22 @@ body[data-aos-easing=ease-out-back] [data-aos] {
   overflow-y: scroll;
 }
 
+.container-section .shopping-section .video-section {
+  min-height: calc(100vh - 120px);
+}
+
+.container-section .shopping-section .video-section-mobile {
+  min-height: calc(100vh - 120px);
+}
+
+.container-section .shopping-section .menu-bg {
+  min-height: calc(100vh - 120px);
+}
+
+.container-section .shopping-section .menu-bg-mobile {
+  min-height: calc(100vh - 120px);
+}
+
 .container-section .shopping-section .shopping-section-content {
   min-height: calc(100vh - 120px);
   display: flex;
@@ -3383,6 +3399,22 @@ body[data-aos-easing=ease-out-back] [data-aos] {
 
 .container-section .menu-bg {
   top: 0;
+}
+
+.container-section .video-section {
+  min-height: calc(100vh - 120px);
+}
+
+.container-section .video-section-mobile {
+  min-height: calc(100vh - 120px);
+}
+
+.container-section .menu-bg {
+  min-height: calc(100vh - 120px);
+}
+
+.container-section .menu-bg-mobile {
+  min-height: calc(100vh - 120px);
 }
 
 .container-section .money-section {

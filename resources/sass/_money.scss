@@ -2,6 +2,18 @@
     .menu-bg {
         top: 0;
     }
+    .video-section {
+        min-height: calc(100vh - 120px);
+    }
+    .video-section-mobile {
+        min-height: calc(100vh - 120px);
+    }
+    .menu-bg {
+        min-height: calc(100vh - 120px);
+    }
+    .menu-bg-mobile {
+        min-height: calc(100vh - 120px);
+    }
     .money-section {
         width: 100%;
         height: calc(100vh - 120px);

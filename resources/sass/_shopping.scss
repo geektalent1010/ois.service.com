@@ -9,6 +9,19 @@
         z-index: 2;
         overflow-y: scroll;
 
+        .video-section {
+            min-height: calc(100vh - 120px);
+        }
+        .video-section-mobile {
+            min-height: calc(100vh - 120px);
+        }
+        .menu-bg {
+            min-height: calc(100vh - 120px);
+        }
+        .menu-bg-mobile {
+            min-height: calc(100vh - 120px);
+        }
+
         .shopping-section-content {
             min-height: calc(100vh - 120px);
             display: flex;
