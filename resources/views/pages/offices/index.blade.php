@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'OFFICES'])
+@extends('layouts.app', ['ACTIVE_TITLE' => 'CENTERS'])
 
 @section('PAGE_LEVEL_STYLES')
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -19,35 +19,37 @@
         <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}">
         <div class="d-flex justify-content-center">
             <div class="contact-section body-section">
-                <p class="page-title">FIND AN OFFICE</p>
-                <div class="info-container w-100 d-flex justify-content-center">
-                    <div class="info-box office-box">
-                        <div class="search-field office-search">
-                            <input type="text" class="input-field office-input cursor-default"
-                                placeholder="Country + City" />
-                            <img class="search-icon cursor-default" src="{{ asset('images/select-arrows.svg') }}">
-                        </div>
-                        <div class="offices-menus d-none">
-                            @foreach ($offices as $country => $cities)
-                                @foreach ($cities as $key => $office)
-                                    <div class="d-flex office-menu-item"
-                                        data-country="{{ $office->country }} - {{ $office->city }}"
-                                        data-id="{{ $office->id }}">
-                                        <div class="office-country">
-                                            @if ($key < 1)
-                                                {{ $country }}
-                                            @endif
+                <div class="contact-section-content">
+                    <p class="page-title">FIND AN OFFICE</p>
+                    <div class="info-container w-100 d-flex justify-content-center">
+                        <div class="info-box office-box">
+                            <div class="search-field office-search">
+                                <input type="text" class="input-field office-input cursor-default"
+                                    placeholder="Country + City" />
+                                <img class="search-icon cursor-default" src="{{ asset('images/select-arrows.svg') }}">
+                            </div>
+                            <div class="offices-menus d-none">
+                                @foreach ($offices as $country => $cities)
+                                    @foreach ($cities as $key => $office)
+                                        <div class="d-flex office-menu-item"
+                                            data-country="{{ $office->country }} - {{ $office->city }}"
+                                            data-id="{{ $office->id }}">
+                                            <div class="office-country">
+                                                @if ($key < 1)
+                                                    {{ $country }}
+                                                @endif
+                                            </div>
+                                            <div>- </div>
+                                            <div class="pl-2">{{ $office->city }}</div>
                                         </div>
-                                        <div>- </div>
-                                        <div class="pl-2">{{ $office->city }}</div>
-                                    </div>
+                                    @endforeach
                                 @endforeach
-                            @endforeach
+                            </div>
+                            <div class="offices-body"></div>
                         </div>
-                        <div class="offices-body"></div>
                     </div>
-
                 </div>
+                @include('_includes.footer')
             </div>
         </div>
 
@@ -117,7 +119,7 @@
 
                                 html += '<p class="mb-0">' + res[resIndex].city + '</p>';
                                 html += '<p class="country mt-4">Opening Hours</p>';
-                                if(res[resIndex].working_days == 'N.A') {
+                                if (res[resIndex].working_days == 'N.A') {
                                     html += '<p class="mb-0">' + res[resIndex].working_days + '</p>';
                                 } else {
                                     html += '<p class="mb-0">' + res[resIndex].working_days + ':</p>';

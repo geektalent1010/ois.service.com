@@ -245,6 +245,7 @@
 .foot-section {
     padding: 80px 0px;
     background-color: #005696;
+    width: 100%;
 
     p {
         font-size: 14px;
@@ -263,7 +264,7 @@
     a {
         font-size: 14px;
         font-family: 'Montserrat Regular', sans-serif;
-        color: $white;
+        color: $white!important;
         opacity: 0.5;
         cursor: pointer;
         text-decoration: none;

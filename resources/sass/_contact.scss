@@ -5,10 +5,18 @@
         position: absolute;
         z-index: 3;
         color: $main-color;
-        width: 50vw;
-        overflow-y: scroll;
+        width: 100%;
         top: 80px;
+        margin-bottom: 80px;
+        overflow-y: scroll;
         height: calc(100vh - 120px);
+
+        .contact-section-content {
+            display: flex;
+            min-height: calc(100vh - 120px);
+            flex-direction: column;
+
+        }
 
         .contact-icon {
             margin-top: 33px;

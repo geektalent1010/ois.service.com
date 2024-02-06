@@ -228,6 +228,7 @@
 .foot-section {
   padding: 80px 0px;
   background-color: #005696;
+  width: 100%;
 }
 
 .foot-section p {
@@ -247,7 +248,7 @@
 .foot-section a {
   font-size: 14px;
   font-family: "Montserrat Regular", sans-serif;
-  color: white;
+  color: white !important;
   opacity: 0.5;
   cursor: pointer;
   text-decoration: none;
@@ -1005,13 +1006,13 @@
   width: 100%;
   height: calc(100vh - 120px);
   position: absolute;
+  overflow-y: scroll;
   top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow-y: auto;
   z-index: 2;
-  justify-content: center;
 }
 
 .files-section {
@@ -1024,7 +1025,6 @@
   align-items: center;
   overflow-y: auto;
   z-index: 2;
-  justify-content: center;
 }
 
 .news-section {
@@ -1037,7 +1037,6 @@
   align-items: center;
   overflow-y: auto;
   z-index: 2;
-  justify-content: center;
 }
 
 .booking-section {
@@ -1050,7 +1049,6 @@
   align-items: center;
   overflow-y: auto;
   z-index: 2;
-  justify-content: center;
   font-size: 12px;
   font-family: "DinPro", sans-serif;
 }
@@ -1298,7 +1296,7 @@
 .main-bg .intro-section {
   position: absolute;
   width: 100vw;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 120px);
   top: 80px;
   display: flex;
   justify-content: center;
@@ -1369,7 +1367,7 @@
 
 .main-bg .intro-section .content-section .block-section .text-section .button-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .main-bg .intro-section .content-section .block-section .text-section .button-section a {
@@ -2924,10 +2922,17 @@ body[data-aos-easing=ease-out-back] [data-aos] {
   position: absolute;
   z-index: 3;
   color: #003366;
-  width: 50vw;
-  overflow-y: scroll;
+  width: 100%;
   top: 80px;
+  margin-bottom: 80px;
+  overflow-y: scroll;
   height: calc(100vh - 120px);
+}
+
+.main-bg .contact-section .contact-section-content {
+  display: flex;
+  min-height: calc(100vh - 120px);
+  flex-direction: column;
 }
 
 .main-bg .contact-section .contact-icon {
@@ -3311,13 +3316,22 @@ body[data-aos-easing=ease-out-back] [data-aos] {
 }
 
 .container-section .shopping-section {
+  height: calc(100vh - 120px);
   position: absolute;
-  width: 50vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 2;
   overflow-y: scroll;
+}
+
+.container-section .shopping-section .shopping-section-content {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-section .shopping-section .icon {
@@ -3372,12 +3386,21 @@ body[data-aos-easing=ease-out-back] [data-aos] {
 }
 
 .container-section .money-section {
-  width: 50vw;
+  width: 100%;
+  height: calc(100vh - 120px);
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 2;
   overflow-y: scroll;
+}
+
+.container-section .money-section .money-section-content {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-section .money-section .icon {
@@ -3642,7 +3665,7 @@ body[data-aos-easing=ease-out-back] [data-aos] {
 
 .main-bg .container-section {
   width: 100vw;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 120px);
   position: absolute;
   top: 80px;
   display: flex;
@@ -3654,7 +3677,6 @@ body[data-aos-easing=ease-out-back] [data-aos] {
 .main-bg .container-section .video-section {
   position: absolute;
   width: 100%;
-  top: -40px;
   height: calc(100vh - 80px);
   -o-object-fit: cover;
      object-fit: cover;
@@ -3665,7 +3687,6 @@ body[data-aos-easing=ease-out-back] [data-aos] {
   position: absolute;
   display: none;
   width: 100%;
-  top: -40px;
   height: calc(100vh - 80px);
   -o-object-fit: cover;
      object-fit: cover;
@@ -3691,12 +3712,21 @@ body[data-aos-easing=ease-out-back] [data-aos] {
 
 .main-bg .container-section .ehealth-section {
   position: absolute;
-  width: 50vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 2;
   overflow-y: scroll;
+  height: calc(100vh - 120px);
+}
+
+.main-bg .container-section .ehealth-section .ehealth-section-content {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-bg .container-section .ehealth-section .icon {
@@ -4038,9 +4068,17 @@ body {
   align-items: center;
   overflow-y: auto;
   z-index: 2;
-  justify-content: center;
   font-size: 12px;
   font-family: "DinPro", sans-serif;
+}
+
+.application-section .application-section-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  min-height: calc(100vh - 120px);
+  justify-content: center;
 }
 
 .application-section .click-here-button {
@@ -4092,6 +4130,13 @@ body {
   align-items: center;
   overflow-y: auto;
   z-index: 2;
+}
+
+.checklists-section .checklists-section-content {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .checklists-section .main-title {

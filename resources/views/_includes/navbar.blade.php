@@ -77,9 +77,13 @@
             <div class="lang-item"><a class="item" href="{{ route('security.index') }}">SECURITY</a></div>
         </div>
         <div class="lang-section">
+            <div class="lang-item"><a class="item" href="{{ route('login') }}">CLIENT PORTAL</a></div>
+        </div>
+        <div class="lang-section">
             <div class="lang-item"><a class="item" href="{{ route('login') }}">VISA APPLICATION</a></div>
             <div class="lang-item"><a class="item" href="{{ route('login') }}">PASSPORT APPLICATION</a></div>
             <div class="lang-item"><a class="item" href="{{ route('login') }}">BVN APPLICATION</a></div>
+            <div class="lang-item"><a class="item" href="{{ route('login') }}">NIN APPLICATION</a></div>
             <div class="lang-item"><a class="item" href="{{ route('login') }}">TRACK VISA APPLICATION</a></div>
         </div>
         <div class="lang-section">
@@ -88,10 +92,10 @@
             <div class="lang-item"><a class="item" href="{{ route('shopping.index') }}">SHOPPING PORTAL</a></div>
         </div>
         <div class="lang-section">
+            <div class="lang-item"><a class="item" href="{{ route('offices.index') }}">OIS GLOBAL CENTERS</a></div>
             <div class="lang-item"><a class="item" href="{{ route('contact.index') }}">CUSTOMER SUPPORT</a></div>
         </div>
         <div class="lang-section">
-            <div class="lang-item"><a class="item" href="{{ route('login') }}">OIS GLOBAL CETERS</a></div>
         </div>
     </div>
     <div class="dark-bg" id="dark-bg"></div>

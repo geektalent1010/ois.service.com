@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'WELCOME'], ['FOOTER_UNABLE' => true], ['VIDEO_BACKGROUND' => true], ['VIDEO_PLAY_TEXT' => true])
+@extends('layouts.app', ['ACTIVE_TITLE' => 'WELCOME'])
 
 @section('PAGE_START')
 @endsection
@@ -19,7 +19,8 @@
             <img class="cancel-video d-none" src="{{ asset('images/Stop.svg') }}" onclick="stopVideo_landing()">
 
         </div>
-        <div class="landing-section">
+
+        <div class="landing-section body-section">
             <div class="row m-0 menu-body">
                 <div class="navItem" onclick="">
                     <div class="navItemWrap" onclick="">
@@ -205,9 +206,9 @@
                             class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center">
                         </div>
                         <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center"
-                            href="{{ route('login') }}">
+                            href="{{ route('offices.index') }}">
                             <div class="h-100 flex-column  d-flex justify-content-center align-items-center">
-                                <p class="back-unvisible menu-title">GOLBAL</p>
+                                <p class="back-unvisible menu-title">GLOBAL</p>
                                 <p class="menu-detail">CENTERS</p>
                             </div>
                         </a>
@@ -229,6 +230,7 @@
                 </div>
             </div>
         </div>
+        @include('_includes.footer', ['FOOTER_UNABLE' => true, 'VIDEO_BACKGROUND' => true, 'VIDEO_PLAY_TEXT' => false])
 
     </div>
 @endsection

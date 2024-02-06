@@ -19,9 +19,12 @@
             <img class="menu-bg" src="{{ asset('images/Image1H.png') }}">
             <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}">
             <div class="shopping-section body-section">
-                <img class="icon" src="{{ asset('images/IconSHOPPING.svg') }}">
-                <p class="title">Your portal<br>to amazing deals</p>
-                <p class="subtitle">COMING SOON</p>
+                <div class="shopping-section-content">
+                    <img class="icon" src="{{ asset('images/IconSHOPPING.svg') }}">
+                    <p class="title">Your portal<br>to amazing deals</p>
+                    <p class="subtitle">COMING SOON</p>
+                </div>
+                @include('_includes.footer')
             </div>
         </div>
     </div>

@@ -85,13 +85,14 @@
                     <div class="description-section">
                         <p class="sub-title">Virtual Reality-based Training</p>
                         <p class="description mb-5">We provide virtual reality-based training for our healthcare professionals and customer support teams to enhance their skills and provide better service. Our VR-based training programs simulate real-world scenarios, providing a safe and immersive learning experience.</p>
-                        <div class="button-section">
+                        <div class="button-section justify-content-between">
                             <a href="{{ route('contact.index') }}">APPLY HERE</a>
-                            <a href="{{ route('dashboard.index') }}">GO TO MENU</a>
+                            <a href="{{ route('security.index') }}">GO TO SECURITY</a>
                         </div>
                     </div>
                 </div>
             </div>
+            @include('_includes.footer')
         </div>
     </div>
 </div>

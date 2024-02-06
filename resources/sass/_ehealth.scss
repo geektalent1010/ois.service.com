@@ -1,7 +1,7 @@
 .main-bg {
     .container-section {
         width: 100vw;
-        height: calc(100vh - 80px);
+        height: calc(100vh - 120px);
         position: absolute;
         top: 80px;
         display: flex;
@@ -12,7 +12,6 @@
         .video-section {
             position: absolute;
             width: 100%;
-            top: -40px;
             height: calc(100vh - 80px);
             object-fit: cover;
             z-index: 1;
@@ -22,7 +21,6 @@
             position: absolute;
             display: none;
             width: 100%;
-            top: -40px;
             height: calc(100vh - 80px);
             object-fit: cover;
             z-index: 1;
@@ -45,12 +43,21 @@
 
         .ehealth-section {
             position: absolute;
-            width: 50vw;
+            width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
             z-index: 2;
             overflow-y: scroll;
+            height: calc(100vh - 120px);
+
+            .ehealth-section-content {
+                min-height: calc(100vh - 120px);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
 
             .icon {
                 width: 120px;
