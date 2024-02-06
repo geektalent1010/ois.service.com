@@ -1219,6 +1219,11 @@ th {
 
 @media only screen and (max-width: 575.98px) {
 
+    .container-fluid {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
 
     .headerSection nav.navbar .navbarItem .navbar-menu-item {
         margin-right: 10px;
