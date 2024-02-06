@@ -43,7 +43,7 @@
                         <p class="description mt-4">In addition, we have established strict data access controls, ensuring that only authorized personnel have access to sensitive customer data. To maintain the accuracy of customer data, OIS employs automated data verification and cleansing processes, to ensure data is always accurate and up to date.</p>
                         <p class="description mt-4 mb-5">OIS obtains customer data through secure, consent-based processes and uses this data to inform the development of new products and services that deliver real value to customers.</p>
                         <div class="button-section">
-                            <a href="{{route('policy.index')}}">PRIVACY POLICY</a>
+                            <a onclick="togglePrivacy()">PRIVACY POLICY</a>
                         </div>
                     </div>
                 </div>
