@@ -84,6 +84,7 @@
                 </div>
             </div>
         </div>
+        @include('_includes.footer', ['FOOTER_UNABLE' => true])
     </div>
 </div>
 @endsection

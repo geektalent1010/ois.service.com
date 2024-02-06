@@ -182,7 +182,7 @@ body {
 
 .video-section {
     width: 100%;
-    height: calc(100vh - 10px);
+    height: calc(100vh - 80px);
     object-fit: cover;
     z-index: 2;
     position: absolute;
@@ -190,7 +190,7 @@ body {
 
 .video-section-mobile {
     width: 100%;
-    height: calc(100vh - 10px);
+    height: calc(100vh - 80px);
     object-fit: cover;
     display: none;
     z-index: 2;
@@ -701,9 +701,10 @@ th {
 }
 
 .main-bg-login {
-    min-height: calc(100vh - 80px);
+    min-height: calc(100vh - 120px);
     margin-top: 80px;
     padding-bottom: 40px;
+    overflow-y: hidden;
 }
 
 .main-bg-login .menu-bg {
