@@ -116,13 +116,14 @@
                         <p class="description mt-0 mb-0 ml-4">• Fast, Secure, and Low-Cost Options.</p>
                         <p class="description mt-0 mb-0 ml-4">• Enhanced Flexibility and Convenience.</p>
                         <p class="description mt-4 mb-5">At OIS, we are committed to redefining the landscape of electronic financial services. The integration of Blockchain and Web3 is a testament to our dedication to innovation, ensuring that our customers experience the utmost in security, transparency, and convenience when entrusting us with their financial transactions. Welcome to a new era of Electronic Money Transfer—where technology meets trust.</p>
-                        <div class="button-section">
+                        <div class="button-section justify-content-between">
                             <a href="{{ route('money.index') }}">TRANSFER HERE</a>
-                            <a href="{{ route('dashboard.index') }}">GO TO DASHBOARD</a>
+                            <a href="{{ route('innovation.index') }}">GO TO INNOVATION</a>
                         </div>
                     </div>
                 </div>
             </div>
+            @include('_includes.footer')
         </div>
     </div>
 </div>

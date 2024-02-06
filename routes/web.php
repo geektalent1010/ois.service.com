@@ -66,9 +66,9 @@ Route::get('/shopping', 'ShoppingController@index')->name('shopping.index');
 
 Route::get('/reach', 'ReachController@index')->name('reach.index');
 
-Route::get('/contact', 'ContactController@index')->name('contact.index');
+Route::get('/support', 'ContactController@index')->name('contact.index');
 
-Route::get('/offices', 'OfficesController@index')->name('offices.index');
+Route::get('/centers', 'OfficesController@index')->name('offices.index');
 
 Route::get('/terms', 'TermsController@index')->name('terms.index');
 

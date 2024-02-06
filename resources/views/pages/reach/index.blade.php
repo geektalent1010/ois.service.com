@@ -47,6 +47,7 @@
                     </div>
                 </div>
             </div>
+            @include('_includes.footer')
         </div>
     </div>
 </div>

@@ -35,8 +35,6 @@
 
     @yield('PAGE_END')
 
-    @include('_includes.footer')
-
     @include('_includes.privacy_policy')
 
     @include('_includes.terms_use')

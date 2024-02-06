@@ -39,13 +39,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center mt-30px">
+                <div class="row justify-content-center mt-30px mb-30px">
                     <div class="col-md-6 form-group">
                         <div class="prefix-label mb-4 text-center">I WANT TO BOOK AN APPOINTMENT</div>
                         <!-- <a class="btn btn-primary confirm-button" href="https://sea-turtle-app-e6m4o.ondigitalocean.app/" target="_blank">
                             CLICK HERE
                         </a> -->
-        
+
                         <button class="confirm-button" onclick="window.location.href='{{ route('booking.iframe') }}'">
                             CLICK HERE
                         </button>
@@ -53,6 +53,7 @@
                 </div>
             </div>
         </div>
+        @include('_includes.footer')
     </div>
 </div>
 @endsection

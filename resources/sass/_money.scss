@@ -3,12 +3,20 @@
         top: 0;
     }
     .money-section {
-        width: 50vw;
+        width: 100%;
+        height: calc(100vh - 120px);
         display: flex;
         flex-direction: column;
         align-items: center;
         z-index: 2;
         overflow-y: scroll;
+        .money-section-content {
+            min-height: calc(100vh - 120px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         .icon {
             width: 120px;
         }

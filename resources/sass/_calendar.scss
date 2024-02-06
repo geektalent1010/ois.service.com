@@ -2,11 +2,11 @@
     width: 100%;
     height: calc(100vh - 120px);
     position: absolute;
+    overflow-y: scroll;
     top: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow-y: auto;
     z-index: 2;
-    justify-content: center;
 }
