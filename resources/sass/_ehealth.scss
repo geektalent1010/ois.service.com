@@ -1,9 +1,7 @@
 .main-bg {
     .container-section {
         width: 100vw;
-        height: calc(100vh - 120px);
-        position: absolute;
-        top: 80px;
+        height: 100vh;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -12,7 +10,7 @@
         .video-section {
             position: absolute;
             width: 100%;
-            height: calc(100vh - 80px);
+            height: calc(100vh - 120px);
             object-fit: cover;
             z-index: 1;
         }
@@ -21,7 +19,7 @@
             position: absolute;
             display: none;
             width: 100%;
-            height: calc(100vh - 80px);
+            height: calc(100vh - 120px);
             object-fit: cover;
             z-index: 1;
         }
@@ -29,14 +27,15 @@
         .menu-bg {
             position: absolute;
             width: 100%;
-            height: calc(100vh - 80px);
+            top: 80px;
+            height: calc(100vh - 120px);
             object-fit: cover;
         }
 
         .menu-bg-mobile {
             position: absolute;
             width: 100%;
-            height: calc(100vh - 80px);
+            height: calc(100vh - 120px);
             object-fit: cover;
             display: none;
         }
@@ -46,12 +45,15 @@
             width: 100%;
             display: flex;
             flex-direction: column;
+            top: 80px;
             align-items: center;
             z-index: 2;
             overflow-y: scroll;
+            min-height: calc(100vh - 120px);
             height: calc(100vh - 120px);
 
             .ehealth-section-content {
+                width: 90vw;
                 min-height: calc(100vh - 120px);
                 display: flex;
                 flex-direction: column;
@@ -98,7 +100,7 @@
     .main-bg {
         .container-section {
             .ehealth-section {
-                width: 90vw;
+                width: 100vw;
 
                 .title {
                     font-size: 24px;
@@ -127,10 +129,6 @@
 
             .menu-bg-mobile {
                 display: block;
-            }
-
-            .ehealth-section {
-                width: 90vw;
             }
         }
     }

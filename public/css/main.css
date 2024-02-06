@@ -1227,6 +1227,9 @@ th {
     .headerSection nav.navbar .navbarItem .navbar-login-item span {
         display: none;
     }
+    .headerSection nav.navbar .navbarItem .navbar-logout-item span {
+        display: none;
+    }
 
     .headerSection nav.navbar .navbarItem .navbar-menu-item span {
         display: none;
