@@ -3173,6 +3173,8 @@ body[data-aos-easing=ease-out-back] [data-aos] {
   background-color: #b2c8db;
   padding: 12px;
   border-radius: 8px;
+  max-height: 500px;
+  overflow-y: auto;
 }
 
 .main-bg .contact-section .info-container .info-box .offices-menus .office-menu-item {
@@ -4339,6 +4341,8 @@ body {
   padding: 12px;
   border-radius: 8px;
   z-index: 1;
+  max-height: 500px;
+  overflow-y: auto;
 }
 
 .checklists-section .form-section .form-group .info-box .offices-menus .office-menu-item {

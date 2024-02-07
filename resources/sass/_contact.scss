@@ -223,6 +223,8 @@
                     background-color: $menu-bg;
                     padding: 12px;
                     border-radius: 8px;
+                    max-height: 500px;
+                    overflow-y: auto;
 
                     .office-menu-item {
                         display: flex;
