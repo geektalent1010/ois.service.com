@@ -137,6 +137,8 @@
                     padding: 12px;
                     border-radius: 8px;
                     z-index: 1;
+                    max-height: 500px;
+                    overflow-y: auto;
                     .office-menu-item {
                         display: flex;
                         padding: 2px 6px;
