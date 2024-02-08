@@ -21,61 +21,64 @@
         <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt="">
         <div class="m-0 checklists-section">
             <div class="checklists-section-content">
-                <div class="main-title">
-                    VISA CHECKLIST
-                </div>
-                <div class="section-body body-section mt-30px">
-                    <form class="form-section">
-                        <div class="row mb-24px">
-                            <div class="col-md-6 form-group">
-                                <p class="form-label">SELECT COUNTRY + CITY APPLYING FROM</p>
-                                <div class="info-box">
-                                    <div class="search-field">
-                                        <input type="text" class="input-field office-id-input" name="office" hidden />
-                                        <input type="text" class="input-field office-input cursor-default"
-                                            placeholder="Country + City" />
-                                        <img class="search-icon cursor-default"
-                                            src="{{ asset('images/select-arrows.svg') }}">
-                                    </div>
-                                    <div class="offices-menus d-none">
-                                        @foreach ($offices as $country => $cities)
-                                            @foreach ($cities as $key => $office)
-                                                <div class="d-flex office-menu-item"
-                                                    data-country="{{ $office->country }} - {{ $office->city }}"
-                                                    data-id="{{ $office->id }}">
-                                                    <div class="office-country">
-                                                        @if ($key < 1)
-                                                            {{ $country }}
-                                                        @endif
+                <div class="checklists-section-body">
+                    <div class="main-title">
+                        VISA CHECKLIST
+                    </div>
+                    <div class="section-body body-section mt-30px">
+                        <form class="form-section">
+                            <div class="row mb-24px">
+                                <div class="col-md-6 form-group">
+                                    <p class="form-label">SELECT COUNTRY + CITY APPLYING FROM</p>
+                                    <div class="info-box">
+                                        <div class="search-field">
+                                            <input type="text" class="input-field office-id-input" name="office"
+                                                hidden />
+                                            <input type="text" class="input-field office-input cursor-default"
+                                                placeholder="Country + City" />
+                                            <img class="search-icon cursor-default"
+                                                src="{{ asset('images/select-arrows.svg') }}">
+                                        </div>
+                                        <div class="offices-menus d-none">
+                                            @foreach ($offices as $country => $cities)
+                                                @foreach ($cities as $key => $office)
+                                                    <div class="d-flex office-menu-item"
+                                                        data-country="{{ $office->country }} - {{ $office->city }}"
+                                                        data-id="{{ $office->id }}">
+                                                        <div class="office-country">
+                                                            @if ($key < 1)
+                                                                {{ $country }}
+                                                            @endif
+                                                        </div>
+                                                        <div>- </div>
+                                                        <div class="pl-2">{{ $office->city }}</div>
                                                     </div>
-                                                    <div>- </div>
-                                                    <div class="pl-2">{{ $office->city }}</div>
-                                                </div>
+                                                @endforeach
                                             @endforeach
-                                        @endforeach
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="col-md-6 form-group">
+                                    <p class="form-label">SELECT PASSPORT TYPE APPLYING WITH</p>
+                                    <select class="form-control webkit-style country-select w-100" name="visa_type"
+                                        id="visaType">
+                                        <option value="">Pasport Type</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="col-md-6 form-group">
-                                <p class="form-label">SELECT PASSPORT TYPE APPLYING WITH</p>
-                                <select class="form-control webkit-style country-select w-100" name="visa_type"
-                                    id="visaType">
-                                    <option value="">Pasport Type</option>
-                                </select>
-                            </div>
-                        </div>
 
-                        <div class="row justify-content-center">
-                            <div class="col-md-7 form-group mt-19px mb-30px">
-                                <div class="offices-body"></div>
+                            <div class="row justify-content-center">
+                                <div class="col-md-7 form-group mt-19px mb-30px">
+                                    <div class="offices-body"></div>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="row mt-19px">
-                            <div class="col-md-12 checklistsFilters">
+                            <div class="row mt-19px">
+                                <div class="col-md-12 checklistsFilters" id="filter-content">
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
             @include('_includes.footer')
@@ -203,6 +206,15 @@
         function checklistsFilters() {
             $.post('{{ route('checklists.filter') }}', $('.form-section').serialize(), function(response) {
                 $('.checklistsFilters').html(response);
+                const section = document.getElementsByClassName('checklists-section-body')[0];
+                const rect = section.getBoundingClientRect();
+                const filter = document.getElementsByClassName('checklistsFilters')[0];
+                const rectFilter = filter.getBoundingClientRect();
+                if ($('#visaType').val()) {
+                    $('.checklists-section').animate({
+                        scrollTop: rect.height - rectFilter.height
+                    }, 500, 'swing')
+                }
             })
         }
     </script>
