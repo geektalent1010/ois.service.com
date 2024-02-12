@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers\Auth;
 
-use Mail;
 use App\Http\Controllers\Controller;
 use App\Mail\Welcome;
 use App\Providers\RouteServiceProvider;
@@ -14,6 +13,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use Illuminate\Auth\Events\Registered;
+use Illuminate\Support\Facades\Mail;
 
 use App\Country;
 
