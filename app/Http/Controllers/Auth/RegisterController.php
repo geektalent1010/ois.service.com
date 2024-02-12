@@ -82,7 +82,7 @@ class RegisterController extends Controller
         if($response = $this->registered($request, $user)) {
             return redirect()->route('login');
         }
-        return $request->wantsJson() ? new JsonResponse([], 201) : redirect($this->redirectPath());
+        // return $request->wantsJson() ? new JsonResponse([], 201) : redirect($this->redirectPath());
     }
 
     /**
