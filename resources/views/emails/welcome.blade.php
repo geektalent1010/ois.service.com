@@ -3,7 +3,7 @@
         <div class="navbar">
             <div class="header-body">
                 <div class="brand-sec">
-                    <a class="navbar-brand pl-1" href="{{ route('landing') }}">
+                    <a class="navbar-brand pl-1" href="{{ route('backoffice.index') }}">
                         <img src="{{ asset('images/Icon1.png') }}" alt="" />
                     </a>
                 </div>
