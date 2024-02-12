@@ -99,7 +99,7 @@ class RegisterController extends Controller
         ];
 
         try {
-            // Mail::to($user->email)->send(new Welcome($userData));
+            Mail::to($user->email)->send(new Welcome($userData));
 
             return true;
         } catch (Exception $e) {
