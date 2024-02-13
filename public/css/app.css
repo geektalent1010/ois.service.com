@@ -1148,7 +1148,8 @@
 }
 
 .welcome-body .welcome-section .visit-website .register-button {
-  width: 35%;
+  width: 50%;
+  margin-left: 25%;
   height: 44px;
   display: block;
   text-transform: uppercase;

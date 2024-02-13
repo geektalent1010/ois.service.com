@@ -27,16 +27,10 @@
             <div class="greet-section">
                 <div class="welcome-greet">Hi {{ $userData['first_name'] }} {{ $userData['last_name'] }}</div>
                 <div class="welcome-greet">
-                    We would like to take the chance to welcome to the Portal.
-                </div>
-                <div class="welcome-greet">
                     Welcome to OIS Services and thank your for creating a client account.
                 </div>
                 <div class="welcome-greet">
-                    Since we protect our clients data and personal information, we kindly ask you to
-                </div>
-                <div class="welcome-greet">
-                    confirm your email address by clicking the email confirmation button below.
+                    Since we protect our clients data and personal information, we kindly ask you to confirm your email address by clicking the email confirmation button below.
                 </div>
                 <div class="welcome-greet">
                     Thank you for joining our community.
