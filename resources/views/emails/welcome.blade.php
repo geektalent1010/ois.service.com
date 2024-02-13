@@ -3,7 +3,7 @@
         <div class="navbar">
             <div class="header-body">
                 <div class="brand-sec">
-                    <a class="navbar-brand pl-1" href="{{ route('backoffice.index') }}">
+                    <a class="navbar-brand pl-1" href="{{ route('landing') }}">
                         <img src="{{ asset('images/Icon1.png') }}" alt="" />
                     </a>
                 </div>
@@ -20,7 +20,6 @@
             </div>
         </div>
     </div>
-    Hi Name,
 
     <div class="main-bg welcome-body">
         <img class="welcome-bg" src="{{ asset('images/Globe.png') }}" alt="">
@@ -47,14 +46,16 @@
                 </div>
             </div>
             <div class="visit-website">
-                <a href="{{ route('landing') }}" class="btn btn-primary register-button button-submit">VISIT
-                    WEBSITE</a>
+                <a href="{{ route('backoffice.index') }}" class="btn btn-primary register-button button-submit">
+                    CONFIRM YOUR EMAIL
+                </a>
             </div>
         </div>
         <div class="social-section">
             <table class="fir-table">
                 <tr>
-                    <td>OFFICES <a href="{{ route('offices.index') }}" style="margin-left: 15px">Click here</a></td>
+                    <td>OIS GLOBAL CENTERS <a href="{{ route('offices.index') }}" style="margin-left: 15px">Click
+                            here</a></td>
                     <td>
                         <table>
                             <tr>
