@@ -114,9 +114,9 @@ body {
 }
 
 .welcome-body .welcome-section .visit-website .register-button {
-    width: 33%;
+    width: 50%;
     padding-top: 15px;
-    margin-left: 33%;
+    margin-left: 25%;
     height: 44px;
     display: block;
     text-transform: uppercase;
