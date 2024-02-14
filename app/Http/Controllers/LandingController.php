@@ -16,7 +16,7 @@ class LandingController extends Controller
 
     public function password(Request $req) {
         $password = $req->password;
-        if($password == 'abcd123!@#') {
+        if($password == '2024') {
             $req->session()->put('password', true);
             return redirect()->route('landing');
         } else {
