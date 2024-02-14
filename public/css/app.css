@@ -4545,3 +4545,362 @@ body {
   }
 }
 
+.bvn-section {
+  width: 100%;
+  height: calc(100vh - 120px);
+  position: absolute;
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  z-index: 2;
+}
+
+.bvn-section .checklists-section-content .checklists-section-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh - 120px);
+}
+
+.bvn-section .main-title {
+  font-size: 21px;
+  font-family: "DinPro Medium", sans-serif;
+  height: 50px;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.bvn-section .form-section {
+  width: 680px;
+}
+
+.bvn-section .form-section .form-label {
+  font-size: 12px;
+  margin-left: 28px;
+}
+
+.bvn-section .form-section .form-group .form-control {
+  background: rgba(255, 255, 255, 0.1490196078);
+  border: none;
+  border-radius: 10rem;
+  box-shadow: none;
+  height: 44px;
+  font-weight: 400;
+  outline: medium none;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 16px;
+  font-family: "DinPro", sans-serif;
+  line-height: 1.4;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.bvn-section .form-section .form-group .form-control:-webkit-autofill,
+.bvn-section .form-section .form-group .form-control:-webkit-autofill:hover,
+.bvn-section .form-section .form-group .form-control:-webkit-autofill:focus {
+  caret-color: white;
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(33, 44, 88, 0.2509803922) inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.bvn-section .form-section .form-group .form-control:hover,
+.bvn-section .form-section .form-group .form-control:focus {
+  box-shadow: none;
+}
+
+.bvn-section .form-section .form-group .form-control::-webkit-input-placeholder {
+  color: white !important;
+}
+
+.bvn-section .form-section .form-group .form-control::-moz-placeholder {
+  color: white !important;
+}
+
+.bvn-section .form-section .form-group .form-control:-moz-placeholder {
+  color: white !important;
+}
+
+.bvn-section .form-section .form-group .form-control:-ms-input-placeholder {
+  color: white !important;
+}
+
+.bvn-section .form-section .form-group .info-box {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+}
+
+.bvn-section .form-section .form-group .info-box .search-field {
+  position: relative;
+}
+
+.bvn-section .form-section .form-group .info-box .search-field .search-icon {
+  visibility: visible;
+  width: 16px;
+  position: absolute;
+  top: 14px;
+  right: 18px;
+}
+
+.bvn-section .form-section .form-group .info-box .input-field {
+  width: 100%;
+  height: 44px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: rgba(255, 255, 255, 0.1490196078);
+  border-radius: 20px;
+  font-size: 16px;
+  font-family: "DinPro", sans-serif;
+  border: none;
+  color: white;
+  outline: none;
+}
+
+.bvn-section .form-section .form-group .info-box .input-field::-moz-placeholder {
+  color: white;
+}
+
+.bvn-section .form-section .form-group .info-box .input-field::placeholder {
+  color: white;
+}
+
+.bvn-section .form-section .form-group .info-box .input-field:hover {
+  box-shadow: none;
+  border: none;
+}
+
+.bvn-section .form-section .form-group .info-box .input-field:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.bvn-section .form-section .form-group .info-box .field-label {
+  color: #003366;
+  font-family: "DinPro", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  margin-top: 32px;
+}
+
+.bvn-section .form-section .form-group .info-box .offices-menus {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  background-color: #b2c8db;
+  padding: 12px;
+  border-radius: 8px;
+  z-index: 1;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.bvn-section .form-section .form-group .info-box .offices-menus .office-menu-item {
+  display: flex;
+  padding: 2px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #003366;
+}
+
+.bvn-section .form-section .form-group .info-box .offices-menus .office-menu-item:hover {
+  background-color: #003366;
+  color: white;
+}
+
+.bvn-section .form-section .form-group .info-box .offices-menus .office-menu-item .office-country {
+  min-width: 40%;
+}
+
+.bvn-section .form-section .form-group .offices-body {
+  width: 100%;
+}
+
+.bvn-section .form-section .form-group .offices-body .country-flag {
+  padding-top: 6px;
+  width: 120px;
+}
+
+.bvn-section .form-section .form-group .offices-body p {
+  color: white;
+  font-family: "DinPro", sans-serif;
+  font-size: 16px;
+  margin-left: 30px;
+}
+
+.bvn-section .form-section .form-group .offices-body label {
+  color: white;
+  font-family: "DinPro", sans-serif;
+  font-size: 16px;
+}
+
+.bvn-section .form-section .form-group .offices-body span {
+  color: white;
+  margin-left: 30px;
+}
+
+.bvn-section .form-section .form-group .offices-body .country {
+  font-family: "DinPro Medium", sans-serif;
+}
+
+.bvn-section .form-section .form-group .offices-body .contact-btn-section .contact-btn {
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #00a9ea;
+  color: #ffffff;
+  border-radius: 20px;
+  font-size: 16px;
+  font-family: "DinPro", sans-serif;
+  cursor: pointer;
+  border: 0.1rem solid #00a9ea;
+  text-decoration: none;
+}
+
+.bvn-section .form-section .form-group .offices-body .contact-btn-section .contact-btn:hover {
+  background: #003366;
+  border: 0.1rem solid #003366;
+}
+
+.bvn-section .form-section .form-group .prefix-label {
+  font-size: 12px;
+}
+
+.bvn-section .form-section .form-group .confirm-button {
+  width: 100%;
+  height: 44px;
+  background: #00a9ea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  border-radius: 10rem;
+  font-size: 16px;
+  font-family: "DinPro", sans-serif;
+  border: 0.1rem solid #00a9ea;
+  cursor: pointer;
+}
+
+.bvn-section .form-section .form-group .confirm-button:hover {
+  background: #003366 !important;
+  color: white !important;
+  border-color: #003366 !important;
+}
+
+.bvn-section .form-section .form-group .confirm-button:focus,
+.bvn-section .form-section .form-group .confirm-button:active {
+  background: #003366;
+  color: white;
+  border-color: #003366 !important;
+  outline: none;
+  box-shadow: none;
+}
+
+.bvn-section .form-section .form-group .confirm-button.disabled,
+.bvn-section .form-section .form-group .confirm-button:disabled,
+.bvn-section .form-section .form-group .confirm-button[disabled] {
+  opacity: 1 !important;
+}
+
+.bvn-section #document .card {
+  border: none;
+  border-radius: 0px;
+  background-color: transparent;
+}
+
+.bvn-section #document .card .card-header {
+  border: 0;
+  border-radius: 0px;
+  padding: 0;
+  margin-bottom: 0px !important;
+}
+
+.bvn-section #document .card .card-header .btn-header-link {
+  color: white;
+  display: block;
+  text-align: left;
+  padding: 20px;
+  padding-left: 42px;
+  font-size: 18px;
+  font-family: "DinPro Medium", sans-serif;
+  background: rgba(255, 255, 255, 0.1490196078);
+  margin-top: 2px;
+  border: none;
+  border-radius: 0px;
+}
+
+.bvn-section #document .card .card-header .btn-header-link::after {
+  content: "\F068";
+  font-family: "FontAwesome";
+  font-weight: 900;
+  float: right;
+}
+
+.bvn-section #document .card .card-header .btn-header-link.collapsed {
+  color: white;
+  background: rgba(255, 255, 255, 0.1490196078);
+}
+
+.bvn-section #document .card .card-header .btn-header-link.collapsed::after {
+  content: "\F067";
+}
+
+.bvn-section #document .card .card-header .btn-header-link:focus,
+.bvn-section #document .card .card-header .btn-header-link:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.bvn-section #document .card .card-body {
+  padding-left: 42px;
+  padding-right: 42px;
+  font-size: 16px;
+  font-family: "DinPro Light", sans-serif;
+  line-height: 1.5;
+  background-color: rgba(255, 255, 255, 0.062745098);
+  margin-top: 2px;
+}
+
+.bvn-section #document .card .collapsing {
+  background: rgba(255, 255, 255, 0.062745098);
+  line-height: 30px;
+  color: white;
+  font-size: 16px;
+  font-family: "DinPro", sans-serif;
+}
+
+.bvn-section #document .card .collapse {
+  border: 0;
+}
+
+.bvn-section #document .card .collapse.show {
+  line-height: 30px;
+  color: white;
+  font-size: 16px;
+  font-family: "DinPro", sans-serif;
+}
+
+.bvn-section #document .card:first-child .card-header .btn-header-link {
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 787.98px) {
+  .bvn-section .form-section {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
