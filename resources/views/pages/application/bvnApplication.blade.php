@@ -162,11 +162,11 @@
                                     html += '<p class="mb-0">' + res[resIndex].working_days + ':</p>';
                                     const times = res[resIndex].working_time.split(' && ');
                                     times.forEach((element) => {
-                                        html += '<p class="mb-0">' + element + '</p></div>';
+                                        html += '<p class="mb-0">' + element + '</p>';
                                     });
                                 }
 
-                                html += '</div></div>';
+                                html += '</div></div></div>';
                                 visaType += '<option value="">Pasport Type</option>';
                                 visaType += '<option value="Diplomatic">Diplomatic Passport</option>';
                                 visaType += '<option value="Official">Official Passport</option>';
