@@ -59,11 +59,13 @@
     <div class="left-menubar" id="left-menubar">
         <img class="close-icon" id="left-menu-close" src="{{ asset('images/Logo/IconCLOSE.svg') }}" alt="" />
         <div class="lang-section" id="menu-list">
+            <div class="lang-item"><a class="item">ARABIC</a></div>
             <div class="lang-item"><a class="item">CHINESE</a></div>
             <div class="lang-item"><a class="item active">ENGLISH</a></div>
             <div class="lang-item"><a class="item">FRENCH</a></div>
             <div class="lang-item"><a class="item">GERMAN</a></div>
-            <div class="lang-item"><a class="item">PORTUGUESE</a></div>
+            <div class="lang-item"><a class="item">ITALIAN</a></div>
+            <div class="lang-item"><a class="item">TURKSH</a></div>
             <div class="lang-item"><a class="item">SPANISH</a></div>
         </div>
     </div>
