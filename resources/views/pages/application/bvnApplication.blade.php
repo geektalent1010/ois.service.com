@@ -68,7 +68,7 @@
                             </div>
 
                             <div class="row justify-content-center">
-                                <div class="col-md-9 form-group mt-19px mb-30px">
+                                <div class="col-md-12 form-group mt-19px mb-30px">
                                     <div class="offices-body"></div>
                                 </div>
                             </div>
@@ -139,9 +139,9 @@
                     if (res.length) {
                         for (var resIndex = 0; resIndex < res.length; resIndex++) {
                             html +=
-                                '<div class="d-flex align-items-start"><img class="country-flag" src="{{ asset('images/Flags') }}/' +
+                                '<div class="d-flex align-items-start justify-content-center"><img class="country-flag" src="{{ asset('images/Flags') }}/' +
                                 res[resIndex].flag + '">';
-                            html += '<div class="d-flex"><div><p class="country mb-0">' + res[resIndex].country + '</p>';
+                            html += '<div class="basic-info"><div><p class="country mb-0">' + res[resIndex].country + '</p>';
                             if (res[resIndex].address == 'COMING SOON') {
                                 html += '<p class="mb-0">' + res[resIndex].city + '</p>';
                                 for (const add of res[resIndex].address.split(' && ')) {

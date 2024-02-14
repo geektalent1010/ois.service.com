@@ -4726,6 +4726,10 @@ body {
   width: 100%;
 }
 
+.bvn-section .form-section .form-group .offices-body .basic-info {
+  display: flex;
+}
+
 .bvn-section .form-section .form-group .offices-body .country-flag {
   padding-top: 6px;
   width: 120px;
@@ -4901,6 +4905,10 @@ body {
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .bvn-section .form-section .form-group .offices-body .basic-info {
+    flex-direction: column;
   }
 }
 
