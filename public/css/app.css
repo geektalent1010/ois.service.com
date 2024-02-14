@@ -544,6 +544,14 @@
   text-decoration: none;
 }
 
+.main-bg .menu-section .menu-body .navItem .navItemWrap .menu-item img {
+  opacity: 0.3;
+}
+
+.main-bg .menu-section .menu-body .navItem .navItemWrap .menu-item:hover img {
+  opacity: 1;
+}
+
 .main-bg .menu-section .menu-body .navItem:hover .navItemWrap .navItemWrap-front {
   background-color: rgba(0, 51, 102, 0.5019607843);
 }

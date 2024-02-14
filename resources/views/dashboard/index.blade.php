@@ -23,6 +23,19 @@
             <div class="navItem" onclick="">
                 <div class="navItemWrap" onclick="">
                     <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center"></div>
+                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="{{ route('profile.index') }}">
+                        <div class="h-100">
+                            <div class="d-flex justify-content-center h-50 align-items-end">
+                                <img src="{{ asset('images/Logo/IconProfile.svg') }}" alt="">
+                            </div>
+                            <p class="back-unvisible menu-title">PROFILE</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="navItem" onclick="">
+                <div class="navItemWrap" onclick="">
+                    <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center"></div>
                     <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center cursor-pointer"  onclick="toggleNisVisaModal()">
                         <div class="h-100">
                             <div class="d-flex justify-content-center h-50 align-items-end">
@@ -65,6 +78,33 @@
             <div class="navItem" onclick="">
                 <div class="navItemWrap" onclick="">
                     <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center"></div>
+                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="{{route('news.index')}}">
+                        <div class="h-100">
+                            <div class="d-flex justify-content-center h-50 align-items-end">
+                                <img src="{{ asset('images/Logo/IconNews.svg') }}" alt="">
+                            </div>
+                            <p class="back-unvisible menu-title">NEWS</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="navItem" onclick="">
+                <div class="navItemWrap" onclick="">
+                    <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center"></div>
+                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="">
+                        <div class="h-100">
+                            <div class="d-flex justify-content-center h-50 align-items-end">
+                                <img src="{{ asset('images/Logo/OISIcon.svg') }}" alt="">
+                            </div>
+                            <p class="back-unvisible menu-title">NIN</p>
+                            <p class="menu-detail">APPLICATION</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="navItem" onclick="">
+                <div class="navItemWrap" onclick="">
+                    <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center"></div>
                     <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="{{ route('booking.index') }}">
                         <div class="h-100">
                             <div class="d-flex justify-content-center h-50 align-items-end">
@@ -79,51 +119,13 @@
             <div class="navItem" onclick="">
                 <div class="navItemWrap" onclick="">
                     <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center"></div>
-                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="{{ route('profile.index') }}">
+                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="">
                         <div class="h-100">
                             <div class="d-flex justify-content-center h-50 align-items-end">
-                                <img src="{{ asset('images/Logo/IconProfile.svg') }}" alt="">
+                                <img src="{{ asset('images/Logo/OISIcon.svg') }}" alt="">
                             </div>
-                            <p class="back-unvisible menu-title">PROFILE</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="navItem" onclick="">
-                <div class="navItemWrap" onclick="">
-                    <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center"></div>
-                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="{{route('calendar.index')}}">
-                        <div class="h-100">
-                            <div class="d-flex justify-content-center h-50 align-items-end">
-                                <img src="{{ asset('images/Logo/IconCalendar.svg') }}" alt="">
-                            </div>
-                            <p class="back-unvisible menu-title">CALENDAR</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="navItem" onclick="">
-                <div class="navItemWrap" onclick="">
-                    <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center"></div>
-                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="{{route('files.index')}}">
-                        <div class="h-100">
-                            <div class="d-flex justify-content-center h-50 align-items-end">
-                                <img src="{{ asset('images/Logo/IconFiles.svg') }}" alt="">
-                            </div>
-                            <p class="back-unvisible menu-title">FILES</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="navItem" onclick="">
-                <div class="navItemWrap" onclick="">
-                    <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center"></div>
-                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="{{route('news.index')}}">
-                        <div class="h-100">
-                            <div class="d-flex justify-content-center h-50 align-items-end">
-                                <img src="{{ asset('images/Logo/IconNews.svg') }}" alt="">
-                            </div>
-                            <p class="back-unvisible menu-title">NEWS</p>
+                            <p class="back-unvisible menu-title">BOOK</p>
+                            <p class="menu-detail">APPOINTMENT</p>
                         </div>
                     </a>
                 </div>
