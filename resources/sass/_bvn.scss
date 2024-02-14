@@ -183,6 +183,10 @@
             .offices-body {
                 width: 100%;
 
+                .basic-info {
+                    display: flex;
+                }
+
                 .country-flag {
                     padding-top: 6px;
                     width: 120px;
@@ -372,6 +376,15 @@
             width: 100%;
             padding-left: 15px;
             padding-right: 15px;
+
+            .form-group {
+
+                .offices-body {
+                    .basic-info {
+                        flex-direction: column;
+                    }
+                }
+            }
         }
     }
 }
