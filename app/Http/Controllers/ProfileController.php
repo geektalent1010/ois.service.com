@@ -23,6 +23,12 @@ class ProfileController extends Controller
             -> pluck('phone_code')
             -> all();
         $user = Auth::user();
+        if($user->isAdmin()) {
+            return view('pages.profile.admin')
+                -> with('countries', $countries)
+                -> with('phoneCodes', $phoneCodes)
+                -> with('user', $user);
+        }
         return view('pages.profile.index')
             -> with('countries', $countries)
             -> with('phoneCodes', $phoneCodes)

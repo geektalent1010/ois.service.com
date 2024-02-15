@@ -48,10 +48,13 @@ Route::group(['middleware' => ['password.protected']], function () {
         Route::get('/bvn-application', 'ApplicationController@bvn')->name('application.bvn');
 
         Route::get('/checklists', 'ApplicationController@checklists')->name('checklists.index');
+
         Route::post('/checklists/filter', 'ApplicationController@checklistFilter')->name('checklists.filter');
+
+        // Route::group(['middleware' => ['admin']], function () {
+
+        // });
     });
-
-
 
     Route::get('/dashboard', 'DashboardController@index')->name('dashboard.index');
 
