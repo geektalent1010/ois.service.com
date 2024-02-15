@@ -20,7 +20,6 @@ class ApplicationController extends Controller
         });
         return view('pages.application.bvnApplication')
             ->with('offices', $offices);
-        ;
     }
 
     public function checklists()
