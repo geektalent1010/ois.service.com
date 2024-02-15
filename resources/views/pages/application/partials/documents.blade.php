@@ -15,7 +15,6 @@
                     </div>
                 </div>
             </div>
-        @else
             <div class="card">
                 <div class="card-header" id="documentHead-empty-fees">
                     <a href="#" class="btn btn-header-link member-item collapsed" data-toggle="collapse" data-target="#document-empty-fees" aria-expanded="true" aria-controls="document-empty-fees">
