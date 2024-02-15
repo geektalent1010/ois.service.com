@@ -237,6 +237,14 @@
                         opacity: 1;
                         text-decoration: none;
                     }
+
+                    .menu-item img {
+                        opacity: .3;
+                    }
+
+                    .menu-item:hover img {
+                        opacity: 1;
+                    }
                 }
             }
 

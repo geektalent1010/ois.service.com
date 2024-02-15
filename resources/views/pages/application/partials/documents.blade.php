@@ -1,38 +1,70 @@
-@if ($checklists->count())
-    <div class="w-100 mb-3">
-        <div class="accordion" id="document">
-            @foreach ($checklists as $key => $item)
-
-                <div class="card">
-                    <div class="card-header" id="documentHead{{ $key }}">
-                        <a href="#" class="btn btn-header-link member-item collapsed" data-toggle="collapse" data-target="#document{{ $key }}" aria-expanded="true" aria-controls="document{{ $key }}">
-                            {{ $item->title }}
-                        </a>
+<div class="w-100 mb-3">
+    <div class="accordion" id="document">
+        @if ($fees)
+            <div class="card">
+                <div class="card-header" id="documentHead{{$fees->id}}">
+                    <a href="#" class="btn btn-header-link member-item collapsed" data-toggle="collapse" data-target="#document{{ $fees->id }}" aria-expanded="true" aria-controls="document{{ $fees->id }}">
+                        {{ $fees->title }}
+                    </a>
+                </div>
+                <div id="document{{ $fees->id }}" class="collapse" aria-labelledby="documentHead{{ $fees->id }}" data-parent="#document">
+                    <div class="card-body">
+                        @php
+                            echo $fees->description;
+                        @endphp
                     </div>
+                </div>
+            </div>
+        @else
+            <div class="card">
+                <div class="card-header" id="documentHead-empty-fees">
+                    <a href="#" class="btn btn-header-link member-item collapsed" data-toggle="collapse" data-target="#document-empty-fees" aria-expanded="true" aria-controls="document-empty-fees">
+                        Center Fees
+                    </a>
+                </div>
+                <div id="document-empty-fees" class="collapse" aria-labelledby="documentHead-empty-fees" data-parent="#document">
+                    <div class="card-body">
+                        as coming soon!
+                    </div>
+                </div>
+            </div>
+        @endif
 
-                    <div id="document{{ $key }}" class="collapse" aria-labelledby="documentHead{{ $key }}" data-parent="#document">
-                        <div class="card-body">
-                            @php
-                                echo $item->description;
-                            @endphp
-                            <div class="row justify-content-center">
-                                <div class="col-md-6 form-group mt-5 mb-4">
-                                    <a class="btn btn-primary confirm-button" href="https://visa.immigration.gov.ng" target="_blank">
-                                        {{ __('APPLY HERE') }}
-                                    </a>
-                                </div>
-                                <div class="col-md-6 form-group mt-5 mb-4">
-                                    <a class="btn btn-primary confirm-button" href="{{ asset('documents/'.$item->office->key.'/'.$item->visa_type.'/'.$item->file_name) }}" download>
-                                        {{ __('DOWNLOAD FILE') }}
-                                    </a>
-                                </div>
+        @foreach ($checklists as $key => $item)
+
+            <div class="card">
+                <div class="card-header" id="documentHead{{ $item->id }}">
+                    <a href="#" class="btn btn-header-link member-item collapsed" data-toggle="collapse" data-target="#document{{ $item->id }}" aria-expanded="true" aria-controls="document{{ $item->id }}">
+                        {{ $item->title }}
+                    </a>
+                </div>
+
+                <div id="document{{ $item->id }}" class="collapse" aria-labelledby="documentHead{{ $item->id }}" data-parent="#document">
+                    <div class="card-body">
+                        @php
+                            echo $item->description;
+                        @endphp
+                        <div class="row flex-column justify-content-center align-items-center mt-3">
+                            <div class="col-md-6 form-group mt-2">
+                                <a class="btn btn-primary confirm-button" href="https://visa.immigration.gov.ng" target="_blank">
+                                    {{ __('APPLY HERE') }}
+                                </a>
+                            </div>
+                            <div class="col-md-6 form-group mt-2">
+                                <a class="btn btn-primary confirm-button" href="{{ asset('documents/'.$item->office->key.'/'.$item->visa_type.'/'.$item->file_name) }}" download>
+                                    {{ __('DOWNLOAD FILE') }}
+                                </a>
+                            </div>
+                            <div class="col-md-6 form-group mt-2">
+                                <a class="btn btn-primary confirm-button" href="{{ route('booking.iframe') }}" target="_blank">
+                                    {{ __('BOOK APPOINTMENT') }}
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            @endforeach
-        </div>
+            </div>
+        @endforeach
     </div>
-@else
+</div>
     <!-- <div class="no-documents main-title text-center">No checklists found</div> -->
-@endif

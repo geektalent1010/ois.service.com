@@ -8,32 +8,37 @@ use Illuminate\Http\Request;
 
 class ApplicationController extends Controller
 {
-    public function index() {
-        return view ('pages.application.index');
+    public function index()
+    {
+        return view('pages.application.index');
     }
 
-    public function bvn() {
-        $offices = Office::orderBy('country', 'asc')->orderBy('city', 'asc')->get()->groupBy(function($data) {
+    public function bvn()
+    {
+        $offices = Office::orderBy('country', 'asc')->orderBy('city', 'asc')->get()->groupBy(function ($data) {
             return $data->country;
         });
-        return view ('pages.application.bvnApplication')
-            -> with('offices', $offices);;
+        return view('pages.application.bvnApplication')
+            ->with('offices', $offices);
+        ;
     }
 
-    public function checklists() {
-        $offices = Office::orderBy('country', 'asc')->orderBy('city', 'asc')->get()->groupBy(function($data) {
+    public function checklists()
+    {
+        $offices = Office::orderBy('country', 'asc')->orderBy('city', 'asc')->get()->groupBy(function ($data) {
             return $data->country;
         });
         return view('pages.application.checklists')
-            -> with('offices', $offices);
+            ->with('offices', $offices);
     }
 
-    public function checklistFilter(Request $request) {
+    public function checklistFilter(Request $request)
+    {
         $office = $request->get('office');
         $visaType = $request->get('visa_type');
+        $data['fees'] = Checklist::where('office_id', $office)->where('visa_type', 'Fees')->first();
         if ($office && $visaType) {
             $data['checklists'] = Checklist::where('office_id', $office)->where('visa_type', $visaType)->get();
-
             return view('pages.application.partials.documents', $data);
         } else {
             $data['checklists'] = Checklist::where('office_id', -1)->get();
