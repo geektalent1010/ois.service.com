@@ -15,6 +15,22 @@
                     </div>
                 </div>
             </div>
+        @else
+            @if (isset($checklists) && count($checklists) > 0)
+                <div class="card">
+                    <div class="card-header" id="documentHead-empty-fees">
+                        <a href="#" class="btn btn-header-link member-item collapsed" data-toggle="collapse" data-target="#document-empty-fees" aria-expanded="true" aria-controls="document-empty-fees">
+                            Center Fees
+                        </a>
+                    </div>
+                    <div id="document-empty-fees" class="collapse" aria-labelledby="documentHead-empty-fees" data-parent="#document">
+                        <div class="card-body">
+                            coming soon!
+                        </div>
+                    </div>
+                </div>
+            @endif
+
         @endif
 
         @foreach ($checklists as $key => $item)
