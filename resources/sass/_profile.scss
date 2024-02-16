@@ -115,6 +115,31 @@
             }
         }
     }
+    .profile-role-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+
+        .profile-role-header {
+            font-size: 20px;
+        }
+
+        .profile-role-details {
+            display: flex;
+            gap: 100px;
+
+            .profile-role-details-side {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .checkbox-name {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 787.98px) {
@@ -123,6 +148,17 @@
             width: 100%;
             padding-left: 15px;
             padding-right: 15px;
+        }
+
+        .profile-role-section {
+            .profile-role-details {
+                flex-direction: column;
+                gap: 10px;
+
+                .profile-role-details-side {
+                    gap: 10px;
+                }
+            }
         }
     }
 }

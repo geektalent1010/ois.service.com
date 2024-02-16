@@ -1,4 +1,4 @@
-<div class="w-100 mb-3">
+<div class="w-100">
     <div class="accordion" id="document">
         @if ($fees)
             <div class="card">
