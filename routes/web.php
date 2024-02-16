@@ -51,9 +51,11 @@ Route::group(['middleware' => ['password.protected']], function () {
 
         Route::post('/checklists/filter', 'ApplicationController@checklistFilter')->name('checklists.filter');
 
-        // Route::group(['middleware' => ['admin']], function () {
+        Route::group(['middleware' => ['admin']], function () {
+            Route::get('/roles', 'RolesController@index')->name('roles.index');
 
-        // });
+            Route::get('/client', 'ClientController@index')->name('client.index');
+        });
     });
 
     Route::get('/dashboard', 'DashboardController@index')->name('dashboard.index');

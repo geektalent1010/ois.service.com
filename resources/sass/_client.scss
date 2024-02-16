@@ -1,0 +1,93 @@
+.container-section {
+    .client-section {
+        height: calc(100vh - 120px);
+        position: absolute;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        z-index: 2;
+        top: 80px;
+        overflow-y: scroll;
+
+        .video-section {
+            min-height: calc(100vh - 120px);
+        }
+        .video-section-mobile {
+            min-height: calc(100vh - 120px);
+            top: 80px;
+        }
+        .menu-bg {
+            min-height: calc(100vh - 120px);
+        }
+        .menu-bg-mobile {
+            min-height: calc(100vh - 120px);
+            top: 80px;
+        }
+
+        .client-section-content {
+            min-height: calc(100vh - 120px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .main-title {
+                font-size: 21px;
+                font-family: 'DinPro Medium', sans-serif;
+                height: 50px;
+                min-height: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+        }
+
+        .icon {
+            width: 120px;
+        }
+
+        .title {
+            font-size: 28px;
+            font-family: 'Montserrat Medium', sans-serif;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            color: white;
+            text-align: center;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            font-family: 'Montserrat Regular', sans-serif;
+            color: white;
+            line-height: 0px;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .container-section {
+        .client-section {
+
+            .title {
+                font-size: 24px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .container-section {
+        .video-section {
+            display: none;
+        }
+
+        .video-section-mobile {
+            display: block;
+        }
+
+        .client-section {
+        }
+    }
+}

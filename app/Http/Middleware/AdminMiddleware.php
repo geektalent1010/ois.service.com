@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Illuminate\Support\Facades\Auth;
 
-class Admin
+class AdminMiddleware
 {
     /**
      * Handle an incoming request.
@@ -20,7 +20,7 @@ class Admin
             return redirect()->route('login');
         }
         $user = Auth::user();
-        if(!$user->isAdmin) {
+        if(!$user->isAdmin()) {
             abort(403, 'Unauthorized action');
         }
         return $next($request);
