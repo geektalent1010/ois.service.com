@@ -31,7 +31,7 @@
                             href="{{ route('introduction.index') }}">
                             <div class="menu-detail">
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}">
-                                <p class="back-unvisible menu-title">ABOUT OIS</p>
+                                <p class="back-unvisible menu-title">{{__('about_ois')}}</p>
                             </div>
                         </a>
                     </div>
@@ -45,7 +45,7 @@
                             href="{{ route('services.index') }}">
                             <div class="menu-detail">
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}">
-                                <p class="back-unvisible menu-title">SERVICES</p>
+                                <p class="back-unvisible menu-title">{{__('services')}}</p>
                             </div>
                         </a>
                     </div>
@@ -59,7 +59,7 @@
                             href="{{ route('innovation.index') }}">
                             <div class="menu-detail">
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}">
-                                <p class="back-unvisible menu-title">INNOVATION</p>
+                                <p class="back-unvisible menu-title">{{__('innovation')}}</p>
                             </div>
                             <div class="h-100 flex-column d-flex justify-content-center align-items-center">
                                 <p class="back-unvisible menu-title"></p>
@@ -76,7 +76,7 @@
                             href="{{ route('security.index') }}">
                             <div class="menu-detail">
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}">
-                                <p class="back-unvisible menu-title">SECURITY</p>
+                                <p class="back-unvisible menu-title">{{__('security')}}</p>
                             </div>
                         </a>
                     </div>
@@ -91,8 +91,8 @@
                             <div class="menu-detail">
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}">
                                 <div>
-                                    <p class="back-unvisible menu-title">CLIENT</p>
-                                    <p class="menu-detail">PORTAL</p>
+                                    <p class="back-unvisible menu-title">{{__('client')}}</p>
+                                    <p class="menu-detail">{{__('portal')}}</p>
                                 </div>
                             </div>
                         </a>
@@ -108,8 +108,8 @@
                             <div class="menu-detail">
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}">
                                 <div>
-                                    <p class="back-unvisible menu-title">VISA</p>
-                                    <p class="menu-detail">APPLICATION</p>
+                                    <p class="back-unvisible menu-title">{{__('visa')}}</p>
+                                    <p class="menu-detail">{{__('application')}}</p>
                                 </div>
                             </div>
                         </a>
@@ -125,8 +125,8 @@
                             <div class="menu-detail">
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}">
                                 <div>
-                                    <p class="back-unvisible menu-title">PASSPORT</p>
-                                    <p class="menu-detail">APPLICATION</p>
+                                    <p class="back-unvisible menu-title">{{__('passport')}}</p>
+                                    <p class="menu-detail">{{__('application')}}</p>
                                 </div>
                             </div>
                         </a>
@@ -142,8 +142,8 @@
                             <div class="menu-detail">
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}">
                                 <div>
-                                    <p class="back-unvisible menu-title">BVN</p>
-                                    <p class="menu-detail">APPLICATION</p>
+                                    <p class="back-unvisible menu-title">{{__('bvn')}}</p>
+                                    <p class="menu-detail">{{__('application')}}</p>
                                 </div>
                             </div>
                         </a>
@@ -159,8 +159,8 @@
                             <div class="menu-detail">
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}">
                                 <div>
-                                    <p class="back-unvisible menu-title">NIN</p>
-                                    <p class="menu-detail">APPLICATION</p>
+                                    <p class="back-unvisible menu-title">{{__('nin')}}</p>
+                                    <p class="menu-detail">{{__('application')}}</p>
                                 </div>
                             </div>
                         </a>
@@ -176,8 +176,8 @@
                             <div class="menu-detail">
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}">
                                 <div>
-                                    <p class="back-unvisible menu-title">TRACK VISA</p>
-                                    <p class="menu-detail">APPLICATION</p>
+                                    <p class="back-unvisible menu-title">{{__('track_visa')}}</p>
+                                    <p class="menu-detail">{{__('application')}}</p>
                                 </div>
                             </div>
                         </a>
@@ -193,8 +193,8 @@
                             <div class="menu-detail">
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}">
                                 <div>
-                                    <p class="back-unvisible menu-title">E-HEALTH</p>
-                                    <p class="menu-detail">PORTAL</p>
+                                    <p class="back-unvisible menu-title">{{__('e_health')}}</p>
+                                    <p class="menu-detail">{{__('portal')}}</p>
                                 </div>
                             </div>
                         </a>
@@ -210,8 +210,8 @@
                             <div class="menu-detail">
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}">
                                 <div>
-                                    <p class="back-unvisible menu-title">MONEY</p>
-                                    <p class="menu-detail">PORTAL</p>
+                                    <p class="back-unvisible menu-title">{{__('money')}}</p>
+                                    <p class="menu-detail">{{__('portal')}}</p>
                                 </div>
                             </div>
                         </a>
@@ -227,8 +227,8 @@
                             <div class="menu-detail">
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}">
                                 <div>
-                                    <p class="back-unvisible menu-title">SHOPPING</p>
-                                    <p class="menu-detail">PORTAL</p>
+                                    <p class="back-unvisible menu-title">{{__('shopping')}}</p>
+                                    <p class="menu-detail">{{__('portal')}}</p>
                                 </div>
                             </div>
                         </a>
@@ -244,8 +244,8 @@
                             <div class="menu-detail">
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}">
                                 <div>
-                                    <p class="back-unvisible menu-title">GLOBAL</p>
-                                    <p class="menu-detail">CENTERS</p>
+                                    <p class="back-unvisible menu-title">{{__('global')}}</p>
+                                    <p class="menu-detail">{{__('centers')}}</p>
                                 </div>
                             </div>
                         </a>
@@ -261,8 +261,8 @@
                             <div class="menu-detail">
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}">
                                 <div>
-                                    <p class="back-unvisible menu-title">CUSTOMER</p>
-                                    <p class="menu-detail">SUPPORT</p>
+                                    <p class="back-unvisible menu-title">{{__('customer')}}</p>
+                                    <p class="menu-detail">{{__('support')}}</p>
                                 </div>
                             </div>
                         </a>
