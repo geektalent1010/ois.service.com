@@ -1,0 +1,21 @@
+{
+    "portal": "PORTAL",
+    "application": "APPLICATION",
+    "centers": "CENTERS",
+    "support": "SUPPORT",
+    "about_ois": "ABOUT OIS",
+    "services": "SERVICES",
+    "innovation": "INNOVATION",
+    "security": "SECURITY",
+    "client": "CLIENT",
+    "visa": "VISA",
+    "passport": "PASSPORT",
+    "bvn": "BVN",
+    "nin": "NIN",
+    "track_visa": "TRACK VISA",
+    "e_health": "E-HEALTH",
+    "money": "MONEY",
+    "shopping": "SHOPPING",
+    "global": "GLOBAL",
+    "customer": "CUSTOMER"
+}
