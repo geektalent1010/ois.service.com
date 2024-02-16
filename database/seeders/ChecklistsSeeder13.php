@@ -15,4309 +15,2359 @@ class ChecklistsSeeder13 extends Seeder
     public function run()
     {
         Checklist::create([
-            'office_id' => 14,
-            'visa_type' => 'Diplomatic',
-            'title' => 'Accredited Diplomat Visa – R1A',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the                     application form or book an appointment.<br/><br/>
-
-            Accredited Diplomat Visa is issued to accredited Diplomats to Nigeria<br/><br/>
-            
-            Eligibility -<br/>
-            Accredited Diplomats<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/><br/>
-            
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/><br/>
-            
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/><br/>
-            
-            Completed application form filled in and paid for online at https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            LETTER FROM NIGERIA MINISTRY OF FOREIGN AFFAIRS<br/><br/>
-            
-            DIPLOMATIC PASSPORT<br/><br/>
-            
-            SUBMISSION:<br/>
-             All documents must be submitted to the Nigeria High Commission in London
-            ',
-            'file_name' => 'Accredited Diplomat Visa – R1A.docx',
+            'office_id' => 13,
+            'visa_type' => 'Fees',
+            'title' => 'Johannesburg Center Fees',
+            'description' => '1. Flexi Appointment $50<br/><br/>
+            This enables applicants arrive at the VAC at any time during the opening hours on the day of the appointment.<br/><br/>
+            2. Prime Time Appointment $50<br/><br/>
+            This is available for persons who can’t make it to the VAC during regular business hours.<br/><br/>
+            3. Keep my passport $40<br/><br/>
+            Applicants can submit their application without submitting their physical passport.<br/><br/>
+            4. Express Courier Return $10<br/><br/>
+            Passports will be couriered back to applicants.<br/><br/>
+            5. Door Step Biometrics $50<br/><br/>
+            Applicants can invite the VAC to pick up their application and biometrics. passport.<br/><br/>
+            6. Frequent Traveller $--<br/><br/>
+            Non specified.',
+            'file_name' => '',
         ]);
         Checklist::create([
-            'office_id' => 14,
+            'office_id' => 13,
             'visa_type' => 'Diplomatic',
-            'title' => 'Dependant of Diplomat – Aged Parents (65 years and above) Visa- R1E',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the                     application form or book an appointment.<br/><br/>
+            'title' => 'Accredited Diplomat Visa- R1A',
+            'description' => 'R1A: Accredited Diplomat Visa is issued to accredited Diplomats to Nigeria <br/><br/>
 
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with 
-            applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            LETTER FROM NIGERIA MINISTRY OF FOREIGN AFFAIRS            
+            Eligibility：<br/>
+            Accredited Diplomat <br/><br/>
+
+            Requirements: <br/><br/>
+
+            •	Original Passport  <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement <br/><br/>
+
+
+            •	Passport Photo <br/>
+            Two (2) recent passport sized photographs  <br/><br/>
+
+            •	Online Payment <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form <br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant. <br/><br/>
+
+            •	Return Ticket <br/><br/>
+
+            •	Evidence of sufficient fund <br/>
+            Original evidence of sufficient fund of applicant, with bank\'s stamp <br/><br/>
+
+            •	Evidence of Hotel Reservation/host address in Nigeria <br/><br/>
+
+            •	Letter from Nigeria’s Ministry of Foreign Affairs  <br/><br/>
+
+            •	Note Verbal
             ',
-            'file_name' => 'Dependant of Diplomat – Aged Parents (65 years and above) Visa- R1E.docx',
+            'file_name' => 'Accredited Diplomat Visa- R1A.docx',
         ]);
         Checklist::create([
-            'office_id' => 14,
+            'office_id' => 13,
             'visa_type' => 'Diplomatic',
-            'title' => 'Dependant of Diplomat (18 years and above) Visa- R1D',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the                     application form or book an appointment.<br/><br/>
+            'title' => 'Dependant (Aged Parents – 65 years & above) of Accredited Diplomat Visa-R1E',
+            'description' => 'R1E : Visa is issued to aged parents (65 years and above) of accredited diplomat as dependants with each case treated on its merit. <br/><br/>
 
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            LETTER FROM NIGERIA MINISTRY OF FOREIGN AFFAIRS<br/><br/>
-            
-            SUBMISSION:<br/>
-            All documents must be submitted to the Nigeria High Commission in London
+            Eligibility： <br/>
+            Aged Parents (65 years and above) of Accredited Diplomats <br/><br/>
+
+             Requirements: <br/><br/>
+
+            •	Original Passport <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement <br/><br/>
+
+            •	Passport Photo <br/>
+            Two (2) recent passport sized photographs  <br/><br/>
+
+            •	Online Payment <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+
+            Application form <br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, <br/><br/>
+
+            must be printed out, signed, and dated by the applicant.	<br/><br/>
+
+            •	Return Ticket <br/><br/>
+
+            •	Evidence of sufficient fund <br/>
+            Original evidence of sufficient fund of applicant, with bank\'s stamp <br/><br/>
+
+            •	Evidence of Hotel Reservation/host address in Nigeria <br/><br/>
+
+            •	Letter from Nigeria’s Ministry of Foreign Affairs <br/><br/>
+
+            •	Note Verbale
             ',
-            'file_name' => 'Dependant of Diplomat (18 years and above) Visa- R1D.docx',
+            'file_name' => 'Dependant (Aged Parents – 65 years & above) of Accredited Diplomat Visa-R1E.docx',
         ]);
         Checklist::create([
-            'office_id' => 14,
+            'office_id' => 13,
             'visa_type' => 'Diplomatic',
-            'title' => 'Dependant of Diplomat (Minor) Visa- R1C',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the                     application form or book an appointment.<br/><br/>
+            'title' => 'Dependent (18 years & above) of Accredited Diplomat Visa-R1D',
+            'description' => 'R1D: Visa is issued to dependents of accredited diplomat who are less than 18 years of age <br/><br/>
 
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            LETTER FROM NIGERIA MINISTRY OF FOREIGN AFFAIRS<br/><br/>
-            SUBMISSION:<br/>
-            All documents must be submitted to the Nigeria High Commission in London
+            Eligibility： <br/>
+            Dependents less than 18 years accompanying Accredited Diplomats <br/><br/>
+
+             Requirements: <br/><br/>
+
+            •	Original Passport <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement <br/><br/>
+
+            •	Passport Photo Two (2) recent passport sized photographs <br/><br/>
+
+            •	Online Payment <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	– 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.
+            Return Ticket <br/><br/>
+
+            •	Evidence of sufficient fund <br/>
+            Original evidence of sufficient fund of applicant, with bank\'s stamp <br/><br/>
+
+            •	Evidence of Hotel Reservation/host address in Nigeria <br/><br/>
+
+            •	Letter from Nigeria’s Ministry of Foreign Affairs <br/><br/>
+
+            •	Note Verbal
             ',
-            'file_name' => 'Dependant of Diplomat (Minor) Visa- R1C.docx',
+            'file_name' => 'Dependent (18 years & above) of Accredited Diplomat Visa-R1D.docx',
         ]);
         Checklist::create([
-            'office_id' => 14,
+            'office_id' => 13,
             'visa_type' => 'Diplomatic',
-            'title' => 'Diplomatic Visa (Non- accredited) – F2A',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the                     application form or book an appointment.<br/><br/>
+            'title' => 'Dependent (Minor) of Accredited Diplomat Visa- R1C',
+            'description' => 'R1C: Visa is a type of visa issued to dependents of accredited diplomat who are less than 18 years of age <br/><br/>
 
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            SUBMISSION:<br/>
-             All documents must be submitted to the Nigeria High Commission in London
+            Eligibility： <br/>
+            Dependents less than 18 years accompanying Accredited Diplomats <br/><br/>
+
+             Requirements: <br/><br/>
+
+            •	Original Passport <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement <br/><br/>
+
+            •	Passport Photo <br/>
+            Two (2) recent passport sized photographs <br/><br/>
+
+            •	Online Payment <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form <br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant. <br/><br/>
+
+            •	Return Ticket <br/><br/>
+
+            •	Evidence of sufficient fund <br/>
+            Original evidence of sufficient fund of applicant, with bank\'s stamp <br/><br/>
+
+            •	Evidence of Hotel Reservation/host address in Nigeria <br/><br/>
+
+            •	Letter from Nigeria’s Ministry of Foreign Affairs <br/><br/>
+
+            •	Note Verbal
             ',
-            'file_name' => 'Diplomatic Visa (Non- accredited) – F2A .docx',
+            'file_name' => 'Dependent (Minor) of Accredited Diplomat Visa- R1C.docx',
         ]);
         Checklist::create([
-            'office_id' => 14,
+            'office_id' => 13,
             'visa_type' => 'Diplomatic',
-            'title' => 'Diplomatic Visa (Non- accredited) – F2A',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the                     application form or book an appointment.<br/><br/>
+            'title' => 'Diplomatic（Non-Accredited） Visa---F2A',
+            'description' => 'F2A: Diplomatic (Non-accredited) Visa is a single-entry short visit visa for non-accredited Diplomats who wish to enter Nigeria for official business. <br/><br/>
 
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            LETTER FROM NIGERIA MINISTRY OF FOREIGN AFFAIRS<br/><br/>
-            SUBMISSION:<br/>
-            All documents must be submitted to the Nigeria High Commission in London
+            Eligibility <br/>
+            •	Non-accredited Diplomats <br/>
+            •	Temporary Work Diplomats <br/><br/>
+
+            Requirements: <br/><br/>
+
+            •	Original Passport  <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement. Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Passport Photo <br/>
+            Four (4) recent passport sized photographs  <br/><br/>
+
+            •	Online Payment <br/>
+            A copy of the Payment and Acknowledgment slip must be Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form  <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+
+            •	Flight Itinerary or Reservation  <br/><br/>
+
+            •	Evidence of sufficient fund  <br/>
+            Bank Statement of applicant with sufficient balance, with bank\'s stamp <br/><br/>
+
+            •	Evidence of Hotel Reservation/host address in Nigeria    <br/><br/>
+            •	Note Verbal
             ',
-            'file_name' => 'Diplomatic Visa (Non- accredited) – F2A.docx',
+            'file_name' => 'Diplomatic（Non-Accredited） Visa---F2A.docx',
         ]);
         Checklist::create([
-            'office_id' => 14,
+            'office_id' => 13,
+            'visa_type' => 'Diplomatic',
+            'title' => 'Spouse of Accredited Diplomat Visa- R1B',
+            'description' => 'R1B: Spouse of Accredited Diplomat Visa is issued to spouse of accredited Diplomats to Nigeria <br/><br/>
+
+            Eligibility： <br/>
+            Spouse of Accredited Diplomat <br/><br/>
+
+             Requirements: <br/><br/>
+
+            •	Original Passport <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement <br/><br/>
+
+            •	Passport Photo <br/>
+            Two (2) recent passport sized photographs  <br/><br/>
+
+            •	Online Payment <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form <br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant. <br/><br/>
+
+            •	Return Ticket <br/><br/>
+
+            •	Evidence of sufficient fund <br/>
+            Original evidence of sufficient fund of applicant, with bank\'s stamp <br/><br/>
+
+
+            Evidence of Hotel Reservation/host address in Nigeria <br/><br/>
+
+            •	Letter from Nigeria’s Ministry of Foreign Affairs <br/><br/>
+
+            •	Note Verbal
+            ',
+            'file_name' => 'Spouse of Accredited Diplomat Visa- R1B.docx',
+        ]);
+        Checklist::create([
+            'office_id' => 13,
             'visa_type' => 'Official',
-            'title' => 'Dependent of GO (18 years and above) Visa – R4D',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form.<br/><br/>
+            'title' => 'Dependent (Aged Parents – 65 years and above) of Employed Expatriate (GO) Visa – R4E',
+            'description' => 'R4E: Visa is issued to aged parents (65 years and above) of expatriates employed by Government <br/><br/>
 
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT AND ACKNOWLEDGMENT RECEIPTS: <br/>
-            Valid Payment and Acknowledgement slips, available once online payment has been complete – Print both from https://portal.immigration.gov.ng/visa/OnlineQueryStatus<br/><br/>
-            
-            LETTER OF REQUEST: <br/>
-            A Typed letter of request addressed to the Nigeria High Commission London, from the employer that you will be working for, requesting the STR Visa for the applicant, this must contain the applicant’s full name and It must state that the employer takes full immigration responsibilities. This must be signed and dated by a senior. (4 Copies)<br/><br/>
-            
-            TYPED LETTER from the principal immigrant:<br/>
-             A formal typed letter, addressed to the Nigeria high commission London, from principal immigrant, stating the purpose of the visa and It must include the address where the applicant is staying. It must also be dated and signed by the spouse.(4 Copies)<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a 1kg/A3 pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £30 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £100 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            PROCESSING TIMES- <br/><br/>
-            Regular Service- Minimum of 10 Working Days<br/>
-            Express Service- Minimum of 6 Working Days<br/><br/>
-            
-            FEE BREAKDOWN-<br/><br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/>
-            NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
+            Eligibility： <br/>
+            Aged Parents (65 years and above) accompanying employed Expatriates employed by Government in Nigeria <br/><br/>
+
+             Requirements: <br/><br/>
+
+            •	Original Passport <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Invitation letter   <br/>
+            An Original invitation letter from Nigeria. This must be addressed to the Nigeria Consulate Johannesburg. It must be on letter headed paper, signed with the full name and dated by a Nigerian staff at the company. The statement “accepting full immigration responsibilities” must be included. Applicant\'s name and passport number must be stated. <br/><br/>
+
+            •	Certificate of incorporation/ Business Registration <br/>
+            Certificate of incorporation or Business Permit of the inviting company in Nigeria <br/><br/>
+
+            •	Inviter’s passport copy <br/>
+            Photocopy of Inviter\'s International Passport Data page (6 months validity)  <br/><br/>
+
+
+            •	Embassy Admin Fee <br/><br/>
+
+            •	Passport Photo <br/>
+            Three (3) recent passport sized photographs  <br/><br/>
+
+            •	Online Payment <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	– 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form <br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant. <br/><br/>
+
+
+            •	Proof of Relationship and dependability with the Expatriate <br/><br/>
+            •	IMM/22 RESIDENCE FORM <br/><br/>
+            For downloading the form, please visit www.oisservices.com
             ',
-            'file_name' => 'Dependent of GO (18 years and above) Visa – R4D .docx',
+            'file_name' => 'Dependent (Aged Parents – 65 years and above) of Employed Expatriate (GO) Visa – R4E.docx',
         ]);
         Checklist::create([
-            'office_id' => 14,
+            'office_id' => 13,
             'visa_type' => 'Official',
-            'title' => 'Dependent of GO (Aged Parent – 65 and above) Visa – R4E',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form.<br/><br/>
+            'title' => 'Dependent (Minor) of Employed Expatriate (Government Official) Visa – R4C',
+            'description' => 'R4C: Dependent (Minor) of employed Expatriate (Government Official) Visa is visa issued to dependent of expatriate employed by Government, who are less than 18 years of age <br/><br/>
 
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT AND ACKNOWLEDGMENT RECEIPTS: <br/>
-            Valid Payment and Acknowledgement slips, available once online payment has been complete – Print both from https://portal.immigration.gov.ng/visa/OnlineQueryStatus<br/><br/>
-            
-            LETTER OF REQUEST: <br/>
-            A Typed letter of request addressed to the Nigeria High Commission London, from the employer that you will be working for, requesting the STR Visa for the applicant, this must contain the applicant’s full name and It must state that the employer takes full immigration responsibilities. This must be signed and dated by a senior. (4 Copies)<br/><br/>
-            
-            TYPED LETTER from the principal immigrant:<br/>
-             A formal typed letter, addressed to the Nigeria high commission London, from principal immigrant, stating the purpose of the visa and It must include the address where the applicant is staying. It must also be dated and signed by the spouse.(4 Copies)<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a 1kg/A3 pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £30 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £100 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            PROCESSING TIMES- <br/><br/>
-            Regular Service- Minimum of 10 Working Days<br/>
-            Express Service- Minimum of 6 Working Days<br/><br/>
-            
-            FEE BREAKDOWN-<br/><br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/>
-            NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
+            Eligibility： <br/>
+            Dependents (less than 18 years) accompanying Expatriates employed by   Government in Nigeria  <br/><br/>
+
+            Requirements: <br/><br/>
+
+            •	Original Passport <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement
+            Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Invitation letter   <br/>
+            An Original invitation letter from Nigeria. This must be addressed to the Nigeria Consulate Johannesburg. It must be on letter headed paper signed the full name and dated by a Nigerian member of staff at the company. The statement “accepting full immigration responsibilities” must be included. Applicant\'s name and passport number must be stated. <br/><br/>
+            •	Certificate of incorporation/ Business Registration <br/>
+            Certificate of incorporation or Business registration of the inviting company in Nigeria <br/><br/>
+
+            •	Inviter’s passport copy <br/>
+            Photocopy of Inviter\'s International Passport Data page (6 months validity)  <br/><br/>
+
+            •	Copy of marriage certificate <br/><br/>
+
+            •	Letter of consent <br/>
+            Letter of consent (signed and dated) form both parents <br/><br/>
+
+            •	Copy of marriage certificate <br/><br/>
+
+            •	Copy of birth certificate <br/><br/>
+
+            •	Embassy Admin Fee <br/><br/>
+
+            •	Passport Photo <br/>
+            Three (3) recent passport sized photographs <br/><br/>
+
+            •	Online Payment <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form <br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant. <br/><br/>
+
+            •	IMM/22 RESIDENCE FORM <br/>
+            For downloading the form, please visit www.oisservices.com
             ',
-            'file_name' => 'Dependent of GO (Aged Parent – 65 and above) Visa – R4E .docx',
+            'file_name' => 'Dependent (Minor) of Employed Expatriate (Government Official) Visa – R4C.docx',
         ]);
         Checklist::create([
-            'office_id' => 14,
+            'office_id' => 13,
             'visa_type' => 'Official',
-            'title' => 'Dependent of GO (Minor) Visa – R4C',
-            'description' => 'Dependents (less than 18 years) accompanying Expatriates employed by Government in Nigeria
-            All minors must be accompanied by one of their parents/legal guardians when submitting the documents.
-            <br/><br/>
+            'title' => 'Dependent of (18 years and above) of Employed Expatriate (GO) Visa – R4D',
+            'description' => 'R4D: Dependent of Employed Expatriate (GO) Visa is issued to dependents of expatriate employed by Government, who are 18 years and above <br/><br/>
 
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT AND ACKNOWLEDGMENT RECEIPTS: <br/>
-            Valid Payment and Acknowledgement slips, available once online payment has been complete – Print both from https://portal.immigration.gov.ng/visa/OnlineQueryStatus<br/><br/>
-            
-            LETTER OF REQUEST: <br/>
-            A Typed letter of request addressed to the Nigeria High Commission London, from the employer that you will be working for, requesting the STR Visa for the applicant, this must contain the applicant’s full name and It must state that the employer takes full immigration responsibilities. This must be signed and dated by a senior. (4 Copies)<br/><br/>
-            
-            TYPED LETTER from the principal immigrant:<br/>
-             A formal typed letter, addressed to the Nigeria high commission London, from principal immigrant, stating the purpose of the visa and It must include the address where the applicant is staying. It must also be dated and signed by the spouse.(4 Copies)<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a 1kg/A3 pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £30 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £100 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            PROCESSING TIMES- <br/><br/>
-            Regular Service- Minimum of 10 Working Days<br/>
-            Express Service- Minimum of 6 Working Days<br/><br/>
-            
-            FEE BREAKDOWN-<br/><br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/>
-            NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
+            Eligibility： <br/>
+            Dependents (18 years and above) accompanying Expatriates employed by Government in Nigeria  <br/><br/>
+            Requirements: <br/><br/>
+
+            •	Original Passport <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Invitation letter   <br/>
+            An Original invitation letter from Nigeria. This must be addressed to the Nigeria Consulate Johannesburg. It must be on letter headed paper signed the full name and dated by a Nigerian member of staff at the company. The statement “accepting full immigration responsibilities” must be included. Applicant\'s name and passport number must be stated. <br/><br/>
+            •	Certificate of incorporation/ Business Registration <br/>
+            Certificate of incorporation or Business registration of the inviting company in Nigeria <br/><br/>
+
+            •	Inviter’s passport copy <br/>
+            Photocopy of Inviter\'s International Passport Data page (6 months validity)  <br/><br/>
+
+            •	Copy of marriage certificate <br/><br/>
+
+            •	Letter of consent <br/>
+            Letter of consent (signed and dated) form both parents <br/><br/>
+
+            •	Copy of marriage certificate <br/><br/>
+
+            •	Copy of birth certificate <br/><br/>
+
+            •	Embassy Admin Fee <br/><br/>
+
+            •	Passport Photo <br/>
+            Three (3) recent passport sized photographs <br/><br/>
+
+            •	Online Payment <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form <br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant. <br/><br/>
+
+            •	IMM/22 RESIDENCE FORM <br/>
+            For downloading the form, please visit www.oisservices.com
             ',
-            'file_name' => 'Dependent of GO (Minor) Visa – R4C.docx',
+            'file_name' => 'Dependent of (18 years and above) of Employed Expatriate (GO) Visa – R4D.docx',
         ]);
         Checklist::create([
-            'office_id' => 14,
+            'office_id' => 13,
             'visa_type' => 'Official',
-            'title' => 'Employment Expatriate ( Government Official) Visa – R4A',
-            'description' => 'Tick when completePlease read this checklist and Important Information in full before you start completing the application form.<br/><br/>
+            'title' => 'Employment Visa – Expatriate (Government Official) Visa: R4A',
+            'description' => 'R4A: Employment Visa – Expatriate (Government Official) is issued to expatriates who wish to obtain employment with Government as Government Official in Nigeria <br/><br/>
 
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT AND ACKNOWLEDGMENT RECEIPTS: <br/>
-            Valid Payment and Acknowledgement slips, available once online payment has been complete – Print both from https://portal.immigration.gov.ng/visa/OnlineQueryStatus<br/><br/>
-            
-            LETTER OF REQUEST: <br/>
-            A Typed letter of request addressed to the Nigeria High Commission London, from the employer that you will be working for, requesting the STR Visa for the applicant, this must contain the applicant’s full name and It must state that the employer takes full immigration responsibilities. This must be signed and dated by a senior. (4 Copies)<br/><br/>
-            
-            TYPED LETTER from the principal immigrant:<br/>
-             A formal typed letter, addressed to the Nigeria high commission London, from principal immigrant, stating the purpose of the visa and It must include the address where the applicant is staying. It must also be dated and signed by the spouse.(4 Copies)<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a 1kg/A3 pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £30 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £100 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            PROCESSING TIMES- <br/><br/>
-            Regular Service- Minimum of 10 Working Days<br/>
-            Express Service- Minimum of 6 Working Days<br/><br/>
-            
-            FEE BREAKDOWN-<br/><br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/>
-            NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
+            Eligibility： <br/>
+            Expatriates wishing to work as Government Officials in Nigeria <br/><br/>
+
+            Requirements: <br/><br/>
+
+            •	Original Passport <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Note Verbal  <br/>
+            Invitation letter   <br/>
+            An Original invitation letter from Nigeria. This must be addressed to the Nigeria Consulate
+            Johannesburg. It must be on letter headed paper signed the full name and dated by a Nigerian member of staff at the company. The statement “accepting full immigration responsibilities” must be included. Applicant\'s name and passport number must be stated. <br/><br/>
+
+            •	Certificate of incorporation/ Business Registration <br/>
+            Certificate of incorporation or Business Registration of the inviting company in Nigeria <br/><br/>
+
+            •	Inviter’s passport copy <br/>
+            Photocopy of Inviter\'s International Passport Data page (6 months validity)  <br/><br/>
+
+            •	Employment letter <br/>
+            Letter of Offer of Appointment specifying designation and duties of employee/applicant <br/><br/>
+
+            •	Expatriate quota <br/>
+            Original and certified true copy of Approved Expatriate Quota from Immigration Services    <br/><br/>
+            •	IMM/22 RESIDENCE FORM <br/>
+            For downloading the form, please visit www.oisservices.com <br/><br/>
+
+
+            •	Acceptance letter <br/>
+            Acceptance of Appointment <br/><br/>
+
+            •	CV <br/><br/>
+
+            •	Embassy Admin Fee <br/><br/>
+
+            •	Passport Photo <br/>
+            Four (4) recent passport sized photographs  <br/><br/>
+
+            •	Online Payment <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	– 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form <br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant. <br/><br/>
+
+            •	Professional Certificate /Academic Certificate notarization <br/>
+            Photocopies of Professional Certificate /Academic Certificate.
             ',
-            'file_name' => 'Employment Expatriate ( Government Official) Visa – R4A.docx',
+            'file_name' => 'Employment Visa – Expatriate (Government Official) Visa- R4A.docx',
         ]);
         Checklist::create([
-            'office_id' => 14,
+            'office_id' => 13,
             'visa_type' => 'Official',
-            'title' => 'Spouse of GO Visa – R4B',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form.<br/><br/>
+            'title' => 'Spouse of Expatriate Expatriate (Government Official) Visa – R4B',
+            'description' => 'R4B: Spouse of Employed Expatriate (Government Official) Visa is issued to spouse of expatriate employed by Government as Government Official in Nigeria <br/><br/>
 
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT AND ACKNOWLEDGMENT RECEIPTS: <br/>
-            Valid Payment and Acknowledgement slips, available once online payment has been complete – Print both from https://portal.immigration.gov.ng/visa/OnlineQueryStatus<br/><br/>
-            
-            LETTER OF REQUEST: <br/>
-            A Typed letter of request addressed to the Nigeria High Commission London, from the employer that you will be working for, requesting the STR Visa for the applicant, this must contain the applicant’s full name and It must state that the employer takes full immigration responsibilities. This must be signed and dated by a senior. (4 Copies)<br/><br/>
-            
-            TYPED LETTER from the principal immigrant:<br/>
-             A formal typed letter, addressed to the Nigeria high commission London, from principal immigrant, stating the purpose of the visa and It must include the address where the applicant is staying. It must also be dated and signed by the spouse.(4 Copies)<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a 1kg/A3 pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £30 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £100 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            PROCESSING TIMES- <br/><br/>
-            Regular Service- Minimum of 10 Working Days<br/>
-            Express Service- Minimum of 6 Working Days<br/><br/>
-            
-            FEE BREAKDOWN-<br/><br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/>
-            NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
+            Eligibility： <br/>
+            Spouse accompanying Expatriates employed by Government in Nigeria <br/><br/>
+
+            Requirements: <br/><br/>
+
+            •	Original Passport <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Note Verbal  <br/><br/>
+
+            •	Invitation letter   <br/>
+            An Original invitation letter from Nigeria. This must be addressed to the Nigeria Consulate Johannesburg. It must be on letter headed paper signed the full name and dated by a Nigerian member of staff at the company. The statement “accepting full immigration responsibilities” must be included. Applicant\'s name and passport number must be stated. <br/><br/>
+
+            •	Certificate of incorporation/ Business Registration <br/>
+            Certificate of incorporation or Business Registration of the inviting company in Nigeria <br/><br/>
+
+            •	Inviter’s passport copy <br/>
+            Photocopy of Inviter\'s International Passport Data page (6 months validity)  <br/><br/>
+
+            Expatriate quota <br/>
+            Original and certified true copy of Approved Expatriate Quota from Immigration Services    <br/><br/>
+            •	IMM/22 RESIDENCE FORM <br/>
+            For downloading the form, please visit www.oisservices.com <br/><br/>
+
+            •	Marriage Certificate <br/><br/>
+
+            •	Embassy Admin Fee <br/><br/>
+
+            •	Passport Photo <br/>
+            Three (3) recent passport sized photographs  <br/><br/>
+
+            •	Online Payment <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	– 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form <br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.
             ',
-            'file_name' => 'Spouse of GO Visa – R4B.docx',
+            'file_name' => 'Spouse of Expatriate Expatriate (Government Official) Visa – R4B.docx',
         ]);
         Checklist::create([
-            'office_id' => 14,
+            'office_id' => 13,
             'visa_type' => 'UN',
-            'title' => 'Dependent of INGO (Aged Parent – 65 and above) Visa – R5E',
-            'description' => 'Please read this checklist and Important Information in full before you star<br/><br/>
+            'title' => 'Employment Visa – Dependent (18 years and above) of INGO Staff: R5D',
+            'description' => 'R5D: Employment Visa – Dependent (18 years and above) of INGO Staff is issued to dependents of INGO Staff, who are 18 years and above<br/><br/>
 
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT AND ACKNOWLEDGMENT RECEIPTS: <br/>
-            Valid Payment and Acknowledgement slips, available once online payment has been complete – Print both from https://portal.immigration.gov.ng/visa/OnlineQueryStatus<br/><br/>
-            
-            LETTER OF REQUEST: <br/>
-            A Typed letter of request addressed to the Nigeria High Commission London, from the employer that you will be working for, requesting the STR Visa for the applicant, this must contain the applicant’s full name and It must state that the employer takes full immigration responsibilities. This must be signed and dated by a senior. (4 Copies)<br/><br/>
-            
-            TYPED LETTER from the principal immigrant:<br/>
-             A formal typed letter, addressed to the Nigeria high commission London, from principal immigrant, stating the purpose of the visa and It must include the address where the applicant is staying. It must also be dated and signed by the spouse.(4 Copies)<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a 1kg/A3 pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £30 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £100 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/><br/>
-            Regular Service- Minimum of 10 Working Days<br/>
-            Express Service- Minimum of 6 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/><br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
+            Eligibility： <br/>
+            Dependents (18 years and above) accompanying INGO workers <br/><br/>
+
+             Requirements: <br/><br/>
+
+            •	Original Passport <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Invitation letter   <br/>
+            An Original invitation letter from Nigeria. This must be addressed to the Nigeria Consulate
+            Johannesburg. It must be on letter headed paper signed the full name and dated by a Nigerian member of staff at the company. The statement “accepting full immigration responsibilities” must be included. Applicant\'s name and passport number must be stated.
+            •	MoU with Nigeria National Planning Commission (NPC) and appropriate security clearance (for special security cases) <br/><br/>
+
+            •	Inviter’s passport copy <br/>
+            Photocopy of Inviter\'s International Passport Data page (6 months validity)  <br/><br/>
+
+            •	Copy of marriage certificate <br/><br/>
+
+            •	Letter of consent <br/>
+            Letter of consent (signed and dated) form both parents <br/><br/>
+
+            •	Copy of marriage certificate <br/><br/>
+
+            •	Copy of birth certificate <br/><br/>
+
+            •	Embassy Admin Fee <br/><br/>
+
+            •	Passport Photo <br/>
+            Three (3) recent passport sized photographs <br/><br/>
+
+            •	Online Payment <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form <br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.	 <br/><br/>
+
+            •	IMM/22 RESIDENCE FORM <br/>
+            For downloading the form, please visit www.oisservices.com
             ',
-            'file_name' => 'Dependent of INGO (Aged Parent – 65 and above) Visa – R5E.docx',
+            'file_name' => 'Employment Visa – Dependent (18 years and above) of INGO Staff- R5D.docx',
         ]);
         Checklist::create([
-            'office_id' => 14,
+            'office_id' => 13,
             'visa_type' => 'UN',
-            'title' => 'Dependent of INGO (Minor) Visa – R5C',
-            'description' => 'Please read this checklist and Important Information in full before you star<br/><br/>
+            'title' => 'Employment Visa – Dependent (aged parents, 65 years and above) of INGO Staff: R5E',
+            'description' => 'R5E: Employment Visa – Dependent (65 years and above) of INGO Staff is issued to aged parents (65 years and above) of INGO Staff,  <br/><br/>
 
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT AND ACKNOWLEDGMENT RECEIPTS: <br/>
-            Valid Payment and Acknowledgement slips, available once online payment has been complete – Print both from https://portal.immigration.gov.ng/visa/OnlineQueryStatus<br/><br/>
-            
-            LETTER OF REQUEST: <br/>
-            A Typed letter of request addressed to the Nigeria High Commission London, from the employer that you will be working for, requesting the STR Visa for the applicant, this must contain the applicant’s full name and It must state that the employer takes full immigration responsibilities. This must be signed and dated by a senior. (4 Copies)<br/><br/>
-            
-            TYPED LETTER from the principal immigrant:<br/>
-             A formal typed letter, addressed to the Nigeria high commission London, from principal immigrant, stating the purpose of the visa and It must include the address where the applicant is staying. It must also be dated and signed by the spouse.(4 Copies)<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a 1kg/A3 pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £30 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £100 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/><br/>
-            Regular Service- Minimum of 10 Working Days<br/>
-            Express Service- Minimum of 6 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/><br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
+            Eligibility： <br/>
+            Aged parents (65 years and above) accompanying INGO workers <br/><br/>
+
+             Requirements: <br/><br/>
+
+            •	Original Passport <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Invitation letter   <br/>
+            An Original invitation letter from Nigeria. This must be addressed to the Nigeria Consulate Johannesburg. It must be on letter headed paper, signed with the full name and dated by a Nigerian staff at the company. The statement “accepting full immigration responsibilities” must be included. Applicant\'s name and passport number must be stated. <br/><br/>
+
+            •	Certificate of incorporation/ Business Registration <br/>
+            Certificate of incorporation or Business Permit of the inviting company in Nigeria <br/><br/>
+
+            •	Inviter’s passport copy <br/>
+            Photocopy of Inviter\'s International Passport Data page (6 months validity)  <br/><br/>
+
+
+            •	Embassy Admin Fee <br/><br/>
+
+            •	Passport Photo <br/>
+            Three (3) recent passport sized photographs  <br/><br/>
+
+            •	Online Payment <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	– 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form <br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+
+
+            •	Proof of Relationship and dependability with the Expatriate <br/><br/>
+            •	IMM/22 RESIDENCE FORM <br/>
+            For downloading the form, please visit www.oisservices.com <br/><br/>
+
+            •	MoU with Nigeria National Planning Commission (NPC) and appropriate security clearance (for special security cases)
             ',
-            'file_name' => 'Dependent of INGO (Minor) Visa – R5C.docx',
+            'file_name' => 'Employment Visa – Dependent (aged parents- 65 years and above) of INGO Staff- R5E.docx',
         ]);
         Checklist::create([
-            'office_id' => 14,
+            'office_id' => 13,
             'visa_type' => 'UN',
-            'title' => 'Dependent of INGO Staff (18 years & above) Visa – R5D',
-            'description' => 'Please read this checklist and Important Information in full before you star<br/><br/>
+            'title' => 'Employment Visa – Dependent (Minor) of INGO Staff: R5C',
+            'description' => 'R5C: Employment Visa – Dependent (Minor) of INGO Staff is visa issued to dependents of INGO Staff, who are less than 18 years of age <br/><br/>
 
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT AND ACKNOWLEDGMENT RECEIPTS: <br/>
-            Valid Payment and Acknowledgement slips, available once online payment has been complete – Print both from https://portal.immigration.gov.ng/visa/OnlineQueryStatus<br/><br/>
-            
-            LETTER OF REQUEST: <br/>
-            A Typed letter of request addressed to the Nigeria High Commission London, from the employer that you will be working for, requesting the STR Visa for the applicant, this must contain the applicant’s full name and It must state that the employer takes full immigration responsibilities. This must be signed and dated by a senior. (4 Copies)<br/><br/>
-            
-            TYPED LETTER from the principal immigrant:<br/>
-             A formal typed letter, addressed to the Nigeria high commission London, from principal immigrant, stating the purpose of the visa and It must include the address where the applicant is staying. It must also be dated and signed by the spouse.(4 Copies)<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a 1kg/A3 pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £30 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £100 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/><br/>
-            Regular Service- Minimum of 10 Working Days<br/>
-            Express Service- Minimum of 6 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/><br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
+            Eligibility： <br/>
+            Dependents (less than 18 years) accompanying INGO workers <br/><br/>
+
+             Requirements: <br/><br/>
+
+            •	Original Passport <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Invitation letter  <br/>
+            An Original invitation letter from Nigeria. This must be addressed to the Nigeria Consulate Johannesburg. It must be on letter headed paper signed the full name and dated by a Nigerian member of staff at the company. The statement “accepting full immigration responsibilities” must be included. Applicant\'s name and passport number must be stated. <br/><br/>
+            •	MoU with Nigeria National Planning Commission (NPC) and appropriate security clearance (for special security cases) <br/><br/>
+
+            •	Inviter’s passport copy <br/>
+            Photocopy of Inviter\'s International Passport Data page (6 months validity)  <br/><br/>
+
+            •	Copy of marriage certificate <br/><br/>
+
+            •	Letter of consent <br/>
+            Letter of consent (signed and dated) form both parents <br/><br/>
+
+            •	Copy of marriage certificate <br/><br/>
+
+            •	Copy of birth certificate <br/><br/>
+
+            •	Embassy Admin Fee <br/><br/>
+
+            •	Passport Photo <br/>
+            Three (3) recent passport sized photographs <br/><br/>
+
+            •	Online Payment <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form <br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+
+            •	IMM/22 RESIDENCE FORM <br/>
+            For downloading the form, please visit www.oisservices.com
             ',
-            'file_name' => 'Dependent of INGO Staff (18 years & above) Visa – R5D.docx',
+            'file_name' => 'Employment Visa – Dependent (Minor) of INGO Staff- R5C.docx',
         ]);
         Checklist::create([
-            'office_id' => 14,
+            'office_id' => 13,
             'visa_type' => 'UN',
-            'title' => 'Employment (INGO) Visa – R5A',
-            'description' => 'Please read this checklist and Important Information in full before you star<br/><br/>
+            'title' => 'Employment Visa – INGO: R5A',
+            'description' => 'R5A: Employment Visa (INGO) is issued to expatriates who wish to obtain employment with International Non-Government Organizations operating in Nigeria. <br/><br/>
 
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT AND ACKNOWLEDGMENT RECEIPTS: <br/>
-            Valid Payment and Acknowledgement slips, available once online payment has been complete – Print both from https://portal.immigration.gov.ng/visa/OnlineQueryStatus<br/><br/>
-            
-            LETTER OF REQUEST: <br/>
-            A Typed letter of request addressed to the Nigeria High Commission London, from the employer that you will be working for, requesting the STR Visa for the applicant, this must contain the applicant’s full name and It must state that the employer takes full immigration responsibilities. This must be signed and dated by a senior. (4 Copies)<br/><br/>
-            
-            TYPED LETTER from the principal immigrant:<br/>
-             A formal typed letter, addressed to the Nigeria high commission London, from principal immigrant, stating the purpose of the visa and It must include the address where the applicant is staying. It must also be dated and signed by the spouse.(4 Copies)<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a 1kg/A3 pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £30 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £100 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/><br/>
-            Regular Service- Minimum of 10 Working Days<br/>
-            Express Service- Minimum of 6 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/><br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
+            Eligibility： <br/>
+            INGO workers <br/><br/>
+
+             Requirements: <br/><br/>
+
+            •	Original Passport  <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Passport Photo <br/>
+            Four (4) recent passport sized photographs <br/><br/>
+            •	Online Payment  <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	– 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form  <br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant. <br/><br/>
+
+            •	Embassy Admin Fee <br/><br/>
+            •	IMM/22 RESIDENCE FORM <br/>
+            For downloading the form, please visit www.oisservices.com <br/><br/>
+
+
+            •	MoU with Nigeria National Planning Commission (NPC) and appropriate security clearance (for special security cases) <br/><br/>
+
+            •	Invitation Letter for R5A Visa by the Employer accepting Immigration Responsibility  <br/><br/>
+
+            An Original invitation letter from Nigeria. This must be addressed to the Nigeria Consulate Johannesburg. It must be on letter headed paper, signed with the full name and dated by a Nigerian staff at the company. The statement “accepting full immigration responsibilities” must be included. Applicant\'s name and passport number must be stated. <br/><br/>
+
+            •	Inviter’s passport copy <br/>
+            Photocopy of Inviter\'s International Passport Data page (6 months validity)  <br/><br/>
+            •	CV/Resume <br/><br/>
+            •	Photocopies of credentials/certificates
             ',
-            'file_name' => 'Employment (INGO) Visa – R5A.docx',
+            'file_name' => 'Employment Visa – INGO- R5A.docx',
         ]);
         Checklist::create([
-            'office_id' => 14,
+            'office_id' => 13,
             'visa_type' => 'UN',
-            'title' => 'Spouse of INGO Staff Visa – R5B',
-            'description' => 'Please read this checklist and Important Information in full before you star<br/><br/>
+            'title' => 'Employment Visa – Spouse of INGO Staff: R5B',
+            'description' => 'R5B: Employment Visa – Spouse of INGO Staff is issued to spouse of INGO Staff (INGO) <br/><br/>
 
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT AND ACKNOWLEDGMENT RECEIPTS: <br/>
-            Valid Payment and Acknowledgement slips, available once online payment has been complete – Print both from https://portal.immigration.gov.ng/visa/OnlineQueryStatus<br/><br/>
-            
-            LETTER OF REQUEST: <br/>
-            A Typed letter of request addressed to the Nigeria High Commission London, from the employer that you will be working for, requesting the STR Visa for the applicant, this must contain the applicant’s full name and It must state that the employer takes full immigration responsibilities. This must be signed and dated by a senior. (4 Copies)<br/><br/>
-            
-            TYPED LETTER from the principal immigrant:<br/>
-             A formal typed letter, addressed to the Nigeria high commission London, from principal immigrant, stating the purpose of the visa and It must include the address where the applicant is staying. It must also be dated and signed by the spouse.(4 Copies)<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a 1kg/A3 pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £30 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £100 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/><br/>
-            Regular Service- Minimum of 10 Working Days<br/>
-            Express Service- Minimum of 6 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/><br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
-            ',
-            'file_name' => 'Spouse of INGO Staff Visa – R5B.docx',
-        ]);
-        Checklist::create([
-            'office_id' => 14,
-            'visa_type' => 'Standard',
-            'title' => 'Business- Multiple Entry Visa – F4B',
-            'description' => 'Citizens of countries who offer similar multiple entry business visa to Nigerian citizens<br/><br/>
+               Eligibility： <br/>
+               Spouse accompanying INGO workers <br/><br/>
 
-            Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
-            
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            EVIDENCE OF SUFFICIENT FUNDS:<br/>
-            Proof of funds from your employer.<br/><br/>
-            
-            FLIGHT TICKET AND HOTEL RESERVATIONS: <br/>
-            Please provide evidence of your return ticket and your hotel accommodation.<br/><br/>
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IF SELF EMPLOYED- <br/>
-            ●	You must provide a typed letter stating that you are self-employed and your company name. You must also state the purpose of the trip to Nigeria and that you take financial responsibility for yourself. <br/><br/>
-            ●	You must also provide a clear copy of your most recent bank statement including the current balance showing your full name and address. The bank statement needs to be a minimum of £500 in credit, overdrafts are not included, original must be shown at the time of submission. <br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/><br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/><br/>
-             1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM.
-            ',
-            'file_name' => 'Business- Multiple Entry Visa – F4B .docx',
-        ]);
-        Checklist::create([
-            'office_id' => 14,
-            'visa_type' => 'Standard',
-            'title' => 'Business-frequently Travelled Executive visa – F4C',
-            'description' => 'Citizens of countries who offer similar multiple entry business visa to Nigerian citizens<br/><br/>
+                Requirements: <br/><br/>
 
-            Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
-            
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            EVIDENCE OF SUFFICIENT FUNDS:<br/>
-            Proof of funds from your employer.<br/><br/>
-            
-            FLIGHT TICKET AND HOTEL RESERVATIONS: <br/>
-            Please provide evidence of your return ticket and your hotel accommodation.<br/><br/>
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IF SELF EMPLOYED- <br/>
-            ●	You must provide a typed letter stating that you are self-employed and your company name. You must also state the purpose of the trip to Nigeria and that you take financial responsibility for yourself. <br/><br/>
-            ●	You must also provide a clear copy of your most recent bank statement including the current balance showing your full name and address. The bank statement needs to be a minimum of £500 in credit, overdrafts are not included, original must be shown at the time of submission. <br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/><br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/><br/>
-             1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM.
-            ',
-            'file_name' => 'Business-frequently Travelled Executive visa – F4C.docx',
-        ]);
-        Checklist::create([
-            'office_id' => 14,
-            'visa_type' => 'Standard',
-            'title' => 'Visiting Visa- Multiple Entry- F6B',
-            'description' => 'Citizens of countries who offer similar multiple entry business visa to Nigerian citizens<br/><br/>
+            •	Original Passport  <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
 
-            Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
-            
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            EVIDENCE OF SUFFICIENT FUNDS:<br/>
-            Proof of funds from your employer.<br/><br/>
-            
-            FLIGHT TICKET AND HOTEL RESERVATIONS: <br/>
-            Please provide evidence of your return ticket and your hotel accommodation.<br/><br/>
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IF SELF EMPLOYED- <br/>
-            ●	You must provide a typed letter stating that you are self-employed and your company name. You must also state the purpose of the trip to Nigeria and that you take financial responsibility for yourself. <br/><br/>
-            ●	You must also provide a clear copy of your most recent bank statement including the current balance showing your full name and address. The bank statement needs to be a minimum of £500 in credit, overdrafts are not included, original must be shown at the time of submission. <br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/><br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/><br/>
-             1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM.
-            ',
-            'file_name' => 'Visiting Visa- Multiple Entry- F6B.docx',
-        ]);
-        Checklist::create([
-            'office_id' => 14,
-            'visa_type' => 'Standard',
-            'title' => 'Academic Exchange Programme (Student, scholar, Lecturer) Visa – F7H',
-            'description' => 'F7H - Academic Exchange Programme (AEP) Visa is a single entry visa issued for the purpose of academic exchange programme<br/><br/>
-            Eligibility -<br/>
-            Students<br/>
-            scholars<br/>
-            lecturers<br/><br/>
-            
-            Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
-            
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            EVIDENCE OF SUFFICIENT FUNDS:<br/>
-            A clear copy of the applicant’s full up to date last bank statement showing all details including their end balance, name and address. The statement must also include transactions during the week of the applicant’s appointment in our centre. WE WILL NOT ACCEPT ONLINE BANKING STATEMENTS IF THEY ARE NOT STAMPED OR CERTIFIED BY YOUR BANK. THE BANK STATEMENT MUST SHOW A MINIMUM BALANCE OF £500.00 IN CREDIT.<br/><br/>
-            
-            INVITATION LETTER FROM INSTITUTION IN NIGERIA:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            VALID NIGERIAN PASSPORT DATA PAGE OF THE INVITER: <br/>
-            Copy of the inviters Valid Nigerian Passport, showing in full the data page with the inviters’ signature. <br/>
-            If the inviter is non Nigerian a copy of the inviters valid residency permit (minimum 6 months validity) and their valid passport data page. <br/><br/>
-            
-            FLIGHT TICKET AND HOTEL RESERVATIONS: <br/>
-            Please provide evidence of your return ticket and evidence of accommodation.<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
-            ',
-            'file_name' => 'Academic Exchange Programme (Student, scholar, Lecturer) Visa – F7H.docx',
-        ]);
-        Checklist::create([
-            'office_id' => 14,
-            'visa_type' => 'Standard',
-            'title' => 'Artist/Entertainer/Musician Visa – F7F',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
-            
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            EVIDENCE OF SUFFICIENT FUNDS:<br/>
-            A clear copy of the applicant’s full up to date last bank statement showing all details including their end balance, name and address. The statement must also include transactions during the week of the applicant’s appointment in our centre. WE WILL NOT ACCEPT ONLINE BANKING STATEMENTS IF THEY ARE NOT STAMPED OR CERTIFIED BY YOUR BANK. THE BANK STATEMENT MUST SHOW A MINIMUM BALANCE OF £500.00 IN CREDIT.<br/><br/>
-            
-            INVITATION LETTER FROM INSTITUTION IN NIGERIA:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            VALID NIGERIAN PASSPORT DATA PAGE OF THE INVITER: <br/>
-            Copy of the inviters Valid Nigerian Passport, showing in full the data page with the inviters’ signature. <br/>
-            If the inviter is non Nigerian a copy of the inviters valid residency permit (minimum 6 months validity) and their valid passport data page. <br/><br/>
-            
-            FLIGHT TICKET AND HOTEL RESERVATIONS: <br/>
-            Please provide evidence of your return ticket and evidence of accommodation.<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
-            ',
-            'file_name' => 'Artist_Entertainer_Musician Visa – F7F.docx',
-        ]);
-        Checklist::create([
-            'office_id' => 14,
-            'visa_type' => 'Standard',
-            'title' => 'Business Visa (Single Entry) – F4A',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
-            
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            EVIDENCE OF SUFFICIENT FUNDS:<br/>
-            A clear copy of the applicant’s full up to date last bank statement showing all details including their end balance, name and address. The statement must also include transactions during the week of the applicant’s appointment in our centre. WE WILL NOT ACCEPT ONLINE BANKING STATEMENTS IF THEY ARE NOT STAMPED OR CERTIFIED BY YOUR BANK. THE BANK STATEMENT MUST SHOW A MINIMUM BALANCE OF £500.00 IN CREDIT.<br/><br/>
-            
-            INVITATION LETTER FROM INSTITUTION IN NIGERIA:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            VALID NIGERIAN PASSPORT DATA PAGE OF THE INVITER: <br/>
-            Copy of the inviters Valid Nigerian Passport, showing in full the data page with the inviters’ signature. <br/>
-            If the inviter is non Nigerian a copy of the inviters valid residency permit (minimum 6 months validity) and their valid passport data page. <br/><br/>
-            
-            FLIGHT TICKET AND HOTEL RESERVATIONS: <br/>
-            Please provide evidence of your return ticket and evidence of accommodation.<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
-            ',
-            'file_name' => 'Business Visa (Single Entry) – F4A.docx',
-        ]);
-        Checklist::create([
-            'office_id' => 14,
-            'visa_type' => 'Standard',
-            'title' => 'Business Visa (Single Entry) – F4A',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
-            
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            EVIDENCE OF SUFFICIENT FUNDS:<br/>
-            A clear copy of the applicant’s full up to date last bank statement showing all details including their end balance, name and address. The statement must also include transactions during the week of the applicant’s appointment in our centre. WE WILL NOT ACCEPT ONLINE BANKING STATEMENTS IF THEY ARE NOT STAMPED OR CERTIFIED BY YOUR BANK. THE BANK STATEMENT MUST SHOW A MINIMUM BALANCE OF £500.00 IN CREDIT.<br/><br/>
-            
-            INVITATION LETTER FROM INSTITUTION IN NIGERIA:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            VALID NIGERIAN PASSPORT DATA PAGE OF THE INVITER: <br/>
-            Copy of the inviters Valid Nigerian Passport, showing in full the data page with the inviters’ signature. <br/>
-            If the inviter is non Nigerian a copy of the inviters valid residency permit (minimum 6 months validity) and their valid passport data page. <br/><br/>
-            
-            FLIGHT TICKET AND HOTEL RESERVATIONS: <br/>
-            Please provide evidence of your return ticket and evidence of accommodation.<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
-            ',
-            'file_name' => 'Cleric Visa – F7B.docx',
-        ]);
-        Checklist::create([
-            'office_id' => 14,
-            'visa_type' => 'Standard',
-            'title' => 'Emergency Relief Work Visa – F7K',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
-            
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            EVIDENCE OF SUFFICIENT FUNDS:<br/>
-            A clear copy of the applicant’s full up to date last bank statement showing all details including their end balance, name and address. The statement must also include transactions during the week of the applicant’s appointment in our centre. WE WILL NOT ACCEPT ONLINE BANKING STATEMENTS IF THEY ARE NOT STAMPED OR CERTIFIED BY YOUR BANK. THE BANK STATEMENT MUST SHOW A MINIMUM BALANCE OF £500.00 IN CREDIT.<br/><br/>
-            
-            INVITATION LETTER FROM INSTITUTION IN NIGERIA:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            VALID NIGERIAN PASSPORT DATA PAGE OF THE INVITER: <br/>
-            Copy of the inviters Valid Nigerian Passport, showing in full the data page with the inviters’ signature. <br/>
-            If the inviter is non Nigerian a copy of the inviters valid residency permit (minimum 6 months validity) and their valid passport data page. <br/><br/>
-            
-            FLIGHT TICKET AND HOTEL RESERVATIONS: <br/>
-            Please provide evidence of your return ticket and evidence of accommodation.<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
-            ',
-            'file_name' => 'Emergency Relief Work Visa – F7K  .docx',
-        ]);
-        Checklist::create([
-            'office_id' => 14,
-            'visa_type' => 'Standard',
-            'title' => 'Humanitarian Services Visa – F7J',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
-            
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            EVIDENCE OF SUFFICIENT FUNDS:<br/>
-            A clear copy of the applicant’s full up to date last bank statement showing all details including their end balance, name and address. The statement must also include transactions during the week of the applicant’s appointment in our centre. WE WILL NOT ACCEPT ONLINE BANKING STATEMENTS IF THEY ARE NOT STAMPED OR CERTIFIED BY YOUR BANK. THE BANK STATEMENT MUST SHOW A MINIMUM BALANCE OF £500.00 IN CREDIT.<br/><br/>
-            
-            INVITATION LETTER FROM INSTITUTION IN NIGERIA:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            VALID NIGERIAN PASSPORT DATA PAGE OF THE INVITER: <br/>
-            Copy of the inviters Valid Nigerian Passport, showing in full the data page with the inviters’ signature. <br/>
-            If the inviter is non Nigerian a copy of the inviters valid residency permit (minimum 6 months validity) and their valid passport data page. <br/><br/>
-            
-            FLIGHT TICKET AND HOTEL RESERVATIONS: <br/>
-            Please provide evidence of your return ticket and evidence of accommodation.<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
-            ',
-            'file_name' => 'Humanitarian Services Visa – F7J .docx',
-        ]);
-        Checklist::create([
-            'office_id' => 14,
-            'visa_type' => 'Standard',
-            'title' => 'International Cultural Exchange Visa – F7I',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
-            
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            EVIDENCE OF SUFFICIENT FUNDS:<br/>
-            A clear copy of the applicant’s full up to date last bank statement showing all details including their end balance, name and address. The statement must also include transactions during the week of the applicant’s appointment in our centre. WE WILL NOT ACCEPT ONLINE BANKING STATEMENTS IF THEY ARE NOT STAMPED OR CERTIFIED BY YOUR BANK. THE BANK STATEMENT MUST SHOW A MINIMUM BALANCE OF £500.00 IN CREDIT.<br/><br/>
-            
-            INVITATION LETTER FROM INSTITUTION IN NIGERIA:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            VALID NIGERIAN PASSPORT DATA PAGE OF THE INVITER: <br/>
-            Copy of the inviters Valid Nigerian Passport, showing in full the data page with the inviters’ signature. <br/>
-            If the inviter is non Nigerian a copy of the inviters valid residency permit (minimum 6 months validity) and their valid passport data page. <br/><br/>
-            
-            FLIGHT TICKET AND HOTEL RESERVATIONS: <br/>
-            Please provide evidence of your return ticket and evidence of accommodation.<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
-            ',
-            'file_name' => 'International Cultural Exchange Visa – F7I .docx',
-        ]);
-        Checklist::create([
-            'office_id' => 14,
-            'visa_type' => 'Standard',
-            'title' => 'Journalist Visa – F7A',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
-            
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            EVIDENCE OF SUFFICIENT FUNDS:<br/>
-            A clear copy of the applicant’s full up to date last bank statement showing all details including their end balance, name and address. The statement must also include transactions during the week of the applicant’s appointment in our centre. WE WILL NOT ACCEPT ONLINE BANKING STATEMENTS IF THEY ARE NOT STAMPED OR CERTIFIED BY YOUR BANK. THE BANK STATEMENT MUST SHOW A MINIMUM BALANCE OF £500.00 IN CREDIT.<br/><br/>
-            
-            INVITATION LETTER FROM INSTITUTION IN NIGERIA:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            VALID NIGERIAN PASSPORT DATA PAGE OF THE INVITER: <br/>
-            Copy of the inviters Valid Nigerian Passport, showing in full the data page with the inviters’ signature. <br/>
-            If the inviter is non Nigerian a copy of the inviters valid residency permit (minimum 6 months validity) and their valid passport data page. <br/><br/>
-            
-            FLIGHT TICKET AND HOTEL RESERVATIONS: <br/>
-            Please provide evidence of your return ticket and evidence of accommodation.<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
-            ',
-            'file_name' => 'Journalist Visa – F7A.docx',
-        ]);
-        Checklist::create([
-            'office_id' => 14,
-            'visa_type' => 'Standard',
-            'title' => 'Medical Tourism Visa – F7C',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
-            
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            EVIDENCE OF SUFFICIENT FUNDS:<br/>
-            A clear copy of the applicant’s full up to date last bank statement showing all details including their end balance, name and address. The statement must also include transactions during the week of the applicant’s appointment in our centre. WE WILL NOT ACCEPT ONLINE BANKING STATEMENTS IF THEY ARE NOT STAMPED OR CERTIFIED BY YOUR BANK. THE BANK STATEMENT MUST SHOW A MINIMUM BALANCE OF £500.00 IN CREDIT.<br/><br/>
-            
-            INVITATION LETTER FROM INSTITUTION IN NIGERIA:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            VALID NIGERIAN PASSPORT DATA PAGE OF THE INVITER: <br/>
-            Copy of the inviters Valid Nigerian Passport, showing in full the data page with the inviters’ signature. <br/>
-            If the inviter is non Nigerian a copy of the inviters valid residency permit (minimum 6 months validity) and their valid passport data page. <br/><br/>
-            
-            FLIGHT TICKET AND HOTEL RESERVATIONS: <br/>
-            Please provide evidence of your return ticket and evidence of accommodation.<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
-            ',
-            'file_name' => 'Medical Tourism Visa – F7C.docx',
-        ]);
-        Checklist::create([
-            'office_id' => 14,
-            'visa_type' => 'Standard',
-            'title' => 'Religious Tourism Visa – F7D',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
-            
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            EVIDENCE OF SUFFICIENT FUNDS:<br/>
-            A clear copy of the applicant’s full up to date last bank statement showing all details including their end balance, name and address. The statement must also include transactions during the week of the applicant’s appointment in our centre. WE WILL NOT ACCEPT ONLINE BANKING STATEMENTS IF THEY ARE NOT STAMPED OR CERTIFIED BY YOUR BANK. THE BANK STATEMENT MUST SHOW A MINIMUM BALANCE OF £500.00 IN CREDIT.<br/><br/>
-            
-            INVITATION LETTER FROM INSTITUTION IN NIGERIA:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            VALID NIGERIAN PASSPORT DATA PAGE OF THE INVITER: <br/>
-            Copy of the inviters Valid Nigerian Passport, showing in full the data page with the inviters’ signature. <br/>
-            If the inviter is non Nigerian a copy of the inviters valid residency permit (minimum 6 months validity) and their valid passport data page. <br/><br/>
-            
-            FLIGHT TICKET AND HOTEL RESERVATIONS: <br/>
-            Please provide evidence of your return ticket and evidence of accommodation.<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
-            ',
-            'file_name' => 'Religious Tourism Visa – F7D.docx',
-        ]);
-        Checklist::create([
-            'office_id' => 14,
-            'visa_type' => 'Standard',
-            'title' => 'Sports Visa – F7E',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
-            
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            EVIDENCE OF SUFFICIENT FUNDS:<br/>
-            A clear copy of the applicant’s full up to date last bank statement showing all details including their end balance, name and address. The statement must also include transactions during the week of the applicant’s appointment in our centre. WE WILL NOT ACCEPT ONLINE BANKING STATEMENTS IF THEY ARE NOT STAMPED OR CERTIFIED BY YOUR BANK. THE BANK STATEMENT MUST SHOW A MINIMUM BALANCE OF £500.00 IN CREDIT.<br/><br/>
-            
-            INVITATION LETTER FROM INSTITUTION IN NIGERIA:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            VALID NIGERIAN PASSPORT DATA PAGE OF THE INVITER: <br/>
-            Copy of the inviters Valid Nigerian Passport, showing in full the data page with the inviters’ signature. <br/>
-            If the inviter is non Nigerian a copy of the inviters valid residency permit (minimum 6 months validity) and their valid passport data page. <br/><br/>
-            
-            FLIGHT TICKET AND HOTEL RESERVATIONS: <br/>
-            Please provide evidence of your return ticket and evidence of accommodation.<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
-            ',
-            'file_name' => 'Sports Visa – F7E.docx',
-        ]);
-        Checklist::create([
-            'office_id' => 14,
-            'visa_type' => 'Standard',
-            'title' => 'Staff of INGO Visa- F7L',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
-            
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            EVIDENCE OF SUFFICIENT FUNDS:<br/>
-            A clear copy of the applicant’s full up to date last bank statement showing all details including their end balance, name and address. The statement must also include transactions during the week of the applicant’s appointment in our centre. WE WILL NOT ACCEPT ONLINE BANKING STATEMENTS IF THEY ARE NOT STAMPED OR CERTIFIED BY YOUR BANK. THE BANK STATEMENT MUST SHOW A MINIMUM BALANCE OF £500.00 IN CREDIT.<br/><br/>
-            
-            INVITATION LETTER FROM INSTITUTION IN NIGERIA:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            VALID NIGERIAN PASSPORT DATA PAGE OF THE INVITER: <br/>
-            Copy of the inviters Valid Nigerian Passport, showing in full the data page with the inviters’ signature. <br/>
-            If the inviter is non Nigerian a copy of the inviters valid residency permit (minimum 6 months validity) and their valid passport data page. <br/><br/>
-            
-            FLIGHT TICKET AND HOTEL RESERVATIONS: <br/>
-            Please provide evidence of your return ticket and evidence of accommodation.<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
-            ',
-            'file_name' => 'Staff of INGO Visa- F7L.docx',
-        ]);
-        Checklist::create([
-            'office_id' => 14,
-            'visa_type' => 'Standard',
-            'title' => 'Staff of NGO Visa- F7M',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
-            
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            EVIDENCE OF SUFFICIENT FUNDS:<br/>
-            A clear copy of the applicant’s full up to date last bank statement showing all details including their end balance, name and address. The statement must also include transactions during the week of the applicant’s appointment in our centre. WE WILL NOT ACCEPT ONLINE BANKING STATEMENTS IF THEY ARE NOT STAMPED OR CERTIFIED BY YOUR BANK. THE BANK STATEMENT MUST SHOW A MINIMUM BALANCE OF £500.00 IN CREDIT.<br/><br/>
-            
-            INVITATION LETTER FROM INSTITUTION IN NIGERIA:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            VALID NIGERIAN PASSPORT DATA PAGE OF THE INVITER: <br/>
-            Copy of the inviters Valid Nigerian Passport, showing in full the data page with the inviters’ signature. <br/>
-            If the inviter is non Nigerian a copy of the inviters valid residency permit (minimum 6 months validity) and their valid passport data page. <br/><br/>
-            
-            FLIGHT TICKET AND HOTEL RESERVATIONS: <br/>
-            Please provide evidence of your return ticket and evidence of accommodation.<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
-            ',
-            'file_name' => 'Staff of NGO Visa- F7M.docx',
-        ]);
-        Checklist::create([
-            'office_id' => 14,
-            'visa_type' => 'Standard',
-            'title' => 'Study Tour Visa – F7G',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
-            
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            EVIDENCE OF SUFFICIENT FUNDS:<br/>
-            A clear copy of the applicant’s full up to date last bank statement showing all details including their end balance, name and address. The statement must also include transactions during the week of the applicant’s appointment in our centre. WE WILL NOT ACCEPT ONLINE BANKING STATEMENTS IF THEY ARE NOT STAMPED OR CERTIFIED BY YOUR BANK. THE BANK STATEMENT MUST SHOW A MINIMUM BALANCE OF £500.00 IN CREDIT.<br/><br/>
-            
-            INVITATION LETTER FROM INSTITUTION IN NIGERIA:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            VALID NIGERIAN PASSPORT DATA PAGE OF THE INVITER: <br/>
-            Copy of the inviters Valid Nigerian Passport, showing in full the data page with the inviters’ signature. <br/>
-            If the inviter is non Nigerian a copy of the inviters valid residency permit (minimum 6 months validity) and their valid passport data page. <br/><br/>
-            
-            FLIGHT TICKET AND HOTEL RESERVATIONS: <br/>
-            Please provide evidence of your return ticket and evidence of accommodation.<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
-            ',
-            'file_name' => 'Study Tour Visa – F7G.docx',
-        ]);
-        Checklist::create([
-            'office_id' => 14,
-            'visa_type' => 'Standard',
-            'title' => 'Tourism Visa – F5A ',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
-            
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            EVIDENCE OF SUFFICIENT FUNDS:<br/>
-            A clear copy of the applicant’s full up to date last bank statement showing all details including their end balance, name and address. The statement must also include transactions during the week of the applicant’s appointment in our centre. WE WILL NOT ACCEPT ONLINE BANKING STATEMENTS IF THEY ARE NOT STAMPED OR CERTIFIED BY YOUR BANK. THE BANK STATEMENT MUST SHOW A MINIMUM BALANCE OF £500.00 IN CREDIT.<br/><br/>
-            
-            INVITATION LETTER FROM INSTITUTION IN NIGERIA:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            VALID NIGERIAN PASSPORT DATA PAGE OF THE INVITER: <br/>
-            Copy of the inviters Valid Nigerian Passport, showing in full the data page with the inviters’ signature. <br/>
-            If the inviter is non Nigerian a copy of the inviters valid residency permit (minimum 6 months validity) and their valid passport data page. <br/><br/>
-            
-            FLIGHT TICKET AND HOTEL RESERVATIONS: <br/>
-            Please provide evidence of your return ticket and evidence of accommodation.<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
-            ',
-            'file_name' => 'Tourism Visa – F5A .docx',
-        ]);
-        Checklist::create([
-            'office_id' => 14,
-            'visa_type' => 'Standard',
-            'title' => 'Visiting Visa- Single Entry- F6A',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
-            
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            EVIDENCE OF SUFFICIENT FUNDS:<br/>
-            A clear copy of the applicant’s full up to date last bank statement showing all details including their end balance, name and address. The statement must also include transactions during the week of the applicant’s appointment in our centre. WE WILL NOT ACCEPT ONLINE BANKING STATEMENTS IF THEY ARE NOT STAMPED OR CERTIFIED BY YOUR BANK. THE BANK STATEMENT MUST SHOW A MINIMUM BALANCE OF £500.00 IN CREDIT.<br/><br/>
-            
-            INVITATION LETTER FROM INSTITUTION IN NIGERIA:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            VALID NIGERIAN PASSPORT DATA PAGE OF THE INVITER: <br/>
-            Copy of the inviters Valid Nigerian Passport, showing in full the data page with the inviters’ signature. <br/>
-            If the inviter is non Nigerian a copy of the inviters valid residency permit (minimum 6 months validity) and their valid passport data page. <br/><br/>
-            
-            FLIGHT TICKET AND HOTEL RESERVATIONS: <br/>
-            Please provide evidence of your return ticket and evidence of accommodation.<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
-            ',
-            'file_name' => 'Visiting Visa- Single Entry- F6A.docx',
-        ]);
-        Checklist::create([
-            'office_id' => 14,
-            'visa_type' => 'Standard',
-            'title' => 'Academic exchange programme (AEP) Visa – R8A',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
+            •	Passport Photo <br/>
+            Four (4) recent passport sized photographs <br/><br/>
+            •	Online Payment  <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	– 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
 
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            FORMAL LETTER BY THE EMPLOYER:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            MOU WITH RELEVANT MDA AND INSTITUTIONS<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
-            ',
-            'file_name' => 'Academic exchange programme (AEP) Visa – R8A.docx',
-        ]);
-        Checklist::create([
-            'office_id' => 14,
-            'visa_type' => 'Standard',
-            'title' => 'Dependent of Cleric (18 years and above) Visa – R6D',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
+            •	Application form  <br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
 
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            FORMAL LETTER BY THE EMPLOYER:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            MOU WITH RELEVANT MDA AND INSTITUTIONS<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
-            ',
-            'file_name' => 'Dependent of Cleric (18 years and above) Visa – R6D.docx',
-        ]);
-        Checklist::create([
-            'office_id' => 14,
-            'visa_type' => 'Standard',
-            'title' => 'Dependent of Cleric (Aged Parent – 65 years and above) Visa – R6E',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
+            •	Embassy Admin Fee <br/><br/>
+            •	IMM/22 RESIDENCE FORM <br/>
+            For downloading the form, please visit www.oisservices.com <br/><br/>
 
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            FORMAL LETTER BY THE EMPLOYER:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            MOU WITH RELEVANT MDA AND INSTITUTIONS<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
-            ',
-            'file_name' => 'Dependent of Cleric (Aged Parent – 65 years and above) Visa – R6E.docx',
-        ]);
-        Checklist::create([
-            'office_id' => 14,
-            'visa_type' => 'Standard',
-            'title' => 'Dependent of Cleric (Minor) Visa – R6C',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
 
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            FORMAL LETTER BY THE EMPLOYER:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            MOU WITH RELEVANT MDA AND INSTITUTIONS<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
-            ',
-            'file_name' => 'Dependent of Cleric (Minor) Visa – R6C.docx',
-        ]);
-        Checklist::create([
-            'office_id' => 14,
-            'visa_type' => 'Standard',
-            'title' => 'Dependent of Expatriate – Free Zone (18 years and above) Visa – R3D',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
+            •	MoU with Nigeria National Planning Commission (NPC) and appropriate security clearance (for special security cases) <br/><br/>
 
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            FORMAL LETTER BY THE EMPLOYER:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            MOU WITH RELEVANT MDA AND INSTITUTIONS<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
+            •	Invitation Letter for R5A Visa by the Employer accepting Immigration Responsibility  <br/><br/>
+
+            An Original invitation letter from Nigeria. This must be addressed to the Nigeria Consulate Johannesburg. It must be on letter headed paper, signed with the full name and dated by a Nigerian staff at the company. The statement “accepting full immigration responsibilities” must be included. Applicant\'s name and passport number must be stated. <br/><br/>
+
+            •	Inviter’s passport copy <br/>
+            Photocopy of Inviter\'s International Passport Data page (6 months validity <br/><br/>
+
+            •	Marriage Certificate
             ',
-            'file_name' => 'Dependent of Expatriate – Free Zone (18 years and above) Visa – R3D.docx',
+            'file_name' => 'Employment Visa – Spouse of INGO Staff -R5B.docx',
         ]);
         Checklist::create([
-            'office_id' => 14,
+            'office_id' => 13,
+            'visa_type' => 'Standard',
+            'title' => 'Academic Exchange Programme (AEP)Visa --- R8A',
+            'description' => 'R8A: AEP Visa is visa issued for the purpose of Resident Academic Exchange Programme (AEP) in Nigeria. <br/><br/>
+
+            Eligibility <br/>
+            Students, Scholars, Lecturers, Researchers, Sabbaticals, Law Enforcement and Security Officers. <br/><br/>
+
+            Requirements: <br/><br/>
+
+            •	Original Passport <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Passport Photo <br/>
+            Four (4) recent passport sized photographs <br/><br/>
+
+            •	Online Payment <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form <br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant. <br/><br/>
+
+            •	Return Ticket <br/><br/>
+
+            •	Evidence of sufficient fund <br/>
+            Original evidence of sufficient fund of applicant, with bank\'s stamp <br/><br/>
+
+            •	Embassy Admin Fee <br/><br/>
+            •	IMM/22 RESIDENCE FORM <br/>
+            For downloading the form, please visit www.oisservices.com <br/><br/>
+
+            •	Formal application for R8A Visa by the lnstitution accepting lmmigration Responsibility <br/><br/>
+            •	Passport data page of the Inviter <br/><br/>
+            •	Certificate of Institution registration  <br/><br/>
+
+            •	MoU with relevant MDA and Institutions
+            ',
+            'file_name' => 'Academic Exchange Programme (AEP)Visa --- R8A.docx',
+        ]);
+        Checklist::create([
+            'office_id' => 13,
+            'visa_type' => 'Standard',
+            'title' => 'Academic Exchange Programme(AEP) Visa-F7H',
+            'description' => 'F7H: Academic Exchange Programme (AEP) Visa is a single entry visa to visit Nigeria for the purpose of academic exchange programme<br/><br/>
+            Eligibility: <br/>
+              Students, Scholars and Lecturers <br/><br/>
+              Requirements: <br/><br/>
+
+              •	Original Passport  <br/>
+              Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+              •	Passport Photo Two (2) recent passport sized photographs  <br/><br/>
+
+
+              •	Online Payment  <br/>
+              A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+              •	Application form  <br/>
+              Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant. <br/><br/>
+
+              •	Return Ticket  <br/><br/>
+
+              •	Evidence of sufficient fund  <br/>
+                 Bank Statement of applicant with sufficient balance, with bank\'s stamp <br/><br/>
+
+              •	Embassy Admin Fee <br/><br/>
+
+              •	Evidence of Hotel Reservation/host address in Nigeria <br/><br/>
+
+              •	Letter from Approved Institution in Nigeria and registration documents of the instituiton. <br/><br/>
+              •	Letter from the original institution in Souh Africa
+            ',
+            'file_name' => 'Academic Exchange Programme(AEP) Visa-F7H.docx',
+        ]);
+        Checklist::create([
+            'office_id' => 13,
+            'visa_type' => 'Standard',
+            'title' => 'Artist(e)/Entertainer/Musician Visa-F7F',
+            'description' => 'F7F: Artist (e)/Entertainer/Musician Visa is a single entry visa issue to visit Nigeria for the purpose of performance as an artist (e), entertainer or musician <br/><br/>
+            Eligibility: <br/>
+            Performing artist (e)s, entertainers or musicians <br/><br/>
+              Requirements: <br/><br/>
+
+              •	Original Passport  <br/>
+              Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+              •	Passport Photo Two (2) recent passport sized photographs  <br/><br/>
+
+
+              •	Online Payment  <br/>
+              A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+              •	Application form  <br/>
+              Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant. <br/><br/>
+
+              •	Return Ticket  <br/><br/>
+
+              •	Evidence of sufficient fund  <br/>
+                 Bank Statement of applicant with sufficient balance, with bank\'s stamp <br/><br/>
+
+              •	Embassy Admin Fee <br/><br/>
+
+              •	Evidence of Hotel Reservation/host address in Nigeria <br/><br/>
+
+              •	Invitation letter from event organiser addressed to the Nigeria Consulate in Johannesburg.
+            ',
+            'file_name' => 'Artist(e)_Entertainer_Musician Visa-F7F.docx',
+        ]);
+        Checklist::create([
+            'office_id' => 13,
+            'visa_type' => 'Standard',
+            'title' => 'Business –Frequently   Travelled Executives Visa-F4C',
+            'description' => 'F4C: Business –Frequently Travelled Executives Visa is for frequently travelled business persons of international repute with investment (USD 250,000) remaining in Nigeria <br/><br/>
+            Eligibility: <br/>
+            Frequently Travelled business persons with investment up to USD250,000 in  Nigeria <br/><br/>
+            Requirements: <br/><br/>
+            •	Invitation Letter   <br/>
+            An Original invitation letter from Nigeria. This must be addressed to the Nigeria Consulate in Johannesburg. It must be on letterhead paper signed the full name and dated by a Nigerian of staff at the company. The statement“accepting full immigration responsibilities” must be included. Applicant\'s name and passport number must be stated. <br/><br/>
+            •	Certificate of incorporation/ Business Registration <br/>
+            Certificate of incorporation or Business Registration of the inviting company in Nigeria <br/><br/>
+            •	Inviter’s passport copy <br/>
+            Clear Photocopy of Inviter\'s International Passport Data page (6 months validity)  <br/><br/>
+            •	Tax Clearance Certificate <br/>
+                      Latest Tax clearance certificate of the Inviting Company in Nigeria <br/><br/>
+            •	Original Passport  <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement
+            Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+            •	Passport Copy <br/>
+            Copy of Valid National Passport (minimum period of validity 6 months)  <br/><br/>
+            •	Employment Confirmation Letter of Applicant <br/>
+                    An employment Confirmation letter of the applicant addressed to the Nigeria     	      Consulate in Johannesburg. <br/><br/>
+            •	Evidence of sufficient fund <br/>
+                Bank Statement of applicant with sufficient balance, with bank\'s stamp <br/><br/>
+            •	Embassy Admin Fee <br/><br/>
+            •	Passport Photo  <br/>
+            Two (2) recent passport sized photographs  <br/><br/>
+            •	Online Payment  <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+            •	Application form  <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+            •	Flight Reservation  <br/><br/>
+            •	Evidence of Hotel Reservation/host address in Nigeria
+            ',
+            'file_name' => 'Business –Frequently   Travelled Executives Visa-F4C.docx',
+        ]);
+        Checklist::create([
+            'office_id' => 13,
+            'visa_type' => 'Standard',
+            'title' => 'Business –Multiple Entry Visa-F4B',
+            'description' => 'F4B: Business –Multiple Entry Visa is to be issued on the basis of reciprocity <br/><br/>
+            Eligibility: <br/>
+            Citizens of countries who offer similar multiple entry business visa to Nigeria citizens <br/><br/>
+            Requirements: <br/><br/>
+            •	Invitation Letter   <br/>
+            An Original invitation letter from Nigeria. This must be addressed to the Nigeria Consulate in Johannesburg. It must be on letterhead paper signed the full name and dated by a Nigerian of staff at the company. The statement“accepting full immigration responsibilities” must be included. Applicant\'s name and passport number must be stated. <br/><br/>
+            •	Certificate of incorporation/ Business Registration <br/>
+            Certificate of incorporation or Business Registration of the inviting company in Nigeria <br/><br/>
+            •	Inviter’s passport copy <br/>
+            Clear Photocopy of Inviter\'s International Passport Data page (6 months validity)  <br/><br/>
+            •	Tax Clearance Certificate <br/>
+                      Latest Tax clearance certificate of the Inviting Company in Nigeria <br/><br/>
+            •	Original Passport  <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement
+            Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+            •	Passport Copy <br/>
+            Copy of Valid National Passport (minimum period of validity 6 months)  <br/><br/>
+            •	Employment Confirmation Letter of Applicant <br/>
+                    An employment Confirmation letter of the applicant addressed to the Nigeria     	      Consulate in Johannesburg. <br/><br/>
+            •	Evidence of sufficient fund <br/>
+                Bank Statement of applicant with sufficient balance, with bank\'s stamp <br/><br/>
+            •	Embassy Admin Fee <br/><br/>
+            •	Passport Photo  <br/>
+            Two (2) recent passport sized photographs  <br/><br/>
+            •	Online Payment  <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+            •	Application form  <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+            •	Flight Reservation  <br/><br/>
+            •	Evidence of Hotel Reservation/host address in Nigeria
+            ',
+            'file_name' => 'Business –Multiple Entry Visa-F4B.docx',
+        ]);
+        Checklist::create([
+            'office_id' => 13,
+            'visa_type' => 'Standard',
+            'title' => 'Business –Single Entry Visa-F4A',
+            'description' => 'F4A: Business-single Entry Visa is for those who wish to visit Nigeria for business meeting, conference, seminar, contract negotiation, marketing, sales, procurement of  Nigeria goods/services, trade fairs and job interview.  <br/><br/>
+            Eligibility: <br/>
+            Foreign Travellers who wish to visit Nigeria for the purpose of attending meeting, conference, seminar, contract negotiation, sales, procurement of Nigerian goods/services, Trade Fairs, job interviews. <br/><br/>
+            Requirements: <br/><br/>
+            •	Invitation Letter   <br/>
+            An Original invitation letter from Nigeria. This must be addressed to the Nigeria Consulate in Johannesburg. It must be on letterhead paper signed the full name and dated by a Nigerian of staff at the company. The statement“accepting full immigration responsibilities” must be included. Applicant\'s name and passport number must be stated. <br/><br/>
+            •	Certificate of incorporation/ Business Registration <br/>
+            Certificate of incorporation or Business Registration of the inviting company in Nigeria <br/><br/>
+            •	Inviter’s passport copy <br/>
+            Clear Photocopy of Inviter\'s International Passport Data page (6 months validity)  <br/><br/>
+            •	Tax Clearance Certificate <br/>
+                      Latest Tax clearance certificate of the Inviting Company in Nigeria <br/><br/>
+            •	Original Passport  <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement
+            Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+            •	Passport Copy <br/>
+            Copy of Valid National Passport (minimum period of validity 6 months)  <br/><br/>
+            •	Employment Confirmation Letter of Applicant <br/>
+                    An employment Confirmation letter of the applicant addressed to the Nigeria     	      Consulate in Johannesburg. <br/><br/>
+            •	Evidence of sufficient fund <br/>
+                Bank Statement of applicant with sufficient balance, with bank\'s stamp <br/><br/>
+            •	Embassy Admin Fee <br/><br/>
+            •	Passport Photo  <br/>
+            Two (2) recent passport sized photographs  <br/><br/>
+            •	Online Payment  <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+            •	Application form  <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+            •	Flight Reservation  <br/><br/>
+            •	Evidence of Hotel Reservation/host address in Nigeria
+            ',
+            'file_name' => 'Business –Single Entry Visa-F4A.docx',
+        ]);
+        Checklist::create([
+            'office_id' => 13,
+            'visa_type' => 'Standard',
+            'title' => 'Cleric Visa-F7B',
+            'description' => 'F7B: Cleric Visa is a single entry visa issued to religious officials who wish to visit Nigeria for the purpose of religious services like preaching, religious seminar,  religious conference <br/><br/>
+            Eligibility: <br/>
+            Clerics  <br/><br/>
+            Requirements: <br/><br/>
+
+            •	Original Passport  <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+
+            •	Passport Photo <br/>
+            Two (2) recent passport sized photographs  <br/><br/>
+
+            •	Online Payment  <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form  <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant. <br/><br/>
+
+            •	Return Ticket  <br/><br/>
+
+            •	Evidence of sufficient fund  <br/>
+              Bank Statement of applicant with sufficient balance, with bank\'s stamp <br/><br/>
+
+            •	Embassy Admin Fee <br/><br/>
+            •	Evidence of Hotel Reservation/host address in Nigeria <br/><br/>
+            •	Letter of invitation from religious body in Nigeria <br/>
+            An Original invitation letter from Nigeria. This must be addressed to the Nigeria  Consulate in Johannesburg. It must be on letterhead paper signed the full name and  dated by a Nigerian of staff at the company. The statement“accepting full immigration  	responsibilities” must be included. Applicant\'s name and passport number must be  	stated. <br/><br/>
+            •	Certificate of incorporation/ Business Registration <br/>
+              Certificate of church registration in Nigeria <br/><br/>
+            •	Employment Confirmation Letter of Applicant <br/>
+              An employment Confirmation letter of the applicant addressed to the Nigeria  	   	 Consulate in Johannesburg. <br/><br/>
+
+            •	Subject to clearance from the Nigeria Consulate in Johannesburg
+            ',
+            'file_name' => 'Cleric Visa-F7B.docx',
+        ]);
+        Checklist::create([
+            'office_id' => 13,
+            'visa_type' => 'Standard',
+            'title' => 'Dependent of Expatriate – Free Zone (Minor) Visa – R3C',
+            'description' => 'R3C: Dependent of Expatriate – Free Zone Visa is issued to dependent of employed expatriate in Free Zone who are less than 18 years of age <br/><br/>
+            Eligibility: <br/>
+            Dependents less than 18 years accompanying employed Expatriates in Free Zone  <br/><br/>
+            Requirements: <br/><br/>
+
+            •	Original Passport <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Invitation letter  <br/>
+            An Original invitation letter from Nigeria. This must be addressed to the Nigeria Consulate Johannesburg. It must be on letter headed paper signed the full name and dated by a Nigerian member of staff at the company. The statement “accepting full immigration responsibilities” must be included. Applicant\'s name and passport number must be stated.<br/><br/>
+            •	Certificate of incorporation/ Business Registration <br/>
+            Certificate of incorporation or Business registration of the inviting company in Nigeria <br/><br/>
+
+            •	Inviter’s passport copy <br/>
+            Photocopy of Inviter\'s International Passport Data page (6 months validity)  <br/><br/>
+
+            •	Copy of marriage certificate <br/><br/>
+
+            •	Letter of consent <br/>
+                        Letter of consent (signed and dated) form both parents <br/><br/>
+
+            •	Copy of marriage certificate <br/><br/>
+
+            •	Copy of birth certificate <br/><br/>
+
+            •	Embassy Admin Fee <br/><br/>
+
+            •	Passport Photo <br/>
+            Three (3) recent passport sized photographs <br/><br/>
+
+            •	Online Payment <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form <br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+
+            •	IMM/22 RESIDENCE FORM <br/>
+            For downloading the form, please visit www.oisservices.com
+            ',
+            'file_name' => 'Dependent of Expatriate – Free Zone (Minor) Visa – R3C.docx',
+        ]);
+        Checklist::create([
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Dependent of Expatriate – Free Zone (Aged Parents – 65 years and above) Visa – R3E',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
+            'description' => 'R3E: Visa is issued to aged parents (65 years and above) of employed expatriate in Free Zones <br/><br/>
+            Eligibility: <br/>
+            Aged Parents (65 years and above) Accompanying employed Expatriates in Free Zone  <br/><br/>
+            Requirements: <br/><br/>
 
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            FORMAL LETTER BY THE EMPLOYER:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            MOU WITH RELEVANT MDA AND INSTITUTIONS<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
+            •	Original Passport <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Invitation letter  <br/>
+            An Original invitation letter from Nigeria. This must be addressed to the Nigeria Consulate Johannesburg. It must be on letter headed paper signed the full name and dated by a Nigerian member of staff at the company. The statement “accepting full immigration responsibilities” must be included. Applicant\'s name and passport number must be stated.<br/><br/>
+            •	Certificate of incorporation/ Business Registration <br/>
+            Certificate of incorporation or Business registration of the inviting company in Nigeria <br/><br/>
+
+            •	Inviter’s passport copy <br/>
+            Photocopy of Inviter\'s International Passport Data page (6 months validity)  <br/><br/>
+
+            •	Copy of marriage certificate <br/><br/>
+
+            •	Letter of consent <br/>
+                        Letter of consent (signed and dated) form both parents <br/><br/>
+
+            •	Copy of marriage certificate <br/><br/>
+
+            •	Copy of birth certificate <br/><br/>
+
+            •	Embassy Admin Fee <br/><br/>
+
+            •	Passport Photo <br/>
+            Three (3) recent passport sized photographs <br/><br/>
+
+            •	Online Payment <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form <br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+
+            •	IMM/22 RESIDENCE FORM <br/>
+            For downloading the form, please visit www.oisservices.com
             ',
-            'file_name' => 'Dependent of Expatriate – Free Zone (Aged Parents – 65 years and above) Visa – R3E.docx',
+            'file_name' => 'Dependent of Expatriate – Free Zone -Aged Parents – 65 years and above- Visa – R3E.docx',
         ]);
         Checklist::create([
-            'office_id' => 14,
+            'office_id' => 13,
             'visa_type' => 'Standard',
-            'title' => 'Dependent of Expatriate – Free Zone (Minor)Visa – R3C',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
+            'title' => 'Dependent of Expatriate (18 years and above) Visa – R2D',
+            'description' => 'R2D: Dependent of Expatriate (18 years and above) Visa is issued to dependents of employed expatriate on quota who are 18 years and above <br/><br/>
+            Eligibility: <br/>
+            Dependents - 18 years and above accompanying employed Expatriates on quota <br/><br/>
+            Requirements: <br/><br/>
 
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            FORMAL LETTER BY THE EMPLOYER:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            MOU WITH RELEVANT MDA AND INSTITUTIONS<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
+            •	Original Passport <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Invitation letter  <br/>
+            An Original invitation letter from Nigeria. This must be addressed to the Nigeria Consulate Johannesburg. It must be on letter headed paper signed the full name and dated by a Nigerian member of staff at the company. The statement “accepting full immigration responsibilities” must be included. Applicant\'s name and passport number must be stated.<br/><br/>
+            •	Certificate of incorporation/ Business Registration <br/>
+            Certificate of incorporation or Business registration of the inviting company in Nigeria <br/><br/>
+
+            •	Inviter’s passport copy <br/>
+            Photocopy of Inviter\'s International Passport Data page (6 months validity)  <br/><br/>
+
+            •	Copy of marriage certificate <br/><br/>
+
+            •	Letter of consent <br/>
+                        Letter of consent (signed and dated) form both parents <br/><br/>
+
+            •	Copy of marriage certificate <br/><br/>
+
+            •	Copy of birth certificate <br/><br/>
+
+            •	Embassy Admin Fee <br/><br/>
+
+            •	Passport Photo <br/>
+            Three (3) recent passport sized photographs <br/><br/>
+
+            •	Online Payment <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form <br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+
+            •	IMM/22 RESIDENCE FORM <br/>
+            For downloading the form, please visit www.oisservices.com
             ',
-            'file_name' => 'Dependent of Expatriate – Free Zone (Minor)Visa – R3C.docx',
+            'file_name' => 'Dependent of Expatriate (18 years and above) Visa – R2D.docx',
         ]);
         Checklist::create([
-            'office_id' => 14,
+            'office_id' => 13,
             'visa_type' => 'Standard',
-            'title' => 'Dependent of Expatriate (Aged Parents – 65 years and above) Visa – R2E',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
+            'title' => 'Dependent of Expatriate (18 years and above) Visa – R3D',
+            'description' => 'R3D: Visa is issued to dependents of employed expatriate in Free Zone who are 18 years and above <br/><br/>
+            Eligibility: <br/>
+            Dependents (18 years and above) accompanying employed Expatriates in Free Zone <br/><br/>
+            Requirements: <br/><br/>
 
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            FORMAL LETTER BY THE EMPLOYER:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            MOU WITH RELEVANT MDA AND INSTITUTIONS<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
+            •	Original Passport <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Invitation letter  <br/>
+            An Original invitation letter from Nigeria. This must be addressed to the Nigeria Consulate Johannesburg. It must be on letter headed paper signed the full name and dated by a Nigerian member of staff at the company. The statement “accepting full immigration responsibilities” must be included. Applicant\'s name and passport number must be stated.<br/><br/>
+            •	Certificate of incorporation/ Business Registration <br/>
+            Certificate of incorporation or Business registration of the inviting company in Nigeria <br/><br/>
+
+            •	Inviter’s passport copy <br/>
+            Photocopy of Inviter\'s International Passport Data page (6 months validity)  <br/><br/>
+
+            •	Copy of marriage certificate <br/><br/>
+
+            •	Letter of consent <br/>
+                        Letter of consent (signed and dated) form both parents <br/><br/>
+
+            •	Copy of marriage certificate <br/><br/>
+
+            •	Copy of birth certificate <br/><br/>
+
+            •	Embassy Admin Fee <br/><br/>
+
+            •	Passport Photo <br/>
+            Three (3) recent passport sized photographs <br/><br/>
+
+            •	Online Payment <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form <br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+
+            •	IMM/22 RESIDENCE FORM <br/>
+            For downloading the form, please visit www.oisservices.com
             ',
-            'file_name' => 'Dependent of Expatriate (Aged Parents – 65 years and above) Visa – R2E.docx',
+            'file_name' => 'Dependent of Expatriate (18 years and above) Visa – R3D.docx',
         ]);
         Checklist::create([
-            'office_id' => 14,
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Dependent of Expatriate (Minor) Visa – R2C',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
+            'description' => 'R2C: Dependent of Expatriate (Minor) Visa is issued to dependent of employed expatriate on quota who are less than 18 years of age <br/><br/>
+            Eligibility: <br/>
+            Dependents less than 18 years accompanying employed Expatriates on quota <br/><br/>
+            Requirements: <br/><br/>
 
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            FORMAL LETTER BY THE EMPLOYER:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            MOU WITH RELEVANT MDA AND INSTITUTIONS<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
+            •	Original Passport <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Invitation letter  <br/>
+            An Original invitation letter from Nigeria. This must be addressed to the Nigeria Consulate Johannesburg. It must be on letter headed paper signed the full name and dated by a Nigerian member of staff at the company. The statement “accepting full immigration responsibilities” must be included. Applicant\'s name and passport number must be stated.<br/><br/>
+            •	Certificate of incorporation/ Business Registration <br/>
+            Certificate of incorporation or Business registration of the inviting company in Nigeria <br/><br/>
+
+            •	Inviter’s passport copy <br/>
+            Photocopy of Inviter\'s International Passport Data page (6 months validity)  <br/><br/>
+
+            •	Copy of marriage certificate <br/><br/>
+
+            •	Letter of consent <br/>
+                        Letter of consent (signed and dated) form both parents <br/><br/>
+
+            •	Copy of marriage certificate <br/><br/>
+
+            •	Copy of birth certificate <br/><br/>
+
+            •	Embassy Admin Fee <br/><br/>
+
+            •	Passport Photo <br/>
+            Three (3) recent passport sized photographs <br/><br/>
+
+            •	Online Payment <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form <br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+
+            •	IMM/22 RESIDENCE FORM <br/>
+            For downloading the form, please visit www.oisservices.com
             ',
             'file_name' => 'Dependent of Expatriate (Minor) Visa – R2C.docx',
         ]);
         Checklist::create([
-            'office_id' => 14,
+            'office_id' => 13,
             'visa_type' => 'Standard',
-            'title' => 'Employment (Cleric) Visa – R6A',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
+            'title' => 'Dependent of Expatriate (Aged Parents – 65 years and above) Visa – R2E',
+            'description' => 'R2E: Visa is issued to aged parents (65 years and above) of employed expatriate on quotas as dependents <br/><br/>
+            Eligibility: <br/>
+            Aged Parents (65 years and above) of employed Expatriates on quota <br/><br/>
+            Requirements: <br/><br/>
 
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            FORMAL LETTER BY THE EMPLOYER:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            MOU WITH RELEVANT MDA AND INSTITUTIONS<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
+            •	Original Passport <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Invitation letter  <br/>
+            An Original invitation letter from Nigeria. This must be addressed to the Nigeria Consulate Johannesburg. It must be on letter headed paper signed the full name and dated by a Nigerian member of staff at the company. The statement “accepting full immigration responsibilities” must be included. Applicant\'s name and passport number must be stated.<br/><br/>
+            •	Certificate of incorporation/ Business Registration <br/>
+            Certificate of incorporation or Business registration of the inviting company in Nigeria <br/><br/>
+
+            •	Inviter’s passport copy <br/>
+            Photocopy of Inviter\'s International Passport Data page (6 months validity)  <br/><br/>
+
+            •	Copy of marriage certificate <br/><br/>
+
+            •	Letter of consent <br/>
+                        Letter of consent (signed and dated) form both parents <br/><br/>
+
+            •	Copy of marriage certificate <br/><br/>
+
+            •	Copy of birth certificate <br/><br/>
+
+            •	Embassy Admin Fee <br/><br/>
+
+            •	Passport Photo <br/>
+            Three (3) recent passport sized photographs <br/><br/>
+
+            •	Online Payment <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form <br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+
+            •	IMM/22 RESIDENCE FORM <br/>
+            For downloading the form, please visit www.oisservices.com
             ',
-            'file_name' => 'Employment (Cleric) Visa – R6A.docx',
+            'file_name' => 'Dependent of Expatriate -Aged Parents – 65 years and above- Visa – R2E.docx',
         ]);
         Checklist::create([
-            'office_id' => 14,
+            'office_id' => 13,
             'visa_type' => 'Standard',
-            'title' => 'Employment (Expatriate – Free Zone) Visa – R3A',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
+            'title' => 'Employment Visa – Cleric: R6A ',
+            'description' => 'R6A: Employment Visa (Cleric) is issued to expatriates who wish to obtain employment as a cleric in Nigeria. <br/><br/>
+            Eligibility: <br/>
+            Cleric <br/><br/>
+            Requirements:<br/><br/>
 
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            FORMAL LETTER BY THE EMPLOYER:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            MOU WITH RELEVANT MDA AND INSTITUTIONS<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
+            •	Original Passport <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement
+            Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
+
+
+            •	Letter of Invitation/application for R6A Visa by the Employer accepting Immigration Responsibility<br/><br/>
+
+            •	Visa will be issued after appropriate clearance <br/><br/>
+
+
+
+            •	Certificate of Registration of the Mission<br/>
+            Certificate of Registration of the Mission in Nigeria<br/><br/>
+
+
+            •	Inviter’s passport copy<br/>
+            Photocopy of Inviter\'s International Passport Data page (6 months validity)<br/><br/>
+
+            •	Offer Letter<br/>
+            Letter of Offer of Appointment specifying designation and duties <br/><br/>
+
+            •	Expatriate quota<br/>
+            Original and certified true copy of Approved Expatriate Quota from Immigration Services   <br/><br/>
+
+            •	Acceptance letter<br/>
+            Acceptance of Appointment<br/><br/>
+
+            •	CV/Resume<br/><br/>
+
+            •	Embassy Admin Fee<br/><br/>
+
+            •	Passport Photo<br/>
+            Four (4) recent passport sized photographs <br/><br/>
+
+            •	Online Payment<br/>
+            A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
+
+            •	Application form<br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+
+            •	IMM/22 RESIDENCE FORM<br/>
+            For downloading the form, please visit www.oisservices.com
             ',
-            'file_name' => 'Employment (Expatriate – Free Zone) Visa – R3A.docx',
+            'file_name' => 'Employment Visa  Cleric R6A.docx',
         ]);
         Checklist::create([
-            'office_id' => 14,
+            'office_id' => 13,
             'visa_type' => 'Standard',
-            'title' => 'Employment (Expatriate) Visa – R2A',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
+            'title' => 'Employment Visa Expatriate (Free Zone): R3A',
+            'description' => 'R3A: Employment Visa – Expatriate (Free Zone) is a type of visa issued to expatriates who wish to obtain employment within Free Zone in Nigeria <br/><br/>
+            Eligibility: <br/>
+            Expatriates wishing to work within Free Zone in Nigeria <br/><br/>
+            Requirements: <br/><br/>
 
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            FORMAL LETTER BY THE EMPLOYER:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            MOU WITH RELEVANT MDA AND INSTITUTIONS<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
+            •	Original Passport <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Invitation letter   <br/>
+            An Original invitation letter from Nigeria. This must be addressed to the Nigeria Consulate in Johannesburg. It must be on letter headed paper signed the full name and dated by a Nigerian member of staff at the company. The statement “accepting full immigration responsibilities” must be included. Applicant\'s name and passport number must be stated. <br/><br/>
+
+            •	Certificate of incorporation/ Business Registration Certificate of incorporation or Business registration of the inviting company in Nigeria <br/><br/>
+
+            •	Inviter’s passport copy <br/>
+            Photocopy of Inviter\'s International Passport Data page (6 months validity)  <br/><br/>
+
+            •	Employment letter Letter of Offer of Appointment specifying designation and duties of employee/applicant <br/><br/>
+
+            •	Free zone Authority letter  <br/><br/>
+
+            •	Acceptance letter <br/>
+            Acceptance of Appointment <br/><br/>
+
+            •	CV <br/><br/>
+
+            •	Embassy Admin Fee <br/><br/>
+
+            •	Passport Photo <br/>
+            Four (4) recent passport sized photographs  <br/><br/>
+
+            •	Online Payment <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	– 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form <br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant. <br/><br/>
+
+
+            •	Professional Certificate /Academic Certificate  Photocopies of Professional Certificate /Academic Certificate  <br/><br/>
+
+            •	IMM/22 RESIDENCE FORM <br/>
+            For downloading the form, please visit www.oisservices.com
             ',
-            'file_name' => 'Employment (Expatriate) Visa – R2A.docx',
+            'file_name' => 'Employment Visa Expatriate - Free Zone - R3A.docx',
         ]);
         Checklist::create([
-            'office_id' => 14,
+            'office_id' => 13,
             'visa_type' => 'Standard',
-            'title' => 'Interns Visa – R9A',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
+            'title' => 'Employment Visa (Expatriate): R2A',
+            'description' => 'R2A: Employment Visa (Expatriate) is a type of visa issued to persons who wish to take up employment in Nigeria, based on expatriate quota. <br/><br/>
+            Eligibility: <br/>
+            Employment Expatriates to be placed on quota <br/><br/>
+            Requirements: <br/><br/>
 
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            FORMAL LETTER BY THE EMPLOYER:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            MOU WITH RELEVANT MDA AND INSTITUTIONS<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
+            •	Original Passport <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Invitation letter   <br/>
+            An Original invitation letter from Nigeria. This must be addressed to the Nigeria Consulate in Johannesburg. It must be on letter headed paper signed the full name and dated by a Nigerian member of staff at the company. The statement “accepting full immigration responsibilities” must be included. Applicant\'s name and passport number must be stated. <br/><br/>
+
+            •	Certificate of incorporation/ Business Registration Certificate of incorporation or Business registration of the inviting company in Nigeria <br/><br/>
+
+            •	Inviter’s passport copy <br/>
+            Photocopy of Inviter\'s International Passport Data page (6 months validity)  <br/><br/>
+
+            •	Employment letter Letter of Offer of Appointment specifying designation and duties of employee/applicant <br/><br/>
+
+            •	Free zone Authority letter  <br/><br/>
+
+            •	Acceptance letter <br/>
+            Acceptance of Appointment <br/><br/>
+
+            •	CV <br/><br/>
+
+            •	Embassy Admin Fee <br/><br/>
+
+            •	Passport Photo <br/>
+            Four (4) recent passport sized photographs  <br/><br/>
+
+            •	Online Payment <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	– 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form <br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant. <br/><br/>
+
+
+            •	Professional Certificate /Academic Certificate  Photocopies of Professional Certificate /Academic Certificate  <br/><br/>
+
+            •	IMM/22 RESIDENCE FORM <br/>
+            For downloading the form, please visit www.oisservices.com <br/><br/>
+
+            •	Professional Certificate /Academic Certificate Photocopies of all relevant credentials
             ',
-            'file_name' => 'Interns Visa – R9A.docx',
+            'file_name' => 'Employment Visa -Expatriate R2A.docx',
         ]);
         Checklist::create([
-            'office_id' => 14,
+            'office_id' => 13,
             'visa_type' => 'Standard',
-            'title' => 'Spouse of AEP Visa – R8B',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
+            'title' => 'Employment Visa--- Spouse of Cleric (18 years and above) ---R6D',
+            'description' => 'R6E: Employment Visa (Cleric) is issued to dependents of employed cleric in Nigeria who are 18 years and above. <br/><br/>
+            Eligibility: <br/>
+            Dependents (18years and above) accompanying employed Cleric <br/><br/>
 
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            FORMAL LETTER BY THE EMPLOYER:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            MOU WITH RELEVANT MDA AND INSTITUTIONS<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
+            Requirements:<br/><br/>
+
+            •	Original Passport <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement
+            Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
+
+            •	Letter of Invitation/application for R6A Visa by the Employer accepting Immigration Responsibility<br/><br/>
+
+            •	Visa will be issued after appropriate clearance <br/><br/>
+
+            •	Certificate of Registration of the Mission<br/>
+            Certificate of Registration of the Mission in Nigeria<br/><br/>
+
+
+            •	Inviter’s passport copy<br/>
+            Photocopy of Inviter\'s International Passport Data page (6 months validity)<br/><br/>
+
+
+            •	Expatriate quota<br/>
+            Original and certified true copy of Approved Expatriate Quota from Immigration Services   <br/><br/>
+
+            •	Marriage certificate<br/><br/>
+
+            •	Birth Certificate<br/><br/>
+
+            •	Embassy Admin Fee<br/><br/>
+
+            •	Passport Photo<br/>
+            Three (3) recent passport sized photographs <br/><br/>
+
+            •	Online Payment<br/>
+            A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
+
+            •	Application form<br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+
+            •	IMM/22 RESIDENCE FORM<br/>
+            For downloading the form, please visit www.oisservices.com
             ',
-            'file_name' => 'Spouse of AEP Visa – R8B.docx',
+            'file_name' => 'Employment Visa Spouse of Cleric (18 years and above) R6D.docx',
         ]);
         Checklist::create([
-            'office_id' => 14,
+            'office_id' => 13,
             'visa_type' => 'Standard',
-            'title' => 'Spouse of Cleric Visa – R6B',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
+            'title' => 'Employment Visa--- Spouse of Cleric (Aged Parents 65 years and above) ---R6E',
+            'description' => 'R6E: Employment Visa (Cleric) is issued to aged parents (65 years and above) of employed cleric in Nigeria as dependants.<br/><br/>
+            Eligibility: <br/>
+            Aged parents (65 years and above) accompanying employed Cleric <br/><br/>
 
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            FORMAL LETTER BY THE EMPLOYER:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            MOU WITH RELEVANT MDA AND INSTITUTIONS<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
+            Requirements:<br/><br/>
+
+            •	Original Passport <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement
+            Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
+
+            •	Letter of Invitation/application for R6A Visa by the Employer accepting Immigration Responsibility<br/><br/>
+
+            •	Visa will be issued after appropriate clearance <br/><br/>
+
+            •	Certificate of Registration of the Mission<br/>
+            Certificate of Registration of the Mission in Nigeria<br/><br/>
+
+
+            •	Inviter’s passport copy<br/>
+            Photocopy of Inviter\'s International Passport Data page (6 months validity)<br/><br/>
+
+
+            •	Expatriate quota<br/>
+            Original and certified true copy of Approved Expatriate Quota from Immigration Services   <br/><br/>
+
+            •	Marriage certificate<br/><br/>
+
+            •	Birth Certificate<br/><br/>
+
+            •	Embassy Admin Fee<br/><br/>
+
+            •	Passport Photo<br/>
+            Three (3) recent passport sized photographs <br/><br/>
+
+            •	Online Payment<br/>
+            A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
+
+            •	Application form<br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+
+            •	IMM/22 RESIDENCE FORM<br/>
+            For downloading the form, please visit www.oisservices.com
             ',
-            'file_name' => 'Spouse of Cleric Visa – R6B.docx',
+            'file_name' => 'Employment Visa Spouse of Cleric (Aged Parents 65 years and above) R6E.docx',
         ]);
         Checklist::create([
-            'office_id' => 14,
+            'office_id' => 13,
+            'visa_type' => 'Standard',
+            'title' => 'Employment Visa- Spouse of Cleric (Minor)---R6C (less than 18years)',
+            'description' => 'R6C: Employment Visa (Cleric) is issued to dependents of employed cleric in Nigeria who are less than 18years of age.<br/><br/>
+            Eligibility: <br/>
+            Dependents (less than 18years) accompanying employed Cleric. <br/><br/>
+
+            Requirements:<br/><br/>
+
+            •	Original Passport <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement
+            Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
+
+            •	Letter of Invitation/application for R6A Visa by the Employer accepting Immigration Responsibility<br/><br/>
+
+            •	Visa will be issued after appropriate clearance <br/><br/>
+
+            •	Certificate of Registration of the Mission<br/>
+            Certificate of Registration of the Mission in Nigeria<br/><br/>
+
+
+            •	Inviter’s passport copy<br/>
+            Photocopy of Inviter\'s International Passport Data page (6 months validity)<br/><br/>
+
+
+            •	Expatriate quota<br/>
+            Original and certified true copy of Approved Expatriate Quota from Immigration Services   <br/><br/>
+
+            •	Marriage certificate<br/><br/>
+
+            •	Birth Certificate<br/><br/>
+
+            •	Embassy Admin Fee<br/><br/>
+
+            •	Passport Photo<br/>
+            Three (3) recent passport sized photographs <br/><br/>
+
+            •	Online Payment<br/>
+            A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
+
+            •	Application form<br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+
+            •	IMM/22 RESIDENCE FORM<br/>
+            For downloading the form, please visit www.oisservices.com
+            ',
+            'file_name' => 'Employment Visa Spouse of Cleric (Minor) R6C.docx',
+        ]);
+        Checklist::create([
+            'office_id' => 13,
+            'visa_type' => 'Standard',
+            'title' => 'Employment Visa – Spouse of Cleric: R6B',
+            'description' => 'R6B: Employment Visa (Cleric) is issued to Spouse of employed cleric in Nigeria.<br/><br/>
+            Eligibility: <br/>
+            Spouse accompanying employed Cleric <br/><br/>
+
+            Requirements:<br/><br/>
+
+            •	Original Passport <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement
+            Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
+
+            •	Letter of Invitation/application for R6A Visa by the Employer accepting Immigration Responsibility<br/><br/>
+
+            •	Visa will be issued after appropriate clearance <br/><br/>
+
+            •	Certificate of Registration of the Mission<br/>
+            Certificate of Registration of the Mission in Nigeria<br/><br/>
+
+
+            •	Inviter’s passport copy<br/>
+            Photocopy of Inviter\'s International Passport Data page (6 months validity)<br/><br/>
+
+
+            •	Expatriate quota<br/>
+            Original and certified true copy of Approved Expatriate Quota from Immigration Services   <br/><br/>
+
+            •	Marriage certificate<br/><br/>
+
+            •	Birth Certificate<br/><br/>
+
+            •	Embassy Admin Fee<br/><br/>
+
+            •	Passport Photo<br/>
+            Three (3) recent passport sized photographs <br/><br/>
+
+            •	Online Payment<br/>
+            A copy of the Acknowledgment slip must be – Printed from https://portal.immigration.gov.ng/<br/><br/>
+
+            •	Application form<br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+
+            •	IMM/22 RESIDENCE FORM<br/>
+            For downloading the form, please visit www.oisservices.com
+            ',
+            'file_name' => 'Employment Visa Spouse of Cleric R6B.docx',
+        ]);
+        Checklist::create([
+            'office_id' => 13,
+            'visa_type' => 'Standard',
+            'title' => 'Humanitarian Services Visa-F7J',
+            'description' => 'F7J： Humanitarian Visa is a single entry visa to visit Nigeria for the purpose of humanitarian services <br/><br/>
+            Eligibility: <br/>
+            Humanitarian workers  <br/><br/>
+
+            Requirements: <br/><br/>
+            •	Original Passport  <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Passport Photo  <br/>
+            Two (2) recent passport sized photographs  <br/><br/>
+
+            •	Online Payment  <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	– 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form  <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant. <br/><br/>
+
+            •	Return Ticket  <br/><br/>
+
+            •	Evidence of sufficient fund  <br/>
+              Bank Statement of applicant with sufficient balance, with bank\'s stamp <br/><br/>
+
+            •	Embassy Admin Fee <br/>
+
+            Evidence of Hotel Reservation/host address in Nigeria <br/><br/>
+
+            •	Letter (MoU from National Planning Commission)
+            ',
+            'file_name' => 'Humanitarian Services Visa-F7J.docx',
+        ]);
+        Checklist::create([
+            'office_id' => 13,
+            'visa_type' => 'Standard',
+            'title' => 'Intern Visa --- R9A ',
+            'description' => 'R9A: Intern Visa is issued to persons who wish to undergo resident intern ship programme in Nigeria. <br/><br/>
+            Eligibility: <br/>
+            Interns. <br/><br/>
+
+            Requirements: <br/><br/>
+
+            •	Original Passport <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Passport Photo <br/>
+            Four (4) recent passport sized photographs  <br/><br/>
+
+            •	Online Payment <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form <br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed,   must be printed out, signed, and dated by the applicant.	 <br/><br/>
+
+            •	Return Ticket <br/><br/>
+
+            •	Evidence of sufficient fund <br/>
+                        Original evidence of sufficient fund of applicant, with bank\'s stamp <br/><br/>
+
+            •	Embassy Admin Fee <br/><br/>
+            •	Evidence of Hotel Reservation/host address in Nigeria <br/><br/>
+
+
+            •	Formal application for R9A Visa by the lnstitution accepting lmmigration Responsibility <br/><br/>
+
+            •	Passport data page of the Inviter <br/><br/>
+
+
+            •	Certificate of Institution registration in Nigeria  <br/><br/>
+
+            •	Letter of acceptance of internship by institution in Nigeria
+            ',
+            'file_name' => 'Intern Visa --- R9A.docx',
+        ]);
+        Checklist::create([
+            'office_id' => 13,
+            'visa_type' => 'Standard',
+            'title' => 'International Cultural Exchange Visa-F7I',
+            'description' => 'F7I: International Cultural Exchange Visa is a single entry visa to visit Nigeria for the purpose of cultural exchange activities <br/><br/>
+            Eligibility: <br/>
+            Citizens of countries with which Nigeria has Memorandum of Understanding (MoU) on cultural exchange programme<br/><br/>
+
+            Requirements: <br/><br/>
+
+            •	Original Passport  <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Passport Photo  <br/>
+            Two (2) recent passport sized photographs  <br/><br/>
+
+            •	Online Payment  <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	– 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form  <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant. <br/><br/>
+
+
+            •	Return Ticket  <br/><br/>
+
+            •	Evidence of sufficient fund  <br/>
+              Bank Statement of applicant with sufficient balance, with bank\'s stamp <br/><br/>
+
+            •	Embassy Admin Fee <br/><br/>
+
+            •	Evidence of Hotel Reservation/host address in Nigeria <br/><br/>
+
+            •	Memorandum of Understanding (MoU) with relevant government agency
+            ',
+            'file_name' => 'International Cultural Exchange Visa-F7I.docx',
+        ]);
+        Checklist::create([
+            'office_id' => 13,
+            'visa_type' => 'Standard',
+            'title' => 'Journalist Visa-F7A',
+            'description' => 'F7A: Journalist Visit is a single entry visa issues to those who wish to visit Nigeria for the purpose of media and journalism <br/><br/>
+            Eligibility: <br/>
+            Journalists and media practitioners <br/><br/>
+
+            Requirements: <br/><br/>
+
+            •	Original Passport  <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Passport Photo  <br/>
+            Two (2) recent passport sized photographs  <br/><br/>
+
+            •	Online Payment  <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	– 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form  <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant. <br/><br/>
+
+
+            •	Return Ticket  <br/><br/>
+
+            •	Evidence of sufficient fund  <br/>
+              Bank Statement of applicant with sufficient balance, with bank\'s stamp <br/><br/>
+
+            •	Embassy Admin Fee <br/><br/>
+
+            •	Evidence of Hotel Reservation/host address in Nigeria <br/><br/>
+
+            •	Memorandum of Understanding (MoU) with relevant government agency
+            ',
+            'file_name' => 'Journalist Visa-F7A.docx',
+        ]);
+        Checklist::create([
+            'office_id' => 13,
+            'visa_type' => 'Standard',
+            'title' => 'Medical Tourism Visa-F7C',
+            'description' => 'F7C:Medical Tourist Visa is to enable visit to Nigeria for the purpose of receiving medical care <br/><br/>
+            Eligibility: <br/>
+            Persons in need of medical attention <br/>
+            Persons accompanying medical patient <br/><br/>
+
+            Requirements: <br/><br/>
+
+            •	Original Passport  <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Passport Photo  <br/>
+            Two (2) recent passport sized photographs  <br/><br/>
+
+            •	Online Payment  <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	– 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form  <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant. <br/><br/>
+
+
+            •	Return Ticket  <br/><br/>
+
+            •	Evidence of sufficient fund  <br/>
+              Bank Statement of applicant with sufficient balance, with bank\'s stamp <br/><br/>
+
+            •	Embassy Admin Fee <br/><br/>
+
+            •	Evidence of Hotel Reservation/host address in Nigeria <br/><br/>
+
+            •	Memorandum of Understanding (MoU) with relevant government agency
+            ',
+            'file_name' => 'Medical Tourism Visa-F7C.docx',
+        ]);
+        Checklist::create([
+            'office_id' => 13,
+            'visa_type' => 'Standard',
+            'title' => 'Religious Tourism Visa-F7D',
+            'description' => 'F7D: Religious Tourism Visa is a single-entry visa issued to religious faithful/adherents/followers who wish to visit Nigeria for the purpose of attending religious activities / programmes/ pilgrimages <br/><br/>
+            Eligibility: <br/>
+            Religious faithful/adherents/followers <br/><br/>
+
+            Requirements: <br/><br/>
+
+            •	Original Passport  <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Passport Photo  <br/>
+            Two (2) recent passport sized photographs  <br/><br/>
+
+            •	Online Payment  <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	– 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form  <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant. <br/><br/>
+
+
+            •	Return Ticket  <br/><br/>
+
+            •	Evidence of sufficient fund  <br/>
+              Bank Statement of applicant with sufficient balance, with bank\'s stamp <br/><br/>
+
+            •	Embassy Admin Fee <br/><br/>
+
+            •	Evidence of Hotel Reservation/host address in Nigeria <br/><br/>
+
+            •	Memorandum of Understanding (MoU) with relevant government agency
+            ',
+            'file_name' => 'Religious Tourism Visa-F7D.docx',
+        ]);
+        Checklist::create([
+            'office_id' => 13,
+            'visa_type' => 'Standard',
+            'title' => 'Sport Visa-F7E',
+            'description' => 'F7E: Sports Visa is a single-entry visa issued to those who wish to visit Nigeria for the purpose of sporting activities  <br/><br/>
+            Eligibility: <br/>
+            Sports men/women, officials and organised supporters club <br/><br/>
+
+            Requirements: <br/><br/>
+
+            •	Original Passport  <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Passport Photo  <br/>
+            Two (2) recent passport sized photographs  <br/><br/>
+
+            •	Online Payment  <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	– 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form  <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant. <br/><br/>
+
+
+            •	Return Ticket  <br/><br/>
+
+            •	Evidence of sufficient fund  <br/>
+              Bank Statement of applicant with sufficient balance, with bank\'s stamp <br/><br/>
+
+            •	Embassy Admin Fee <br/><br/>
+
+            •	Evidence of Hotel Reservation/host address in Nigeria <br/><br/>
+
+            •	Memorandum of Understanding (MoU) with relevant government agency
+            ',
+            'file_name' => 'Sport Visa-F7E.docx',
+        ]);
+        Checklist::create([
+            'office_id' => 13,
+            'visa_type' => 'Standard',
+            'title' => 'Spouse of AEP Visa --- R8B ',
+            'description' => 'R8B: Spouse of AEP Visa is issued to Spouse of Academic Exchange Programme (AEP)participants to reside in Nigeria. <br/><br/>
+            Eligibility: <br/>
+            Spouse accompanying AEP participant. <br/><br/>
+
+            Requirements: <br/><br/>
+
+            •	Original Passport <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Passport Photo <br/>
+            Three (3) recent passport sized photographs <br/><br/>
+
+            •	Online Payment <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form <br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant. <br/><br/>
+
+            •	Return Ticket <br/><br/>
+
+            •	Evidence of sufficient fund <br/>
+                        Original evidence of sufficient fund of applicant, with bank\'s stamp <br/><br/>
+
+            •	Embassy Admin Fee <br/><br/>
+            •	Evidence of Hotel Reservation/host address in Nigeria <br/><br/>
+
+            •	Copy of spouse Residence Permit <br/><br/>
+
+            •	Formal application for R7B Visa by the lnstitution accepting lmmigration Responsibility <br/><br/>
+            •	Passport data page of the Inviter <br/><br/>
+            •	Certificate of Institution registration  <br/><br/>
+
+
+            •	Evidence of marriage <br/><br/>
+
+            •	Evidence of funds to sustain the family <br/><br/>
+            •	IMM/22 RESIDENCE FORM <br/>
+            For downloading the form, please visit www.oisservices.com
+            ',
+            'file_name' => 'Spouse of AEP Visa --- R8B.docx',
+        ]);
+        Checklist::create([
+            'office_id' => 13,
             'visa_type' => 'Standard',
             'title' => 'Spouse of Expatriate – Free Zone Visa – R3B',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
+            'description' => 'R3B: Spouse of Expatriate – Free Zone Visa is issued to spouse of employed expatriate placed on quota in Nigeria <br/><br/>
+            Eligibility: <br/>
+            Spouse of Employed Expatriates in Free Zone in Nigeria <br/><br/>
 
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            FORMAL LETTER BY THE EMPLOYER:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            MOU WITH RELEVANT MDA AND INSTITUTIONS<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
+            Requirements: <br/><br/>
+
+            •	Original Passport <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Invitation letter   <br/>
+            An Original invitation letter from Nigeria. This must be addressed to the Nigeria Consulate
+            Johannesburg. It must be on letter headed paper signed the full name and dated by a Nigerian member of staff at the company. The statement “accepting full immigration responsibilities” must be included. Applicant\'s name and passport number must be stated. <br/><br/>
+            •	Certificate of incorporation/ Business Registration Certificate of incorporation or Business registration of the inviting company in Nigeria <br/><br/>
+
+            •	Inviter’s passport copy <br/>
+            Photocopy of Inviter\'s International Passport Data page (6 months validity)  <br/><br/>
+
+            •	Copy of marriage certificate <br/><br/>
+            •	Embassy Admin Fee <br/><br/>
+
+            •	Passport Photo Three (3) recent passport sized photographs <br/><br/>
+
+            •	Online Payment <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	– 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form <br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant. <br/><br/>
+
+            •	IMM/22 RESIDENCE FORM <br/>
+            For downloading the form, please visit www.oisservices.com
             ',
             'file_name' => 'Spouse of Expatriate – Free Zone Visa – R3B.docx',
         ]);
         Checklist::create([
-            'office_id' => 14,
+            'office_id' => 13,
             'visa_type' => 'Standard',
-            'title' => 'Spouse of Expatriate Visa – R2B',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
+            'title' => 'Spouse of Expatriate Visa - R2B',
+            'description' => 'R2B: Spouse of Expatriate Visa is a type of visa issued to spouse of employed expatriate placed on quota in Nigeria  <br/><br/>
+            Eligibility: <br/>
+            Spouse of Employed Expatriate on quota <br/><br/>
 
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            FORMAL LETTER BY THE EMPLOYER:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            MOU WITH RELEVANT MDA AND INSTITUTIONS<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
+            Requirements: <br/><br/>
+
+            •	Original Passport <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+
+            •	Invitation letter  <br/>
+            An Original invitation letter from Nigeria. This must be addressed to the Nigeria Consulate in Johannesburg. It must be on letter headed paper signed the full name and dated by a Nigerian staff. The statement “accepting full immigration responsibilities” must be included. Applicant\'s name and passport number must be stated. <br/><br/>
+
+            •	Certificate of incorporation/ Business Permit Certificate of incorporation or Business Registration of the inviting company in Nigeria <br/><br/>
+
+
+            •	Inviter’s passport copy <br/>
+            Photocopy of Inviter\'s International Passport Data page (6 months validity) <br/><br/>
+
+            •	Employment letter and Work Contract <br/>
+            Letter of Offer of Appointment specifying designation and duties of employee/applicant <br/><br/>
+
+            •	Expatriate quota <br/>
+            Original and certified true copy of Approved Expatriate Quota from Immigration Services    <br/><br/>
+            •	Tax Clearance Certificate of company <br/><br/>
+
+
+            •	Embassy Admin Fee <br/><br/>
+
+            •	Passport Photo <br/>
+            Three (3) recent passport sized photographs  <br/><br/>
+
+            •	Online Payment <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	– 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form <br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant. <br/><br/>
+
+            •	IMM/22 RESIDENCE FORM <br/>
+            For downloading the form, please visit www.oisservices.com <br/><br/>
+
+            •	Marriage certificate
             ',
-            'file_name' => 'Spouse of Expatriate Visa – R2B.docx',
+            'file_name' => 'Spouse of Expatriate Visa - R2B.docx',
         ]);
         Checklist::create([
-            'office_id' => 14,
+            'office_id' => 13,
             'visa_type' => 'Standard',
-            'title' => 'Spouse of Student Visa – R7B',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
+            'title' => 'Spouse of Student Visa--- R7B',
+            'description' => 'R7B: Spouse of Student Visa is issued to spouse of international student in Nigeria.<br/><br/>
+            Eligibility: <br/>
+            Spouse accompanying student<br/><br/>
 
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            FORMAL LETTER BY THE EMPLOYER:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            MOU WITH RELEVANT MDA AND INSTITUTIONS<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
+            Requirements:<br/><br/>
+
+            •	Original Passport<br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement
+            Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
+
+            •	Passport Photo<br/>
+            Three (3) recent passport sized photographs<br/><br/>
+
+            •	Online Payment<br/>
+            A copy of the Acknowledgment slip must be Printed from https://portal.immigration.gov.ng/<br/><br/>
+
+            •	Application form<br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+
+            •	Return Ticket<br/><br/>
+
+            •	Evidence of sufficient fund<br/>
+                        Original evidence of sufficient fund of applicant, with bank\'s stamp<br/><br/>
+
+            •	Embassy Admin Fee<br/><br/>
+            •	Evidence of Hotel Reservation/host address in Nigeria<br/><br/>
+
+            •	Copy of spouse Residence Permit<br/><br/>
+
+            •	Formal application for R7B Visa by the lnstitution accepting lmmigration Responsibility<br/><br/>
+            •	Passport data page of the Inviter<br/><br/>
+            •	Certificate of Institution registration <br/><br/>
+
+
+            •	Evidence of marriage<br/><br/>
+
+            •	Evidence of funds to sustain the family<br/><br/>
+            •	IMM/22 RESIDENCE FORM<br/>
+            For downloading the form, please visit www.oisservices.com
             ',
-            'file_name' => 'Spouse of Student Visa – R7B.docx',
+            'file_name' => 'Spouse of Student Visa R7B.docx',
         ]);
         Checklist::create([
-            'office_id' => 14,
+            'office_id' => 13,
             'visa_type' => 'Standard',
-            'title' => 'Student Visa – R7A',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
+            'title' => 'Staff of INGO  Visa-F7L',
+            'description' => 'F7L： Staff of INGO Visa is a single entry visa issue to staff of International Non-Governmental Organizations for the purpose of INGO activities. <br/><br/>
+            Eligibility: <br/>
+            Staff of INGOs <br/><br/>
 
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            FORMAL LETTER BY THE EMPLOYER:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            MOU WITH RELEVANT MDA AND INSTITUTIONS<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
+            Requirements: <br/><br/>
+
+            •	Original Passport  <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Passport Photo  <br/>
+            Two (2) recent passport sized photographs  <br/><br/>
+
+            •	Online Payment  <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	– 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            Application form  <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant. <br/><br/>
+
+            •	Return Ticket  <br/><br/>
+
+            •	Evidence of sufficient fund  <br/>
+              Bank Statement of applicant with sufficient balance, with bank\'s stamp <br/><br/>
+
+            •	Embassy Admin Fee <br/><br/>
+
+            •	Evidence of Hotel Reservation/host address in Nigeria <br/><br/>
+
+            •	MoU between Government of Nigeria and the INGO <br/><br/>
+
+            •	Letter of invitation by INGO in Nigeria <br/><br/>
+
+            •	Employment Confirmation Letter of Applicant <br/>
+              An employment Confirmation letter of the applicant addressed to the Nigeria  	   	Consulate in Johannesburg.
             ',
-            'file_name' => 'Student Visa – R7A.docx',
+            'file_name' => 'Staff of INGO  Visa-F7L.docx',
         ]);
         Checklist::create([
-            'office_id' => 14,
+            'office_id' => 13,
             'visa_type' => 'Standard',
-            'title' => 'Temporary Work Permit – F8A',
-            'description' => 'Please read this checklist and Important Information in full before you start completing the application form<br/><br/>
+            'title' => 'Staff of NGO Visa-F7M',
+            'description' => 'F7M：Staff of NGO Visa is a single entry visa issued to visiting staff of Non-Governmental Organizations (NGOs) <br/><br/>
+            Eligibility: <br/>
+            Staff of NGOs <br/><br/>
 
-            APPOINTMENT SLIP: <br/>
-            OIS Appointment booking for each applicant. This can only be done after completing numbers 4 and 5 on this checklist and you have all the documents on this checklist with you. Please only book if it is within 45 days of your travel date.<br/><br/>
-            
-            You are advised not to apply for a Multiple entry visa, if it is your first visit or trip to Nigeria as you will only be issued with a single entry visa.<br/>
-            https://apt.oisservices.com<br/><br/>
-            
-            TRAVEL DOCUMENT: <br/>
-            Passport/Travel Document a minimum of 6 months validity at the time of travelling to and from Nigeria, with two blank facing pages.<br/><br/>
-            
-            Passport/Travel Document will be held by the mission until a decision has been made.<br/><br/>
-            
-            PASSPORT SIZE PHOTOS: <br/>
-            Two recent UK passport sized photographs, taken no more than 2 weeks before submission, with applicant’s full name written on the back. (Photographs older than 1 month are not acceptable).<br/><br/>
-            
-            ONLINE APPLICATION FORM: <br/>
-            Completed application form filled in and paid for online at
-            https://visa.immigration.gov.ng/ <br/>
-            Once completed this must be printed out, in portrait.<br/><br/>
-            
-            ONLINE PAYMENT RECEIPT: <br/>
-            Valid Payment slip available once online payment has been complete – Print from https://portal.immigration.gov.ng/visa/OnlineQueryStatus.<br/><br/>
-            
-            FORMAL LETTER BY THE EMPLOYER:<br/>
-            A formal typed letter of invitation, addressed to The Nigerian High Commission London, with the full address. It must be on a letter headed paper including the full address of the company. It must state that the company takes full immigration responsibilities and the reason for the visit. This must be signed and dated by a senior member of staff.<br/><br/>
-            
-            MOU WITH RELEVANT MDA AND INSTITUTIONS<br/><br/>
-            
-            SPECIAL DELIVERY ENVELOPE: <br/>
-            All applicants must provide a pre-paid special delivery envelope to return the passport. This can be purchased from the Post office before submission.<br/><br/>
-            
-            DOCUMENT HANDLING AND FILING FEE:<br/>
-            £20 payment to be made by bank card at the centre.<br/><br/>
-            
-            EXPRESS SERVICE (OPTIONAL):<br/>
-             £70 Postal order for express service made payable to NIGERIA HIGH COMMISSION. Postal order to be purchased from the post office before coming to our centre.<br/><br/>
-            
-            IMPORTANT INFORMATION<br/><br/>
-            
-            ●	PROCESSING TIMES- <br/>
-            Regular Service- Minimum of 5 Working Days<br/>
-            Express Service- Minimum of 2 Working Days<br/><br/>
-            
-            ●	FEE BREAKDOWN-<br/>
-            1) Online fee- Please note that the online payment amount varies depending on the passport you hold<br/>
-              
-            2) OIS Service charge- £20 payable by bank card at the centre<br/>
-            
-            3) Optional-Express Service Charge - Additional £70 Postal order <br/><br/>
-              
-            ●	All visa applicants are to submit their application in person, as you are now required to capture biometrics as a part of the visa requirements.<br/><br/>
-            
-            ●	Applications submitted after 12.30 PM will be treated as next day applications.<br/><br/>
-            
-            ●	All documents required on the checklist must be shown and approved before we process your application.<br/><br/>
-            
-            ●	Documents which ARE NOT IN ENGLISH must be provided with a certified translated version. Please provide the original and a copy.<br/><br/>
-            
-            ●	Documents which do not reflect your current name on your passport must be provided with your change of name deed poll or marriage certificate if your last name was changed. (Original and copy)<br/><br/>
-            
-            ●	Any Necessary documents print/photocopy in our Centre, will incur an additional charge of £10<br/><br/>
-            
-            ●	All Documents and Letter must be formal.  They should be typed, printed in portrait, addressed to the Nigerian High Commission London, signed and dated.<br/><br/>
-            ●	NIGERIAN DUAL NATIONALS- Provide a copy of your valid or expired Nigeria passport data page.<br/><br/>
-            
-            ●	EU NATIONALS- A copy of your UK Residency or EU Settlement Scheme (EUSS), please bring along the original for those with the original ID or Document.<br/><br/>
-            
-            ●	REPUBLIC OF IRELAND PASSPORT HOLDERS- Two most recent utility bills in the applicant’s name or Full Tenancy Agreement or Current Mortgage statement. (BANK STATEMENT/DRIVING LICENSE ARE NOT ACCEPTED AS UTILITY BILLS) <br/><br/>
-            
-            ●	OTHER NATIONALS- UK Residency card or visa residency stamped on passport, this must be valid for a minimum of 6 months at time of coming to the centre and travelling to and from Nigeria. Please bring the original and a copy.<br/><br/>
-            
-            ●	FOR UK DUAL NATIONALS –We do not accept a UK passport as proof of residency when applying with a foreign passport. If you do not have proof of residency/citizenship other than your UK passport, Please apply with your UK passport instead.<br/><br/>
-            
-            ●	UK TRAVEL DOCUMENT HOLDERS – when selecting your country of origin, please select UNITED KINGDOM. 
+            Requirements: <br/><br/>
+
+            •	Original Passport  <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Passport Photo  <br/>
+            Two (2) recent passport sized photographs  <br/><br/>
+
+            •	Online Payment  <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	– 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            Application form  <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant. <br/><br/>
+
+            •	Return Ticket  <br/><br/>
+
+            •	Evidence of sufficient fund  <br/>
+              Bank Statement of applicant with sufficient balance, with bank\'s stamp <br/><br/>
+
+            •	Embassy Admin Fee <br/><br/>
+
+            •	Evidence of Hotel Reservation/host address in Nigeria <br/><br/>
+
+            •	MoU between Government of Nigeria and the INGO <br/><br/>
+
+            •	Letter of invitation by INGO in Nigeria <br/><br/>
+
+            •	Employment Confirmation Letter of Applicant <br/>
+              An employment Confirmation letter of the applicant addressed to the Nigeria  	   	Consulate in Johannesburg.
             ',
-            'file_name' => 'Temporary Work Permit – F8A.docx',
+            'file_name' => 'Staff of NGO Visa-F7M.docx',
+        ]);
+        Checklist::create([
+            'office_id' => 13,
+            'visa_type' => 'Standard',
+            'title' => 'Student Visa--- R7A',
+            'description' => 'R7A: Student Visa is issued for the purpose of schooling in Nigeria. <br/><br/>
+            Eligibility: <br/>
+            International Students <br/><br/>
+
+            Requirements:<br/><br/>
+
+            •	Original Passport<br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement
+            Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity.<br/><br/>
+
+            •	Passport Photo<br/>
+            Four (4) recent passport sized photographs <br/><br/>
+
+            •	Online Payment<br/>
+            A copy of the Acknowledgment slip must be Printed from https://portal.immigration.gov.ng/<br/><br/>
+
+            •	Application form<br/>
+            Complete the visa application form online at visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant.<br/><br/>
+
+            •	Return Ticket<br/><br/>
+
+            •	Evidence of sufficient fund<br/>
+            Bank Statement with sufficient funds.<br/><br/>
+
+            •	Consulate Admin Fee<br/><br/>
+            •	Evidence of Hotel Reservation/host address in Nigeria<br/><br/>
+
+            •	Admission Letter from the accredited institution<br/><br/>
+
+            •	Letter of Invitation or application for R7A Visa by the lnstitution accepting lmmigration Responsibility<br/><br/>
+            •	Passport data page of the Inviter<br/><br/>
+            •	Certificate of Institution registration <br/><br/>
+
+            •	Proof of payment of required minimum tuition fee<br/><br/>
+            •	IMM/22 RESIDENCE FORM<br/>
+            For downloading the form, please visit www.oisservices.com
+            ',
+            'file_name' => 'Student Visa R7A.docx',
+        ]);
+        Checklist::create([
+            'office_id' => 13,
+            'visa_type' => 'Standard',
+            'title' => 'Temporary Work Permit Visa-F8A  ',
+            'description' => 'F8A:Temporary Work Permit (TWP) Visa is a single entry visa issued to experts invited by corporate bodies for short period of time for the purpose of providing specialized skilled services, such as after sales Installation/Commissioning/Upgrading/Maintenance/Repairs of equipment and machinery, Training/capacity building for Nigerian staff, Audit of machinery/equipment and financial records. It is an authorized visa issued at Nigerian Embassy after the approval of the Comptroller General of Immigration <br/><br/>
+            Eligibility: <br/>
+            Experts invited by corporate bodies  <br/><br/>
+
+            Requirements: <br/><br/>
+
+            •	TWP Approval Letter/Telegram <br/>
+            Original approved TWP Pre approval letter addressed to Johannesburg Mission <br/><br/>
+
+            •	Application Letter  <br/>
+            •	An Original invitation letter from Nigeria. This must be addressed to the Nigeria Consulate Johannesburg. It must be on letter headed paper, signed, full name and dated by a Nigerian staff. The statement“accepting full immigration responsibilities” must be included. Applicant\'s name and passport number must be stated. • Certificate of incorporation/Business Registration
+            Certificate of incorporation of the inviting company in Nigeria <br/><br/>
+
+            •	Inviter’s passport copy <br/>
+            Photocopy of Inviter\'s International Passport Data page (6 months validity)  <br/><br/>
+
+            •	Original Passport  <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement
+            Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Passport Copy <br/>
+            Copy of Valid National Passport (minimum period of validity 6 months) <br/><br/>
+
+            •	Evidence of sufficient fund  <br/>
+            Three (3) Months bank Statement <br/><br/>
+
+            •	Embassy Admin Fee <br/><br/>
+
+            •	Passport Photo  <br/>
+            Two (2) recent passport sized photographs  <br/><br/>
+
+            •	Online Payment <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant. <br/><br/>
+
+            •	Return Ticket  <br/><br/>
+
+            •	Evidence of Hotel Reservation/host address in Nigeria <br/>
+            Employment Confirmation Letter of Applicant
+            ',
+            'file_name' => 'Temporary Work Permit Visa - F8A.docx',
+        ]);
+        Checklist::create([
+            'office_id' => 13,
+            'visa_type' => 'Standard',
+            'title' => 'Tourism Visa-F5A',
+            'description' => 'F5A：Tourism visa is a single entry visa for the purpose of tourism in Nigeria <br/><br/>
+            Eligibility: <br/>
+            Citizens of all countries except ECOWAS member States and other   countries which Nigeria has entered into visa abolition/waiver agreements.  <br/><br/>
+
+            Requirements: <br/><br/>
+
+            •	Introduction Letter   <br/>
+            An Introduction letter by the applicant addressed to the Nigeria Consulate in Johannesburg. It must be signed with full name, addresses and dated. It should include all intended tourist locations that will be visited. <br/><br/>
+            •	Original Passport  <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement
+            Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+            •	Passport Copy <br/>
+            Copy of Valid National Passport (minimum period of validity 6 months)<br/><br/>
+            •	Employment Confirmation Letter of Applicant <br/>
+            An employment Confirmation letter of the applicant addressed to the Nigeria Consulate in Johannesburg. <br/><br/>
+            •	Evidence of sufficient fund <br/>
+                Bank Statement of applicant with sufficient balance, with bank\'s stamp <br/><br/>
+            •	Embassy Admin Fee <br/><br/>
+            •	Passport Photo <br/>
+            Two (2) recent passport sized  photographs  <br/><br/>
+            •	Online Payment  <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	– 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+            •	Application form  <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant. <br/><br/>
+            •	Return Ticket  <br/><br/>
+            •	Evidence of Hotel Reservation in Nigeria
+            ',
+            'file_name' => 'Tourism Visa-F5A.docx',
+        ]);
+        Checklist::create([
+            'office_id' => 13,
+            'visa_type' => 'Standard',
+            'title' => 'Transit Visa-F3B',
+            'description' => 'Transit visa: F3B is for the passengers with onward ticket to the next destination. <br/><br/>
+            Eligibility: <br/>
+            •	Onward ticket to the next destination  <br/><br/>
+
+            Requirements: <br/><br/>
+
+            •	Original Passport  <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Passport Photo  <br/>
+            Two (2) recent passport sized photographs  <br/><br/>
+
+            •	Online Payment  <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form  <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant. <br/><br/>
+
+            •	Return Ticket  <br/><br/>
+
+            •	Evidence of sufficient fund  <br/>
+            Bank Statement of applicant with sufficient balance, with bank\'s stamp <br/><br/>
+
+            •	Embassy Admin Fee <br/><br/>
+
+            •	Evidence of Hotel Reservation/host address in Nigeria
+            ',
+            'file_name' => 'Transit Visa-F3B.docx',
+        ]);
+        Checklist::create([
+            'office_id' => 13,
+            'visa_type' => 'Standard',
+            'title' => 'Transit Without Visa-F3A ',
+            'description' => 'F3A: is for transfer/direct transit passengers not staying beyond 48 hours.  <br/><br/>
+            Eligibility: <br/>
+            Transit Traveller   <br/><br/>
+
+            Requirements: <br/><br/>
+
+            •	Original Passport  <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+
+            •	Passport Photo  <br/>
+            Two (2) recent passport sized photographs  <br/><br/>
+
+            •	Online Payment  <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+
+            •	Application form  <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant. <br/><br/>
+
+            •	Return Ticket  <br/><br/>
+
+            •	Evidence of sufficient fund  <br/>
+            Bank Statement of applicant with sufficient balance, with bank\'s stamp <br/><br/>
+
+            •	Embassy Admin Fee <br/><br/>
+
+            •	Evidence of Hotel Reservation/host address in Nigeria
+            ',
+            'file_name' => 'TRANSIT WITHOUT VISA.docx',
+        ]);
+        Checklist::create([
+            'office_id' => 13,
+            'visa_type' => 'Standard',
+            'title' => 'Visiting (Multiple Entry) Visa-F6B',
+            'description' => 'F6B: Visiting (Multiple Entry) Visa is to visit Nigeria for the purpose of social visit to family and friends  <br/><br/>
+            Eligibility: <br/>
+            Citizens of countries who offer similar multiple entry visa to Nigeria citizens <br/><br/>
+
+            Requirements: <br/><br/>
+            •	Invitation Letter   <br/>
+            An Original invitation letter from Nigeria. This must be addressed to the Nigeria
+            Consulate in Johannesburg. It must be signed with the full name of the inviter and dated. The statement“accepting full immigration responsibilities” must be included. Applicant\'s name and passport number must be stated. <br/><br/>
+            •	Inviter’s passport copy <br/>
+            Clear Photocopy of Inviter\'s International Passport Data page (6 months validity)  <br/><br/>
+            •	Tax Clearance Certificate <br/>
+                    Inviter must attach his/her latest Tax clearance certificate. <br/><br/>
+            •	Original Passport  <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement
+            Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+            •	Passport Copy <br/>
+            Copy of Valid National Passport (minimum period of validity 6 months) <br/><br/>
+            •	Employment Confirmation Letter of Applicant <br/>
+                    An employment Confirmation letter of the applicant addressed to the Nigeria     	      Consulate in Johannesburg. <br/><br/>
+            •	Evidence of sufficient fund <br/>
+                Bank Statement of applicant with sufficient balance, with bank\'s stamp <br/><br/>
+            •	Embassy Admin Fee <br/><br/>
+            •	Passport Photo  <br/>
+            Two (2) recent passport sized photographs  <br/><br/>
+            •	Online Payment  <br/>
+            A 	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+            •	Application form  <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant. <br/><br/>
+            •	Flight Reservation  <br/><br/>
+            •	Evidence of Hotel Reservation/host address in Nigeria <br/><br/>
+
+            •	Marriage Certificate Photocopy （visit spouse） <br/><br/>
+            •	Letter of Consent （For children） <br/>
+            Letter of consent (signed and dated) from both parents（For children) <br/><br/>
+            •	Photocopy of Birth Certificate（For children） <br/>
+            A photocopy of Birth Certificate showing names of parents（For children)
+            ',
+            'file_name' => 'Visiting (Multiple Entry) Visa-F6B.docx',
+        ]);
+        Checklist::create([
+            'office_id' => 13,
+            'visa_type' => 'Standard',
+            'title' => 'Visiting (Single Entry)Visa-F6A  ',
+            'description' => 'F6A: Visting (Single Entry)visa is to visit Nigeria for the purpose of social visit to family and friends <br/><br/>
+            Eligibility: <br/>
+            Persons with friends and family in Nigeria <br/><br/>
+
+            Requirements: <br/><br/>
+            •	Invitation Letter   <br/>
+            An Original invitation letter from Nigeria. This must be addressed to the Nigeria Consulate in Johannesburg. It must be on letterhead paper signed the full name and dated by a Nigerian of staff at the company. The statement“accepting full immigration responsibilities” must be included. Applicant\'s name and passport number must be stated. <br/><br/>
+            •	Inviter’s passport copy <br/>
+            Clear Photocopy of Inviter\'s International Passport Data page (6 months validity)  <br/><br/>
+            •	Tax Clearance Certificate <br/>
+                    Inviter must attach his/her latest Tax clearance certificate. <br/><br/>
+            •	Original Passport  <br/>
+            Passport valid for at least 6 months with at least 2 blank passport pages for endorsement
+            Non-South African passport holder must provide Resident Permit with a minimum of 3 months validity. <br/><br/>
+            •	Passport Copy <br/>
+            Copy of Valid National Passport (minimum period of validity 6 months) <br/><br/>
+            •	Employment Confirmation Letter of Applicant <br/>
+                    An employment Confirmation letter of the applicant addressed to the Nigeria     	      Consulate in Johannesburg. <br/><br/>
+            •	Evidence of sufficient fund <br/>
+                Bank Statement of applicant with sufficient balance, with bank\'s stamp <br/><br/>
+            •	Embassy Admin Fee <br/><br/>
+            •	Passport Photo  <br/>
+            Two (2) recent passport sized photographs  <br/><br/>
+            •	Online Payment  <br/>
+            A	copy 	of 	the 	Acknowledgment 	slip 	must 	be 	Printed from https://portal.immigration.gov.ng/ <br/><br/>
+            •	Application form  <br/>
+            Complete the visa application form online at  visa.immigration.gov.ng. Once completed, must be printed out, signed, and dated by the applicant. <br/><br/>
+            •	Flight Reservation  <br/><br/>
+            •	Evidence of Hotel Reservation/host address in Nigeria <br/><br/>
+
+            •	Marriage Certificate Photocopy （visit spouse） <br/><br/>
+            •	Letter of Consent （For children） <br/>
+            Letter of consent (signed and dated) from both parents（For children) <br/><br/>
+            •	Photocopy of Birth Certificate（For children） <br/>
+            A	photocopy of Birth Certificate showing names of parents（For children)
+            ',
+            'file_name' => 'Visiting (Single Entry)Visa-F6A.docx',
         ]);
     }
 }

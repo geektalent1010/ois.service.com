@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Seeder;
+use App\Country;
 
 class CountriesTableSeeder extends Seeder
 {
@@ -14,6 +15,10 @@ class CountriesTableSeeder extends Seeder
      */
     public function run()
     {
+        DB::statement('SET FOREIGN_KEY_CHECKS = 0');
+        Country::truncate();
+        DB::statement('SET FOREIGN_KEY_CHECKS = 1');
+
         $sql = "
         INSERT INTO `countries` (`id`, `code`, `name`, `phone_code`) VALUES
         (1, 'AF', 'Afghanistan', 93),
