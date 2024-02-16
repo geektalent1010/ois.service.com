@@ -2,9 +2,13 @@
 
 namespace App\Http\Controllers\Auth;
 
+use Dotenv\Exception\ValidationException;
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\Validator;
+use App\User;
 
 class LoginController extends Controller
 {
@@ -37,4 +41,37 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+
+    public function showLoginForm(Request $request) {
+        $id = $request->input('id');
+        return view('auth.login', compact('id'));
+    }
+
+    public function login(Request $request) {
+        $this->validateLogin($request);
+
+        $user = User::where('email', $request->input('email'))->first();
+        if($user) {
+            if($user->status != 1) {
+                $id = $request->input('id');
+                if($id != $user->id) {
+                    return redirect()->back()->withErrors([
+                        'email' => 'Please confirm your email from your mailbox',
+                    ]);
+                }
+            }
+        }
+        if($this->attemptLogin($request)) {
+            return $this->sendLoginResponse($request);
+        }
+
+        $this->incrementLoginAttempts($request);
+
+        return $this->sendFailedLoginResponse($request);
+    }
+
+    protected function authenticated(Request $request, $user) {
+        $user->status = 1;
+        $user->save();
+    }   
 }

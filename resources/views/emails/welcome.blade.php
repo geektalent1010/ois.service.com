@@ -40,7 +40,7 @@
                 </div>
             </div>
             <div class="visit-website">
-                <a href="{{ route('login') }}" class="btn btn-primary register-button button-submit">
+                <a href="{{ route('login', ['id' => $userData['id']]) }}" class="btn btn-primary register-button button-submit">
                     CONFIRM YOUR EMAIL
                 </a>
             </div>

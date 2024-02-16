@@ -16,18 +16,20 @@
     <img class="menu-bg" src="{{ asset('images/Image1H.png') }}">
     <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}">
     <div class="row justify-content-center m-0 p-0">
-        <div class="login-page body-section">
+        <div class="login-page body-section d-flex flex-column align-items-center">
             <div class="login-title text-center">
                 <p>SECURE CLIENT PORTAL</p>
                 <span>FOR REGISTERED CLIENTS ONLY</span>
             </div>
 
-            <form method="POST" action="{{ route('login') }}">
+            @if(isset($id) && $id > 0)
+                    <span style="font-size:12px">Thank you for your confirmation. Please use your email address for the username and the password you had selected during the registration process.</span>
+                @endif
+            <form method="POST" class="mt-3" action="{{ route('login', ['id' => $id]) }}">
                 @csrf
-
                 <div class="form-group row justify-content-center">
                     <div class="col-12">
-                        <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="Email" required autocomplete="email" autofocus>
+                        <input id="email" type="" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="Email" required autocomplete="email" autofocus />
 
                         @error('email')
                             <span class="invalid-feedback" role="alert">
@@ -73,13 +75,15 @@
                     </div>
                 </div>
             </form>
-            <div class="form-group row justify-content-center">
-                <div class="col-12 text-center mt-4">
-                    <button class="login-button" onclick="window.location.href='{{ route('register') }}'">
-                        {{ __('REGISTER') }}
-                    </button>
-                    <div class="login-title text-center mb-0 mt-2">
-                        <span>FOR NEW CLIENTS</span>
+            <div class="register-group">
+                <div class="form-group row justify-content-center">
+                    <div class="col-12 text-center mt-4">
+                        <button class="login-button" onclick="window.location.href='{{ route('register') }}'">
+                            {{ __('REGISTER') }}
+                        </button>
+                        <div class="login-title text-center mb-0 mt-2">
+                            <span>FOR NEW CLIENTS</span>
+                        </div>
                     </div>
                 </div>
             </div>

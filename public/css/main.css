@@ -702,6 +702,7 @@ th {
 
 .main-bg-login {
     min-height: calc(100vh - 120px);
+    height: calc(100vh - 120px);
     margin-top: 80px;
     padding-bottom: 40px;
     overflow-y: hidden;
@@ -728,7 +729,13 @@ th {
 
 .login-page {
     min-width: 300px;
+    width: 30vw;
     z-index: 3;
+    padding: 0 15px;
+}
+
+.login-page form, .register-group {
+    width: 70%;
 }
 
 .login-title {
@@ -1466,6 +1473,11 @@ th {
 
     .login-page {
         min-width: 100%;
+        width: 100vw;
+    }
+
+    .login-page form, .register-group {
+        width: 100%;
     }
 
     .right-menubar {
