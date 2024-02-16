@@ -143,10 +143,12 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'status' => 0,
-[
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
- => $data['first_name'],
+        ]);
+
+        Profile::create([
+            'user_id' => $user->id,
+            'country_id' => $data['country'],
+            'first_name' => $data['first_name'],
             'last_name' => $data['last_name'],
             'birthday' => $data['birthday'],
             'gender' => $data['gender'],

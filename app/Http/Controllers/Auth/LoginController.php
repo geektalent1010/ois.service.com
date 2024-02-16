@@ -56,7 +56,7 @@ class LoginController extends Controller
                 $id = $request->input('id');
                 if($id != $user->id) {
                     return redirect()->back()->withErrors([
-                        'email' => 'Thank you for your confirmation. Please use your email address for the username and the password you had selected during the registration process.',
+                        'email' => 'Please confirm your email from your mailbox',
                     ]);
                 }
             }
@@ -69,4 +69,9 @@ class LoginController extends Controller
 
         return $this->sendFailedLoginResponse($request);
     }
+
+    protected function authenticated(Request $request, $user) {
+        $user->status = 1;
+        $user->save();
+    }   
 }
