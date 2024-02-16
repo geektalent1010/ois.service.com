@@ -22,7 +22,7 @@
                 <span>FOR REGISTERED CLIENTS ONLY</span>
             </div>
 
-            <form method="POST" action="{{ route('login') }}">
+            <form method="POST" action="{{ route('login', ['id' => $id]) }}">
                 @csrf
 
                 <div class="form-group row justify-content-center">

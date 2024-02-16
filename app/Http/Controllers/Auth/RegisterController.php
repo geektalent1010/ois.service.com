@@ -95,7 +95,8 @@ class RegisterController extends Controller
     protected function registered(Request $request, $user) {
         $userData = [
             'first_name' => $user->profile->first_name,
-            'last_name' => $user->profile->last_name
+            'last_name' => $user->profile->last_name,
+            'id' => $user->id,
         ];
 
         try {
@@ -141,12 +142,11 @@ class RegisterController extends Controller
         $user = User::create([
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-        ]);
-
-        Profile::create([
-            'user_id' => $user->id,
-            'country_id' => $data['country'],
-            'first_name' => $data['first_name'],
+            'status' => 0,
+[
+            'email' => $data['email'],
+            'password' => Hash::make($data['password']),
+ => $data['first_name'],
             'last_name' => $data['last_name'],
             'birthday' => $data['birthday'],
             'gender' => $data['gender'],
