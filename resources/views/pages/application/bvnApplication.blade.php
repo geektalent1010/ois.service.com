@@ -20,7 +20,7 @@
         <img class="menu-bg" src="{{ asset('images/Image1H.png') }}" alt="">
         <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt="">
         <div class="m-0 bvn-section">
-            <div class="checklists-section-content">
+            <div class="checklists-section-content mb-3">
                 <div class="checklists-section-body">
                     <div class="main-title">
                         BVN ENROLMENT CHECKLIST
@@ -74,7 +74,7 @@
                             </div>
 
                             <div class="row mt-19px">
-                                <div class="col-md-12 checklistsFilters mb-3" id="filter-content">
+                                <div class="col-md-12 checklistsFilters" id="filter-content">
                                 </div>
                             </div>
                         </form>
