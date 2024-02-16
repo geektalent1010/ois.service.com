@@ -146,7 +146,6 @@
     const menuButton = document.getElementById('menu-item');
     const rightMenuItems = rightMenuBar.getElementsByClassName('item');
     menuButton.addEventListener('mouseover', () => {
-        console.log(rightMenuBar)
         rightMenuBar.classList.add('open');
         leftMenuBar.classList.remove('open');
         darkBg.classList.add('block');

@@ -37,7 +37,7 @@
                                             <input type="text" class="input-field office-input cursor-default"
                                                 placeholder="Country + City" />
                                             <img class="search-icon cursor-default"
-                                                src="{{ asset('images/select-arrows.svg') }}">
+                                                src="{{ asset('images/select-arrows.svg') }}" alt="">
                                         </div>
                                         <div class="offices-menus d-none">
                                             @foreach ($offices as $country => $cities)
@@ -74,7 +74,7 @@
                             </div>
 
                             <div class="row mt-19px">
-                                <div class="col-md-12 checklistsFilters" id="filter-content">
+                                <div class="col-md-12 checklistsFilters mb-3" id="filter-content">
                                 </div>
                             </div>
                         </form>
@@ -206,16 +206,22 @@
         function checklistsFilters() {
             $.post('{{ route('checklists.filter') }}', $('.form-section').serialize(), function(response) {
                 $('.checklistsFilters').html(response);
-                const section = document.getElementsByClassName('checklists-section-body')[0];
-                const rect = section.getBoundingClientRect();
-                const filter = document.getElementsByClassName('checklistsFilters')[0];
-                const rectFilter = filter.getBoundingClientRect();
-                if ($('#visaType').val()) {
-                    $('.checklists-section').animate({
-                        scrollTop: rect.height - rectFilter.height
-                    }, 500, 'swing')
-                }
+                scrollToList();
             })
+        }
+
+        function scrollToList() {
+            const section = document.getElementsByClassName('checklists-section-body')[0];
+            const rect = section.getBoundingClientRect();
+            const filter = document.getElementsByClassName('checklistsFilters')[0];
+            const rectFilter = filter.getBoundingClientRect();
+            const height = rectFilter.height;
+            if(height > 0) {
+                $('.bvn-section').animate({
+                    scrollTop: rect.height - rectFilter.height
+                }, 500, 'swing')
+            }
+
         }
     </script>
 @endsection
