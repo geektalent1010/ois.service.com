@@ -6,7 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Checklist;
 
-class ChecklistsSeeder18 extends Seeder
+class ChecklistsSeeder56 extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,9 +14,9 @@ class ChecklistsSeeder18 extends Seeder
     public function run(): void
     {
         Checklist::create([
-            'office_id' => 18,
+            'office_id' => 56,
             'visa_type' => 'Fees',
-            'title' => 'New Delhi Center Fees',
+            'title' => 'Minneapolis Center Fees',
             'description' => '1. Flexi Appointment $50<br/><br/>
             This enables applicants arrive at the VAC at any time during the opening hours on the day of the appointment.<br/><br/>
             2. Prime Time Appointment $50<br/><br/>
