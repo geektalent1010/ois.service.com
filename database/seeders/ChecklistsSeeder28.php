@@ -6,7 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Checklist;
 
-class ChecklistsSeeder12 extends Seeder
+class ChecklistsSeeder28 extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,9 +14,9 @@ class ChecklistsSeeder12 extends Seeder
     public function run(): void
     {
         Checklist::create([
-            'office_id' => 12,
+            'office_id' => 28,
             'visa_type' => 'Fees',
-            'title' => 'Houston Center Fees',
+            'title' => 'Manchester Center Fees',
             'description' => 'Coming soon!',
             'file_name' => '',
         ]);
