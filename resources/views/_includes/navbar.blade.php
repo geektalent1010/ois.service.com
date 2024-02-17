@@ -72,31 +72,46 @@
 
     <div class="right-menubar" id="right-menubar">
         <img class="close-icon" id="right-menu-close" src="{{ asset('images/Logo/IconCLOSE.svg') }}" alt="" />
-        <div class="lang-section">
-            <div class="lang-item"><a class="item" href="{{ route('introduction.index') }}">ABOUT OIS</a></div>
-            <div class="lang-item"><a class="item" href="{{ route('services.index') }}">SERVICES</a></div>
-            <div class="lang-item"><a class="item" href="{{ route('innovation.index') }}">INNOVATION</a></div>
-            <div class="lang-item"><a class="item" href="{{ route('security.index') }}">SECURITY</a></div>
-        </div>
-        <div class="lang-section">
-            <div class="lang-item"><a class="item" href="{{ route('login') }}">CLIENT PORTAL</a></div>
-        </div>
-        <div class="lang-section">
-            <div class="lang-item"><a class="item" href="{{ route('login') }}">VISA APPLICATION</a></div>
-            <div class="lang-item"><a class="item" href="{{ route('login') }}">PASSPORT APPLICATION</a></div>
-            <div class="lang-item"><a class="item" href="{{ route('login') }}">BVN APPLICATION</a></div>
-            <div class="lang-item"><a class="item" href="{{ route('login') }}">NIN APPLICATION</a></div>
-            <div class="lang-item"><a class="item" href="{{ route('login') }}">TRACK VISA APPLICATION</a></div>
-        </div>
-        <div class="lang-section">
-            <div class="lang-item"><a class="item" href="{{ route('ehealth.index') }}">E-HEALTH PORTAL</a></div>
-            <div class="lang-item"><a class="item" href="{{ route('money.index') }}">MONEY PORTAL</a></div>
-            <div class="lang-item"><a class="item" href="{{ route('shopping.index') }}">SHOPPING PORTAL</a></div>
-        </div>
-        <div class="lang-section">
-            <div class="lang-item"><a class="item" href="{{ route('offices.index') }}">OIS GLOBAL CENTERS</a></div>
-            <div class="lang-item"><a class="item" href="{{ route('contact.index') }}">CUSTOMER SUPPORT</a></div>
-        </div>
+        @if(!Auth::user()->isAdmin())
+            <div class="lang-section">
+                <div class="lang-item"><a class="item" href="{{ route('introduction.index') }}">ABOUT OIS</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('services.index') }}">SERVICES</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('innovation.index') }}">INNOVATION</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('security.index') }}">SECURITY</a></div>
+            </div>
+            <div class="lang-section">
+                <div class="lang-item"><a class="item" href="{{ route('login') }}">CLIENT PORTAL</a></div>
+            </div>
+            <div class="lang-section">
+                <div class="lang-item"><a class="item" href="{{ route('login') }}">VISA APPLICATION</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('login') }}">PASSPORT APPLICATION</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('login') }}">BVN APPLICATION</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('login') }}">NIN APPLICATION</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('login') }}">TRACK VISA APPLICATION</a></div>
+            </div>
+            <div class="lang-section">
+                <div class="lang-item"><a class="item" href="{{ route('ehealth.index') }}">E-HEALTH PORTAL</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('money.index') }}">MONEY PORTAL</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('shopping.index') }}">SHOPPING PORTAL</a></div>
+            </div>
+            <div class="lang-section">
+                <div class="lang-item"><a class="item" href="{{ route('offices.index') }}">OIS GLOBAL CENTERS</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('contact.index') }}">CUSTOMER SUPPORT</a></div>
+            </div>
+        @else
+            <div class="lang-section">
+                <div class="lang-item"><a class="item" href="{{ route('profile.index') }}">MY PROFILE</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('services.index') }}">ADMIN MANAGER</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('innovation.index') }}">CLIENT MANAGER</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('security.index') }}">MAIL MANAGER</a></div>
+            </div>
+            <div class="lang-section">
+                <div class="lang-item"><a class="item" href="{{ route('introduction.index') }}">CONETNT EDITOR</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('services.index') }}">CENTER EDITOR</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('innovation.index') }}">PRICE EDITOR</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('security.index') }}">CHECKLIST EDITOR</a></div>
+            </div>
+        @endif
         <div class="lang-section">
         </div>
     </div>
