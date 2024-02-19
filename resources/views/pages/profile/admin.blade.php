@@ -19,9 +19,9 @@
         </video>
         <img class="menu-bg" src="{{ asset('images/Image1H.png') }}" alt="">
         <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt="">
-        <div class="m-0 profile-section">
+        <div class="m-0 admin-profile-section">
             <div class="main-title">
-                MY DETAILS
+                MY PROFILE
             </div>
             <div class="section-body body-section mt-5 mb-5">
                 <form class="form-section" data-form="register" autocomplete="off" method="POST"

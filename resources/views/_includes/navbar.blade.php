@@ -72,7 +72,7 @@
 
     <div class="right-menubar" id="right-menubar">
         <img class="close-icon" id="right-menu-close" src="{{ asset('images/Logo/IconCLOSE.svg') }}" alt="" />
-        @if(!Auth::user()->isAdmin())
+        @if((Auth::check() && !Auth::user()->isAdmin()) || !Auth::check())
             <div class="lang-section">
                 <div class="lang-item"><a class="item" href="{{ route('introduction.index') }}">ABOUT OIS</a></div>
                 <div class="lang-item"><a class="item" href="{{ route('services.index') }}">SERVICES</a></div>
@@ -98,7 +98,7 @@
                 <div class="lang-item"><a class="item" href="{{ route('offices.index') }}">OIS GLOBAL CENTERS</a></div>
                 <div class="lang-item"><a class="item" href="{{ route('contact.index') }}">CUSTOMER SUPPORT</a></div>
             </div>
-        @else
+        @elseif(Auth::check() && Auth::user()->isAdmin())
             <div class="lang-section">
                 <div class="lang-item"><a class="item" href="{{ route('profile.index') }}">MY PROFILE</a></div>
                 <div class="lang-item"><a class="item" href="{{ route('services.index') }}">ADMIN MANAGER</a></div>

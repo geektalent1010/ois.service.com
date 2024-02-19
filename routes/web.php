@@ -97,4 +97,13 @@ Route::group(['middleware' => ['password.protected']], function () {
 
     Route::get('/home', 'HomeController@index')->name('home');
 
+    Route::prefix('admin')->group(function () {
+        Route::get('login', 'AdminAuth\LoginController@showLoginForm')->name('admin.login');
+        Route::post('login', 'AdminAuth\LoginController@login')->name('admin.login.submit');
+        Route::post('logout', 'AdminAuth\LoginController@logout')->name('admin.logout');
+        Route::middleware(['admin'])->group(function () {
+            Route::get('dashboard', 'Admin\DashboardController@index')->name('admin.dashboard.index');
+        });
+    });
+
 });

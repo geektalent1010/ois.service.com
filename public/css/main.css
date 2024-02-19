@@ -1572,6 +1572,10 @@ label.valid {
     margin: 0;
 }
 
+.admin-bg {
+    background-color: #005696;
+}
+
 .mt-19px {
     margin-top: 19px;
 }
