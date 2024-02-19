@@ -1,6 +1,6 @@
 @extends('layouts.app', ['ACTIVE_TITLE' => 'CMS'], ['VIDEO_LOCK' => true])
 
-@section('title', __('- Log In'))
+@section('title', __('- CMS Log In'))
 
 @section('PAGE_LEVEL_STYLES')
 @endsection

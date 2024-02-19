@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 
 class LoginController extends Controller
 {
@@ -17,11 +18,13 @@ class LoginController extends Controller
         $this->middleware("guest:admin")->except("logout");
     }
 
-    public function showLoginForm() {
+    public function showLoginForm(Request $request) {
         return view('admin.auth.login');
     }
 
     public function login(Request $request) {
+        Session::flush();
+        $request->session()->put('password', true);
         $credetials = $request->only('email', 'password');
         $credetials['is_admin'] = true;
 
