@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'DASHBOARD'], ['VIDEO_LOCK' => true])
+@extends('layouts.app', ['ACTIVE_TITLE' => 'MENU'], ['VIDEO_LOCK' => true])
 
 @section('PAGE_LEVEL_STYLES')
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -8,15 +8,7 @@
 @endsection
 
 @section('PAGE_CONTENT')
-<div class="main-bg">
-    <video autoplay muted loop class="video-section" playsinline>
-        <source type="video/mp4">
-    </video>
-    <video autoplay muted loop class="video-section-mobile" playsinline>
-        <source type="video/mp4">
-    </video>
-    <img class="menu-bg" src="{{ asset('images/Image1H.png') }}" alt="">
-    <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt="">
+<div class="admin-bg main-bg">
     <div class="m-0 menu-section body-section dashboard-section">
         <p class="dashboard-title my-0">WELCOME TO THE CMS PORTAL</p>
         <div class="row m-0 menu-body">
@@ -43,7 +35,7 @@
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}" alt="">
                             </div>
                             <p class="back-unvisible menu-title">ADMIN</p>
-                            <p class="menu-detail">ROLES</p>
+                            <p class="menu-detail">MANAGER</p>
                         </div>
                     </a>
                 </div>
@@ -57,7 +49,7 @@
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}" alt="">
                             </div>
                             <p class="back-unvisible menu-title">CLIENT</p>
-                            <p class="menu-detail">INFORMATION</p>
+                            <p class="menu-detail">MANAGER</p>
                         </div>
                     </a>
                 </div>
@@ -71,7 +63,7 @@
                                 <img src="{{ asset('images/Email.svg') }}" alt="">
                             </div>
                             <p class="back-unvisible menu-title">MAIL</p>
-                            <p class="menu-detail">CAMPAIGNS</p>
+                            <p class="menu-detail">MANAGER</p>
                         </div>
                     </a>
                 </div>
@@ -84,8 +76,8 @@
                             <div class="d-flex justify-content-center h-50 align-items-end">
                                 <img src="{{ asset('images/Studio.svg') }}" alt="">
                             </div>
-                            <p class="back-unvisible menu-title">EDIT</p>
-                            <p class="menu-detail">WEBSITE</p>
+                            <p class="back-unvisible menu-title">CONTENT</p>
+                            <p class="menu-detail">EDITOR</p>
                         </div>
                     </a>
                 </div>
@@ -98,8 +90,8 @@
                             <div class="d-flex justify-content-center h-50 align-items-end">
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}" alt="">
                             </div>
-                            <p class="back-unvisible menu-title">EDIT</p>
-                            <p class="menu-detail">OFFICES</p>
+                            <p class="back-unvisible menu-title">CENTER</p>
+                            <p class="menu-detail">EDITOR</p>
                         </div>
                     </a>
                 </div>
@@ -112,8 +104,8 @@
                             <div class="d-flex justify-content-center h-50 align-items-end">
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}" alt="">
                             </div>
-                            <p class="back-unvisible menu-title">EDIT</p>
-                            <p class="menu-detail">DOCUMENTS</p>
+                            <p class="back-unvisible menu-title">PRICE</p>
+                            <p class="menu-detail">EDITOR</p>
                         </div>
                     </a>
                 </div>
@@ -126,8 +118,8 @@
                             <div class="d-flex justify-content-center h-50 align-items-end">
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}" alt="">
                             </div>
-                            <p class="back-unvisible menu-title">EDIT</p>
-                            <p class="menu-detail">PRICING</p>
+                            <p class="back-unvisible menu-title">CHECKLIST</p>
+                            <p class="menu-detail">EDITOR</p>
                         </div>
                     </a>
                 </div>

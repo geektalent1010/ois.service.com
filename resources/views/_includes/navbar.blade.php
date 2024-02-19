@@ -2,11 +2,13 @@
     <nav class="navbar">
         <div class="container-fluid d-flex align-items-center justify-content-between">
             <div class="navbarItem">
-                @guest
+                @if(Auth::guard('admin')->check())
+                    <a class="navbar-brand pl-1" href="{{ route('admin.dashboard.index') }}">
+                @elseif(Auth::check())
+                    <a class="navbar-brand pl-1" href="{{ route('dashboard.index') }}">
+                @else
                     <a class="navbar-brand pl-1" href="{{ route('landing') }}">
-                    @else
-                        <a class="navbar-brand pl-1" href="{{ route('dashboard.index') }}">
-                        @endguest
+                @endif
                         <img src="{{ asset('images/Logo/LogoOIS1.svg') }}" class="img-fluid logo-ois" />
                     </a>
                     <a class="locate-button" id="locate-button">EN</a>
@@ -19,7 +21,33 @@
                 @endif
             </div>
             <div class="navbarItem d-flex justify-content-end">
-                @guest
+                @if(Auth::guard('admin')->check())
+                    <a id="menu-item" class="d-flex align-items-center navbar-menu-item">
+                        <img class="menu-icon" src="{{ asset('images/IconMENU.svg') }}" alt="" />
+                        <span>MENU</span>
+                    </a>
+                    <a href="{{ route('admin.logout') }}" class="d-flex align-items-center navbar-logout-item"
+                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                        <img src="{{ asset('images/IconLOGOUT.svg') }}" alt="Logout" class="logout" />
+                        <span>LOGOUT</span>
+                    </a>
+                    <form id="logout-form" action="{{ route('admin.logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+                @elseif(Auth::check())
+                    <a id="menu-item" class="d-flex align-items-center navbar-menu-item">
+                        <img class="menu-icon" src="{{ asset('images/IconMENU.svg') }}" alt="" />
+                        <span>MENU</span>
+                    </a>
+                    <a href="{{ route('logout') }}" class="d-flex align-items-center navbar-logout-item"
+                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                        <img src="{{ asset('images/IconLOGOUT.svg') }}" alt="Logout" class="logout" />
+                        <span>LOGOUT</span>
+                    </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+                @else
                     <a id="menu-item" class="d-flex align-items-center navbar-menu-item">
                         <img class="menu-icon" src="{{ asset('images/IconMENU.svg') }}" alt="" />
                         <span>MENU</span>
@@ -39,20 +67,7 @@
                             @csrf
                         </form>
                     @endif
-                @else
-                    <a id="menu-item" class="d-flex align-items-center navbar-menu-item">
-                        <img class="menu-icon" src="{{ asset('images/IconMENU.svg') }}" alt="" />
-                        <span>MENU</span>
-                    </a>
-                    <a href="{{ route('logout') }}" class="d-flex align-items-center navbar-logout-item"
-                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                        <img src="{{ asset('images/IconLOGOUT.svg') }}" alt="Logout" class="logout" />
-                        <span>LOGOUT</span>
-                    </a>
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                        @csrf
-                    </form>
-                @endguest
+                @endif
             </div>
         </div>
     </nav>
@@ -72,31 +87,46 @@
 
     <div class="right-menubar" id="right-menubar">
         <img class="close-icon" id="right-menu-close" src="{{ asset('images/Logo/IconCLOSE.svg') }}" alt="" />
-        <div class="lang-section">
-            <div class="lang-item"><a class="item" href="{{ route('introduction.index') }}">ABOUT OIS</a></div>
-            <div class="lang-item"><a class="item" href="{{ route('services.index') }}">SERVICES</a></div>
-            <div class="lang-item"><a class="item" href="{{ route('innovation.index') }}">INNOVATION</a></div>
-            <div class="lang-item"><a class="item" href="{{ route('security.index') }}">SECURITY</a></div>
-        </div>
-        <div class="lang-section">
-            <div class="lang-item"><a class="item" href="{{ route('login') }}">CLIENT PORTAL</a></div>
-        </div>
-        <div class="lang-section">
-            <div class="lang-item"><a class="item" href="{{ route('login') }}">VISA APPLICATION</a></div>
-            <div class="lang-item"><a class="item" href="{{ route('login') }}">PASSPORT APPLICATION</a></div>
-            <div class="lang-item"><a class="item" href="{{ route('login') }}">BVN APPLICATION</a></div>
-            <div class="lang-item"><a class="item" href="{{ route('login') }}">NIN APPLICATION</a></div>
-            <div class="lang-item"><a class="item" href="{{ route('login') }}">TRACK VISA APPLICATION</a></div>
-        </div>
-        <div class="lang-section">
-            <div class="lang-item"><a class="item" href="{{ route('ehealth.index') }}">E-HEALTH PORTAL</a></div>
-            <div class="lang-item"><a class="item" href="{{ route('money.index') }}">MONEY PORTAL</a></div>
-            <div class="lang-item"><a class="item" href="{{ route('shopping.index') }}">SHOPPING PORTAL</a></div>
-        </div>
-        <div class="lang-section">
-            <div class="lang-item"><a class="item" href="{{ route('offices.index') }}">OIS GLOBAL CENTERS</a></div>
-            <div class="lang-item"><a class="item" href="{{ route('contact.index') }}">CUSTOMER SUPPORT</a></div>
-        </div>
+        @if(Auth::guard('admin')->check())
+            <div class="lang-section">
+                <div class="lang-item"><a class="item" href="{{ route('profile.index') }}">MY PROFILE</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('services.index') }}">ADMIN MANAGER</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('innovation.index') }}">CLIENT MANAGER</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('security.index') }}">MAIL MANAGER</a></div>
+            </div>
+            <div class="lang-section">
+                <div class="lang-item"><a class="item" href="{{ route('introduction.index') }}">CONETNT EDITOR</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('services.index') }}">CENTER EDITOR</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('innovation.index') }}">PRICE EDITOR</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('security.index') }}">CHECKLIST EDITOR</a></div>
+            </div>
+        @else
+            <div class="lang-section">
+                <div class="lang-item"><a class="item" href="{{ route('introduction.index') }}">ABOUT OIS</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('services.index') }}">SERVICES</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('innovation.index') }}">INNOVATION</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('security.index') }}">SECURITY</a></div>
+            </div>
+            <div class="lang-section">
+                <div class="lang-item"><a class="item" href="{{ route('login') }}">CLIENT PORTAL</a></div>
+            </div>
+            <div class="lang-section">
+                <div class="lang-item"><a class="item" href="{{ route('login') }}">VISA APPLICATION</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('login') }}">PASSPORT APPLICATION</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('login') }}">BVN APPLICATION</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('login') }}">NIN APPLICATION</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('login') }}">TRACK VISA APPLICATION</a></div>
+            </div>
+            <div class="lang-section">
+                <div class="lang-item"><a class="item" href="{{ route('ehealth.index') }}">E-HEALTH PORTAL</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('money.index') }}">MONEY PORTAL</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('shopping.index') }}">SHOPPING PORTAL</a></div>
+            </div>
+            <div class="lang-section">
+                <div class="lang-item"><a class="item" href="{{ route('offices.index') }}">OIS GLOBAL CENTERS</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('contact.index') }}">CUSTOMER SUPPORT</a></div>
+            </div>
+        @endif
         <div class="lang-section">
         </div>
     </div>
