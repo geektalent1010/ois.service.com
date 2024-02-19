@@ -5040,3 +5040,71 @@ body {
   }
 }
 
+.admin-profile-section {
+  width: 100vw;
+  height: calc(100vh - 120px);
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin-profile-section .main-title {
+  font-size: 21px;
+  font-family: "DinPro Medium", sans-serif;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.admin-profile-section .profile-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-profile-section .profile-body .my-profile-part {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-profile-section .profile-body .my-profile-part .info-details {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-family: "DinPro", sans-serif;
+}
+
+.admin-profile-section .profile-body .my-profile-part .info-details .info-detail {
+  display: flex;
+  border-top: 2px solid transparent;
+  height: 48px;
+  gap: 2px;
+}
+
+.admin-profile-section .profile-body .my-profile-part .info-details .info-detail .info-head {
+  width: 210px;
+  background-color: #003366;
+  display: flex;
+  padding-left: 30px;
+  align-items: center;
+}
+
+.admin-profile-section .profile-body .my-profile-part .info-details .info-detail .info-value {
+  width: 420px;
+  background-color: #266ea5;
+  display: flex;
+  align-items: center;
+}
+
+.admin-profile-section .profile-body .my-profile-part .info-details .info-detail .info-value .form-input-custom {
+  width: 100%;
+  height: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: white;
+}
+

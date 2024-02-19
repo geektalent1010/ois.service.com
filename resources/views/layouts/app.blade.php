@@ -648,7 +648,7 @@
         const login_icon = document.querySelector('.login-icon');
         const go_to_menu = document.querySelector('.go-to-menu');
         const go_to_login = document.querySelector('.go-to-login');
-        const logout_icon_part = document.querySelector('navbar-logout-item');
+        const logout_icon_part = document.querySelector('.navbar-logout-item');
         const logout_icon = document.querySelector('.logout');
         const logo_icon = document.querySelector('.logo-ois');
         const chatbot_icon = document.querySelector('.chatbot-icon');

@@ -103,6 +103,7 @@ Route::group(['middleware' => ['password.protected']], function () {
         Route::post('logout', 'AdminAuth\LoginController@logout')->name('admin.logout');
         Route::middleware(['admin'])->group(function () {
             Route::get('dashboard', 'Admin\DashboardController@index')->name('admin.dashboard.index');
+            Route::get('profile', 'Admin\ProfileController@index')->name('admin.profile.index');
         });
     });
 
