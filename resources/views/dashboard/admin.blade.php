@@ -46,7 +46,7 @@
                     <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="{{ route('client.index') }}">
                         <div class="h-100">
                             <div class="d-flex justify-content-center h-50 align-items-end">
-                                <img src="{{ asset('images/IconClients.svg') }}" alt="" style="width:60px">
+                                <img src="{{ asset('images/IconCLIENTS.svg') }}" alt="" style="width:60px">
                             </div>
                             <p class="back-unvisible menu-title">CLIENT</p>
                             <p class="menu-detail">MANAGER</p>
@@ -88,7 +88,7 @@
                     <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="">
                         <div class="h-100">
                             <div class="d-flex justify-content-center h-50 align-items-end">
-                                <img src="{{ asset('images/IconCenter.svg') }}" alt="" style="width:60px">
+                                <img src="{{ asset('images/IconCENTER.svg') }}" alt="" style="width:60px">
                             </div>
                             <p class="back-unvisible menu-title">CENTER</p>
                             <p class="menu-detail">EDITOR</p>
