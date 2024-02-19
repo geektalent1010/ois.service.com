@@ -1,7 +1,7 @@
 let video = document.querySelector(".video-section");
 let video_mobile = document.querySelector(".video-section-mobile");
-let original_video = video.querySelector("source").src;
-let original_mobile_video = video_mobile.querySelector("source").src;
+let original_video = video ? video.querySelector("source").src : "";
+let original_mobile_video = video_mobile ? video_mobile.querySelector("source").src : "";
 
 function hideContent() {
     $(".menu-body").addClass("d-none");
@@ -131,4 +131,41 @@ function stopVideo() {
     $('.foot-section').removeClass('d-none');
     video.style.display = 'none';
     video_mobile.style.display = 'none';
+}
+
+//select-custom function
+
+let selectDom = document.getElementsByClassName('form-select-custom');
+for(let i = 0 ; i < selectDom.length ; i ++) {
+    let selEle = selectDom[i].getElementsByTagName("select")[0];
+    let a = document.createElement("DIV");
+    a.setAttribute('class', 'select-selected');
+    a.innerHTML = selEle.options[selEle.selectedIndex].innerHTML;
+    selectDom[i].appendChild(a);
+
+    let b = document.createElement('DIV');
+    b.setAttribute('class', 'select-items select-hide');
+    for(let j = 1 ; j < selEle.length ; j ++) {
+        let c = document.createElement('DIV');
+        c.innerHTML = selEle.options[j].innerHTML;
+        c.addEventListener('click', function(e) {
+            let s = this.parentNode.parentNode.getElementsByTagName('select')[0];
+            let h = this.parentNode.previousSibling;
+            console.log(s)
+            console.log(h)
+        });
+        b.appendChild(c);
+    }
+    selectDom[i].appendChild(b);
+
+    a.addEventListener('click', function(e) {
+        e.stopPropagation();
+        closeAllSelect(this);
+        this.nextSibling.classList.toggle('select-hide');
+        this.classList.toggle('select-arrow-active');
+    })
+}
+
+function closeAllSelect(ele) {
+    
 }
