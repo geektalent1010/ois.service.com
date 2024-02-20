@@ -107,3 +107,14 @@
     display: none;
 }
 /* custom-select =====> end */
+
+/* custom-input =====> start */
+.custom-input {
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+}
+/* custom-input =====> end */
