@@ -5,38 +5,47 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-y: auto;
 
-    .main-title {
-        font-size: 21px;
-        font-family: "DinPro Medium", sans-serif;
-        height: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
 
     .profile-body {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+        width: 50vw;
+        min-width: 630px;
+
+        .main-title {
+            font-size: 21px;
+            font-family: "DinPro Medium", sans-serif;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
 
         .my-profile-part {
             display: flex;
             flex-direction: column;
+            width: 100%;
 
             .info-details {
                 display: flex;
                 flex-direction: column;
                 font-size: 16px;
                 font-family: "DinPro", sans-serif;
+                width: 100%;
 
                 .info-detail {
                     display: flex;
                     border-top: 2px solid transparent;
                     height: 48px;
                     gap: 2px;
+                    width: 100%;
 
                     .info-head {
-                        width: 210px;
+                        width: 33.3%;
                         background-color: #003366;
                         display: flex;
                         padding-left: 30px;
@@ -44,7 +53,7 @@
                     }
 
                     .info-value {
-                        width: 420px;
+                        width: 66.6%;
                         background-color: #266ea5;
                         display: flex;
                         align-items: center;
@@ -59,9 +68,78 @@
                             border: none;
                             color: white;
                         }
+
+                        .phone-code-select {
+                            width: 30%;
+                            height: 100%;
+                        }
+
+                        .phone-code-input {
+                            width: 70%;
+                            padding-left: 0;
+                        }
                     }
                 }
             }
+
+            .info-button {
+                display: flex;
+                justify-content: center;
+
+                button {
+                    height: 44px;
+                    width: 50%;
+                    border-radius: 10rem;
+                    font-size: 16px;
+                    font-family: "DinPro", sans-serif;
+                    cursor: pointer;
+                    background-color: #00a9ea;
+                    border: none;
+                    color: white;
+                    transition: 0.3s;
+                    outline: none;
+                }
+
+                button:hover {
+                    background-color: #003366;
+                    transition: 0.3s;
+                }
+            }
+        }
+
+        .my-access-part {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            
+            .access-detail-group {
+                display: flex;
+                gap: 2px;
+
+                .access-detail {
+                    display: flex;
+                    width: 50%;
+                    background-color: #003366;
+                    font-size: 16px;
+                    font-family: "DinPro", sans-serif;
+                    height: 46px;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    transition: 0.3s;
+                }
+
+                .access-detail:hover {
+                    background-color: #266ea5;
+                    transition: 0.3s;
+                }
+
+                .active {
+                    background-color: #266ea5;
+                }
+            }
+            
         }
     }
 }

@@ -1,0 +1,109 @@
+
+.mt-19px {
+    margin-top: 19px;
+}
+
+.mb-19px {
+    margin-bottom: 19px;
+}
+
+.mt-24px {
+    margin-top: 24px;
+}
+
+.mb-24px {
+    margin-bottom: 24px;
+}
+
+.mt-30px {
+    margin-top: 30px;
+}
+
+.mb-30px {
+    margin-bottom: 30px;
+}
+
+.pl-30px {
+    padding-left: 30px;
+}
+
+.mt-35px {
+    margin-top: 35px;
+}
+
+.mb-35px {
+    margin-bottom: 35px;
+}
+
+.mt-45px {
+    margin-top: 45px;
+}
+
+.mt-55px {
+    margin-top: 55px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-default {
+    cursor: default;
+}
+
+/* custom-select =====> start*/
+.form-select-custom {
+   position: relative; 
+}
+
+.form-select-custom select {
+    display: none;
+}
+
+.select-items div, .form-select-custom .select-selected {
+    display: flex;
+    user-select: none;
+    cursor: pointer;
+    width: 100%;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.select-selected {
+    background-color: #266ea5;
+    height: 100%;
+}
+
+.select-items div {
+    border-top: 1px solid #005696;
+    border-bottom: 1px solid #005696;
+    padding-top: 5px ;
+    padding-bottom: 5px;
+    background-color: #266ea5;
+    transition: .3s;
+}
+
+.select-items div:hover {
+    background-color: #003366;
+    transition: .3s;
+}
+
+.select-items div.active {
+    background-color: #003366;
+}
+
+.select-items {
+    position: absolute;
+    background-color: #266ea5;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    height: 300px;
+    overflow-y: auto;
+}
+
+.select-hide {
+    display: none;
+}
+/* custom-select =====> end */

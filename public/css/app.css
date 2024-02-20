@@ -5047,9 +5047,19 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-y: auto;
 }
 
-.admin-profile-section .main-title {
+.admin-profile-section .profile-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  width: 50vw;
+  min-width: 630px;
+}
+
+.admin-profile-section .profile-body .main-title {
   font-size: 21px;
   font-family: "DinPro Medium", sans-serif;
   height: 50px;
@@ -5058,14 +5068,10 @@ body {
   justify-content: flex-end;
 }
 
-.admin-profile-section .profile-body {
-  display: flex;
-  flex-direction: column;
-}
-
 .admin-profile-section .profile-body .my-profile-part {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .admin-profile-section .profile-body .my-profile-part .info-details {
@@ -5073,6 +5079,7 @@ body {
   flex-direction: column;
   font-size: 16px;
   font-family: "DinPro", sans-serif;
+  width: 100%;
 }
 
 .admin-profile-section .profile-body .my-profile-part .info-details .info-detail {
@@ -5080,10 +5087,11 @@ body {
   border-top: 2px solid transparent;
   height: 48px;
   gap: 2px;
+  width: 100%;
 }
 
 .admin-profile-section .profile-body .my-profile-part .info-details .info-detail .info-head {
-  width: 210px;
+  width: 33.3%;
   background-color: #003366;
   display: flex;
   padding-left: 30px;
@@ -5091,7 +5099,7 @@ body {
 }
 
 .admin-profile-section .profile-body .my-profile-part .info-details .info-detail .info-value {
-  width: 420px;
+  width: 66.6%;
   background-color: #266ea5;
   display: flex;
   align-items: center;
@@ -5106,5 +5114,73 @@ body {
   outline: none;
   border: none;
   color: white;
+}
+
+.admin-profile-section .profile-body .my-profile-part .info-details .info-detail .info-value .phone-code-select {
+  width: 30%;
+  height: 100%;
+}
+
+.admin-profile-section .profile-body .my-profile-part .info-details .info-detail .info-value .phone-code-input {
+  width: 70%;
+  padding-left: 0;
+}
+
+.admin-profile-section .profile-body .my-profile-part .info-button {
+  display: flex;
+  justify-content: center;
+}
+
+.admin-profile-section .profile-body .my-profile-part .info-button button {
+  height: 44px;
+  width: 50%;
+  border-radius: 10rem;
+  font-size: 16px;
+  font-family: "DinPro", sans-serif;
+  cursor: pointer;
+  background-color: #00a9ea;
+  border: none;
+  color: white;
+  transition: 0.3s;
+  outline: none;
+}
+
+.admin-profile-section .profile-body .my-profile-part .info-button button:hover {
+  background-color: #003366;
+  transition: 0.3s;
+}
+
+.admin-profile-section .profile-body .my-access-part {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.admin-profile-section .profile-body .my-access-part .access-detail-group {
+  display: flex;
+  gap: 2px;
+}
+
+.admin-profile-section .profile-body .my-access-part .access-detail-group .access-detail {
+  display: flex;
+  width: 50%;
+  background-color: #003366;
+  font-size: 16px;
+  font-family: "DinPro", sans-serif;
+  height: 46px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.admin-profile-section .profile-body .my-access-part .access-detail-group .access-detail:hover {
+  background-color: #266ea5;
+  transition: 0.3s;
+}
+
+.admin-profile-section .profile-body .my-access-part .access-detail-group .active {
+  background-color: #266ea5;
 }
 
