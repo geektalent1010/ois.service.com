@@ -189,3 +189,12 @@ function closeAllSelect(index) {
 }
 
 document.addEventListener('click', closeAllSelect);
+
+//select-custom function END
+
+// Email validation function START
+function validateEmail(email) {
+    let re = /\S+@\S+\.\S+/;
+    return re.test(email);
+}
+// Email validation function END
