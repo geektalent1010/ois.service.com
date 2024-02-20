@@ -34,4 +34,11 @@ $(document).ready(function () {
             }
         });
     });
+
+    let accessDetailDoms = document.querySelectorAll('.access-detail');
+    accessDetailDoms.forEach(function(element) {
+        element.addEventListener('click', function (event) {
+            element.classList.toggle('active');
+        })
+    })
 });
