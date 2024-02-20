@@ -135,37 +135,57 @@ function stopVideo() {
 
 //select-custom function
 
-let selectDom = document.getElementsByClassName('form-select-custom');
-for(let i = 0 ; i < selectDom.length ; i ++) {
-    let selEle = selectDom[i].getElementsByTagName("select")[0];
-    let a = document.createElement("DIV");
-    a.setAttribute('class', 'select-selected');
-    a.innerHTML = selEle.options[selEle.selectedIndex].innerHTML;
-    selectDom[i].appendChild(a);
+let selectPartDom = document.getElementsByClassName('form-select-custom');
+for(let i = 0 ; i < selectPartDom.length ; i ++) {
+    let selectDom = selectPartDom[i].getElementsByTagName("select")[0];
+    let selectedDom = document.createElement("DIV");
+    selectedDom.setAttribute('class', 'select-selected');
+    selectedDom.innerHTML = selectDom.options[selectDom.selectedIndex].innerHTML;
+    selectPartDom[i].appendChild(selectedDom);
 
-    let b = document.createElement('DIV');
-    b.setAttribute('class', 'select-items select-hide');
-    for(let j = 1 ; j < selEle.length ; j ++) {
-        let c = document.createElement('DIV');
-        c.innerHTML = selEle.options[j].innerHTML;
-        c.addEventListener('click', function(e) {
-            let s = this.parentNode.parentNode.getElementsByTagName('select')[0];
-            let h = this.parentNode.previousSibling;
-            console.log(s)
-            console.log(h)
+    let customOptions = document.createElement('DIV');
+    customOptions.setAttribute('class', 'select-items select-hide');
+    for(let j = 1 ; j < selectDom.length ; j ++) {
+        let optionDom = document.createElement('DIV');
+        optionDom.innerHTML = selectDom.options[j].innerHTML;
+        if(selectDom.options[selectDom.selectedIndex].innerHTML == optionDom.innerHTML) {
+            optionDom.classList.add('active');
+        }
+
+        optionDom.addEventListener('click', function(e) {
+            let selectDom = this.parentNode.parentNode.getElementsByTagName('select')[0];
+            let selectedDom = this.parentNode.previousSibling;
+            for(let k = 0 ; k < selectDom.length ; k ++) {
+                if(selectDom.options[k].innerHTML == this.innerHTML) {
+                    selectDom.selectedIndex = k;
+                    selectedDom.innerHTML = this.innerHTML;
+                    hasActiveDoms = this.parentNode.getElementsByClassName("active");
+                    for(let l = 0 ; l < hasActiveDoms.length; l ++) {
+                        hasActiveDoms[l].classList.remove('active');
+                    }
+                    this.classList.add('active');
+                    break;
+                }
+            }
+            selectedDom.click();
         });
-        b.appendChild(c);
+
+        customOptions.appendChild(optionDom);
     }
-    selectDom[i].appendChild(b);
+    selectPartDom[i].appendChild(customOptions);
 
-    a.addEventListener('click', function(e) {
+    selectedDom.addEventListener('click', function(e) {
         e.stopPropagation();
-        closeAllSelect(this);
+        closeAllSelect(i);
         this.nextSibling.classList.toggle('select-hide');
-        this.classList.toggle('select-arrow-active');
-    })
+    });
 }
 
-function closeAllSelect(ele) {
-    
+function closeAllSelect(index) {
+    let selectedItems = document.getElementsByClassName('select-items');
+    for(let i = 0 ; i < selectedItems.length ; i ++) {
+        if(index != i) selectedItems[i].classList.add('select-hide');
+    }
 }
+
+document.addEventListener('click', closeAllSelect);

@@ -5116,6 +5116,16 @@ body {
   color: white;
 }
 
+.admin-profile-section .profile-body .my-profile-part .info-details .info-detail .info-value .phone-code-select {
+  width: 30%;
+  height: 100%;
+}
+
+.admin-profile-section .profile-body .my-profile-part .info-details .info-detail .info-value .phone-code-input {
+  width: 70%;
+  padding-left: 0;
+}
+
 .admin-profile-section .profile-body .my-profile-part .info-button {
   display: flex;
   justify-content: center;

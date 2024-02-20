@@ -61,15 +61,17 @@
 }
 
 .select-items div, .form-select-custom .select-selected {
-    /* background-color: red; */
-    background-color: #266ea5;
     display: flex;
     user-select: none;
     cursor: pointer;
     width: 100%;
-    height: 100%;
     align-items: center;
     padding-left: 40px;
+}
+
+.select-selected {
+    background-color: #266ea5;
+    height: 100%;
 }
 
 .select-items div {
@@ -77,13 +79,17 @@
     border-bottom: 1px solid #005696;
     padding-top: 5px ;
     padding-bottom: 5px;
-    background-color: #003366;
+    background-color: #266ea5;
     transition: .3s;
 }
 
 .select-items div:hover {
-    background-color: #266ea5;
+    background-color: #003366;
     transition: .3s;
+}
+
+.select-items div.active {
+    background-color: #003366;
 }
 
 .select-items {
@@ -93,6 +99,8 @@
     left: 0;
     right: 0;
     z-index: 10;
+    height: 300px;
+    overflow-y: auto;
 }
 
 .select-hide {

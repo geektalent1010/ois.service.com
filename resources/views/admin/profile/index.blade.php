@@ -29,7 +29,18 @@
                     <div class="info-detail">
                         <div class="info-head">Phone</div>
                         <div class="info-value">
-                            <input type="text" value="{{$user->profile->phone_number}}" class="form-input-custom" />
+                            <div class="form-select-custom phone-code-select">
+                                <select>
+                                    @foreach($phoneCodes as $phoneCode)
+                                        @if('+'.$phoneCode == explode(' ', $user->profile->phone_number)[0])
+                                            <option selected>+{{$phoneCode}}</option>
+                                        @else
+                                            <option>+{{$phoneCode}}</option>
+                                        @endif
+                                    @endforeach
+                                </select>
+                            </div>
+                            <input type="text" value="{{explode(' ', $user->profile->phone_number)[1]}}" class="form-input-custom phone-code-input" />
                         </div>
                     </div>
                     <div class="info-detail">
@@ -46,12 +57,16 @@
                     </div>
                     <div class="info-detail">
                         <div class="info-head">Country</div>
-                        <div class="info-value form-select-custom">
-                            <select class="">
-                                <option>select country</option>
-                                <option>f</option>
-                                <option>a</option>
-                                <option>b</option>
+                        <div class="info-value country-select form-select-custom">
+                            <select class="" id="country">
+                                <option value="0">select country</option>
+                                @foreach($countries as $country)
+                                    @if($country->id == $user->profile->country_id)
+                                        <option value="{{$country->id}}" selected>{{$country->name}}</option>
+                                    @else
+                                        <option value="{{$country->id}}">{{$country->name}}</option>
+                                    @endif
+                                @endforeach
                             </select>
                             <!-- <input type="text" value="john" class="form-input-custom" /> -->
                         </div>
@@ -76,7 +91,7 @@
                     </div>
                 </div>
                 <div class="info-button mt-35px">
-                    <button>{{__('SAVE')}}</button>
+                    <button id="save-but">{{__('SAVE')}}</button>
                 </div>
             </div>
             <div class="main-title mt-35px">MY ACCESS</div>
@@ -118,4 +133,6 @@
         $('.nis-visa-modal').addClass('d-none');
     })
 </script> -->
+<script>
+</script>
 @endsection
