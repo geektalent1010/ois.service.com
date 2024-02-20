@@ -29,7 +29,7 @@
             <div class="navItem" onclick="">
                 <div class="navItemWrap" onclick="">
                     <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center"></div>
-                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center cursor-pointer" href="{{route('roles.index')}}">
+                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center cursor-pointer" href="{{route('admin.manager.index')}}">
                         <div class="h-100">
                             <div class="d-flex justify-content-center h-50 align-items-end">
                                 <img src="{{ asset('images/IconADMIN.svg') }}" alt="" style="width:60px">
@@ -43,7 +43,7 @@
             <div class="navItem" onclick="">
                 <div class="navItemWrap" onclick="">
                     <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center"></div>
-                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="{{ route('client.index') }}">
+                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="">
                         <div class="h-100">
                             <div class="d-flex justify-content-center h-50 align-items-end">
                                 <img src="{{ asset('images/IconCLIENTS.svg') }}" alt="" style="width:60px">
@@ -57,7 +57,7 @@
             <div class="navItem" onclick="">
                 <div class="navItemWrap" onclick="">
                     <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center"></div>
-                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="{{ route('application.bvn') }}">
+                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="">
                         <div class="h-100">
                             <div class="d-flex justify-content-center h-50 align-items-end">
                                 <img src="{{ asset('images/IconMAIL.svg') }}" alt="" style="width:60px">
@@ -71,7 +71,7 @@
             <div class="navItem" onclick="">
                 <div class="navItemWrap" onclick="">
                     <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center"></div>
-                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="{{route('news.index')}}">
+                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="">
                         <div class="h-100">
                             <div class="d-flex justify-content-center h-50 align-items-end">
                                 <img src="{{ asset('images/IconCONTENT.svg') }}" alt="" style="width:60px">
@@ -99,7 +99,7 @@
             <div class="navItem" onclick="">
                 <div class="navItemWrap" onclick="">
                     <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center"></div>
-                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="{{ route('booking.index') }}">
+                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="">
                         <div class="h-100">
                             <div class="d-flex justify-content-center h-50 align-items-end">
                                 <img src="{{ asset('images/IconPRICE.svg') }}" alt="" style="width:60px">

@@ -105,6 +105,7 @@ Route::group(['middleware' => ['password.protected']], function () {
             Route::get('dashboard', 'Admin\DashboardController@index')->name('admin.dashboard.index');
             Route::get('profile', 'Admin\ProfileController@index')->name('admin.profile.index');
             Route::post('profile', 'Admin\ProfileController@updateProfile')->name('admin.profile.update');
+            Route::get('manager', 'Admin\AdminManagerController@index')->name('admin.manager.index');
         });
     });
 
