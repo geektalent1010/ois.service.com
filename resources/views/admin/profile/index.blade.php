@@ -33,7 +33,7 @@
                         <div class="info-value">
                             <div class="form-select-custom phone-code-select">
                                 <select id="data3" name="phoneCode" text="Phone Code">
-                                    <option value="0">select phone code</option>
+                                    <option value="0">select</option>
                                     @foreach($phoneCodes as $phoneCode)
                                         @if('+'.$phoneCode == explode(' ', $user->profile->phone_number)[0])
                                             <option selected>+{{$phoneCode}}</option>
@@ -126,16 +126,4 @@
 @section('PAGE_LEVEL_SCRIPTS')
 <script type="text/javascript" src="{{asset('js/util.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/admin_profile.js')}}"></script>
-<!-- <script>
-    if (!getCookie('cookieNisVisaProcessing')) {
-        $('.nis-visa-modal').addClass('show-modal');
-    }
-
-    $('.agree-button').on('click', function () {
-        setCookie('cookieNisVisaProcessing', true, 365);
-        $('.nis-visa-modal').addClass('d-none');
-    })
-</script> -->
-<script>
-</script>
 @endsection
