@@ -5212,19 +5212,6 @@ body {
   align-items: center;
 }
 
-.admin-manager-section .manager-body .search-part {
-  width: 100%;
-  background-color: #00447e;
-  display: flex;
-  align-items: center;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.admin-manager-section .manager-body .search-part i {
-  font-size: 25px;
-}
-
 .admin-manager-section .manager-body .button-part {
   width: 100%;
   display: flex;

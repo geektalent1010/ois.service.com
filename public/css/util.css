@@ -1,4 +1,3 @@
-
 .mt-19px {
     margin-top: 19px;
 }
@@ -53,14 +52,15 @@
 
 /* custom-select =====> start*/
 .form-select-custom {
-   position: relative; 
+    position: relative;
 }
 
 .form-select-custom select {
     display: none;
 }
 
-.select-items div, .form-select-custom .select-selected {
+.form-select-custom .select-items div,
+.form-select-custom .select-selected {
     display: flex;
     user-select: none;
     cursor: pointer;
@@ -69,41 +69,41 @@
     padding-left: 40px;
 }
 
-.select-selected {
+.form-select-custom .select-selected {
     background-color: #266ea5;
     height: 100%;
 }
 
-.select-items div {
+.form-select-custom .select-items div {
     border-top: 1px solid #005696;
     border-bottom: 1px solid #005696;
-    padding-top: 5px ;
+    padding-top: 5px;
     padding-bottom: 5px;
     background-color: #266ea5;
-    transition: .3s;
+    transition: 0.3s;
 }
 
-.select-items div:hover {
+.form-select-custom .select-items div:hover {
     background-color: #003366;
-    transition: .3s;
+    transition: 0.3s;
 }
 
-.select-items div.active {
+.form-select-custom .select-items div.active {
     background-color: #003366;
 }
 
-.select-items {
+.form-select-custom .select-items {
     position: absolute;
     background-color: #266ea5;
     top: 100%;
     left: 0;
     right: 0;
     z-index: 10;
-    height: 300px;
+    max-height: 300px;
     overflow-y: auto;
 }
 
-.select-hide {
+.form-select-custom .select-hide {
     display: none;
 }
 /* custom-select =====> end */
@@ -118,3 +118,61 @@
     color: white;
 }
 /* custom-input =====> end */
+
+/* custom dropdown ====> start */
+.custom-input-dropdown {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-input-dropdown .search-input {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    background-color: #00447e;
+}
+
+.custom-input-dropdown .search-input i {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.custom-input-dropdown .list-detail {
+    background-color: #266ea5;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.custom-input-dropdown .list-detail .detail {
+    border-top: 1px solid #005696;
+    border-bottom: 1px solid #005696;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #266ea5;
+    transition: 0.3s;
+    cursor: pointer;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.custom-input-dropdown .list-detail .detail:hover {
+    background-color: #003366;
+    transition: 0.3s;
+}
+
+.custom-input-dropdown .list-detail .detail.active {
+    background-color: #003366;
+}
+
+.custom-input-dropdown .list-detail.d-none {
+    display: none;
+}
+
+/* custom dropdown ====> end */
