@@ -5577,3 +5577,107 @@ body {
   font-size: 15px;
 }
 
+.content-manager-section {
+  width: 100vw;
+  height: calc(100vh - 120px);
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.content-manager-section .manager-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  width: 50vw;
+}
+
+.content-manager-section .manager-body .main-title {
+  font-size: 21px;
+  font-family: "DinPro Medium", sans-serif;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.content-manager-section .manager-body .content-panel-part {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.content-manager-section .manager-body .content-panel-part .content-panel {
+  width: 25%;
+  font-family: "DinPro", sans-serif;
+  font-size: 16px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #266ea5;
+  border: 1px solid #005695;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.content-manager-section .manager-body .content-panel-part .content-panel:hover {
+  transition: 0.3s;
+  background-color: #003366;
+}
+
+.content-manager-section .manager-body .content-panel-part .content-panel.active {
+  background-color: #003366;
+}
+
+.content-manager-section .manager-body .content-edit-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.content-manager-section .manager-body .content-edit-body .content-detail .title {
+  font-size: 24px;
+  font-family: "Montserrat Medium", sans-serif;
+  text-align: center;
+}
+
+.content-manager-section .manager-body .content-edit-body .content-detail .sub-title {
+  font-size: 28px;
+  font-family: "Montserrat Medium", sans-serif;
+}
+
+.content-manager-section .manager-body .content-edit-body .content-detail .description {
+  font-size: 16px;
+  font-family: "Montserrat Regular", sans-serif;
+  line-height: 30px;
+}
+
+.content-manager-section .manager-body .content-edit-body .content-detail .info-button {
+  display: flex;
+  justify-content: center;
+}
+
+.content-manager-section .manager-body .content-edit-body .content-detail .info-button button {
+  height: 44px;
+  width: 300px;
+  border-radius: 10rem;
+  font-size: 16px;
+  font-family: "DinPro", sans-serif;
+  cursor: pointer;
+  background-color: #00a9ea;
+  border: none;
+  color: white;
+  transition: 0.3s;
+  outline: none;
+}
+
+.content-manager-section .manager-body .content-edit-body .content-detail .info-button button:hover {
+  background-color: #003366;
+  transition: 0.3s;
+}
+
