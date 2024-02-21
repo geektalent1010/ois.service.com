@@ -127,6 +127,12 @@ $(document).ready(function () {
         $("#create-user-form").addClass('d-none');
     });
 
+    const searchManagerDom = document.getElementById('search');
+    searchManagerDom.addEventListener('focus', function(e) {
+        document.getElementsByClassName('button-part')[0].classList.remove('d-none');
+        document.getElementById('create-user-form').classList.add('d-none');
+    });
+
     drawSelectForm();
 });
 

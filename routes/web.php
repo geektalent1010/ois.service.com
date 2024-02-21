@@ -119,6 +119,9 @@ Route::group(['middleware' => ['password.protected']], function () {
 
             Route::get('mail', 'Admin\MailManagerController@index')->name('admin.mail.index');
 
+            Route::get('content', 'Admin\ContentManagerController@index')->name('admin.content.index');
+            Route::post('getContent', 'Admin\ContentManagerController@getContent')->name('admin.content.get');
+
         });
     });
 
