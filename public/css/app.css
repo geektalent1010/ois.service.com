@@ -5360,3 +5360,179 @@ body {
   background-color: #003366;
 }
 
+.client-manager-section {
+  width: 100vw;
+  height: calc(100vh - 120px);
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.client-manager-section .manager-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  width: 50vw;
+}
+
+.client-manager-section .manager-body .main-title {
+  font-size: 21px;
+  font-family: "DinPro Medium", sans-serif;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.client-manager-section .manager-body .button-part {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.client-manager-section .manager-body .button-part button {
+  height: 44px;
+  width: 300px;
+  border-radius: 10rem;
+  font-size: 16px;
+  font-family: "DinPro", sans-serif;
+  cursor: pointer;
+  background-color: #00a9ea;
+  border: none;
+  color: white;
+  transition: 0.3s;
+  outline: none;
+}
+
+.client-manager-section .manager-body .button-part button:hover {
+  background-color: #003366;
+  transition: 0.3s;
+}
+
+.client-manager-section .manager-body .my-profile-part {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.client-manager-section .manager-body .my-profile-part .info-details {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-family: "DinPro", sans-serif;
+  width: 100%;
+}
+
+.client-manager-section .manager-body .my-profile-part .info-details .info-detail {
+  display: flex;
+  border-top: 2px solid transparent;
+  height: 48px;
+  gap: 2px;
+  width: 100%;
+}
+
+.client-manager-section .manager-body .my-profile-part .info-details .info-detail .info-head {
+  width: 33.3%;
+  background-color: #003366;
+  display: flex;
+  padding-left: 30px;
+  align-items: center;
+}
+
+.client-manager-section .manager-body .my-profile-part .info-details .info-detail .info-value {
+  width: 66.6%;
+  background-color: #266ea5;
+  display: flex;
+  align-items: center;
+}
+
+.client-manager-section .manager-body .my-profile-part .info-details .info-detail .info-value .form-input-custom {
+  width: 100%;
+  height: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: white;
+}
+
+.client-manager-section .manager-body .my-profile-part .info-details .info-detail .info-value .phone-code-select {
+  width: 30%;
+  height: 100%;
+}
+
+.client-manager-section .manager-body .my-profile-part .info-details .info-detail .info-value .phone-code-input {
+  width: 70%;
+  padding-left: 0;
+}
+
+.client-manager-section .manager-body .my-profile-part .info-button {
+  display: flex;
+  justify-content: center;
+}
+
+.client-manager-section .manager-body .my-profile-part .info-button button {
+  height: 44px;
+  width: 300px;
+  border-radius: 10rem;
+  font-size: 16px;
+  font-family: "DinPro", sans-serif;
+  cursor: pointer;
+  background-color: #00a9ea;
+  border: none;
+  color: white;
+  transition: 0.3s;
+  outline: none;
+}
+
+.client-manager-section .manager-body .my-profile-part .info-button button:hover {
+  background-color: #003366;
+  transition: 0.3s;
+}
+
+.client-manager-section .manager-body .roles-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.client-manager-section .manager-body .roles-section .my-access-part {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.client-manager-section .manager-body .roles-section .my-access-part .access-detail-group {
+  display: flex;
+  gap: 2px;
+}
+
+.client-manager-section .manager-body .roles-section .my-access-part .access-detail-group .access-detail {
+  display: flex;
+  width: 50%;
+  background-color: #266ea5;
+  font-size: 16px;
+  font-family: "DinPro", sans-serif;
+  height: 46px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.client-manager-section .manager-body .roles-section .my-access-part .access-detail-group .access-detail:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.client-manager-section .manager-body .roles-section .my-access-part .access-detail-group .active {
+  background-color: #003366;
+}
+

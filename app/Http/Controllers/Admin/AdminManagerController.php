@@ -23,6 +23,7 @@ class AdminManagerController extends Controller
             ->all();
         $adminUsers = User::where('is_admin', 1)
             ->where('status', 1)
+            ->orderBy('email')
             ->get()
             ->pluck('email')
             ->all();
