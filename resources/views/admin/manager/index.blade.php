@@ -12,15 +12,24 @@
     <div class="body-section admin-manager-section">
         <div class="manager-body">
             <div class="main-title">ADMIN MANAGER</div>
-            <div class="search-part mt-30px">
-                <input type="text" placeholder="Search Name, Center" class="custom-input" />
-                <i class="fa fa-search"></i>
+            <div class="mt-30px custom-input-dropdown">
+                <form class="search-input" id="search-manager">
+                    @csrf
+                    <input type="text" name="search" id="search" placeholder="Search Name, Center" class="custom-input" />
+                    <i class="fa fa-search"></i>
+                </form>
+                <div class="list-detail d-none">
+                    @foreach ($adminUsers as $adminUser)
+                        <div class="detail">{{$adminUser}}</div>
+                    @endforeach
+                </div>
             </div>
             <div class="button-part mt-30px">
                 <button id="create-user-button">CREATE NEW USER</button>
             </div>
             <form class="my-profile-part d-none" id="create-user-form">
                 @csrf
+                <input type="hidden" id="userid" name="userid" />
                 <div class="info-details">
                     <div class="info-detail">
                         <div class="info-head">First Name</div>
