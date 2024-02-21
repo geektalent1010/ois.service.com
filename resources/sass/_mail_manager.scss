@@ -1,0 +1,38 @@
+.mail-manager-section {
+    width: 100vw;
+    height: calc(100vh - 120px);
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+
+    .manager-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 30px;
+        width: 50vw;
+
+        .demo-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+
+            img {
+                width: 150px;
+            }
+            .main-title {
+                font-size: 30px;
+            }
+
+            .sub-title {
+                font-size: 15px;
+            }
+        }
+    }
+}
