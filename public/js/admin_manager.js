@@ -7,7 +7,7 @@ $(document).ready(function () {
     });
 
     $("#create-user-button").click(function() {
-        $(".button-part").hide();
+        $(".button-part").addClass('d-none');
         $("#create-user-form").removeClass('d-none');
     });
 
