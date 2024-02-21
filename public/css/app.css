@@ -5474,6 +5474,7 @@ body {
 .client-manager-section .manager-body .my-profile-part .info-button {
   display: flex;
   justify-content: center;
+  gap: 15px;
 }
 
 .client-manager-section .manager-body .my-profile-part .info-button button {

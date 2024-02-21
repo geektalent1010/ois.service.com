@@ -110,6 +110,9 @@ Route::group(['middleware' => ['password.protected']], function () {
             Route::post('updateAdmin', 'Admin\AdminManagerController@updateAdmin')->name('admin.manager.update');
             Route::post('getManagerInfo', 'Admin\AdminManagerController@getManagerInfo')->name('admin.manager.info');
             Route::get('client', 'Admin\ClientManagerController@index')->name('admin.client.index');
+            Route::post('createClient', 'Admin\ClientManagerController@createClient')->name('admin.client.create');
+            Route::post('updateClient', 'Admin\ClientManagerController@updateClient')->name('admin.client.update');
+            Route::post('getClientInfo', 'Admin\ClientManagerController@getClientInfo')->name('admin.client.info');
         });
     });
 
