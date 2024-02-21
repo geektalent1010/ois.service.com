@@ -5691,3 +5691,68 @@ body {
   transition: 0.3s;
 }
 
+.center-manager-section {
+  width: 100vw;
+  height: calc(100vh - 120px);
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.center-manager-section .info-button {
+  display: flex;
+  justify-content: center;
+}
+
+.center-manager-section .info-button button {
+  height: 44px;
+  width: 300px;
+  border-radius: 10rem;
+  font-size: 16px;
+  font-family: "DinPro", sans-serif;
+  cursor: pointer;
+  background-color: #00a9ea;
+  border: none;
+  color: white;
+  transition: 0.3s;
+  outline: none;
+}
+
+.center-manager-section .info-button button:hover {
+  background-color: #003366;
+  transition: 0.3s;
+}
+
+.center-manager-section .manager-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  width: 50vw;
+}
+
+.center-manager-section .manager-body .main-title {
+  font-size: 21px;
+  font-family: "DinPro Medium", sans-serif;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.center-manager-section .manager-body .select-form {
+  width: 300px;
+  height: 45px;
+}
+
+.center-manager-section .manager-body .select-form .select-items {
+  border-radius: 5px;
+}
+
+.center-manager-section .manager-body .select-form .select-selected {
+  border-radius: 23px;
+}
+
