@@ -5537,3 +5537,43 @@ body {
   background-color: #003366;
 }
 
+.mail-manager-section {
+  width: 100vw;
+  height: calc(100vh - 120px);
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.mail-manager-section .manager-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+  width: 50vw;
+}
+
+.mail-manager-section .manager-body .demo-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.mail-manager-section .manager-body .demo-body img {
+  width: 150px;
+}
+
+.mail-manager-section .manager-body .demo-body .main-title {
+  font-size: 30px;
+}
+
+.mail-manager-section .manager-body .demo-body .sub-title {
+  font-size: 15px;
+}
+

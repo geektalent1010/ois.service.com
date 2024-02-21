@@ -103,16 +103,22 @@ Route::group(['middleware' => ['password.protected']], function () {
         Route::post('logout', 'AdminAuth\LoginController@logout')->name('admin.logout');
         Route::middleware(['admin'])->group(function () {
             Route::get('dashboard', 'Admin\DashboardController@index')->name('admin.dashboard.index');
+
             Route::get('profile', 'Admin\ProfileController@index')->name('admin.profile.index');
             Route::post('profile', 'Admin\ProfileController@updateProfile')->name('admin.profile.update');
+
             Route::get('manager', 'Admin\AdminManagerController@index')->name('admin.manager.index');
             Route::post('createAdmin', 'Admin\AdminManagerController@createAdmin')->name('admin.manager.create');
             Route::post('updateAdmin', 'Admin\AdminManagerController@updateAdmin')->name('admin.manager.update');
             Route::post('getManagerInfo', 'Admin\AdminManagerController@getManagerInfo')->name('admin.manager.info');
+
             Route::get('client', 'Admin\ClientManagerController@index')->name('admin.client.index');
             Route::post('createClient', 'Admin\ClientManagerController@createClient')->name('admin.client.create');
             Route::post('updateClient', 'Admin\ClientManagerController@updateClient')->name('admin.client.update');
             Route::post('getClientInfo', 'Admin\ClientManagerController@getClientInfo')->name('admin.client.info');
+
+            Route::get('mail', 'Admin\MailManagerController@index')->name('admin.mail.index');
+
         });
     });
 
