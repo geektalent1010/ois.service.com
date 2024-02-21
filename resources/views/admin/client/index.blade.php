@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'ADMIN'], ['VIDEO_LOCK' => true])
+@extends('layouts.app', ['ACTIVE_TITLE' => 'CLIENTS'], ['VIDEO_LOCK' => true])
 
 @section('PAGE_LEVEL_STYLES')
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -44,35 +44,27 @@
                         </div>
                     </div>
                     <div class="info-detail">
-                        <div class="info-head">Phone</div>
+                        <div class="info-head">Street</div>
                         <div class="info-value">
-                            <div class="form-select-custom phone-code-select">
-                                <select id="data3" name="phoneCode" text="Phone Code">
-                                    <option value="0">select</option>
-                                    @foreach($phoneCodes as $phoneCode)
-                                        <option>+{{$phoneCode}}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-                            <input type="text" id="data4" name="phoneNumber" text="Phone Number" value="" class="form-input-custom phone-code-input" />
+                            <input type="text" id="data3" name="street" text="Street" value="" class="form-input-custom" />
                         </div>
                     </div>
                     <div class="info-detail">
-                        <div class="info-head">E-mail</div>
+                        <div class="info-head">House Nr</div>
                         <div class="info-value">
-                            <input type="text" id="data5" name="email" text="Email" value="" class="form-input-custom" />
+                            <input type="text" id="data4" name="houseNr" text="House Nr" value="" class="form-input-custom" />
                         </div>
                     </div>
                     <div class="info-detail">
-                        <div class="info-head">Center</div>
+                        <div class="info-head">city</div>
                         <div class="info-value">
-                            <input type="text" id="data6" name="city" text="Center" value="" class="form-input-custom" />
+                            <input type="text" id="data5" name="city" text="City" value="" class="form-input-custom" />
                         </div>
                     </div>
                     <div class="info-detail">
                         <div class="info-head">Country</div>
                         <div class="info-value country-select form-select-custom">
-                            <select class="" id="data7" name="country" text="Country">
+                            <select class="" id="data6" name="country" text="Country">
                                 <option value="0">select country</option>
                                 @foreach($countries as $country)
                                     <option value="{{$country->id}}">{{$country->name}}</option>
@@ -81,48 +73,54 @@
                         </div>
                     </div>
                     <div class="info-detail">
-                        <div class="info-head">Role</div>
+                        <div class="info-head">Phone</div>
                         <div class="info-value">
-                            <input type="text" id="data8" name="role" text="Role" value="Admin" disabled class="form-input-custom" />
+                            <div class="form-select-custom phone-code-select">
+                                <select id="data7" name="phoneCode" text="Phone Code">
+                                    <option value="0">select</option>
+                                    @foreach($phoneCodes as $phoneCode)
+                                        <option>+{{$phoneCode}}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            <input type="text" id="data8" name="phoneNumber" text="Phone Number" value="" class="form-input-custom phone-code-input" />
+                        </div>
+                    </div>
+                    <div class="info-detail">
+                        <div class="info-head">E-mail</div>
+                        <div class="info-value">
+                            <input type="text" id="data9" name="email" text="Email" value="" class="form-input-custom" />
                         </div>
                     </div>
                     <div class="info-detail">
                         <div class="info-head">User Name</div>
                         <div class="info-value">
-                            <input type="text" id="data9" name="username" text="User Name" value="" class="form-input-custom" />
+                            <input type="text" id="data10" name="username" text="User Name" value="" class="form-input-custom" />
                         </div>
                     </div>
                     <div class="info-detail">
                         <div class="info-head">Password</div>
                         <div class="info-value">
-                            <input type="password" id="data10" name="password" text="Password" value="" class="form-input-custom" />
+                            <input type="password" id="data11" name="password" text="Password" value="" class="form-input-custom" />
+                        </div>
+                    </div>
+                    <div class="info-detail">
+                        <div class="info-head">User ID</div>
+                        <div class="info-value">
+                            <input type="text" id="data12" name="password" text="User ID" value="" class="form-input-custom" />
+                        </div>
+                    </div>
+                    <div class="info-detail">
+                        <div class="info-head">Registration Date</div>
+                        <div class="info-value">
+                            <input type="text" id="data13" name="password" text="Registration Date" value="" class="form-input-custom" />
                         </div>
                     </div>
                 </div>
-                <div class="roles-section">
-                    <div class="main-title mt-35px">MY ACCESS</div>
-                    <div class="my-access-part mt-30px">
-                        <div class="access-detail-group">
-                            <div class="access-detail">MY PROFILE</div>
-                            <div class="access-detail">CONTENT EDITOR</div>
-                        </div>
-                        <div class="access-detail-group">
-                            <div class="access-detail">ADMIN MANAGER</div>
-                            <div class="access-detail">CENTER EDITOR</div>
-                        </div>
-                        <div class="access-detail-group">
-                            <div class="access-detail">CLIENT MANAGER</div>
-                            <div class="access-detail">PRICE EDITOR</div>
-                        </div>
-                        <div class="access-detail-group">
-                            <div class="access-detail">MAIL MANAGER</div>
-                            <div class="access-detail">CHECKLIST EDITOR</div>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="info-button mt-35px">
-                    <button id="save-but">{{__('PUBLISH')}}</button>
+                    <button id="save-but">{{__('REMOVE USER')}}</button>
+                    <button id="export-but">{{__('EXPORT USER')}}</button>
+                    <button id="export-all-but">{{__('EXPORT ALL')}}</button>
                 </div>
             </form>
         </div>
