@@ -5657,6 +5657,16 @@ body {
   line-height: 30px;
 }
 
+.content-manager-section .manager-body .content-edit-body .content-detail .editable-content {
+  outline: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.content-manager-section .manager-body .content-edit-body .content-detail .editable-focus {
+  outline: 2px solid #266ea5;
+}
+
 .content-manager-section .manager-body .content-edit-body .content-detail .info-button {
   display: flex;
   justify-content: center;

@@ -76,6 +76,16 @@
                     line-height: 30px;
                 }
 
+                .editable-content {
+                    outline: none;
+                    border-radius: 10px;
+                    padding: 5px 10px;
+                }
+
+                .editable-focus {
+                    outline: 2px solid #266ea5;
+                }
+
                 .info-button {
                     display: flex;
                     justify-content: center;

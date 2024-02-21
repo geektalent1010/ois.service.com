@@ -121,7 +121,7 @@ Route::group(['middleware' => ['password.protected']], function () {
 
             Route::get('content', 'Admin\ContentManagerController@index')->name('admin.content.index');
             Route::post('getContent', 'Admin\ContentManagerController@getContent')->name('admin.content.get');
-
+            Route::post('updateContent', 'Admin\ContentManagerController@updateContent')->name('admin.content.update');
         });
     });
 

@@ -25,7 +25,9 @@ $("#title-form").submit(function(e) {
                 for(const r of res) {
                     result += '<form class="content-detail mt-55px">';
                     result += '<input type="hidden" name="contentId" value="' + r.id + '">'
-                    result += '<div class="editableContent" contenteditable="true">';
+                    result += '<input type="hidden" name="content" />';
+                    result += '<input type="hidden" name="_token" id="csrftoken" value="">'; // CSRF token field
+                    result += '<div class="editable-content" contenteditable="true">';
                     result += r.content;
                     result += '</div>';
                     result += `
@@ -36,9 +38,42 @@ $("#title-form").submit(function(e) {
                     result += '</form>';
                 }
                 $('.content-edit-body').html(result);
+
+                let editableContent = document.getElementsByClassName('editable-content');
+                for(const element of editableContent) {
+                    element.addEventListener('focus', function(e) {
+                        element.classList.add('editable-focus');
+                    });
+                    element.addEventListener('blur', function(){
+                        element.classList.remove('editable-focus');
+                    });
+                }
+
+                let contentForm = document.getElementsByClassName('content-detail');
+                for(const element of contentForm) {
+                    $(element).submit(function(e) {
+                        e.preventDefault();
+                        $(element).find('input:nth-child(3)').val($("#title-form input:nth-child(1)").val());
+                        $(element).find('input:nth-child(2)').val($(element).find('.editable-content').html());
+                        $.ajax({
+                            url: '/admin/updateContent',
+                            type: 'POST',
+                            dataType: 'json',
+                            data: $(this).serialize(),
+                            success: function(res) {
+                                if(res.status == 'success') {
+                                    toastr['success']('Updated successfully.', 'Success');
+                                } else {
+                                    toastr['error']('500 Error!', 'Error');
+                                }
+                            }
+                        })
+                    });
+                }
             } else {
                 toastr['info']('There is no result', 'Info');
             }
         }
     });
 });
+

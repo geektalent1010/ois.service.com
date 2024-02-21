@@ -23,4 +23,13 @@ class ContentManagerController extends Controller
         $content = Content::where('order_num', $id)->get();
         return json_encode($content);
     }
+
+    public function updateContent(Request $request) {
+        $id = $request->input('contentId');
+        $content = Content::where('id', $id)->first();
+        $content->content = $request->input('content');
+        $content->save();
+        $res['status'] = 'success';
+        return json_encode($res);
+    }
 }
