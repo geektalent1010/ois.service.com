@@ -16,6 +16,7 @@
                     @csrf
                     <select name="officeId" id="country-select" class="">
                         <option value="0">Country + City</option>
+                        <option value="0">Country + City</option>
                         @foreach ($offices as $country => $cities)
                             @foreach($cities as $key => $city)
                                 <option value="{{$city->id}}"

@@ -24,12 +24,23 @@ class CenterManagerController extends Controller
 
     public function updateOffice(Request $request) {
         $id = $request->input('officeId');
-        $office = Office::where('id', $id)->first();
+        if($id == 0) {
+            $office = new Office();
+            $office->postal = '';
+            $office->phone = '';
+            $office->email = '';
+            $office->providedby = '';
+        } else {
+            $office = Office::where('id', $id)->first();
+        }
+
         $office->country = $request->input('country');
         $office->city = $request->input('city');
         $office->address = $request->input('address');
         $office->working_days = $request->input('workingDay');
         $office->working_time = $request->input('workingTime');
-        return json_encode($office);
+        $office->save();
+        $res['status'] = 'success';
+        return json_encode($res);
     }
 }
