@@ -9,7 +9,7 @@ $(document).ready(function() {
                 dataType: 'json',
                 success: function(res) {
                     let html = '';
-                    html += '<input type="hidden" name="officeId" value="' + res.id + '"/>';
+                    html += '<input type="hidden" id="office-id" name="officeId" value="' + res.id + '"/>';
                     html += '<input type="hidden" name="_token" class="csrftoken" value=""/>';
                     html += '<div class="flag-section">';
                     html += '<img src="/images/Flags/' + res.flag + '" />';
@@ -27,7 +27,7 @@ $(document).ready(function() {
                     if(res.working_days == 'N.A' || !res.working_days) {
                         html += '<div class="mb-0 editable" id="office-workingdays" contenteditable="true" title="working days">N.A</div>';
                     } else {
-                        html += '<div class="mb-0 editable" id="office-workingdays" contenteditable="true" title="working days">' + res.working_days + ':</div>';
+                        html += '<div class="mb-0 editable" id="office-workingdays" contenteditable="true" title="working days">' + res.working_days + '</div>';
                     }
                     html += '<div class="editable" id="office-workingtime" contenteditable="true" title="working time">';
                     if(res.working_time == 'N.A' || !res.working_time) {
@@ -94,9 +94,47 @@ $(document).ready(function() {
             processData: false,
             success: function(res) {
                 console.log(res);
+                if(res.status == 'success') {
+                    toastr['success']('Updated successfully.', 'Success');
+                } else {
+                    toastr['error']('500 Error!', 'Error');
+                }
             }
         });
-    })
+    });
+
+    $('.add-new-button').click(function() {
+        let html = '';
+        html += '<input type="hidden" id="office-id" name="officeId" value="0"/>';
+        html += '<input type="hidden" name="_token" class="csrftoken" value=""/>';
+        html += '<div class="flag-section">';
+        html += '<img src="" />';
+        html += '</div>';
+        html += '<div class="">';
+        html += '<div class="mb-0 editable" id="office-country" contenteditable="true" title="country"><b>Country</b></div>';
+        html += '<div class="editable" id="office-address" contenteditable="true" title="address">';
+        html += '<div class="mb-0">Street</div>';
+        html += '<div class="mb-0">Zip Code</div>';
+        html += '</div>';
+        html += '<div class="mb-0 editable" id="office-city" contenteditable="true" title="city">City</div>';
+        html += '<div class="mt-4 mb-2"><b>Opening Hours</b></div>';
+
+        html += '<div class="mb-0 editable" id="office-workingdays" contenteditable="true" title="working days">N.A</div>';
+        html += '<div class="editable" id="office-workingtime" contenteditable="true" title="working time">';
+        html += '<div class="mb-0">N.A</div>';
+        html += '</div>';
+        html += '</div>';
+        $(".office-detail").html(html);
+        $(".office-detail").removeClass('d-none');
+        $(".publish-button").removeClass('d-none');
+
+        $(".office-detail .editable").on('focus', function(e) {
+            $(this).addClass('outline');
+        });
+        $(".office-detail .editable").on('blur', function(e) {
+            $(this).removeClass('outline');
+        });
+    });
 
     $("#country-select-form").click(function() {
         $("#country-select-form").submit();
