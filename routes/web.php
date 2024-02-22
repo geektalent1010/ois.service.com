@@ -16,7 +16,7 @@ Route::get('/password-protected', 'LandingController@passwordProtected')->name('
 Route::post('/password', 'LandingController@password')->name('password');
 
 
-Route::group(['middleware' => ['password.protected']], function () {
+// Route::group(['middleware' => ['password.protected']], function () {
 
     Auth::routes();
 
@@ -129,4 +129,4 @@ Route::group(['middleware' => ['password.protected']], function () {
         });
     });
 
-});
+// });
