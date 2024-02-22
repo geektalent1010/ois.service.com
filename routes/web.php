@@ -16,7 +16,7 @@ Route::get('/password-protected', 'LandingController@passwordProtected')->name('
 Route::post('/password', 'LandingController@password')->name('password');
 
 
-Route::group(['middleware' => ['password.protected']], function () {
+// Route::group(['middleware' => ['password.protected']], function () {
 
     Auth::routes();
 
@@ -124,7 +124,9 @@ Route::group(['middleware' => ['password.protected']], function () {
             Route::post('updateContent', 'Admin\ContentManagerController@updateContent')->name('admin.content.update');
 
             Route::get('center', 'Admin\CenterManagerController@index')->name('admin.center.index');
+            Route::post('centerInfo', 'Admin\CenterManagerController@getCenterInfo')->name('admin.center.info');
+            Route::post('updateOffice', 'Admin\CenterManagerController@updateOffice')->name('admin.center.update');
         });
     });
 
-});
+// });

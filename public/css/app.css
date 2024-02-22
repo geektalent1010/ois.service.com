@@ -5749,10 +5749,32 @@ body {
 }
 
 .center-manager-section .manager-body .select-form .select-items {
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .center-manager-section .manager-body .select-form .select-selected {
   border-radius: 23px;
+}
+
+.center-manager-section .manager-body .select-form .select-city {
+  text-align: right;
+}
+
+.center-manager-section .manager-body .office-detail-form {
+  width: 100%;
+}
+
+.center-manager-section .manager-body .office-detail-form .office-detail {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.center-manager-section .manager-body .office-detail-form .office-detail .flag-section img {
+  width: 120px;
+}
+
+.center-manager-section .manager-body .office-detail-form .office-detail div.outline {
+  outline: 1px solid #266ea5;
 }
 
