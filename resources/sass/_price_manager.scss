@@ -1,0 +1,116 @@
+.price-manager-section {
+    width: 100vw;
+    height: calc(100vh - 120px);
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+
+    .info-button {
+        display: flex;
+        justify-content: center;
+
+        button {
+            height: 44px;
+            width: 300px;
+            border-radius: 10rem;
+            font-size: 16px;
+            font-family: "DinPro", sans-serif;
+            cursor: pointer;
+            background-color: #00a9ea;
+            border: none;
+            color: white;
+            transition: 0.3s;
+            outline: none;
+        }
+
+        button:hover {
+            background-color: #003366;
+            transition: 0.3s;
+        }
+    }
+
+    .manager-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+        width: 50vw;
+
+        .main-title {
+            font-size: 21px;
+            font-family: "DinPro Medium", sans-serif;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .select-form {
+            width: 300px;
+            height: 45px;
+            .select-items {
+                border-radius: 10px;
+            }
+            .select-selected {
+                border-radius: 23px;
+            }
+            .select-city {
+                text-align: right;
+            }
+        }
+
+        .edit-form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .card-custom {
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+
+                .card-header-custom {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    cursor: pointer;
+                    height: 70px;
+                    align-items: center;
+                    display: flex;
+                    background-color: rgba(255,255,255,0.14);
+                    outline: none;
+                }
+
+                .card-body-custom {
+                    padding: 20px 30px;
+                    background-color: rgba(255,255,255,0.06);
+                    outline: none;
+
+                    .custom-panel-header {
+                        font-family: "DinPro Medium", serif;
+                        font-size: 18px;
+                    }
+
+                    .custom-sub-title {
+                        font-family: "DinPro Medium", serif;
+                        font-size: 18px;
+                        line-height: 36px;
+                        margin-top: 24px;
+                    }
+
+                    .custom-content {
+                        font-family: "DinPro", serif;
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+
+                .outline {
+                    outline: 1px solid white;
+                }
+            }
+        }
+    }
+}

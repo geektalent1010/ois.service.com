@@ -5778,3 +5778,123 @@ body {
   outline: 1px solid #266ea5;
 }
 
+.price-manager-section {
+  width: 100vw;
+  height: calc(100vh - 120px);
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.price-manager-section .info-button {
+  display: flex;
+  justify-content: center;
+}
+
+.price-manager-section .info-button button {
+  height: 44px;
+  width: 300px;
+  border-radius: 10rem;
+  font-size: 16px;
+  font-family: "DinPro", sans-serif;
+  cursor: pointer;
+  background-color: #00a9ea;
+  border: none;
+  color: white;
+  transition: 0.3s;
+  outline: none;
+}
+
+.price-manager-section .info-button button:hover {
+  background-color: #003366;
+  transition: 0.3s;
+}
+
+.price-manager-section .manager-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  width: 50vw;
+}
+
+.price-manager-section .manager-body .main-title {
+  font-size: 21px;
+  font-family: "DinPro Medium", sans-serif;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.price-manager-section .manager-body .select-form {
+  width: 300px;
+  height: 45px;
+}
+
+.price-manager-section .manager-body .select-form .select-items {
+  border-radius: 10px;
+}
+
+.price-manager-section .manager-body .select-form .select-selected {
+  border-radius: 23px;
+}
+
+.price-manager-section .manager-body .select-form .select-city {
+  text-align: right;
+}
+
+.price-manager-section .manager-body .edit-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.price-manager-section .manager-body .edit-form .card-custom {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.price-manager-section .manager-body .edit-form .card-custom .card-header-custom {
+  padding-left: 30px;
+  padding-right: 30px;
+  cursor: pointer;
+  height: 70px;
+  align-items: center;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.14);
+  outline: none;
+}
+
+.price-manager-section .manager-body .edit-form .card-custom .card-body-custom {
+  padding: 20px 30px;
+  background-color: rgba(255, 255, 255, 0.06);
+  outline: none;
+}
+
+.price-manager-section .manager-body .edit-form .card-custom .card-body-custom .custom-panel-header {
+  font-family: "DinPro Medium", serif;
+  font-size: 18px;
+}
+
+.price-manager-section .manager-body .edit-form .card-custom .card-body-custom .custom-sub-title {
+  font-family: "DinPro Medium", serif;
+  font-size: 18px;
+  line-height: 36px;
+  margin-top: 24px;
+}
+
+.price-manager-section .manager-body .edit-form .card-custom .card-body-custom .custom-content {
+  font-family: "DinPro", serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.price-manager-section .manager-body .edit-form .card-custom .outline {
+  outline: 1px solid white;
+}
+

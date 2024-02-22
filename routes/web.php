@@ -126,6 +126,9 @@ Route::post('/password', 'LandingController@password')->name('password');
             Route::get('center', 'Admin\CenterManagerController@index')->name('admin.center.index');
             Route::post('centerInfo', 'Admin\CenterManagerController@getCenterInfo')->name('admin.center.info');
             Route::post('updateOffice', 'Admin\CenterManagerController@updateOffice')->name('admin.center.update');
+
+            Route::get('price', 'Admin\PriceManagerController@index')->name('admin.price.index');
+            Route::post('getPrice', 'Admin\PriceManagerController@getPrice')->name('admin.price.info');
         });
     });
 
