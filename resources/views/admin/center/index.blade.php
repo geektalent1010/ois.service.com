@@ -12,15 +12,27 @@
     <div class="body-section center-manager-section">
         <div class="manager-body">
             <div class="main-title">CENTER EDITOR</div>
-                <div class="select-form form-select-custom mt-30px">
-                    <select name="" id="" class="">
+                <form class="select-form form-select-custom mt-30px" id="country-select-form">
+                    @csrf
+                    <select name="officeId" id="country-select" class="">
                         <option value="0">Country + City</option>
-                        @foreach ($countries as $country)
-                            <option value="{{$country->id}}">{{$country->name}}</option>
+                        @foreach ($offices as $country => $cities)
+                            @foreach($cities as $key => $city)
+                                <option value="{{$city->id}}"
+                                    data-country="{{$country}}">
+                                    {{$country}} - {{$city->city}}
+                                </option>
+                            @endforeach
                         @endforeach
                     </select>
-                </div>
-                <div class="info-button mt-35px">
+                </form>
+                <form class="office-detail-form">
+                    <div class="office-detail mt-30px d-none"></div>
+                    <div class="publish-button info-button mt-35px d-none">
+                        <button>PUBLISH</button>
+                    </div>
+                </form>
+                <div class="add-new-button info-button mt-30px">
                     <button>ADD NEW CENTER</button>
                 </div>
             </div>
