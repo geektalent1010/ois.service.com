@@ -5788,30 +5788,6 @@ body {
   overflow-y: auto;
 }
 
-.price-manager-section .info-button {
-  display: flex;
-  justify-content: center;
-}
-
-.price-manager-section .info-button button {
-  height: 44px;
-  width: 300px;
-  border-radius: 10rem;
-  font-size: 16px;
-  font-family: "DinPro", sans-serif;
-  cursor: pointer;
-  background-color: #00a9ea;
-  border: none;
-  color: white;
-  transition: 0.3s;
-  outline: none;
-}
-
-.price-manager-section .info-button button:hover {
-  background-color: #003366;
-  transition: 0.3s;
-}
-
 .price-manager-section .manager-body {
   display: flex;
   flex-direction: column;
@@ -5874,6 +5850,7 @@ body {
   padding: 20px 30px;
   background-color: rgba(255, 255, 255, 0.06);
   outline: none;
+  min-height: 70px;
 }
 
 .price-manager-section .manager-body .edit-form .card-custom .card-body-custom .custom-panel-header {
@@ -5896,5 +5873,49 @@ body {
 
 .price-manager-section .manager-body .edit-form .card-custom .outline {
   outline: 1px solid white;
+}
+
+.info-button {
+  display: flex;
+  justify-content: center;
+}
+
+.info-button button {
+  height: 44px;
+  width: 300px;
+  border-radius: 10rem;
+  font-size: 16px;
+  font-family: "DinPro", sans-serif;
+  cursor: pointer;
+  background-color: #00a9ea;
+  border: none;
+  color: white;
+  transition: 0.3s;
+  outline: none;
+}
+
+.info-button button:hover {
+  background-color: #003366;
+  transition: 0.3s;
+}
+
+.editor-panel {
+  position: fixed;
+  right: 0;
+  bottom: 50%;
+  display: flex;
+  gap: 5px;
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.editor-panel .editor-but {
+  width: 100px;
+  border-radius: 10px;
+}
+
+.editor-panel.show {
+  transform: translateX(0);
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 

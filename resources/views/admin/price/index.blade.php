@@ -30,8 +30,8 @@
                 @csrf
                 <input type="hidden" id="edit-id" name="edit-id" value="0">
                 <div class="card-custom mt-30px">
-                    <div class="card-header-custom" contenteditable="true"></div>
-                    <div class="card-body-custom collapse show" contenteditable="true"></div>
+                    <div class="card-header-custom editable" contenteditable="true">Center Fees</div>
+                    <div class="card-body-custom collapse show editable" contenteditable="true"><div>Please input here</div></div>
                 </div>
                 <div class="price-button-section info-button mt-35px">
                     <button>PUBLISH</button>
@@ -39,6 +39,10 @@
             </form>
         </div>
     </div>
+</div>
+<div class="editor-panel info-button">
+    <button class="editor-but subtitle-but">subtitle</button>
+    <button class="editor-but content-but">content</button>
 </div>
 @endsection
 

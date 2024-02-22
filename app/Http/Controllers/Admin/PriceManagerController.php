@@ -24,4 +24,21 @@ class PriceManagerController extends Controller
             ->first();
         return json_encode($office);
     }
+
+    public function updatePrice(Request $request) {
+        $id = $request->input('edit-id');
+        if(!$id) {
+            $checklist = new Checklist();
+            $checklist->visa_type = 'Fees';
+            $checklist->office_id = $request->input('officeId');
+            $checklist->file_name = '';
+        } else {
+            $checklist = Checklist::where('id', $id)->first();
+        }
+        $checklist->title = $request->input('title');
+        $checklist->description = $request->input('description');
+        $checklist->save();
+        $res['status'] = 'success';
+        return json_encode($res);
+    }
 }
