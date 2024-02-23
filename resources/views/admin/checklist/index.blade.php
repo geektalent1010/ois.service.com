@@ -46,7 +46,7 @@
 
                 </form>
             </div>
-            <div class="price-button-section info-button mt-35px mb-35px" id="create-button-part"><button>ADD NEW CHECKLIST</button></div>
+            <div class="price-button-section info-button mt-35px" id="create-button-part"><button>ADD NEW CHECKLIST</button></div>
             <div class="list-group">
 
             </div>
@@ -54,8 +54,20 @@
     </div>
 </div>
 <div class="editor-panel info-button">
-    <button class="editor-but subtitle-but">subtitle</button>
-    <button class="editor-but content-but">content</button>
+    <button class="editor-but subtitle-but">SubTitle</button>
+    <button class="editor-but content-but">Content</button>
+    <button class="editor-but mt10-but">mt-10px</button>
+    <button class="editor-but mt20-but">mt-20px</button>
+    <button class="editor-but mt30-but">mt-30px</button>
+    <button class="editor-but mb10-but">mb-10px</button>
+    <button class="editor-but mb20-but">mb-20px</button>
+    <button class="editor-but mb30-but">mb-30px</button>
+    <button class="editor-but reset-but">Reset Style</button>
+    <button class="editor-but add-table-but">Add Table</button>
+    <button class="editor-but remove-table-but">Remove Table</button>
+    <button class="editor-but add-row-but">Add Row</button>
+    <button class="editor-but add-column-but">Add Column</button>
+    <button class="editor-but">Reset</button>
 </div>
 @endsection
 

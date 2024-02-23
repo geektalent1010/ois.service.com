@@ -81,41 +81,19 @@
     }
 }
 
-.info-button {
-    display: flex;
-    justify-content: center;
-
-    button {
-        height: 44px;
-        width: 300px;
-        border-radius: 10rem;
-        font-size: 16px;
-        font-family: "DinPro", sans-serif;
-        cursor: pointer;
-        background-color: #00a9ea;
-        border: none;
-        color: white;
-        transition: 0.3s;
-        outline: none;
-    }
-
-    button:hover {
-        background-color: #003366;
-        transition: 0.3s;
-    }
-}
 
 .editor-panel {
     position: fixed;
     right: 0;
     bottom: 50%;
     display: flex;
-    gap: 5px;
+    gap: 10px;
     transform: translateX(100%);
     transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    width: 210px;
+    flex-wrap: wrap;
 
     .editor-but {
-        width: 100px;
         border-radius: 10px;
     }
 }
