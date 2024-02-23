@@ -53,6 +53,9 @@
         </div>
     </div>
 </div>
+<form id="deleteChecklistForm">
+    <input type="hidden" id="deleteOfficeId" name="deleteChecklistId">
+</form>
 <div class="editor-panel info-button">
     <button class="editor-but subtitle-but">SubTitle</button>
     <button class="editor-but content-but">Content</button>
