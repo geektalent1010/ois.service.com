@@ -137,6 +137,9 @@ $(document).ready(function () {
         document.getElementById('create-user-form').classList.add('d-none');
     });
 
-    drawSelectForm();
+    const countrySelDom = document.getElementById('country-select');
+    drawSelectForm(countrySelDom);
+    const phoneSelDom = document.getElementById('phone-code-select');
+    drawSelectForm(phoneSelDom);
 });
 

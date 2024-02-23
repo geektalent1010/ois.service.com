@@ -101,6 +101,6 @@ $(document).ready(function () {
         }
     });
 
-
-    drawSelectForm();
+    const selectDom = document.getElementById('country-select-form');
+    drawSelectForm(selectDom);
 });

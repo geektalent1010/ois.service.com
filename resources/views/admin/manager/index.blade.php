@@ -46,7 +46,7 @@
                     <div class="info-detail">
                         <div class="info-head">Phone</div>
                         <div class="info-value">
-                            <div class="form-select-custom phone-code-select">
+                            <div class="form-select-custom phone-code-select" id="phone-code-select">
                                 <select id="data3" name="phoneCode" text="Phone Code">
                                     <option value="0">select</option>
                                     @foreach($phoneCodes as $phoneCode)
@@ -71,7 +71,7 @@
                     </div>
                     <div class="info-detail">
                         <div class="info-head">Country</div>
-                        <div class="info-value country-select form-select-custom">
+                        <div class="info-value country-select form-select-custom" id="country-select">
                             <select class="" id="data7" name="country" text="Country">
                                 <option value="0">select country</option>
                                 @foreach($countries as $country)
