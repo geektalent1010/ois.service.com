@@ -105,30 +105,6 @@
                     }
                 }
             }
-
-            .info-button {
-                display: flex;
-                justify-content: center;
-
-                button {
-                    height: 44px;
-                    width: 300px;
-                    border-radius: 10rem;
-                    font-size: 16px;
-                    font-family: "DinPro", sans-serif;
-                    cursor: pointer;
-                    background-color: #00a9ea;
-                    border: none;
-                    color: white;
-                    transition: 0.3s;
-                    outline: none;
-                }
-
-                button:hover {
-                    background-color: #003366;
-                    transition: 0.3s;
-                }
-            }
         }
 
         .roles-section {

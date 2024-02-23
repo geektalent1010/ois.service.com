@@ -5126,30 +5126,6 @@ body {
   padding-left: 0;
 }
 
-.admin-profile-section .profile-body .my-profile-part .info-button {
-  display: flex;
-  justify-content: center;
-}
-
-.admin-profile-section .profile-body .my-profile-part .info-button button {
-  height: 44px;
-  width: 300px;
-  border-radius: 10rem;
-  font-size: 16px;
-  font-family: "DinPro", sans-serif;
-  cursor: pointer;
-  background-color: #00a9ea;
-  border: none;
-  color: white;
-  transition: 0.3s;
-  outline: none;
-}
-
-.admin-profile-section .profile-body .my-profile-part .info-button button:hover {
-  background-color: #003366;
-  transition: 0.3s;
-}
-
 .admin-profile-section .profile-body .my-access-part {
   width: 100%;
   display: flex;
@@ -5293,30 +5269,6 @@ body {
 .admin-manager-section .manager-body .my-profile-part .info-details .info-detail .info-value .phone-code-input {
   width: 70%;
   padding-left: 0;
-}
-
-.admin-manager-section .manager-body .my-profile-part .info-button {
-  display: flex;
-  justify-content: center;
-}
-
-.admin-manager-section .manager-body .my-profile-part .info-button button {
-  height: 44px;
-  width: 300px;
-  border-radius: 10rem;
-  font-size: 16px;
-  font-family: "DinPro", sans-serif;
-  cursor: pointer;
-  background-color: #00a9ea;
-  border: none;
-  color: white;
-  transition: 0.3s;
-  outline: none;
-}
-
-.admin-manager-section .manager-body .my-profile-part .info-button button:hover {
-  background-color: #003366;
-  transition: 0.3s;
 }
 
 .admin-manager-section .manager-body .roles-section {
@@ -5667,30 +5619,6 @@ body {
   outline: 2px solid #266ea5;
 }
 
-.content-manager-section .manager-body .content-edit-body .content-detail .info-button {
-  display: flex;
-  justify-content: center;
-}
-
-.content-manager-section .manager-body .content-edit-body .content-detail .info-button button {
-  height: 44px;
-  width: 300px;
-  border-radius: 10rem;
-  font-size: 16px;
-  font-family: "DinPro", sans-serif;
-  cursor: pointer;
-  background-color: #00a9ea;
-  border: none;
-  color: white;
-  transition: 0.3s;
-  outline: none;
-}
-
-.content-manager-section .manager-body .content-edit-body .content-detail .info-button button:hover {
-  background-color: #003366;
-  transition: 0.3s;
-}
-
 .center-manager-section {
   width: 100vw;
   height: calc(100vh - 120px);
@@ -5699,30 +5627,6 @@ body {
   flex-direction: column;
   align-items: center;
   overflow-y: auto;
-}
-
-.center-manager-section .info-button {
-  display: flex;
-  justify-content: center;
-}
-
-.center-manager-section .info-button button {
-  height: 44px;
-  width: 300px;
-  border-radius: 10rem;
-  font-size: 16px;
-  font-family: "DinPro", sans-serif;
-  cursor: pointer;
-  background-color: #00a9ea;
-  border: none;
-  color: white;
-  transition: 0.3s;
-  outline: none;
-}
-
-.center-manager-section .info-button button:hover {
-  background-color: #003366;
-  transition: 0.3s;
 }
 
 .center-manager-section .manager-body {
@@ -5862,42 +5766,19 @@ body {
   outline: 1px solid white;
 }
 
-.info-button {
-  display: flex;
-  justify-content: center;
-}
-
-.info-button button {
-  height: 44px;
-  width: 300px;
-  border-radius: 10rem;
-  font-size: 16px;
-  font-family: "DinPro", sans-serif;
-  cursor: pointer;
-  background-color: #00a9ea;
-  border: none;
-  color: white;
-  transition: 0.3s;
-  outline: none;
-}
-
-.info-button button:hover {
-  background-color: #003366;
-  transition: 0.3s;
-}
-
 .editor-panel {
   position: fixed;
   right: 0;
   bottom: 50%;
   display: flex;
-  gap: 5px;
+  gap: 10px;
   transform: translateX(100%);
   transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  width: 210px;
+  flex-wrap: wrap;
 }
 
 .editor-panel .editor-but {
-  width: 100px;
   border-radius: 10px;
 }
 
@@ -6014,6 +5895,10 @@ body {
   min-height: 70px;
 }
 
+.checklist-manager-section .manager-body .list-group .edit-form .card-custom .card-body-section .card-body-custom div {
+  outline: none;
+}
+
 .checklist-manager-section .manager-body .list-group .edit-form .card-custom .card-body-section .card-body-custom .custom-panel-header {
   font-family: "DinPro Medium", serif;
   font-size: 18px;
@@ -6027,43 +5912,26 @@ body {
   outline: 1px solid white;
 }
 
-.info-button {
-  display: flex;
-  justify-content: center;
-}
-
-.info-button button {
-  height: 44px;
-  width: 300px;
-  border-radius: 10rem;
-  font-size: 16px;
-  font-family: "DinPro", sans-serif;
-  cursor: pointer;
-  background-color: #00a9ea;
-  border: none;
-  color: white;
-  transition: 0.3s;
-  outline: none;
-}
-
-.info-button button:hover {
-  background-color: #003366;
-  transition: 0.3s;
-}
-
 .editor-panel {
   position: fixed;
   right: 0;
-  bottom: 50%;
+  bottom: 60px;
   display: flex;
+  flex-wrap: wrap;
   gap: 5px;
-  transform: translateX(100%);
+  width: 250px;
   transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  max-height: 500px;
+  overflow-y: auto;
 }
 
 .editor-panel .editor-but {
-  width: 100px;
+  width: 120px;
   border-radius: 10px;
+}
+
+.editor-panel .focused {
+  background-color: #003366;
 }
 
 .editor-panel.show {

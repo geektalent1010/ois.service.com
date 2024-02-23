@@ -133,6 +133,7 @@ Route::post('/password', 'LandingController@password')->name('password');
 
             Route::get('checklist', 'Admin\ChecklistManagerController@index')->name('admin.checklist.index');
             Route::post('getChecklist', 'Admin\ChecklistManagerController@getChecklist')->name('admin.checklist.info');
+            Route::post('updateChecklist', 'Admin\ChecklistManagerController@updateChecklist')->name('admin.checklist.update');
         });
     });
 
