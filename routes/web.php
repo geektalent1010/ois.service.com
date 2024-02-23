@@ -130,6 +130,9 @@ Route::post('/password', 'LandingController@password')->name('password');
             Route::get('price', 'Admin\PriceManagerController@index')->name('admin.price.index');
             Route::post('getPrice', 'Admin\PriceManagerController@getPrice')->name('admin.price.info');
             Route::post('updatePrice', 'Admin\PriceManagerController@updatePrice')->name('admin.price.update');
+
+            Route::get('checklist', 'Admin\ChecklistManagerController@index')->name('admin.checklist.index');
+            Route::post('getChecklist', 'Admin\ChecklistManagerController@getChecklist')->name('admin.checklist.info');
         });
     });
 

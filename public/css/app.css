@@ -5858,20 +5858,172 @@ body {
   font-size: 18px;
 }
 
-.price-manager-section .manager-body .edit-form .card-custom .card-body-custom .custom-sub-title {
+.price-manager-section .manager-body .edit-form .card-custom .outline {
+  outline: 1px solid white;
+}
+
+.info-button {
+  display: flex;
+  justify-content: center;
+}
+
+.info-button button {
+  height: 44px;
+  width: 300px;
+  border-radius: 10rem;
+  font-size: 16px;
+  font-family: "DinPro", sans-serif;
+  cursor: pointer;
+  background-color: #00a9ea;
+  border: none;
+  color: white;
+  transition: 0.3s;
+  outline: none;
+}
+
+.info-button button:hover {
+  background-color: #003366;
+  transition: 0.3s;
+}
+
+.editor-panel {
+  position: fixed;
+  right: 0;
+  bottom: 50%;
+  display: flex;
+  gap: 5px;
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.editor-panel .editor-but {
+  width: 100px;
+  border-radius: 10px;
+}
+
+.editor-panel.show {
+  transform: translateX(0);
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.checklist-manager-section {
+  width: 100vw;
+  height: calc(100vh - 120px);
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.checklist-manager-section .manager-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  width: 50vw;
+}
+
+.checklist-manager-section .manager-body .main-title {
+  font-size: 21px;
+  font-family: "DinPro Medium", sans-serif;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.checklist-manager-section .manager-body .select-group {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.checklist-manager-section .manager-body .select-group .select-form {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.checklist-manager-section .manager-body .select-group .select-form label {
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+.checklist-manager-section .manager-body .select-group .select-form .form-select-custom {
+  height: 45px;
+}
+
+.checklist-manager-section .manager-body .select-group .select-form > div {
+  height: 100%;
+  width: 100%;
+}
+
+.checklist-manager-section .manager-body .select-group .select-form > div > div {
+  height: 100%;
+}
+
+.checklist-manager-section .manager-body .select-group .select-form > div .select-items {
+  border-radius: 10px;
+}
+
+.checklist-manager-section .manager-body .select-group .select-form > div .select-selected {
+  border-radius: 23px;
+}
+
+.checklist-manager-section .manager-body .select-group .select-form > div .select-city {
+  text-align: right;
+}
+
+.checklist-manager-section .manager-body .list-group {
+  width: 100%;
+}
+
+.checklist-manager-section .manager-body .list-group .edit-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.checklist-manager-section .manager-body .list-group .edit-form .card-custom {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.checklist-manager-section .manager-body .list-group .edit-form .card-custom .card-header-custom {
+  padding-left: 30px;
+  padding-right: 30px;
+  cursor: pointer;
+  height: 70px;
+  align-items: center;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.14);
+  outline: none;
+}
+
+.checklist-manager-section .manager-body .list-group .edit-form .card-custom .card-body-section {
+  background-color: rgba(255, 255, 255, 0.06);
+  padding-bottom: 30px;
+}
+
+.checklist-manager-section .manager-body .list-group .edit-form .card-custom .card-body-section .card-body-custom {
+  padding: 20px 30px;
+  outline: none;
+  min-height: 70px;
+}
+
+.checklist-manager-section .manager-body .list-group .edit-form .card-custom .card-body-section .card-body-custom .custom-panel-header {
   font-family: "DinPro Medium", serif;
   font-size: 18px;
-  line-height: 36px;
-  margin-top: 24px;
 }
 
-.price-manager-section .manager-body .edit-form .card-custom .card-body-custom .custom-content {
-  font-family: "DinPro", serif;
-  font-size: 16px;
-  line-height: 24px;
+.checklist-manager-section .manager-body .list-group .edit-form .card-custom .card-body-section .outline {
+  outline: 1px solid white;
 }
 
-.price-manager-section .manager-body .edit-form .card-custom .outline {
+.checklist-manager-section .manager-body .list-group .edit-form .card-custom .outline {
   outline: 1px solid white;
 }
 

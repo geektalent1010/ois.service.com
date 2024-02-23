@@ -42,4 +42,8 @@ $(document).ready(function () {
     });
 });
 
-drawSelectForm();
+const phoneSelDom = document.getElementById('phone-code-select');
+drawSelectForm(phoneSelDom)
+
+const countrySelDom = document.getElementById('country-select');
+drawSelectForm(countrySelDom);

@@ -139,6 +139,8 @@ $(document).ready(function() {
     $("#country-select-form").click(function() {
         $("#country-select-form").submit();
     });
-    drawSelectForm();
+
+    const selectDom = document.getElementById('country-select-form');
+    drawSelectForm(selectDom);
 })
 

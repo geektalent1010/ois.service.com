@@ -130,16 +130,14 @@ function stopVideo() {
 }
 
 //select-custom function
-function drawSelectForm() {
+function drawSelectForm(selectPartDom) {
 
-    let selectPartDom = document.getElementsByClassName("form-select-custom");
-    for (let i = 0; i < selectPartDom.length; i++) {
-        let selectDom = selectPartDom[i].getElementsByTagName("select")[0];
+        let selectDom = selectPartDom.getElementsByTagName("select")[0];
         let selectedDom = document.createElement("DIV");
         selectedDom.setAttribute("class", "select-selected");
         selectedDom.innerHTML =
             selectDom.options[selectDom.selectedIndex].innerHTML;
-        selectPartDom[i].appendChild(selectedDom);
+        selectPartDom.appendChild(selectedDom);
 
         let customOptions = document.createElement("DIV");
         customOptions.setAttribute("class", "select-items select-hide");
@@ -175,20 +173,19 @@ function drawSelectForm() {
 
             customOptions.appendChild(optionDom);
         }
-        selectPartDom[i].appendChild(customOptions);
+        selectPartDom.appendChild(customOptions);
 
         selectedDom.addEventListener("click", function (e) {
             e.stopPropagation();
-            closeAllSelect(i);
+            closeAllSelect();
             this.nextSibling.classList.toggle("select-hide");
         });
-    }
 }
 
-function closeAllSelect(index) {
+function closeAllSelect() {
     let selectedItems = document.getElementsByClassName("select-items");
-    for (let i = 0; i < selectedItems.length; i++) {
-        if (index != i) selectedItems[i].classList.add("select-hide");
+    for (const element of selectedItems) {
+        element.classList.add("select-hide");
     }
 }
 

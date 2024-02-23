@@ -176,3 +176,17 @@
 }
 
 /* custom dropdown ====> end */
+
+.custom-sub-title {
+    font-family: "DinPro Medium", serif;
+    font-size: 18px;
+    line-height: 36px;
+    margin-top: 24px;
+}
+
+.custom-content {
+    font-family: "DinPro", serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+

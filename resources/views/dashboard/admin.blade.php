@@ -113,7 +113,7 @@
             <div class="navItem" onclick="">
                 <div class="navItemWrap" onclick="">
                     <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center"></div>
-                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="">
+                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="{{route('admin.checklist.index')}}">
                         <div class="h-100">
                             <div class="d-flex justify-content-center h-50 align-items-end">
                                 <img src="{{ asset('images/IconCHECKLIST.svg') }}" alt="" style="width:60px">
