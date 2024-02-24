@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'INNOVATION'], ['VIDEO_BACKGROUND' => true])
+@extends('layouts.app', ['ACTIVE_TITLE' => __('innovation')], ['VIDEO_BACKGROUND' => true])
 
 @section('PAGE_LEVEL_STYLES')
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -21,7 +21,7 @@
         <div class="title-section d-flex flex-column justify-content-center align-items-center">
             <p class="title desktop-version body-section">The future of virtual reality<br>is here.</p>
             <p class="title mobile-version body-section">The future of<br>virtual reality is here.</p>
-            <p class="more-info-text my-3 body-section">MORE INFO</p>
+            <p class="more-info-text my-3 body-section">{{__('more_info')}}</p>
             <div class="mouse_scroll body-section">
                 <div class="mouse">
                     <div class="wheel"></div>
@@ -86,8 +86,8 @@
                         <p class="sub-title">Virtual Reality-based Training</p>
                         <p class="description mb-5">We provide virtual reality-based training for our healthcare professionals and customer support teams to enhance their skills and provide better service. Our VR-based training programs simulate real-world scenarios, providing a safe and immersive learning experience.</p>
                         <div class="button-section justify-content-between">
-                            <a href="{{ route('contact.index') }}">APPLY HERE</a>
-                            <a href="{{ route('security.index') }}">GO TO SECURITY</a>
+                            <a href="{{ route('contact.index') }}">{{__('apply_here')}}</a>
+                            <a href="{{ route('security.index') }}">{{__('go_to_security')}}</a>
                         </div>
                     </div>
                 </div>

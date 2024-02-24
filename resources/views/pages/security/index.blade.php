@@ -21,7 +21,7 @@
     <div class="m-0 intro-section">
         <div class="title-section d-flex flex-column justify-content-center align-items-center">
             <p class="title body-section body-section">With OIS<br>your data is secure.</p>
-            <p class="more-info-text my-3 body-section">MORE INFO</p>
+            <p class="more-info-text my-3 body-section">{{__('more_info')}}</p>
             <div class="mouse_scroll body-section">
                 <div class="mouse">
                     <div class="wheel"></div>
@@ -43,7 +43,7 @@
                         <p class="description mt-4">In addition, we have established strict data access controls, ensuring that only authorized personnel have access to sensitive customer data. To maintain the accuracy of customer data, OIS employs automated data verification and cleansing processes, to ensure data is always accurate and up to date.</p>
                         <p class="description mt-4 mb-5">OIS obtains customer data through secure, consent-based processes and uses this data to inform the development of new products and services that deliver real value to customers.</p>
                         <div class="button-section">
-                            <a onclick="togglePrivacy()">PRIVACY POLICY</a>
+                            <a onclick="togglePrivacy()">{{__('privacy_policy')}}</a>
                         </div>
                     </div>
                 </div>

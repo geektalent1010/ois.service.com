@@ -21,7 +21,7 @@
         <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt="">
         <div class="files-section">
             <div class=" body-section" style=" min-height: calc(100vh - 120px); display:flex; flex-direction:column;align-items:center;justify-content:center">
-                <div>FILES PAGE</div>
+                <div>{{__('files_page')}}</div>
             </div>
 
             @include('_includes.footer')

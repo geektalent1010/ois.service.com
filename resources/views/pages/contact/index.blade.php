@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'SUPPORT'])
+@extends('layouts.app', ['ACTIVE_TITLE' => __('support')])
 
 @section('PAGE_LEVEL_STYLES')
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -20,21 +20,21 @@
         <div class="d-flex justify-content-center">
             <div class="contact-section">
                 <div class="contact-section-content body-section">
-                    <p class="page-title">SEND A MESSAGE</p>
+                    <p class="page-title">{{__('send_a_message')}}</p>
                     <div class="info-container w-100 d-flex justify-content-center">
                         <div class="info-box">
-                            <input type="text" class="input-field" placeholder="First Name, Last Name" />
-                            <input type="email" class="input-field" placeholder="Email" />
-                            <input type="text" class="input-field" placeholder="Phone" />
+                            <input type="text" class="input-field" placeholder="{{__('first_name')}}, {{__('last_name')}}" />
+                            <input type="email" class="input-field" placeholder="{{__('email')}}" />
+                            <input type="text" class="input-field" placeholder="{{__('phone')}}" />
                             <select class="country-select webkit-style">
-                                <option value="-1">Country + Subject</option>
+                                <option value="-1">{{__('country')}} + {{__('subject')}}</option>
                             </select>
                             <select class="subject-select webkit-style">
-                                <option value="-1">Subject</option>
+                                <option value="-1">{{__('subject')}}</option>
                             </select>
-                            <textarea type="text" class="input-field" placeholder="Message" rows="4"></textarea>
+                            <textarea type="text" class="input-field" placeholder="{{__('message')}}" rows="4"></textarea>
                             <div class="btn-section">
-                                <a href="{{ route('contact.reviewing') }}" class="send-btn">SEND</a>
+                                <a href="{{ route('contact.reviewing') }}" class="send-btn">{{__('send')}}</a>
                             </div>
                         </div>
 

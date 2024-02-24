@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'PROFILE'], ['VIDEO_LOCK' => true])
+@extends('layouts.app', ['ACTIVE_TITLE' => __('profile')], ['VIDEO_LOCK' => true])
 
 @section('title', __('- PROFILE'))
 
@@ -21,7 +21,7 @@
         <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt="">
         <div class="m-0 profile-section">
             <div class="main-title">
-                MY DETAILS
+                {{__('my_details')}}
             </div>
             <div class="section-body body-section mt-30px">
                 <form class="form-section" data-form="register" autocomplete="off" method="POST"
@@ -40,7 +40,7 @@
 
                     <div class="row mb-24px">
                         <div class="col-md-12">
-                            <p class="form-label">AS STATED IN YOUR PASSPORT</p>
+                            <p class="form-label">{{__('as_stated_in_your_passport')}}</p>
                         </div>
                         <div class="col-md-6 form-group">
                             <input type="text" name="first_name" class="form-control" id="first-name"
@@ -56,13 +56,13 @@
 
                     <div class="row mb-24px">
                         <div class="col-md-6 form-group birthday-group">
-                            <p class="form-label">DATE OF BIRTH</p>
+                            <p class="form-label">{{__('date_of_birth')}}</p>
                             <input type="text" id="birthday" data-format="YYYY-MM-DD" data-template="D MMM YYYY"
                                 name="birthday" value="{{ $user->profile->birthday }}" hidden>
                             <label id="birthday-error" class="has-error" for="birthday" style="display: none"></label>
                         </div>
                         <div class="col-md-6 form-group d-flex flex-column">
-                            <p class="form-label">GENDER</p>
+                            <p class="form-label">{{__('gender')}}</p>
                             <div class="d-flex h-100 pl-30px">
                                 <label class="checkbox-container">
                                     <input type="radio" name="gender" id="gender-female" value="f"
@@ -82,7 +82,7 @@
 
                     <div class="row mb-24px">
                         <div class="col-md-6 form-group d-flex flex-column">
-                            <p class="form-label">PHONE NUMBER</p>
+                            <p class="form-label">{{__('phone_number')}}</p>
                             <div class="d-flex">
                                 @php
                                     $firstNumber = explode(' ', $user->profile->phone_number)[0];
@@ -104,7 +104,7 @@
                             <label id="phone-error" class="has-error" for="phone-name" style="display: none"></label>
                         </div>
                         <div class="col-md-6 form-group">
-                            <p class="form-label">EMAIL</p>
+                            <p class="form-label">{{__('email')}}</p>
                             <input type="text" name="email" class="form-control" id="email"
                                 placeholder="Email" tabindex="1" value="{{ $user->email }}">
                             <label id="email-error" class="has-error" for="email" style="display: none"></label>
@@ -113,7 +113,7 @@
 
                     <div class="row mb-24px">
                         <div class="col-md-12">
-                            <p class="form-label">ADDRESS</p>
+                            <p class="form-label">{{__('address')}}</p>
                         </div>
                         <div class="col-md-6 form-group">
                             <input type="text" id="street" name="street" class="form-control"
@@ -154,7 +154,7 @@
 
                     <div class="row">
                         <div class="col-md-12">
-                            <p class="form-label">LOGIN DETAILS</p>
+                            <p class="form-label">{{__('login_details')}}</p>
                         </div>
                         <div class="col-md-6 form-group">
                             <input type="text" id="login-email" name="login_email" class="form-control"
@@ -170,7 +170,7 @@
                     <div class="row justify-content-center">
                         <div class="col-md-6 form-group mt-19px mb-30px">
                             <button class="btn btn-primary register-button button-submit" data-button="submit">
-                                {{ __('SAVE') }}
+                                {{ __('save') }}
                             </button>
                         </div>
                     </div>

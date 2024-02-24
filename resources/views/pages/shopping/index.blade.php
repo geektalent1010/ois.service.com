@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'SHOPPING'], ['VIDEO_STATUS' => true])
+@extends('layouts.app', ['ACTIVE_TITLE' => __('shopping')], ['VIDEO_STATUS' => true])
 
 @section('PAGE_LEVEL_STYLES')
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -21,8 +21,8 @@
             <div class="shopping-section body-section">
                 <div class="shopping-section-content">
                     <img class="icon" src="{{ asset('images/IconSHOPPING.svg') }}">
-                    <p class="title">Your portal<br>to amazing deals</p>
-                    <p class="subtitle">COMING SOON</p>
+                    <p class="title">{{__('your_portal_to_amazing_deals')}}</p>
+                    <p class="subtitle">{{__('coming_soon')}}</p>
                 </div>
                 @include('_includes.footer')
             </div>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 
 class LandingController extends Controller
 {
@@ -22,5 +23,12 @@ class LandingController extends Controller
         } else {
             return redirect()->back();
         }
+    }
+
+    public function setLocale(Request $request) {
+        $locale = $request->input('lang');
+        session(['lang' => strtolower($locale)]);
+
+        return response()->json($locale);
     }
 }

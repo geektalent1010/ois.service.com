@@ -1,6 +1,6 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'BOOKING'], ['VIDEO_LOCK' => true])
+@extends('layouts.app', ['ACTIVE_TITLE' => __('booking')], ['VIDEO_LOCK' => true])
 
-@section('title', __('- BOOKING'))
+@section('title', __('booking'))
 
 @section('PAGE_LEVEL_STYLES')
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -22,7 +22,7 @@
         <div class="booking-section">
             <div class="body-section"
                 style=" min-height: calc(100vh - 120px); display:flex; flex-direction:column;align-items:center;justify-content:center">
-                <div>START BOOKING SCREEN</div>
+                <div>{{__('start_booking_screen')}}</div>
             </div>
             @include('_includes.footer')
 

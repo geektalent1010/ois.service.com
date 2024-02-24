@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'ABOUT'], ['VIDEO_BACKGROUND' => true])
+@extends('layouts.app', ['ACTIVE_TITLE' => __('about')], ['VIDEO_BACKGROUND' => true])
 
 @section('PAGE_LEVEL_STYLES')
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -22,7 +22,7 @@
                 <div class="title-section d-flex flex-column justify-content-center align-items-center">
                     <p class="title desktop-version body-section">Innovative software solutions<br>across industries.</p>
                     <p class="title mobile-version body-section">Innovative<br>software solutions<br>across industries.</p>
-                    <p class="more-info-text my-3 body-section">MORE INFO</p>
+                    <p class="more-info-text my-3 body-section">{{__('more_info')}}</p>
                     <div class="mouse_scroll body-section">
                         <div class="mouse">
                             <div class="wheel"></div>
@@ -115,7 +115,7 @@
                                         cutting-edge software solutions that not only streamline processes but also simplify
                                         processes and elevate experiences across diverse industries.</p>
                                     <div class="button-section">
-                                        <a href="{{ route('services.index') }}">GO TO SERVICES</a>
+                                        <a href="{{ route('services.index') }}">{{__('go_to_services')}}</a>
                                     </div>
                                 </div>
                             </div>

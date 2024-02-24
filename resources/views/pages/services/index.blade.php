@@ -23,7 +23,7 @@
                     challenges.</p>
                 <p class="title mobile-version body-section">Helping businesses and<br>individuals overcome<br>complex
                     challenges.</p>
-                <p class="more-info-text my-3 body-section">MORE INFO</p>
+                <p class="more-info-text my-3 body-section">{{__('more_info')}}</p>
                 <div class="mouse_scroll body-section">
                     <div class="mouse">
                         <div class="wheel"></div>
@@ -57,7 +57,7 @@
                                 that our clients and users benefit from the most advanced, efficient, and secure visa and
                                 passport application processing solutions available.</p>
                             <div class="button-section d-flex justify-content-center">
-                                <a href="{{ route('login') }}">APPLY HERE</a>
+                                <a href="{{ route('login') }}">{{__('apply_here')}}</a>
                             </div>
                         </div>
                     </div>
@@ -83,7 +83,7 @@
                                 against potential risks. Through the infusion of machine learning, we embark on a journey to
                                 redefine the standards of efficiency and security in BVN issuance.</p>
                             <div class="button-section d-flex justify-content-center">
-                                <a href="{{ route('login') }}">APPLY HERE</a>
+                                <a href="{{ route('login') }}">{{__('apply_here')}}</a>
                             </div>
                         </div>
                     </div>
@@ -110,7 +110,7 @@
                                 innovative solutions to enhance your customer journey. Welcome to a new era of personalized
                                 and responsive customer support with our AI-powered Chatbot.</p>
                             <div class="button-section d-flex justify-content-center">
-                                <a href="{{ route('contact.index') }}">CHAT HERE</a>
+                                <a href="{{ route('contact.index') }}">{{__('chat_here')}}</a>
                             </div>
                         </div>
                     </div>
@@ -147,7 +147,7 @@
                                 priority—it's a personalized experience.</p>
 
                             <div class="button-section d-flex justify-content-center">
-                                <a href="{{ route('ehealth.index') }}">APPLY HERE</a>
+                                <a href="{{ route('ehealth.index') }}">{{__('apply_here')}}</a>
                             </div>
                         </div>
                     </div>
@@ -172,8 +172,8 @@
                                 transparency, and convenience when entrusting us with their financial transactions. Welcome
                                 to a new era of Electronic Money Transfer—where technology meets trust.</p>
                             <div class="button-section justify-content-between">
-                                <a href="{{ route('money.index') }}">TRANSFER HERE</a>
-                                <a href="{{ route('innovation.index') }}">GO TO INNOVATION</a>
+                                <a href="{{ route('money.index') }}">{{__('transfer_here')}}</a>
+                                <a href="{{ route('innovation.index') }}">{{__('go_to_innovation')}}</a>
                             </div>
                         </div>
                     </div>

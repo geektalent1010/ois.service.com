@@ -21,20 +21,20 @@
         <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt="">
         <div class="application-section">
             <div class="application-section-content body-section">
-                <div class="mb-4">I WANT TO APPLY FOR VISA</div>
+                <div class="mb-4">{{__('i_want_to_apply_for_visa')}}</div>
 
                 <button class="click-here-button" onclick="window.location.href='{{ route('checklists.index') }}'">
-                    CLICK HERE
+                    {{__('click_here_U')}}
                 </button>
 
-                <div class="mt-5 mb-4">I WANT TO BOOK AN APPOINTMENT</div>
+                <div class="mt-5 mb-4">{{__('i_want_to_book_an_appointment')}}</div>
 
                 <!-- <a class="btn btn-primary click-here-button" href="https://user.staging-oisservices.com/" target="_blank">
                 CLICK HERE
             </a> -->
 
                 <button class="click-here-button" onclick="window.location.href='{{ route('booking.iframe') }}'">
-                    CLICK HERE
+                    {{__('click_here_U')}}
                 </button>
             </div>
             @include('_includes.footer')
