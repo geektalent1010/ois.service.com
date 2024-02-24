@@ -1222,6 +1222,15 @@ th {
     .office-modal-content {
         width: 65vw;
     }
+
+    .login-section {
+        width: 70%
+    }
+
+    .login-page {
+        width: 100%
+    }
+
 }
 
 @media only screen and (max-width: 575.98px) {
@@ -1471,9 +1480,13 @@ th {
         display: none !important;
     }
 
+    .login-section {
+        width: 90%;
+    }
+
     .login-page {
         min-width: 100%;
-        width: 100vw;
+        width: 100%;
     }
 
     .login-page form, .register-group {

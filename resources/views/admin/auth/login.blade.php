@@ -7,7 +7,7 @@
 
 @section('PAGE_CONTENT')
 <div class="admin-bg main-bg-login d-flex justify-content-center align-items-center">
-    <div class="row justify-content-center m-0 p-0">
+    <div class="row justify-content-center m-0 p-0 login-section">
         <div class="login-page body-section d-flex flex-column align-items-center">
             <div class="login-title text-center">
                 <p>CMS PORTAL</p>
