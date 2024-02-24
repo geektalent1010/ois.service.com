@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'MONEY'], ['VIDEO_STATUS' => true])
+@extends('layouts.app', ['ACTIVE_TITLE' => __('money')], ['VIDEO_STATUS' => true])
 
 @section('PAGE_LEVEL_STYLES')
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -21,8 +21,8 @@
             <div class="money-section body-section">
                 <div class="money-section-content">
                     <img class="icon" src="{{ asset('images/IconMONEYTRANSFER.svg') }}">
-                    <p class="title">Your portal<br>to easy money transfers</p>
-                    <p class="subtitle">COMING SOON</p>
+                    <p class="title">{{__('your_portal_to_easy_money_transfers')}}</p>
+                    <p class="subtitle">{{__('coming_soon')}}</p>
                 </div>
                 @include('_includes.footer')
             </div>

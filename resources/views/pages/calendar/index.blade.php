@@ -22,8 +22,8 @@
         <div class="calendar-section body-section">
             <div
                 style=" min-height: calc(100vh - 120px); display:flex; flex-direction:column;align-items:center;justify-content:center">
-                <div>CALENDAR SHOWING</div>
-                <div>ACTUAL APPOINTMENT</div>
+                <div>{{__('calendar_showing')}}</div>
+                <div>{{__('actual_appointment')}}</div>
             </div>
 
             @include('_includes.footer')

@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'WELCOME'])
+@extends('layouts.app', ['ACTIVE_TITLE' => __('welcome')])
 
 @section('PAGE_START')
 @endsection

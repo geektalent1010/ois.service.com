@@ -23,13 +23,13 @@
             <div class="checklists-section-content mb-3">
                 <div class="checklists-section-body">
                     <div class="main-title">
-                        VISA CHECKLIST
+                        {{__('visa_checklist')}}
                     </div>
                     <div class="section-body body-section mt-30px">
                         <form class="form-section">
                             <div class="row mb-24px">
                                 <div class="col-md-6 form-group">
-                                    <p class="form-label">SELECT COUNTRY + CITY APPLYING FROM</p>
+                                    <p class="form-label">{{__('select_country')}} + {{__('city_applying_from')}}</p>
                                     <div class="info-box">
                                         <div class="search-field">
                                             <input type="text" class="input-field office-id-input" name="office"
@@ -59,7 +59,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <p class="form-label">SELECT PASSPORT TYPE APPLYING WITH</p>
+                                    <p class="form-label">{{__('select_passport_type_applying_with')}}</p>
                                     <select class="form-control webkit-style country-select w-100" name="visa_type"
                                         id="visaType">
                                         <option value="">Pasport Type</option>

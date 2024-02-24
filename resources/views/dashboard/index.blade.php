@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'DASHBOARD'], ['VIDEO_LOCK' => true])
+@extends('layouts.app', ['ACTIVE_TITLE' => __('dashboard')], ['VIDEO_LOCK' => true])
 
 @section('PAGE_LEVEL_STYLES')
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -18,7 +18,7 @@
     <img class="menu-bg" src="{{ asset('images/Image1H.png') }}" alt="">
     <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt="">
     <div class="m-0 menu-section body-section dashboard-section">
-        <p class="dashboard-title my-0">WELCOME TO THE CLIENT PORTAL</p>
+        <p class="dashboard-title my-0">{{__('welcome_to_the_client_portal')}}</p>
         <div class="row m-0 menu-body">
             <div class="navItem" onclick="">
                 <div class="navItemWrap" onclick="">
@@ -28,7 +28,7 @@
                             <div class="d-flex justify-content-center h-50 align-items-end">
                                 <img src="{{ asset('images/Logo/IconProfile.svg') }}" alt="">
                             </div>
-                            <p class="back-unvisible menu-title">PROFILE</p>
+                            <p class="back-unvisible menu-title">{{__('profile')}}</p>
                         </div>
                     </a>
                 </div>
@@ -41,8 +41,8 @@
                             <div class="d-flex justify-content-center h-50 align-items-end">
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}" alt="">
                             </div>
-                            <p class="back-unvisible menu-title">VISA</p>
-                            <p class="menu-detail">APPLICATION</p>
+                            <p class="back-unvisible menu-title">{{__('visa')}}</p>
+                            <p class="menu-detail">{{__('application')}}</p>
                         </div>
                     </a>
                 </div>
@@ -55,8 +55,8 @@
                             <div class="d-flex justify-content-center h-50 align-items-end">
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}" alt="">
                             </div>
-                            <p class="back-unvisible menu-title">PASSPORT</p>
-                            <p class="menu-detail">APPLICATION</p>
+                            <p class="back-unvisible menu-title">{{__('passport')}}</p>
+                            <p class="menu-detail">{{__('application')}}</p>
                         </div>
                     </a>
                 </div>
@@ -69,8 +69,8 @@
                             <div class="d-flex justify-content-center h-50 align-items-end">
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}" alt="">
                             </div>
-                            <p class="back-unvisible menu-title">BVN</p>
-                            <p class="menu-detail">APPLICATION</p>
+                            <p class="back-unvisible menu-title">{{__('bvn')}}</p>
+                            <p class="menu-detail">{{__('application')}}</p>
                         </div>
                     </a>
                 </div>
@@ -83,7 +83,7 @@
                             <div class="d-flex justify-content-center h-50 align-items-end">
                                 <img src="{{ asset('images/Logo/IconNews.svg') }}" alt="">
                             </div>
-                            <p class="back-unvisible menu-title">NEWS</p>
+                            <p class="back-unvisible menu-title">{{__('news')}}</p>
                         </div>
                     </a>
                 </div>
@@ -96,8 +96,8 @@
                             <div class="d-flex justify-content-center h-50 align-items-end">
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}" alt="">
                             </div>
-                            <p class="back-unvisible menu-title">NIN</p>
-                            <p class="menu-detail">APPLICATION</p>
+                            <p class="back-unvisible menu-title">{{__('nin')}}</p>
+                            <p class="menu-detail">{{__('application')}}</p>
                         </div>
                     </a>
                 </div>
@@ -110,8 +110,8 @@
                             <div class="d-flex justify-content-center h-50 align-items-end">
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}" alt="">
                             </div>
-                            <p class="back-unvisible menu-title">TRACK VISA</p>
-                            <p class="menu-detail">APPLICATION</p>
+                            <p class="back-unvisible menu-title">{{__('track_visa')}}</p>
+                            <p class="menu-detail">{{__('application')}}</p>
                         </div>
                     </a>
                 </div>
@@ -124,8 +124,8 @@
                             <div class="d-flex justify-content-center h-50 align-items-end">
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}" alt="">
                             </div>
-                            <p class="back-unvisible menu-title">BOOK</p>
-                            <p class="menu-detail">APPOINTMENT</p>
+                            <p class="back-unvisible menu-title">{{__('book')}}</p>
+                            <p class="menu-detail">{{__('appointment')}}</p>
                         </div>
                     </a>
                 </div>

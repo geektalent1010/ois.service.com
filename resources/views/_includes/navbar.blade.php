@@ -11,7 +11,7 @@
                 @endif
                         <img src="{{ asset('images/Logo/LogoOIS1.svg') }}" class="img-fluid logo-ois" />
                     </a>
-                    <a class="locate-button" id="locate-button">EN</a>
+                    <a class="locate-button" id="locate-button"> @if(session()->has('lang')) {{strtoupper(session()->get('lang'))}} @else EN @endif</a>
             </div>
             <div class="navbarItem text-center">
                 @if (isset($ACTIVE_TITLE))
@@ -24,12 +24,12 @@
                 @if(Auth::guard('admin')->check())
                     <a id="menu-item" class="d-flex align-items-center navbar-menu-item">
                         <img class="menu-icon" src="{{ asset('images/IconMENU.svg') }}" alt="" />
-                        <span>MENU</span>
+                        <span>{{__('menu')}}</span>
                     </a>
                     <a href="{{ route('admin.logout') }}" class="d-flex align-items-center navbar-logout-item"
                         onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                         <img src="{{ asset('images/IconLOGOUT.svg') }}" alt="Logout" class="logout" />
-                        <span>LOGOUT</span>
+                        <span>{{__('logout')}}</span>
                     </a>
                     <form id="logout-form" action="{{ route('admin.logout') }}" method="POST" class="d-none">
                         @csrf
@@ -37,12 +37,12 @@
                 @elseif(Auth::check())
                     <a id="menu-item" class="d-flex align-items-center navbar-menu-item">
                         <img class="menu-icon" src="{{ asset('images/IconMENU.svg') }}" alt="" />
-                        <span>MENU</span>
+                        <span>{{__('menu')}}</span>
                     </a>
                     <a href="{{ route('logout') }}" class="d-flex align-items-center navbar-logout-item"
                         onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                         <img src="{{ asset('images/IconLOGOUT.svg') }}" alt="Logout" class="logout" />
-                        <span>LOGOUT</span>
+                        <span>{{__('logout')}}</span>
                     </a>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                         @csrf
@@ -50,18 +50,18 @@
                 @else
                     <a id="menu-item" class="d-flex align-items-center navbar-menu-item">
                         <img class="menu-icon" src="{{ asset('images/IconMENU.svg') }}" alt="" />
-                        <span>MENU</span>
+                        <span>{{__('logout')}}</span>
                     </a>
                     @if (!isset($ACTIVE_LOGOUT))
                         <a href="{{ route('login') }}" class="d-flex align-items-center navbar-login-item">
                             <img class="login-icon" src="{{ asset('images/IconLOGIN.svg') }}" alt="" />
-                            <span>LOGIN</span>
+                            <span>{{__('login')}}</span>
                         </a>
                     @else
                         <a href="{{ route('logout') }}" class="d-flex align-items-center navbar-logout-item"
                             onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                             <img src="{{ asset('images/IconLOGOUT.svg') }}" alt="Logout" class="logout" />
-                            <span>LOGOUT</span>
+                            <span>{{__('logout')}}</span>
                         </a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                             @csrf
@@ -74,14 +74,14 @@
     <div class="left-menubar" id="left-menubar">
         <img class="close-icon" id="left-menu-close" src="{{ asset('images/Logo/IconCLOSE.svg') }}" alt="" />
         <div class="lang-section" id="menu-list">
-            <div class="lang-item"><a class="item">ARABIC</a></div>
-            <div class="lang-item"><a class="item">CHINESE</a></div>
-            <div class="lang-item"><a class="item active">ENGLISH</a></div>
-            <div class="lang-item"><a class="item">FRENCH</a></div>
-            <div class="lang-item"><a class="item">GERMAN</a></div>
-            <div class="lang-item"><a class="item">ITALIAN</a></div>
-            <div class="lang-item"><a class="item">TURKSH</a></div>
-            <div class="lang-item"><a class="item">SPANISH</a></div>
+            <div class="lang-item"><a class="item @if(session()->has('lang') && session()->get('lang') == 'ar') active @endif" value="AR">ARABIC</a></div>
+            <div class="lang-item"><a class="item @if(session()->has('lang') && session()->get('lang') == 'cn') active @endif" value="CN">CHINESE</a></div>
+            <div class="lang-item"><a class="item  @if(session()->has('lang') && session()->get('lang') == 'en') active @endif" value="EN">ENGLISH</a></div>
+            <div class="lang-item"><a class="item @if(session()->has('lang') && session()->get('lang') == 'fr') active @endif" value="FR">FRENCH</a></div>
+            <div class="lang-item"><a class="item @if(session()->has('lang') && session()->get('lang') == 'ge') active @endif" value="GE">GERMAN</a></div>
+            <div class="lang-item"><a class="item @if(session()->has('lang') && session()->get('lang') == 'it') active @endif" value="IT">ITALIAN</a></div>
+            <div class="lang-item"><a class="item @if(session()->has('lang') && session()->get('lang') == 'tr') active @endif" value="TR">TURKSH</a></div>
+            <div class="lang-item"><a class="item @if(session()->has('lang') && session()->get('lang') == 'es') active @endif" value="ES">SPANISH</a></div>
         </div>
     </div>
 
@@ -102,29 +102,29 @@
             </div>
         @else
             <div class="lang-section">
-                <div class="lang-item"><a class="item" href="{{ route('introduction.index') }}">ABOUT OIS</a></div>
-                <div class="lang-item"><a class="item" href="{{ route('services.index') }}">SERVICES</a></div>
-                <div class="lang-item"><a class="item" href="{{ route('innovation.index') }}">INNOVATION</a></div>
-                <div class="lang-item"><a class="item" href="{{ route('security.index') }}">SECURITY</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('introduction.index') }}">{{__('about_ois')}}</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('services.index') }}">{{__('services')}}</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('innovation.index') }}">{{__('innovation')}}</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('security.index') }}">{{__('security')}}</a></div>
             </div>
             <div class="lang-section">
-                <div class="lang-item"><a class="item" href="{{ route('login') }}">CLIENT PORTAL</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('login') }}">{{__('client')}} {{__('portal')}}</a></div>
             </div>
             <div class="lang-section">
-                <div class="lang-item"><a class="item" href="{{ route('login') }}">VISA APPLICATION</a></div>
-                <div class="lang-item"><a class="item" href="{{ route('login') }}">PASSPORT APPLICATION</a></div>
-                <div class="lang-item"><a class="item" href="{{ route('login') }}">BVN APPLICATION</a></div>
-                <div class="lang-item"><a class="item" href="{{ route('login') }}">NIN APPLICATION</a></div>
-                <div class="lang-item"><a class="item" href="{{ route('login') }}">TRACK VISA APPLICATION</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('login') }}">{{__('visa')}} {{__('application')}}</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('login') }}">{{__('passport')}} {{__('application')}}</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('login') }}">{{__('bvn')}} {{__('application')}}</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('login') }}">{{__('nin')}} {{__('application')}}</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('login') }}">{{__('track_visa')}} {{__('application')}}</a></div>
             </div>
             <div class="lang-section">
-                <div class="lang-item"><a class="item" href="{{ route('ehealth.index') }}">E-HEALTH PORTAL</a></div>
-                <div class="lang-item"><a class="item" href="{{ route('money.index') }}">MONEY PORTAL</a></div>
-                <div class="lang-item"><a class="item" href="{{ route('shopping.index') }}">SHOPPING PORTAL</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('ehealth.index') }}">{{__('e_health')}} {{__('portal')}}</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('money.index') }}">{{__('money')}} {{__('portal')}}</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('shopping.index') }}">{{__('shopping')}} {{__('portal')}}</a></div>
             </div>
             <div class="lang-section">
-                <div class="lang-item"><a class="item" href="{{ route('offices.index') }}">OIS GLOBAL CENTERS</a></div>
-                <div class="lang-item"><a class="item" href="{{ route('contact.index') }}">CUSTOMER SUPPORT</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('offices.index') }}">{{__('customer_support')}}</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('contact.index') }}">{{__('ois_global_centers')}}</a></div>
             </div>
         @endif
         <div class="lang-section">
@@ -155,10 +155,21 @@
             Array.from(menuItems).forEach((item) => {
                 item.classList.remove('active');
             });
+            const langCode = clickedMenuItem.getAttribute('value');
             clickedMenuItem.classList.add('active');
             leftMenuBar.classList.remove('open');
             darkBg.classList.remove('block');
-            locateButton.textContent = clickedMenuItem.textContent.slice(0, 2);
+            locateButton.textContent = langCode;
+            const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+            $.ajax({
+                url: '{{ route('landing.locale') }}',
+                method: 'POST',
+                data: {'lang': langCode, '_token':csrfToken},
+                success: function(res) {
+                    location.href=("")
+                    console.log(res);
+                }
+            });
         }
         event.stopPropagation();
     });

@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'E-HEALTH'], ['VIDEO_STATUS' => true])
+@extends('layouts.app', ['ACTIVE_TITLE' => __('e_health')], ['VIDEO_STATUS' => true])
 
 @section('PAGE_LEVEL_STYLES')
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -21,8 +21,8 @@
             <div class="ehealth-section">
                 <div class="ehealth-section-content body-section">
                     <img class="icon" src="{{ asset('images/IconEHEALTH.svg') }}" alt="">
-                    <p class="title">Your portal<br>to better health and wellness</p>
-                    <p class="subtitle">COMING SOON</p>
+                    <p class="title">{{__('your_portal_to_better_health_and_wellness')}}</p>
+                    <p class="subtitle">{{__('coming_soon')}}</p>
                 </div>
                 @include('_includes.footer')
             </div>

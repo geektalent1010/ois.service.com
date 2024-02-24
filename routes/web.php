@@ -23,6 +23,7 @@ Route::post('/password', 'LandingController@password')->name('password');
     Route::group([], function () {
         Route::get('/', 'LandingController@landing')->name('home');
         Route::get('/landing', 'LandingController@landing')->name('landing');
+        Route::post('/landing/setLocale', 'LandingController@setLocale')->name('landing.locale');
     });
 
     // Auth Panel

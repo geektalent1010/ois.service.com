@@ -1,6 +1,6 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'NEWS'], ['VIDEO_LOCK' => true])
+@extends('layouts.app', ['ACTIVE_TITLE' => __('news')], ['VIDEO_LOCK' => true])
 
-@section('title', __('- NEWS'))
+@section('title', __('news'))
 
 @section('PAGE_LEVEL_STYLES')
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -22,7 +22,7 @@
         <div class="news-section">
 
             <div class="body-section" style=" min-height: calc(100vh - 120px); display:flex; flex-direction:column;align-items:center;justify-content:center">
-                <div>NEWS PAGE</div>
+                <div>{{__('news_page')}}</div>
             </div>
             @include('_includes.footer')
         </div>

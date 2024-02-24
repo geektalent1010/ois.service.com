@@ -174,3 +174,31 @@
         }
     }
 }
+
+@media only screen and (max-width: 1080px) {
+    .client-manager-section {
+        .manager-body {
+            width: 70%;
+        }
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .client-manager-section {
+        .manager-body {
+            width: 100%;
+
+            .my-profile-part {
+                .info-button {
+                    flex-direction: column;
+                    width: 100%;
+                    align-items: center;
+
+                    button {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
