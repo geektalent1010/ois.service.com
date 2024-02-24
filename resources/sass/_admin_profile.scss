@@ -120,3 +120,19 @@
         }
     }
 }
+
+@media only screen and (max-width: 1080px) {
+    .admin-profile-section {
+        .profile-body {
+            min-width: 70%;
+        }
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .admin-profile-section {
+        .profile-body {
+            min-width: 100%;
+        }
+    }
+}

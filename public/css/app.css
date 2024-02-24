@@ -5160,6 +5160,18 @@ body {
   background-color: #003366;
 }
 
+@media only screen and (max-width: 1080px) {
+  .admin-profile-section .profile-body {
+    min-width: 70%;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .admin-profile-section .profile-body {
+    min-width: 100%;
+  }
+}
+
 .admin-manager-section {
   width: 100vw;
   height: calc(100vh - 120px);
@@ -5310,6 +5322,18 @@ body {
 
 .admin-manager-section .manager-body .roles-section .my-access-part .access-detail-group .active {
   background-color: #003366;
+}
+
+@media only screen and (max-width: 1080px) {
+  .admin-manager-section .manager-body {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .admin-manager-section .manager-body {
+    width: 100%;
+  }
 }
 
 .client-manager-section {
@@ -5489,6 +5513,28 @@ body {
   background-color: #003366;
 }
 
+@media only screen and (max-width: 1080px) {
+  .client-manager-section .manager-body {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .client-manager-section .manager-body {
+    width: 100%;
+  }
+
+  .client-manager-section .manager-body .my-profile-part .info-button {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .client-manager-section .manager-body .my-profile-part .info-button button {
+    width: 80%;
+  }
+}
+
 .mail-manager-section {
   width: 100vw;
   height: calc(100vh - 120px);
@@ -5527,6 +5573,18 @@ body {
 
 .mail-manager-section .manager-body .demo-body .sub-title {
   font-size: 15px;
+}
+
+@media only screen and (max-width: 1080px) {
+  .mail-manager-section .manager-body {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .mail-manager-section .manager-body {
+    width: 100%;
+  }
 }
 
 .content-manager-section {
@@ -5619,6 +5677,26 @@ body {
   outline: 2px solid #266ea5;
 }
 
+@media only screen and (max-width: 1080px) {
+  .content-manager-section .manager-body {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .content-manager-section .manager-body {
+    width: 100%;
+  }
+
+  .content-manager-section .manager-body .content-panel-part {
+    width: 100%;
+  }
+
+  .content-manager-section .manager-body .content-panel-part .content-panel {
+    width: 50%;
+  }
+}
+
 .center-manager-section {
   width: 100vw;
   height: calc(100vh - 120px);
@@ -5680,6 +5758,18 @@ body {
 
 .center-manager-section .manager-body .office-detail-form .office-detail div.outline {
   outline: 1px solid #266ea5;
+}
+
+@media only screen and (max-width: 1080px) {
+  .center-manager-section .manager-body {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .center-manager-section .manager-body {
+    width: 100%;
+  }
 }
 
 .price-manager-section {
@@ -5785,6 +5875,18 @@ body {
 .editor-panel.show {
   transform: translateX(0);
   transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+@media only screen and (max-width: 1080px) {
+  .price-manager-section .manager-body {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .price-manager-section .manager-body {
+    width: 100%;
+  }
 }
 
 .checklist-manager-section {
@@ -5937,5 +6039,17 @@ body {
 .editor-panel.show {
   transform: translateX(0);
   transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+@media only screen and (max-width: 1080px) {
+  .checklist-manager-section .manager-body {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .checklist-manager-section .manager-body {
+    width: 100%;
+  }
 }
 

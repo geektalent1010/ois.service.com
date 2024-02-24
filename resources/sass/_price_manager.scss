@@ -102,3 +102,20 @@
     transform: translateX(0);
     transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
+
+
+@media only screen and (max-width: 1080px) {
+    .price-manager-section {
+        .manager-body {
+            width: 70%;
+        }
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .price-manager-section {
+        .manager-body {
+            width: 100%;
+        }
+    }
+}

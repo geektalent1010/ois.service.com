@@ -149,3 +149,19 @@
         }
     }
 }
+
+@media only screen and (max-width: 1080px) {
+    .admin-manager-section {
+        .manager-body {
+            width: 70%;
+        }
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .admin-manager-section {
+        .manager-body {
+            width: 100%;
+        }
+    }
+}
