@@ -1,6 +1,6 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'APPLICATION'], ['VIDEO_LOCK' => true])
+@extends('layouts.app', ['ACTIVE_TITLE' => __('application')], ['VIDEO_LOCK' => true])
 
-@section('title', __('- APPLICATION'))
+@section('title', '- '.__('application'))
 
 @section('PAGE_LEVEL_STYLES')
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
