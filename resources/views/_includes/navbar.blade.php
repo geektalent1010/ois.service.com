@@ -50,7 +50,7 @@
                 @else
                     <a id="menu-item" class="d-flex align-items-center navbar-menu-item">
                         <img class="menu-icon" src="{{ asset('images/IconMENU.svg') }}" alt="" />
-                        <span>{{__('logout')}}</span>
+                        <span>{{__('menu')}}</span>
                     </a>
                     @if (!isset($ACTIVE_LOGOUT))
                         <a href="{{ route('login') }}" class="d-flex align-items-center navbar-login-item">
