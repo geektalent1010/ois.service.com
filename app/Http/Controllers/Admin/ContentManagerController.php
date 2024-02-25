@@ -9,9 +9,9 @@ use App\Content;
 class ContentManagerController extends Controller
 {
     public function index() {
-        $contents = Content::select('title')
+        $contents = Content::select('title', 'id')
+            ->groupBy('title', 'id')
             ->orderBy('id')
-            ->groupBy('title')
             ->get();
         $lang = cache('lang');
         return view('admin.content.index')
