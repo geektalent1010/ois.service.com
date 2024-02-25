@@ -10,6 +10,8 @@ class ContentManagerController extends Controller
 {
     public function index() {
         $contents = Content::select('title', 'id')
+            ->where('order_num', 1)
+            ->where('lang', 'en')
             ->groupBy('title', 'id')
             ->orderBy('id')
             ->get();
