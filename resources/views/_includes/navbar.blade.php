@@ -11,7 +11,7 @@
                 @endif
                         <img src="{{ asset('images/Logo/LogoOIS1.svg') }}" class="img-fluid logo-ois" />
                     </a>
-                    <a class="locate-button" id="locate-button"> @if(session()->has('lang')) {{strtoupper(session()->get('lang'))}} @else EN @endif</a>
+                    <a class="locate-button" id="locate-button"> @if(cache()->has('lang')) {{strtoupper(cache()->get('lang'))}} @else EN @endif</a>
             </div>
             <div class="navbarItem text-center">
                 @if (isset($ACTIVE_TITLE))
@@ -74,14 +74,14 @@
     <div class="left-menubar" id="left-menubar">
         <img class="close-icon" id="left-menu-close" src="{{ asset('images/Logo/IconCLOSE.svg') }}" alt="" />
         <div class="lang-section" id="menu-list">
-            <div class="lang-item"><a class="item @if(session()->has('lang') && session()->get('lang') == 'ar') active @endif" value="AR">ARABIC</a></div>
-            <div class="lang-item"><a class="item @if(session()->has('lang') && session()->get('lang') == 'cn') active @endif" value="CN">CHINESE</a></div>
-            <div class="lang-item"><a class="item  @if(session()->has('lang') && session()->get('lang') == 'en') active @endif" value="EN">ENGLISH</a></div>
-            <div class="lang-item"><a class="item @if(session()->has('lang') && session()->get('lang') == 'fr') active @endif" value="FR">FRENCH</a></div>
-            <div class="lang-item"><a class="item @if(session()->has('lang') && session()->get('lang') == 'ge') active @endif" value="GE">GERMAN</a></div>
-            <div class="lang-item"><a class="item @if(session()->has('lang') && session()->get('lang') == 'it') active @endif" value="IT">ITALIAN</a></div>
-            <div class="lang-item"><a class="item @if(session()->has('lang') && session()->get('lang') == 'tr') active @endif" value="TR">TURKSH</a></div>
-            <div class="lang-item"><a class="item @if(session()->has('lang') && session()->get('lang') == 'es') active @endif" value="ES">SPANISH</a></div>
+            <div class="lang-item"><a class="item @if(cache()->has('lang') && cache()->get('lang') == 'ar') active @endif" value="AR">ARABIC</a></div>
+            <div class="lang-item"><a class="item @if(cache()->has('lang') && cache()->get('lang') == 'cn') active @endif" value="CN">CHINESE</a></div>
+            <div class="lang-item"><a class="item  @if(cache()->has('lang') && cache()->get('lang') == 'en') active @endif" value="EN">ENGLISH</a></div>
+            <div class="lang-item"><a class="item @if(cache()->has('lang') && cache()->get('lang') == 'fr') active @endif" value="FR">FRENCH</a></div>
+            <div class="lang-item"><a class="item @if(cache()->has('lang') && cache()->get('lang') == 'ge') active @endif" value="GE">GERMAN</a></div>
+            <div class="lang-item"><a class="item @if(cache()->has('lang') && cache()->get('lang') == 'it') active @endif" value="IT">ITALIAN</a></div>
+            <div class="lang-item"><a class="item @if(cache()->has('lang') && cache()->get('lang') == 'tr') active @endif" value="TR">TURKSH</a></div>
+            <div class="lang-item"><a class="item @if(cache()->has('lang') && cache()->get('lang') == 'es') active @endif" value="ES">SPANISH</a></div>
         </div>
     </div>
 

@@ -5,7 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Cache;
 
 class LanguageMiddleware
 {
@@ -16,10 +16,10 @@ class LanguageMiddleware
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if(Session::has('lang')) {
-            app()->setLocale(Session::get('lang'));
+        if(Cache::has('lang')) {
+            app()->setLocale(Cache::get('lang'));
         } else {
-            Session::put('lang', 'en');
+            Cache::put('lang', 'en');
             app()->setLocale('en');
         }
         return $next($request);
