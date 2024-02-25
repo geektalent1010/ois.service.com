@@ -27,7 +27,7 @@ class LandingController extends Controller
 
     public function setLocale(Request $request) {
         $locale = $request->input('lang');
-        session(['lang' => strtolower($locale)]);
+        cache(['lang' => strtolower($locale)]);
 
         return response()->json($locale);
     }

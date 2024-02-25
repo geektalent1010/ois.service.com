@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'LOGIN'], ['VIDEO_LOCK' => true])
+@extends('layouts.app', ['ACTIVE_TITLE' => __('login')], ['VIDEO_LOCK' => true])
 
 @section('title', __('- Log In'))
 
@@ -18,8 +18,8 @@
     <div class="row justify-content-center m-0 p-0">
         <div class="login-page body-section d-flex flex-column align-items-center">
             <div class="login-title text-center">
-                <p>SECURE CLIENT PORTAL</p>
-                <span>FOR REGISTERED CLIENTS ONLY</span>
+                <p>{{__('secure_client_portal')}}</p>
+                <span>{{__('for_registered_clients_only')}}</span>
             </div>
 
             @if(isset($id) && $id > 0)
@@ -29,7 +29,7 @@
                 @csrf
                 <div class="form-group row justify-content-center">
                     <div class="col-12">
-                        <input id="email" type="" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="Email" required autocomplete="email" autofocus />
+                        <input id="email" type="" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="{{__('email')}}" required autocomplete="email" autofocus />
 
                         @error('email')
                             <span class="invalid-feedback" role="alert">
@@ -41,7 +41,7 @@
 
                 <div class="form-group row justify-content-center">
                     <div class="col-12">
-                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="Password" required autocomplete="current-password">
+                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="{{__('password')}}" required autocomplete="current-password">
 
                         @error('password')
                             <span class="invalid-feedback" role="alert">
@@ -56,7 +56,7 @@
                         <label class="checkbox-container ml-3">
                             <input type="checkbox" class="autoplacement-submit" name="remember" {{ old('remember') ? 'checked' : '' }}/>
                             <span class="checkbox-circle"></span>
-                            <span class="checkbox-name">{{ __('REMEMBER ME') }}</span>
+                            <span class="checkbox-name">{{ __('remember_me') }}</span>
                         </label>
                     </div>
                 </div>
@@ -64,12 +64,12 @@
                 <div class="form-group row justify-content-center mb-0">
                     <div class="col-12 text-center">
                         <button type="submit" class="btn btn-primary login-button">
-                            {{ __('Login') }}
+                            {{ __('login') }}
                         </button>
 
                         @if (Route::has('password.request'))
                             <a class="btn btn-link text-white" href="javascript:;">
-                                {{ __('Forgot Your Password?') }}
+                                {{ __('forgot_your_password?') }}
                             </a>
                         @endif
                     </div>
@@ -77,12 +77,12 @@
             </form>
             <div class="register-group">
                 <div class="form-group row justify-content-center">
-                    <div class="col-12 text-center mt-4">
+                            <div class="col-12 text-center mt-4">
                         <button class="login-button" onclick="window.location.href='{{ route('register') }}'">
-                            {{ __('REGISTER') }}
+                            {{ __('register') }}
                         </button>
                         <div class="login-title text-center mb-0 mt-2">
-                            <span>FOR NEW CLIENTS</span>
+                            <span>{{__('for_new_clients')}}</span>
                         </div>
                     </div>
                 </div>
