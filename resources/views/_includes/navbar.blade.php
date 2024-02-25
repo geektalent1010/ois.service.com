@@ -50,7 +50,7 @@
                 @else
                     <a id="menu-item" class="d-flex align-items-center navbar-menu-item">
                         <img class="menu-icon" src="{{ asset('images/IconMENU.svg') }}" alt="" />
-                        <span>{{__('logout')}}</span>
+                        <span>{{__('menu')}}</span>
                     </a>
                     @if (!isset($ACTIVE_LOGOUT))
                         <a href="{{ route('login') }}" class="d-flex align-items-center navbar-login-item">
@@ -78,7 +78,7 @@
             <div class="lang-item"><a class="item @if(cache()->has('lang') && cache()->get('lang') == 'cn') active @endif" value="CN">CHINESE</a></div>
             <div class="lang-item"><a class="item  @if(cache()->has('lang') && cache()->get('lang') == 'en') active @endif" value="EN">ENGLISH</a></div>
             <div class="lang-item"><a class="item @if(cache()->has('lang') && cache()->get('lang') == 'fr') active @endif" value="FR">FRENCH</a></div>
-            <div class="lang-item"><a class="item @if(cache()->has('lang') && cache()->get('lang') == 'ge') active @endif" value="GE">GERMAN</a></div>
+            <div class="lang-item"><a class="item @if(cache()->has('lang') && cache()->get('lang') == 'de') active @endif" value="DE">GERMAN</a></div>
             <div class="lang-item"><a class="item @if(cache()->has('lang') && cache()->get('lang') == 'it') active @endif" value="IT">ITALIAN</a></div>
             <div class="lang-item"><a class="item @if(cache()->has('lang') && cache()->get('lang') == 'tr') active @endif" value="TR">TURKSH</a></div>
             <div class="lang-item"><a class="item @if(cache()->has('lang') && cache()->get('lang') == 'es') active @endif" value="ES">SPANISH</a></div>

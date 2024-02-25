@@ -14,7 +14,8 @@
             <div class="main-title">CONTENT EDITOR</div>
             <form id="title-form">
                 @csrf
-                <input type="hidden" value="" id="contentId" name="contentId" />
+                <input type="hidden" value="{{$lang}}" id="langCode" name="langCode" />
+                <input type="hidden" value="" id="titleId" name="title" />
             </form>
             <div class="content-panel-part mt-30px">
                 @foreach ($contents as $content)

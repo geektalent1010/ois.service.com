@@ -8,10 +8,13 @@ use App\Content;
 class InnovationController extends Controller
 {
     public function index() {
-        $content = Content::where('order_num', 3)
-        ->get()
-        ->pluck('content')
-        ->all();
+        $lang = cache('lang');
+        $content = Content::where('title', 'INNOVATION')
+            ->where('lang', $lang)
+            ->orderBy('order_num')
+            ->get()
+            ->pluck('content')
+            ->all();
         return view ('pages.innovation.index')
             ->with('content', $content);
     }
