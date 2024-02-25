@@ -2,12 +2,8 @@ const contentPanel = document.getElementsByClassName('content-panel');
 
 for(const ele of contentPanel) {
     ele.addEventListener('click', function(e) {
-        const contentId = $(this).attr('contentId');
-        if(contentId) {
-            $("#contentId").val(contentId);
-            $("#title-form").submit();
-        }
-
+        $("#titleId").val($(this).text());
+        $("#title-form").submit();
     });
 }
 
