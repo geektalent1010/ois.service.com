@@ -16,6 +16,7 @@ class ServicesController extends Controller
             ->pluck('content')
             ->all();
         return view ('pages.services.index')
+            ->with('modalData', $this->modalData)
             ->with('content', $content);
     }
 }

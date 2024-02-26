@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'CALENDAR'], ['VIDEO_LOCK' => true])
+@extends('layouts.app', ['ACTIVE_TITLE' => 'CALENDAR', 'VIDEO_LOCK' => true, 'modalData' => $modalData])
 
 @section('title', __('- CALENDAR'))
 

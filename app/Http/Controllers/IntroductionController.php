@@ -16,6 +16,7 @@ class IntroductionController extends Controller
             ->pluck('content')
             ->all();
         return view ('pages.introduction.index')
+            ->with('modalData', $this->modalData)
             ->with('content', $content);
     }
 }

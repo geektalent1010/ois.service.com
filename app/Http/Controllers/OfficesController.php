@@ -12,6 +12,7 @@ class OfficesController extends Controller
             return $data->country;
         });
         return view ('pages.offices.index')
+            ->with('modalData', $this->modalData)
             -> with('offices', $offices);
     }
 

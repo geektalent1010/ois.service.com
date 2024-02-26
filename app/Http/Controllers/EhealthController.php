@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 class EhealthController extends Controller
 {
     public function index() {
-        return view ('pages.ehealth.index');
+        return view ('pages.ehealth.index')
+        ->with('modalData', $this->modalData)
+        ;
     }
 }

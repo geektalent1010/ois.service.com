@@ -38,11 +38,20 @@
 
     @include('_includes.bottomBar')
 
-    @include('_includes.privacy_policy')
+    @if (@isset($modalData))
 
-    @include('_includes.terms_use')
+        @if (@isset($modalData[0]))
+            @include('_includes.terms_use', ['data' => $modalData[0]->content])
+        @endif
+        @if (@isset($modalData[1]))
+            @include('_includes.privacy_policy', ['data' => $modalData[1]->content])
+        @endif
+        @if (@isset($modalData[2]))
+            @include('_includes.data_policy', ['data' => $modalData[2]->content])
+        @endif
 
-    @include('_includes.data_policy')
+    @endif
+
 
     @include('_includes.chatbot')
 

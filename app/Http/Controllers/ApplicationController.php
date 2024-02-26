@@ -10,7 +10,8 @@ class ApplicationController extends Controller
 {
     public function index()
     {
-        return view('pages.application.index');
+        return view('pages.application.index')
+            ->with('modalData', $this->modalData);
     }
 
     public function bvn()
@@ -19,6 +20,7 @@ class ApplicationController extends Controller
             return $data->country;
         });
         return view('pages.application.bvnApplication')
+            ->with('modalData', $this->modalData)
             ->with('offices', $offices);
     }
 
@@ -28,6 +30,7 @@ class ApplicationController extends Controller
             return $data->country;
         });
         return view('pages.application.checklists')
+            ->with('modalData', $this->modalData)
             ->with('offices', $offices);
     }
 

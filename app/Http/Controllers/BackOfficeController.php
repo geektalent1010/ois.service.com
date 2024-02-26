@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 class BackOfficeController extends Controller
 {
     public function index() {
-        return view ('pages.backoffice.index');
+        return view ('pages.backoffice.index')
+            ->with('modalData', $this->modalData);
     }
 }

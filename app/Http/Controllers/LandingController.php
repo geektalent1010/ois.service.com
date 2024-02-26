@@ -8,7 +8,8 @@ use Illuminate\Support\Facades\App;
 class LandingController extends Controller
 {
     public function landing() {
-        return view ('landing');
+        return view ('landing')
+            ->with('modalData', $this->modalData);
     }
 
     public function passwordProtected() {

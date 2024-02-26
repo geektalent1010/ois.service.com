@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'MENU', 'ACTIVE_LOGOUT' => 'LOGOUT'])
+@extends('layouts.app', ['ACTIVE_TITLE' => 'MENU', 'ACTIVE_LOGOUT' => 'LOGOUT', 'modalData' => $modalData])
 
 @section('PAGE_LEVEL_STYLES')
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
