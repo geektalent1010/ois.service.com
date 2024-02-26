@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 class NewsController extends Controller
 {
     public function index() {
-        return view('pages.news.index');
+        return view('pages.news.index')
+        ->with('modalData', $this->modalData)
+        ;
     }
 }

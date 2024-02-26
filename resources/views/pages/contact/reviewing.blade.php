@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'CONTACT'])
+@extends('layouts.app', ['ACTIVE_TITLE' => 'CONTACT', 'modalData'=>$modalData])
 
 @section('PAGE_LEVEL_STYLES')
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">

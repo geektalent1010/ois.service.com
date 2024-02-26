@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'ADMIN'], ['VIDEO_LOCK' => true])
+@extends('layouts.app', ['ACTIVE_TITLE' => 'ADMIN', 'VIDEO_LOCK' => true, 'modalData' => $modalData])
 
 @section('title', __('- BOOKING ADMIN'))
 

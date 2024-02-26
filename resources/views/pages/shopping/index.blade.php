@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => __('shopping')], ['VIDEO_STATUS' => true])
+@extends('layouts.app', ['ACTIVE_TITLE' => __('shopping'), 'VIDEO_STATUS' => true, 'modalData'=>$modalData])
 
 @section('PAGE_LEVEL_STYLES')
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">

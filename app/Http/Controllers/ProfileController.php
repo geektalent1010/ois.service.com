@@ -26,6 +26,7 @@ class ProfileController extends Controller
         return view('pages.profile.index')
             -> with('countries', $countries)
             -> with('phoneCodes', $phoneCodes)
+            ->with('modalData', $this->modalData)
             -> with('user', $user);
     }
 

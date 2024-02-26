@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 class FaqController extends Controller
 {
     public function index() {
-        return view ('pages.faq.index');
+        return view ('pages.faq.index')
+        ->with('modalData', $this->modalData)
+        ;
     }
 }

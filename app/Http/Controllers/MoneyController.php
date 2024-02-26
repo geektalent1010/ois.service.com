@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 class MoneyController extends Controller
 {
     public function index() {
-        return view ('pages.money.index');
+        return view ('pages.money.index')
+        ->with('modalData', $this->modalData)
+        ;
     }
 }

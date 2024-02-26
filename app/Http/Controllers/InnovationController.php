@@ -16,6 +16,7 @@ class InnovationController extends Controller
             ->pluck('content')
             ->all();
         return view ('pages.innovation.index')
+            ->with('modalData', $this->modalData)
             ->with('content', $content);
     }
 }

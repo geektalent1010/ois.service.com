@@ -76,5 +76,5 @@ class LoginController extends Controller
     protected function authenticated(Request $request, $user) {
         $user->status = 1;
         $user->save();
-    }   
+    }
 }

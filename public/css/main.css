@@ -484,57 +484,50 @@ footer .social-section .icon-section .social-icon:hover {
     padding-left: 15px;
 }
 
-.mod-header {
+.policy-modal .main-title {
     font-size: 24px;
     font-family: "DinPro Medium", sans-serif;
     text-align: justify;
+    padding-bottom: 16px;
+    font-weight: bold;
 }
 
-.mod-title {
+.policy-modal .sub-title {
     font-size: 16px;
     font-family: "DinPro Medium", sans-serif;
-    margin-left: 40px;
+    margin-left: 32px;
     text-align: justify;
+    font-weight: bold;
+    padding-bottom: 16px;
 }
 
-.mod-subtitle {
-    font-size: 16px;
-    font-family: "DinPro Medium", sans-serif;
-    text-align: justify;
+.policy-modal .para-list {
+    padding-left: 16px;
 }
 
-.mod-text {
-    font-size: 16px;
-    font-family: "DinPro Light", sans-serif;
-    text-align: justify;
+.policy-modal .para-list li {
+    padding-left: 20px;
 }
 
-.mod-subtext {
-    font-size: 16px;
-    font-family: "DinPro Light", sans-serif;
-    margin-bottom: 0px;
-    text-indent: 0em;
-    padding-left: 1em;
-    text-align: justify;
+.policy-modal .para-list-digit {
+    list-style-type: decimal;
+    padding-left: 16px;
 }
 
-.data-table {
-    font-family: "DinPro Light", sans-serif;
-    font-size: 16px;
-    border-collapse: collapse;
-    width: 100%;
+.policy-modal .para-list-digit li {
+    padding-left: 20px;
 }
 
-.data-table td,
-th {
-    border: 1px solid #003c71;
+.policy-modal table, .policy-modal tr, .policy-modal td, .policy-modal th {
+    border: 1px solid black;
     text-align: left;
-    padding: 8px;
-    width: 50%;
 }
 
-.data-table th {
-    font-family: "DinPro Medium", sans-serif;
+.policy-modal td, .policy-modal th {
+    padding: 8px;
+}
+
+.policy-modal th {
     background-color: #003c714d;
 }
 
