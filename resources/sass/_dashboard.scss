@@ -135,6 +135,10 @@
                         }
                     }
 
+                    .disabled {
+                        background-color: #003366;
+                    }
+
                     .navItemWrap-back {
                         position: absolute;
                         width: 100%;
@@ -236,6 +240,7 @@
                         background: transparent;
                         opacity: 1;
                         text-decoration: none;
+                        cursor: pointer;
                     }
 
                     .menu-item img {

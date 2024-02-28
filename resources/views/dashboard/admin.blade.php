@@ -28,8 +28,8 @@
             </div>
             <div class="navItem" onclick="">
                 <div class="navItemWrap" onclick="">
-                    <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center"></div>
-                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center cursor-pointer" href="{{route('admin.manager.index')}}">
+                    <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center @if (!$roles['adminManager'])disabled @endif"></div>
+                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center cursor-pointer" @if($roles['adminManager']) href="{{route('admin.manager.index')}}" @endif>
                         <div class="h-100">
                             <div class="d-flex justify-content-center h-50 align-items-end">
                                 <img src="{{ asset('images/IconADMIN.svg') }}" alt="" style="width:60px">
@@ -42,8 +42,8 @@
             </div>
             <div class="navItem" onclick="">
                 <div class="navItemWrap" onclick="">
-                    <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center"></div>
-                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="{{route('admin.client.index')}}">
+                    <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center @if (!$roles['clientManager'])disabled @endif"></div>
+                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" @if ($roles['clientManager']) href="{{route('admin.client.index')}}" @endif>
                         <div class="h-100">
                             <div class="d-flex justify-content-center h-50 align-items-end">
                                 <img src="{{ asset('images/IconCLIENTS.svg') }}" alt="" style="width:60px">
@@ -56,8 +56,8 @@
             </div>
             <div class="navItem" onclick="">
                 <div class="navItemWrap" onclick="">
-                    <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center"></div>
-                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="{{route('admin.mail.index')}}">
+                    <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center @if (!$roles['mailManager'])disabled @endif"></div>
+                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" @if($roles['mailManager']) href="{{route('admin.mail.index')}}" @endif>
                         <div class="h-100">
                             <div class="d-flex justify-content-center h-50 align-items-end">
                                 <img src="{{ asset('images/IconMAIL.svg') }}" alt="" style="width:60px">
@@ -70,8 +70,8 @@
             </div>
             <div class="navItem" onclick="">
                 <div class="navItemWrap" onclick="">
-                    <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center"></div>
-                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="{{route('admin.content.index')}}">
+                    <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center @if (!$roles['contentEditor'])disabled @endif"></div>
+                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" @if ($roles['contentEditor'])href="{{route('admin.content.index')}}" @endif>
                         <div class="h-100">
                             <div class="d-flex justify-content-center h-50 align-items-end">
                                 <img src="{{ asset('images/IconCONTENT.svg') }}" alt="" style="width:60px">
@@ -84,8 +84,8 @@
             </div>
             <div class="navItem" onclick="">
                 <div class="navItemWrap" onclick="">
-                    <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center"></div>
-                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="{{route('admin.center.index')}}">
+                    <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center @if (!$roles['centerEditor'])disabled @endif"></div>
+                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" @if ($roles['centerEditor'])href="{{route('admin.center.index')}}" @endif>
                         <div class="h-100">
                             <div class="d-flex justify-content-center h-50 align-items-end">
                                 <img src="{{ asset('images/IconCENTER.svg') }}" alt="" style="width:60px">
@@ -98,8 +98,8 @@
             </div>
             <div class="navItem" onclick="">
                 <div class="navItemWrap" onclick="">
-                    <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center"></div>
-                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="{{route('admin.price.index')}}">
+                    <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center @if (!$roles['priceEditor'])disabled @endif"></div>
+                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" @if ($roles['priceEditor'])href="{{route('admin.price.index')}}" @endif>
                         <div class="h-100">
                             <div class="d-flex justify-content-center h-50 align-items-end">
                                 <img src="{{ asset('images/IconPRICE.svg') }}" alt="" style="width:60px">
@@ -112,8 +112,8 @@
             </div>
             <div class="navItem" onclick="">
                 <div class="navItemWrap" onclick="">
-                    <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center"></div>
-                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="{{route('admin.checklist.index')}}">
+                    <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center @if (!$roles['checklistEditor'])disabled @endif"></div>
+                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" @if ($roles['checklistEditor']) href="{{route('admin.checklist.index')}}" @endif>
                         <div class="h-100">
                             <div class="d-flex justify-content-center h-50 align-items-end">
                                 <img src="{{ asset('images/IconCHECKLIST.svg') }}" alt="" style="width:60px">
@@ -144,4 +144,17 @@
         $('.nis-visa-modal').addClass('d-none');
     })
 </script> -->
+
+<script>
+    $(document).ready(function() {
+        const items = document.querySelectorAll(".navItemWrap-front.disabled");
+        for(const item of items) {
+            console.log(item.nextElementSibling);
+            item.nextElementSibling.addEventListener('click', function() {
+                toastr['info']('You do not have access to this page.', 'Info');
+            })
+        }
+    })
+
+</script>
 @endsection
