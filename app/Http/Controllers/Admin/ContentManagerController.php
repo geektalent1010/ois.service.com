@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use App\Content;
 
 class ContentManagerController extends Controller
@@ -31,6 +32,11 @@ class ContentManagerController extends Controller
     }
 
     public function updateContent(Request $request) {
+        $isContentEditor = Auth::guard('admin')->user()->isSuperAdmin();
+        if(!$isContentEditor) {
+            $res['status'] = 'unauthorize';
+            return json_encode($res);
+        }
         $id = $request->input('contentId');
         $content = Content::where('id', $id)
             ->first();

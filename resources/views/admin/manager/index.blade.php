@@ -103,20 +103,20 @@
                     <div class="main-title mt-35px">MY ACCESS</div>
                     <div class="my-access-part mt-30px">
                         <div class="access-detail-group">
-                            <div class="access-detail">MY PROFILE</div>
-                            <div class="access-detail">CONTENT EDITOR</div>
+                            <div class="access-detail active disabled">MY PROFILE</div>
+                            <div class="access-detail disabled only-super">CONTENT EDITOR</div>
                         </div>
                         <div class="access-detail-group">
-                            <div class="access-detail">ADMIN MANAGER</div>
-                            <div class="access-detail">CENTER EDITOR</div>
+                            <div class="access-detail disabled only-super">ADMIN MANAGER</div>
+                            <div class="access-detail" id="center-edit-button">CENTER EDITOR</div>
                         </div>
                         <div class="access-detail-group">
-                            <div class="access-detail">CLIENT MANAGER</div>
-                            <div class="access-detail">PRICE EDITOR</div>
+                            <div class="access-detail" id="client-man-button">CLIENT MANAGER</div>
+                            <div class="access-detail" id="price-edit-button">PRICE EDITOR</div>
                         </div>
                         <div class="access-detail-group">
-                            <div class="access-detail">MAIL MANAGER</div>
-                            <div class="access-detail">CHECKLIST EDITOR</div>
+                            <div class="access-detail disabled only-super">MAIL MANAGER</div>
+                            <div class="access-detail" id="checklist-edit-button">CHECKLIST EDITOR</div>
                         </div>
                     </div>
                 </div>

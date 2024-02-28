@@ -4,11 +4,16 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use App\Office;
 
 class CenterManagerController extends Controller
 {
     public function index() {
+        $isAllow = Auth::guard('admin')->user()->isAllowCenterEditor();
+        if(!$isAllow) {
+            return redirect()->route('admin.dashboard.index');
+        }
         $offices = Office::orderBy('country', 'asc')->orderBy('city', 'asc')->get()->groupBy(function ($data) {
             return $data->country;
         });
@@ -19,6 +24,10 @@ class CenterManagerController extends Controller
     public function getCenterInfo(Request $request) {
         $officeId = $request->input('officeId');
         $office = Office::where('id', $officeId)->first();
+        if(!Auth::guard('admin')->user()->isSuperAdmin() && (Auth::guard('admin')->user()->isAllowCenterEditor() && Auth::guard('admin')->user()->profile->country->name != $office->country)) {
+            $res['status'] = 'unauthorize';
+            return json_encode($res);
+        }
         return json_encode($office);
     }
 
@@ -35,6 +44,10 @@ class CenterManagerController extends Controller
         }
 
         $office->country = $request->input('country');
+        if(!Auth::guard('admin')->user()->isSuperAdmin() && (Auth::guard('admin')->user()->isAllowCenterEditor() && Auth::guard('admin')->user()->profile->country->name != $office->country)) {
+            $res['status'] = 'unauthorize';
+            return json_encode($res);
+        }
         $office->city = $request->input('city');
         $office->address = $request->input('address');
         $office->working_days = $request->input('workingDay');

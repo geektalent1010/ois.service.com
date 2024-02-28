@@ -8,10 +8,16 @@ use Illuminate\Support\Facades\Hash;
 use App\Country;
 use App\User;
 use App\Profile;
+use App\Role;
+use Illuminate\Support\Facades\Auth;
 
 class AdminManagerController extends Controller
 {
     public function index() {
+        $user = Auth::guard('admin')->user();
+        if(!$user->isSuperAdmin()) {
+            return redirect()->route('admin.dashboard.index');
+        }
         $countries = Country::where('active', 1)->get();
         $phoneCodes = Country::where('active', 1)
             ->where('phone_code', '<>', 0)
@@ -64,6 +70,30 @@ class AdminManagerController extends Controller
         $profile->user_id = $user->id;
         $profile->save();
 
+        $role = new Role();
+        $role->user_id = $user->id;
+        $role->role_name = 'ClientManager';
+        $role->status = $request->input('clientStatus') == "true" ? 1 : 0;
+        $role->save();
+
+        $role = new Role();
+        $role->user_id = $user->id;
+        $role->role_name = 'CenterEditor';
+        $role->status = $request->input('centerStatus') == "true" ? 1 : 0;
+        $role->save();
+
+        $role = new Role();
+        $role->user_id = $user->id;
+        $role->role_name = 'PriceEditor';
+        $role->status = $request->input('priceStatus') == "true" ? 1 : 0;
+        $role->save();
+
+        $role = new Role();
+        $role->user_id = $user->id;
+        $role->role_name = 'ChecklistEditor';
+        $role->status = $request->input('checklistStatus') == "true" ? 1 : 0;
+        $role->save();
+
         $res['status'] = 'success';
         return json_encode($res);
     }
@@ -104,6 +134,62 @@ class AdminManagerController extends Controller
         $profile->user_id = $user->id;
         $profile->save();
 
+        $roles = $user->roles;
+        $flagClient = false;
+        $flagCenter = false;
+        $flagPrice = false;
+        $flagChecklist = false;
+        foreach($roles as $role) {
+            if($role->role_name == 'ClientManager') {
+                $flagClient = true;
+                $role->status = $request->input('clientStatus') == "true" ? 1 : 0;
+                $role->save();
+            }
+            if($role->role_name == 'CenterEditor') {
+                $flagCenter = true;
+                $role->status = $request->input('centerStatus') == "true" ? 1 : 0;
+                $role->save();
+            }
+            if($role->role_name == 'PriceEditor') {
+                $flagPrice = true;
+                $role->status = $request->input('priceStatus') == "true" ? 1 : 0;
+                $role->save();
+            }
+            if($role->role_name == 'ChecklistEditor') {
+                $flagChecklist = true;
+                $role->status = $request->input('checklistStatus') == "true" ? 1 : 0;
+                $role->save();
+        }
+        }
+        if(!$flagClient) {
+            $role = new Role();
+            $role->user_id = $user->id;
+            $role->role_name = 'ClientManager';
+            $role->status = $request->input('clientStatus') == "true" ? 1 : 0;
+            $role->save();
+        }
+
+        if(!$flagCenter) {
+            $role = new Role();
+            $role->user_id = $user->id;
+            $role->role_name = 'CenterEditor';
+            $role->status = $request->input('centerStatus') == "true" ? 1 : 0;
+            $role->save();
+        }
+        if(!$flagPrice) {
+            $role = new Role();
+            $role->user_id = $user->id;
+            $role->role_name = 'PriceEditor';
+            $role->status = $request->input('priceStatus') == "true" ? 1 : 0;
+            $role->save();
+        }
+        if(!$flagChecklist) {
+            $role = new Role();
+            $role->user_id = $user->id;
+            $role->role_name = 'ChecklistEditor';
+            $role->status = $request->input('checklistStatus') == "true" ? 1 : 0;
+            $role->save();
+        }
         $res['status'] = 'success';
         return json_encode($res);
     }
@@ -122,6 +208,21 @@ class AdminManagerController extends Controller
             $res['center'] = $user->profile->city;
             $res['country'] = $user->profile->country_id;
             $res['username'] = $user->username;
+            $res['roles'] = [];
+            foreach($user->roles as $role) {
+                if($role->role_name == 'ClientManager') {
+                    $res['roles']['clientManager'] = $role->status;
+                }
+                if($role->role_name == 'CenterEditor') {
+                    $res['roles']['centerEditor'] = $role->status;
+                }
+                if($role->role_name == 'PriceEditor') {
+                    $res['roles']['priceEditor'] = $role->status;
+                }
+                if($role->role_name == 'ChecklistEditor') {
+                    $res['roles']['checklistEditor'] = $role->status;
+                }
+            }
         } else {
             $res['status'] = 'nodata';
         }

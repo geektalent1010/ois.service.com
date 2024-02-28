@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Auth;
 use App\Country;
 use App\User;
 use App\Profile;
@@ -12,6 +13,12 @@ use App\Profile;
 class ClientManagerController extends Controller
 {
     public function index() {
+        $isAllow = Auth::guard('admin')->user()->isAllowClientManager();
+        if(!$isAllow) {
+            return redirect()->route('admin.dashboard.index');
+        }
+        $userCountry = Auth::guard('admin')->user()->profile->country_id;
+
         $countries = Country::where('active', 1)->get();
         $phoneCodes = Country::where('active', 1)
             ->where('phone_code', '<>', 0)
@@ -21,15 +28,29 @@ class ClientManagerController extends Controller
             ->get()
             ->pluck('phone_code')
             ->all();
-        $users = User::where('status', 1)
+        $users;
+        if(Auth::guard('admin')->user()->isSuperAdmin()) {
+            $users = User::where('status', 1)
+            ->where('is_admin', 0)
             ->orderBy('email')
             ->get()
             ->pluck('email')
             ->all();
+        } else {
+            $users = User::leftJoin('profiles', 'users.id', '=', 'profiles.user_id')
+            ->where('profiles.country_id', $userCountry)
+            ->where('status', 1)
+            ->where('is_admin', 0)
+            ->orderBy('email')
+            ->get()
+            ->pluck('email')
+            ->all();
+        }
         return view('admin.client.index')
             ->with('countries', $countries)
             ->with('phoneCodes', $phoneCodes)
-            ->with('users', $users);
+            ->with('users', $users)
+            ->with('isSuperAdmin', Auth::guard('admin')->user()->isSuperAdmin());
     }
 
 
@@ -51,7 +72,7 @@ class ClientManagerController extends Controller
         $user->email = $request->input('email');
         $user->username = $request->input('username');
         $user->password = Hash::make($request->input('password'));
-        $user->is_admin = 1;
+        $user->is_admin = 0;
         $user->save();
 
         $profile = new Profile();
@@ -62,6 +83,9 @@ class ClientManagerController extends Controller
         $profile->country_id = $request->input('country');
         $profile->gender = 'm';
         $profile->user_id = $user->id;
+        $profile->street = $request->input('street');
+        $profile->house_number = $request->input('houseNr');
+
         $profile->save();
 
         $res['status'] = 'success';
@@ -91,7 +115,7 @@ class ClientManagerController extends Controller
         if($request->input('password')) {
             $user->password = Hash::make($request->input('password'));
         }
-        $user->is_admin = 1;
+        $user->is_admin = 0;
         $user->save();
 
         $profile = $user->profile;
@@ -102,6 +126,8 @@ class ClientManagerController extends Controller
         $profile->country_id = $request->input('country');
         $profile->gender = 'm';
         $profile->user_id = $user->id;
+        $profile->street = $request->input('street');
+        $profile->house_number = $request->input('houseNr');
         $profile->save();
 
         $res['status'] = 'success';

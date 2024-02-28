@@ -2,14 +2,23 @@ $(document).ready(function () {
     let accessDetailDoms = document.querySelectorAll(".access-detail");
     accessDetailDoms.forEach(function (element) {
         element.addEventListener("click", function (event) {
-            element.classList.toggle("active");
+            if(!element.classList.contains('disabled')) {
+                element.classList.toggle("active");
+            } else {
+                if(element.classList.contains('only-super')) {
+                    toastr['info']('This role is applied only to Super Admin', 'Info');
+                } else {
+                    toastr['info']('This role cannot be changed.', 'info');
+                }
+            }
         });
     });
 
     $("#create-user-button").click(function() {
         $(".button-part").addClass('d-none');
         $("#create-user-form").removeClass('d-none');
-        $("#create-user-form input").val('');
+        $("#create-user-form input.form-input-custom").val('');
+        $("#data8").val('Admin');
         // $("#create-user-form .select-items div:first-child()").click();
     });
 
@@ -29,14 +38,20 @@ $(document).ready(function () {
             toastr['error']('Invalid Email address');
             return;
         }
+        let formData = new FormData(this);
+        formData.append('clientStatus', $('#client-man-button').hasClass('active'));
+        formData.append('centerStatus', $('#center-edit-button').hasClass('active'));
+        formData.append('priceStatus', $('#price-edit-button').hasClass('active'));
+        formData.append('checklistStatus', $('#checklist-edit-button').hasClass('active'));
         if(userid) {
             $.ajax({
                 url: '/admin/updateAdmin',
                 type: 'POST',
                 dataType: 'json',
-                data: $(this).serialize(),
+                data: formData,
+                contentType: false,
+                processData: false,
                 success: function (res) {
-                    console.log(res)
                     if(res.status == 'success') {
                         toastr['success']('Updated successfully', 'Success');
                     } else if(res.status == 'duplicatedEmail') {
@@ -53,10 +68,16 @@ $(document).ready(function () {
                 url: '/admin/createAdmin',
                 type: 'POST',
                 dataType: 'json',
-                data: $(this).serialize(),
+                data: formData,
+                contentType: false,
+                processData: false,
                 success: function (res) {
+                    console.log(res)
                     if(res.status == 'success') {
                         toastr['success']('Updated successfully', 'Success');
+                        setTimeout(() => {
+                            location.href = ("");
+                        }, 500);
                     } else if(res.status == 'duplicatedEmail') {
                         toastr['info']('Already exist email', 'Info');
                     } else if(res.status == 'duplicatedUsername') {
@@ -90,6 +111,7 @@ $(document).ready(function () {
                     $("#data4").val(res.phoneNumber.split(' ')[1]);
                     $("#data5").val(res.email);
                     $("#data6").val(res.center);
+                    // $("#data8").val("Admin");
                     $("#data9").val(res.username);
                     const countryOptions = $("#data7 option");
                     for(let i = 1; i < countryOptions.length ; i ++) {
@@ -108,6 +130,19 @@ $(document).ready(function () {
                     $("#create-user-form").removeClass('d-none');
                     $(".button-part").addClass('d-none');
                     $(".list-detail").addClass('d-none');
+                    $('.access-detail:not(.disabled)').removeClass('active');
+                    if(res.roles.clientManager) {
+                        $('#client-man-button').addClass('active');
+                    }
+                    if(res.roles.priceEditor) {
+                        $('#price-edit-button').addClass('active');
+                    }
+                    if(res.roles.centerEditor) {
+                        $('#center-edit-button').addClass('active');
+                    }
+                    if(res.roles.checklistEditor) {
+                        $('#checklist-edit-button').addClass('active');
+                    }
                 } else if(res.status == 'nodata') {
                     toastr['info']('No search result', 'Info');
                 } else {

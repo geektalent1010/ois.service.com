@@ -24,6 +24,6 @@ class Profile extends Model
     }
 
     public function country() {
-        return $this->belongsTo('country');
+        return $this->belongsTo('App\Country');
     }
 }

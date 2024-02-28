@@ -100,19 +100,19 @@
             <div class="my-access-part mt-30px">
                 <div class="access-detail-group">
                     <div class="access-detail active">MY PROFILE</div>
-                    <div class="access-detail">CONTENT EDITOR</div>
+                    <div class="access-detail @if($roles['contentEditor']) active @endif">CONTENT EDITOR</div>
                 </div>
                 <div class="access-detail-group">
-                    <div class="access-detail">ADMIN MANAGER</div>
-                    <div class="access-detail active">CENTER EDITOR</div>
+                    <div class="access-detail @if($roles['adminManager']) active @endif">ADMIN MANAGER</div>
+                    <div class="access-detail @if($roles['centerEditor']) active @endif">CENTER EDITOR</div>
                 </div>
                 <div class="access-detail-group">
-                    <div class="access-detail">CLIENT MANAGER</div>
-                    <div class="access-detail">PRICE EDITOR</div>
+                    <div class="access-detail @if($roles['clientManager']) active @endif">CLIENT MANAGER</div>
+                    <div class="access-detail @if($roles['priceEditor']) active @endif">PRICE EDITOR</div>
                 </div>
                 <div class="access-detail-group">
-                    <div class="access-detail">MAIL MANAGER</div>
-                    <div class="access-detail">CHECKLIST EDITOR</div>
+                    <div class="access-detail @if($roles['mailManager']) active @endif">MAIL MANAGER</div>
+                    <div class="access-detail @if($roles['checklistEditor']) active @endif">CHECKLIST EDITOR</div>
                 </div>
             </div>
         </div>
