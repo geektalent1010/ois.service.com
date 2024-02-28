@@ -32,6 +32,10 @@ class PriceManagerController extends Controller
         $checklist = Checklist::where('office_id', $officeId)
             ->where('visa_type', 'Fees')
             ->first();
+        if(!$checklist) {
+            $res['status'] = 'nodata';
+            return json_encode($res);
+        }
         return json_encode($checklist);
     }
 
