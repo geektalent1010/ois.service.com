@@ -56,8 +56,8 @@
             </div>
             <div class="navItem" onclick="">
                 <div class="navItemWrap" onclick="">
-                    <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center"></div>
-                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="{{route('admin.mail.index')}}">
+                    <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center @if (!$roles['mailManager'])disabled @endif"></div>
+                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" @if ($roles['mailManager'])href="{{route('admin.mail.index')}}" @endif>
                         <div class="h-100">
                             <div class="d-flex justify-content-center h-50 align-items-end">
                                 <img src="{{ asset('images/IconMAIL.svg') }}" alt="" style="width:60px">
@@ -70,8 +70,8 @@
             </div>
             <div class="navItem" onclick="">
                 <div class="navItemWrap" onclick="">
-                    <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center"></div>
-                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="{{route('admin.content.index')}}">
+                    <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center @if (!$roles['contentEditor'])disabled @endif"></div>
+                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" @if ($roles['contentEditor'])href="{{route('admin.content.index')}}" @endif >
                         <div class="h-100">
                             <div class="d-flex justify-content-center h-50 align-items-end">
                                 <img src="{{ asset('images/IconCONTENT.svg') }}" alt="" style="width:60px">
@@ -149,7 +149,6 @@
     $(document).ready(function() {
         const items = document.querySelectorAll(".navItemWrap-front.disabled");
         for(const item of items) {
-            console.log(item.nextElementSibling);
             item.nextElementSibling.addEventListener('click', function() {
                 toastr['info']('You do not have access to this page.', 'Info');
             })

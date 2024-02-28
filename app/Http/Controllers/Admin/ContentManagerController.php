@@ -10,6 +10,10 @@ use App\Content;
 class ContentManagerController extends Controller
 {
     public function index() {
+        $user = Auth::guard('admin')->user();
+        if(!$user->isSuperAdmin()) {
+            return redirect()->route('admin.dashboard.index');
+        }
         $contents = Content::select('title', 'id')
             ->where('order_num', 1)
             ->where('lang', 'en')
