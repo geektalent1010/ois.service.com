@@ -20,7 +20,7 @@ $(document).ready(function () {
                 let title = "Center Fees";
                 let description = "Please input here";
                 let id = 0;
-                if (res) {
+                if (res.status != 'nodata') {
                     title = res.title;
                     description = res.description;
                     id = res.id;
