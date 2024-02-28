@@ -89,16 +89,16 @@
         <img class="close-icon" id="right-menu-close" src="{{ asset('images/Logo/IconCLOSE.svg') }}" alt="" />
         @if(Auth::guard('admin')->check())
             <div class="lang-section">
-                <div class="lang-item"><a class="item" href="{{ route('profile.index') }}">MY PROFILE</a></div>
-                <div class="lang-item"><a class="item" href="{{ route('services.index') }}">ADMIN MANAGER</a></div>
-                <div class="lang-item"><a class="item" href="{{ route('innovation.index') }}">CLIENT MANAGER</a></div>
-                <div class="lang-item"><a class="item" href="{{ route('security.index') }}">MAIL MANAGER</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('admin.profile.index') }}">MY PROFILE</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('admin.manager.index') }}">ADMIN MANAGER</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('admin.client.index') }}">CLIENT MANAGER</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('admin.mail.index') }}">MAIL MANAGER</a></div>
             </div>
             <div class="lang-section">
-                <div class="lang-item"><a class="item" href="{{ route('introduction.index') }}">CONETNT EDITOR</a></div>
-                <div class="lang-item"><a class="item" href="{{ route('services.index') }}">CENTER EDITOR</a></div>
-                <div class="lang-item"><a class="item" href="{{ route('innovation.index') }}">PRICE EDITOR</a></div>
-                <div class="lang-item"><a class="item" href="{{ route('security.index') }}">CHECKLIST EDITOR</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('admin.content.index') }}">CONETNT EDITOR</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('admin.center.index') }}">CENTER EDITOR</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('admin.price.index') }}">PRICE EDITOR</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('admin.checklist.index') }}">CHECKLIST EDITOR</a></div>
             </div>
         @else
             <div class="lang-section">
