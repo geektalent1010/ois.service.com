@@ -445,6 +445,10 @@
   margin-top: 5px;
 }
 
+.main-bg .menu-section .menu-body .navItem .navItemWrap .disabled {
+  background-color: #003366;
+}
+
 .main-bg .menu-section .menu-body .navItem .navItemWrap .navItemWrap-back {
   position: absolute;
   width: 100%;
@@ -542,6 +546,7 @@
   background: transparent;
   opacity: 1;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .main-bg .menu-section .menu-body .navItem .navItemWrap .menu-item img {
