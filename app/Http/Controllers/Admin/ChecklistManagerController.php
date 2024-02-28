@@ -4,12 +4,17 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use App\Office;
 use App\Checklist;
 
 class ChecklistManagerController extends Controller
 {
     public function index() {
+        $isAllow = Auth::guard('admin')->user()->isAllowChecklistEditor();
+        if(!$isAllow) {
+            return redirect()->route('admin.dashboard.index');
+        }
         $offices = Office::orderBy('country', 'asc')->orderBy('city', 'asc')->get()->groupBy(function ($data) {
             return $data->country;
         });
@@ -19,6 +24,11 @@ class ChecklistManagerController extends Controller
 
     public function getChecklist(Request $request) {
         $officeId = $request->input('officeId');
+        $office = Office::where('id', $officeId)->first();
+        if(!Auth::guard('admin')->user()->isSuperAdmin() && (Auth::guard('admin')->user()->isAllowPriceEditor() && Auth::guard('admin')->user()->profile->country->name != $office->country)) {
+            $res['status'] = 'unauthorize';
+            return json_encode($res);
+        }
         $type = $request->input('type');
         $checklist = Checklist::where('office_id', $officeId)
             ->where('visa_type', $type)

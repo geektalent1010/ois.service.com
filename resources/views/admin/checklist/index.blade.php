@@ -46,7 +46,7 @@
 
                 </form>
             </div>
-            <div class="price-button-section info-button mt-35px" id="create-button-part"><button>ADD NEW CHECKLIST</button></div>
+            <div class="price-button-section d-none info-button mt-35px" id="create-button-part"><button>ADD NEW CHECKLIST</button></div>
             <div class="list-group">
 
             </div>

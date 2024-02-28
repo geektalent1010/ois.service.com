@@ -11,6 +11,12 @@ $(document).ready(function () {
             data: $(this).serialize(),
             dataType: 'json',
             success: function(res) {
+                if(res.status == 'unauthorize') {
+                    toastr['info']('You do not have access to this page.', 'Info');
+                    $('.list-group').html('');
+                    $('.price-button-section').addClass('d-none');
+                    return;
+                }
                 let html = '';
                 html += '';
                 for(const element of res) {
@@ -43,6 +49,7 @@ $(document).ready(function () {
                 $('.list-group').html(html);
                 $(".card-body-custom > div").attr("tabindex", 0);
                 $('.edit-form input.token').val($('#office-select-form input:first-child()').val());
+                $('.price-button-section').removeClass('d-none');
             }
         });
     });

@@ -24,9 +24,11 @@
                     @endforeach
                 </div>
             </div>
-            <div class="button-part mt-30px">
-                <button id="create-user-button">CREATE NEW USER</button>
-            </div>
+            @if ($isSuperAdmin)
+                <div class="button-part mt-30px">
+                    <button id="create-user-button">CREATE NEW USER</button>
+                </div>
+            @endif
             <form class="my-profile-part d-none" id="create-user-form">
                 @csrf
                 <input type="hidden" id="userid" name="userid" />
@@ -107,18 +109,19 @@
                     <div class="info-detail">
                         <div class="info-head">User ID</div>
                         <div class="info-value">
-                            <input type="text" id="data12" name="password" text="User ID" value="" class="form-input-custom" />
+                            <input type="text" id="data12" name="" text="User ID" value="" class="form-input-custom" />
                         </div>
                     </div>
                     <div class="info-detail">
                         <div class="info-head">Registration Date</div>
                         <div class="info-value">
-                            <input type="text" id="data13" name="password" text="Registration Date" value="" class="form-input-custom" />
+                            <input type="text" id="data13" name="" text="Registration Date" value="" class="form-input-custom" />
                         </div>
                     </div>
                 </div>
                 <div class="info-button mt-35px">
-                    <button id="save-but">{{__('REMOVE USER')}}</button>
+                    <button id="publish-but">{{__('PUBLISH')}}</button>
+                    <button id="remove-but">{{__('REMOVE USER')}}</button>
                     <button id="export-but">{{__('EXPORT USER')}}</button>
                     <button id="export-all-but">{{__('EXPORT ALL')}}</button>
                 </div>

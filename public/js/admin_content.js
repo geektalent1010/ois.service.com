@@ -59,6 +59,8 @@ $("#title-form").submit(function(e) {
                             success: function(res) {
                                 if(res.status == 'success') {
                                     toastr['success']('Updated successfully.', 'Success');
+                                } else if(res.status == 'unauthorize') {
+                                    toastr['info']('You do not have access to this function.', 'Info')
                                 } else {
                                     toastr['error']('500 Error!', 'Error');
                                 }

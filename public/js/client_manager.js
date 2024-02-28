@@ -15,59 +15,66 @@ $(document).ready(function () {
 
     $("#create-user-form").submit(function(e) {
         e.preventDefault();
-        // const userid = $("#userid").val();
-        // let dataNum = 0;
-        // if(userid) dataNum = 9;
-        // else dataNum = 10;
-        // for (let i = 1 ; i <= dataNum ; i ++) {
-        //     if (!$("#data" + i).val() || $("#data" + i).val() == 0) {
-        //         toastr['error']('Please input or select the ' + $("#data" + i).attr('text') + ' field.', 'Error');
-        //         return;
-        //     }
-        // }
-        // if (!validateEmail($('#data5').val())) {
-        //     toastr['error']('Invalid Email address');
-        //     return;
-        // }
-        // if(userid) {
-        //     $.ajax({
-        //         url: '/admin/updateClient',
-        //         type: 'POST',
-        //         dataType: 'json',
-        //         data: $(this).serialize(),
-        //         success: function (res) {
-        //             console.log(res)
-        //             if(res.status == 'success') {
-        //                 toastr['success']('Updated successfully', 'Success');
-        //             } else if(res.status == 'duplicatedEmail') {
-        //                 toastr['info']('Already exist email', 'Info');
-        //             } else if(res.status == 'duplicatedUsername') {
-        //                 toastr['info']('Already exist username', 'Info');
-        //             } else {
-        //                 toastr['error']('500 Error!', 'Error');
-        //             }
-        //         }
-        //     });
-        // } else {
-        //     $.ajax({
-        //         url: '/admin/createClient',
-        //         type: 'POST',
-        //         dataType: 'json',
-        //         data: $(this).serialize(),
-        //         success: function (res) {
-        //             if(res.status == 'success') {
-        //                 toastr['success']('Updated successfully', 'Success');
-        //             } else if(res.status == 'duplicatedEmail') {
-        //                 toastr['info']('Already exist email', 'Info');
-        //             } else if(res.status == 'duplicatedUsername') {
-        //                 toastr['info']('Already exist username', 'Info');
-        //             } else {
-        //                 toastr['error']('500 Error!', 'Error');
-        //             }
-        //         }
-        //     });
-        // }
     });
+
+    $('#publish-but').click(function() {
+        const formData = new FormData(document.querySelector('.my-profile-part'));
+        const userid = $("#userid").val();
+        let dataNum = 13;
+        for (let i = 1 ; i <= dataNum ; i ++) {
+            if(userid && i == 11) continue;
+            if (!$("#data" + i).val() || $("#data" + i).val() == 0) {
+                toastr['error']('Please input or select the ' + $("#data" + i).attr('text') + ' field.', 'Error');
+                return;
+            }
+        }
+        if (!validateEmail($('#data9').val())) {
+            toastr['error']('Invalid Email address');
+            return;
+        }
+        if(userid) {
+            $.ajax({
+                url: '/admin/updateClient',
+                type: 'POST',
+                dataType: 'json',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function (res) {
+                    console.log(res)
+                    if(res.status == 'success') {
+                        toastr['success']('Updated successfully', 'Success');
+                    } else if(res.status == 'duplicatedEmail') {
+                        toastr['info']('Already exist email', 'Info');
+                    } else if(res.status == 'duplicatedUsername') {
+                        toastr['info']('Already exist username', 'Info');
+                    } else {
+                        toastr['error']('500 Error!', 'Error');
+                    }
+                }
+            });
+        } else {
+            $.ajax({
+                url: '/admin/createClient',
+                type: 'POST',
+                dataType: 'json',
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function (res) {
+                    if(res.status == 'success') {
+                        toastr['success']('Updated successfully', 'Success');
+                    } else if(res.status == 'duplicatedEmail') {
+                        toastr['info']('Already exist email', 'Info');
+                    } else if(res.status == 'duplicatedUsername') {
+                        toastr['info']('Already exist username', 'Info');
+                    } else {
+                        toastr['error']('500 Error!', 'Error');
+                    }
+                }
+            });
+        }
+    })
 
     $("#search-manager i").click(function() {
         $("#search-manager").submit();
@@ -133,7 +140,9 @@ $(document).ready(function () {
 
     const searchManagerDom = document.getElementById('search');
     searchManagerDom.addEventListener('focus', function(e) {
-        document.getElementsByClassName('button-part')[0].classList.remove('d-none');
+        if(document.getElementsByClassName('button-part')[0]) {
+            document.getElementsByClassName('button-part')[0].classList.remove('d-none');
+        }
         document.getElementById('create-user-form').classList.add('d-none');
     });
 

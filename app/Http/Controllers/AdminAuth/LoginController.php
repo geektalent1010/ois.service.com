@@ -26,7 +26,7 @@ class LoginController extends Controller
         Session::flush();
         $request->session()->put('password', true);
         $credetials = $request->only('email', 'password');
-        $credetials['is_admin'] = true;
+        $credetials['is_admin'] = [1, 2];
 
         if(Auth::guard('admin')->attempt($credetials)) {
             return redirect()->intended('/admin/dashboard');
@@ -34,7 +34,7 @@ class LoginController extends Controller
             return back()->withErrors(['email'=> 'Invalid credentials']);
         }
     }
-    
+
     public function logout() {
         Auth::guard('admin')->logout();
         return redirect()->route('admin.login');

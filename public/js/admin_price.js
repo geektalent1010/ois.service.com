@@ -12,6 +12,11 @@ $(document).ready(function () {
             data: $(this).serialize(),
             dataType: "json",
             success: function (res) {
+                if(res.status == 'unauthorize') {
+                    toastr['info']('You do not have the access to this page.');
+                    $(".edit-form").addClass("d-none");
+                    return;
+                }
                 let title = "Center Fees";
                 let description = "Please input here";
                 let id = 0;
