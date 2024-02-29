@@ -954,6 +954,36 @@ class ContentsSeeder extends Seeder
       'order_num' => 1,
       'lang' => 'en',
     ]);
+    Content::create([
+        'title' => 'MAIL',
+        'content' => 'Hi',
+        'order_num' => 1,
+        'lang' => 'en',
+    ]);
+    Content::create([
+        'title' => 'MAIL',
+        'content' => 'Welcome to OIS Services and thank your for creating a client account.',
+        'order_num' => 2,
+        'lang' => 'en',
+    ]);
+    Content::create([
+        'title' => 'MAIL',
+        'content' => 'Since we protect our clients data and personal information, we kindly ask you to confirm your email address by clicking the email confirmation button below.',
+        'order_num' => 3,
+        'lang' => 'en',
+    ]);
+    Content::create([
+        'title' => 'MAIL',
+        'content' => 'Thank you for joining our community.',
+        'order_num' => 4,
+        'lang' => 'en',
+    ]);
+    Content::create([
+        'title' => 'MAIL',
+        'content' => 'Your OIS Support Team',
+        'order_num' => 5,
+        'lang' => 'en',
+    ]);
 
     //cn
     Content::create([

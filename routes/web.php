@@ -119,6 +119,7 @@ Route::post('/password', 'LandingController@password')->name('password');
             Route::post('getClientInfo', 'Admin\ClientManagerController@getClientInfo')->name('admin.client.info');
 
             Route::get('mail', 'Admin\MailManagerController@index')->name('admin.mail.index');
+            Route::post('updateMail', 'Admin\MailManagerController@updateMail')->name('admin.mail.update');
 
             Route::get('content', 'Admin\ContentManagerController@index')->name('admin.content.index');
             Route::post('getContent', 'Admin\ContentManagerController@getContent')->name('admin.content.get');

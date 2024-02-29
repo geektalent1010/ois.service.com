@@ -25,19 +25,9 @@
         <img class="welcome-bg" src="{{ asset('images/Globe.png') }}" alt="">
         <div class="welcome-section">
             <div class="greet-section">
-                <div class="welcome-greet">Hi {{ $userData['first_name'] }} {{ $userData['last_name'] }}</div>
-                <div class="welcome-greet">
-                    Welcome to OIS Services and thank your for creating a client account.
-                </div>
-                <div class="welcome-greet">
-                    Since we protect our clients data and personal information, we kindly ask you to confirm your email address by clicking the email confirmation button below.
-                </div>
-                <div class="welcome-greet">
-                    Thank you for joining our community.
-                </div>
-                <div class="welcome-greet">
-                    Your OIS Support Team
-                </div>
+                @foreach ($content as $con)
+                    <div class="welcome-greet">{{$con->content}}</div>
+                @endforeach
             </div>
             <div class="visit-website">
                 <a href="{{ route('login', ['id' => $userData['id']]) }}" class="btn btn-primary register-button button-submit">

@@ -11,10 +11,18 @@
 <div class="admin-bg">
     <div class="body-section mail-manager-section">
         <div class="manager-body">
-            <div class="demo-body">
-                <img src="{{ asset('images/IconMAIL.svg') }}" alt="">
-                <div class="main-title">MAIL MANAGER</div>
-                <div class="sub-title">UNDEFINED</div>
+            <div class="main-title">MAIL EDITOR</div>
+            <div class="content-edit-body">
+                @foreach ($content as $con)
+                    <form class="mail-editor-form mt-30px">
+                        @csrf
+                        <input type="hidden" name="content-id" value="{{$con->id}}" />
+                        <textarea class="custom-textarea" name="content">{{$con->content}}</textarea>
+                        <div class="info-button mt-35px">
+                            <button>PUBLISH</button>
+                        </div>
+                    </form>
+                @endforeach
             </div>
         </div>
     </div>
@@ -26,4 +34,5 @@
 
 @section('PAGE_LEVEL_SCRIPTS')
 <script type="text/javascript" src="{{asset('js/util.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/admin_mail.js')}}"></script>
 @endsection
