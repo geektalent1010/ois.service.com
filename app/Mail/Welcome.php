@@ -39,6 +39,7 @@ class Welcome extends Mailable
         }
         return $this->subject('Welcome to OIS')
             ->markdown('emails.welcome')
+            ->with('userData', $this->userData)
             ->with('content', $content);
     }
 }
