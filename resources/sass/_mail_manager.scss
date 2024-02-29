@@ -5,33 +5,57 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     overflow-y: auto;
 
     .manager-body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         padding-bottom: 30px;
         width: 50vw;
 
-        .demo-body {
+        .main-title {
+            font-size: 21px;
+            font-family: "DinPro Medium", sans-serif;
+            height: 50px;
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: column;
-            gap: 30px;
+            justify-content: flex-end;
+            align-items: center;
+        }
 
-            img {
-                width: 150px;
-            }
-            .main-title {
-                font-size: 30px;
-            }
+        .content-edit-body {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .content-detail {
 
-            .sub-title {
-                font-size: 15px;
+                .title {
+                    font-size: 24px;
+                    font-family: "Montserrat Medium", sans-serif;
+                    text-align: center;
+                }
+
+                .sub-title {
+                    font-size: 28px;
+                    font-family: "Montserrat Medium", sans-serif;
+                }
+
+                .description {
+                    font-size: 16px;
+                    font-family: "Montserrat Regular", sans-serif;
+                    line-height: 30px;
+                }
+
+                .editable-content {
+                    outline: none;
+                    border-radius: 10px;
+                    padding: 5px 10px;
+                }
+
+                .editable-focus {
+                    outline: 2px solid #266ea5;
+                }
             }
         }
     }

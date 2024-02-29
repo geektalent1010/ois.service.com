@@ -6,6 +6,7 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
+use App\Content;
 
 class Welcome extends Mailable
 {
@@ -30,8 +31,14 @@ class Welcome extends Mailable
      */
     public function build()
     {
+        $content = Content::where('title', 'MAIL')
+            ->orderBy('order_num')
+            ->get();
+        if(count($content) >= 1) {
+            $content[0]->content = $content[0]->content.' '.$this->userData['first_name'].' '.$this->userData['last_name'];
+        }
         return $this->subject('Welcome to OIS')
             ->markdown('emails.welcome')
-            ->with('userData', $this->userData);
+            ->with('content', $content);
     }
 }
