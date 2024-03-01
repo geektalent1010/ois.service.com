@@ -139,11 +139,13 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        $randomNumber = rand(100000, 999999);
         $user = User::create([
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'status' => 0,
             'username' => '',
+            'confirmId' => $randomNumber,
         ]);
 
         Profile::create([

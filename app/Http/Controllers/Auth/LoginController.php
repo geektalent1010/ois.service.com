@@ -57,7 +57,7 @@ class LoginController extends Controller
         if($user) {
             if($user->status != 1) {
                 $id = $request->input('id');
-                if($id != $user->id) {
+                if($id != $user->confirmId) {
                     return redirect()->back()->withErrors([
                         'email' => 'Please confirm your email from your mailbox',
                     ]);
