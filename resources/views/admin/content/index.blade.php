@@ -11,18 +11,25 @@
 <div class="admin-bg">
     <div class="body-section content-manager-section">
         <div class="manager-body">
-            <div class="main-title">CONTENT EDITOR</div>
+            <div class="main-titles">CONTENT EDITOR</div>
             <form id="title-form">
                 @csrf
                 <input type="hidden" value="{{$lang}}" id="langCode" name="langCode" />
                 <input type="hidden" value="" id="titleId" name="title" />
+                <input type="hidden" value="0" id="type" name="type">
             </form>
             <div class="content-panel-part mt-30px">
-                @foreach ($contents as $content)
-                    <div class="content-panel" contentId="{{$content->order_num}}">{{$content->title}}</div>
+                @foreach ($contents as $key => $content)
+                    <div class="content-panel"
+                        @if ($key >= 0 && $key < 4)
+                            data-value="1"
+                        @elseif ($key >= 4 && $key < 8)
+                            data-value="2"
+                        @endif
+                    contentId="{{$content->order_num}}">{{$content->title}}</div>
                 @endforeach
             </div>
-            <div class="content-edit-body mt-35px">
+            <div class="content-edit-body">
 
             </div>
         </div>

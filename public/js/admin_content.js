@@ -5,6 +5,7 @@ for(const ele of contentPanel) {
         $("#titleId").val($(this).text());
         $('.content-panel').removeClass('active');
         $(this).addClass('active');
+        $('#type').val($(this).data('value'));
         $("#title-form").submit();
     });
 }
@@ -19,9 +20,9 @@ $("#title-form").submit(function(e) {
         success:function(res) {
             if(res) {
                 let result = '';
-
+                const type = $("#type").val();
                 for(const r of res) {
-                    result += '<form class="content-detail mt-55px">';
+                    result += '<form class="content-detail content-detail' + type + ' mt-55px">';
                     result += '<input type="hidden" name="contentId" value="' + r.id + '">'
                     result += '<input type="hidden" name="content" />';
                     result += '<input type="hidden" name="_token" id="csrftoken" value="">'; // CSRF token field

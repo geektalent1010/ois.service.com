@@ -14,7 +14,7 @@
         padding-bottom: 30px;
         width: 50vw;
 
-        .main-title {
+        .main-titles {
             font-size: 21px;
             font-family: "DinPro Medium", sans-serif;
             height: 50px;
@@ -57,7 +57,7 @@
             display: flex;
             flex-direction: column;
             width: 100%;
-            .content-detail {
+            .content-detail1 {
 
                 .title {
                     font-size: 24px;
@@ -84,6 +84,58 @@
 
                 .editable-focus {
                     outline: 2px solid #266ea5;
+                }
+            }
+
+            .content-detail2 {
+                color: #003366;
+                background-color: white;
+                padding: 10px 20px;
+                .main-title {
+                    font-size: 24px;
+                    font-family: "DinPro Medium", sans-serif;
+                    text-align: justify;
+                    padding-bottom: 16px;
+                    font-weight: bold;
+                }
+
+                .sub-title {
+                    font-size: 16px;
+                    font-family: "DinPro Medium", sans-serif;
+                    margin-left: 32px;
+                    text-align: justify;
+                    font-weight: bold;
+                    padding-bottom: 16px;
+                }
+
+                .para-list {
+                    padding-left: 16px;
+                }
+
+                .para-list li {
+                    padding-left: 20px;
+                }
+
+                .para-list-digit {
+                    list-style-type: decimal;
+                    padding-left: 16px;
+                }
+
+                .para-list-digit li {
+                    padding-left: 20px;
+                }
+
+                table, tr, td, th {
+                    border: 1px solid black;
+                    text-align: left;
+                }
+
+                td, th {
+                    padding: 8px;
+                }
+
+                th {
+                    background-color: #003c714d;
                 }
             }
         }

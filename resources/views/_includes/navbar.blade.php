@@ -95,7 +95,7 @@
                 <div class="lang-item"><a class="item" href="{{ route('admin.mail.index') }}">MAIL MANAGER</a></div>
             </div>
             <div class="lang-section">
-                <div class="lang-item"><a class="item" href="{{ route('admin.content.index') }}">CONETNT EDITOR</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('admin.content.index') }}">CONTENT EDITOR</a></div>
                 <div class="lang-item"><a class="item" href="{{ route('admin.center.index') }}">CENTER EDITOR</a></div>
                 <div class="lang-item"><a class="item" href="{{ route('admin.price.index') }}">PRICE EDITOR</a></div>
                 <div class="lang-item"><a class="item" href="{{ route('admin.checklist.index') }}">CHECKLIST EDITOR</a></div>
