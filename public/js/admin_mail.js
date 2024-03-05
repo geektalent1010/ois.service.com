@@ -1,15 +1,27 @@
 $(document).ready(function() {
-    $('.mail-editor-form').submit(function(e) {
-        e.preventDefault();
+    $('#save-but').click(function(e) {
+        const datas = $('.mail-text-para span');
+        const sendData = [];
+        for(const data of datas) {
+            const obj = {};
+            obj.id = $(data).attr('contentId');
+            obj.content = $(data).text();
+            sendData.push(obj);
+        }
+        const formData = new FormData();
+        formData.append('data', JSON.stringify(sendData));
+        formData.append('_token', $('.content-edit-body input:first-child').val());
         $.ajax({
             url: '/admin/updateMail',
             type: 'POST',
-            data: $(this).serialize(),
+            data: formData,
             dataType: 'json',
+            processData: false,
+            contentType: false,
             success: function(res) {
                 console.log(res);
                 if(res.status == 'success') {
-                    toastr['success']('Published successfully');
+                    toastr['success']('Updated successfully');
                 } else {
                     toastr['error']('Error occurred.', 'Error');
                 }

@@ -8,11 +8,11 @@
     overflow-y: auto;
 
     .manager-body {
+        padding-bottom: 30px;
+        width: 50vw;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 30px;
-        width: 50vw;
 
         .main-title {
             font-size: 21px;
@@ -118,40 +118,52 @@
             }
         }
     }
-}
 
-.editor-panel {
-    position: fixed;
-    right: 0;
-    bottom: 60px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    width: 250px;
-    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-    // max-height: 500px;
-    max-height: 500px;
-    overflow-y: auto;
+    .manager-right-body {
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: fixed;
+        z-index: 10;
+        right: 2px;
+        top: 350px;
 
-    .editor-but {
-        width: 120px;
-        border-radius: 10px;
+        .editor-but {
+            width: 150px;
+            background-color: #003366;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s;
+            cursor: pointer;
+
+            &:not(:first-child) {
+                margin-top: 2px;
+            }
+
+            &.focused {
+                opacity: 1;
+            }
+        }
     }
-
-    .focused {
-        background-color: #003366;
-    }
-}
-
-.editor-panel.show {
-    transform: translateX(0);
-    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 @media only screen and (max-width: 1080px) {
     .checklist-manager-section {
         .manager-body {
             width: 90%;
+        }
+
+        .manager-right-body {
+            .editor-but {
+                opacity: 0.7;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
         }
     }
 }

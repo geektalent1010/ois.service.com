@@ -22,11 +22,13 @@ class MailManagerController extends Controller
     }
 
     public function updateMail(Request $request) {
-        $content = $request->input('content');
-        $id = $request->input('content-id');
-        $contentObj = Content::where('id', $id)->first();
-        $contentObj->content = $content;
-        $contentObj->save();
+        $data = json_decode($request->input('data'));
+        foreach($data as $dat) {
+            $contentObj = Content::where('id', $dat->id)->first();
+            $contentObj->content = $dat->content;
+            $contentObj->save();
+        }
+
         $res['status'] = 'success';
         return json_encode($res);
     }

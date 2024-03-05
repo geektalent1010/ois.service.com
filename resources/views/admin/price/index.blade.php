@@ -12,21 +12,23 @@
     <div class="body-section price-manager-section">
         <div class="manager-body">
             <div class="main-title">PRICE EDITOR</div>
-            <form class="select-form form-select-custom mt-30px" id="country-select-form">
-                @csrf
-                <select name="officeId" id="country-select" class="">
-                    <option value="0">Country + City</option>
-                    @foreach ($offices as $country => $cities)
-                        @foreach($cities as $key => $city)
-                            <option value="{{$city->id}}"
-                                data-data1="{{$country}}"
-                                data-data2="{{$city->city}}">
-                                {{$country}} - {{$city->city}}
-                            </option>
+            <div class="select-part">
+                <form class="select-form form-select-custom mt-30px" id="country-select-form">
+                    @csrf
+                    <select name="officeId" id="country-select" class="">
+                        <option value="0">Country + City</option>
+                        @foreach ($offices as $country => $cities)
+                            @foreach($cities as $key => $city)
+                                <option value="{{$city->id}}"
+                                    data-data1="{{$country}}"
+                                    data-data2="{{$city->city}}">
+                                    {{$country}} - {{$city->city}}
+                                </option>
+                            @endforeach
                         @endforeach
-                    @endforeach
-                </select>
-            </form>
+                    </select>
+                </form>
+            </div>
             <form class="edit-form d-none">
                 @csrf
                 <input type="hidden" id="edit-id" name="edit-id" value="0">
@@ -34,16 +36,16 @@
                     <div class="card-header-custom editable" contenteditable="true">Center Fees</div>
                     <div class="card-body-custom collapse show editable" contenteditable="true"><div>Please input here</div></div>
                 </div>
-                <div class="price-button-section info-button mt-35px">
+                <div class="price-button-section info-button mt-35px mb-35px">
                     <button>PUBLISH</button>
                 </div>
             </form>
         </div>
+        <div class="manager-right-body">
+            <div class="right-button disabled" id="subtitle-button-right">SUBTITLE</div>
+            <div class="right-button disabled" id="content-button-right">CONTENT</div>
+        </div>
     </div>
-</div>
-<div class="editor-panel info-button">
-    <button class="editor-but subtitle-but">subtitle</button>
-    <button class="editor-but content-but">content</button>
 </div>
 @endsection
 

@@ -131,10 +131,16 @@
                     </div>
                 </div>
 
-                <div class="info-button mt-35px">
+                <div class="info-button mt-35px mb-35px">
                     <button id="save-but">{{__('PUBLISH')}}</button>
+                    <input type="button" id="delete-but" value="DELETE">
                 </div>
             </form>
+        </div>
+        <div class="manager-right-body">
+            <div class="right-button" id="create-button-right">CREATE ADMIN</div>
+            <div class="right-button disabled" id="update-button-right">UPDATE ADMIN</div>
+            <div class="right-button disabled" id="delete-button-right">DELETE ADMIN</div>
         </div>
     </div>
 </div>

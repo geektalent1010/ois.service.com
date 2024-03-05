@@ -242,22 +242,22 @@
     justify-content: center;
 }
 
-.info-button button {
+.info-button button, .info-button input {
     height: 44px;
     width: 300px;
     border-radius: 10rem;
     font-size: 16px;
     font-family: "DinPro", sans-serif;
     cursor: pointer;
-    background-color: #00a9ea;
+    background-color: #003366;
     border: none;
     color: white;
     transition: 0.3s;
     outline: none;
 }
 
-.info-button button:hover {
-    background-color: #003366;
+.info-button button:hover, .info-button input:hover {
+    background-color: #00a9ea;
     transition: 0.3s;
 }
 

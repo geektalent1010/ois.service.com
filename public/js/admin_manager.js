@@ -16,7 +16,11 @@ $(document).ready(function () {
 
     $("#create-user-button").click(function() {
         $(".button-part").addClass('d-none');
+        $('#create-button-right').addClass('disabled');
+
         $("#create-user-form").removeClass('d-none');
+        $('#update-button-right').removeClass('disabled');
+
         $("#create-user-form input.form-input-custom").val('');
         $("#data6")[0].selectedIndex = 0;
         drawSelectForm($('#center-select')[0]);
@@ -26,6 +30,56 @@ $(document).ready(function () {
         drawSelectForm($('#role-select')[0]);
         // $("#create-user-form .select-items div:first-child()").click();
     });
+
+    $('#create-button-right').click(function(e) {
+        if($(this).hasClass('disabled')) return;
+        $('#create-user-button').click();
+    });
+
+    $('#update-button-right').click(function (e) {
+        if($(this).hasClass('disabled')) return;
+        $('#create-user-form').submit();
+    });
+
+    $('#delete-button-right').click(function(e) {
+        if($(this).hasClass('disabled')) return;
+        deleteUser();
+    });
+
+    $('#delete-but').click(function(e) {
+        deleteUser();
+    })
+
+    const deleteUser = () => {
+        const userid = $('#userid').val();
+        if(userid) {
+            if(window.confirm('Delete this admin user?')) {
+                const formData = new FormData();
+                formData.append('userid', userid);
+                formData.append('_token', $('#create-user-form input:first-child').val());
+                $.ajax({
+                    url: '/admin/deleteAdmin',
+                    type: 'POST',
+                    data: formData,
+                    dataType: 'json',
+                    contentType: false,
+                    processData: false,
+                    success: function(res) {
+                        console.log(res);
+                        if(res.status) {
+                            toastr['success']('Delete successfully.', 'Success');
+                            setTimeout(() => {
+                                location.href = ("");
+                            }, 800);
+                        } else {
+                            toastr['error']('Error occurred', 'Error');
+                        }
+                    }
+                })
+            }
+        }
+
+    }
 
     $("#create-user-form").submit(function(e) {
         e.preventDefault();
@@ -149,7 +203,12 @@ $(document).ready(function () {
                         }
                     }
                     $("#create-user-form").removeClass('d-none');
+                    $('#update-button-right').removeClass('disabled');
+                    $('#delete-button-right').removeClass('disabled');
+
                     $(".button-part").addClass('d-none');
+                    $('#create-button-right').addClass('disabled');
+
                     $(".list-detail").addClass('d-none');
                     $('.access-detail:not(.disabled)').removeClass('active');
                     if(res.roles.clientManager) {
@@ -175,18 +234,33 @@ $(document).ready(function () {
 
     $("#search").change(function() {
         $(".button-part").removeClass('d-none');
+        $('#create-button-right').removeClass('disabled');
+
         $("#create-user-form").addClass('d-none');
+        $('#update-button-right').addClass('disabled');
+        $('#delete-button-right').addClass('disabled');
+
     });
 
     $("#search").on("input", function() {
         $(".button-part").removeClass('d-none');
+        $('#create-button-right').removeClass('disabled');
+
         $("#create-user-form").addClass('d-none');
+        $('#update-button-right').addClass('disabled');
+        $('#delete-button-right').addClass('disabled');
+
     });
 
     const searchManagerDom = document.getElementById('search');
     searchManagerDom.addEventListener('focus', function(e) {
         document.getElementsByClassName('button-part')[0].classList.remove('d-none');
+        $('#create-button-right').removeClass('disabled');
+
         document.getElementById('create-user-form').classList.add('d-none');
+        $('#update-button-right').addClass('disabled');
+        $('#delete-button-right').addClass('disabled');
+
     });
 
     const phoneSelDom = document.getElementById('phone-code-select');

@@ -8,14 +8,29 @@ $(document).ready(function () {
 
     $("#create-user-button").click(function() {
         $(".button-part").addClass('d-none');
+        $('#create-button-right').addClass('disabled');
+
         $("#create-user-form").removeClass('d-none');
+        $('#update-button-right').removeClass('disabled');
+        $('#export-button-right').removeClass('disabled');
+        $('#export-all-button-right').removeClass('disabled');
+
         $("#create-user-form input").val('');
-        // $("#create-user-form .select-items div:first-child()").click();
     });
 
     $("#create-user-form").submit(function(e) {
         e.preventDefault();
     });
+
+    $('#create-button-right').click(function(e) {
+        if($(this).hasClass('disabled')) return;
+        $('#create-user-button').click();
+    });
+
+    $('#update-button-right').click(function(e) {
+        if($(this).hasClass('disabled')) return;
+        $('#publish-but').click();
+    })
 
     $('#publish-but').click(function() {
         const formData = new FormData(document.querySelector('.my-profile-part'));
@@ -117,7 +132,14 @@ $(document).ready(function () {
                         }
                     }
                     $("#create-user-form").removeClass('d-none');
+                    $('#update-button-right').removeClass('disabled');
+                    $('#delete-button-right').removeClass('disabled');
+                    $('#export-button-right').removeClass('disabled');
+                    $('#export-all-button-right').removeClass('disabled');
+
                     $(".button-part").addClass('d-none');
+                    $('#create-button-right').addClass('disabled');
+
                     $(".list-detail").addClass('d-none');
                 } else if(res.status == 'nodata') {
                     toastr['info']('No search result', 'Info');
@@ -130,20 +152,38 @@ $(document).ready(function () {
 
     $("#search").change(function() {
         $(".button-part").removeClass('d-none');
+        $('#create-button-right').removeClass('disabled');
+
         $("#create-user-form").addClass('d-none');
+        $('#update-button-right').addClass('disabled');
+        $('#delete-button-right').addClass('disabled');
+        $('#export-button-right').addClass('disabled');
+        $('#export-all-button-right').addClass('disabled');
     });
 
     $("#search").on("input", function() {
         $(".button-part").removeClass('d-none');
+        $('#create-button-right').removeClass('disabled');
+
         $("#create-user-form").addClass('d-none');
+        $('#update-button-right').addClass('disabled');
+        $('#delete-button-right').addClass('disabled');
+        $('#export-button-right').addClass('disabled');
+        $('#export-all-button-right').addClass('disabled');
     });
 
     const searchManagerDom = document.getElementById('search');
     searchManagerDom.addEventListener('focus', function(e) {
         if(document.getElementsByClassName('button-part')[0]) {
             document.getElementsByClassName('button-part')[0].classList.remove('d-none');
+            $('#create-button-right').removeClass('disabled');
+
         }
         document.getElementById('create-user-form').classList.add('d-none');
+        $('#update-button-right').addClass('disabled');
+        $('#delete-button-right').addClass('disabled');
+        $('#export-button-right').addClass('disabled');
+        $('#export-all-button-right').addClass('disabled');
     });
 
     const countrySelDom = document.getElementById('country-select');
