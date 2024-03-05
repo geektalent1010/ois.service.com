@@ -1091,16 +1091,83 @@
   z-index: 2;
 }
 
-.news-section {
-  width: 100%;
+.main-bg .container-section .video-section {
+  min-height: calc(100vh - 120px);
+  top: 80px;
+}
+
+.main-bg .container-section .video-section-mobile {
+  min-height: calc(100vh - 120px);
+  top: 80px;
+}
+
+.main-bg .container-section .menu-bg {
+  min-height: calc(100vh - 120px);
+  top: 80px;
+}
+
+.main-bg .container-section .menu-bg-mobile {
+  min-height: calc(100vh - 120px);
+  top: 80px;
+}
+
+.main-bg .container-section .news-section {
   height: calc(100vh - 120px);
   position: absolute;
-  top: 80px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow-y: auto;
   z-index: 2;
+  top: 80px;
+  overflow-y: scroll;
+}
+
+.main-bg .container-section .news-section .news-section-content {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-bg .container-section .news-section .icon {
+  width: 120px;
+}
+
+.main-bg .container-section .news-section .title {
+  font-size: 28px;
+  font-family: "Montserrat Medium", sans-serif;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: white;
+  text-align: center;
+}
+
+.main-bg .container-section .news-section .subtitle {
+  font-size: 16px;
+  font-family: "Montserrat Regular", sans-serif;
+  color: white;
+  line-height: 0px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1080px) {
+  .main-bg .container-section .shopping-section .title {
+    font-size: 24px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .main-bg .container-section .video-section {
+    display: none;
+  }
+
+  .main-bg .container-section .video-section-mobile {
+    display: block;
+  }
 }
 
 .booking-section {
@@ -3479,6 +3546,164 @@ body[data-aos-easing=ease-out-back] [data-aos] {
   }
 }
 
+.main-bg .container-section .video-section {
+  min-height: calc(100vh - 120px);
+  top: 80px;
+}
+
+.main-bg .container-section .video-section-mobile {
+  min-height: calc(100vh - 120px);
+  top: 80px;
+}
+
+.main-bg .container-section .menu-bg {
+  min-height: calc(100vh - 120px);
+  top: 80px;
+}
+
+.main-bg .container-section .menu-bg-mobile {
+  min-height: calc(100vh - 120px);
+  top: 80px;
+}
+
+.main-bg .container-section .passport-section {
+  height: calc(100vh - 120px);
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  top: 80px;
+  overflow-y: scroll;
+}
+
+.main-bg .container-section .passport-section .passport-section-content {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-bg .container-section .passport-section .icon {
+  width: 120px;
+}
+
+.main-bg .container-section .passport-section .title {
+  font-size: 28px;
+  font-family: "Montserrat Medium", sans-serif;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: white;
+  text-align: center;
+}
+
+.main-bg .container-section .passport-section .subtitle {
+  font-size: 16px;
+  font-family: "Montserrat Regular", sans-serif;
+  color: white;
+  line-height: 0px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1080px) {
+  .main-bg .container-section .shopping-section .title {
+    font-size: 24px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .main-bg .container-section .video-section {
+    display: none;
+  }
+
+  .main-bg .container-section .video-section-mobile {
+    display: block;
+  }
+}
+
+.main-bg .container-section .video-section {
+  min-height: calc(100vh - 120px);
+  top: 80px;
+}
+
+.main-bg .container-section .video-section-mobile {
+  min-height: calc(100vh - 120px);
+  top: 80px;
+}
+
+.main-bg .container-section .menu-bg {
+  min-height: calc(100vh - 120px);
+  top: 80px;
+}
+
+.main-bg .container-section .menu-bg-mobile {
+  min-height: calc(100vh - 120px);
+  top: 80px;
+}
+
+.main-bg .container-section .nin-section {
+  height: calc(100vh - 120px);
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  top: 80px;
+  overflow-y: scroll;
+}
+
+.main-bg .container-section .nin-section .nin-section-content {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-bg .container-section .nin-section .icon {
+  width: 120px;
+}
+
+.main-bg .container-section .nin-section .title {
+  font-size: 28px;
+  font-family: "Montserrat Medium", sans-serif;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: white;
+  text-align: center;
+}
+
+.main-bg .container-section .nin-section .subtitle {
+  font-size: 16px;
+  font-family: "Montserrat Regular", sans-serif;
+  color: white;
+  line-height: 0px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1080px) {
+  .main-bg .container-section .shopping-section .title {
+    font-size: 24px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .main-bg .container-section .video-section {
+    display: none;
+  }
+
+  .main-bg .container-section .video-section-mobile {
+    display: block;
+  }
+}
+
 .container-section .menu-bg {
   top: 0;
 }
@@ -5761,7 +5986,7 @@ body {
   width: 50vw;
 }
 
-.content-manager-section .manager-body .main-title {
+.content-manager-section .manager-body .main-titles {
   font-size: 21px;
   font-family: "DinPro Medium", sans-serif;
   height: 50px;
@@ -5806,31 +6031,88 @@ body {
   width: 100%;
 }
 
-.content-manager-section .manager-body .content-edit-body .content-detail .title {
+.content-manager-section .manager-body .content-edit-body .content-detail1 .title {
   font-size: 24px;
   font-family: "Montserrat Medium", sans-serif;
   text-align: center;
 }
 
-.content-manager-section .manager-body .content-edit-body .content-detail .sub-title {
+.content-manager-section .manager-body .content-edit-body .content-detail1 .sub-title {
   font-size: 28px;
   font-family: "Montserrat Medium", sans-serif;
 }
 
-.content-manager-section .manager-body .content-edit-body .content-detail .description {
+.content-manager-section .manager-body .content-edit-body .content-detail1 .description {
   font-size: 16px;
   font-family: "Montserrat Regular", sans-serif;
   line-height: 30px;
 }
 
-.content-manager-section .manager-body .content-edit-body .content-detail .editable-content {
+.content-manager-section .manager-body .content-edit-body .content-detail1 .editable-content {
   outline: none;
   border-radius: 10px;
   padding: 5px 10px;
 }
 
-.content-manager-section .manager-body .content-edit-body .content-detail .editable-focus {
+.content-manager-section .manager-body .content-edit-body .content-detail1 .editable-focus {
   outline: 2px solid #266ea5;
+}
+
+.content-manager-section .manager-body .content-edit-body .content-detail2 {
+  color: #003366;
+  background-color: white;
+  padding: 10px 20px;
+}
+
+.content-manager-section .manager-body .content-edit-body .content-detail2 .main-title {
+  font-size: 24px;
+  font-family: "DinPro Medium", sans-serif;
+  text-align: justify;
+  padding-bottom: 16px;
+  font-weight: bold;
+}
+
+.content-manager-section .manager-body .content-edit-body .content-detail2 .sub-title {
+  font-size: 16px;
+  font-family: "DinPro Medium", sans-serif;
+  margin-left: 32px;
+  text-align: justify;
+  font-weight: bold;
+  padding-bottom: 16px;
+}
+
+.content-manager-section .manager-body .content-edit-body .content-detail2 .para-list {
+  padding-left: 16px;
+}
+
+.content-manager-section .manager-body .content-edit-body .content-detail2 .para-list li {
+  padding-left: 20px;
+}
+
+.content-manager-section .manager-body .content-edit-body .content-detail2 .para-list-digit {
+  list-style-type: decimal;
+  padding-left: 16px;
+}
+
+.content-manager-section .manager-body .content-edit-body .content-detail2 .para-list-digit li {
+  padding-left: 20px;
+}
+
+.content-manager-section .manager-body .content-edit-body .content-detail2 table,
+.content-manager-section .manager-body .content-edit-body .content-detail2 tr,
+.content-manager-section .manager-body .content-edit-body .content-detail2 td,
+.content-manager-section .manager-body .content-edit-body .content-detail2 th {
+  border: 1px solid black;
+  text-align: left;
+}
+
+.content-manager-section .manager-body .content-edit-body .content-detail2 td,
+.content-manager-section .manager-body .content-edit-body .content-detail2 th {
+  padding: 8px;
+}
+
+.content-manager-section .manager-body .content-edit-body .content-detail2 th {
+  background-color: rgba(0, 60, 113, 0.3019607843);
 }
 
 @media only screen and (max-width: 1080px) {

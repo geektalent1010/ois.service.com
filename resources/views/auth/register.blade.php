@@ -147,7 +147,7 @@
                     </div>
                     <div class="col-md-6 form-group">
                         <input type="password" id="password" name="password" class="form-control"
-                            placeholder="{{__('password')}}" value="{{ old('password') }}">
+                            placeholder="{{__('password_L')}}" value="{{ old('password') }}">
                         <label id="password-error" class="has-error" for="password" style="display: none"></label>
                     </div>
                 </div>

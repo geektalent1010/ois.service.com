@@ -50,7 +50,7 @@
             <div class="navItem" onclick="">
                 <div class="navItemWrap" onclick="">
                     <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center"></div>
-                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="{{ route('booking.index') }}">
+                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="{{ route('passport.index') }}">
                         <div class="h-100">
                             <div class="d-flex justify-content-center h-50 align-items-end">
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}" alt="">
@@ -91,7 +91,7 @@
             <div class="navItem" onclick="">
                 <div class="navItemWrap" onclick="">
                     <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center"></div>
-                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="">
+                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="{{route('nin.index')}}">
                         <div class="h-100">
                             <div class="d-flex justify-content-center h-50 align-items-end">
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}" alt="">
@@ -105,7 +105,7 @@
             <div class="navItem" onclick="">
                 <div class="navItemWrap" onclick="">
                     <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center"></div>
-                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="{{ route('booking.index') }}">
+                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="{{ route('booking.iframe') }}">
                         <div class="h-100">
                             <div class="d-flex justify-content-center h-50 align-items-end">
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}" alt="">
@@ -119,7 +119,7 @@
             <div class="navItem" onclick="">
                 <div class="navItemWrap" onclick="">
                     <div class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center"></div>
-                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="">
+                    <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center" href="{{ route('booking.iframe') }}">
                         <div class="h-100">
                             <div class="d-flex justify-content-center h-50 align-items-end">
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}" alt="">
@@ -141,7 +141,7 @@
 
 @section('PAGE_LEVEL_SCRIPTS')
 <script type="text/javascript" src="{{asset('js/util.js')}}"></script>
-<!-- <script>
+{{-- <script>
     if (!getCookie('cookieNisVisaProcessing')) {
         $('.nis-visa-modal').addClass('show-modal');
     }
@@ -150,5 +150,5 @@
         setCookie('cookieNisVisaProcessing', true, 365);
         $('.nis-visa-modal').addClass('d-none');
     })
-</script> -->
+</script> --}}
 @endsection

@@ -29,7 +29,7 @@
                 @csrf
                 <div class="form-group row justify-content-center">
                     <div class="col-12">
-                        <input id="email" type="" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="{{__('email')}}" required autocomplete="email" autofocus />
+                        <input id="email" type="" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="{{__('email_L')}}" required autocomplete="email" autofocus />
 
                         @error('email')
                             <span class="invalid-feedback" role="alert">
@@ -41,7 +41,7 @@
 
                 <div class="form-group row justify-content-center">
                     <div class="col-12">
-                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="{{__('password')}}" required autocomplete="current-password">
+                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="{{__('password_L')}}" required autocomplete="current-password">
 
                         @error('password')
                             <span class="invalid-feedback" role="alert">

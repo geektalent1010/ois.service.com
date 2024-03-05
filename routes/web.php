@@ -87,6 +87,10 @@ Route::post('/password', 'LandingController@password')->name('password');
 
     Route::get('/protection', 'ProtectionController@index')->name('protection.index');
 
+    Route::get('/passport', 'PassportController@index')->name('passport.index');
+
+    Route::get('/nin', 'NinController@index')->name('nin.index');
+
     Route::get('/solutions', 'SolutionsController@index')->name('solutions.index');
     Route::get('/faq', 'FaqController@index')->name('faq.index');
     Route::get('/book', 'BookController@index')->name('book.index');

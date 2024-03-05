@@ -16,7 +16,7 @@
             min-height: calc(100vh - 120px);
             top: 80px;
         }
-        .news-section {
+        .passport-section {
             height: calc(100vh - 120px);
             position: absolute;
             width: 100%;
@@ -27,7 +27,7 @@
             top: 80px;
             overflow-y: scroll;
 
-            .news-section-content {
+            .passport-section-content {
                 min-height: calc(100vh - 120px);
                 display: flex;
                 flex-direction: column;

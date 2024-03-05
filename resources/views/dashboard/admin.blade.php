@@ -10,7 +10,7 @@
 @section('PAGE_CONTENT')
 <div class="admin-bg main-bg">
     <div class="m-0 menu-section body-section dashboard-section">
-        <p class="dashboard-title my-0">WELCOME TO THE CMS PORTAL</p>
+        <p class="dashboard-title my-0">WELCOME TO THE ADMIN PORTAL</p>
         <div class="row m-0 menu-body">
             <div class="navItem" onclick="">
                 <div class="navItemWrap" onclick="">

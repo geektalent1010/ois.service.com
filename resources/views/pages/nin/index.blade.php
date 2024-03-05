@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => __('news'), 'VIDEO_STATUS' => true, 'modalData'=>$modalData])
+@extends('layouts.app', ['ACTIVE_TITLE' => __('nin'), 'VIDEO_STATUS' => true, 'modalData'=>$modalData])
 
 @section('PAGE_LEVEL_STYLES')
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -18,10 +18,10 @@
             </video>
             <img class="menu-bg" src="{{ asset('images/Image1H.png') }}" alt=""/>
             <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt=""/>
-            <div class="news-section body-section">
-                <div class="news-section-content">
-                    <img class="icon" src="{{ asset('images/Logo/IconNews.svg') }}" alt="" />
-                    <p class="title">{{__('news_L')}}</p>
+            <div class="nin-section body-section">
+                <div class="nin-section-content">
+                    <img class="icon" src="{{ asset('images/Logo/OISIcon.svg') }}" alt="" />
+                    <p class="title">{{__('nin')}} {{__('application_L')}}</p>
                     <p class="subtitle">{{__('coming_soon')}}</p>
                 </div>
                 @include('_includes.footer')
