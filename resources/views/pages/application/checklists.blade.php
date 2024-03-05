@@ -31,39 +31,36 @@
                                 <div class="col-md-6 form-group">
                                     <p class="form-label">{{__('select_country')}} + {{__('city_applying_from')}}</p>
                                     <div class="info-box">
-                                        <div class="search-field">
-                                            <input type="text" class="input-field office-id-input" name="office"
-                                                hidden />
-                                            <input type="text" class="input-field office-input cursor-default"
-                                                placeholder="Country + City" />
-                                            <img class="search-icon cursor-default"
-                                                src="{{ asset('images/select-arrows.svg') }}" alt="" />
-                                        </div>
-                                        <div class="offices-menus d-none">
-                                            @foreach ($offices as $country => $cities)
-                                                @foreach ($cities as $key => $office)
-                                                    <div class="d-flex office-menu-item"
-                                                        data-country="{{ $office->country }} - {{ $office->city }}"
-                                                        data-id="{{ $office->id }}">
-                                                        <div class="office-country">
-                                                            @if ($key < 1)
-                                                                {{ $country }}
-                                                            @endif
-                                                        </div>
-                                                        <div>- </div>
-                                                        <div class="pl-2">{{ $office->city }}</div>
-                                                    </div>
+                                        <div class="center-select form-select-custom" id="center-select">
+                                            <select class="" id="center_id" name="office" text="Country">
+                                                <option value="0">Country + City</option>
+                                                @foreach($offices as $country => $cities)
+                                                    @foreach ($cities as $key => $office)
+                                                        <option value="{{$office->id}}"
+                                                            data-data1="{{$office->country}}"
+                                                            data-data2="{{$office->city}}"
+                                                            >
+                                                            {{$office->country}} - {{$office->city}}
+                                                        </option>
+                                                    @endforeach
                                                 @endforeach
-                                            @endforeach
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 form-group">
                                     <p class="form-label">{{__('select_passport_type_applying_with')}}</p>
-                                    <select class="form-control webkit-style country-select w-100" name="visa_type"
+                                    <div class="info-box">
+                                        <div class="center-select form-select-custom" id="type-select">
+                                            <select id="type_id" name="visa_type" text="">
+                                                <option value="0">Passport Type</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    {{-- <select class="form-control webkit-style country-select w-100" name="visa_type"
                                         id="visaType">
                                         <option value="">Pasport Type</option>
-                                    </select>
+                                    </select> --}}
                                 </div>
                             </div>
 
@@ -98,37 +95,19 @@
             }
         });
 
-        var officeId = '';
+        const selectCenterDom = document.getElementById('center-select');
+        drawSelectForm(selectCenterDom);
+        const selectTypeDom = document.getElementById('type-select');
+        drawSelectForm(selectTypeDom);
 
-        $('.office-input').click(function() {
-            $(".offices-menus").removeClass('d-none');
-        });
-
-        $('.search-icon').click(function() {
-            $(".offices-menus").removeClass('d-none');
-        });
-
-        function windowOnClick(event) {
-            $('.offices-menus').addClass('d-none');
-        }
-
-        $(document).on('click', '.main-bg', function(event) {
-            if (!$(event.target).hasClass('office-input') && !$(event.target).hasClass('search-icon')) {
-                $('.offices-menus').addClass('d-none');
-            }
-        });
-
-        $('.office-menu-item').click(function() {
-            $('.input-field').val($(this).data('country'));
-            officeId = $(this).data('id');
-            $('.office-id-input').val(officeId);
+        $("#center-select .select-items>div").click(function() {
             showOffices();
         });
 
         function showOffices() {
             let country_name = $('.input-field').val();
             var send_data = {};
-            send_data['office_id'] = officeId;
+            send_data['office_id'] =  $('#center_id').val();
             $.ajax({
                 url: '{{ route('offices.search') }}',
                 method: "POST",
@@ -167,27 +146,35 @@
                                 }
 
                                 html += '</div></div>';
-                                visaType += '<option value="">Pasport Type</option>';
-                                visaType += '<option value="Diplomatic">Diplomatic Passport</option>';
-                                visaType += '<option value="Official">Official Passport</option>';
-                                visaType += '<option value="Standard">Standard Passport</option>';
-                                visaType += '<option value="UN">UN Passport</option>';
+                                visaType += '<option value="0">Passport Type</option>';
+                                visaType += '<option value="Diplomatic" data-data1="Diplomatic Passport"></option>';
+                                visaType += '<option value="Official" data-data1="Official Passport"></option>';
+                                visaType += '<option value="Standard" data-data1="Standard Passport"></option>';
+                                visaType += '<option value="UN" data-data1="UN Passport"></option>';
                             }
                         }
                         $('.offices-body').html(html);
                         $('.offices-body').show();
 
-                        $('#visaType').html(visaType);
+                        $('#type_id').html(visaType);
                     } else {
                         html += '<p class="country mt-5">No Office</p>';
                         $('.offices-body').html(html);
                         $('.offices-body').show();
 
-                        visaType += '<option value="">Coming soon</option>';
+                        visaType += '<option value="0">Coming soon</option>';
 
-                        $('#visaType').html(visaType);
+                        $('#type_id').html(visaType);
                     }
+
+                    drawSelectForm(document.getElementById('type-select'));
                     checklistsFilters();
+
+                    $('#type-select .select-items>div').on('click', function() {
+                        if ($('#type_id').val() && $('#center_id').val()) {
+                            checklistsFilters();
+                        }
+                    });
                 },
                 error: function(err) {}
             });
@@ -195,12 +182,6 @@
 
         $('.button-submit').click(function() {
             checklistsFilters();
-        });
-
-        $('#visaType').on('change', function() {
-            if (officeId && this.value) {
-                checklistsFilters();
-            }
         });
 
         function checklistsFilters() {

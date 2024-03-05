@@ -82,6 +82,10 @@
                         display: flex;
                         align-items: center;
 
+                        .center-select {
+                            width: 100%;
+                        }
+
                         .form-input-custom {
                             width: 100%;
                             height: 100%;
@@ -93,13 +97,24 @@
                             color: white;
                         }
 
+                        .form-select-custom {
+                            width: 100%;
+                        }
+
+                        .form-select-custom.select-left-icon {
+                            .select-selected {
+                                padding-left: 7px;
+                                gap: 8px;
+                            }
+                        }
+
                         .phone-code-select {
-                            width: 30%;
+                            width: 40%;
                             height: 100%;
                         }
 
                         .phone-code-input {
-                            width: 70%;
+                            width: 60%;
                             padding-left: 0;
                         }
                     }
@@ -126,7 +141,7 @@
                     .access-detail {
                         display: flex;
                         width: 50%;
-                        background-color: #266ea5;
+                        background-color: #003366;
                         font-size: 16px;
                         font-family: "DinPro", sans-serif;
                         height: 46px;
@@ -142,7 +157,7 @@
                     }
 
                     .active {
-                        background-color: #003366;
+                        background-color: #266ea5;
                     }
                 }
             }

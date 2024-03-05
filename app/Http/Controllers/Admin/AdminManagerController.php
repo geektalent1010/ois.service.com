@@ -9,6 +9,7 @@ use App\Country;
 use App\User;
 use App\Profile;
 use App\Role;
+use App\Office;
 use Illuminate\Support\Facades\Auth;
 
 class AdminManagerController extends Controller
@@ -33,10 +34,14 @@ class AdminManagerController extends Controller
             ->get()
             ->pluck('email')
             ->all();
+        $offices = Office::orderBy('country', 'asc')->orderBy('city', 'asc')->get()->groupBy(function ($data) {
+            return $data->country;
+        });
         return view('admin.manager.index')
             ->with('countries', $countries)
             ->with('phoneCodes', $phoneCodes)
-            ->with('adminUsers', $adminUsers);
+            ->with('adminUsers', $adminUsers)
+            ->with('offices', $offices);
     }
 
     public function createAdmin(Request $request) {
@@ -57,7 +62,7 @@ class AdminManagerController extends Controller
         $user->email = $request->input('email');
         $user->username = $request->input('username');
         $user->password = Hash::make($request->input('password'));
-        $user->is_admin = 1;
+        $user->is_admin = $request->input('role');
         $user->save();
 
         $profile = new Profile();
@@ -65,7 +70,7 @@ class AdminManagerController extends Controller
         $profile->last_name = $request->input('lastName');
         $profile->phone_number = $request->input('phoneCode').' '.$request->input('phoneNumber');
         $profile->city = $request->input('city');
-        $profile->country_id = $request->input('country');
+        $profile->country_id = Country::where('name', $request->input('country'))->first()->id;
         $profile->gender = 'm';
         $profile->user_id = $user->id;
         $profile->save();
@@ -121,7 +126,7 @@ class AdminManagerController extends Controller
         if($request->input('password')) {
             $user->password = Hash::make($request->input('password'));
         }
-        $user->is_admin = 1;
+        $user->is_admin = $request->input('role');
         $user->save();
 
         $profile = $user->profile;
@@ -129,7 +134,7 @@ class AdminManagerController extends Controller
         $profile->last_name = $request->input('lastName');
         $profile->phone_number = $request->input('phoneCode').' '.$request->input('phoneNumber');
         $profile->city = $request->input('city');
-        $profile->country_id = $request->input('country');
+        $profile->country_id = Country::where('name', $request->input('country'))->first()->id;
         $profile->gender = 'm';
         $profile->user_id = $user->id;
         $profile->save();
@@ -206,8 +211,9 @@ class AdminManagerController extends Controller
             $res['phoneNumber'] = $user->profile->phone_number;
             $res['email'] = $user->email;
             $res['center'] = $user->profile->city;
-            $res['country'] = $user->profile->country_id;
+            $res['country'] = $user->profile->country->name;
             $res['username'] = $user->username;
+            $res['role'] = $user->is_admin;
             $res['roles'] = [];
             foreach($user->roles as $role) {
                 if($role->role_name == 'ClientManager') {

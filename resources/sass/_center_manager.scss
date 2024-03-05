@@ -27,12 +27,12 @@
         .select-form {
             width: 300px;
             height: 45px;
+            border-radius: 23px;
+
             .select-items {
                 border-radius: 10px;
             }
-            .select-selected {
-                border-radius: 23px;
-            }
+
             .select-city {
                 text-align: right;
             }

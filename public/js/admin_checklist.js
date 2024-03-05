@@ -321,8 +321,6 @@ $(document).ready(function () {
     $('#create-button-part').click(function() {
         const center = $('#office-select').val();
         const passport = $('#type-select').val();
-        console.log(center)
-        console.log(passport)
         if(!center || !passport || center == 0 || passport == 0) {
             toastr['info']('Please select Center and Passport Type options');
             $('.list-group').html('');

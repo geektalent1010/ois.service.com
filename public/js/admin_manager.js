@@ -18,7 +18,12 @@ $(document).ready(function () {
         $(".button-part").addClass('d-none');
         $("#create-user-form").removeClass('d-none');
         $("#create-user-form input.form-input-custom").val('');
-        $("#data8").val('Admin');
+        $("#data6")[0].selectedIndex = 0;
+        drawSelectForm($('#center-select')[0]);
+        $('#data3')[0].selectedIndex = 0;
+        drawSelectForm($('#phone-code-select')[0]);
+        $("#data7")[0].selectedIndex = 0;
+        drawSelectForm($('#role-select')[0]);
         // $("#create-user-form .select-items div:first-child()").click();
     });
 
@@ -26,9 +31,10 @@ $(document).ready(function () {
         e.preventDefault();
         const userid = $("#userid").val();
         let dataNum = 0;
-        if(userid) dataNum = 9;
-        else dataNum = 10;
+        if(userid) dataNum = 8;
+        else dataNum = 9;
         for (let i = 1 ; i <= dataNum ; i ++) {
+            if(i == 7) continue;
             if (!$("#data" + i).val() || $("#data" + i).val() == 0) {
                 toastr['error']('Please input or select the ' + $("#data" + i).attr('text') + ' field.', 'Error');
                 return;
@@ -43,6 +49,10 @@ $(document).ready(function () {
         formData.append('centerStatus', $('#center-edit-button').hasClass('active'));
         formData.append('priceStatus', $('#price-edit-button').hasClass('active'));
         formData.append('checklistStatus', $('#checklist-edit-button').hasClass('active'));
+        const countrySelIndex = $('#data6')[0].selectedIndex + 1;
+        console.log($('#data6 option:nth-child(' + countrySelIndex + ')').data('data1'))
+        formData.append('country', $('#data6 option:nth-child(' + countrySelIndex + ')').data('data1'));
+        formData.append('city', $('#data6 option:nth-child(' + countrySelIndex + ')').data('data2'));
         if(userid) {
             $.ajax({
                 url: '/admin/updateAdmin',
@@ -110,20 +120,31 @@ $(document).ready(function () {
                     $("#data2").val(res.lastName);
                     $("#data4").val(res.phoneNumber.split(' ')[1]);
                     $("#data5").val(res.email);
-                    $("#data6").val(res.center);
-                    // $("#data8").val("Admin");
-                    $("#data9").val(res.username);
-                    const countryOptions = $("#data7 option");
+                    $("#data8").val(res.username);
+                    const countryOptions = $("#data6 option");
+                    let flag = false;
                     for(let i = 1; i < countryOptions.length ; i ++) {
-                        if(countryOptions[i].value == res.country) {
-                            $(".country-select .select-items div:nth-child(" + i + ")").click();
+                        if(countryOptions[i].dataset.data1 == res.country) {
+                            flag = true;
+                            $("#center-select .select-items div:nth-child(" + i + ")").click();
                             break;
                         }
+                    }
+                    if(!flag) {
+                        document.getElementById('data6').selectedIndex = 0;
+                        drawSelectForm($('#center-select')[0]);
                     }
                     const phoneCodeOptions = $("#data3 option");
                     for(let i = 1; i < phoneCodeOptions.length ; i ++) {
                         if(phoneCodeOptions[i].value == res.phoneNumber.split(' ')[0]) {
                             $(".phone-code-select .select-items div:nth-child(" + i + ")").click();
+                            break;
+                        }
+                    }
+                    const roleOptions = $('#data7 option');
+                    for(let i = 1 ; i < roleOptions.length ; i ++) {
+                        if(roleOptions[i].value == res.role) {
+                            $('#role-select .select-items div:nth-child(' + i + ')').click();
                             break;
                         }
                     }
@@ -170,7 +191,9 @@ $(document).ready(function () {
 
     const phoneSelDom = document.getElementById('phone-code-select');
     drawSelectForm(phoneSelDom);
-    const countrySelDom = document.getElementById('country-select');
+    const countrySelDom = document.getElementById('center-select');
     drawSelectForm(countrySelDom);
+    const roleSelDom = document.getElementById('role-select');
+    drawSelectForm(roleSelDom);
 });
 

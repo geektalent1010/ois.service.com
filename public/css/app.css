@@ -4324,91 +4324,12 @@ body {
   position: relative;
   width: 100%;
   max-width: 360px;
-}
-
-.checklists-section .form-section .form-group .info-box .search-field {
-  position: relative;
-}
-
-.checklists-section .form-section .form-group .info-box .search-field .search-icon {
-  visibility: visible;
-  width: 16px;
-  position: absolute;
-  top: 14px;
-  right: 18px;
-}
-
-.checklists-section .form-section .form-group .info-box .input-field {
-  width: 100%;
   height: 44px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 30px;
-  padding-right: 30px;
+}
+
+.checklists-section .form-section .form-group .info-box .center-select {
   background-color: rgba(255, 255, 255, 0.1490196078);
-  border-radius: 20px;
-  font-size: 16px;
-  font-family: "DinPro", sans-serif;
-  border: none;
-  color: white;
-  outline: none;
-}
-
-.checklists-section .form-section .form-group .info-box .input-field::-moz-placeholder {
-  color: white;
-}
-
-.checklists-section .form-section .form-group .info-box .input-field::placeholder {
-  color: white;
-}
-
-.checklists-section .form-section .form-group .info-box .input-field:hover {
-  box-shadow: none;
-  border: none;
-}
-
-.checklists-section .form-section .form-group .info-box .input-field:focus {
-  box-shadow: none;
-  border: none;
-}
-
-.checklists-section .form-section .form-group .info-box .field-label {
-  color: #003366;
-  font-family: "DinPro", sans-serif;
-  font-size: 16px;
-  text-transform: uppercase;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  margin-top: 32px;
-}
-
-.checklists-section .form-section .form-group .info-box .offices-menus {
-  position: absolute;
-  top: 0px;
-  width: 100%;
-  background-color: #b2c8db;
-  padding: 12px;
-  border-radius: 8px;
-  z-index: 1;
-  max-height: 500px;
-  overflow-y: auto;
-}
-
-.checklists-section .form-section .form-group .info-box .offices-menus .office-menu-item {
-  display: flex;
-  padding: 2px 6px;
-  border-radius: 4px;
-  cursor: pointer;
-  color: #003366;
-}
-
-.checklists-section .form-section .form-group .info-box .offices-menus .office-menu-item:hover {
-  background-color: #003366;
-  color: white;
-}
-
-.checklists-section .form-section .form-group .info-box .offices-menus .office-menu-item .office-country {
-  min-width: 40%;
+  border-radius: 23px;
 }
 
 .checklists-section .form-section .form-group .offices-body {
@@ -5121,6 +5042,15 @@ body {
   color: white;
 }
 
+.admin-profile-section .profile-body .my-profile-part .info-details .info-detail .info-value .form-select-custom.select-left-icon .select-selected {
+  padding-left: 7px;
+  gap: 8px;
+}
+
+.admin-profile-section .profile-body .my-profile-part .info-details .info-detail .info-value .form-select-custom {
+  width: 100%;
+}
+
 .admin-profile-section .profile-body .my-profile-part .info-details .info-detail .info-value .phone-code-select {
   width: 30%;
   height: 100%;
@@ -5146,7 +5076,7 @@ body {
 .admin-profile-section .profile-body .my-access-part .access-detail-group .access-detail {
   display: flex;
   width: 50%;
-  background-color: #266ea5;
+  background-color: #003366;
   font-size: 16px;
   font-family: "DinPro", sans-serif;
   height: 46px;
@@ -5162,7 +5092,7 @@ body {
 }
 
 .admin-profile-section .profile-body .my-access-part .access-detail-group .active {
-  background-color: #003366;
+  background-color: #266ea5;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -5267,6 +5197,10 @@ body {
   align-items: center;
 }
 
+.admin-manager-section .manager-body .my-profile-part .info-details .info-detail .info-value .center-select {
+  width: 100%;
+}
+
 .admin-manager-section .manager-body .my-profile-part .info-details .info-detail .info-value .form-input-custom {
   width: 100%;
   height: 100%;
@@ -5278,13 +5212,22 @@ body {
   color: white;
 }
 
+.admin-manager-section .manager-body .my-profile-part .info-details .info-detail .info-value .form-select-custom {
+  width: 100%;
+}
+
+.admin-manager-section .manager-body .my-profile-part .info-details .info-detail .info-value .form-select-custom.select-left-icon .select-selected {
+  padding-left: 7px;
+  gap: 8px;
+}
+
 .admin-manager-section .manager-body .my-profile-part .info-details .info-detail .info-value .phone-code-select {
-  width: 30%;
+  width: 40%;
   height: 100%;
 }
 
 .admin-manager-section .manager-body .my-profile-part .info-details .info-detail .info-value .phone-code-input {
-  width: 70%;
+  width: 60%;
   padding-left: 0;
 }
 
@@ -5310,7 +5253,7 @@ body {
 .admin-manager-section .manager-body .roles-section .my-access-part .access-detail-group .access-detail {
   display: flex;
   width: 50%;
-  background-color: #266ea5;
+  background-color: #003366;
   font-size: 16px;
   font-family: "DinPro", sans-serif;
   height: 46px;
@@ -5326,7 +5269,7 @@ body {
 }
 
 .admin-manager-section .manager-body .roles-section .my-access-part .access-detail-group .active {
-  background-color: #003366;
+  background-color: #266ea5;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -5443,13 +5386,22 @@ body {
 }
 
 .client-manager-section .manager-body .my-profile-part .info-details .info-detail .info-value .phone-code-select {
-  width: 30%;
+  width: 40%;
   height: 100%;
 }
 
 .client-manager-section .manager-body .my-profile-part .info-details .info-detail .info-value .phone-code-input {
-  width: 70%;
+  width: 60%;
   padding-left: 0;
+}
+
+.client-manager-section .manager-body .my-profile-part .info-details .info-detail .info-value .form-select-custom.select-left-icon .select-selected {
+  padding-left: 7px;
+  gap: 8px;
+}
+
+.client-manager-section .manager-body .my-profile-part .info-details .info-detail .info-value .form-select-custom {
+  width: 100%;
 }
 
 .client-manager-section .manager-body .my-profile-part .info-button {
@@ -5499,7 +5451,7 @@ body {
 .client-manager-section .manager-body .roles-section .my-access-part .access-detail-group .access-detail {
   display: flex;
   width: 50%;
-  background-color: #266ea5;
+  background-color: #003366;
   font-size: 16px;
   font-family: "DinPro", sans-serif;
   height: 46px;
@@ -5515,7 +5467,7 @@ body {
 }
 
 .client-manager-section .manager-body .roles-section .my-access-part .access-detail-group .active {
-  background-color: #003366;
+  background-color: #266ea5;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -5754,14 +5706,11 @@ body {
 .center-manager-section .manager-body .select-form {
   width: 300px;
   height: 45px;
+  border-radius: 23px;
 }
 
 .center-manager-section .manager-body .select-form .select-items {
   border-radius: 10px;
-}
-
-.center-manager-section .manager-body .select-form .select-selected {
-  border-radius: 23px;
 }
 
 .center-manager-section .manager-body .select-form .select-city {
@@ -5829,14 +5778,11 @@ body {
 .price-manager-section .manager-body .select-form {
   width: 300px;
   height: 45px;
+  border-radius: 23px;
 }
 
 .price-manager-section .manager-body .select-form .select-items {
   border-radius: 10px;
-}
-
-.price-manager-section .manager-body .select-form .select-selected {
-  border-radius: 23px;
 }
 
 .price-manager-section .manager-body .select-form .select-city {
@@ -5962,6 +5908,7 @@ body {
 
 .checklist-manager-section .manager-body .select-group .select-form .form-select-custom {
   height: 45px;
+  border-radius: 24px;
 }
 
 .checklist-manager-section .manager-body .select-group .select-form > div {

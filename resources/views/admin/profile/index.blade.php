@@ -31,14 +31,16 @@
                     <div class="info-detail">
                         <div class="info-head">Phone</div>
                         <div class="info-value">
-                            <div class="form-select-custom phone-code-select" id="phone-code-select">
+                            <div class="form-select-custom phone-code-select select-left-icon" id="phone-code-select">
                                 <select id="data3" name="phoneCode" text="Phone Code">
                                     <option value="0">select</option>
                                     @foreach($phoneCodes as $phoneCode)
                                         @if('+'.$phoneCode == explode(' ', $user->profile->phone_number)[0])
-                                            <option selected>+{{$phoneCode}}</option>
+                                            <option selected
+                                                data-data1="{{$phoneCode}}">+{{$phoneCode}}</option>
                                         @else
-                                            <option>+{{$phoneCode}}</option>
+                                            <option
+                                                data-data1="{{$phoneCode}}">+{{$phoneCode}}</option>
                                         @endif
                                     @endforeach
                                 </select>
@@ -60,17 +62,22 @@
                     </div>
                     <div class="info-detail">
                         <div class="info-head">Country</div>
-                        <div class="info-value country-select form-select-custom" id="country-select">
-                            <select class="" id="data7" name="country" text="Country">
-                                <option value="0">select country</option>
-                                @foreach($countries as $country)
-                                    @if($country->id == $user->profile->country_id)
-                                        <option value="{{$country->id}}" selected>{{$country->name}}</option>
-                                    @else
-                                        <option value="{{$country->id}}">{{$country->name}}</option>
-                                    @endif
-                                @endforeach
-                            </select>
+                        <div class="info-value">
+                            <div class="country-select form-select-custom select-left-icon" id="country-select">
+                                <select class="" id="data7" name="country" text="Country">
+                                    <option value="0">select country</option>
+                                    @foreach($countries as $country)
+                                        @if($country->id == $user->profile->country_id)
+                                            <option value="{{$country->id}}" selected
+                                                data-data1="{{$country->name}}">{{$country->name}}</option>
+                                        @else
+                                            <option value="{{$country->id}}"
+                                                data-data1="{{$country->name}}">{{$country->name}}</option>
+                                        @endif
+                                    @endforeach
+                                </select>
+                            </div>
+
                         </div>
                     </div>
                     <div class="info-detail">

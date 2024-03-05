@@ -131,44 +131,64 @@ function stopVideo() {
 
 //select-custom function
 function drawSelectForm(selectPartDom) {
+        for(const element of selectPartDom.getElementsByClassName('select-selected')) {
+            element.remove();
+        }
+        for(const element of selectPartDom.getElementsByClassName('select-items')) {
+            element.remove();
+        }
 
         let selectDom = selectPartDom.getElementsByTagName("select")[0];
         let selectedDom = document.createElement("DIV");
         selectedDom.setAttribute("class", "select-selected");
-        selectedDom.innerHTML =
-            selectDom.options[selectDom.selectedIndex].innerHTML;
+        if(selectPartDom.classList.contains('select-left-icon') ) {
+            selectedDom.innerHTML = '<img src="/images/select-arrows.svg" /><div class="select-text d-flex">' + selectDom.options[selectDom.selectedIndex].innerHTML + '</div>';
+        } else {
+            selectedDom.innerHTML = '<div class="select-text d-flex">' + selectDom.options[selectDom.selectedIndex].innerHTML + '</div><img src="/images/select-arrows.svg" />';
+        }
+
         selectPartDom.appendChild(selectedDom);
+        if(selectDom.length == 1) return;
 
         let customOptions = document.createElement("DIV");
         customOptions.setAttribute("class", "select-items select-hide");
         for (let j = 1; j < selectDom.length; j++) {
             let optionDom = document.createElement("DIV");
-            optionDom.innerHTML = selectDom.options[j].innerHTML;
-            if (
-                selectDom.options[selectDom.selectedIndex].innerHTML ==
-                optionDom.innerHTML
-            ) {
+            $(optionDom).attr('data-value', selectDom.options[j].value);
+            let data1 = $(selectDom[j]).data('data1');
+            const tempData1 = $(selectDom[j - 1]).data('data1');
+            let data2 = $(selectDom[j]).data('data2');
+            if(data1 && data2) {
+                optionDom.innerHTML = '<div>' + (data1 != tempData1 ? data1 : '') + ' </div><div>&nbsp- ' + data2 + '</div>';
+            } else if(data1) {
+                optionDom.innerHTML = '<div>' + data1 + '</div>';
+            }
+
+            if (selectDom.options[selectDom.selectedIndex].value == $(optionDom).data('value')) {
                 optionDom.classList.add("active");
             }
 
             optionDom.addEventListener("click", function (e) {
-                let selectDom =
-                    this.parentNode.parentNode.getElementsByTagName("select")[0];
+                let selectDom = this.parentNode.parentNode.getElementsByTagName("select")[0];
                 let selectedDom = this.parentNode.previousSibling;
-                for (let k = 0; k < selectDom.length; k++) {
-                    if (selectDom.options[k].innerHTML == this.innerHTML) {
+                for (let k = 1; k < selectDom.length; k++) {
+                    if (selectDom.options[k].value == $(this).data('value')) {
                         selectDom.selectedIndex = k;
-                        selectedDom.innerHTML = this.innerHTML;
-                        let hasActiveDoms =
-                            this.parentNode.getElementsByClassName("active");
-                        for (let l = 0; l < hasActiveDoms.length; l++) {
-                            hasActiveDoms[l].classList.remove("active");
+                        const data1 = selectDom.options[k].dataset.data1;
+                        const data2 = selectDom.options[k].dataset.data2;
+                        let data = '';
+                        data += data1 ? data1: '';
+                        data += data2 ? (' - ' + data2) : '';
+                        selectedDom.getElementsByClassName('select-text')[0].innerHTML = data;
+                        let hasActiveDoms = this.parentNode.getElementsByClassName("active");
+                        for(const ele of hasActiveDoms) {
+                            ele.classList.remove('active');
                         }
                         this.classList.add("active");
                         break;
                     }
                 }
-                selectedDom.click();
+                optionDom.parentNode.previousSibling.classList.remove('d-none'); //show select item
             });
 
             customOptions.appendChild(optionDom);
@@ -179,6 +199,7 @@ function drawSelectForm(selectPartDom) {
             e.stopPropagation();
             closeAllSelect();
             this.nextSibling.classList.toggle("select-hide");
+            this.classList.add('d-none');
         });
 }
 
@@ -186,6 +207,10 @@ function closeAllSelect() {
     let selectedItems = document.getElementsByClassName("select-items");
     for (const element of selectedItems) {
         element.classList.add("select-hide");
+    }
+    let selectSelectedDoms = document.getElementsByClassName('select-selected');
+    for (const element of selectSelectedDoms) {
+        element.classList.remove('d-none');
     }
 }
 

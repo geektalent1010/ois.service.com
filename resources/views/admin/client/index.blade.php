@@ -65,23 +65,26 @@
                     </div>
                     <div class="info-detail">
                         <div class="info-head">Country</div>
-                        <div class="info-value country-select form-select-custom" id="country-select">
-                            <select class="" id="data6" name="country" text="Country">
-                                <option value="0">select country</option>
-                                @foreach($countries as $country)
-                                    <option value="{{$country->id}}">{{$country->name}}</option>
-                                @endforeach
-                            </select>
+                        <div class="info-value" >
+                            <div class="country-select form-select-custom select-left-icon" id="country-select">
+                                <select class="" id="data6" name="country" text="Country">
+                                    <option value="0">select country</option>
+                                    @foreach($countries as $country)
+                                        <option value="{{$country->id}}"
+                                            data-data1="{{$country->name}}">{{$country->name}}</option>
+                                    @endforeach
+                                </select>
+                            </div>
                         </div>
                     </div>
                     <div class="info-detail">
                         <div class="info-head">Phone</div>
                         <div class="info-value">
-                            <div class="form-select-custom phone-code-select" id="phone-code-select">
+                            <div class="form-select-custom phone-code-select select-left-icon" id="phone-code-select">
                                 <select id="data7" name="phoneCode" text="Phone Code">
                                     <option value="0">select</option>
                                     @foreach($phoneCodes as $phoneCode)
-                                        <option>+{{$phoneCode}}</option>
+                                        <option data-data1="+{{$phoneCode}}">+{{$phoneCode}}</option>
                                     @endforeach
                                 </select>
                             </div>
