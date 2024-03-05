@@ -37,7 +37,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-color: #266ea5;
+                background-color: #003366;
                 border: 1px solid #005695;
                 cursor: pointer;
                 transition: 0.3s;
@@ -45,11 +45,11 @@
 
             .content-panel:hover {
                 transition: 0.3s;
-                background-color: #003366;
+                background-color: #00a9ea;
             }
 
             .content-panel.active {
-                background-color: #003366;
+                background-color: #00a9ea;
             }
         }
 

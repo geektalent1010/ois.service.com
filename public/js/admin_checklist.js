@@ -71,24 +71,6 @@ $(document).ready(function () {
             if($(this).hasClass('custom-content')) {
                 $('.content-but').addClass('focused');
             }
-            if($(this).hasClass('mt-10px')) {
-                $('.mt10-but').addClass('focused');
-            }
-            if($(this).hasClass('mt-20px')) {
-                $('.mt20-but').addClass('focused');
-            }
-            if($(this).hasClass('mt-30px')) {
-                $('.mt30-but').addClass('focused');
-            }
-            if($(this).hasClass('mb-10px')) {
-                $('.mb10-but').addClass('focused');
-            }
-            if($(this).hasClass('mb-20px')) {
-                $('.mb20-but').addClass('focused');
-            }
-            if($(this).hasClass('mb-30px')) {
-                $('.mb30-but').addClass('focused');
-            }
         }, 300);
     });
 
@@ -113,95 +95,6 @@ $(document).ready(function () {
             focusedDiv.removeClass("custom-sub-title");
             $(this).addClass('focused');
             $('.subtitle-but').removeClass('focused');
-        }
-    });
-
-    $('.mt10-but').click(function() {
-        let focusDiv = $('.card-body-custom div.focused');
-        if(focusDiv.length) {
-            focusDiv.addClass('mt-10px');
-            focusDiv.removeClass('mt-20px');
-            focusDiv.removeClass('mt-30px');
-            $(this).addClass('focused');
-            $('.mt20-but').removeClass('focused');
-            $('.mt30-but').removeClass('focused');
-        }
-    })
-
-    $('.mt20-but').click(function() {
-        let focusDiv = $('.card-body-custom div.focused');
-        if(focusDiv.length) {
-            focusDiv.addClass('mt-20px');
-            focusDiv.removeClass('mt-10px');
-            focusDiv.removeClass('mt-30px');
-            $(this).addClass('focused');
-            $('.mt10-but').removeClass('focused');
-            $('.mt30-but').removeClass('focused');
-        }
-    })
-
-    $('.mt30-but').click(function() {
-        let focusDiv = $('.card-body-custom div.focused');
-        if(focusDiv.length) {
-            focusDiv.addClass('mt-30px');
-            focusDiv.removeClass('mt-10px');
-            focusDiv.removeClass('mt-20px');
-            $(this).addClass('focused');
-            $('.mt20-but').removeClass('focused');
-            $('.mt10-but').removeClass('focused');
-        }
-    });
-
-
-    $('.mb10-but').click(function() {
-        let focusDiv = $('.card-body-custom div.focused');
-        if(focusDiv.length) {
-            focusDiv.addClass('mb-10px');
-            focusDiv.removeClass('mb-20px');
-            focusDiv.removeClass('mb-30px');
-            $(this).addClass('focused');
-            $('.mb20-but').removeClass('focused');
-            $('.mb30-but').removeClass('focused');
-        }
-    })
-
-    $('.mb20-but').click(function() {
-        let focusDiv = $('.card-body-custom div.focused');
-        if(focusDiv.length) {
-            focusDiv.addClass('mb-20px');
-            focusDiv.removeClass('mb-10px');
-            focusDiv.removeClass('mb-30px');
-            $(this).addClass('focused');
-            $('.mb10-but').removeClass('focused');
-            $('.mb30-but').removeClass('focused');
-        }
-    })
-
-    $('.mb30-but').click(function() {
-        let focusDiv = $('.card-body-custom div.focused');
-        if(focusDiv.length) {
-            focusDiv.addClass('mb-30px');
-            focusDiv.removeClass('mb-10px');
-            focusDiv.removeClass('mb-20px');
-            $(this).addClass('focused');
-            $('.mb20-but').removeClass('focused');
-            $('.mb10-but').removeClass('focused');
-        }
-    });
-
-
-    $('.reset-but').click(function() {
-        let focusDiv = $('.card-body-custom div.focused');
-        if(focusDiv.length) {
-            focusDiv.removeClass('custom-sub-title');
-            focusDiv.removeClass('custom-content');
-            focusDiv.removeClass('mt-10px');
-            focusDiv.removeClass('mt-20px');
-            focusDiv.removeClass('mt-30px');
-            focusDiv.removeClass('mb-10px');
-            focusDiv.removeClass('mb-20px');
-            focusDiv.removeClass('mb-30px');
-            $('.editor-but').removeClass('focused');
         }
     });
 
@@ -258,15 +151,6 @@ $(document).ready(function () {
         }
     });
 
-    $('.add-column-but').click(function() {
-        let focusDiv = $('.card-body-custom div.focused');
-        if(focusDiv.length) {
-            const table = focusDiv.closest('table');
-            $(table).find('thead tr').append('<th>[new]</th>');
-            $(table).find('tbody tr').append('<td>[new]</td>');
-        }
-    });
-
     $('.remove-table-but').click(function() {
         let focusDiv = $('.card-body-custom div.focused');
         if(focusDiv.length) {
@@ -274,6 +158,14 @@ $(document).ready(function () {
             $(table).remove();
         }
     });
+
+    $('.remove-row-but').click(function() {
+        let focusDiv = $('.card-body-custom div.focused');
+        if(focusDiv.length) {
+            const row = focusDiv.closest('tr');
+            $(row).remove();
+        }
+    })
 
     $(document).on('focus', '.card-custom div.editable', function() {
         $(this).addClass("outline");

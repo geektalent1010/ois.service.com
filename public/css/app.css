@@ -5092,7 +5092,7 @@ body {
 }
 
 .admin-profile-section .profile-body .my-access-part .access-detail-group .active {
-  background-color: #266ea5;
+  background-color: #00a9ea;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -5112,17 +5112,13 @@ body {
   height: calc(100vh - 120px);
   margin-top: 80px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   overflow-y: auto;
 }
 
 .admin-manager-section .manager-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-bottom: 30px;
   width: 50vw;
+  margin-left: 25vw;
 }
 
 .admin-manager-section .manager-body .main-title {
@@ -5137,7 +5133,7 @@ body {
 
 .admin-manager-section .manager-body .button-part {
   width: 100%;
-  display: flex;
+  display: none;
   justify-content: center;
 }
 
@@ -5148,7 +5144,7 @@ body {
   font-size: 16px;
   font-family: "DinPro", sans-serif;
   cursor: pointer;
-  background-color: #00a9ea;
+  background-color: #003366;
   border: none;
   color: white;
   transition: 0.3s;
@@ -5156,7 +5152,7 @@ body {
 }
 
 .admin-manager-section .manager-body .button-part button:hover {
-  background-color: #003366;
+  background-color: #00a9ea;
   transition: 0.3s;
 }
 
@@ -5236,6 +5232,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 35px;
 }
 
 .admin-manager-section .manager-body .roles-section .my-access-part {
@@ -5272,15 +5269,67 @@ body {
   background-color: #266ea5;
 }
 
+.admin-manager-section .manager-body .info-button {
+  display: none;
+  gap: 20px;
+}
+
+.admin-manager-section .manager-right-body {
+  width: 25vw;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.admin-manager-section .manager-right-body .right-button {
+  width: 150px;
+  background-color: #003366;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.admin-manager-section .manager-right-body .right-button:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.admin-manager-section .manager-right-body .right-button:not(:first-child) {
+  margin-top: 2px;
+}
+
+.admin-manager-section .manager-right-body .right-button.disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
 @media only screen and (max-width: 1080px) {
   .admin-manager-section .manager-body {
     width: 70%;
+    margin-left: 15%;
+  }
+
+  .admin-manager-section .manager-body .button-part {
+    display: flex;
+  }
+
+  .admin-manager-section .manager-body .my-profile-part .info-button {
+    display: flex;
+  }
+
+  .admin-manager-section .manager-right-body {
+    display: none;
   }
 }
 
 @media only screen and (max-width: 575.98px) {
   .admin-manager-section .manager-body {
     width: 100%;
+    margin-left: 0;
   }
 }
 
@@ -5289,17 +5338,13 @@ body {
   height: calc(100vh - 120px);
   margin-top: 80px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   overflow-y: auto;
 }
 
 .client-manager-section .manager-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-bottom: 30px;
   width: 50vw;
+  margin-left: 25vw;
 }
 
 .client-manager-section .manager-body .main-title {
@@ -5314,7 +5359,7 @@ body {
 
 .client-manager-section .manager-body .button-part {
   width: 100%;
-  display: flex;
+  display: none;
   justify-content: center;
 }
 
@@ -5325,7 +5370,7 @@ body {
   font-size: 16px;
   font-family: "DinPro", sans-serif;
   cursor: pointer;
-  background-color: #00a9ea;
+  background-color: #003366;
   border: none;
   color: white;
   transition: 0.3s;
@@ -5333,7 +5378,7 @@ body {
 }
 
 .client-manager-section .manager-body .button-part button:hover {
-  background-color: #003366;
+  background-color: #00a9ea;
   transition: 0.3s;
 }
 
@@ -5341,6 +5386,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding-bottom: 35px;
 }
 
 .client-manager-section .manager-body .my-profile-part .info-details {
@@ -5405,7 +5451,7 @@ body {
 }
 
 .client-manager-section .manager-body .my-profile-part .info-button {
-  display: flex;
+  display: none;
   justify-content: center;
   gap: 15px;
 }
@@ -5417,7 +5463,7 @@ body {
   font-size: 16px;
   font-family: "DinPro", sans-serif;
   cursor: pointer;
-  background-color: #00a9ea;
+  background-color: #003366;
   border: none;
   color: white;
   transition: 0.3s;
@@ -5425,60 +5471,66 @@ body {
 }
 
 .client-manager-section .manager-body .my-profile-part .info-button button:hover {
-  background-color: #003366;
+  background-color: #00a9ea;
   transition: 0.3s;
 }
 
-.client-manager-section .manager-body .roles-section {
-  width: 100%;
+.client-manager-section .manager-right-body {
+  width: 25vw;
+  padding-top: 80px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
 }
 
-.client-manager-section .manager-body .roles-section .my-access-part {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.client-manager-section .manager-body .roles-section .my-access-part .access-detail-group {
-  display: flex;
-  gap: 2px;
-}
-
-.client-manager-section .manager-body .roles-section .my-access-part .access-detail-group .access-detail {
-  display: flex;
-  width: 50%;
+.client-manager-section .manager-right-body .right-button {
+  width: 150px;
   background-color: #003366;
-  font-size: 16px;
-  font-family: "DinPro", sans-serif;
-  height: 46px;
+  height: 45px;
+  display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   transition: 0.3s;
 }
 
-.client-manager-section .manager-body .roles-section .my-access-part .access-detail-group .access-detail:hover {
+.client-manager-section .manager-right-body .right-button:hover {
   opacity: 0.7;
   transition: 0.3s;
 }
 
-.client-manager-section .manager-body .roles-section .my-access-part .access-detail-group .active {
-  background-color: #266ea5;
+.client-manager-section .manager-right-body .right-button:not(:first-child) {
+  margin-top: 2px;
+}
+
+.client-manager-section .manager-right-body .right-button.disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
 
 @media only screen and (max-width: 1080px) {
   .client-manager-section .manager-body {
     width: 70%;
+    margin-left: 15%;
+  }
+
+  .client-manager-section .manager-body .button-part {
+    display: flex;
+  }
+
+  .client-manager-section .manager-body .my-profile-part .info-button {
+    display: flex;
+  }
+
+  .client-manager-section .manager-right-body {
+    display: none;
   }
 }
 
 @media only screen and (max-width: 575.98px) {
   .client-manager-section .manager-body {
     width: 100%;
+    margin-left: 0;
   }
 
   .client-manager-section .manager-body .my-profile-part .info-button {
@@ -5520,37 +5572,163 @@ body {
   align-items: center;
 }
 
-.mail-manager-section .manager-body .content-edit-body {
+.mail-manager-section .manager-body .content-panel-part {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
 }
 
-.mail-manager-section .manager-body .content-edit-body .content-detail .title {
-  font-size: 24px;
-  font-family: "Montserrat Medium", sans-serif;
-  text-align: center;
-}
-
-.mail-manager-section .manager-body .content-edit-body .content-detail .sub-title {
-  font-size: 28px;
-  font-family: "Montserrat Medium", sans-serif;
-}
-
-.mail-manager-section .manager-body .content-edit-body .content-detail .description {
+.mail-manager-section .manager-body .content-panel-part .content-panel {
+  width: 25%;
+  font-family: "DinPro", sans-serif;
   font-size: 16px;
-  font-family: "Montserrat Regular", sans-serif;
-  line-height: 30px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #003366;
+  border: 1px solid #005695;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.mail-manager-section .manager-body .content-edit-body .content-detail .editable-content {
+.mail-manager-section .manager-body .content-panel-part .content-panel:hover {
+  transition: 0.3s;
+  background-color: #00a9ea;
+}
+
+.mail-manager-section .manager-body .content-panel-part .content-panel.active {
+  background-color: #00a9ea;
+}
+
+.mail-manager-section .manager-body .content-edit-body {
+  width: 100%;
+  margin-top: 30px;
+  border: 1px solid #003366;
+}
+
+.mail-manager-section .manager-body .content-edit-body .mail-header {
+  width: 100%;
+  height: 80px;
+  background-color: #003366;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.mail-manager-section .manager-body .content-edit-body .mail-header .mail-header-logo {
+  width: 50px;
+}
+
+.mail-manager-section .manager-body .content-edit-body .mail-header .mail-header-title {
+  font-size: 22px;
+}
+
+.mail-manager-section .manager-body .content-edit-body .mail-back {
+  width: 100%;
+}
+
+.mail-manager-section .manager-body .content-edit-body .mail-back img {
+  width: 100%;
+}
+
+.mail-manager-section .manager-body .content-edit-body .mail-edit-text {
+  background-color: #338dc9;
+  padding: 30px 30px;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.mail-manager-section .manager-body .content-edit-body .mail-edit-text .mail-text .mail-text-para {
+  padding-bottom: 20px;
+}
+
+.mail-manager-section .manager-body .content-edit-body .mail-edit-text .mail-text .mail-text-para span {
   outline: none;
-  border-radius: 10px;
-  padding: 5px 10px;
 }
 
-.mail-manager-section .manager-body .content-edit-body .content-detail .editable-focus {
-  outline: 2px solid #266ea5;
+.mail-manager-section .manager-body .content-edit-body .mail-edit-text .mail-confirm-button {
+  display: flex;
+  justify-content: center;
+}
+
+.mail-manager-section .manager-body .content-edit-body .mail-edit-text .mail-confirm-button button {
+  outline: none;
+  border: none;
+  width: 250px;
+  border-radius: 25px;
+  height: 40px;
+  background-color: #003366;
+  color: white;
+  font-size: 15px;
+}
+
+.mail-manager-section .manager-body .content-edit-body .mail-footer {
+  background-color: #005696;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.mail-manager-section .manager-body .content-edit-body .mail-footer .mail-footer-first {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.mail-manager-section .manager-body .content-edit-body .mail-footer .mail-footer-first .mail-footer-top-left {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.mail-manager-section .manager-body .content-edit-body .mail-footer .mail-footer-first .mail-footer-top-left .mail-click {
+  color: #338dc9;
+}
+
+.mail-manager-section .manager-body .content-edit-body .mail-footer .mail-footer-first .mail-footer-top-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.mail-manager-section .manager-body .content-edit-body .mail-footer .mail-footer-first .mail-footer-top-right .mail-social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.mail-manager-section .manager-body .content-edit-body .mail-footer .mail-footer-first .mail-footer-top-right .mail-social-icons .mail-social-icon img {
+  width: 30px;
+}
+
+.mail-manager-section .manager-body .content-edit-body .mail-footer .mail-footer-second {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.mail-manager-section .manager-body .content-edit-body .mail-footer .mail-footer-second .mail-terms-text {
+  color: #338dc9;
+}
+
+.mail-manager-section .manager-body .content-edit-body .mail-bottom-bar {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #003366;
+  font-size: 12px;
+}
+
+.mail-manager-section .manager-body .content-edit-body .mail-bottom-bar a {
+  color: #338dc9;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -5607,7 +5785,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #266ea5;
+  background-color: #003366;
   border: 1px solid #005695;
   cursor: pointer;
   transition: 0.3s;
@@ -5615,11 +5793,11 @@ body {
 
 .content-manager-section .manager-body .content-panel-part .content-panel:hover {
   transition: 0.3s;
-  background-color: #003366;
+  background-color: #00a9ea;
 }
 
 .content-manager-section .manager-body .content-panel-part .content-panel.active {
-  background-color: #003366;
+  background-color: #00a9ea;
 }
 
 .content-manager-section .manager-body .content-edit-body {
@@ -5758,11 +5936,11 @@ body {
 }
 
 .price-manager-section .manager-body {
+  padding-bottom: 30px;
+  width: 50vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 30px;
-  width: 50vw;
 }
 
 .price-manager-section .manager-body .main-title {
@@ -5775,18 +5953,16 @@ body {
   align-items: center;
 }
 
-.price-manager-section .manager-body .select-form {
+.price-manager-section .manager-body .select-part {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.price-manager-section .manager-body .select-part .select-form {
   width: 300px;
   height: 45px;
   border-radius: 23px;
-}
-
-.price-manager-section .manager-body .select-form .select-items {
-  border-radius: 10px;
-}
-
-.price-manager-section .manager-body .select-form .select-city {
-  text-align: right;
 }
 
 .price-manager-section .manager-body .edit-form {
@@ -5828,30 +6004,44 @@ body {
   outline: 1px solid white;
 }
 
-.editor-panel {
-  position: fixed;
-  right: 0;
-  bottom: 50%;
+.price-manager-section .manager-right-body {
+  width: 150px;
   display: flex;
-  gap: 10px;
-  transform: translateX(100%);
-  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  width: 210px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+  position: fixed;
+  z-index: 10;
+  right: 2px;
+  top: 235px;
 }
 
-.editor-panel .editor-but {
-  border-radius: 10px;
+.price-manager-section .manager-right-body .right-button {
+  width: 150px;
+  background-color: #003366;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.editor-panel.show {
-  transform: translateX(0);
-  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+.price-manager-section .manager-right-body .right-button:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.price-manager-section .manager-right-body .right-button:not(:first-child) {
+  margin-top: 2px;
 }
 
 @media only screen and (max-width: 1080px) {
   .price-manager-section .manager-body {
     width: 70%;
+  }
+
+  .price-manager-section .manager-right-body .right-button {
+    opacity: 0.7;
   }
 }
 
@@ -5872,11 +6062,11 @@ body {
 }
 
 .checklist-manager-section .manager-body {
+  padding-bottom: 30px;
+  width: 50vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 30px;
-  width: 50vw;
 }
 
 .checklist-manager-section .manager-body .main-title {
@@ -5987,36 +6177,47 @@ body {
   outline: 1px solid white;
 }
 
-.editor-panel {
-  position: fixed;
-  right: 0;
-  bottom: 60px;
+.checklist-manager-section .manager-right-body {
+  width: 150px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  width: 250px;
-  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  max-height: 500px;
-  overflow-y: auto;
+  flex-direction: column;
+  align-items: flex-end;
+  position: fixed;
+  z-index: 10;
+  right: 2px;
+  top: 350px;
 }
 
-.editor-panel .editor-but {
-  width: 120px;
-  border-radius: 10px;
-}
-
-.editor-panel .focused {
+.checklist-manager-section .manager-right-body .editor-but {
+  width: 150px;
   background-color: #003366;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
-.editor-panel.show {
-  transform: translateX(0);
-  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+.checklist-manager-section .manager-right-body .editor-but:not(:first-child) {
+  margin-top: 2px;
+}
+
+.checklist-manager-section .manager-right-body .editor-but.focused {
+  opacity: 1;
 }
 
 @media only screen and (max-width: 1080px) {
   .checklist-manager-section .manager-body {
     width: 90%;
+  }
+
+  .checklist-manager-section .manager-right-body .editor-but {
+    opacity: 0.7;
+  }
+
+  .checklist-manager-section .manager-right-body .editor-but:hover {
+    opacity: 1;
   }
 }
 

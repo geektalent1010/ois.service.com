@@ -3,6 +3,8 @@ const contentPanel = document.getElementsByClassName('content-panel');
 for(const ele of contentPanel) {
     ele.addEventListener('click', function(e) {
         $("#titleId").val($(this).text());
+        $('.content-panel').removeClass('active');
+        $(this).addClass('active');
         $("#title-form").submit();
     });
 }

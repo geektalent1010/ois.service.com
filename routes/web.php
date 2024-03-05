@@ -112,6 +112,7 @@ Route::post('/password', 'LandingController@password')->name('password');
             Route::post('createAdmin', 'Admin\AdminManagerController@createAdmin')->name('admin.manager.create');
             Route::post('updateAdmin', 'Admin\AdminManagerController@updateAdmin')->name('admin.manager.update');
             Route::post('getManagerInfo', 'Admin\AdminManagerController@getManagerInfo')->name('admin.manager.info');
+            Route::post('deleteAdmin', 'Admin\AdminManagerController@deleteAdmin')->name('admin.manager.delete');
 
             Route::get('client', 'Admin\ClientManagerController@index')->name('admin.client.index');
             Route::post('createClient', 'Admin\ClientManagerController@createClient')->name('admin.client.create');

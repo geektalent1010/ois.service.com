@@ -5,7 +5,7 @@ $(document).ready(function () {
 
     $("#country-select-form").submit(function (e) {
         e.preventDefault();
-        $(".editor-panel").removeClass("show");
+        $('.right-button').addClass('disabled');
         $.ajax({
             url: "/admin/getPrice",
             type: "post",
@@ -72,7 +72,7 @@ $(document).ready(function () {
                 console.log(res);
                 $(".card-body-custom > div").attr("tabindex", 0);
                 if ((res.status == "success")) {
-                    $(".editor-panel").removeClass("show");
+                    $('.right-button').addClass('disabled');
                     toastr["success"]("Published successfully", "Success");
                 } else {
                     toastr["error"]("500 Error", "Error");
@@ -82,7 +82,7 @@ $(document).ready(function () {
     });
 
     $(".editable").on("focus", function () {
-        $(".editor-panel").addClass("show");
+        $('.right-button').removeClass('disabled');
     });
 
     $(document).on("focus", ".card-body-custom > div", function () {
@@ -90,15 +90,16 @@ $(document).ready(function () {
         $(this).addClass("focused");
     });
 
-    $(".subtitle-but").click(function () {
+    $("#subtitle-button-right").click(function () {
         let focusedDiv = $(".card-body-custom > div.focused");
+        console.log('aaa');
         if (focusedDiv.length) {
             focusedDiv.addClass("custom-sub-title");
             focusedDiv.removeClass("custom-content");
         }
     });
 
-    $(".content-but").click(function () {
+    $("#content-button-right").click(function () {
         let focusedDiv = $(".card-body-custom > div.focused");
         if (focusedDiv.length) {
             focusedDiv.addClass("custom-content");

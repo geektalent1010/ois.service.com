@@ -234,4 +234,17 @@ class AdminManagerController extends Controller
         }
         return json_encode($res);
     }
+
+    public function deleteAdmin(Request $request) {
+        $userid = $request->input('userid');
+        $user = User::find($userid);
+        if($user) {
+            $user->delete();
+            $res['status'] = true;
+        } else {
+            $res['status'] = false;
+        }
+
+        return json_encode($res);
+    }
 }

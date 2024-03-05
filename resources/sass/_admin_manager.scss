@@ -3,16 +3,12 @@
     height: calc(100vh - 120px);
     margin-top: 80px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     overflow-y: auto;
 
     .manager-body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         padding-bottom: 30px;
         width: 50vw;
+        margin-left: 25vw;
 
         .main-title {
             font-size: 21px;
@@ -26,7 +22,7 @@
 
         .button-part {
             width: 100%;
-            display: flex;
+            display: none;
             justify-content: center;
 
             button {
@@ -36,7 +32,7 @@
                 font-size: 16px;
                 font-family: "DinPro", sans-serif;
                 cursor: pointer;
-                background-color: #00a9ea;
+                background-color: #003366;
                 border: none;
                 color: white;
                 transition: 0.3s;
@@ -44,7 +40,7 @@
             }
 
             button:hover {
-                background-color: #003366;
+                background-color: #00a9ea;
                 transition: 0.3s;
             }
         }
@@ -127,6 +123,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding-bottom: 35px;
 
             .my-access-part {
                 width: 100%;
@@ -162,6 +159,44 @@
                 }
             }
         }
+
+        .info-button {
+            display: none;
+            gap: 20px;
+        }
+    }
+
+    .manager-right-body {
+        width: 25vw;
+        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .right-button {
+            width: 150px;
+            background-color: #003366;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+                opacity: 0.7;
+                transition: 0.3s;
+            }
+
+            &:not(:first-child) {
+                margin-top: 2px;
+            }
+
+            &.disabled {
+                opacity: 0.7;
+                cursor: not-allowed;
+            }
+        }
     }
 }
 
@@ -169,6 +204,21 @@
     .admin-manager-section {
         .manager-body {
             width: 70%;
+            margin-left: 15%;
+
+            .button-part {
+                display: flex;
+            }
+
+            .my-profile-part {
+                .info-button {
+                    display: flex;
+                }
+            }
+        }
+
+        .manager-right-body {
+            display: none;
         }
     }
 }
@@ -177,6 +227,9 @@
     .admin-manager-section {
         .manager-body {
             width: 100%;
+            margin-left: 0;
+
         }
     }
+
 }
