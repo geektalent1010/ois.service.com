@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => 'CMS'], ['VIDEO_LOCK' => true])
+@extends('layouts.app', ['ACTIVE_TITLE' => 'ADMIN'], ['VIDEO_LOCK' => true])
 
 @section('title', __('- CMS Log In'))
 
@@ -10,7 +10,7 @@
     <div class="row justify-content-center m-0 p-0 login-section">
         <div class="login-page body-section d-flex flex-column align-items-center">
             <div class="login-title text-center">
-                <p>CMS PORTAL</p>
+                <p>ADMIN PORTAL</p>
                 <span>FOR ADMIN ONLY</span>
             </div>
             <form method="POST" class="mt-3" action="{{ route('admin.login') }}">
