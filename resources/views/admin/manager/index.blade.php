@@ -46,11 +46,11 @@
                     <div class="info-detail">
                         <div class="info-head">Phone</div>
                         <div class="info-value">
-                            <div class="form-select-custom phone-code-select" id="phone-code-select">
+                            <div class="form-select-custom phone-code-select select-left-icon" id="phone-code-select">
                                 <select id="data3" name="phoneCode" text="Phone Code">
-                                    <option value="0">select</option>
+                                    <option value="0">Code</option>
                                     @foreach($phoneCodes as $phoneCode)
-                                        <option>+{{$phoneCode}}</option>
+                                        <option data-data1="+{{$phoneCode}}">+{{$phoneCode}}</option>
                                     @endforeach
                                 </select>
                             </div>
@@ -66,36 +66,46 @@
                     <div class="info-detail">
                         <div class="info-head">Center</div>
                         <div class="info-value">
-                            <input type="text" id="data6" name="city" text="Center" value="" class="form-input-custom" />
-                        </div>
-                    </div>
-                    <div class="info-detail">
-                        <div class="info-head">Country</div>
-                        <div class="info-value country-select form-select-custom" id="country-select">
-                            <select class="" id="data7" name="country" text="Country">
-                                <option value="0">select country</option>
-                                @foreach($countries as $country)
-                                    <option value="{{$country->id}}">{{$country->name}}</option>
-                                @endforeach
-                            </select>
+                            <div class="form-select-custom select-left-icon" id="center-select">
+                                <select class="" id="data6" name="center" text="Center">
+                                    <option value="0">Country + Center</option>
+                                    @foreach($offices as $country => $cities)
+                                        @foreach ($cities as $key => $office)
+                                            <option value="{{$office->id}}"
+                                                data-data1="{{$office->country}}"
+                                                data-data2="{{$office->city}}">
+                                                {{$office->country}} - {{$office->city}}
+                                            </option>
+                                        @endforeach
+
+                                    @endforeach
+                                </select>
+                            </div>
                         </div>
                     </div>
                     <div class="info-detail">
                         <div class="info-head">Role</div>
                         <div class="info-value">
-                            <input type="text" id="data8" name="role" text="Role" value="Admin" disabled class="form-input-custom" />
+                            <div class="form-select-custom role-select select-left-icon" id="role-select">
+                                <select id="data7" name="role" text="Role">
+                                    <option value="0">Role</option>
+                                    <option value="2" data-data1="Super Admin"></option>
+                                    <option value="1" data-data1="Center Head"></option>
+                                    <option value="0" data-data1="Customer Executive"></option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                     <div class="info-detail">
                         <div class="info-head">User Name</div>
                         <div class="info-value">
-                            <input type="text" id="data9" name="username" text="User Name" value="" class="form-input-custom" />
+                            <input type="text" id="data8" name="username" text="User Name" value="" class="form-input-custom" />
                         </div>
                     </div>
                     <div class="info-detail">
                         <div class="info-head">Password</div>
                         <div class="info-value">
-                            <input type="password" id="data10" name="password" text="Password" value="" class="form-input-custom" />
+                            <input type="password" id="data9" name="password" text="Password" value="" class="form-input-custom" />
                         </div>
                     </div>
                 </div>

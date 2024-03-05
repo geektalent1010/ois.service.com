@@ -69,6 +69,17 @@
                             color: white;
                         }
 
+                        .form-select-custom.select-left-icon {
+                            .select-selected {
+                                padding-left: 7px;
+                                gap: 8px;
+                            }
+                        }
+
+                        .form-select-custom {
+                            width: 100%;
+                        }
+
                         .phone-code-select {
                             width: 30%;
                             height: 100%;
@@ -97,7 +108,7 @@
                 .access-detail {
                     display: flex;
                     width: 50%;
-                    background-color: #266ea5;
+                    background-color: #003366;
                     font-size: 16px;
                     font-family: "DinPro", sans-serif;
                     height: 46px;
@@ -113,7 +124,7 @@
                 }
 
                 .active {
-                    background-color: #003366;
+                    background-color: #266ea5;
                 }
             }
 

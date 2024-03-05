@@ -23,8 +23,9 @@
                                 @foreach ($offices as $country => $cities)
                                     @foreach($cities as $key => $city)
                                         <option value="{{$city->id}}"
-                                            data-country="{{$country}}">
-                                            {{$country}} - {{$city->city}}
+                                            data-data1="{{$country}}"
+                                            data-data2="{{$city->city}}">
+                                            {{$country}}-{{$city->city}}
                                         </option>
                                     @endforeach
                                 @endforeach
@@ -36,10 +37,10 @@
                         <div class="form-select-custom" id="type-select-div">
                             <select name="type" id="type-select" class="">
                                 <option value="0">Passport Type</option>
-                                <option value="Diplomatic">Diplomatic Passport</option>
-                                <option value="Official">Official Passport</option>
-                                <option value="Standard">Standard Passport</option>
-                                <option value="UN">UN Passport</option>
+                                <option value="Diplomatic" data-data1="Diplomatic Passport"></option>
+                                <option value="Official" data-data1="Official Passport"></option>
+                                <option value="Standard" data-data1="Standard Passport"></option>
+                                <option value="UN" data-data1="UN Passport"></option>
                             </select>
                         </div>
                     </div>
