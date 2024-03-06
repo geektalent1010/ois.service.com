@@ -59,6 +59,7 @@
             <div class="editor-but remove-table-but" id="remove-table-button-right">REMOVE TABLE</div>
             <div class="editor-but add-row-but" id="add-row-button-right">ADD ROW</div>
             <div class="editor-but remove-row-but" id="remove-row-button-right">REMOVE ROW</div>
+            <div class="editor-but remove-column-but" id="remove-column-button-right">REMOVE COLUMN</div>
         </div>
     </div>
 </div>
