@@ -84,7 +84,7 @@
             .register-button {
                 width: 100%;
                 height: 44px;
-                background: #00a9ea;
+                background: #003366;
                 display: block;
                 text-transform: uppercase;
                 color: #ffffff;
@@ -94,16 +94,16 @@
                 border-radius: 10rem;
                 font-size: 16px;
                 font-family: "DinPro", sans-serif;
-                border: 0.1rem solid #00a9ea;
+                border: none;
                 cursor: pointer;
             }
             .send-button {
                 font-size: 16px;
             }
             .register-button:hover {
-                background: #003366 !important;
+                background: #00a9ea !important;
                 color: #ffffff !important;
-                border-color: #003366 !important;
+                border-color: none;
             }
             .register-button:focus,
             .register-button:active {

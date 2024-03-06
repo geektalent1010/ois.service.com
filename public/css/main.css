@@ -124,7 +124,7 @@ body {
 .headerSection .dark-bg {
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    background-color: #003366;
     opacity: 0.5;
     z-index: 100;
     display: none;
@@ -814,7 +814,7 @@ footer .social-section .icon-section .social-icon:hover {
 .login-page .login-button {
     width: 100%;
     height: 44px;
-    background: #00a9ea;
+    background: #003366;
     display: block;
     color: #ffffff;
     -webkit-border-radius: 10rem;
@@ -823,7 +823,7 @@ footer .social-section .icon-section .social-icon:hover {
     border-radius: 10rem;
     font-size: 16px;
     font-family: "DinPro", sans-serif;
-    border: 0.1rem solid #00a9ea;
+    border: none;
     cursor: pointer;
 }
 
@@ -832,7 +832,7 @@ footer .social-section .icon-section .social-icon:hover {
 }
 
 .login-page .login-button:hover {
-    background: #003366 !important;
+    background: #00a9ea!important;
     color: #ffffff !important;
     border-color: #003366 !important;
 }
