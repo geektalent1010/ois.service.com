@@ -15,14 +15,18 @@ class Controller extends BaseController
     public function __construct() {
         $lang = cache('lang');
         $this->modalData[0] = Content::where('lang', $lang)
-        ->where('title', 'TERMS OF USE')
+        ->where('title', 'DISCLAIMERS')
         ->where('order_num', 1)
         ->first();
         $this->modalData[1] = Content::where('lang', $lang)
-        ->where('title', 'PRIVACY POLICY')
+        ->where('title', 'TERMS OF USE')
         ->where('order_num', 1)
         ->first();
         $this->modalData[2] = Content::where('lang', $lang)
+        ->where('title', 'PRIVACY POLICY')
+        ->where('order_num', 1)
+        ->first();
+        $this->modalData[3] = Content::where('lang', $lang)
         ->where('title', 'DATA PROJECT')
         ->where('order_num', 1)
         ->first();

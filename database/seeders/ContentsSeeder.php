@@ -188,7 +188,61 @@ class ContentsSeeder extends Seeder
     ]);
     Content::create([
       'title' => 'DISCLAIMERS',
-      'content' => '',
+      'content' => '
+          <div class="main-title">
+            Nigerian Immigration Service (NIS) VISA Processing
+          </div>
+          <div class="sub-body">
+            <div class="sub-section">
+                <p class="para-section">
+                    The following disclaimer outlines the roles and responsibilities of Online Integrated Solutions (OIS) and the Nigerian Immigration Service (NIS) regarding VISA appointments and processing. This disclaimer is intended to provide clarity and transparency to users of the OIS website:
+                </p>
+            </div>
+            <div class="sub-title">1. Appointment Booking:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    OIS facilitates the booking of VISA appointments on behalf of customers. Customers are advised to accurately provide all necessary information during the appointment booking process.
+                </p>
+            </div>
+            <div class="sub-title">2. Processing Responsibility:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    While OIS assists in booking VISA appointments with the NIS, it is important to note that the processing and issuance of the VISA are solely the responsibility of the Nigerian Immigration Service. In all respects, OIS provides non-judgemental services and therefore does not have control over the VISA processing times or the final decision regarding VISA issuance in any manner whatsoever.
+                </p>
+            </div>
+            <div class="sub-title">3. Processing Times:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    OIS makes reasonable efforts to provide customers with estimated processing times based on information available from the NIS. However, the actual processing times may vary due to factors beyond OIS\'s control, such as changes in regulations, volume of applications, individual and  circumstances.
+                </p>
+            </div>
+            <div class="sub-title">4. Information Accuracy:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    OIS strives to provide accurate and up-to-date information regarding VISA requirements and appointment procedures. However, customers are advised to independently verify the information provided and consult official sources, such as the NIS website, for the most current information.
+                </p>
+            </div>
+            <div class="sub-title">5. Disclaimer of Liability:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    OIS shall not be held liable for any delays, denials, or other issues arising from the VISA application and processing. OIS\'s role is limited to facilitating the appointment booking process and conveying customer information to the NIS.
+                </p>
+            </div>
+            <div class="sub-title">6. Indemnification:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    Users of the OIS website agrees to indemnify and hold OIS harmless from any claims, demands, actions, suits, or proceedings arising from or related to the VISA application process.
+                </p>
+            </div>
+            <div class="sub-section">
+                <p class="para-section">
+                    While OIS endeavours to provide a seamless and efficient appointment booking experience, it is important for users to understand that the Nigerian Immigration Service is solely responsible for VISA processing, including processing times, decisions, and issuance. Users are encouraged to exercise due diligence and seek official information from the NIS regarding VISA processing.
+                </p>
+                <p class="para-section">
+                    If you have any questions or concerns about this disclaimer, please contact us.
+                </p>
+            </div>
+          </div>',
       'order_num' => 1,
       'lang' => 'en',
     ]);
@@ -955,34 +1009,34 @@ class ContentsSeeder extends Seeder
       'lang' => 'en',
     ]);
     Content::create([
-        'title' => 'MAIL',
-        'content' => 'Hi',
-        'order_num' => 1,
-        'lang' => 'en',
+      'title' => 'MAIL',
+      'content' => 'Hi',
+      'order_num' => 1,
+      'lang' => 'en',
     ]);
     Content::create([
-        'title' => 'MAIL',
-        'content' => 'Welcome to OIS Services and thank your for creating a client account.',
-        'order_num' => 2,
-        'lang' => 'en',
+      'title' => 'MAIL',
+      'content' => 'Welcome to OIS Services and thank your for creating a client account.',
+      'order_num' => 2,
+      'lang' => 'en',
     ]);
     Content::create([
-        'title' => 'MAIL',
-        'content' => 'Since we protect our clients data and personal information, we kindly ask you to confirm your email address by clicking the email confirmation button below.',
-        'order_num' => 3,
-        'lang' => 'en',
+      'title' => 'MAIL',
+      'content' => 'Since we protect our clients data and personal information, we kindly ask you to confirm your email address by clicking the email confirmation button below.',
+      'order_num' => 3,
+      'lang' => 'en',
     ]);
     Content::create([
-        'title' => 'MAIL',
-        'content' => 'Thank you for joining our community.',
-        'order_num' => 4,
-        'lang' => 'en',
+      'title' => 'MAIL',
+      'content' => 'Thank you for joining our community.',
+      'order_num' => 4,
+      'lang' => 'en',
     ]);
     Content::create([
-        'title' => 'MAIL',
-        'content' => 'Your OIS Support Team',
-        'order_num' => 5,
-        'lang' => 'en',
+      'title' => 'MAIL',
+      'content' => 'Your OIS Support Team',
+      'order_num' => 5,
+      'lang' => 'en',
     ]);
 
     //cn
@@ -1156,7 +1210,62 @@ class ContentsSeeder extends Seeder
     ]);
     Content::create([
       'title' => 'DISCLAIMERS',
-      'content' => '',
+      'content' => '
+    <div class="main-title">
+        尼日利亚移民局 (NIS) 签证处理
+    </div>
+    <div class="sub-body">
+      <div class="sub-section">
+          <p class="para-section">
+              以下免责声明概述了在线综合解决方案 (OIS) 和尼日利亚移民局 (NIS) 在签证预约和处理方面的角色和责任。 本免责声明旨在向 OIS 网站的用户提供清晰度和透明度：
+          </p>
+      </div>
+      <div class="sub-title">1. 预约：</div>
+      <div class="sub-section">
+          <p class="para-section">
+              OIS 方便代表客户预订 VISA 预约。 建议客户在预约过程中准确提供所有必要的信息。
+          </p>
+      </div>
+      <div class="sub-title">2. 处理责任：</div>
+      <div class="sub-section">
+          <p class="para-section">
+              虽然 OIS 协助向 NIS 预订签证预约，但值得注意的是，签证的处理和签发仅由尼日利亚移民局负责。 在所有方面，OIS 均提供非评判性服务，因此无法以任何方式控制 VISA 处理时间或有关 VISA 签发的最终决定。
+          </p>
+      </div>
+      <div class="sub-title">3. 处理时间：</div>
+      <div class="sub-section">
+          <p class="para-section">
+              OIS 会根据 NIS 提供的信息，尽合理努力为客户提供预计的处理时间。 然而，实际处理时间可能会因 OIS 无法控制的因素而有所不同，例如法规、申请量、个人和环境的变化。
+          </p>
+      </div>
+      <div class="sub-title">4. 信息准确度：</div>
+      <div class="sub-section">
+          <p class="para-section">
+              OIS 致力于提供有关签证要求和预约程序的准确且最新的信息。 但是，建议客户独立验证所提供的信息，并咨询官方来源（例如 NIS 网站）以获取最新信息。
+          </p>
+      </div>
+      <div class="sub-title">5. 免责声明：</div>
+      <div class="sub-section">
+          <p class="para-section">
+              OIS 对 VISA 申请和处理过程中出现的任何延误、拒绝或其他问题不承担任何责任。 OIS 的作用仅限于促进预约流程并向 NIS 传达客户信息。
+          </p>
+      </div>
+      <div class="sub-title">6. 赔偿：</div>
+      <div class="sub-section">
+          <p class="para-section">
+              OIS 网站的用户同意赔偿 OIS 并使其免受因 VISA 申请流程引起或与之相关的任何索赔、要求、行动、诉讼或程序的损害。
+          </p>
+      </div>
+      <div class="sub-section">
+          <p class="para-section">
+              虽然 OIS 致力于提供无缝、高效的预约体验，但用户必须了解尼日利亚移民局全权负责签证处理，包括处理时间、决定和签发。 我们鼓励用户进行尽职调查并从 NIS 寻求有关 VISA 处理的官方信息。
+          </p>
+          <p class="para-section">
+              如果您对此免责声明有任何疑问或疑虑，请联系我们。
+          </p>
+      </div>
+    </div>
+      ',
       'order_num' => 1,
       'lang' => 'cn',
     ]);
@@ -2094,7 +2203,61 @@ class ContentsSeeder extends Seeder
     ]);
     Content::create([
       'title' => 'DISCLAIMERS',
-      'content' => '',
+      'content' => '
+          <div class="main-title">
+            معالجة تأشيرة دائرة الهجرة النيجيرية (NIS).
+          </div>
+          <div class="sub-body">
+            <div class="sub-section">
+                <p class="para-section">
+                    يوضح إخلاء المسؤولية التالي أدوار ومسؤوليات شركة الحلول المتكاملة عبر الإنترنت (OIS) وخدمة الهجرة النيجيرية (NIS) فيما يتعلق بمواعيد ومعالجة طلبات التأشيرة. يهدف إخلاء المسؤولية هذا إلى توفير الوضوح والشفافية لمستخدمي موقع OIS:
+                </p>
+            </div>
+            <div class="sub-title">1. حجز المواعيد:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    تسهل OIS حجز مواعيد VISA نيابة عن العملاء. يُنصح العملاء بتقديم جميع المعلومات الضرورية بدقة أثناء عملية حجز الموعد.
+                </p>
+            </div>
+            <div class="sub-title">2. مسؤولية المعالجة:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    بينما تساعد OIS في حجز مواعيد التأشيرة مع NIS، من المهم ملاحظة أن معالجة وإصدار التأشيرة تقع على عاتق دائرة الهجرة النيجيرية وحدها. في جميع النواحي، تقدم OIS خدمات غير قضائية، وبالتالي لا تملك السيطرة على أوقات معالجة التأشيرة أو القرار النهائي بشأن إصدار التأشيرة بأي شكل من الأشكال.
+                </p>
+            </div>
+            <div class="sub-title">3. أوقات المعالجة:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    تبذل OIS جهودًا معقولة لتزويد العملاء بأوقات المعالجة المقدرة بناءً على المعلومات المتاحة من NIS. ومع ذلك، قد تختلف أوقات المعالجة الفعلية بسبب عوامل خارجة عن سيطرة OIS، مثل التغييرات في اللوائح وحجم الطلبات والأفراد والظروف.
+                </p>
+            </div>
+            <div class="sub-title">4. دقة المعلومات:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    تسعى OIS جاهدة لتوفير معلومات دقيقة وحديثة فيما يتعلق بمتطلبات التأشيرة وإجراءات التعيين. ومع ذلك، يُنصح العملاء بالتحقق بشكل مستقل من المعلومات المقدمة والرجوع إلى المصادر الرسمية، مثل موقع NIS الإلكتروني، للحصول على أحدث المعلومات.
+                </p>
+            </div>
+            <div class="sub-title">5. إخلاء المسؤولية:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    لن تتحمل شركة OIS المسؤولية عن أي تأخير أو رفض أو أي مشكلات أخرى تنشأ عن طلب التأشيرة ومعالجتها. يقتصر دور OIS على تسهيل عملية حجز المواعيد ونقل معلومات العميل إلى NIS.
+                </p>
+            </div>
+            <div class="sub-title">6. التعويض:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    يوافق مستخدمو موقع OIS على تعويض OIS وحمايته من أي مطالبات أو طلبات أو إجراءات أو دعاوى أو إجراءات تنشأ عن أو تتعلق بعملية طلب التأشيرة.
+                </p>
+            </div>
+            <div class="sub-section">
+                <p class="para-section">
+                    بينما تسعى OIS إلى توفير تجربة حجز مواعيد سلسة وفعالة، فمن المهم للمستخدمين أن يفهموا أن خدمة الهجرة النيجيرية هي المسؤولة الوحيدة عن معالجة التأشيرة، بما في ذلك أوقات المعالجة والقرارات والإصدار. يتم تشجيع المستخدمين على ممارسة العناية الواجبة وطلب المعلومات الرسمية من NIS فيما يتعلق بمعالجة التأشيرة.
+                </p>
+                <p class="para-section">
+                    إذا كانت لديك أي أسئلة أو استفسارات بشأن إخلاء المسؤولية هذا، فيرجى الاتصال بنا.
+                </p>
+            </div>
+          </div>',
       'order_num' => 1,
       'lang' => 'ar',
     ]);
@@ -3032,7 +3195,61 @@ class ContentsSeeder extends Seeder
     ]);
     Content::create([
       'title' => 'DISCLAIMERS',
-      'content' => '',
+      'content' => '
+          <div class="main-title">
+            Traitement des visas du Service d\'immigration nigérian (NIS)
+          </div>
+          <div class="sub-body">
+            <div class="sub-section">
+                <p class="para-section">
+                    La clause de non-responsabilité suivante décrit les rôles et les responsabilités des solutions intégrées en ligne (OIS) et du service d\'immigration nigérian (NIS) concernant les rendez-vous et le traitement des VISA. Cette clause de non-responsabilité vise à apporter clarté et transparence aux utilisateurs du site Web de l\'OIS :
+                </p>
+            </div>
+            <div class="sub-title">1. Prise de rendez-vous :</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    OIS facilite la prise de rendez-vous VISA pour le compte des clients. Il est conseillé aux clients de fournir avec précision toutes les informations nécessaires lors du processus de prise de rendez-vous.
+                </p>
+            </div>
+            <div class="sub-title">2. Responsabilité du traitement :</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    Bien que l\'OIS aide à prendre des rendez-vous pour un VISA avec le NIS, il est important de noter que le traitement et la délivrance du VISA relèvent uniquement de la responsabilité du service d\'immigration nigérian. À tous égards, OIS fournit des services sans jugement et n\'a donc aucun contrôle sur les délais de traitement du VISA ou sur la décision finale concernant la délivrance du VISA, de quelque manière que ce soit.
+                </p>
+            </div>
+            <div class="sub-title">3. Délais de traitement :</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    OIS fait des efforts raisonnables pour fournir aux clients des délais de traitement estimés sur la base des informations disponibles auprès du NIS. Cependant, les délais de traitement réels peuvent varier en raison de facteurs indépendants de la volonté de l\'OIS, tels que les changements de réglementation, le volume de demandes, les individus et les circonstances.
+                </p>
+            </div>
+            <div class="sub-title">4. Exactitude des informations :</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    OIS s\'efforce de fournir des informations précises et à jour concernant les exigences en matière de VISA et les procédures de rendez-vous. Il est toutefois conseillé aux clients de vérifier de manière indépendante les informations fournies et de consulter des sources officielles, telles que le site Web de NIS, pour obtenir les informations les plus récentes.
+                </p>
+            </div>
+            <div class="sub-title">5. Avis de non-responsabilité:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    OIS ne pourra être tenu responsable de tout retard, refus ou autre problème découlant de la demande et du traitement du VISA. Le rôle de l\'OIS se limite à faciliter le processus de prise de rendez-vous et à transmettre les informations client au NIS.
+                </p>
+            </div>
+            <div class="sub-title">6. Indemnisation:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    Les utilisateurs du site Web d\'OIS acceptent d\'indemniser et de dégager OIS de toute responsabilité concernant toute réclamation, demande, action, poursuite ou procédure découlant de ou liée au processus de demande de VISA.
+                </p>
+            </div>
+            <div class="sub-section">
+                <p class="para-section">
+                    Bien que l\'OIS s\'efforce de fournir une expérience de prise de rendez-vous transparente et efficace, il est important que les utilisateurs comprennent que le service d\'immigration nigérian est seul responsable du traitement des VISA, y compris les délais de traitement, les décisions et la délivrance. Les utilisateurs sont encouragés à faire preuve de diligence raisonnable et à rechercher des informations officielles auprès du NIS concernant le traitement des VISA.
+                </p>
+                <p class="para-section">
+                    Si vous avez des questions ou des préoccupations concernant cette clause de non-responsabilité, veuillez nous contacter.
+                </p>
+            </div>
+          </div>',
       'order_num' => 1,
       'lang' => 'fr',
     ]);
@@ -3970,7 +4187,61 @@ class ContentsSeeder extends Seeder
     ]);
     Content::create([
       'title' => 'DISCLAIMERS',
-      'content' => '',
+      'content' => '
+          <div class="main-title">
+            Visumbearbeitung durch den nigerianischen Einwanderungsdienst (NIS).
+          </div>
+          <div class="sub-body">
+            <div class="sub-section">
+                <p class="para-section">
+                    Der folgende Haftungsausschluss beschreibt die Rollen und Verantwortlichkeiten von Online Integrated Solutions (OIS) und der nigerianischen Einwanderungsbehörde (NIS) in Bezug auf VISA-Termine und -Bearbeitung. Dieser Haftungsausschluss soll den Nutzern der OIS-Website Klarheit und Transparenz bieten:
+                </p>
+            </div>
+            <div class="sub-title">1. Terminbuchung:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    OIS erleichtert die Buchung von VISA-Terminen im Namen der Kunden. Kunden wird empfohlen, bei der Terminbuchung alle erforderlichen Informationen korrekt anzugeben.
+                </p>
+            </div>
+            <div class="sub-title">2. Verantwortlichkeit für die Verarbeitung:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    Während OIS bei der Buchung von VISA-Terminen beim NIS behilflich ist, ist es wichtig zu beachten, dass die Bearbeitung und Ausstellung des VISA ausschließlich in der Verantwortung der nigerianischen Einwanderungsbehörde liegt. OIS erbringt in jeder Hinsicht unvoreingenommene Dienstleistungen und hat daher keinerlei Kontrolle über die VISA-Bearbeitungszeiten oder die endgültige Entscheidung bezüglich der VISA-Erteilung in irgendeiner Weise.
+                </p>
+            </div>
+            <div class="sub-title">3. Bearbeitungszeiten:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    OIS unternimmt angemessene Anstrengungen, um Kunden geschätzte Bearbeitungszeiten auf der Grundlage der vom NIS verfügbaren Informationen bereitzustellen. Die tatsächlichen Bearbeitungszeiten können jedoch aufgrund von Faktoren variieren, die außerhalb der Kontrolle von OIS liegen, wie z. B. Änderungen der Vorschriften, der Anzahl der Anträge, einzelner Personen und Umstände.
+                </p>
+            </div>
+            <div class="sub-title">4. Informationsgenauigkeit:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    OIS ist bestrebt, genaue und aktuelle Informationen zu VISA-Anforderungen und Ernennungsverfahren bereitzustellen. Kunden wird jedoch empfohlen, die bereitgestellten Informationen unabhängig zu überprüfen und offizielle Quellen wie die NIS-Website zu konsultieren, um die aktuellsten Informationen zu erhalten.
+                </p>
+            </div>
+            <div class="sub-title">5. Haftungsausschluss:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    OIS haftet nicht für Verzögerungen, Ablehnungen oder andere Probleme, die sich aus der Beantragung und Bearbeitung des Visums ergeben. Die Rolle von OIS beschränkt sich auf die Erleichterung des Terminbuchungsprozesses und die Übermittlung von Kundeninformationen an das NIS.
+                </p>
+            </div>
+            <div class="sub-title">6. Entschädigung:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    Benutzer der OIS-Website erklären sich damit einverstanden, OIS von jeglichen Ansprüchen, Forderungen, Klagen, Klagen oder Verfahren freizustellen, die sich aus oder im Zusammenhang mit dem VISA-Antragsverfahren ergeben.
+                </p>
+            </div>
+            <div class="sub-section">
+                <p class="para-section">
+                    Während OIS bestrebt ist, ein nahtloses und effizientes Terminbuchungserlebnis zu bieten, ist es für Benutzer wichtig zu verstehen, dass die nigerianische Einwanderungsbehörde allein für die VISA-Bearbeitung verantwortlich ist, einschließlich Bearbeitungszeiten, Entscheidungen und Ausstellung. Benutzern wird empfohlen, die gebotene Sorgfalt walten zu lassen und beim NIS offizielle Informationen zur VISA-Verarbeitung einzuholen.
+                </p>
+                <p class="para-section">
+                    Wenn Sie Fragen oder Bedenken zu diesem Haftungsausschluss haben, kontaktieren Sie uns bitte.
+                </p>
+            </div>
+          </div>',
       'order_num' => 1,
       'lang' => 'de',
     ]);
@@ -4908,7 +5179,61 @@ class ContentsSeeder extends Seeder
     ]);
     Content::create([
       'title' => 'DISCLAIMERS',
-      'content' => '',
+      'content' => '
+          <div class="main-title">
+            Elaborazione del visto del Servizio immigrazione nigeriano (NIS).
+          </div>
+          <div class="sub-body">
+            <div class="sub-section">
+                <p class="para-section">
+                    La seguente esclusione di responsabilità delinea i ruoli e le responsabilità di Online Integrated Solutions (OIS) e del Nigerian Immigration Service (NIS) per quanto riguarda le nomine e l\'elaborazione dei visti. Questo disclaimer ha lo scopo di fornire chiarezza e trasparenza agli utenti del sito web OIS:
+                </p>
+            </div>
+            <div class="sub-title">1. Prenotazione appuntamento:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    OIS facilita la prenotazione di appuntamenti VISA per conto dei clienti. Si consiglia ai clienti di fornire accuratamente tutte le informazioni necessarie durante il processo di prenotazione dell\'appuntamento.
+                </p>
+            </div>
+            <div class="sub-title">2. Responsabilità del trattamento:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    Sebbene l\'OIS assista nella prenotazione degli appuntamenti per il visto con il NIS, è importante notare che l\'elaborazione e il rilascio del visto sono di esclusiva responsabilità del servizio di immigrazione nigeriano. A tutti gli effetti, OIS fornisce servizi non giudicanti e pertanto non ha alcun controllo sui tempi di elaborazione del visto o sulla decisione finale relativa al rilascio del visto in alcun modo.
+                </p>
+            </div>
+            <div class="sub-title">3. Tempi di elaborazione:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    OIS compie ogni ragionevole sforzo per fornire ai clienti tempi di elaborazione stimati sulla base delle informazioni disponibili da NIS. Tuttavia, i tempi di elaborazione effettivi possono variare a causa di fattori che esulano dal controllo di OIS, come cambiamenti nelle normative, volume delle richieste, individui e circostanze.
+                </p>
+            </div>
+            <div class="sub-title">4. Precisione delle informazioni:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    L\'OIS si impegna a fornire informazioni accurate e aggiornate sui requisiti per il visto e sulle procedure di nomina. Tuttavia, si consiglia ai clienti di verificare in modo indipendente le informazioni fornite e di consultare fonti ufficiali, come il sito Web NIS, per le informazioni più aggiornate.
+                </p>
+            </div>
+            <div class="sub-title">5. Esclusione di responsabilità:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    OIS non sarà ritenuta responsabile per eventuali ritardi, rifiuti o altri problemi derivanti dalla richiesta e dall\'elaborazione del visto. Il ruolo di OIS è limitato a facilitare il processo di prenotazione degli appuntamenti e a trasmettere le informazioni sui clienti al NIS.
+                </p>
+            </div>
+            <div class="sub-title">6. Indennizzo:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    Gli utenti del sito web OIS si impegnano a indennizzare e tenere indenne OIS da qualsiasi reclamo, richiesta, azione, causa o procedimento derivante da o correlato al processo di richiesta del visto.
+                </p>
+            </div>
+            <div class="sub-section">
+                <p class="para-section">
+                    Sebbene OIS si impegni a fornire un\'esperienza di prenotazione degli appuntamenti fluida ed efficiente, è importante che gli utenti comprendano che il Servizio immigrazione nigeriano è l\'unico responsabile dell\'elaborazione del visto, compresi i tempi di elaborazione, le decisioni e l\'emissione. Gli utenti sono incoraggiati a esercitare la dovuta diligenza e a chiedere informazioni ufficiali al NIS in merito all\'elaborazione del visto.
+                </p>
+                <p class="para-section">
+                    In caso di domande o dubbi su questa clausola di esclusione della responsabilità, contattaci.
+                </p>
+            </div>
+          </div>',
       'order_num' => 1,
       'lang' => 'it',
     ]);
@@ -5848,7 +6173,61 @@ class ContentsSeeder extends Seeder
     ]);
     Content::create([
       'title' => 'DISCLAIMERS',
-      'content' => '',
+      'content' => '
+          <div class="main-title">
+            Nijerya Göçmenlik Bürosu (NIS) VİZE İşlemleri
+          </div>
+          <div class="sub-body">
+            <div class="sub-section">
+                <p class="para-section">
+                    Aşağıdaki sorumluluk reddi beyanı, Online Integrated Solutions (OIS) ve Nijerya Göçmenlik Servisi\'nin (NIS) VISA randevuları ve işlemleriyle ilgili rollerini ve sorumluluklarını özetlemektedir. Bu sorumluluk reddi beyanı, OIS web sitesinin kullanıcılarına açıklık ve şeffaflık sağlamayı amaçlamaktadır:
+                </p>
+            </div>
+            <div class="sub-title">1. Randevu Rezervasyonu:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    OIS, müşteriler adına VISA randevularının alınmasını kolaylaştırır. Müşterilerin randevu rezervasyon işlemi sırasında gerekli tüm bilgileri doğru bir şekilde sağlamaları tavsiye edilir.
+                </p>
+            </div>
+            <div class="sub-title">2. İşleme Sorumluluğu:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    OIS, NIS ile VISA randevularının alınmasında yardımcı olsa da, VISA\'nın işlenmesi ve verilmesinin yalnızca Nijerya Göçmenlik Bürosu\'nun sorumluluğunda olduğunu unutmamak önemlidir. OIS her bakımdan yargılamayan hizmetler sağlar ve bu nedenle VISA işlem süreleri veya VİZE verilmesine ilişkin nihai karar üzerinde hiçbir şekilde kontrol sahibi değildir.
+                </p>
+            </div>
+            <div class="sub-title">3. İşleme Süreleri:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    OIS, NIS\'ten elde edilen bilgilere dayanarak müşterilere tahmini işlem sürelerini sağlamak için makul çabayı gösterir. Ancak gerçek işlem süreleri, mevzuat değişiklikleri, başvuru yoğunluğu, kişi ve koşullar gibi OIS\'in kontrolü dışındaki faktörlerden dolayı değişiklik gösterebilir.
+                </p>
+            </div>
+            <div class="sub-title">4. Bilgi Doğruluğu:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    OIS, VİZE gereklilikleri ve randevu prosedürlerine ilişkin doğru ve güncel bilgiler sağlamaya çalışmaktadır. Ancak müşterilerin, sağlanan bilgileri bağımsız olarak doğrulamaları ve en güncel bilgiler için NIS web sitesi gibi resmi kaynaklara başvurmaları tavsiye edilir.
+                </p>
+            </div>
+            <div class="sub-title">5. Sorumluluk Reddi:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    OIS, VİZE başvurusu ve işlemesinden kaynaklanan gecikme, ret veya diğer sorunlardan sorumlu tutulamaz. OIS\'in rolü, randevu alma sürecini kolaylaştırmak ve müşteri bilgilerini NIS\'e iletmekle sınırlıdır.
+                </p>
+            </div>
+            <div class="sub-title">6. Tazminat:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    OIS web sitesinin kullanıcıları, VİZE başvuru sürecinden kaynaklanan veya bununla ilgili her türlü iddia, talep, dava, dava veya işlemden OIS\'i tazmin etmeyi ve masun tutmayı kabul eder.
+                </p>
+            </div>
+            <div class="sub-section">
+                <p class="para-section">
+                    OIS kusursuz ve etkili bir randevu rezervasyon deneyimi sunmaya çabalarken, kullanıcıların Nijerya Göçmenlik Hizmetinin işlem süreleri, kararlar ve verilmesi de dahil olmak üzere VISA işlemlerinden yalnızca sorumlu olduğunu anlamaları önemlidir. Kullanıcıların, gerekli özeni göstermeleri ve VİZE işlemleriyle ilgili olarak NIS\'ten resmi bilgi almaları teşvik edilmektedir.
+                </p>
+                <p class="para-section">
+                    Bu sorumluluk reddi beyanıyla ilgili herhangi bir sorunuz veya endişeniz varsa lütfen bizimle iletişime geçin.
+                </p>
+            </div>
+          </div>',
       'order_num' => 1,
       'lang' => 'tr',
     ]);
@@ -6788,7 +7167,61 @@ class ContentsSeeder extends Seeder
     ]);
     Content::create([
       'title' => 'DISCLAIMERS',
-      'content' => '',
+      'content' => '
+          <div class="main-title">
+            Procesamiento de VISA del Servicio de Inmigración de Nigeria (NIS)
+          </div>
+          <div class="sub-body">
+            <div class="sub-section">
+                <p class="para-section">
+                    El siguiente descargo de responsabilidad describe las funciones y responsabilidades de Online Integrated Solutions (OIS) y el Servicio de Inmigración de Nigeria (NIS) con respecto a las citas y el procesamiento de VISA. Este descargo de responsabilidad tiene como objetivo brindar claridad y transparencia a los usuarios del sitio web de OIS:
+                </p>
+            </div>
+            <div class="sub-title">1. Reserva de cita:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    OIS facilita la reserva de citas VISA en nombre de los clientes. Se recomienda a los clientes que proporcionen con precisión toda la información necesaria durante el proceso de reserva de la cita.
+                </p>
+            </div>
+            <div class="sub-title">2. Responsabilidad del procesamiento:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    Si bien OIS ayuda a reservar citas para VISA con el NIS, es importante tener en cuenta que el procesamiento y la emisión de la VISA son responsabilidad exclusiva del Servicio de Inmigración de Nigeria. En todos los aspectos, OIS brinda servicios sin prejuicios y, por lo tanto, no tiene control sobre los tiempos de procesamiento de VISA o la decisión final con respecto a la emisión de VISA de ninguna manera.
+                </p>
+            </div>
+            <div class="sub-title">3. Tiempos de procesamiento:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    OIS hace esfuerzos razonables para proporcionar a los clientes tiempos de procesamiento estimados según la información disponible en NIS. Sin embargo, los tiempos de procesamiento reales pueden variar debido a factores fuera del control de OIS, como cambios en las regulaciones, volumen de solicitudes, individuos y circunstancias.
+                </p>
+            </div>
+            <div class="sub-title">4. Precisión de la información:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    OIS se esfuerza por proporcionar información precisa y actualizada sobre los requisitos de VISA y los procedimientos de cita. Sin embargo, se recomienda a los clientes que verifiquen de forma independiente la información proporcionada y consulten fuentes oficiales, como el sitio web de NIS, para obtener la información más actualizada.
+                </p>
+            </div>
+            <div class="sub-title">5. Exención de responsabilidad:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    OIS no será responsable de ningún retraso, denegación u otros problemas que surjan de la solicitud y el procesamiento de VISA. El papel de OIS se limita a facilitar el proceso de reserva de citas y transmitir información del cliente al NIS.
+                </p>
+            </div>
+            <div class="sub-title">6. Indemnización:</div>
+            <div class="sub-section">
+                <p class="para-section">
+                    Los usuarios del sitio web de OIS aceptan indemnizar y eximir de responsabilidad a OIS de cualquier reclamo, demanda, acción, demanda o procedimiento que surja o esté relacionado con el proceso de solicitud de VISA.
+                </p>
+            </div>
+            <div class="sub-section">
+                <p class="para-section">
+                    Si bien OIS se esfuerza por brindar una experiencia de reserva de citas fluida y eficiente, es importante que los usuarios comprendan que el Servicio de Inmigración de Nigeria es el único responsable del procesamiento de VISA, incluidos los tiempos de procesamiento, las decisiones y la emisión. Se anima a los usuarios a actuar con la debida diligencia y buscar información oficial del NIS sobre el procesamiento de VISA.
+                </p>
+                <p class="para-section">
+                    Si tiene alguna pregunta o inquietud sobre este descargo de responsabilidad, comuníquese con nosotros.
+                </p>
+            </div>
+          </div>',
       'order_num' => 1,
       'lang' => 'es',
     ]);
