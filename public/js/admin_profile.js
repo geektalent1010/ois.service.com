@@ -3,12 +3,12 @@ $(document).ready(function () {
         e.preventDefault();
         for (let i = 1; i <= 9; i++) {
             if (!$("#data" + i).val()) {
-                toastr['error']('Please input or select the ' + $("#data" + i).attr('text') + ' field.', 'Error');
+                customAlert('We are so sorry', 'Please input or select the ' + $("#data" + i).attr('text') + ' field.', 'error');
                 return;
             }
         }
         if (!validateEmail($('#data5').val())) {
-            toastr['error']('Invalid Email address');
+            customAlert('We are so sorry', 'Invalid Email address', 'error');
             return;
         }
         $.ajax({
@@ -18,18 +18,16 @@ $(document).ready(function () {
             data: $(this).serialize(),
             success: function (res) {
                 if(res.status == 'success') {
-                    toastr['success']('Updated successfully', 'Success');
+                    customAlert('Success', 'Updated successfully', 'success');
                     $("#data10").val('');
                 } else if(res.status == 'error' && res.msg == 'duplicateUsername') {
-                    toastr['info']('Already exist username', 'Info');
+                    customAlert('We are so sorry', 'Already exist username', 'error');
                 } else {
-                    console.log(res);
-                    toastr['error']('500 Error!', 'Error');
+                    customAlert('We are so sorry', '500 Error!', 'error');
                 }
             },
             error: function (xhr, status, error) {
-                console.log(error);
-                toastr['error']('500 Error!', 'Error');
+                customAlert('We are so sorry', '500 Error!', 'error');
             }
         });
     });

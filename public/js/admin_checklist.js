@@ -12,7 +12,7 @@ $(document).ready(function () {
             dataType: 'json',
             success: function(res) {
                 if(res.status == 'unauthorize') {
-                    toastr['info']('You do not have access to this page.', 'Info');
+                    customAlert('We are so sorry', 'You do not have access to this page.', 'error');
                     $('.list-group').html('');
                     $('.price-button-section').addClass('d-none');
                     return;
@@ -204,7 +204,7 @@ $(document).ready(function () {
         formData.append('title', title);
         formData.append('description', description);
         if(!id && (!$("#office-select").val() || $("#office-select").val() == 0 || !$("#type-select").val() || $("#type-select").val() == 0)) {
-            toastr['info']('Please select Center and Passport type', 'Info');
+            customAlert('We are so sorry', 'Please select Center and Passport type.', 'error');
             return;
         }
         $.ajax({
@@ -216,11 +216,11 @@ $(document).ready(function () {
             processData: false,
             success: function(res) {
                 if(res.status == 'success') {
-                    toastr['success']('Updated successfully', 'Success');
+                    customAlert('Success', 'Updated successfully.', 'success');
                     $(".card-body-custom div").attr("tabindex", 0);
                     $('.editor-panel').removeClass('show');
                 } else {
-                    toastr['error']('500 Error!', 'error');
+                    customAlert('We are so sorry', '500 Error!', 'error');
                 }
             }
         });
@@ -230,7 +230,7 @@ $(document).ready(function () {
         const center = $('#office-select').val();
         const passport = $('#type-select').val();
         if(!center || !passport || center == 0 || passport == 0) {
-            toastr['info']('Please select Center and Passport Type options');
+            customAlert('We are so sorry', 'Please select Center and Passport Type options', 'error');
             $('.list-group').html('');
             return;
         }

@@ -61,18 +61,18 @@ $("#title-form").submit(function(e) {
                             data: $(this).serialize(),
                             success: function(res) {
                                 if(res.status == 'success') {
-                                    toastr['success']('Updated successfully.', 'Success');
+                                    customAlert('Success', 'Updated successfully.', 'success');
                                 } else if(res.status == 'unauthorize') {
-                                    toastr['info']('You do not have access to this function.', 'Info')
+                                    customAlert('We are so sorry', 'You do not have access to this function.', 'error');
                                 } else {
-                                    toastr['error']('500 Error!', 'Error');
+                                    customAlert('We are so sorry', '500 Error!', 'error');
                                 }
                             }
                         })
                     });
                 }
             } else {
-                toastr['info']('There is no result', 'Info');
+                customAlert('We are so sorry', 'There is no result.', 'error');
             }
         }
     });

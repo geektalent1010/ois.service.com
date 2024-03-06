@@ -759,12 +759,12 @@
 
     @if ($message = Session::get('success'))
         <script>
-            toastr['success']('{{ $message }}', 'Success');
+            customAlert('Success', '{{ $message }}', 'success');
         </script>
     @endif
     @if ($message = Session::get('error'))
         <script>
-            toastr['error']('{{ $message }}', 'Error');
+            customAlert('We are so sorry', '{{ $message }}', 'error');
         </script>
     @endif
 

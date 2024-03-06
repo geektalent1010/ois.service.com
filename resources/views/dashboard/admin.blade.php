@@ -150,7 +150,7 @@
         const items = document.querySelectorAll(".navItemWrap-front.disabled");
         for(const item of items) {
             item.nextElementSibling.addEventListener('click', function() {
-                toastr['info']('You do not have access to this page.', 'Info');
+                customAlert('We are so sorry', 'You do not have access to this page.', 'error');
             })
         }
     })

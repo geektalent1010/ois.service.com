@@ -13,7 +13,7 @@ $(document).ready(function () {
             dataType: "json",
             success: function (res) {
                 if(res.status == 'unauthorize') {
-                    toastr['info']('You do not have the access to this page.');
+                    customAlert('We are so sorry', 'You do not have the access to this page.', 'error');
                     $(".edit-form").addClass("d-none");
                     return;
                 }
@@ -73,9 +73,9 @@ $(document).ready(function () {
                 $(".card-body-custom > div").attr("tabindex", 0);
                 if ((res.status == "success")) {
                     $('.right-button').addClass('disabled');
-                    toastr["success"]("Published successfully", "Success");
+                    customAlert('Success', 'Published successfully', 'success');
                 } else {
-                    toastr["error"]("500 Error", "Error");
+                    customAlert('We are so sorry', '500 Error', 'error');
                 }
             },
         });

@@ -39,12 +39,12 @@ $(document).ready(function () {
         for (let i = 1 ; i <= dataNum ; i ++) {
             if(userid && i == 11) continue;
             if (!$("#data" + i).val() || $("#data" + i).val() == 0) {
-                toastr['error']('Please input or select the ' + $("#data" + i).attr('text') + ' field.', 'Error');
+                customAlert('We are so sorry', 'Please input or select the ' + $("#data" + i).attr('text') + ' field.', 'error');
                 return;
             }
         }
         if (!validateEmail($('#data9').val())) {
-            toastr['error']('Invalid Email address');
+            customAlert('We are so sorry', 'Invalid Email address', 'error');
             return;
         }
         if(userid) {
@@ -58,13 +58,13 @@ $(document).ready(function () {
                 success: function (res) {
                     console.log(res)
                     if(res.status == 'success') {
-                        toastr['success']('Updated successfully', 'Success');
+                        customAlert('Success', 'Updated successfully', 'success');
                     } else if(res.status == 'duplicatedEmail') {
-                        toastr['info']('Already exist email', 'Info');
+                        customAlert('We are so sorry', 'Already exist email', 'error');
                     } else if(res.status == 'duplicatedUsername') {
-                        toastr['info']('Already exist username', 'Info');
+                        customAlert('We are so sorry', 'Already exist username', 'error');
                     } else {
-                        toastr['error']('500 Error!', 'Error');
+                        customAlert('We are so sorry', '500 Error!', 'error');
                     }
                 }
             });
@@ -78,13 +78,13 @@ $(document).ready(function () {
                 processData: false,
                 success: function (res) {
                     if(res.status == 'success') {
-                        toastr['success']('Updated successfully', 'Success');
+                        customAlert('Success', 'Updated successfully', 'success');
                     } else if(res.status == 'duplicatedEmail') {
-                        toastr['info']('Already exist email', 'Info');
+                        customAlert('We are so sorry', 'Already exist email', 'error');
                     } else if(res.status == 'duplicatedUsername') {
-                        toastr['info']('Already exist username', 'Info');
+                        customAlert('We are so sorry', 'Already exist username', 'error');
                     } else {
-                        toastr['error']('500 Error!', 'Error');
+                        customAlert('We are so sorry', '500 Error!', 'error');
                     }
                 }
             });
@@ -142,9 +142,9 @@ $(document).ready(function () {
 
                     $(".list-detail").addClass('d-none');
                 } else if(res.status == 'nodata') {
-                    toastr['info']('No search result', 'Info');
+                    customAlert('We are so sorry', 'No search result', 'error');
                 } else {
-                    toastr['error']('500 Error!', 'Error');
+                    customAlert('We are so sorry', '500 Error!', 'error');
                 }
             }
         })

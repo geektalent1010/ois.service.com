@@ -9,7 +9,7 @@ $(document).ready(function() {
                 dataType: 'json',
                 success: function(res) {
                     if(res.status == 'unauthorize') {
-                        toastr['info']('You do not have access to this page.', 'Info');
+                        customAlert('We are so sorry', 'You do not have access to this page.', 'error');
                         $(".publish-button").addClass('d-none');
                         $(".office-detail").addClass('d-none');
                         return;
@@ -101,11 +101,11 @@ $(document).ready(function() {
             success: function(res) {
                 console.log(res);
                 if(res.status == 'success') {
-                    toastr['success']('Updated successfully.', 'Success');
+                    customAlert('Success', 'Updated successfully.', 'success');
                 } else if(res.status == 'unauthorize') {
-                    toastr['info']('You do not have access to this function.', 'info');
+                    customAlert('We are so sorry', 'You do not have access to this function.', 'error');
                 } else {
-                    toastr['error']('500 Error!', 'Error');
+                    customAlert('We are so sorry', '500 Error!', 'error');
                 }
             }
         });
