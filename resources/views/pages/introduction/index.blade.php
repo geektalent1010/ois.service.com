@@ -56,7 +56,7 @@
                             <div class="text-section d-flex justify-content-center">
                                 <div class="description-section">
                                     {!! $content[3] !!}
-                                    <div class="button-section">
+                                    <div class="button-section mt-5">
                                         <a href="{{ route('services.index') }}">{{__('go_to_services')}}</a>
                                     </div>
                                 </div>
