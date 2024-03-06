@@ -104,7 +104,7 @@ $(document).ready(function () {
         formData.append('priceStatus', $('#price-edit-button').hasClass('active'));
         formData.append('checklistStatus', $('#checklist-edit-button').hasClass('active'));
         const countrySelIndex = $('#data6')[0].selectedIndex + 1;
-        console.log($('#data6 option:nth-child(' + countrySelIndex + ')').data('data1'))
+
         formData.append('country', $('#data6 option:nth-child(' + countrySelIndex + ')').data('data1'));
         formData.append('city', $('#data6 option:nth-child(' + countrySelIndex + ')').data('data2'));
         if(userid) {
@@ -178,7 +178,7 @@ $(document).ready(function () {
                     const countryOptions = $("#data6 option");
                     let flag = false;
                     for(let i = 1; i < countryOptions.length ; i ++) {
-                        if(countryOptions[i].dataset.data1 == res.country) {
+                        if(countryOptions[i].dataset.data1 == res.country && countryOptions[i].dataset.data2 == res.city) {
                             flag = true;
                             $("#center-select .select-items div:nth-child(" + i + ")").click();
                             break;

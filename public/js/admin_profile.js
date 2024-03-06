@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('#profile-edit-form').submit(function (e) {
         e.preventDefault();
-        for (let i = 1; i <= 9; i++) {
+        for (let i = 1; i <= 8; i++) {
             if (!$("#data" + i).val()) {
                 customAlert('We are so sorry', 'Please input or select the ' + $("#data" + i).attr('text') + ' field.', 'error');
                 return;
@@ -11,11 +11,18 @@ $(document).ready(function () {
             customAlert('We are so sorry', 'Invalid Email address', 'error');
             return;
         }
+        let formData = new FormData(this);
+        const centerSelIndex = $('#data6')[0].selectedIndex + 1;
+        console.log(centerSelIndex)
+        formData.append('country', $('#data6 option:nth-child(' + centerSelIndex + ')').data('data1'));
+        formData.append('city', $('#data6 option:nth-child(' + centerSelIndex + ')').data('data2'));
         $.ajax({
             url: '/admin/profile',
             type: 'POST',
             dataType: 'json',
-            data: $(this).serialize(),
+            data: formData,
+            processData: false,
+            contentType: false,
             success: function (res) {
                 if(res.status == 'success') {
                     customAlert('Success', 'Updated successfully', 'success');
@@ -34,7 +41,7 @@ $(document).ready(function () {
 });
 
 const phoneSelDom = document.getElementById('phone-code-select');
-drawSelectForm(phoneSelDom)
+drawSelectForm(phoneSelDom);
 
-const countrySelDom = document.getElementById('country-select');
-drawSelectForm(countrySelDom);
+const centerSelDom = document.getElementById('center-select');
+drawSelectForm(centerSelDom);
