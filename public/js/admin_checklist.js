@@ -107,7 +107,7 @@ $(document).ready(function () {
                 <table class="custom-edit-table">
                     <thead>
                         <tr>
-                            <th>
+                            <th style="width:30px">
                                 <div tabindex="0">No</div>
                             </th>
                             <th>
