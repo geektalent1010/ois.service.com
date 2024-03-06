@@ -286,15 +286,17 @@ const customAlert = (title, message, status) => {
                     <div class="alert-message-text">${message}</div>
                 </div>
                 <div class="alert-icon-part">
-                    <img src="" alt="icon"/>
+                    <img src="/images/PopupSmile_${status}.svg" alt="icon"/>
                 </div>
             </div>
         </div>
     `;
 
-    doms.getElementsByClassName('alert-body')[0].addEventListener('click', function() {
-        this.parentNode.remove();
-    })
+    for(const element of doms.getElementsByClassName('alert-body')) {
+        element.addEventListener('click', function() {
+            this.parentNode.remove();
+        });
+    }
 
     document.body.appendChild(doms);
 }

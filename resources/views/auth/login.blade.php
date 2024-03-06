@@ -22,9 +22,6 @@
                 <span>{{__('for_registered_clients_only')}}</span>
             </div>
 
-            @if(isset($id) && $id > 0)
-                    <span style="font-size:12px">Thank you for your confirmation. Please use your email address for the username and the password you had selected during the registration process.</span>
-                @endif
             <form method="POST" class="mt-3" action="{{ route('login', ['id' => $id]) }}">
                 @csrf
                 <div class="form-group row justify-content-center">
@@ -32,9 +29,7 @@
                         <input id="email" type="" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="{{__('email_L')}}" required autocomplete="email" autofocus />
 
                         @error('email')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
+                            <input type="hidden" class="error-input"  value="{{$message}}"/>
                         @enderror
                     </div>
                 </div>
@@ -96,6 +91,13 @@
 @section('PAGE_LEVEL_SCRIPTS')
 <script type="text/javascript" src="{{asset('js/util.js')}}"></script>
 <script>
-    // customAlert('Congratulations', 'Your email address is confirmed and you now have access to the client portal.', 'error');
+    if($('.error-input').val()) {
+        customAlert('We are so sorry', $('.error-input').val(), 'error');
+    } else {
+        @if(isset($id) && $id > 0)
+            customAlert('Congratulations', 'Your email address is confirmed and you now have access to the client portal.', 'success');
+        @endif
+    }
+
 </script>
 @endsection
