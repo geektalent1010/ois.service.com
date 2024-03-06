@@ -20,9 +20,7 @@
                         <input id="email" type="" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="Email" required autocomplete="email" autofocus />
 
                         @error('email')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
+                            <input type="hidden" class="error-input"  value="{{$message}}"/>
                         @enderror
                     </div>
                 </div>
@@ -71,4 +69,9 @@
 
 @section('PAGE_LEVEL_SCRIPTS')
 <script type="text/javascript" src="{{asset('js/util.js')}}"></script>
+<script>
+    if($('.error-input').val()) {
+        customAlert('We are so sorry', $('.error-input').val(), 'error');
+    }
+</script>
 @endsection

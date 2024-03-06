@@ -41,13 +41,16 @@
     @if (@isset($modalData))
 
         @if (@isset($modalData[0]))
-            @include('_includes.terms_use', ['data' => $modalData[0]->content])
+            @include('_includes.disclaimer', ['data' => $modalData[0]->content])
         @endif
         @if (@isset($modalData[1]))
-            @include('_includes.privacy_policy', ['data' => $modalData[1]->content])
+            @include('_includes.terms_use', ['data' => $modalData[1]->content])
         @endif
         @if (@isset($modalData[2]))
-            @include('_includes.data_policy', ['data' => $modalData[2]->content])
+            @include('_includes.privacy_policy', ['data' => $modalData[2]->content])
+        @endif
+        @if (@isset($modalData[3]))
+            @include('_includes.data_policy', ['data' => $modalData[3]->content])
         @endif
 
     @endif
@@ -105,6 +108,7 @@
         const privacy_modal = document.querySelector(".privacy-modal");
         const terms_modal = document.querySelector(".terms-modal");
         const data_modal = document.querySelector(".data-modal");
+        const disclaimer_modal = document.querySelector('.disclaimer-modal')
         const cookie_modal = document.querySelector(".cookie-modal");
         const office_modal = document.querySelector(".office-modal");
         const chatbot_modal = document.querySelector(".chatbot-modal");
@@ -113,6 +117,10 @@
         const privacy_trigger = document.querySelector(".privacy-trigger");
         const terms_trigger = document.querySelector(".terms-trigger");
         const data_trigger = document.querySelector(".data-trigger");
+
+        function toggleDisclaimer() {
+            disclaimer_modal.classList.toggle("show-modal");
+        }
 
         function togglePrivacy() {
             privacy_modal.classList.toggle("show-modal");
@@ -153,6 +161,8 @@
                 toggleChatbotModal();
             } else if (event.target === nis_visa_modal) {
                 toggleNisVisaModal();
+            } else if (event.target === disclaimer_modal) {
+                toggleDisclaimer();
             }
         }
 
@@ -759,12 +769,12 @@
 
     @if ($message = Session::get('success'))
         <script>
-            toastr['success']('{{ $message }}', 'Success');
+            customAlert('Success', '{{ $message }}', 'success');
         </script>
     @endif
     @if ($message = Session::get('error'))
         <script>
-            toastr['error']('{{ $message }}', 'Error');
+            customAlert('We are so sorry', '{{ $message }}', 'error');
         </script>
     @endif
 

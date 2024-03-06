@@ -21,12 +21,11 @@
                 action="{{ route('register') }}">
 
                 @if ($errors->any())
-                    <div class="alert">
-                        <div class="alert-body-back"></div>
+                    <input type="hidden" id="error-input" value="
                         @foreach ($errors->all() as $error)
-                            {{ $error }}<br />
+                            {{$error}}
                         @endforeach
-                    </div>
+                    " />
                 @endif
 
                 @csrf
@@ -171,5 +170,12 @@
 @section('PAGE_LEVEL_SCRIPTS')
     <script type="text/javascript" src="{{ asset('js/util.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/register.js') }}"></script>
+
+    <script>
+        if($('#error-input').val()) {
+            customAlert('We are so sorry', $('.error-input').val(), 'error');
+        }
+
+    </script>
 
 @endsection

@@ -21,9 +21,9 @@ $(document).ready(function() {
             success: function(res) {
                 console.log(res);
                 if(res.status == 'success') {
-                    toastr['success']('Updated successfully');
+                    customAlert('Success', 'Updated successfully.', 'success');
                 } else {
-                    toastr['error']('Error occurred.', 'Error');
+                    customAlert('We are so sorry', 'Error occurred.', 'error');
                 }
             }
         })

@@ -40,72 +40,6 @@ const register = {
         this.scrollToError = "";
     },
     addEventListeners: function () {
-        this.firstNameInput.on(
-            "keyup",
-            function () {
-                this.validateFirstNameInput();
-            }.bind(this)
-        );
-        this.lastNameInput.on(
-            "keyup",
-            function () {
-                this.validateLastNameInput();
-            }.bind(this)
-        );
-        this.phoneInput.on(
-            "keyup",
-            function () {
-                this.validatePhoneInput();
-            }.bind(this)
-        );
-        this.emailInput.on(
-            "keyup",
-            function () {
-                this.validateEmailInput();
-            }.bind(this)
-        );
-        this.streetInput.on(
-            "keyup",
-            function () {
-                this.validateStreetInput();
-            }.bind(this)
-        );
-        this.houseNumberInput.on(
-            "keyup",
-            function () {
-                this.validateHouseNumberInput();
-            }.bind(this)
-        );
-        this.postalCodeInput.on(
-            "keyup",
-            function () {
-                this.validatePostalCodeInput();
-            }.bind(this)
-        );
-        this.cityInput.on(
-            "keyup",
-            function () {
-                this.validateCityInput();
-            }.bind(this)
-        );
-        this.countrySelect.on(
-            "change",
-            function () {
-                this.validateCountrySelect();
-            }.bind(this)
-        );
-        this.passwordInput.on(
-            "keyup",
-            function () {
-                this.validatePasswordInput();
-            }.bind(this)
-        );
-        this.birthdayInput.on(
-            "change",
-            function () {
-                this.validateBirthdayInput();
-            }.bind(this)
-        );
         this.form.on(
             "submit",
             function (event) {
@@ -155,25 +89,18 @@ const register = {
             /^[a-zA-Z\-0-9 ]{2,50}$/.test(value) ||
             /^[\p{L}\d\- ]{2,50}$/u.test(value)
         ) {
-            validationMessage = "Now, that's a good name.\n";
-            this.firstNameError.addClass("valid");
-            this.firstNameError.hide();
+            return true;
         } else if (value === "") {
             validationMessage = "The name field is required.";
-            this.firstNameError.removeClass("valid");
-            this.firstNameError.show();
         } else {
             validationMessage =
                 "The name must contain only letter and be minimum of 2 characters.";
-            this.firstNameError.removeClass("valid");
-            this.firstNameError.show();
         }
-        this.firstNameError.html(validationMessage);
+        if(validationMessage) {
+            customAlert('We are so sorry', validationMessage, 'error');
+        }
         this.scrollToError = this.firstNameInput;
-        return (
-            /^[a-zA-Z\-0-9 ]{2,50}$/.test(value) ||
-            /^[\p{L}\d\- ]{2,50}$/u.test(value)
-        );
+        return false;
     },
     validateLastNameInput: function () {
         let validationMessage = "";
@@ -182,25 +109,18 @@ const register = {
             /^[a-zA-Z\-0-9 ]{2,50}$/.test(value) ||
             /^[\p{L}\d\- ]{2,50}$/u.test(value)
         ) {
-            validationMessage = "Now, that's a good last name.\n";
-            this.lastNameError.addClass("valid");
-            this.lastNameError.hide();
+            return true;
         } else if (value === "") {
             validationMessage = "The last name field is required.";
-            this.lastNameError.removeClass("valid");
-            this.lastNameError.show();
         } else {
             validationMessage =
                 "The last name must contain only letter and be minimum of 2 characters.";
-            this.lastNameError.removeClass("valid");
-            this.lastNameError.show();
         }
-        this.lastNameError.html(validationMessage);
+        if(validationMessage) {
+            customAlert('We are so sorry', validationMessage, 'error');
+        }
         this.scrollToError = this.lastNameInput;
-        return (
-            /^[a-zA-Z\-0-9 ]{2,50}$/.test(value) ||
-            /^[\p{L}\d\- ]{2,50}$/u.test(value)
-        );
+        return false;
     },
     validatePhoneInput: function () {
         let validationMessage = "";
@@ -209,24 +129,17 @@ const register = {
             /^[0-9 ]{7,50}$/.test(value.trim()) ||
             /^(\+)?[0-9 ]{6,50}$/.test(value.trim())
         ) {
-            validationMessage = "Now, that's a good phone number.\n";
-            this.phoneError.addClass("valid");
-            this.phoneError.hide();
+            return true;
         } else if (value === "") {
-            validationMessage = "The phone number field is required.";
-            this.phoneError.removeClass("valid");
-            this.phoneError.show();
+            validationMessage = "The phone number field required";
         } else {
             validationMessage = "Minimum 7 digits.";
-            this.phoneError.removeClass("valid");
-            this.phoneError.show();
         }
-        this.phoneError.html(validationMessage);
+        if(validationMessage) {
+            customAlert('We are so sorry', validationMessage, 'error');
+        }
         this.scrollToError = this.phoneInput;
-        return (
-            /^[0-9 ]{7,50}$/.test(value.trim()) ||
-            /^(\+)?[0-9 ]{6,50}$/.test(value.trim())
-        );
+        return false;
     },
     validateEmailInput: function () {
         let validationMessage = "";
@@ -236,24 +149,18 @@ const register = {
                 value
             )
         ) {
-            validationMessage = "Now, that's a good email.\n";
-            this.emailError.addClass("valid");
-            this.emailError.hide();
+            this.loginEmailInput.val(this.emailInput.val());
+            return true;
         } else if (value === "") {
             validationMessage = "The email field is required.";
-            this.emailError.removeClass("valid");
-            this.emailError.show();
         } else {
             validationMessage = "Email is not valid.";
-            this.emailError.removeClass("valid");
-            this.emailError.show();
         }
-        this.emailError.html(validationMessage);
+        if(validationMessage) {
+            customAlert('We are so sorry', validationMessage, 'error');
+        }
         this.scrollToError = this.emailInput;
-        this.loginEmailInput.val(this.emailInput.val());
-        return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-            value
-        );
+        return false;
     },
     validateStreetInput: function () {
         let validationMessage = "";
@@ -262,66 +169,51 @@ const register = {
             /^[a-zA-Z\-0-9 ]{3,50}$/.test(value) ||
             /^[\p{L}\d\- ]{3,50}$/u.test(value)
         ) {
-            validationMessage = "Now, that's a good street name.\n";
-            this.streetError.addClass("valid");
-            this.streetError.hide();
+            return true;
         } else if (value === "") {
             validationMessage = "Street name is required.";
-            this.streetError.removeClass("valid");
-            this.streetError.show();
         } else {
             validationMessage =
                 "The street name must contain letter and number and be minimum of 3 characters.";
-            this.streetError.removeClass("valid");
-            this.streetError.show();
         }
-        this.streetError.html(validationMessage);
+        if(validationMessage) {
+            customAlert('We are so sorry', validationMessage, 'error');
+        }
         this.scrollToError = this.streetInput;
-        return (
-            /^[a-zA-Z\-0-9 ]{3,50}$/.test(value) ||
-            /^[\p{L}\d\- ]{3,50}$/u.test(value)
-        );
+        return false;
     },
     validateHouseNumberInput: function () {
         let validationMessage = "";
         let value = this.houseNumberInput.val();
         if (/^.{1,50}$/.test(value)) {
-            validationMessage = "Now, that's a good house number.\n";
-            this.houseNumberError.addClass("valid");
-            this.houseNumberError.hide();
+            return true;
         } else if (value === "") {
             validationMessage = "House number is required";
-            this.houseNumberError.removeClass("valid");
-            this.houseNumberError.show();
         } else {
             validationMessage =
                 "The house number must contain letter and number and be minimum of 3 characters.";
-            this.houseNumberError.removeClass("valid");
-            this.houseNumberError.show();
         }
-        this.houseNumberError.html(validationMessage);
+        if(validationMessage) {
+            customAlert('We are so sorry', validationMessage, 'error');
+        }
         this.scrollToError = this.houseNumberInput;
-        return /^.{1,50}$/.test(value);
+        return false;
     },
     validatePostalCodeInput: function () {
         let validationMessage = "";
         let value = this.postalCodeInput.val();
         if (/^.{3,50}$/.test(value)) {
-            validationMessage = "Now, that' a good zip code.\n";
-            this.postalCodeError.addClass("valid");
-            this.postalCodeError.hide();
+            return true;
         } else if (value === "") {
             validationMessage = "Zip code is required";
-            this.postalCodeError.removeClass("valid");
-            this.postalCodeError.show();
         } else {
             validationMessage = "Minimum 3 characters / digits.";
-            this.postalCodeError.removeClass("valid");
-            this.postalCodeError.show();
         }
-        this.postalCodeError.html(validationMessage);
+        if(validationMessage) {
+            customAlert('We are so sorry', validationMessage, 'error');
+        }
         this.scrollToError = this.postalCodeInput;
-        return /^.{3,50}$/.test(value);
+        return false;
     },
     validateCityInput: function () {
         let validationMessage = "";
@@ -330,39 +222,30 @@ const register = {
             /^[a-zA-Z\-0-9 ]{3,50}$/.test(value) ||
             /^[\p{L}\d\- ]{3,50}$/u.test(value)
         ) {
-            validationMessage = "Now, that's a good city name.\n";
-            this.cityError.addClass("valid");
-            this.cityError.hide();
+            return true;
         } else if (value === "") {
             validationMessage = "The city name is required";
-            this.cityError.removeClass("valid");
-            this.cityError.show();
         } else {
             validationMessage =
                 "The city name must contain letter and number and be minimum of 3 characters.";
-            this.cityError.removeClass("valid");
-            this.cityError.show();
         }
-        this.cityError.html(validationMessage);
+        if(validationMessage) {
+            customAlert('We are so sorry', validationMessage, 'error');
+        }
         this.scrollToError = this.cityInput;
-        return (
-            /^[a-zA-Z\-0-9 ]{3,50}$/.test(value) ||
-            /^[\p{L}\d\- ]{3,50}$/u.test(value)
-        );
+        return false;
     },
     validateCountrySelect: function () {
         let validationMessage = "";
         let value = this.countrySelect.val();
         if (value != 0) {
-            validationMessage = "Now, that's a good country name.\n";
-            this.countryError.addClass("valid");
-            this.countryError.hide();
+            return true;
         } else {
             validationMessage = "The country name is required";
-            this.countryError.removeClass("valid");
-            this.countryError.show();
         }
-        this.countryError.html(validationMessage);
+        if(validationMessage) {
+            customAlert('We are so sorry', validationMessage, 'error');
+        }
         this.scrollToError = this.countrySelect;
         return value != 0;
     },
@@ -374,82 +257,55 @@ const register = {
             /[a-zA-Z]/.test(value) &&
             /^.{7,}$/.test(value)
         ) {
-            validationMessage = "Now, that's a secure password.\n";
-            this.passwordError.addClass("valid");
-            this.passwordError.hide();
+            return true;
         } else if (/\d/.test(value) && /[a-zA-Z]/.test(value)) {
             validationMessage =
                 "Password must contain a <strong><del>letter</del></strong> and a <strong><del>number</del></strong>, and be minimum of <strong>7 characters</strong>.";
-            this.passwordError.removeClass("valid");
-            this.passwordError.show();
         } else if (/^.{7,}$/.test(value) && /[a-zA-Z]/.test(value)) {
             validationMessage =
                 "Password must contain a <strong><del>letter</del></strong> and a <strong>number</strong>, and be minimum of <strong><del>7 characters</del></strong>.";
-            this.passwordError.removeClass("valid");
-            this.passwordError.show();
         } else if (/^.{7,}$/.test(value) && /\d/.test(value)) {
             validationMessage =
                 "Password must contain a <strong>letter</strong> and a <strong><del>number</del></strong>, and be minimum of <strong><del>7 characters</del></strong>.";
-            this.passwordError.removeClass("valid");
-            this.passwordError.show();
         } else if (/^.{7,}$/.test(value)) {
             validationMessage =
                 "Password must contain a <strong>letter</strong> and a <strong>number</strong>, and be minimum of <strong><del>7 characters</del></strong>.";
-            this.passwordError.removeClass("valid");
-            this.passwordError.show();
         } else if (/\d/.test(value)) {
             validationMessage =
                 "Password must contain a <strong>letter</strong> and a <strong><del>number</del></strong>, and be minimum of <strong>7 characters</strong>.";
-            this.passwordError.removeClass("valid");
-            this.passwordError.show();
         } else if (/[a-zA-Z]/.test(value)) {
             validationMessage =
                 "Password must contain a <strong><del>letter</del></strong> and a <strong>number</strong>, and be minimum of <strong>7 characters</strong>.";
-            this.passwordError.removeClass("valid");
-            this.passwordError.show();
-        } else if (value === "") {
-            validationMessage =
-                "Password must contain a <strong>letter</strong> and a <strong>number</strong>, and be minimum of <strong>7 characters</strong>.";
-            this.passwordError.removeClass("valid");
-            this.passwordError.show();
         } else {
             validationMessage =
                 "Password must contain a <strong>letter</strong> and a <strong>number</strong>, and be minimum of <strong>7 characters</strong>.";
-            this.passwordError.removeClass("valid");
-            this.passwordError.show();
         }
-        this.passwordError.html(validationMessage);
+        if(validationMessage) {
+            customAlert('We are so sorry', validationMessage, 'error');
+        }
         this.scrollToError = this.passwordInput;
-        return (
-            /\d/.test(value) && /[a-zA-Z]/.test(value) && /^.{7,}$/.test(value)
-        );
+        return false;
     },
     validateBirthdayInput: function () {
         let validationMessage = "";
         let value = this.birthdayInput.val();
         if (/^(\d{2})-(\d{2})-(\d{4})$/.test(value)) {
-            validationMessage = "Now, that's a birthday.";
             this.birthdayInput.val(
                 value.split('-')[2] + '-' +
                 value.split('-')[1] + '-' +
                 value.split('-')[0]
             );
-            value = this.birthdayInput.val();
-            this.birthdayError.addClass("valid");
-            this.birthdayError.hide();
+            return true;
         } else if(/^(\d{4})-(\d{2})-(\d{2})$/.test(value)) {
             validationMessage = "Now, that's a birthday.";
-            value = this.birthdayInput.val();
-            this.birthdayError.addClass("valid");
-            this.birthdayError.hide();
         } else {
             validationMessage = "The birthday is required.\n";
-            this.birthdayError.removeClass("valid");
-            this.birthdayError.show();
         }
-        this.birthdayError.html(validationMessage);
+        if(validationMessage) {
+            customAlert('We are so sorry', validationMessage, 'error');
+        }
         this.scrollToError = this.birthdayInput;
-        return /^(\d{4})-(\d{2})-(\d{2})$/.test(value);
+        return false;
     },
 };
 
