@@ -48,6 +48,7 @@ $(document).ready(function () {
                 $('.editor-panel').removeClass('show');
                 $('.list-group').html(html);
                 $(".card-body-custom > div").attr("tabindex", 0);
+                $(".card-body-custom table tr td>div").attr("tabindex", 0);
                 $('.edit-form input.token').val($('#office-select-form input:first-child()').val());
                 $('.price-button-section').removeClass('d-none');
             }
@@ -164,6 +165,21 @@ $(document).ready(function () {
         if(focusDiv.length) {
             const row = focusDiv.closest('tr');
             $(row).remove();
+        }
+    })
+
+    $('.remove-column-but').click(function() {
+        let focusDiv = $('.card-body-custom div.focused');
+        if(focusDiv.length) {
+            const td = focusDiv.closest('td')[0];
+            const tr = focusDiv.closest('tr')[0];
+            const table = focusDiv.closest('table')[0];
+            const index = Array.from(tr.children).indexOf(td);
+            console.log(index)
+            const removeDom = table.querySelectorAll('tr>th:nth-child(' +  (index + 1) + '), tr>td:nth-child(' +  (index + 1) + ')');
+            for(const ele of removeDom) {
+                ele.remove();
+            }
         }
     })
 
