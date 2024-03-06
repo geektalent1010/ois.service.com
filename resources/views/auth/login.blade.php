@@ -95,4 +95,7 @@
 
 @section('PAGE_LEVEL_SCRIPTS')
 <script type="text/javascript" src="{{asset('js/util.js')}}"></script>
+<script>
+    // customAlert('Congratulations', 'Your email address is confirmed and you now have access to the client portal.', 'error');
+</script>
 @endsection

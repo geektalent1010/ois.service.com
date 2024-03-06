@@ -273,3 +273,30 @@ for (let element of searchPartDom) {
 }
 
 // input dropdown function end
+
+// custom alert msg pop-up start
+
+const customAlert = (title, message, status) => {
+    let doms = document.createElement('div');
+    doms.innerHTML += `
+        <div class="custom-alert-popup">
+            <div class="alert-body ${status}">
+                <div class="alert-text-part">
+                    <div class="alert-title-text">${title}</div>
+                    <div class="alert-message-text">${message}</div>
+                </div>
+                <div class="alert-icon-part">
+                    <img src="" alt="icon"/>
+                </div>
+            </div>
+        </div>
+    `;
+
+    doms.getElementsByClassName('alert-body')[0].addEventListener('click', function() {
+        this.parentNode.remove();
+    })
+
+    document.body.appendChild(doms);
+}
+
+// custom alert msg pop-up end

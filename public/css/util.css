@@ -272,3 +272,59 @@
 .custom-edit-table tr td {
     padding-left: 10px;
 }
+
+/* custom alert pop-up  start*/
+
+.custom-alert-popup {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 51, 102, 0.5);
+    position: absolute;
+    top: 0;
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-alert-popup .alert-body {
+    width: 320px;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 15px 25px;
+    color: white;
+    display: flex;
+    gap: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.custom-alert-popup .alert-body.success {
+    background-color: #39b54a;
+}
+
+.custom-alert-popup .alert-body.error {
+    background-color: #ed1c24;
+}
+
+.custom-alert-popup .alert-text-part {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.custom-alert-popup .alert-title-text {
+    font-size: 19px;
+}
+
+.custom-alert-popup .alert-message-text {
+    font-size: 14px;
+}
+
+.custom-alert-popup .alert-icon-part {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* custom alert pop-up  end*/
