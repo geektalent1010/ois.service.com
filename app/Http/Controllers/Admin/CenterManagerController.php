@@ -39,6 +39,12 @@ class CenterManagerController extends Controller
             $office->phone = '';
             $office->email = '';
             $office->providedby = '';
+            if($request->hasFile('file')) {
+                $file = $request->file('file');
+                $fileName = $request->file->getClientOriginalName();
+                $file->move(public_path('images/Flags'), $fileName);
+                $office->flag = $fileName;
+            }
         } else {
             $office = Office::where('id', $id)->first();
         }

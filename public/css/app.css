@@ -6184,8 +6184,24 @@ body {
   justify-content: center;
 }
 
-.center-manager-section .manager-body .office-detail-form .office-detail .flag-section img {
-  width: 120px;
+.center-manager-section .manager-body .office-detail-form .office-detail .flag-section {
+  width: 130px;
+  height: 70px;
+  background-color: #266ea5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.center-manager-section .manager-body .office-detail-form .office-detail .flag-section .image-icon {
+  width: 25px;
+}
+
+.center-manager-section .manager-body .office-detail-form .office-detail .select-country-small {
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
 }
 
 .center-manager-section .manager-body .office-detail-form .office-detail div.outline {
