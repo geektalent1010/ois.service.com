@@ -57,45 +57,44 @@
                     <div class="info-detail">
                         <div class="info-head">Center</div>
                         <div class="info-value">
-                            <input type="text" id="data6" name="city" text="Center" value="{{$user->profile->city}}" class="form-input-custom" />
-                        </div>
-                    </div>
-                    <div class="info-detail">
-                        <div class="info-head">Country</div>
-                        <div class="info-value">
-                            <div class="country-select form-select-custom select-left-icon" id="country-select">
-                                <select class="" id="data7" name="country" text="Country">
-                                    <option value="0">select country</option>
-                                    @foreach($countries as $country)
-                                        @if($country->id == $user->profile->country_id)
-                                            <option value="{{$country->id}}" selected
-                                                data-data1="{{$country->name}}">{{$country->name}}</option>
-                                        @else
-                                            <option value="{{$country->id}}"
-                                                data-data1="{{$country->name}}">{{$country->name}}</option>
-                                        @endif
+                            {{-- <input type="text" id="data6" name="city" text="Center" value="{{$user->profile->city}}" class="form-input-custom" /> --}}
+                            <div class="form-select-custom select-left-icon" id="center-select">
+                                <select class="" id="data6" name="center" text="Center">
+                                    <option value="0">Country + Center</option>
+                                    @foreach($offices as $country => $cities)
+                                        @foreach ($cities as $key => $office)
+                                            <option value="{{$office->id}}"
+                                                data-data1="{{$office->country}}"
+                                                data-data2="{{$office->city}}"
+                                                @if ($office->country == $user->profile->country->name && $office->city == $user->profile->city)
+                                                    selected
+                                                @endif
+                                                >
+                                                {{$office->country}} - {{$office->city}}
+                                            </option>
+                                        @endforeach
+
                                     @endforeach
                                 </select>
                             </div>
-
                         </div>
                     </div>
                     <div class="info-detail">
                         <div class="info-head">Role</div>
                         <div class="info-value">
-                            <input type="text" id="data8" name="role" text="Role" value="Admin" disabled class="form-input-custom" />
+                            <input type="text" id="data7" name="role" text="Role" value="Admin" disabled class="form-input-custom" />
                         </div>
                     </div>
                     <div class="info-detail">
                         <div class="info-head">User Name</div>
                         <div class="info-value">
-                            <input type="text" id="data9" name="username" text="User Name" value="{{$user->username}}" class="form-input-custom" />
+                            <input type="text" id="data8" name="username" text="User Name" value="{{$user->username}}" class="form-input-custom" />
                         </div>
                     </div>
                     <div class="info-detail">
                         <div class="info-head">Password</div>
                         <div class="info-value">
-                            <input type="password" id="data10" name="password" text="Password" value="" class="form-input-custom" />
+                            <input type="password" id="data9" name="password" text="Password" value="" class="form-input-custom" />
                         </div>
                     </div>
                 </div>

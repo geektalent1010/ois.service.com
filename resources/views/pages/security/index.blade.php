@@ -39,7 +39,7 @@
                 <div class="text-section d-flex justify-content-center">
                     <div class="description-section">
                         {!! $content[1] !!}
-                        <div class="button-section">
+                        <div class="button-section mt-5">
                             <a onclick="togglePrivacy()">{{__('privacy_policy')}}</a>
                         </div>
                     </div>

@@ -139,11 +139,17 @@
             transition: 0.3s;
             cursor: pointer;
 
+            &:hover {
+                background-color: #00a9ea;
+                transition: 0.3s;
+            }
+
             &:not(:first-child) {
                 margin-top: 2px;
             }
 
             &.focused {
+                background-color: #00a9ea;
                 opacity: 1;
             }
         }

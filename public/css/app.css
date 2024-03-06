@@ -849,14 +849,14 @@
 .register-section .form-section .form-group .register-button {
   width: 100%;
   height: 44px;
-  background: #00a9ea;
+  background: #003366;
   display: block;
   text-transform: uppercase;
   color: #ffffff;
   border-radius: 10rem;
   font-size: 16px;
   font-family: "DinPro", sans-serif;
-  border: 0.1rem solid #00a9ea;
+  border: none;
   cursor: pointer;
 }
 
@@ -865,9 +865,9 @@
 }
 
 .register-section .form-section .form-group .register-button:hover {
-  background: #003366 !important;
+  background: #00a9ea !important;
   color: #ffffff !important;
-  border-color: #003366 !important;
+  border-color: none;
 }
 
 .register-section .form-section .form-group .register-button:focus,
@@ -983,14 +983,14 @@
 .profile-section .form-section .form-group .register-button {
   width: 100%;
   height: 44px;
-  background: #00a9ea;
+  background: #003366;
   display: block;
   text-transform: uppercase;
   color: #ffffff;
   border-radius: 10rem;
   font-size: 16px;
   font-family: "DinPro", sans-serif;
-  border: 0.1rem solid #00a9ea;
+  border: none;
   cursor: pointer;
 }
 
@@ -999,9 +999,9 @@
 }
 
 .profile-section .form-section .form-group .register-button:hover {
-  background: #003366 !important;
+  background: #00a9ea !important;
   color: #ffffff !important;
-  border-color: #003366 !important;
+  border-color: none;
 }
 
 .profile-section .form-section .form-group .register-button:focus,
@@ -4424,7 +4424,7 @@ body {
   width: 100%;
   max-width: 300px;
   height: 44px;
-  background: #00a9ea;
+  background: #003366;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4434,14 +4434,13 @@ body {
   border-radius: 10rem;
   font-size: 16px;
   font-family: "DinPro", sans-serif;
-  border: 0.1rem solid #00a9ea;
+  border: none;
   cursor: pointer;
 }
 
 .application-section .click-here-button:hover {
-  background: #003366 !important;
+  background: #00a9ea !important;
   color: white !important;
-  border-color: #003366 !important;
 }
 
 .application-section .click-here-button:focus,
@@ -6307,6 +6306,7 @@ body {
 }
 
 .price-manager-section .manager-right-body .right-button:hover {
+  background-color: #00a9ea;
   opacity: 1;
   transition: 0.3s;
 }
@@ -6479,11 +6479,17 @@ body {
   cursor: pointer;
 }
 
+.checklist-manager-section .manager-right-body .editor-but:hover {
+  background-color: #00a9ea;
+  transition: 0.3s;
+}
+
 .checklist-manager-section .manager-right-body .editor-but:not(:first-child) {
   margin-top: 2px;
 }
 
 .checklist-manager-section .manager-right-body .editor-but.focused {
+  background-color: #00a9ea;
   opacity: 1;
 }
 

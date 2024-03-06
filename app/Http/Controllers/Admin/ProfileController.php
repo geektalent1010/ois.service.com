@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 use App\Country;
 use App\User;
+use App\Office;
 
 class ProfileController extends Controller
 {
@@ -56,11 +57,15 @@ class ProfileController extends Controller
                 }
             }
         }
+        $offices = Office::orderBy('country', 'asc')->orderBy('city', 'asc')->get()->groupBy(function ($data) {
+            return $data->country;
+        });
         return view('admin.profile.index')
             ->with('user', $user)
             ->with('countries', $countries)
             ->with('phoneCodes', $phoneCodes)
-            ->with('roles', $roles);
+            ->with('roles', $roles)
+            ->with('offices', $offices);
     }
 
     public function updateProfile(Request $request) {
@@ -86,7 +91,8 @@ class ProfileController extends Controller
         $user->profile->last_name = $request->input('lastName');
         $user->profile->phone_number = $request->input('phoneCode').' '.$request->input('phoneNumber');
         $user->profile->city = $request->input('city');
-        $user->profile->country_id = $request->input('country');
+
+        $user->profile->country_id = Country::where('name', $request->input('country'))->first()->id;
         $user->profile->save();
 
         $res['status'] = 'success';

@@ -30,7 +30,7 @@ $("#title-form").submit(function(e) {
                     result += r.content;
                     result += '</div>';
                     result += `
-                        <div class="info-button mt-35px">
+                        <div class="info-button mt-25px">
                             <button id="save-but">PUBLISH</button>
                         </div>
                     `;

@@ -38,7 +38,7 @@
                     <div class="text-section d-flex justify-content-center">
                         <div class="description-section">
                             {!! $content[1] !!}
-                            <div class="button-section d-flex justify-content-center">
+                            <div class="button-section d-flex justify-content-center mt-5">
                                 <a href="{{ route('login') }}">{{__('apply_here')}}</a>
                             </div>
                         </div>
@@ -49,7 +49,7 @@
                     <div class="text-section d-flex justify-content-center">
                         <div class="description-section">
                             {!! $content[2] !!}
-                            <div class="button-section d-flex justify-content-center">
+                            <div class="button-section d-flex justify-content-center mt-5">
                                 <a href="{{ route('login') }}">{{__('apply_here')}}</a>
                             </div>
                         </div>
@@ -60,7 +60,7 @@
                     <div class="text-section d-flex justify-content-center">
                         <div class="description-section">
                             {!! $content[3] !!}
-                            <div class="button-section d-flex justify-content-center">
+                            <div class="button-section d-flex justify-content-center mt-5">
                                 <a href="{{ route('contact.index') }}">{{__('chat_here')}}</a>
                             </div>
                         </div>
@@ -72,7 +72,7 @@
                         <div class="description-section">
                             {!! $content[4] !!}
 
-                            <div class="button-section d-flex justify-content-center">
+                            <div class="button-section d-flex justify-content-center mt-5">
                                 <a href="{{ route('ehealth.index') }}">{{__('apply_here')}}</a>
                             </div>
                         </div>
@@ -83,7 +83,7 @@
                     <div class="text-section d-flex justify-content-center">
                         <div class="description-section">
                             {!! $content[5] !!}
-                            <div class="button-section justify-content-between">
+                            <div class="button-section justify-content-between mt-5">
                                 <a href="{{ route('money.index') }}">{{__('transfer_here')}}</a>
                                 <a href="{{ route('innovation.index') }}">{{__('go_to_innovation')}}</a>
                             </div>

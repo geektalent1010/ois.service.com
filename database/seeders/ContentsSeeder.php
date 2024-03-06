@@ -51,7 +51,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mt-0 mb-0 ml-4">• Our wellness program is a holistic haven for health, seamlessly integrating mental health support into your well-being journey. Beyond physical health, we prioritize mental wellness, fostering a balanced and comprehensive approach to overall well-being.</p>
                 <p class="description mt-0 mb-0">Our mission is to provide not only cutting-edge software solutions but also to be a trusted ally in your pursuit of health and wellness. By simplifying processes and enhancing experiences across industries, we are dedicated to making a positive impact on every facet of your life. Welcome to a world where
                     innovation meets well-being.</p>
-                <p class="description mt-4 mb-5">At OIS, our unwavering commitment is to pioneer cutting-edge software solutions that not only streamline processes but also simplify processes and elevate experiences across diverse industries.</p>',
+                <p class="description mt-4">At OIS, our unwavering commitment is to pioneer cutting-edge software solutions that not only streamline processes but also simplify processes and elevate experiences across diverse industries.</p>',
       'order_num' => 4,
       'lang' => 'en',
     ]);
@@ -69,7 +69,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mb-0 ml-4">• Fraud Detection.</p>
                 <p class="description mb-0 ml-4">• Biometric Identification.</p>
                 <p class="description mb-0 ml-4">• Application Status Tracking.</p>
-                <p class="description mb-5 mt-4">At OIS, we envision a future where technology not only meets but exceeds expectations, and our commitment to pushing the boundaries of innovation ensures that our clients and users benefit from the most advanced, efficient, and secure visa and passport application processing solutions available.</p>',
+                <p class="description mt-4">At OIS, we envision a future where technology not only meets but exceeds expectations, and our commitment to pushing the boundaries of innovation ensures that our clients and users benefit from the most advanced, efficient, and secure visa and passport application processing solutions available.</p>',
       'order_num' => 2,
       'lang' => 'en',
     ]);
@@ -80,7 +80,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mt-0 mb-0 ml-4">• Data Processing and Validation.</p>
                 <p class="description mt-0 mb-0 ml-4">• Predictive Analytics.</p>
                 <p class="description mt-0 mb-0 ml-4">• Fraud Detection.</p>
-                <p class="description mt-4 mb-5">At the heart of our commitment lies the dedication to providing our customers with an unparalleled BVN application experience—prompt, precise, and fortified against potential risks. Through the infusion of machine learning, we embark on a journey to redefine the standards of efficiency and security in BVN issuance.</p>',
+                <p class="description mt-4">At the heart of our commitment lies the dedication to providing our customers with an unparalleled BVN application experience—prompt, precise, and fortified against potential risks. Through the infusion of machine learning, we embark on a journey to redefine the standards of efficiency and security in BVN issuance.</p>',
       'order_num' => 3,
       'lang' => 'en',
     ]);
@@ -93,7 +93,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mt-0 mb-0 ml-4">• 24/7 Accessibility.</p>
                 <p class="description mt-0 mb-0 ml-4">• Elimination of Wait Times.</p>
                 <p class="description mt-0 mb-0 ml-4">• Versatile Inquiry Handling.</p>
-                <p class="description mt-4 mb-5">This AI Chatbot represents a commitment to redefining service standards, ensuring that our customers experience a seamless and efficient interaction with our brand. As technology continues to evolve, we remain at the forefront, leveraging innovative solutions to enhance your customer journey. Welcome to a new era of personalized and responsive</p>',
+                <p class="description mt-4">This AI Chatbot represents a commitment to redefining service standards, ensuring that our customers experience a seamless and efficient interaction with our brand. As technology continues to evolve, we remain at the forefront, leveraging innovative solutions to enhance your customer journey. Welcome to a new era of personalized and responsive</p>',
       'order_num' => 4,
       'lang' => 'en',
     ]);
@@ -107,7 +107,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mb-0 ml-4">• Embrace a holistic approach to well-being through our ground breaking wellness program. Leveraging the transformative potential of Blockchain and Web3 technology, our secure and decentralized platform offers personalized diet plans, tailored exercise regimes, and comprehensive mental health support. Step into a wellness journey that is as individual as you are.</p>
                 <p class="description mt-0 mb-0">3. Health Monitoring Devices:</p>
                 <p class="description mb-0 ml-4">• Unleash the power of AI with our health monitoring devices. These intelligent systems analyze data collected from a range of devices, providing you with personalized feedback and insightful recommendations. Transform the way you monitor your health, with technology that evolves with you.</p>
-                <p class="description mt-4 mb-5">At the intersection of innovation and health, we envision a future where technology enhances every facet of your well-being journey. Our commitment is to empower you with personalized, secure, and cutting-edge solutions that redefine the standards of E-health and Wellness. Welcome to a realm where your health is not just a priority—it\'s a personalized experience.</p>',
+                <p class="description mt-4">At the intersection of innovation and health, we envision a future where technology enhances every facet of your well-being journey. Our commitment is to empower you with personalized, secure, and cutting-edge solutions that redefine the standards of E-health and Wellness. Welcome to a realm where your health is not just a priority—it\'s a personalized experience.</p>',
       'order_num' => 5,
       'lang' => 'en',
     ]);
@@ -119,7 +119,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mt-0 mb-0 ml-4">• Immutable Ledger Recording.</p>
                 <p class="description mt-0 mb-0 ml-4">• Fast, Secure, and Low-Cost Options.</p>
                 <p class="description mt-0 mb-0 ml-4">• Enhanced Flexibility and Convenience.</p>
-                <p class="description mt-4 mb-5">At OIS, we are committed to redefining the landscape of electronic financial services. The integration of Blockchain and Web3 is a testament to our dedication to innovation, ensuring that our customers experience the utmost in security, transparency, and convenience when entrusting us with their financial transactions. Welcome to a new era of Electronic Money Transfer—where technology meets trust.</p>',
+                <p class="description mt-4">At OIS, we are committed to redefining the landscape of electronic financial services. The integration of Blockchain and Web3 is a testament to our dedication to innovation, ensuring that our customers experience the utmost in security, transparency, and convenience when entrusting us with their financial transactions. Welcome to a new era of Electronic Money Transfer—where technology meets trust.</p>',
       'order_num' => 6,
       'lang' => 'en',
     ]);
@@ -167,7 +167,7 @@ class ContentsSeeder extends Seeder
     Content::create([
       'title' => 'INNOVATION',
       'content' => '<p class="sub-title">Virtual Reality-based Training</p>
-                <p class="description mb-5">We provide virtual reality-based training for our healthcare professionals and customer support teams to enhance their skills and provide better service. Our VR-based training programs simulate real-world scenarios, providing a safe and immersive learning experience.</p>',
+                <p class="description">We provide virtual reality-based training for our healthcare professionals and customer support teams to enhance their skills and provide better service. Our VR-based training programs simulate real-world scenarios, providing a safe and immersive learning experience.</p>',
       'order_num' => 7,
       'lang' => 'en',
     ]);
@@ -182,7 +182,7 @@ class ContentsSeeder extends Seeder
       'content' => '<p class="sub-title">Data Protection and Security</p>
                 <p class="description">OIS places a high priority on data protection and security for our customers. We have implemented a range of measures to ensure the security and accuracy of customer data, including robust encryption protocols, regular backups, and secure data storage solutions.</p>
                 <p class="description mt-4">In addition, we have established strict data access controls, ensuring that only authorized personnel have access to sensitive customer data. To maintain the accuracy of customer data, OIS employs automated data verification and cleansing processes, to ensure data is always accurate and up to date.</p>
-                <p class="description mt-4 mb-5">OIS obtains customer data through secure, consent-based processes and uses this data to inform the development of new products and services that deliver real value to customers.</p>',
+                <p class="description mt-4">OIS obtains customer data through secure, consent-based processes and uses this data to inform the development of new products and services that deliver real value to customers.</p>',
       'order_num' => 2,
       'lang' => 'en',
     ]);
@@ -1073,7 +1073,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mt-0 mb-0"><b>综合健康计划：</b></p>
                 <p class="description mt-0 mb-0 ml-4">• 我们的健康计划是一个全面的健康天堂，将心理健康支持无缝融入您的健康之旅。 除了身体健康之外，我们还优先考虑心理健康，促进平衡和全面的整体福祉。</p>
                 <p class="description mt-0 mb-0">我们的使命不仅是提供尖端的软件解决方案，而且是您追求健康和保健的过程中值得信赖的盟友。 通过简化流程并增强跨行业的体验，我们致力于对您生活的各个方面产生积极影响。 欢迎来到创新与福祉相结合的世界。</p>
-                <p class="description mt-4 mb-5">在 OIS，我们坚定不移地致力于开创尖端软件解决方案，不仅简化流程，而且简化流程并提升不同行业的体验。</p>',
+                <p class="description mt-4">在 OIS，我们坚定不移地致力于开创尖端软件解决方案，不仅简化流程，而且简化流程并提升不同行业的体验。</p>',
       'order_num' => 4,
       'lang' => 'cn',
     ]);
@@ -1091,7 +1091,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mb-0 ml-4">• 欺诈识别。</p>
                 <p class="description mb-0 ml-4">• 生物识别。</p>
                 <p class="description mb-0 ml-4">• 应用程序状态跟踪。</p>
-                <p class="description mb-5 mt-4">在 OIS，我们展望未来，技术不仅满足而且超越预期，我们致力于突破创新界限，确保我们的客户和用户受益于最先进、高效、安全的签证和护照申请处理解决方案。</p>',
+                <p class="description mt-4">在 OIS，我们展望未来，技术不仅满足而且超越预期，我们致力于突破创新界限，确保我们的客户和用户受益于最先进、高效、安全的签证和护照申请处理解决方案。</p>',
       'order_num' => 2,
       'lang' => 'cn',
     ]);
@@ -1102,7 +1102,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mt-0 mb-0 ml-4">• 数据处理和验证。</p>
                 <p class="description mt-0 mb-0 ml-4">• 预测分析。</p>
                 <p class="description mt-0 mb-0 ml-4">• 欺诈识别。</p>
-                <p class="description mt-4 mb-5">我们承诺的核心是致力于为客户提供无与伦比的 BVN 应用体验——及时、精确，并增强抵御潜在风险的能力。 通过机器学习的注入，我们踏上了重新定义 BVN 发行效率和安全标准的旅程。</p>',
+                <p class="description mt-4">我们承诺的核心是致力于为客户提供无与伦比的 BVN 应用体验——及时、精确，并增强抵御潜在风险的能力。 通过机器学习的注入，我们踏上了重新定义 BVN 发行效率和安全标准的旅程。</p>',
       'order_num' => 3,
       'lang' => 'cn',
     ]);
@@ -1115,7 +1115,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mt-0 mb-0 ml-4">• 24/7 无障碍。</p>
                 <p class="description mt-0 mb-0 ml-4">• 消除等待时间。</p>
                 <p class="description mt-0 mb-0 ml-4">• 多功能查询处理。</p>
-                <p class="description mt-4 mb-5">该人工智能聊天机器人代表了重新定义服务标准的承诺，确保我们的客户体验与我们品牌的无缝、高效的互动。 随着技术的不断发展，我们始终处于最前沿，利用创新的解决方案来增强您的客户旅程。 欢迎来到个性化和响应式的新时代</p>',
+                <p class="description mt-4">该人工智能聊天机器人代表了重新定义服务标准的承诺，确保我们的客户体验与我们品牌的无缝、高效的互动。 随着技术的不断发展，我们始终处于最前沿，利用创新的解决方案来增强您的客户旅程。 欢迎来到个性化和响应式的新时代</p>',
       'order_num' => 4,
       'lang' => 'cn',
     ]);
@@ -1129,7 +1129,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mb-0 ml-4">• 通过我们突破性的健康计划，采用全面的健康方法。 利用区块链和 Web3 技术的变革潜力，我们安全且去中心化的平台提供个性化饮食计划、量身定制的锻炼方案和全面的心理健康支持。 踏上与您一样个性化的健康之旅。</p>
                 <p class="description mt-0 mb-0">3.健康监测设备：</p>
                 <p class="description mb-0 ml-4">• 通过我们的健康监测设备释放人工智能的力量。 这些智能系统分析从各种设备收集的数据，为您提供个性化的反馈和富有洞察力的建议。 利用与您一起发展的技术，改变您监测健康的方式。</p>
-                <p class="description mt-4 mb-5">在创新与健康的交叉点，我们设想未来技术将增强您健康之旅的各个方面。 我们的承诺是为您提供个性化、安全和尖端的解决方案，重新定义电子医疗和健康的标准。 欢迎来到这个领域，您的健康不仅是一个优先考虑的问题，而且还是一种个性化的体验。</p>',
+                <p class="description mt-4">在创新与健康的交叉点，我们设想未来技术将增强您健康之旅的各个方面。 我们的承诺是为您提供个性化、安全和尖端的解决方案，重新定义电子医疗和健康的标准。 欢迎来到这个领域，您的健康不仅是一个优先考虑的问题，而且还是一种个性化的体验。</p>',
       'order_num' => 5,
       'lang' => 'cn',
     ]);
@@ -1141,7 +1141,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mt-0 mb-0 ml-4">• 不可变的账本记录。</p>
                 <p class="description mt-0 mb-0 ml-4">• 快速、安全且低成本的选择。</p>
                 <p class="description mt-0 mb-0 ml-4">• 增强灵活性和便利性。</p>
-                <p class="description mt-4 mb-5">在 OIS，我们致力于重新定义电子金融服务的格局。 区块链和 Web3 的集成证明了我们致力于创新，确保我们的客户在委托我们进行金融交易时体验到最大的安全性、透明度和便利性。 欢迎来到电子汇款的新时代——技术与信任的结合。</p>',
+                <p class="description mt-4">在 OIS，我们致力于重新定义电子金融服务的格局。 区块链和 Web3 的集成证明了我们致力于创新，确保我们的客户在委托我们进行金融交易时体验到最大的安全性、透明度和便利性。 欢迎来到电子汇款的新时代——技术与信任的结合。</p>',
       'order_num' => 6,
       'lang' => 'cn',
     ]);
@@ -1189,7 +1189,7 @@ class ContentsSeeder extends Seeder
     Content::create([
       'title' => 'INNOVATION',
       'content' => '<p class="sub-title">基于虚拟现实的培训</p>
-                <p class="description mb-5">我们为医疗保健专业人员和客户支持团队提供基于虚拟现实的培训，以提高他们的技能并提供更好的服务。 我们基于 VR 的培训计划模拟真实场景，提供安全、身临其境的学习体验。</p>',
+                <p class="description">我们为医疗保健专业人员和客户支持团队提供基于虚拟现实的培训，以提高他们的技能并提供更好的服务。 我们基于 VR 的培训计划模拟真实场景，提供安全、身临其境的学习体验。</p>',
       'order_num' => 7,
       'lang' => 'cn',
     ]);
@@ -1204,7 +1204,7 @@ class ContentsSeeder extends Seeder
       'content' => '<p class="sub-title">数据保护和安全</p>
                 <p class="description">OIS 高度重视客户的数据保护和安全。 我们实施了一系列措施来确保客户数据的安全性和准确性，包括强大的加密协议、定期备份和安全的数据存储解决方案。</p>
                 <p class="description mt-4">此外，我们建立了严格的数据访问控制，确保只有授权人员才能访问敏感的客户数据。 为了保持客户数据的准确性，OIS 采用自动数据验证和清理流程，以确保数据始终准确且最新。</p>
-                <p class="description mt-4 mb-5">OIS 通过安全、基于同意的流程获取客户数据，并使用这些数据来开发新产品和服务，为客户带来真正的价值。</p>',
+                <p class="description mt-4">OIS 通过安全、基于同意的流程获取客户数据，并使用这些数据来开发新产品和服务，为客户带来真正的价值。</p>',
       'order_num' => 2,
       'lang' => 'cn',
     ]);
@@ -2066,7 +2066,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mt-0 mb-0"><b>برنامج العافية المتكامل:</b></p>
                 <p class="description mt-0 mb-0 ml-4">• يعد برنامج العافية الخاص بنا ملاذًا شاملاً للصحة، حيث يدمج دعم الصحة العقلية بسلاسة في رحلة الرفاهية الخاصة بك. إلى جانب الصحة البدنية، فإننا نعطي الأولوية للصحة العقلية، ونعزز اتباع نهج متوازن وشامل للرفاهية العامة.</p>
                 <p class="description mt-0 mb-0">مهمتنا هي ليس فقط تقديم حلول برمجية متطورة ولكن أيضًا أن نكون حليفًا موثوقًا به في سعيك لتحقيق الصحة والعافية. من خلال تبسيط العمليات وتعزيز الخبرات عبر الصناعات، نحن ملتزمون بإحداث تأثير إيجابي على كل جانب من جوانب حياتك. مرحبًا بكم في عالم يلتقي فيه الابتكار بالرفاهية.</p>
-                <p class="description mt-4 mb-5">في OIS، التزامنا الثابت هو الريادة في الحلول البرمجية المتطورة التي لا تبسط العمليات فحسب، بل تعمل أيضًا على تبسيط العمليات ورفع مستوى الخبرات عبر الصناعات المتنوعة.</p>',
+                <p class="description mt-4">في OIS، التزامنا الثابت هو الريادة في الحلول البرمجية المتطورة التي لا تبسط العمليات فحسب، بل تعمل أيضًا على تبسيط العمليات ورفع مستوى الخبرات عبر الصناعات المتنوعة.</p>',
       'order_num' => 4,
       'lang' => 'ar',
     ]);
@@ -2084,7 +2084,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mb-0 ml-4">• الكشف عن الغش.</p>
                 <p class="description mb-0 ml-4">• تحديد الهوية البيومترية.</p>
                 <p class="description mb-0 ml-4">• تتبع حالة الطلب.</p>
-                <p class="description mb-5 mt-4">في OIS، نتصور مستقبلًا لا تلبي فيه التكنولوجيا التوقعات فحسب، بل تتجاوزها، ويضمن التزامنا بدفع حدود الابتكار أن يستفيد عملاؤنا ومستخدمونا من حلول معالجة طلبات التأشيرة وجواز السفر الأكثر تقدمًا وكفاءة وأمانًا المتاحة.</p>',
+                <p class="description mt-4">في OIS، نتصور مستقبلًا لا تلبي فيه التكنولوجيا التوقعات فحسب، بل تتجاوزها، ويضمن التزامنا بدفع حدود الابتكار أن يستفيد عملاؤنا ومستخدمونا من حلول معالجة طلبات التأشيرة وجواز السفر الأكثر تقدمًا وكفاءة وأمانًا المتاحة.</p>',
       'order_num' => 2,
       'lang' => 'ar',
     ]);
@@ -2095,7 +2095,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mt-0 mb-0 ml-4">• معالجة البيانات والتحقق من صحتها.</p>
                 <p class="description mt-0 mb-0 ml-4">• التحليلات التنبؤية.</p>
                 <p class="description mt-0 mb-0 ml-4">• الكشف عن الغش.</p>
-                <p class="description mt-4 mb-5">يكمن في قلب التزامنا التفاني في تزويد عملائنا بتجربة تطبيق BVN لا مثيل لها - سريعة ودقيقة ومحصنة ضد المخاطر المحتملة. ومن خلال دمج التعلم الآلي، نبدأ رحلة لإعادة تحديد معايير الكفاءة والأمان في إصدار BVN.</p>',
+                <p class="description mt-4">يكمن في قلب التزامنا التفاني في تزويد عملائنا بتجربة تطبيق BVN لا مثيل لها - سريعة ودقيقة ومحصنة ضد المخاطر المحتملة. ومن خلال دمج التعلم الآلي، نبدأ رحلة لإعادة تحديد معايير الكفاءة والأمان في إصدار BVN.</p>',
       'order_num' => 3,
       'lang' => 'ar',
     ]);
@@ -2108,7 +2108,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mt-0 mb-0 ml-4">• إمكانية الوصول على مدار الساعة طوال أيام الأسبوع.</p>
                 <p class="description mt-0 mb-0 ml-4">• القضاء على أوقات الانتظار.</p>
                 <p class="description mt-0 mb-0 ml-4">• التعامل مع الاستفسارات المتنوعة.</p>
-                <p class="description mt-4 mb-5">يمثل AI Chatbot هذا التزامًا بإعادة تحديد معايير الخدمة، مما يضمن تجربة عملائنا لتفاعل سلس وفعال مع علامتنا التجارية. مع استمرار تطور التكنولوجيا، نبقى في الطليعة، ونستفيد من الحلول المبتكرة لتعزيز رحلة العميل الخاصة بك. مرحبًا بك في عصر جديد من التخصيص والاستجابة</p>',
+                <p class="description mt-4">يمثل AI Chatbot هذا التزامًا بإعادة تحديد معايير الخدمة، مما يضمن تجربة عملائنا لتفاعل سلس وفعال مع علامتنا التجارية. مع استمرار تطور التكنولوجيا، نبقى في الطليعة، ونستفيد من الحلول المبتكرة لتعزيز رحلة العميل الخاصة بك. مرحبًا بك في عصر جديد من التخصيص والاستجابة</p>',
       'order_num' => 4,
       'lang' => 'ar',
     ]);
@@ -2122,7 +2122,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mb-0 ml-4">• تبني نهجًا شاملاً للرفاهية من خلال برنامجنا الصحي الرائد. من خلال الاستفادة من الإمكانات التحويلية لتقنية Blockchain وWeb3، توفر منصتنا الآمنة واللامركزية خططًا غذائية مخصصة وأنظمة تمارين مخصصة ودعمًا شاملاً للصحة العقلية. انطلق في رحلة عافية مميزة مثلك تمامًا.</p>
                 <p class="description mt-0 mb-0">3. أجهزة مراقبة الصحة:</p>
                 <p class="description mb-0 ml-4">• أطلق العنان لقوة الذكاء الاصطناعي باستخدام أجهزة المراقبة الصحية لدينا. تقوم هذه الأنظمة الذكية بتحليل البيانات التي تم جمعها من مجموعة من الأجهزة، مما يوفر لك تعليقات مخصصة وتوصيات ثاقبة. قم بتغيير الطريقة التي تراقب بها صحتك، باستخدام التكنولوجيا التي تتطور معك.</p>
-                <p class="description mt-4 mb-5">عند تقاطع الابتكار والصحة، نتصور مستقبلًا حيث تعزز التكنولوجيا كل جانب من جوانب رحلة الرفاهية الخاصة بك. التزامنا هو تزويدك بحلول مخصصة وآمنة ومتطورة تعيد تعريف معايير الصحة الإلكترونية والعافية. مرحبًا بك في عالم حيث صحتك ليست مجرد أولوية - إنها تجربة مخصصة.</p>',
+                <p class="description mt-4">عند تقاطع الابتكار والصحة، نتصور مستقبلًا حيث تعزز التكنولوجيا كل جانب من جوانب رحلة الرفاهية الخاصة بك. التزامنا هو تزويدك بحلول مخصصة وآمنة ومتطورة تعيد تعريف معايير الصحة الإلكترونية والعافية. مرحبًا بك في عالم حيث صحتك ليست مجرد أولوية - إنها تجربة مخصصة.</p>',
       'order_num' => 5,
       'lang' => 'ar',
     ]);
@@ -2134,7 +2134,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mt-0 mb-0 ml-4">• تسجيل دفتر الأستاذ غير القابل للتغيير.</p>
                 <p class="description mt-0 mb-0 ml-4">• خيارات سريعة وآمنة ومنخفضة التكلفة.</p>
                 <p class="description mt-0 mb-0 ml-4">• تعزيز المرونة والراحة.</p>
-                <p class="description mt-4 mb-5">في OIS، نحن ملتزمون بإعادة تعريف مشهد الخدمات المالية الإلكترونية. يعد تكامل Blockchain وWeb3 بمثابة شهادة على تفانينا في الابتكار، مما يضمن حصول عملائنا على أقصى درجات الأمان والشفافية والراحة عند تكليفنا بمعاملاتهم المالية. مرحبًا بكم في عصر جديد من تحويل الأموال الإلكتروني، حيث تلتقي التكنولوجيا بالثقة.</p>',
+                <p class="description mt-4">في OIS، نحن ملتزمون بإعادة تعريف مشهد الخدمات المالية الإلكترونية. يعد تكامل Blockchain وWeb3 بمثابة شهادة على تفانينا في الابتكار، مما يضمن حصول عملائنا على أقصى درجات الأمان والشفافية والراحة عند تكليفنا بمعاملاتهم المالية. مرحبًا بكم في عصر جديد من تحويل الأموال الإلكتروني، حيث تلتقي التكنولوجيا بالثقة.</p>',
       'order_num' => 6,
       'lang' => 'ar',
     ]);
@@ -2182,7 +2182,7 @@ class ContentsSeeder extends Seeder
     Content::create([
       'title' => 'INNOVATION',
       'content' => '<p class="sub-title">التدريب القائم على الواقع الافتراضي</p>
-                <p class="description mb-5">نحن نقدم تدريبًا قائمًا على الواقع الافتراضي لمتخصصي الرعاية الصحية وفرق دعم العملاء لدينا لتعزيز مهاراتهم وتقديم خدمة أفضل. تحاكي برامجنا التدريبية القائمة على الواقع الافتراضي سيناريوهات العالم الحقيقي، مما يوفر تجربة تعليمية آمنة وغامرة.</p>',
+                <p class="description">نحن نقدم تدريبًا قائمًا على الواقع الافتراضي لمتخصصي الرعاية الصحية وفرق دعم العملاء لدينا لتعزيز مهاراتهم وتقديم خدمة أفضل. تحاكي برامجنا التدريبية القائمة على الواقع الافتراضي سيناريوهات العالم الحقيقي، مما يوفر تجربة تعليمية آمنة وغامرة.</p>',
       'order_num' => 7,
       'lang' => 'ar',
     ]);
@@ -2197,7 +2197,7 @@ class ContentsSeeder extends Seeder
       'content' => '<p class="sub-title">حماية البيانات والأمن</p>
                 <p class="description">تضع OIS أولوية عالية لحماية البيانات وأمنها لعملائنا. لقد قمنا بتنفيذ مجموعة من التدابير لضمان أمان ودقة بيانات العملاء، بما في ذلك بروتوكولات التشفير القوية والنسخ الاحتياطي المنتظم وحلول تخزين البيانات الآمنة.</p>
                 <p class="description mt-4">بالإضافة إلى ذلك، قمنا بوضع ضوابط صارمة للوصول إلى البيانات، مما يضمن أن الموظفين المصرح لهم فقط هم من يمكنهم الوصول إلى بيانات العملاء الحساسة. للحفاظ على دقة بيانات العملاء، تستخدم OIS عمليات التحقق الآلي من البيانات وتنقيتها، لضمان دقة البيانات وتحديثها دائمًا.</p>
-                <p class="description mt-4 mb-5">تحصل OIS على بيانات العملاء من خلال عمليات آمنة قائمة على الموافقة وتستخدم هذه البيانات للإبلاغ عن تطوير المنتجات والخدمات الجديدة التي تقدم قيمة حقيقية للعملاء.</p>',
+                <p class="description mt-4">تحصل OIS على بيانات العملاء من خلال عمليات آمنة قائمة على الموافقة وتستخدم هذه البيانات للإبلاغ عن تطوير المنتجات والخدمات الجديدة التي تقدم قيمة حقيقية للعملاء.</p>',
       'order_num' => 2,
       'lang' => 'ar',
     ]);
@@ -3058,7 +3058,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mt-0 mb-0"><b>Programme de bien-être intégré :</b></p>
                 <p class="description mt-0 mb-0 ml-4">• Notre programme de bien-être est un havre de santé holistique, intégrant de manière transparente le soutien en matière de santé mentale dans votre parcours de bien-être. Au-delà de la santé physique, nous accordons la priorité au bien-être mental, en favorisant une approche équilibrée et globale du bien-être général.</p>
                 <p class="description mt-0 mb-0">Notre mission est de fournir non seulement des solutions logicielles de pointe, mais également d\'être un allié de confiance dans votre quête de santé et de bien-être. En simplifiant les processus et en améliorant les expériences dans tous les secteurs, nous nous engageons à avoir un impact positif sur toutes les facettes de votre vie. Bienvenue dans un monde où l\'innovation rencontre le bien-être.</p>
-                <p class="description mt-4 mb-5">Chez OIS, notre engagement inébranlable est de proposer des solutions logicielles de pointe qui non seulement rationalisent les processus, mais simplifient également les processus et améliorent les expériences dans divers secteurs.</p>',
+                <p class="description mt-4">Chez OIS, notre engagement inébranlable est de proposer des solutions logicielles de pointe qui non seulement rationalisent les processus, mais simplifient également les processus et améliorent les expériences dans divers secteurs.</p>',
       'order_num' => 4,
       'lang' => 'fr',
     ]);
@@ -3076,7 +3076,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mb-0 ml-4">• Détection de fraude.</p>
                 <p class="description mb-0 ml-4">• Identification biométrique.</p>
                 <p class="description mb-0 ml-4">• Suivi de l\'état de la demande.</p>
-                <p class="description mb-5 mt-4">Chez OIS, nous envisageons un avenir où la technologie non seulement répond mais dépasse les attentes, et notre engagement à repousser les limites de l\'innovation garantit que nos clients et utilisateurs bénéficient des solutions de traitement des demandes de visa et de passeport les plus avancées, efficaces et sécurisées disponibles.</p>',
+                <p class="description mt-4">Chez OIS, nous envisageons un avenir où la technologie non seulement répond mais dépasse les attentes, et notre engagement à repousser les limites de l\'innovation garantit que nos clients et utilisateurs bénéficient des solutions de traitement des demandes de visa et de passeport les plus avancées, efficaces et sécurisées disponibles.</p>',
       'order_num' => 2,
       'lang' => 'fr',
     ]);
@@ -3087,7 +3087,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mt-0 mb-0 ml-4">• Traitement et validation des données.</p>
                 <p class="description mt-0 mb-0 ml-4">• Analyses prédictives.</p>
                 <p class="description mt-0 mb-0 ml-4">• Détection de fraude.</p>
-                <p class="description mt-4 mb-5">Au cœur de notre engagement se trouve la détermination à fournir à nos clients une expérience d’application BVN inégalée : rapide, précise et renforcée contre les risques potentiels. Grâce à l\'infusion de l\'apprentissage automatique, nous nous lançons dans un voyage visant à redéfinir les normes d\'efficacité et de sécurité dans l\'émission de BVN.</p>',
+                <p class="description mt-4">Au cœur de notre engagement se trouve la détermination à fournir à nos clients une expérience d’application BVN inégalée : rapide, précise et renforcée contre les risques potentiels. Grâce à l\'infusion de l\'apprentissage automatique, nous nous lançons dans un voyage visant à redéfinir les normes d\'efficacité et de sécurité dans l\'émission de BVN.</p>',
       'order_num' => 3,
       'lang' => 'fr',
     ]);
@@ -3100,7 +3100,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mt-0 mb-0 ml-4">• Accessibilité 24h/24 et 7j/7.</p>
                 <p class="description mt-0 mb-0 ml-4">• Élimination des temps d\'attente.</p>
                 <p class="description mt-0 mb-0 ml-4">• Traitement polyvalent des demandes.</p>
-                <p class="description mt-4 mb-5">Ce Chatbot IA représente un engagement à redéfinir les normes de service, garantissant à nos clients une interaction transparente et efficace avec notre marque. À mesure que la technologie continue d’évoluer, nous restons à l’avant-garde, en tirant parti de solutions innovantes pour améliorer votre parcours client. Bienvenue dans une nouvelle ère de personnalisation et de réactivité</p>',
+                <p class="description mt-4">Ce Chatbot IA représente un engagement à redéfinir les normes de service, garantissant à nos clients une interaction transparente et efficace avec notre marque. À mesure que la technologie continue d’évoluer, nous restons à l’avant-garde, en tirant parti de solutions innovantes pour améliorer votre parcours client. Bienvenue dans une nouvelle ère de personnalisation et de réactivité</p>',
       'order_num' => 4,
       'lang' => 'fr',
     ]);
@@ -3114,7 +3114,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mb-0 ml-4">• Adoptez une approche holistique du bien-être grâce à notre programme de bien-être révolutionnaire. Tirant parti du potentiel de transformation de la technologie Blockchain et Web3, notre plateforme sécurisée et décentralisée propose des plans de régime personnalisés, des programmes d\'exercices sur mesure et un soutien complet en matière de santé mentale. Entrez dans un voyage de bien-être aussi individuel que vous.</p>
                 <p class="description mt-0 mb-0">3. Appareils de surveillance de la santé :</p>
                 <p class="description mb-0 ml-4">• Libérez la puissance de l’IA avec nos appareils de surveillance de la santé. Ces systèmes intelligents analysent les données collectées à partir d\'une gamme d\'appareils, vous fournissant des commentaires personnalisés et des recommandations pertinentes. Transformez la façon dont vous surveillez votre santé, avec une technologie qui évolue avec vous.</p>
-                <p class="description mt-4 mb-5">À l’intersection de l’innovation et de la santé, nous envisageons un avenir où la technologie améliore toutes les facettes de votre parcours de bien-être. Notre engagement est de vous offrir des solutions personnalisées, sécurisées et de pointe qui redéfinissent les normes de la e-santé et du bien-être. Bienvenue dans un royaume où votre santé n\'est pas seulement une priorité : c\'est une expérience personnalisée.</p>',
+                <p class="description mt-4">À l’intersection de l’innovation et de la santé, nous envisageons un avenir où la technologie améliore toutes les facettes de votre parcours de bien-être. Notre engagement est de vous offrir des solutions personnalisées, sécurisées et de pointe qui redéfinissent les normes de la e-santé et du bien-être. Bienvenue dans un royaume où votre santé n\'est pas seulement une priorité : c\'est une expérience personnalisée.</p>',
       'order_num' => 5,
       'lang' => 'fr',
     ]);
@@ -3126,7 +3126,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mt-0 mb-0 ml-4">• Enregistrement du grand livre immuable.</p>
                 <p class="description mt-0 mb-0 ml-4">• Options rapides, sécurisées et peu coûteuses.</p>
                 <p class="description mt-0 mb-0 ml-4">• Flexibilité et commodité améliorées.</p>
-                <p class="description mt-4 mb-5">Chez OIS, nous nous engageons à redéfinir le paysage des services financiers électroniques. L\'intégration de Blockchain et Web3 témoigne de notre dévouement à l\'innovation, garantissant que nos clients bénéficient du maximum de sécurité, de transparence et de commodité lorsqu\'ils nous confient leurs transactions financières. Bienvenue dans une nouvelle ère de transfert d’argent électronique, où la technologie rencontre la confiance.</p>',
+                <p class="description mt-4">Chez OIS, nous nous engageons à redéfinir le paysage des services financiers électroniques. L\'intégration de Blockchain et Web3 témoigne de notre dévouement à l\'innovation, garantissant que nos clients bénéficient du maximum de sécurité, de transparence et de commodité lorsqu\'ils nous confient leurs transactions financières. Bienvenue dans une nouvelle ère de transfert d’argent électronique, où la technologie rencontre la confiance.</p>',
       'order_num' => 6,
       'lang' => 'fr',
     ]);
@@ -3174,7 +3174,7 @@ class ContentsSeeder extends Seeder
     Content::create([
       'title' => 'INNOVATION',
       'content' => '<p class="sub-title">Formation basée sur la réalité virtuelle</p>
-                <p class="description mb-5">Nous proposons des formations basées sur la réalité virtuelle à nos professionnels de la santé et à nos équipes de support client afin d\'améliorer leurs compétences et de fournir un meilleur service. Nos programmes de formation basés sur la réalité virtuelle simulent des scénarios du monde réel, offrant une expérience d\'apprentissage sûre et immersive.</p>',
+                <p class="description">Nous proposons des formations basées sur la réalité virtuelle à nos professionnels de la santé et à nos équipes de support client afin d\'améliorer leurs compétences et de fournir un meilleur service. Nos programmes de formation basés sur la réalité virtuelle simulent des scénarios du monde réel, offrant une expérience d\'apprentissage sûre et immersive.</p>',
       'order_num' => 7,
       'lang' => 'fr',
     ]);
@@ -3189,7 +3189,7 @@ class ContentsSeeder extends Seeder
       'content' => '<p class="sub-title">Protection et sécurité des données</p>
                 <p class="description">OIS accorde une grande priorité à la protection et à la sécurité des données de nos clients. Nous avons mis en œuvre une série de mesures pour garantir la sécurité et l\'exactitude des données des clients, notamment des protocoles de cryptage robustes, des sauvegardes régulières et des solutions de stockage de données sécurisées.</p>
                 <p class="description mt-4">De plus, nous avons établi des contrôles stricts d\'accès aux données, garantissant que seul le personnel autorisé a accès aux données sensibles des clients. Pour maintenir l\'exactitude des données client, OIS utilise des processus automatisés de vérification et de nettoyage des données, pour garantir que les données sont toujours exactes et à jour.</p>
-                <p class="description mt-4 mb-5">OIS obtient les données des clients via des processus sécurisés basés sur le consentement et utilise ces données pour éclairer le développement de nouveaux produits et services qui apportent une réelle valeur aux clients.</p>',
+                <p class="description mt-4">OIS obtient les données des clients via des processus sécurisés basés sur le consentement et utilise ces données pour éclairer le développement de nouveaux produits et services qui apportent une réelle valeur aux clients.</p>',
       'order_num' => 2,
       'lang' => 'fr',
     ]);
@@ -4050,7 +4050,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mt-0 mb-0"><b>Integriertes Wellness-Programm:</b></p>
                 <p class="description mt-0 mb-0 ml-4">• Unser Wellness-Programm ist ein ganzheitlicher Zufluchtsort für Gesundheit und integriert die Unterstützung der psychischen Gesundheit nahtlos in Ihre Reise zum Wohlbefinden. Über die körperliche Gesundheit hinaus legen wir Wert auf das geistige Wohlbefinden und fördern einen ausgewogenen und umfassenden Ansatz für das allgemeine Wohlbefinden.</p>
                 <p class="description mt-0 mb-0">Unsere Mission ist es, nicht nur modernste Softwarelösungen bereitzustellen, sondern auch ein vertrauenswürdiger Verbündeter bei Ihrem Streben nach Gesundheit und Wohlbefinden zu sein. Durch die Vereinfachung von Prozessen und die Verbesserung der Erfahrungen in allen Branchen setzen wir uns dafür ein, jeden Aspekt Ihres Lebens positiv zu beeinflussen. Willkommen in einer Welt, in der Innovation auf Wohlbefinden trifft.</p>
-                <p class="description mt-4 mb-5">Bei OIS ist es unser unerschütterliches Engagement, innovative Softwarelösungen zu entwickeln, die nicht nur Prozesse rationalisieren, sondern auch Prozesse vereinfachen und die Erfahrungen in verschiedenen Branchen verbessern.</p>',
+                <p class="description mt-4">Bei OIS ist es unser unerschütterliches Engagement, innovative Softwarelösungen zu entwickeln, die nicht nur Prozesse rationalisieren, sondern auch Prozesse vereinfachen und die Erfahrungen in verschiedenen Branchen verbessern.</p>',
       'order_num' => 4,
       'lang' => 'de',
     ]);
@@ -4068,7 +4068,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mb-0 ml-4">• Entdeckung eines Betruges.</p>
                 <p class="description mb-0 ml-4">• Biometrische Identifizierung.</p>
                 <p class="description mb-0 ml-4">• Verfolgung des Bewerbungsstatus.</p>
-                <p class="description mb-5 mt-4">Bei OIS stellen wir uns eine Zukunft vor, in der die Technologie die Erwartungen nicht nur erfüllt, sondern übertrifft, und unser Engagement, die Grenzen der Innovation zu verschieben, stellt sicher, dass unsere Kunden und Benutzer von den fortschrittlichsten, effizientesten und sichersten verfügbaren Lösungen für die Bearbeitung von Visa- und Passanträgen profitieren.</p>',
+                <p class="description mt-4">Bei OIS stellen wir uns eine Zukunft vor, in der die Technologie die Erwartungen nicht nur erfüllt, sondern übertrifft, und unser Engagement, die Grenzen der Innovation zu verschieben, stellt sicher, dass unsere Kunden und Benutzer von den fortschrittlichsten, effizientesten und sichersten verfügbaren Lösungen für die Bearbeitung von Visa- und Passanträgen profitieren.</p>',
       'order_num' => 2,
       'lang' => 'de',
     ]);
@@ -4079,7 +4079,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mt-0 mb-0 ml-4">• Datenverarbeitung und -validierung.</p>
                 <p class="description mt-0 mb-0 ml-4">• Prädiktive Analytik.</p>
                 <p class="description mt-0 mb-0 ml-4">• Entdeckung eines Betruges.</p>
-                <p class="description mt-4 mb-5">Im Mittelpunkt unseres Engagements steht das Engagement, unseren Kunden ein beispielloses BVN-Anwendungserlebnis zu bieten – zeitnah, präzise und vor potenziellen Risiken geschützt. Durch den Einsatz von maschinellem Lernen begeben wir uns auf eine Reise, um die Standards für Effizienz und Sicherheit bei der BVN-Ausgabe neu zu definieren.</p>',
+                <p class="description mt-4">Im Mittelpunkt unseres Engagements steht das Engagement, unseren Kunden ein beispielloses BVN-Anwendungserlebnis zu bieten – zeitnah, präzise und vor potenziellen Risiken geschützt. Durch den Einsatz von maschinellem Lernen begeben wir uns auf eine Reise, um die Standards für Effizienz und Sicherheit bei der BVN-Ausgabe neu zu definieren.</p>',
       'order_num' => 3,
       'lang' => 'de',
     ]);
@@ -4092,7 +4092,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mt-0 mb-0 ml-4">• Erreichbarkeit rund um die Uhr.</p>
                 <p class="description mt-0 mb-0 ml-4">• Eliminierung von Wartezeiten.</p>
                 <p class="description mt-0 mb-0 ml-4">• Vielseitige Anfragebearbeitung.</p>
-                <p class="description mt-4 mb-5">Dieser KI-Chatbot stellt ein Engagement für die Neudefinition von Servicestandards dar und stellt sicher, dass unsere Kunden eine nahtlose und effiziente Interaktion mit unserer Marke erleben. Während sich die Technologie ständig weiterentwickelt, bleiben wir an der Spitze und nutzen innovative Lösungen, um Ihre Customer Journey zu verbessern. Willkommen in einer neuen Ära der Personalisierung und Reaktionsfähigkeit</p>',
+                <p class="description mt-4">Dieser KI-Chatbot stellt ein Engagement für die Neudefinition von Servicestandards dar und stellt sicher, dass unsere Kunden eine nahtlose und effiziente Interaktion mit unserer Marke erleben. Während sich die Technologie ständig weiterentwickelt, bleiben wir an der Spitze und nutzen innovative Lösungen, um Ihre Customer Journey zu verbessern. Willkommen in einer neuen Ära der Personalisierung und Reaktionsfähigkeit</p>',
       'order_num' => 4,
       'lang' => 'de',
     ]);
@@ -4106,7 +4106,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mb-0 ml-4">• Verfolgen Sie mit unserem bahnbrechenden Wellnessprogramm einen ganzheitlichen Ansatz für Ihr Wohlbefinden. Unsere sichere und dezentrale Plattform nutzt das transformative Potenzial der Blockchain- und Web3-Technologie und bietet personalisierte Diätpläne, maßgeschneiderte Trainingsprogramme und umfassende Unterstützung für die psychische Gesundheit. Begeben Sie sich auf eine Wellness-Reise, die so individuell ist wie Sie.</p>
                 <p class="description mt-0 mb-0">3. Gesundheitsüberwachungsgeräte:</p>
                 <p class="description mb-0 ml-4">• Entfesseln Sie die Kraft der KI mit unseren Gesundheitsüberwachungsgeräten. Diese intelligenten Systeme analysieren die von verschiedenen Geräten gesammelten Daten und geben Ihnen personalisiertes Feedback und aufschlussreiche Empfehlungen. Verändern Sie die Art und Weise, wie Sie Ihre Gesundheit überwachen, mit Technologie, die sich mit Ihnen weiterentwickelt.</p>
-                <p class="description mt-4 mb-5">An der Schnittstelle von Innovation und Gesundheit stellen wir uns eine Zukunft vor, in der Technologie jeden Aspekt Ihres Wohlbefindens verbessert. Unser Ziel ist es, Sie mit personalisierten, sicheren und hochmodernen Lösungen zu unterstützen, die die Standards von E-Health und Wellness neu definieren. Willkommen in einem Bereich, in dem Ihre Gesundheit nicht nur Priorität hat – sie ist ein persönliches Erlebnis.</p>',
+                <p class="description mt-4">An der Schnittstelle von Innovation und Gesundheit stellen wir uns eine Zukunft vor, in der Technologie jeden Aspekt Ihres Wohlbefindens verbessert. Unser Ziel ist es, Sie mit personalisierten, sicheren und hochmodernen Lösungen zu unterstützen, die die Standards von E-Health und Wellness neu definieren. Willkommen in einem Bereich, in dem Ihre Gesundheit nicht nur Priorität hat – sie ist ein persönliches Erlebnis.</p>',
       'order_num' => 5,
       'lang' => 'de',
     ]);
@@ -4118,7 +4118,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mt-0 mb-0 ml-4">• Unveränderliche Ledger-Aufzeichnung.</p>
                 <p class="description mt-0 mb-0 ml-4">• Schnelle, sichere und kostengünstige Optionen.</p>
                 <p class="description mt-0 mb-0 ml-4">• Erhöhte Flexibilität und Komfort.</p>
-                <p class="description mt-4 mb-5">Bei OIS setzen wir uns dafür ein, die Landschaft der elektronischen Finanzdienstleistungen neu zu definieren. Die Integration von Blockchain und Web3 ist ein Beweis für unser Engagement für Innovation und stellt sicher, dass unsere Kunden ein Höchstmaß an Sicherheit, Transparenz und Komfort erfahren, wenn sie uns ihre Finanztransaktionen anvertrauen. Willkommen in einer neuen Ära des elektronischen Geldtransfers – in der Technologie auf Vertrauen trifft.</p>',
+                <p class="description mt-4">Bei OIS setzen wir uns dafür ein, die Landschaft der elektronischen Finanzdienstleistungen neu zu definieren. Die Integration von Blockchain und Web3 ist ein Beweis für unser Engagement für Innovation und stellt sicher, dass unsere Kunden ein Höchstmaß an Sicherheit, Transparenz und Komfort erfahren, wenn sie uns ihre Finanztransaktionen anvertrauen. Willkommen in einer neuen Ära des elektronischen Geldtransfers – in der Technologie auf Vertrauen trifft.</p>',
       'order_num' => 6,
       'lang' => 'de',
     ]);
@@ -4166,7 +4166,7 @@ class ContentsSeeder extends Seeder
     Content::create([
       'title' => 'INNOVATION',
       'content' => '<p class="sub-title">Virtual-Reality-basiertes Training</p>
-                <p class="description mb-5">Wir bieten Virtual-Reality-basierte Schulungen für unsere medizinischen Fachkräfte und Kundendienstteams an, um ihre Fähigkeiten zu verbessern und einen besseren Service zu bieten. Unsere VR-basierten Trainingsprogramme simulieren reale Szenarien und bieten so ein sicheres und umfassendes Lernerlebnis.</p>',
+                <p class="description">Wir bieten Virtual-Reality-basierte Schulungen für unsere medizinischen Fachkräfte und Kundendienstteams an, um ihre Fähigkeiten zu verbessern und einen besseren Service zu bieten. Unsere VR-basierten Trainingsprogramme simulieren reale Szenarien und bieten so ein sicheres und umfassendes Lernerlebnis.</p>',
       'order_num' => 7,
       'lang' => 'de',
     ]);
@@ -4181,7 +4181,7 @@ class ContentsSeeder extends Seeder
       'content' => '<p class="sub-title">Datenschutz und Sicherheit</p>
                 <p class="description">OIS legt großen Wert auf Datenschutz und Sicherheit für unsere Kunden. Wir haben eine Reihe von Maßnahmen implementiert, um die Sicherheit und Genauigkeit der Kundendaten zu gewährleisten, darunter robuste Verschlüsselungsprotokolle, regelmäßige Backups und sichere Datenspeicherlösungen.</p>
                 <p class="description mt-4">Darüber hinaus haben wir strenge Datenzugriffskontrollen eingeführt, um sicherzustellen, dass nur autorisiertes Personal Zugriff auf sensible Kundendaten hat. Um die Genauigkeit der Kundendaten zu gewährleisten, setzt OIS automatisierte Datenüberprüfungs- und -bereinigungsprozesse ein, um sicherzustellen, dass die Daten immer korrekt und aktuell sind.</p>
-                <p class="description mt-4 mb-5">OIS erhält Kundendaten durch sichere, einwilligungsbasierte Prozesse und nutzt diese Daten, um die Entwicklung neuer Produkte und Dienstleistungen zu unterstützen, die den Kunden einen echten Mehrwert bieten.</p>',
+                <p class="description mt-4">OIS erhält Kundendaten durch sichere, einwilligungsbasierte Prozesse und nutzt diese Daten, um die Entwicklung neuer Produkte und Dienstleistungen zu unterstützen, die den Kunden einen echten Mehrwert bieten.</p>',
       'order_num' => 2,
       'lang' => 'de',
     ]);
@@ -5042,7 +5042,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mt-0 mb-0"><b>Programma Benessere Integrato:</b></p>
                 <p class="description mt-0 mb-0 ml-4">• Il nostro programma benessere è un paradiso olistico per la salute, che integra perfettamente il supporto per la salute mentale nel tuo percorso verso il benessere. Oltre alla salute fisica, diamo priorità al benessere mentale, promuovendo un approccio equilibrato e completo al benessere generale.</p>
                 <p class="description mt-0 mb-0">La nostra missione è fornire non solo soluzioni software all\'avanguardia, ma anche essere un alleato fidato nella ricerca della salute e del benessere. Semplificando i processi e migliorando le esperienze in tutti i settori, ci impegniamo ad avere un impatto positivo su ogni aspetto della tua vita. Benvenuti in un mondo in cui l\'innovazione incontra il benessere.</p>
-                <p class="description mt-4 mb-5">In OIS, il nostro impegno costante è quello di essere pionieri di soluzioni software all\'avanguardia che non solo razionalizzino i processi, ma semplifichino anche i processi e migliorino le esperienze in diversi settori.</p>',
+                <p class="description mt-4">In OIS, il nostro impegno costante è quello di essere pionieri di soluzioni software all\'avanguardia che non solo razionalizzino i processi, ma semplifichino anche i processi e migliorino le esperienze in diversi settori.</p>',
       'order_num' => 4,
       'lang' => 'it',
     ]);
@@ -5060,7 +5060,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mb-0 ml-4">• Intercettazione di una frode.</p>
                 <p class="description mb-0 ml-4">• Identificazione biometrica.</p>
                 <p class="description mb-0 ml-4">• Monitoraggio dello stato dell\'applicazione.</p>
-                <p class="description mb-5 mt-4">Noi di OIS immaginiamo un futuro in cui la tecnologia non solo soddisfi ma superi le aspettative e il nostro impegno a spingere i confini dell\'innovazione garantisce che i nostri clienti e utenti traggano vantaggio dalle soluzioni più avanzate, efficienti e sicure disponibili per l\'elaborazione delle domande di visto e passaporto.</p>',
+                <p class="description mt-4">Noi di OIS immaginiamo un futuro in cui la tecnologia non solo soddisfi ma superi le aspettative e il nostro impegno a spingere i confini dell\'innovazione garantisce che i nostri clienti e utenti traggano vantaggio dalle soluzioni più avanzate, efficienti e sicure disponibili per l\'elaborazione delle domande di visto e passaporto.</p>',
       'order_num' => 2,
       'lang' => 'it',
     ]);
@@ -5071,7 +5071,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mt-0 mb-0 ml-4">• Elaborazione e convalida dei dati.</p>
                 <p class="description mt-0 mb-0 ml-4">• Analisi predittiva.</p>
                 <p class="description mt-0 mb-0 ml-4">• Intercettazione di una frode.</p>
-                <p class="description mt-4 mb-5">Al centro del nostro impegno c\'è la dedizione nel fornire ai nostri clienti un\'esperienza applicativa BVN senza precedenti: tempestiva, precisa e protetta contro potenziali rischi. Attraverso l’utilizzo dell’apprendimento automatico, intraprendiamo un viaggio per ridefinire gli standard di efficienza e sicurezza nell’emissione di BVN.</p>',
+                <p class="description mt-4">Al centro del nostro impegno c\'è la dedizione nel fornire ai nostri clienti un\'esperienza applicativa BVN senza precedenti: tempestiva, precisa e protetta contro potenziali rischi. Attraverso l’utilizzo dell’apprendimento automatico, intraprendiamo un viaggio per ridefinire gli standard di efficienza e sicurezza nell’emissione di BVN.</p>',
       'order_num' => 3,
       'lang' => 'it',
     ]);
@@ -5084,7 +5084,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mt-0 mb-0 ml-4">• Accessibilità 24 ore su 24, 7 giorni su 7.</p>
                 <p class="description mt-0 mb-0 ml-4">• Eliminazione dei tempi di attesa.</p>
                 <p class="description mt-0 mb-0 ml-4">• Gestione versatile delle richieste.</p>
-                <p class="description mt-4 mb-5">Questo Chatbot AI rappresenta un impegno a ridefinire gli standard di servizio, garantendo che i nostri clienti sperimentino un\'interazione continua ed efficiente con il nostro marchio. Poiché la tecnologia continua ad evolversi, restiamo in prima linea, sfruttando soluzioni innovative per migliorare il percorso del cliente. Benvenuti in una nuova era personalizzata e reattiva</p>',
+                <p class="description mt-4">Questo Chatbot AI rappresenta un impegno a ridefinire gli standard di servizio, garantendo che i nostri clienti sperimentino un\'interazione continua ed efficiente con il nostro marchio. Poiché la tecnologia continua ad evolversi, restiamo in prima linea, sfruttando soluzioni innovative per migliorare il percorso del cliente. Benvenuti in una nuova era personalizzata e reattiva</p>',
       'order_num' => 4,
       'lang' => 'it',
     ]);
@@ -5098,7 +5098,7 @@ class ContentsSeeder extends Seeder
                 <p class="description mb-0 ml-4">• Abbraccia un approccio olistico al benessere attraverso il nostro innovativo programma benessere. Sfruttando il potenziale di trasformazione della tecnologia Blockchain e Web3, la nostra piattaforma sicura e decentralizzata offre piani dietetici personalizzati, regimi di esercizio fisico su misura e supporto completo per la salute mentale. Entra in un viaggio di benessere individuale come te.</p>
                 <p class="description mt-0 mb-0">3. Dispositivi di monitoraggio della salute:</p>
                 <p class="description mb-0 ml-4">• Scatena la potenza dell\'intelligenza artificiale con i nostri dispositivi di monitoraggio della salute. Questi sistemi intelligenti analizzano i dati raccolti da una vasta gamma di dispositivi, fornendo feedback personalizzati e consigli approfonditi. Trasforma il modo in cui monitori la tua salute, con una tecnologia che si evolve con te.</p>
-                <p class="description mt-4 mb-5">All’intersezione tra innovazione e salute, immaginiamo un futuro in cui la tecnologia migliorerà ogni aspetto del tuo percorso verso il benessere. Il nostro impegno è fornirti soluzioni personalizzate, sicure e all\'avanguardia che ridefiniscono gli standard di sanità elettronica e benessere. Benvenuto in un regno in cui la tua salute non è solo una priorità: è un\'esperienza personalizzata.</p>',
+                <p class="description mt-4">All’intersezione tra innovazione e salute, immaginiamo un futuro in cui la tecnologia migliorerà ogni aspetto del tuo percorso verso il benessere. Il nostro impegno è fornirti soluzioni personalizzate, sicure e all\'avanguardia che ridefiniscono gli standard di sanità elettronica e benessere. Benvenuto in un regno in cui la tua salute non è solo una priorità: è un\'esperienza personalizzata.</p>',
       'order_num' => 5,
       'lang' => 'it',
     ]);
@@ -5110,7 +5110,7 @@ class ContentsSeeder extends Seeder
                  <p class="description mt-0 mb-0 ml-4">• Registrazione registro immutabile.</p>
                  <p class="description mt-0 mb-0 ml-4">• Opzioni veloci, sicure e a basso costo.</p>
                  <p class="description mt-0 mb-0 ml-4">• Flessibilità e comodità migliorate.</p>
-                 <p class="description mt-4 mb-5">Noi di OIS ci impegniamo a ridefinire il panorama dei servizi finanziari elettronici. L\'integrazione di Blockchain e Web3 testimonia la nostra dedizione all\'innovazione, garantendo ai nostri clienti la massima sicurezza, trasparenza e comodità quando ci affidano le loro transazioni finanziarie. Benvenuti in una nuova era del trasferimento di denaro elettronico, dove la tecnologia incontra la fiducia.</p>',
+                 <p class="description mt-4">Noi di OIS ci impegniamo a ridefinire il panorama dei servizi finanziari elettronici. L\'integrazione di Blockchain e Web3 testimonia la nostra dedizione all\'innovazione, garantendo ai nostri clienti la massima sicurezza, trasparenza e comodità quando ci affidano le loro transazioni finanziarie. Benvenuti in una nuova era del trasferimento di denaro elettronico, dove la tecnologia incontra la fiducia.</p>',
       'order_num' => 6,
       'lang' => 'it',
     ]);
@@ -5158,7 +5158,7 @@ class ContentsSeeder extends Seeder
     Content::create([
       'title' => 'INNOVATION',
       'content' => '<p class="sub-title">Formazione basata sulla realtà virtuale</p>
-                <p class="description mb-5">Forniamo formazione basata sulla realtà virtuale ai nostri operatori sanitari e ai team di assistenza clienti per migliorare le loro competenze e fornire un servizio migliore. I nostri programmi di formazione basati sulla realtà virtuale simulano scenari del mondo reale, fornendo un\'esperienza di apprendimento sicura e coinvolgente.</p>',
+                <p class="description">Forniamo formazione basata sulla realtà virtuale ai nostri operatori sanitari e ai team di assistenza clienti per migliorare le loro competenze e fornire un servizio migliore. I nostri programmi di formazione basati sulla realtà virtuale simulano scenari del mondo reale, fornendo un\'esperienza di apprendimento sicura e coinvolgente.</p>',
       'order_num' => 7,
       'lang' => 'it',
     ]);
@@ -5173,7 +5173,7 @@ class ContentsSeeder extends Seeder
       'content' => '<p class="sub-title">Protezione e sicurezza dei dati</p>
                 <p class="description">OIS attribuisce un\'alta priorità alla protezione e alla sicurezza dei dati dei nostri clienti. Abbiamo implementato una serie di misure per garantire la sicurezza e l\'accuratezza dei dati dei clienti, inclusi robusti protocolli di crittografia, backup regolari e soluzioni di archiviazione sicura dei dati.</p>
                 <p class="description mt-4">Inoltre, abbiamo stabilito severi controlli di accesso ai dati, garantendo che solo il personale autorizzato abbia accesso ai dati sensibili dei clienti. Per mantenere l\'accuratezza dei dati dei clienti, OIS utilizza processi automatizzati di verifica e pulizia dei dati, per garantire che i dati siano sempre accurati e aggiornati.</p>
-                <p class="description mt-4 mb-5">OIS ottiene i dati dei clienti attraverso processi sicuri e basati sul consenso e utilizza questi dati per informare lo sviluppo di nuovi prodotti e servizi che offrono valore reale ai clienti.</p>',
+                <p class="description mt-4">OIS ottiene i dati dei clienti attraverso processi sicuri e basati sul consenso e utilizza questi dati per informare lo sviluppo di nuovi prodotti e servizi che offrono valore reale ai clienti.</p>',
       'order_num' => 2,
       'lang' => 'it',
     ]);
@@ -6036,7 +6036,7 @@ class ContentsSeeder extends Seeder
                  <p class="description mt-0 mb-0 ml-4">• Sağlıklı yaşam programımız, ruh sağlığı desteğini sağlıklı yaşam yolculuğunuza kusursuz bir şekilde entegre eden bütünsel bir sağlık cennetidir. Fiziksel sağlığın ötesinde zihinsel sağlığa öncelik veriyoruz ve genel iyiliğe dengeli ve kapsamlı bir yaklaşım getiriyoruz.</p>
                  <p class="description mt-0 mb-0">Misyonumuz yalnızca son teknoloji yazılım çözümleri sunmak değil, aynı zamanda sağlık ve sağlıklı yaşam arayışınızda güvenilir bir müttefik olmaktır. Süreçleri basitleştirerek ve farklı sektörlerdeki deneyimleri geliştirerek hayatınızın her alanında olumlu bir etki yaratmaya kendimizi adadık. olduğu bir dünyaya hoş geldiniz.
                      yenilik refahla buluşuyor.</p>
-                 <p class="description mt-4 mb-5">OIS olarak değişmez taahhüdümüz, yalnızca süreçleri kolaylaştırmakla kalmayıp aynı zamanda süreçleri basitleştiren ve çeşitli sektörlerdeki deneyimleri geliştiren son teknoloji yazılım çözümlerine öncülük etmektir.</p>',
+                 <p class="description mt-4">OIS olarak değişmez taahhüdümüz, yalnızca süreçleri kolaylaştırmakla kalmayıp aynı zamanda süreçleri basitleştiren ve çeşitli sektörlerdeki deneyimleri geliştiren son teknoloji yazılım çözümlerine öncülük etmektir.</p>',
       'order_num' => 4,
       'lang' => 'tr',
     ]);
@@ -6054,7 +6054,7 @@ class ContentsSeeder extends Seeder
                  <p class="description mb-0 ml-4">• Sahtekarlık Tespiti.</p>
                  <p class="description mb-0 ml-4">• Biyometrik Tanımlama.</p>
                  <p class="description mb-0 ml-4">• Uygulama Durumu Takibi.</p>
-                 <p class="description mb-5 mt-4">OIS olarak, teknolojinin beklentileri karşılamakla kalmayıp aştığı bir gelecek hayal ediyoruz ve yeniliğin sınırlarını zorlama konusundaki kararlılığımız, müşterilerimizin ve kullanıcılarımızın en gelişmiş teknolojilerden yararlanmasını sağlıyor , verimli ve güvenli vize ve pasaport başvuru işleme çözümleri mevcuttur.</p>',
+                 <p class="description mt-4">OIS olarak, teknolojinin beklentileri karşılamakla kalmayıp aştığı bir gelecek hayal ediyoruz ve yeniliğin sınırlarını zorlama konusundaki kararlılığımız, müşterilerimizin ve kullanıcılarımızın en gelişmiş teknolojilerden yararlanmasını sağlıyor , verimli ve güvenli vize ve pasaport başvuru işleme çözümleri mevcuttur.</p>',
       'order_num' => 2,
       'lang' => 'tr',
     ]);
@@ -6065,7 +6065,7 @@ class ContentsSeeder extends Seeder
                  <p class="description mt-0 mb-0 ml-4">• Veri İşleme ve Doğrulama.</p>
                  <p class="description mt-0 mb-0 ml-4">• Tahmine Dayalı Analiz.</p>
                  <p class="description mt-0 mb-0 ml-4">• Sahtekarlık Tespiti.</p>
-                 <p class="description mt-4 mb-5">Taahhüdümüzün temelinde müşterilerimize benzersiz bir BVN uygulama deneyimi (hızlı, kesin ve potansiyel risklere karşı güçlendirilmiş) sunma konusundaki kararlılığımız yatıyor. Makine öğreniminin eklenmesiyle BVN tahsisinde verimlilik ve güvenlik standartlarını yeniden tanımlama yolculuğuna çıkıyoruz.</p>',
+                 <p class="description mt-4">Taahhüdümüzün temelinde müşterilerimize benzersiz bir BVN uygulama deneyimi (hızlı, kesin ve potansiyel risklere karşı güçlendirilmiş) sunma konusundaki kararlılığımız yatıyor. Makine öğreniminin eklenmesiyle BVN tahsisinde verimlilik ve güvenlik standartlarını yeniden tanımlama yolculuğuna çıkıyoruz.</p>',
       'order_num' => 3,
       'lang' => 'tr',
     ]);
@@ -6078,7 +6078,7 @@ class ContentsSeeder extends Seeder
                  <p class="description mt-0 mb-0 ml-4">• 7/24 Erişilebilirlik.</p>
                  <p class="description mt-0 mb-0 ml-4">• Bekleme Sürelerinin Ortadan Kaldırılması.</p>
                  <p class="description mt-0 mb-0 ml-4">• Çok Yönlü Sorgu İşleme.</p>
-                 <p class="description mt-4 mb-5">Bu AI Chatbot, hizmet standartlarını yeniden tanımlama kararlılığını temsil ederek müşterilerimizin markamızla sorunsuz ve verimli bir etkileşim yaşamasını sağlar. Teknoloji gelişmeye devam ettikçe, müşteri yolculuğunuzu geliştirmek için yenilikçi çözümlerden yararlanarak ön planda kalıyoruz. Kişiselleştirilmiş ve duyarlı yeni bir çağa hoş geldiniz</p>',
+                 <p class="description mt-4">Bu AI Chatbot, hizmet standartlarını yeniden tanımlama kararlılığını temsil ederek müşterilerimizin markamızla sorunsuz ve verimli bir etkileşim yaşamasını sağlar. Teknoloji gelişmeye devam ettikçe, müşteri yolculuğunuzu geliştirmek için yenilikçi çözümlerden yararlanarak ön planda kalıyoruz. Kişiselleştirilmiş ve duyarlı yeni bir çağa hoş geldiniz</p>',
       'order_num' => 4,
       'lang' => 'tr',
     ]);
@@ -6092,7 +6092,7 @@ class ContentsSeeder extends Seeder
                  <p class="description mb-0 ml-4">• Çığır açan sağlıklı yaşam programımız aracılığıyla sağlıklı yaşam için bütünsel bir yaklaşımı benimseyin. Blockchain ve Web3 teknolojisinin dönüştürücü potansiyelinden yararlanan güvenli ve merkezi olmayan platformumuz, kişiselleştirilmiş diyet planları, kişiye özel egzersiz rejimleri ve kapsamlı zihinsel sağlık desteği sunar. Sizin kadar kişisel bir sağlıklı yaşam yolculuğuna adım atın.</p>
                  <p class="description mt-0 mb-0">3. Sağlık İzleme Cihazları:</p>
                  <p class="description mb-0 ml-4">• Sağlık izleme cihazlarımızla yapay zekanın gücünü açığa çıkarın. Bu akıllı sistemler, çeşitli cihazlardan toplanan verileri analiz ederek size kişiselleştirilmiş geri bildirimler ve anlayışlı öneriler sunar. Sizinle birlikte gelişen teknolojiyle sağlığınızı izleme şeklinizi dönüştürün.</p>
-                 <p class="description mt-4 mb-5">İnovasyon ve sağlığın kesiştiği noktada, teknolojinin refah yolculuğunuzun her yönünü iyileştirdiği bir gelecek hayal ediyoruz. Taahhüdümüz, sizi E-sağlık ve Wellness standartlarını yeniden tanımlayan kişiselleştirilmiş, güvenli ve son teknoloji çözümlerle güçlendirmektir. Sağlığınızın yalnızca bir öncelik değil, kişiselleştirilmiş bir deneyim olduğu bir dünyaya hoş geldiniz.</p>',
+                 <p class="description mt-4">İnovasyon ve sağlığın kesiştiği noktada, teknolojinin refah yolculuğunuzun her yönünü iyileştirdiği bir gelecek hayal ediyoruz. Taahhüdümüz, sizi E-sağlık ve Wellness standartlarını yeniden tanımlayan kişiselleştirilmiş, güvenli ve son teknoloji çözümlerle güçlendirmektir. Sağlığınızın yalnızca bir öncelik değil, kişiselleştirilmiş bir deneyim olduğu bir dünyaya hoş geldiniz.</p>',
       'order_num' => 5,
       'lang' => 'tr',
     ]);
@@ -6104,7 +6104,7 @@ class ContentsSeeder extends Seeder
                  <p class="description mt-0 mb-0 ml-4">• Değişmez Defter Kaydı.</p>
                  <p class="description mt-0 mb-0 ml-4">• Hızlı, Güvenli ve Düşük Maliyetli Seçenekler.</p>
                  <p class="description mt-0 mb-0 ml-4">• Gelişmiş Esneklik ve Kolaylık.</p>
-                 <p class="description mt-4 mb-5">OIS olarak elektronik finansal hizmetlerin kapsamını yeniden tanımlamaya kendimizi adadık. Blockchain ve Web3\'ün entegrasyonu, müşterilerimizin finansal işlemlerini bize emanet ederken en yüksek güvenlik, şeffaflık ve rahatlığı deneyimlemelerini sağlayarak yeniliğe olan bağlılığımızın bir kanıtıdır. Teknolojinin güvenle buluştuğu yeni Elektronik Para Transferi çağına hoş geldiniz.</p>',
+                 <p class="description mt-4">OIS olarak elektronik finansal hizmetlerin kapsamını yeniden tanımlamaya kendimizi adadık. Blockchain ve Web3\'ün entegrasyonu, müşterilerimizin finansal işlemlerini bize emanet ederken en yüksek güvenlik, şeffaflık ve rahatlığı deneyimlemelerini sağlayarak yeniliğe olan bağlılığımızın bir kanıtıdır. Teknolojinin güvenle buluştuğu yeni Elektronik Para Transferi çağına hoş geldiniz.</p>',
       'order_num' => 6,
       'lang' => 'tr',
     ]);
@@ -6152,7 +6152,7 @@ class ContentsSeeder extends Seeder
     Content::create([
       'title' => 'INNOVATION',
       'content' => '<p class="sub-title">Sanal Gerçeklik Tabanlı Eğitim</p>
-                 <p class="description mb-5">Sağlık profesyonellerimizin ve müşteri destek ekiplerimizin becerilerini geliştirmek ve daha iyi hizmet sunmak için sanal gerçeklik tabanlı eğitimler sağlıyoruz. VR tabanlı eğitim programlarımız gerçek dünya senaryolarını simüle ederek güvenli ve sürükleyici bir öğrenme deneyimi sağlıyor.</p>',
+                 <p class="description">Sağlık profesyonellerimizin ve müşteri destek ekiplerimizin becerilerini geliştirmek ve daha iyi hizmet sunmak için sanal gerçeklik tabanlı eğitimler sağlıyoruz. VR tabanlı eğitim programlarımız gerçek dünya senaryolarını simüle ederek güvenli ve sürükleyici bir öğrenme deneyimi sağlıyor.</p>',
       'order_num' => 7,
       'lang' => 'tr',
     ]);
@@ -6167,7 +6167,7 @@ class ContentsSeeder extends Seeder
       'content' => '<p class="sub-title">Veri Koruma ve Güvenlik</p>
                  <p class="description">OIS, müşterilerimiz için veri korumasına ve güvenliğine yüksek öncelik vermektedir. Müşteri verilerinin güvenliğini ve doğruluğunu sağlamak için güçlü şifreleme protokolleri, düzenli yedeklemeler ve güvenli veri depolama çözümleri dahil olmak üzere bir dizi önlem uyguladık.</p>
                  <p class="description mt-4">Ayrıca, hassas müşteri verilerine yalnızca yetkili personelin erişmesini sağlayacak şekilde sıkı veri erişim kontrolleri oluşturduk. OIS, müşteri verilerinin doğruluğunu korumak amacıyla verilerin her zaman doğru ve güncel olmasını sağlamak amacıyla otomatik veri doğrulama ve temizleme süreçlerini kullanır.</p>
-                 <p class="description mt-4 mb-5">OIS, müşteri verilerini güvenli, rızaya dayalı süreçler aracılığıyla elde eder ve bu verileri, müşterilere gerçek değer sunan yeni ürün ve hizmetlerin geliştirilmesinde bilgi sağlamak için kullanır.</p>',
+                 <p class="description mt-4">OIS, müşteri verilerini güvenli, rızaya dayalı süreçler aracılığıyla elde eder ve bu verileri, müşterilere gerçek değer sunan yeni ürün ve hizmetlerin geliştirilmesinde bilgi sağlamak için kullanır.</p>',
       'order_num' => 2,
       'lang' => 'tr',
     ]);
@@ -7030,7 +7030,7 @@ class ContentsSeeder extends Seeder
                  <p class="description mt-0 mb-0 ml-4">• Nuestro programa de bienestar es un refugio holístico para la salud, que integra perfectamente el apoyo a la salud mental en su viaje de bienestar. Más allá de la salud física, priorizamos el bienestar mental, fomentando un enfoque equilibrado e integral del bienestar general.</p>
                  <p class="description mt-0 mb-0">Nuestra misión es brindar no solo soluciones de software de vanguardia, sino también ser un aliado confiable en su búsqueda de salud y bienestar. Al simplificar los procesos y mejorar las experiencias en todas las industrias, nos dedicamos a generar un impacto positivo en cada faceta de su vida. Bienvenido a un mundo donde
                      la innovación se encuentra con el bienestar.</p>
-                 <p class="description mt-4 mb-5">En OIS, nuestro compromiso inquebrantable es ser pioneros en soluciones de software de vanguardia que no solo agilicen los procesos sino que también los simplifiquen y mejoren las experiencias en diversas industrias.</p>',
+                 <p class="description mt-4">En OIS, nuestro compromiso inquebrantable es ser pioneros en soluciones de software de vanguardia que no solo agilicen los procesos sino que también los simplifiquen y mejoren las experiencias en diversas industrias.</p>',
       'order_num' => 4,
       'lang' => 'es',
     ]);
@@ -7048,7 +7048,7 @@ class ContentsSeeder extends Seeder
                  <p class="description mb-0 ml-4">• Detección de fraude.</p>
                  <p class="description mb-0 ml-4">• Identificación Biométrica.</p>
                  <p class="description mb-0 ml-4">• Seguimiento del estado de la solicitud.</p>
-                 <p class="description mb-5 mt-4">En OIS, visualizamos un futuro donde la tecnología no solo cumple sino que supera las expectativas, y nuestro compromiso de ampliar los límites de la innovación garantiza que nuestros clientes y usuarios se beneficien de las tecnologías más avanzadas. Soluciones de procesamiento de solicitudes de visas y pasaportes disponibles, eficientes y seguras.</p>',
+                 <p class="description mt-4">En OIS, visualizamos un futuro donde la tecnología no solo cumple sino que supera las expectativas, y nuestro compromiso de ampliar los límites de la innovación garantiza que nuestros clientes y usuarios se beneficien de las tecnologías más avanzadas. Soluciones de procesamiento de solicitudes de visas y pasaportes disponibles, eficientes y seguras.</p>',
       'order_num' => 2,
       'lang' => 'es',
     ]);
@@ -7059,7 +7059,7 @@ class ContentsSeeder extends Seeder
             <p class="description mt-0 mb-0 ml-4">• Procesamiento y Validación de Datos.</p>
             <p class="description mt-0 mb-0 ml-4">• Análisis predictivo.</p>
             <p class="description mt-0 mb-0 ml-4">• Detección de fraude.</p>
-            <p class="description mt-4 mb-5">En el centro de nuestro compromiso se encuentra la dedicación a brindar a nuestros clientes una experiencia de aplicación BVN incomparable: rápida, precisa y fortalecida contra riesgos potenciales. A través de la infusión de aprendizaje automático, nos embarcamos en un viaje para redefinir los estándares de eficiencia y seguridad en la emisión de BVN.</p>',
+            <p class="description mt-4">En el centro de nuestro compromiso se encuentra la dedicación a brindar a nuestros clientes una experiencia de aplicación BVN incomparable: rápida, precisa y fortalecida contra riesgos potenciales. A través de la infusión de aprendizaje automático, nos embarcamos en un viaje para redefinir los estándares de eficiencia y seguridad en la emisión de BVN.</p>',
       'order_num' => 3,
       'lang' => 'es',
     ]);
@@ -7072,7 +7072,7 @@ class ContentsSeeder extends Seeder
                  <p class="description mt-0 mb-0 ml-4">• Accesibilidad 24 horas al día, 7 días a la semana.</p>
                  <p class="description mt-0 mb-0 ml-4">• Eliminación de Tiempos de Espera.</p>
                  <p class="description mt-0 mb-0 ml-4">• Manejo versátil de consultas.</p>
-                 <p class="description mt-4 mb-5">Este Chatbot de IA representa un compromiso para redefinir los estándares de servicio, garantizando que nuestros clientes experimenten una interacción fluida y eficiente con nuestra marca. A medida que la tecnología continúa evolucionando, nos mantenemos a la vanguardia, aprovechando soluciones innovadoras para mejorar el recorrido del cliente. Bienvenido a una nueva era de personalización y capacidad de respuesta</p>',
+                 <p class="description mt-4">Este Chatbot de IA representa un compromiso para redefinir los estándares de servicio, garantizando que nuestros clientes experimenten una interacción fluida y eficiente con nuestra marca. A medida que la tecnología continúa evolucionando, nos mantenemos a la vanguardia, aprovechando soluciones innovadoras para mejorar el recorrido del cliente. Bienvenido a una nueva era de personalización y capacidad de respuesta</p>',
       'order_num' => 4,
       'lang' => 'es',
     ]);
@@ -7086,7 +7086,7 @@ class ContentsSeeder extends Seeder
                  <p class="description mb-0 ml-4">• Adopte un enfoque holístico del bienestar a través de nuestro innovador programa de bienestar. Aprovechando el potencial transformador de la tecnología Blockchain y Web3, nuestra plataforma segura y descentralizada ofrece planes de dieta personalizados, regímenes de ejercicio personalizados y apoyo integral para la salud mental. Embárcate en un viaje de bienestar que es tan individual como tú.</p>
                  <p clase="descripción mt-0 mb-0">3. Dispositivos de monitoreo de salud:</p>
                  <p class="description mb-0 ml-4">• Libere el poder de la IA con nuestros dispositivos de monitoreo de salud. Estos sistemas inteligentes analizan los datos recopilados de una variedad de dispositivos y le brindan comentarios personalizados y recomendaciones detalladas. Transforme la forma en que controla su salud con tecnología que evoluciona con usted.</p>
-                 <p class="description mt-4 mb-5">En la intersección de la innovación y la salud, imaginamos un futuro en el que la tecnología mejora cada faceta de su viaje hacia el bienestar. Nuestro compromiso es brindarle soluciones personalizadas, seguras y de vanguardia que redefinan los estándares de E-salud y bienestar. Bienvenido a un ámbito donde su salud no es solo una prioridad: es una experiencia personalizada.</p>',
+                 <p class="description mt-4">En la intersección de la innovación y la salud, imaginamos un futuro en el que la tecnología mejora cada faceta de su viaje hacia el bienestar. Nuestro compromiso es brindarle soluciones personalizadas, seguras y de vanguardia que redefinan los estándares de E-salud y bienestar. Bienvenido a un ámbito donde su salud no es solo una prioridad: es una experiencia personalizada.</p>',
       'order_num' => 5,
       'lang' => 'es',
     ]);
@@ -7098,7 +7098,7 @@ class ContentsSeeder extends Seeder
                  <p class="description mt-0 mb-0 ml-4">• Grabación de libro mayor inmutable.</p>
                  <p class="description mt-0 mb-0 ml-4">• Opciones rápidas, seguras y de bajo costo.</p>
                  <p class="description mt-0 mb-0 ml-4">• Flexibilidad y comodidad mejoradas.</p>
-                 <p class="description mt-4 mb-5">En OIS, estamos comprometidos a redefinir el panorama de los servicios financieros electrónicos. La integración de Blockchain y Web3 es un testimonio de nuestra dedicación a la innovación, garantizando que nuestros clientes experimenten la máxima seguridad, transparencia y conveniencia al confiarnos sus transacciones financieras. Bienvenido a una nueva era de transferencia electrónica de dinero, donde la tecnología se une a la confianza.</p>',
+                 <p class="description mt-4">En OIS, estamos comprometidos a redefinir el panorama de los servicios financieros electrónicos. La integración de Blockchain y Web3 es un testimonio de nuestra dedicación a la innovación, garantizando que nuestros clientes experimenten la máxima seguridad, transparencia y conveniencia al confiarnos sus transacciones financieras. Bienvenido a una nueva era de transferencia electrónica de dinero, donde la tecnología se une a la confianza.</p>',
       'order_num' => 6,
       'lang' => 'es',
     ]);
@@ -7146,7 +7146,7 @@ class ContentsSeeder extends Seeder
     Content::create([
       'title' => 'INNOVATION',
       'content' => '<p class="sub-title">Capacitación basada en Realidad Virtual</p>
-                 <p class="description mb-5">Ofrecemos capacitación basada en realidad virtual para que nuestros profesionales de la salud y equipos de atención al cliente mejoren sus habilidades y brinden un mejor servicio. Nuestros programas de capacitación basados en realidad virtual simulan escenarios del mundo real, brindando una experiencia de aprendizaje segura e inmersiva.</p>',
+                 <p class="description">Ofrecemos capacitación basada en realidad virtual para que nuestros profesionales de la salud y equipos de atención al cliente mejoren sus habilidades y brinden un mejor servicio. Nuestros programas de capacitación basados en realidad virtual simulan escenarios del mundo real, brindando una experiencia de aprendizaje segura e inmersiva.</p>',
       'order_num' => 7,
       'lang' => 'es',
     ]);
@@ -7161,7 +7161,7 @@ class ContentsSeeder extends Seeder
       'content' => '<p class="sub-title">Protección y seguridad de datos</p>
                  <p class="description">OIS otorga una alta prioridad a la protección y seguridad de los datos de nuestros clientes. Hemos implementado una variedad de medidas para garantizar la seguridad y precisión de los datos de los clientes, incluidos protocolos de cifrado sólidos, copias de seguridad periódicas y soluciones seguras de almacenamiento de datos.</p>
                  <p class="description mt-4">Además, hemos establecido estrictos controles de acceso a los datos, garantizando que solo el personal autorizado tenga acceso a los datos confidenciales de los clientes. Para mantener la exactitud de los datos de los clientes, OIS emplea procesos automatizados de verificación y limpieza de datos para garantizar que los datos sean siempre precisos y estén actualizados.</p>
-                 <p class="description mt-4 mb-5">OIS obtiene datos de los clientes a través de procesos seguros basados en el consentimiento y utiliza estos datos para informar el desarrollo de nuevos productos y servicios que brinden valor real a los clientes.</p>',
+                 <p class="description mt-4">OIS obtiene datos de los clientes a través de procesos seguros basados en el consentimiento y utiliza estos datos para informar el desarrollo de nuevos productos y servicios que brinden valor real a los clientes.</p>',
       'order_num' => 2,
       'lang' => 'es',
     ]);

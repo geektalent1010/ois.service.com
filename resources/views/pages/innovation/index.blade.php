@@ -78,7 +78,7 @@
                 <div class="text-section d-flex justify-content-center">
                     <div class="description-section">
                         {!! $content[6] !!}
-                        <div class="button-section justify-content-between">
+                        <div class="button-section justify-content-between mt-5">
                             <a href="{{ route('contact.index') }}">{{__('apply_here')}}</a>
                             <a href="{{ route('security.index') }}">{{__('go_to_security')}}</a>
                         </div>

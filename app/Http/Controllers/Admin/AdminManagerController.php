@@ -210,7 +210,7 @@ class AdminManagerController extends Controller
             $res['lastName'] = $user->profile->last_name;
             $res['phoneNumber'] = $user->profile->phone_number;
             $res['email'] = $user->email;
-            $res['center'] = $user->profile->city;
+            $res['city'] = $user->profile->city;
             $res['country'] = $user->profile->country->name;
             $res['username'] = $user->username;
             $res['role'] = $user->is_admin;
