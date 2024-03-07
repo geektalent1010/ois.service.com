@@ -720,7 +720,7 @@
 .nis-visa-modal .modal-section .modal-content .agree-button {
   width: 50%;
   height: 44px;
-  background: #00a9ea;
+  background: #003366;
   display: block;
   text-transform: uppercase;
   text-decoration: none;
@@ -728,14 +728,13 @@
   border-radius: 10rem;
   font-size: 16px;
   font-family: "DinPro", sans-serif;
-  border: 0.1rem solid #00a9ea;
+  border: none;
   cursor: pointer;
 }
 
 .nis-visa-modal .modal-section .modal-content .agree-button:hover {
-  background: #003366 !important;
+  background: #00a9ea !important;
   color: white !important;
-  border-color: #003366 !important;
 }
 
 .nis-visa-modal .modal-section .modal-content .agree-button:focus,
@@ -3182,19 +3181,16 @@ body[data-aos-easing=ease-out-back] [data-aos] {
   border: none;
 }
 
-.main-bg .contact-section .info-container .info-box select {
-  border: none;
-  border-radius: 10em;
-  background-color: rgba(255, 255, 255, 0.1490196078);
+.main-bg .contact-section .info-container .info-box .form-select-custom {
+  height: 40px;
+  border-radius: 23px;
   color: white;
-  width: 100%;
-  padding: 8px 30px;
   margin-top: 15px;
-  font-family: "DinPro", sans-serif;
-  outline: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  background-color: rgba(255, 255, 255, 0.1490196078);
+}
+
+.main-bg .contact-section .info-container .info-box .form-select-custom .select-selected {
+  padding-left: 30px;
 }
 
 .main-bg .contact-section .info-container .info-box .field-label {
@@ -3340,19 +3336,18 @@ body[data-aos-easing=ease-out-back] [data-aos] {
   margin-bottom: 45px;
   padding-top: 8px;
   padding-bottom: 8px;
-  background-color: #00a9ea;
+  background-color: #003366;
   color: white;
   border-radius: 20px;
   font-size: 16px;
   font-family: "DinPro", sans-serif;
   cursor: pointer;
-  border: 0.1rem solid #00a9ea;
+  border: none;
   text-decoration: none;
 }
 
 .main-bg .contact-section .info-container .btn-section .send-btn:hover {
-  background: #003366;
-  border: 0.1rem solid #003366;
+  background: #00a9ea;
 }
 
 @media only screen and (max-width: 1080px) {

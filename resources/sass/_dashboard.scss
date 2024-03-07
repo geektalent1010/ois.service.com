@@ -433,7 +433,7 @@
             .agree-button {
                 width: 50%;
                 height: 44px;
-                background: $hover-color;
+                background: $main-color;
                 display: block;
                 text-transform: uppercase;
                 text-decoration: none;
@@ -444,13 +444,12 @@
                 border-radius: 10rem;
                 font-size: 16px;
                 font-family: "DinPro", sans-serif;
-                border: 0.1rem solid $hover-color;
+                border: none;
                 cursor: pointer;
 
                 &:hover {
-                    background: $main-color !important;
+                    background: $hover-color !important;
                     color: $white !important;
-                    border-color: $main-color !important;
                 }
 
                 &:focus,

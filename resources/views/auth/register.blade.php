@@ -117,7 +117,7 @@
                         <label id="postal-code-error" class="has-error" for="postal-code" style="display: none"></label>
                     </div>
                     <div class="col-md-6 form-group">
-                        <input type="text" id="city" name="city" class="form-control" placeholder="{{__('city')}}"
+                        <input type="text" id="city" name="city" class="form-control" placeholder="{{__('city_L')}}"
                             value="{{ old('city') }}">
                         <label id="city-error" class="has-error" for="city" style="display: none"></label>
                     </div>

@@ -20,12 +20,12 @@
         <div class="d-flex justify-content-center">
             <div class="contact-section body-section">
                 <div class="contact-section-content">
-                    <p class="page-title">{{__('find_an_office')}}</p>
+                    <p class="page-title">{{__('find_a_center')}}</p>
                     <div class="info-container w-100 d-flex justify-content-center">
                         <div class="info-box office-box">
                             <div class="search-field office-search">
                                 <input type="text" class="input-field office-input cursor-default"
-                                    placeholder="{{__('country')}} + {{__('city')}}" />
+                                    placeholder="{{__('country')}} + {{__('city_L')}}" />
                                 <img class="search-icon cursor-default" src="{{ asset('images/select-arrows.svg') }}">
                             </div>
                             <div class="offices-menus d-none">

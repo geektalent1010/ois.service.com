@@ -123,8 +123,8 @@
                 <div class="lang-item"><a class="item" href="{{ route('shopping.index') }}">{{__('shopping')}} {{__('portal')}}</a></div>
             </div>
             <div class="lang-section">
-                <div class="lang-item"><a class="item" href="{{ route('offices.index') }}">{{__('customer_support')}}</a></div>
                 <div class="lang-item"><a class="item" href="{{ route('contact.index') }}">{{__('ois_global_centers')}}</a></div>
+                <div class="lang-item"><a class="item" href="{{ route('offices.index') }}">{{__('customer_support')}}</a></div>
             </div>
         @endif
         <div class="lang-section">
