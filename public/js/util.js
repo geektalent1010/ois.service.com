@@ -195,12 +195,15 @@ function drawSelectForm(selectPartDom) {
         }
         selectPartDom.appendChild(customOptions);
 
-        selectedDom.addEventListener("click", function (e) {
-            e.stopPropagation();
-            closeAllSelect();
-            this.nextSibling.classList.toggle("select-hide");
-            this.classList.add('d-none');
-        });
+        if(!selectPartDom.classList.contains('disabled')) {
+            selectedDom.addEventListener("click", function (e) {
+                e.stopPropagation();
+                closeAllSelect();
+                this.nextSibling.classList.toggle("select-hide");
+                this.classList.add('d-none');
+            });
+        }
+
 }
 
 function closeAllSelect() {

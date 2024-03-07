@@ -58,7 +58,7 @@
                         <div class="info-head">Center</div>
                         <div class="info-value">
                             {{-- <input type="text" id="data6" name="city" text="Center" value="{{$user->profile->city}}" class="form-input-custom" /> --}}
-                            <div class="form-select-custom select-left-icon" id="center-select">
+                            <div class="form-select-custom select-left-icon disabled" id="center-select">
                                 <select class="" id="data6" name="center" text="Center">
                                     <option value="0">Country + Center</option>
                                     @foreach($offices as $country => $cities)

@@ -90,9 +90,6 @@ class ProfileController extends Controller
         $user->profile->first_name = $request->input('firstName');
         $user->profile->last_name = $request->input('lastName');
         $user->profile->phone_number = $request->input('phoneCode').' '.$request->input('phoneNumber');
-        $user->profile->city = $request->input('city');
-
-        $user->profile->country_id = Country::where('name', $request->input('country'))->first()->id;
         $user->profile->save();
 
         $res['status'] = 'success';
