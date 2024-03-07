@@ -242,6 +242,19 @@
     justify-content: center;
 }
 
+.bold {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.bold-underline {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 .info-button button, .info-button input {
     height: 44px;
     width: 300px;

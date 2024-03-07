@@ -128,9 +128,16 @@
         z-index: 10;
         right: 2px;
         top: 160px;
+        gap: 2px;
 
-        .editor-but {
-            width: 150px;
+        .editor-group {
+            width: 100%;
+            display: flex;
+            gap: 2px;
+        }
+
+        .editor-group .editor-but, .editor-but {
+            width: 100%;
             background-color: #003366;
             height: 45px;
             display: flex;
@@ -144,14 +151,23 @@
                 transition: 0.3s;
             }
 
-            &:not(:first-child) {
-                margin-top: 2px;
-            }
-
             &.focused {
                 background-color: #00a9ea;
                 opacity: 1;
             }
+
+            // &.bold {
+            //     font-weight: bold;
+            // }
+
+            // &.underline {
+            //     text-decoration: underline;
+            // }
+
+            // &.bold-underline {
+            //     font-weight: bold;
+            //     text-decoration: underline;
+            // }
         }
     }
 }
