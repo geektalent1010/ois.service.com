@@ -39,7 +39,8 @@ $(document).ready(function () {
                     html += '<div class="card-body-section">'
                     html += '<div class="card-body-custom collapse show editable" contenteditable="true">' + descriptionHtml + '</div>';
                     html += '<div class="price-button-section info-button mt-19px"><button>PUBLISH CHECKLIST</button></div>';
-                    html += '<div class="price-button-section info-button mt-19px"><button type="button" class="delete-but" officeId="' + element.id + '">DELETE CHECKLIST</button></div>';
+                    html += '<div class="price-button-section info-button mt-19px"><button type="button" class="delete-but" checklistId="' + element.id + '">DELETE CHECKLIST</button></div>';
+                    html += '<div class="price-button-section info-button mt-19px"><button type="button" class="upload-but" checklistId="' + element.id + '">UPLOAD CHECKLIST</button></div>';
                     html += '</div>'
                     html += '</div>';
                     html += '</form>';
@@ -72,6 +73,15 @@ $(document).ready(function () {
             if($(this).hasClass('custom-content')) {
                 $('.content-but').addClass('focused');
             }
+            if($(this).hasClass('bold')) {
+                $('.bold-text-but').addClass('focused');
+            }
+            if($(this).hasClass('underline')) {
+                $('.underline-text-but').addClass('focused');
+            }
+            if($(this).hasClass('bold-underline')) {
+                $('.bold-underline-text-but').addClass('focused');
+            }
         }, 300);
     });
 
@@ -96,6 +106,49 @@ $(document).ready(function () {
             focusedDiv.removeClass("custom-sub-title");
             $(this).addClass('focused');
             $('.subtitle-but').removeClass('focused');
+        }
+    });
+
+    const formatTextStyle = () => {
+        $('.bold-text-but').removeClass('focused');
+        $('.underline-text-but').removeClass('focused');
+        $('.bold-underline-text-but').removeClass('focused');
+        let focusedDiv = $(".card-body-custom div.focused");
+        if(focusedDiv.length) {
+            focusedDiv.removeClass('bold');
+            focusedDiv.removeClass('underline');
+            focusedDiv.removeClass('bold-underline');
+        }
+    }
+
+    $('.regular-text-but').click(function(e) {
+        formatTextStyle();
+    });
+
+    $('.bold-text-but').click(function() {
+        formatTextStyle();
+        $(this).addClass('focused');
+        let focusedDiv = $(".card-body-custom div.focused");
+        if(focusedDiv.length) {
+            focusedDiv.addClass('bold');
+        }
+    });
+
+    $('.underline-text-but').click(function() {
+        formatTextStyle();
+        $(this).addClass('focused');
+        let focusedDiv = $(".card-body-custom div.focused");
+        if(focusedDiv.length) {
+            focusedDiv.addClass('underline');
+        }
+    });
+
+    $('.bold-underline-text-but').click(function() {
+        formatTextStyle();
+        $(this).addClass('focused');
+        let focusedDiv = $(".card-body-custom div.focused");
+        if(focusedDiv.length) {
+            focusedDiv.addClass('bold-underline');
         }
     });
 
@@ -255,8 +308,68 @@ $(document).ready(function () {
     });
 
     $(document).on('click', '.delete-but', function() {
-        const id = $(this).attr('officeId');
-        console.log(id);
+        const id = $(this).attr('checklistId');
+        const formData = new FormData();
+        formData.append('id', id);
+        formData.append('_token', $('#office-select-form input:first-child').val());
+        $.ajax({
+            url: '/admin/deleteChecklist',
+            type: 'post',
+            data: formData,
+            dataType: 'json',
+            processData: false,
+            contentType: false,
+            success:function(res) {
+                if(res.status == 'success') {
+                    customAlert('Success', 'Deleted successfully', 'success');
+                    setTimeout(() => {
+                        location.href=("");
+                    }, 1000);
+                } else {
+                    customAlert('Error', '500 Error!', 'error');
+                }
+            }
+        })
+    });
+
+    $(document).on('click', '.upload-but', function() {
+        const checklistId = $(this).attr('checklistId');
+        $('#checklist-file').attr("checklistId", checklistId);
+        $('#checklist-file').click();
+    });
+
+    $('#checklist-file').change(function(event) {
+        const checklistId = $(this).attr('checklistId');
+        const file = event.target.files[0];
+        const reader = new FileReader();
+        const formData = new FormData();
+        formData.append('_token', $('.select-form input:first-child').val());
+        formData.append('checklistId', checklistId);
+        formData.append('file', file);
+
+        reader.load = (e) => {
+
+        }
+        reader.readAsDataURL(file);
+        $.ajax({
+            url: '/admin/uploadChecklistFile',
+            type: 'POST',
+            data: formData,
+            dataType: 'json',
+            contentType: false,
+            processData: false,
+            success:function(res) {
+                if(res.status == 'success') {
+                    customAlert('Success', 'Uploaded successfully', 'success');
+                } else if(res.status == 'nofile') {
+                    customAlert('Error', 'No file!', 'error');
+                } else if(res.status == 'nochecklist') {
+                    customAlert('Error', 'No checklist', 'error');
+                } else {
+                    customAlert('Error', '500 Error!', 'error');
+                }
+            }
+        })
     })
 
     const officeSelectDom = document.getElementById("office-select-div");

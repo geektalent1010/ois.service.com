@@ -56,4 +56,40 @@ class ChecklistManagerController extends Controller
         $res['status'] = 'success';
         return json_encode($res);
     }
+
+    public function deleteChecklist(Request $request) {
+        $id = $request->id;
+        Checklist::where('id', $id)->delete();
+        $res['status'] = 'success';
+        return json_encode($res);
+    }
+
+    public function uploadChecklistFile(Request $request) {
+        $checklistId = $request->input('checklistId');
+        $checklist = Checklist::where('id', $checklistId)->first();
+
+        if($checklist) {
+            $publicPath = public_path('documents/'.$checklist->office->country.'_'.$checklist->office->city.'/'.$checklist->visa_type.'/'.$checklist->file_name);
+
+            if($request->hasFile('file')) {
+                if(file_exists($publicPath)){
+                    unlink($publicPath);
+                }
+
+                $file = $request->file('file');
+                $fileName = $request->file->getClientOriginalName();
+                $file->move(public_path('documents/'.$checklist->office->country.'_'.$checklist->office->city.'/'.$checklist->visa_type), $fileName);
+
+                $checklist->file_name = $fileName;
+                $checklist->save();
+            } else {
+                $res['status'] = 'nofile';
+                return $res;
+            }
+            $res['status'] = 'success';
+            return $res;
+        }
+        $res['status'] = 'nochecklist';
+        return $res;
+    }
 }

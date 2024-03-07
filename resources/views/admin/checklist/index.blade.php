@@ -55,6 +55,14 @@
         <div class="manager-right-body">
             <div class="editor-but subtitle-but" id="subtitle-button-right">SUBTITLE</div>
             <div class="editor-but content-but" id="content-button-right">CONTENT</div>
+            <div class="editor-group">
+                <div class="editor-but regular-text-but">T</div>
+                <div class="editor-but bold-text-but bold">T</div>
+            </div>
+            <div class="editor-group">
+                <div class="editor-but underline-text-but underline">T</div>
+                <div class="editor-but bold-underline-text-but bold-underline">T</div>
+            </div>
             <div class="editor-but add-table-but" id="add-table-button-right">ADD TABLE</div>
             <div class="editor-but remove-table-but" id="remove-table-button-right">REMOVE TABLE</div>
             <div class="editor-but add-row-but" id="add-row-button-right">ADD ROW</div>
@@ -63,6 +71,7 @@
         </div>
     </div>
 </div>
+<input type="file" class="d-none" name="file" id="checklist-file" />
 <form id="deleteChecklistForm">
     <input type="hidden" id="deleteOfficeId" name="deleteChecklistId">
 </form>

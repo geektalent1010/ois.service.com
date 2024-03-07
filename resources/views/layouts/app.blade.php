@@ -108,7 +108,6 @@
     <script>
         const privacy_modal = document.querySelector(".privacy-modal");
         const terms_modal = document.querySelector(".terms-modal");
-        console.log(terms_modal)
         const data_modal = document.querySelector(".data-modal");
         const disclaimer_modal = document.querySelector('.disclaimer-modal')
         const cookie_modal = document.querySelector(".cookie-modal");

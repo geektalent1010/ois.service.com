@@ -6476,10 +6476,18 @@ body {
   z-index: 10;
   right: 2px;
   top: 160px;
+  gap: 2px;
 }
 
+.checklist-manager-section .manager-right-body .editor-group {
+  width: 100%;
+  display: flex;
+  gap: 2px;
+}
+
+.checklist-manager-section .manager-right-body .editor-group .editor-but,
 .checklist-manager-section .manager-right-body .editor-but {
-  width: 150px;
+  width: 100%;
   background-color: #003366;
   height: 45px;
   display: flex;
@@ -6489,15 +6497,13 @@ body {
   cursor: pointer;
 }
 
+.checklist-manager-section .manager-right-body .editor-group .editor-but:hover,
 .checklist-manager-section .manager-right-body .editor-but:hover {
   background-color: #00a9ea;
   transition: 0.3s;
 }
 
-.checklist-manager-section .manager-right-body .editor-but:not(:first-child) {
-  margin-top: 2px;
-}
-
+.checklist-manager-section .manager-right-body .editor-group .editor-but.focused,
 .checklist-manager-section .manager-right-body .editor-but.focused {
   background-color: #00a9ea;
   opacity: 1;

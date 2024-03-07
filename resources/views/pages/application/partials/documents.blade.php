@@ -54,7 +54,7 @@
                                 </a>
                             </div>
                             <div class="col-md-6 form-group mt-2">
-                                <a class="btn btn-primary confirm-button" href="{{ asset('documents/'.$item->office->key.'/'.$item->visa_type.'/'.$item->file_name) }}" download>
+                                <a class="btn btn-primary confirm-button" href="{{ asset('documents/'.$item->office->country.'_'.$item->office->city.'/'.$item->visa_type.'/'.$item->file_name) }}" download>
                                     {{ __('DOWNLOAD FILE') }}
                                 </a>
                             </div>
