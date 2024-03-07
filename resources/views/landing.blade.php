@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => __('welcome')])
+@extends('layouts.app', ['ACTIVE_TITLE' => __('welcome'), 'VIDEO_BACKGROUND' => true])
 
 @section('PAGE_START')
 @endsection

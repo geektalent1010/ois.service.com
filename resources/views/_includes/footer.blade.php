@@ -15,8 +15,8 @@
                     src="{{ asset('images/Logo/LogoTwitter.svg') }}" /></a>
         </div>
         <div class="d-flex justify-content-center align-items-center mt-4">
-            <a onclick="toggleDisclaimer()">{{__('disclaimer')}}</a>
-            <p class="mx-2 mb-0">|</p>
+            {{-- <a onclick="toggleDisclaimer()">{{__('disclaimer')}}</a> --}}
+            {{-- <p class="mx-2 mb-0">|</p> --}}
             <a onclick="toggleTerms()">{{__('terms_of_use')}}</a>
             <p class="mx-2 mb-0">|</p>
             <a onclick="togglePrivacy()">{{__('privacy_policy')}}</a>
@@ -46,7 +46,7 @@
             </div>
         </div>
         <div class="d-flex flex-column align-items-center mt-4">
-            <a class="mb-1" onclick="toggleDisclaimer()">{{__('disclaimer')}}</a>
+            {{-- <a class="mb-1" onclick="toggleDisclaimer()">{{__('disclaimer')}}</a> --}}
             <a class="mb-1" onclick="toggleTerms()">{{__('terms_of_use')}}</a>
             <a class="mb-1" onclick="togglePrivacy()">{{__('privacy_policy')}}</a>
             <a class="mb-1" onclick="toggleData()">{{__('data_protect_policy')}}</a>

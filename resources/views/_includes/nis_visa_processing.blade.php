@@ -22,7 +22,7 @@
             <div class="description">
                 If you have any questions or concerns about this disclaimer, please contact us.
             </div>
-            <div class="d-flex justify-content-center align-items-center">
+            <div class="d-flex justify-content-center align-items-center mt-20px">
                 <button class="agree-button" onclick="window.location.href='{{ route('application.index') }}'">
                     I Agree
                 </button>

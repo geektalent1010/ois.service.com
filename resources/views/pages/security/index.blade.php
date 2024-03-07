@@ -1,5 +1,5 @@
 
-@extends('layouts.app', ['ACTIVE_TITLE' => __('security')], ['VIDEO_BACKGROUND' => true])
+@extends('layouts.app', ['ACTIVE_TITLE' => __('security')], ['VIDEO_BACKGROUND' => true, 'modalData' => $modalData])
 
 @section('PAGE_LEVEL_STYLES')
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -40,7 +40,7 @@
                     <div class="description-section">
                         {!! $content[1] !!}
                         <div class="button-section mt-5">
-                            <a onclick="togglePrivacy()">{{__('privacy_policy')}}</a>
+                            <a onclick="togglePrivacy()">{{__('privacy_policy_U')}}</a>
                         </div>
                     </div>
                 </div>
@@ -55,21 +55,6 @@
 @endsection
 
 @section('PAGE_LEVEL_SCRIPTS')
-<script type="text/javascript">
-    const privacy = document.querySelector(".privacy-modal");
-    function togglePrivacy() {
-        privacy.classList.toggle("show-modal");
-    }
-    const terms_use = document.querySelector(".terms-modal");
-    function toggleTerms() {
-        terms_use.classList.toggle("show-modal");
-    }
-    const data_policy = document.querySelector(".data-modal");
-    function toggleData() {
-        data_policy.classList.toggle("show-modal");
-    }
-
-</script>
 
 <script type="text/javascript" src="{{asset('js/util.js')}}"></script>
 

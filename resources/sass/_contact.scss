@@ -114,17 +114,16 @@
                     border: none;
                 }
 
-                select {
-                    border: none;
-                    border-radius: 10em;
-                    background-color: $white-15;
+                .form-select-custom {
+                    height: 40px;
+                    border-radius: 23px;
                     color: white;
-                    width: 100%;
-                    padding: 8px 30px;
                     margin-top: 15px;
-                    font-family: "DinPro", sans-serif;
-                    outline: none;
-                    appearance: none;
+                    background-color: rgba(255, 255, 255, 0.1490196078);
+
+                    .select-selected {
+                        padding-left: 30px;
+                    }
                 }
 
                 .field-label {
@@ -274,7 +273,7 @@
                     margin-bottom: 45px;
                     padding-top: 8px;
                     padding-bottom: 8px;
-                    background-color: $hover-color;
+                    background-color: $main-color;
                     color: white;
                     -webkit-border-radius: 20px;
                     -moz-border-radius: 20px;
@@ -283,13 +282,12 @@
                     font-size: 16px;
                     font-family: 'DinPro', sans-serif;
                     cursor: pointer;
-                    border: 0.1rem solid $hover-color;
+                    border: none;
                     text-decoration: none;
                 }
 
                 .send-btn:hover {
-                    background: $main-color;
-                    border: 0.1rem solid $main-color;
+                    background: $hover-color;
                 }
             }
         }

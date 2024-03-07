@@ -1,4 +1,4 @@
-@extends('layouts.app', ['ACTIVE_TITLE' => __('services'), 'modalData'=>$modalData])
+@extends('layouts.app', ['ACTIVE_TITLE' => __('services'), 'modalData'=>$modalData, 'VIDEO_BACKGROUND' => true])
 
 @section('PAGE_LEVEL_STYLES')
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">

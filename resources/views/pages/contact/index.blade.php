@@ -24,15 +24,26 @@
                     <div class="info-container w-100 d-flex justify-content-center">
                         <div class="info-box">
                             <input type="text" class="input-field" placeholder="{{__('first_name')}}, {{__('last_name')}}" />
-                            <input type="email" class="input-field" placeholder="{{__('email')}}" />
-                            <input type="text" class="input-field" placeholder="{{__('phone')}}" />
-                            <select class="country-select webkit-style">
-                                <option value="-1">{{__('country')}} + {{__('subject')}}</option>
-                            </select>
-                            <select class="subject-select webkit-style">
-                                <option value="-1">{{__('subject')}}</option>
-                            </select>
-                            <textarea type="text" class="input-field" placeholder="{{__('message')}}" rows="4"></textarea>
+                            <input type="email" class="input-field" placeholder="{{__('email_L')}}" />
+                            <input type="text" class="input-field" placeholder="{{__('phone_L')}}" />
+                            <div class="form-select-custom">
+                                <select name="" id="country-select">
+                                    <option value="0" >{{__('country')}}</option>
+                                    @foreach ($countries as $country)
+                                        <option value="" data-data1="{{$country->name}}"></option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            <div class="form-select-custom">
+                                <select name="" id="subject-select">
+                                    <option value="0" >{{__('subject')}}</option>
+                                    <option value="" data-data1="Subject 1"></option>
+                                    <option value="" data-data1="Subject 2"></option>
+                                    <option value="" data-data1="Subject 3"></option>
+                                    <option value="" data-data1="Subject 4"></option>
+                                </select>
+                            </div>
+                            <textarea type="text" class="input-field" placeholder="{{__('message_L')}}" rows="4"></textarea>
                             <div class="btn-section">
                                 <a href="{{ route('contact.reviewing') }}" class="send-btn">{{__('send')}}</a>
                             </div>
@@ -52,4 +63,11 @@
 
 @section('PAGE_LEVEL_SCRIPTS')
     <script type="text/javascript" src="{{ asset('js/util.js') }}"></script>
+    <script>
+        const selectDoms = document.getElementsByClassName('form-select-custom');
+        console.log(selectDoms)
+        for(const selectDom of selectDoms) {
+            drawSelectForm(selectDom);
+        }
+    </script>
 @endsection

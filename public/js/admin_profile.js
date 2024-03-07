@@ -16,10 +16,6 @@ $(document).ready(function () {
             return;
         }
         let formData = new FormData(this);
-        const centerSelIndex = $('#data6')[0].selectedIndex + 1;
-        console.log(centerSelIndex)
-        formData.append('country', $('#data6 option:nth-child(' + centerSelIndex + ')').data('data1'));
-        formData.append('city', $('#data6 option:nth-child(' + centerSelIndex + ')').data('data2'));
         $.ajax({
             url: '/admin/profile',
             type: 'POST',

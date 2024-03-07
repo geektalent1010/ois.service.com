@@ -16,6 +16,7 @@ class SecurityController extends Controller
             ->pluck('content')
             ->all();
         return view ('pages.security.index')
+            ->with('modalData', $this->modalData)
             ->with('content', $content);
     }
 }
