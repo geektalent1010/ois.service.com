@@ -297,11 +297,17 @@ const customAlert = (title, message, status) => {
 
     for(const element of doms.getElementsByClassName('alert-body')) {
         element.addEventListener('click', function() {
-            this.parentNode.remove();
+            gsap.to('.custom-alert-popup', { duration: 0.5, opacity: 0, scale: 1, ease: 'power4.out' });
+            gsap.to(this, { duration: 0.5, opacity: 0, scale: 1.2, ease: 'power4.out' });
+            setTimeout(() => {
+                this.parentNode.remove();
+            }, 500);
+
         });
     }
 
     document.body.appendChild(doms);
+    gsap.fromTo('.alert-body', {opacity: 0, scale: 0}, { duration: 0.3, opacity: 1, scale: 1, ease: 'power4.out' });
 }
 
 // custom alert msg pop-up end

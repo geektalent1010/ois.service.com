@@ -25,6 +25,7 @@
     <script type="text/javascript" src="{{ asset('js/moment.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('plugin/combodate-1.0.7/combodate.js') }}"></script>
     <script type="text/javascript" src="{{ asset('plugin/bootstrap-toastr/toastr.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 </head>
 
 <body>
