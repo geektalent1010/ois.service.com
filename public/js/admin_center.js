@@ -112,36 +112,60 @@ $(document).ready(function() {
     });
 
     $('.add-new-button').click(function() {
-        let html = '';
-        html += '<input type="hidden" id="office-id" name="officeId" value="0"/>';
-        html += '<input type="hidden" name="_token" class="csrftoken" value=""/>';
-        html += '<div class="flag-section">';
-        html += '<img src="" />';
-        html += '</div>';
-        html += '<div class="">';
-        html += '<div class="mb-0 editable" id="office-country" contenteditable="true" title="country"><b>Country</b></div>';
-        html += '<div class="editable" id="office-address" contenteditable="true" title="address">';
-        html += '<div class="mb-0">Street</div>';
-        html += '<div class="mb-0">Zip Code</div>';
-        html += '</div>';
-        html += '<div class="mb-0 editable" id="office-city" contenteditable="true" title="city">City</div>';
-        html += '<div class="mt-4 mb-2"><b>Opening Hours</b></div>';
+        $.ajax({
+            url: '/admin/getCountries',
+            type: 'get',
+            success:function(countriesData) {
+                const countries = JSON.parse(countriesData);
+                let html = `
+                    <input type="hidden" id="office-id" name="officeId" value="0"/>
+                    <input type="hidden" name="_token" class="csrftoken" value=""/>
+                    <input type ="file" name="file" class="flag-file d-none" />
+                    <div class="flag-section" id="flag-section">
+                        <img src="/images/ImageIcon.svg" class="image-icon" id="flag-image"/>
+                    </div>
+                    <div class="">
+                        <div class="mb-0 editable" id="office-country" contenteditable="true" title="country"><b>Country</b></div>
+                        <div class="editable" id="office-address" contenteditable="true" title="address">
+                            <div class="mb-0">Street</div>
+                            <div class="mb-0">Zip Code</div>
+                        </div>
+                        <div class="mb-0 editable" id="office-city" contenteditable="true" title="city">City</div>
+                        <div class="mt-4 mb-2"><b>Opening Hours</b></div>
+                        <div class="mb-0 editable" id="office-workingdays" contenteditable="true" title="working days">N.A</div>
+                        <div class="editable" id="office-workingtime" contenteditable="true" title="working time">
+                        <div class="mb-0">N.A</div>
+                    </div>
+                `;
+                $(".office-detail").html(html);
+                $(".office-detail").removeClass('d-none');
+                $(".publish-button").removeClass('d-none');
 
-        html += '<div class="mb-0 editable" id="office-workingdays" contenteditable="true" title="working days">N.A</div>';
-        html += '<div class="editable" id="office-workingtime" contenteditable="true" title="working time">';
-        html += '<div class="mb-0">N.A</div>';
-        html += '</div>';
-        html += '</div>';
-        $(".office-detail").html(html);
-        $(".office-detail").removeClass('d-none');
-        $(".publish-button").removeClass('d-none');
+                $(".office-detail .editable").on('focus', function(e) {
+                    $(this).addClass('outline');
+                });
+                $(".office-detail .editable").on('blur', function(e) {
+                    $(this).removeClass('outline');
+                });
 
-        $(".office-detail .editable").on('focus', function(e) {
-            $(this).addClass('outline');
-        });
-        $(".office-detail .editable").on('blur', function(e) {
-            $(this).removeClass('outline');
-        });
+                $(".flag-section").click(function() {
+                    $('.flag-file').click();
+                });
+
+                $('.flag-file').change(function(event) {
+                    const file = event.target.files[0];
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        const imgDom = $('#flag-section img')[0];
+                        imgDom.src = e.target.result;
+                        imgDom.style.width = '100%';
+                        imgDom.style.height = '100%';
+                    }
+                    reader.readAsDataURL(file);
+                })
+            }
+        })
+
     });
 
     $("#country-select-form").click(function() {

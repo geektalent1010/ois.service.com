@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Content;
+use App\Country;
 
 class ContentManagerController extends Controller
 {
@@ -50,4 +51,12 @@ class ContentManagerController extends Controller
         $res['status'] = 'success';
         return json_encode($res);
     }
+
+    public function getCountries ()
+     {
+        $countries = Country::where('active', 1)
+            ->get();
+        return json_encode($countries);
+     }
 }
+

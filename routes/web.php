@@ -129,6 +129,7 @@ Route::post('/password', 'LandingController@password')->name('password');
             Route::get('content', 'Admin\ContentManagerController@index')->name('admin.content.index');
             Route::post('getContent', 'Admin\ContentManagerController@getContent')->name('admin.content.get');
             Route::post('updateContent', 'Admin\ContentManagerController@updateContent')->name('admin.content.update');
+            Route::get('getCountries', 'Admin\ContentManagerController@getCountries')->name('admin.content.getCountries');
 
             Route::get('center', 'Admin\CenterManagerController@index')->name('admin.center.index');
             Route::post('centerInfo', 'Admin\CenterManagerController@getCenterInfo')->name('admin.center.info');

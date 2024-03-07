@@ -45,9 +45,23 @@
                 gap: 30px;
                 justify-content: center;
                 .flag-section {
-                    img {
-                        width: 120px;
+                    width: 130px;
+                    height: 70px;
+                    background-color: #266ea5;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+
+                    .image-icon {
+                        width: 25px;
                     }
+                }
+
+                .select-country-small {
+                    width: 200px;
+                    height: 40px;
+                    border-radius: 20px;
                 }
 
                 div.outline {

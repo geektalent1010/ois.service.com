@@ -11,6 +11,10 @@ $(document).ready(function () {
             customAlert('We are so sorry', 'Invalid Email address', 'error');
             return;
         }
+        if($("#data6").val() == 0 && !$("#data6").val()) {
+            customAlert('We are so sorry', 'Please select the center', 'error');
+            return;
+        }
         let formData = new FormData(this);
         const centerSelIndex = $('#data6')[0].selectedIndex + 1;
         console.log(centerSelIndex)
