@@ -13,8 +13,6 @@
     <video autoplay muted loop class="video-section-mobile" playsinline>
         <source type="video/mp4">
     </video>
-    <img class="menu-bg" src="{{ asset('images/Image1H.png') }}">
-    <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}">
     <div class="row justify-content-center m-0 p-0">
         <div class="login-page body-section">
 

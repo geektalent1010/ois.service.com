@@ -17,8 +17,6 @@
         <video autoplay muted loop class="video-section-mobile" playsinline>
             <source type="video/mp4">
         </video>
-        <img class="menu-bg" src="{{ asset('images/Image1H.png') }}" alt="">
-        <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt="">
         <div class="booking-section">
             <iframe style=" min-height: calc(100vh - 125px)" class=" body-section" width="100%" height="100%"
                 frameborder="0" src="https://sea-turtle-app-e6m4o.ondigitalocean.app" id="iFrame1"></iframe>

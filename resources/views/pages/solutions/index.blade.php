@@ -16,8 +16,6 @@
             <video autoplay muted loop class="video-section-mobile" playsinline>
                 <source type="video/mp4">
             </video>
-            <img class="menu-bg" src="{{ asset('images/Image1H.png') }}" alt="">
-            <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt="">
             <div class="image-section first-image-section pc-version" id="first-image-section">
                 <div class="w-50"></div>
                 <div class="w-50 d-flex align-items-center">

@@ -15,8 +15,6 @@
         <video autoplay muted loop class="video-section-mobile" playsinline>
             <source type="video/mp4">
         </video>
-        <img class="menu-bg" src="{{ asset('images/Image1H.png') }}">
-        <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}">
         <div class="m-0 menu-section body-section">
             <div class="row m-0 menu-body">
                 <div class="navItem" onclick="">

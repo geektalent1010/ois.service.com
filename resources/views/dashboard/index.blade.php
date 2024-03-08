@@ -15,8 +15,6 @@
     <video autoplay muted loop class="video-section-mobile" playsinline>
         <source type="video/mp4">
     </video>
-    <img class="menu-bg" src="{{ asset('images/Image1H.png') }}" alt="">
-    <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt="">
     <div class="m-0 menu-section body-section dashboard-section">
         <p class="dashboard-title my-0">{{__('welcome_to_the_client_portal')}}</p>
         <div class="row m-0 menu-body">

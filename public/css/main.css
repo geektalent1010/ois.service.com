@@ -693,12 +693,17 @@ footer .social-section .icon-section .social-icon:hover {
     z-index: 2;
 }
 
+.main-bg {
+    background-color: #005696;
+}
+
 .main-bg-login {
     min-height: calc(100vh - 120px);
     height: calc(100vh - 120px);
     margin-top: 80px;
     padding-bottom: 40px;
     overflow-y: hidden;
+    background-color: #005696;
 }
 
 .main-bg-login .menu-bg {
