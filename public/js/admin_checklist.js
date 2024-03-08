@@ -94,7 +94,8 @@ $(document).ready(function () {
         setTimeout(() => {
             $(".card-body-custom div").removeClass("focused");
             $(this).addClass("focused");
-            $('.editor-but').removeClass('focused');
+            $('.subtitle-but').removeClass('focused');
+            $('.content-but').removeClass('focused');
 
             if($(this).hasClass('custom-sub-title')) {
                 $('.subtitle-but').addClass('focused');
@@ -102,21 +103,8 @@ $(document).ready(function () {
             if($(this).hasClass('custom-content')) {
                 $('.content-but').addClass('focused');
             }
-            if($(this).hasClass('bold')) {
-                $('.bold-text-but').addClass('focused');
-            }
-            if($(this).hasClass('underline')) {
-                $('.underline-text-but').addClass('focused');
-            }
-            if($(this).hasClass('bold-underline')) {
-                $('.bold-underline-text-but').addClass('focused');
-            }
         }, 300);
     });
-
-    $(document).on('blur', ".card-body-custom div", function() {
-        $('.editor-but').removeClass('focused');
-    })
 
     $(".subtitle-but").click(function () {
         let focusedDiv = $(".card-body-custom div.focused");
