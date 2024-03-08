@@ -6526,6 +6526,7 @@ body {
 .checklist-manager-section .manager-right-body .editor-but.regular-text-but,
 .checklist-manager-section .manager-right-body .editor-but.underline-text-but {
   font-family: "Montserrat Regular", sans-serif;
+  font-size: 21px;
 }
 
 .checklist-manager-section .manager-right-body .editor-group .editor-but.bold-text-but,
