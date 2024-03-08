@@ -5509,6 +5509,8 @@ body {
   align-items: center;
   cursor: pointer;
   transition: 0.3s;
+  font-family: "DinPro", sans-serif;
+  font-size: 14px;
 }
 
 .admin-manager-section .manager-right-body .right-button:hover:not(.disabled) {
@@ -5710,6 +5712,8 @@ body {
   align-items: center;
   cursor: pointer;
   transition: 0.3s;
+  font-family: "DinPro", sans-serif;
+  font-size: 14px;
 }
 
 .client-manager-section .manager-right-body .right-button:hover:not(.disabled) {
@@ -6495,6 +6499,14 @@ body {
   align-items: center;
   transition: 0.3s;
   cursor: pointer;
+  font-family: "DinPro", sans-serif;
+  font-size: 14px;
+}
+
+.checklist-manager-section .manager-right-body .editor-group .editor-but.subtitle-but,
+.checklist-manager-section .manager-right-body .editor-but.subtitle-but {
+  font-family: "DinPro Medium", sans-serif;
+  font-size: 16px;
 }
 
 .checklist-manager-section .manager-right-body .editor-group .editor-but:hover,
@@ -6507,6 +6519,21 @@ body {
 .checklist-manager-section .manager-right-body .editor-but.focused {
   background-color: #00a9ea;
   opacity: 1;
+}
+
+.checklist-manager-section .manager-right-body .editor-group .editor-but.regular-text-but,
+.checklist-manager-section .manager-right-body .editor-group .editor-but.underline-text-but,
+.checklist-manager-section .manager-right-body .editor-but.regular-text-but,
+.checklist-manager-section .manager-right-body .editor-but.underline-text-but {
+  font-family: "Montserrat Regular", sans-serif;
+}
+
+.checklist-manager-section .manager-right-body .editor-group .editor-but.bold-text-but,
+.checklist-manager-section .manager-right-body .editor-group .editor-but.bold-underline-text-but,
+.checklist-manager-section .manager-right-body .editor-but.bold-text-but,
+.checklist-manager-section .manager-right-body .editor-but.bold-underline-text-but {
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: 21px;
 }
 
 @media only screen and (max-width: 1080px) {

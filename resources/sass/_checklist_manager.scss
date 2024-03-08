@@ -145,6 +145,13 @@
             align-items: center;
             transition: 0.3s;
             cursor: pointer;
+            font-family: 'DinPro', sans-serif;
+            font-size: 14px;
+
+            &.subtitle-but {
+                font-family: 'DinPro Medium', sans-serif;
+                font-size: 16px;
+            }
 
             &:hover {
                 background-color: #00a9ea;
@@ -156,18 +163,14 @@
                 opacity: 1;
             }
 
-            // &.bold {
-            //     font-weight: bold;
-            // }
+            &.regular-text-but, &.underline-text-but {
+                font-family: "Montserrat Regular", sans-serif;
+            }
 
-            // &.underline {
-            //     text-decoration: underline;
-            // }
-
-            // &.bold-underline {
-            //     font-weight: bold;
-            //     text-decoration: underline;
-            // }
+            &.bold-text-but, &.bold-underline-text-but {
+                font-family: "Montserrat Bold", sans-serif;
+                font-size: 21px;
+            }
         }
     }
 }

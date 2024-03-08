@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+    let textFormatStatus = 0;
     $("#office-select-form").click(function () {
         $("#office-select-form").submit();
     });
@@ -59,6 +61,33 @@ $(document).ready(function () {
 
     $(document).on('focus', '.card-body-custom div', function() {
         $(".editor-panel").addClass("show");
+    });
+
+    $(document).on('mouseup', '.card-body-custom', function() {
+        const selection = window.getSelection();
+        const selectText = selection.toString();
+        if(selectText) {
+            const span = document.createElement('span');
+            if(textFormatStatus == 1) {
+                span.style.textDecoration = 'none';
+                span.style.fontWeight = 'normal';
+            } else if(textFormatStatus == 2) {
+                span.style.textDecoration = 'none';
+                span.style.fontWeight = 'bold';
+            } else if(textFormatStatus == 3) {
+                span.style.textDecoration = 'underline';
+                span.style.fontWeight = 'normal';
+            } else if(textFormatStatus == 4) {
+                span.style.textDecoration = 'underline';
+                span.style.fontWeight = 'bold';
+            }
+            span.textContent = selectText;
+
+            const range = selection.getRangeAt(0);
+            range.deleteContents();
+            range.insertNode(span);
+            selection.removeAllRanges();
+        }
     })
 
     $(document).on("focus", ".card-body-custom div", function () {
@@ -110,45 +139,54 @@ $(document).ready(function () {
     });
 
     const formatTextStyle = () => {
+        $('.regular-text-but').removeClass('focused');
         $('.bold-text-but').removeClass('focused');
         $('.underline-text-but').removeClass('focused');
         $('.bold-underline-text-but').removeClass('focused');
         let focusedDiv = $(".card-body-custom div.focused");
-        if(focusedDiv.length) {
-            focusedDiv.removeClass('bold');
-            focusedDiv.removeClass('underline');
-            focusedDiv.removeClass('bold-underline');
-        }
     }
 
     $('.regular-text-but').click(function(e) {
         formatTextStyle();
+        if(textFormatStatus == 1) {
+            textFormatStatus = 0;
+            $(this).removeClass('focused');
+        } else {
+            textFormatStatus = 1;
+            $(this).addClass('focused');
+        }
     });
 
     $('.bold-text-but').click(function() {
         formatTextStyle();
-        $(this).addClass('focused');
-        let focusedDiv = $(".card-body-custom div.focused");
-        if(focusedDiv.length) {
-            focusedDiv.addClass('bold');
+        if(textFormatStatus == 2) {
+            textFormatStatus = 0;
+            $(this).removeClass('focused');
+        } else {
+            textFormatStatus = 2;
+            $(this).addClass('focused');
         }
     });
 
     $('.underline-text-but').click(function() {
         formatTextStyle();
-        $(this).addClass('focused');
-        let focusedDiv = $(".card-body-custom div.focused");
-        if(focusedDiv.length) {
-            focusedDiv.addClass('underline');
+        if(textFormatStatus == 3) {
+            textFormatStatus = 0;
+            $(this).removeClass('focused');
+        } else {
+            textFormatStatus = 3;
+            $(this).addClass('focused');
         }
     });
 
     $('.bold-underline-text-but').click(function() {
         formatTextStyle();
-        $(this).addClass('focused');
-        let focusedDiv = $(".card-body-custom div.focused");
-        if(focusedDiv.length) {
-            focusedDiv.addClass('bold-underline');
+        if(textFormatStatus == 4) {
+            textFormatStatus = 0;
+            $(this).removeClass('focused');
+        } else {
+            textFormatStatus = 4;
+            $(this).addClass('focused');
         }
     });
 
