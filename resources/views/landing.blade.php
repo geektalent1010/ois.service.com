@@ -14,8 +14,6 @@
             <video class="video-section-mobile" id="landing-video-mobile" muted loop playsinline>
                 <source src="{{ asset('Video/LandingVM.mp4') }}" type="video/mp4">
             </video>
-            <img class="menu-bg" src="{{ asset('images/Image1H.png') }}" alt="">
-            <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt="">
             <img class="cancel-video d-none" src="{{ asset('images/Stop.svg') }}" onclick="stopVideo_landing()">
 
         </div>

@@ -16,8 +16,6 @@
     <video autoplay muted loop class="video-section-mobile" playsinline>
         <source src="{{ asset('Video/SecurityVM.mp4') }}" type="video/mp4">
     </video>
-    <img class="menu-bg" src="{{ asset('images/Image1H.png') }}" alt="">
-    <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt="">
     <div class="m-0 intro-section">
         <div class="title-section d-flex flex-column justify-content-center align-items-center">
             {!! $content[0] !!}

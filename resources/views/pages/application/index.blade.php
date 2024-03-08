@@ -17,8 +17,6 @@
         <video autoplay muted loop class="video-section-mobile" playsinline>
             <source type="video/mp4">
         </video>
-        <img class="menu-bg" src="{{ asset('images/Image1H.png') }}" alt="">
-        <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt="">
         <div class="application-section">
             <div class="application-section-content body-section">
                 <div class="mb-4">{{__('i_want_to_apply_for_visa')}}</div>

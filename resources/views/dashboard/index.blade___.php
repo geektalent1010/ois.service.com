@@ -9,7 +9,6 @@
 
 @section('PAGE_CONTENT')
 <div class="main-bg">
-    <img class="menu-bg" src="{{ asset('images/Image1H.png') }}">
     <div class="m-0 menu-section">
         <div class="row m-0 menu-body">
             <div class="navItem" onclick="">

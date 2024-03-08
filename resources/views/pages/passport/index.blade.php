@@ -16,8 +16,6 @@
             <video autoplay muted loop class="video-section-mobile" playsinline>
                 <source type="video/mp4">
             </video>
-            <img class="menu-bg" src="{{ asset('images/Image1H.png') }}" alt=""/>
-            <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt=""/>
             <div class="passport-section body-section">
                 <div class="passport-section-content">
                     <img class="icon" src="{{ asset('images/Logo/OISIcon.svg') }}" alt="" />

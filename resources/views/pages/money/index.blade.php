@@ -16,8 +16,6 @@
             <video autoplay muted loop class="video-section-mobile" playsinline>
                 <source type="video/mp4">
             </video>
-            <img class="menu-bg" src="{{ asset('images/Image1H.png') }}">
-            <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}">
             <div class="money-section body-section">
                 <div class="money-section-content">
                     <img class="icon" src="{{ asset('images/IconMONEYTRANSFER.svg') }}">

@@ -13,8 +13,6 @@
         <video autoplay muted loop class="video-section-mobile" playsinline>
             <source type="video/mp4">
         </video>
-        <img class="menu-bg" src="{{ asset('images/Image1H.png') }}" alt="">
-        <img class="menu-bg-mobile" src="{{ asset('images/Image1V.png') }}" alt="">
         <div class="register-section body-section w-100">
             <p class="title">{{__('my_details')}}</p>
             <form class="form-section" data-form="register" autocomplete="off" method="POST"
