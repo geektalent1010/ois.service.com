@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-    let textFormatStatus = 0;
     $("#office-select-form").click(function () {
         $("#office-select-form").submit();
     });
@@ -63,33 +62,6 @@ $(document).ready(function () {
         $(".editor-panel").addClass("show");
     });
 
-    $(document).on('mouseup', '.card-body-custom', function() {
-        const selection = window.getSelection();
-        const selectText = selection.toString();
-        if(selectText) {
-            const span = document.createElement('span');
-            if(textFormatStatus == 1) {
-                span.style.textDecoration = 'none';
-                span.style.fontWeight = 'normal';
-            } else if(textFormatStatus == 2) {
-                span.style.textDecoration = 'none';
-                span.style.fontWeight = 'bold';
-            } else if(textFormatStatus == 3) {
-                span.style.textDecoration = 'underline';
-                span.style.fontWeight = 'normal';
-            } else if(textFormatStatus == 4) {
-                span.style.textDecoration = 'underline';
-                span.style.fontWeight = 'bold';
-            }
-            span.textContent = selectText;
-
-            const range = selection.getRangeAt(0);
-            range.deleteContents();
-            range.insertNode(span);
-            selection.removeAllRanges();
-        }
-    })
-
     $(document).on("focus", ".card-body-custom div", function () {
         setTimeout(() => {
             $(".card-body-custom div").removeClass("focused");
@@ -131,50 +103,93 @@ $(document).ready(function () {
         $('.bold-text-but').removeClass('focused');
         $('.underline-text-but').removeClass('focused');
         $('.bold-underline-text-but').removeClass('focused');
-        let focusedDiv = $(".card-body-custom div.focused");
     }
 
     $('.regular-text-but').click(function(e) {
         formatTextStyle();
-        if(textFormatStatus == 1) {
-            textFormatStatus = 0;
-            $(this).removeClass('focused');
-        } else {
-            textFormatStatus = 1;
-            $(this).addClass('focused');
+        const selection = window.getSelection();
+        const selectText = selection.toString();
+        if(selectText) {
+            const span = document.createElement('span');
+            span.style.textDecoration = 'none';
+            span.style.fontWeight = 'normal';
+            span.textContent = selectText;
+
+            const range = selection.getRangeAt(0);
+            range.deleteContents();
+            range.insertNode(span);
         }
     });
 
     $('.bold-text-but').click(function() {
+        const status = $(this).hasClass('focused');
         formatTextStyle();
-        if(textFormatStatus == 2) {
-            textFormatStatus = 0;
-            $(this).removeClass('focused');
-        } else {
-            textFormatStatus = 2;
-            $(this).addClass('focused');
+        const selection = window.getSelection();
+        const selectText = selection.toString();
+        if(selectText) {
+            const span = document.createElement('span');
+            if(status) {
+                span.style.textDecoration = 'none';
+                span.style.fontWeight = 'normal';
+                $(this).removeClass('focused');
+            } else {
+                span.style.textDecoration = 'none';
+                span.style.fontWeight = 'bold';
+                $(this).addClass('focused');
+            }
+            span.textContent = selectText;
+
+            const range = selection.getRangeAt(0);
+            range.deleteContents();
+            range.insertNode(span);
         }
     });
 
     $('.underline-text-but').click(function() {
+        const status = $(this).hasClass('focused');
         formatTextStyle();
-        if(textFormatStatus == 3) {
-            textFormatStatus = 0;
-            $(this).removeClass('focused');
-        } else {
-            textFormatStatus = 3;
-            $(this).addClass('focused');
+        const selection = window.getSelection();
+        const selectText = selection.toString();
+        if(selectText) {
+            const span = document.createElement('span');
+            if(status) {
+                span.style.textDecoration = 'none';
+                span.style.fontWeight = 'normal';
+                $(this).removeClass('focused');
+            } else {
+                span.style.textDecoration = 'underline';
+                span.style.fontWeight = 'normal';
+                $(this).addClass('focused');
+            }
+            span.textContent = selectText;
+
+            const range = selection.getRangeAt(0);
+            range.deleteContents();
+            range.insertNode(span);
         }
     });
 
     $('.bold-underline-text-but').click(function() {
+        const status = $(this).hasClass('focused');
         formatTextStyle();
-        if(textFormatStatus == 4) {
-            textFormatStatus = 0;
-            $(this).removeClass('focused');
-        } else {
-            textFormatStatus = 4;
-            $(this).addClass('focused');
+        const selection = window.getSelection();
+        const selectText = selection.toString();
+        if(selectText) {
+            const span = document.createElement('span');
+            if(status) {
+                span.style.textDecoration = 'none';
+                span.style.fontWeight = 'normal';
+                $(this).removeClass('focused');
+            } else {
+                span.style.textDecoration = 'underline';
+                span.style.fontWeight = 'bold';
+                $(this).addClass('focused');
+            }
+            span.textContent = selectText;
+
+            const range = selection.getRangeAt(0);
+            range.deleteContents();
+            range.insertNode(span);
         }
     });
 
@@ -184,20 +199,18 @@ $(document).ready(function () {
             let newElement = '';
             newElement += `
                 <table class="custom-edit-table">
-                    <thead>
-                        <tr>
-                            <th style="width:30px">
-                                <div tabindex="0">No</div>
-                            </th>
-                            <th>
-                                <div tabindex="0">Requirements</div>
-                            </th>
-                            <th>
-                                <div tabindex="0">Description</div>
-                            </th>
-                        </tr>
-                    </thead>
                     <tbody>
+                        <tr>
+                            <td>
+                                <div tabindex="0">No</div>
+                            </td>
+                            <td>
+                                <div tabindex="0">Requirements</div>
+                            </td>
+                            <td>
+                                <div tabindex="0">Description</div>
+                            </td>
+                        </tr>
                         <tr>
                             <td>
                                 <div tabindex="0">[no]</div>
@@ -220,7 +233,7 @@ $(document).ready(function () {
         let focusDiv = $('.card-body-custom div.focused');
         if(focusDiv.length) {
             let table = focusDiv.closest('table');
-            let len = $(table).find('thead tr th').length;
+            let len = $(table).find('tbody tr:first-child td').length;
             let tr = '<tr>';
             while(len) {
                 tr += '<td><div tabindex="0">[New]</div></td>';

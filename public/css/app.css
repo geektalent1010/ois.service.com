@@ -6501,6 +6501,9 @@ body {
   cursor: pointer;
   font-family: "DinPro", sans-serif;
   font-size: 14px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .checklist-manager-section .manager-right-body .editor-group .editor-but.subtitle-but,

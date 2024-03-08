@@ -284,6 +284,11 @@
 
 .custom-edit-table tr td {
     padding-left: 10px;
+    padding-right: 10px;
+}
+
+.custom-edit-table tr td:first-child {
+    width: 30px;
 }
 
 /* custom alert pop-up  start*/
