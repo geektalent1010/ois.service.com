@@ -147,6 +147,7 @@
             cursor: pointer;
             font-family: 'DinPro', sans-serif;
             font-size: 14px;
+            user-select: none;
 
             &.subtitle-but {
                 font-family: 'DinPro Medium', sans-serif;
