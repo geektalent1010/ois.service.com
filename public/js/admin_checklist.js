@@ -119,6 +119,7 @@ $(document).ready(function () {
             range.deleteContents();
             range.insertNode(span);
         }
+        format();
     });
 
     $('.bold-text-but').click(function() {
@@ -143,6 +144,7 @@ $(document).ready(function () {
             range.deleteContents();
             range.insertNode(span);
         }
+        format();
     });
 
     $('.underline-text-but').click(function() {
@@ -167,6 +169,7 @@ $(document).ready(function () {
             range.deleteContents();
             range.insertNode(span);
         }
+        format();
     });
 
     $('.bold-underline-text-but').click(function() {
@@ -191,7 +194,46 @@ $(document).ready(function () {
             range.deleteContents();
             range.insertNode(span);
         }
+        format();
     });
+
+    const format = () => {
+        const totElements = document.getElementsByClassName('card-body-custom');
+        for(const totElement of totElements) {
+            const element = totElement.childNodes;
+            for(const ele of element) { //each div
+                const spanEles = ele.childNodes;
+                const newSpans = [];
+                for(const span of spanEles) {
+                    if(span.nodeType == Node.ELEMENT_NODE) {
+                        if(span.textContent == '') continue;
+                        for(const miniSpan of span.childNodes) {
+                            if(miniSpan.nodeType == Node.ELEMENT_NODE) {
+                                if(miniSpan.textContent == '') continue;
+                                newSpans.push(miniSpan);
+                            } else {
+                                const tempSpan = document.createElement('span');
+                                tempSpan.style.fontWeight = span.style.fontWeight;
+                                tempSpan.style.textDecoration = span.style.textDecoration;
+                                tempSpan.textContent = miniSpan.textContent;
+                                newSpans.push(tempSpan);
+                            }
+                        }
+                    } else {
+                        const tempSpan = document.createElement('span');
+                        tempSpan.style.fontWeight = ele.style.fontWeight;
+                        tempSpan.style.textDecoration = ele.style.textDecoration;
+                        tempSpan.textContent = span.textContent;
+                        newSpans.push(tempSpan);
+                    }
+                }
+                ele.innerHTML = '';
+                for(const newSpan of newSpans) {
+                    ele.appendChild(newSpan);
+                }
+            }
+        }
+    }
 
     $('.add-table-but').click(function() {
         let focusDiv = $('.card-body-custom div.focused');
