@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    let range;
+
     $("#office-select-form").click(function () {
         $("#office-select-form").submit();
     });
@@ -58,7 +60,7 @@ $(document).ready(function () {
     });
 
 
-    $(document).on('focus', '.card-body-custom div', function() {
+    $(document).on('focus', '.card-body-custom div', function(e) {
         $(".editor-panel").addClass("show");
     });
 
@@ -175,7 +177,9 @@ $(document).ready(function () {
     $('.bold-underline-text-but').click(function() {
         const status = $(this).hasClass('focused');
         formatTextStyle();
-        const selection = window.getSelection();
+        // const selection = window.getSelection();
+        console.log(range)
+
         console.log({selection});
         const selectText = selection.toString();
         console.log({selectText});
@@ -193,13 +197,27 @@ $(document).ready(function () {
             span.textContent = selectText;
             console.log({newspan: span});
 
-            const range = selection.getRangeAt(0);
+            // const range = selection.getRangeAt(0);
             console.log({range});
             range.deleteContents();
             range.insertNode(span);
         }
         format();
     });
+
+    const getSelectedRange = function() {
+        try {
+            if (window.getSelection) {
+                range = window.getSelection().getRangeAt(0);
+            } else {
+                range = document.getSelection().getRangeAt(0);
+            }
+        } catch (err) {
+
+        }
+    };
+    timer = null;
+    timer = setInterval(getSelectedRange, 150);
 
     const format = () => {
         const totElements = document.getElementsByClassName('card-body-custom');
