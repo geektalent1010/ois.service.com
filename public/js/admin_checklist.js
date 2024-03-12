@@ -176,7 +176,9 @@ $(document).ready(function () {
         const status = $(this).hasClass('focused');
         formatTextStyle();
         const selection = window.getSelection();
+        console.log({selection});
         const selectText = selection.toString();
+        console.log({selectText});
         if(selectText) {
             const span = document.createElement('span');
             if(status) {
@@ -189,8 +191,10 @@ $(document).ready(function () {
                 $(this).addClass('focused');
             }
             span.textContent = selectText;
+            console.log({newspan: span});
 
             const range = selection.getRangeAt(0);
+            console.log({range});
             range.deleteContents();
             range.insertNode(span);
         }
@@ -199,13 +203,18 @@ $(document).ready(function () {
 
     const format = () => {
         const totElements = document.getElementsByClassName('card-body-custom');
+        console.log({totElements})
         for(const totElement of totElements) {
+            console.log({totElement})
             const element = totElement.childNodes;
             for(const ele of element) { //each div
+                console.log('EACH DIV')
                 const spanEles = ele.childNodes;
                 const newSpans = [];
                 for(const span of spanEles) {
+                    console.log({span})
                     if(span.nodeType == Node.ELEMENT_NODE) {
+                        console.log('element node')
                         if(span.textContent == '') continue;
                         for(const miniSpan of span.childNodes) {
                             if(miniSpan.nodeType == Node.ELEMENT_NODE) {
@@ -220,6 +229,7 @@ $(document).ready(function () {
                             }
                         }
                     } else {
+                        console.log('element span')
                         const tempSpan = document.createElement('span');
                         tempSpan.style.fontWeight = ele.style.fontWeight;
                         tempSpan.style.textDecoration = ele.style.textDecoration;
@@ -229,6 +239,7 @@ $(document).ready(function () {
                 }
                 ele.innerHTML = '';
                 for(const newSpan of newSpans) {
+                    console.log(newSpan)
                     ele.appendChild(newSpan);
                 }
             }
