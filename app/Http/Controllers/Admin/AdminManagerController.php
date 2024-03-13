@@ -31,9 +31,7 @@ class AdminManagerController extends Controller
         $adminUsers = User::where('is_admin', 1)
             ->where('status', 1)
             ->orderBy('email')
-            ->get()
-            ->pluck('email')
-            ->all();
+            ->get();
         $offices = Office::orderBy('country', 'asc')->orderBy('city', 'asc')->get()->groupBy(function ($data) {
             return $data->country;
         });

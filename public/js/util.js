@@ -230,7 +230,7 @@ for (let element of searchPartDom) {
 
     function textChange(value) {
         for(let listEle of listDetailsDom.children) {
-            if(listEle.innerHTML.includes(value)) {
+            if(listEle.textContent.toLowerCase().includes(value)) {
                 listEle.classList.remove('d-none');
             } else {
                 listEle.classList.add('d-none');
@@ -244,7 +244,7 @@ for (let element of searchPartDom) {
 
     for (let listEle of listDetailsDom.children) {
         listEle.addEventListener("click", function (e) {
-            inputDom.value = listEle.innerHTML;
+            inputDom.value = listEle.getAttribute('value').toLowerCase();
             inputDom.focus();
             textChange(inputDom.value);
         });

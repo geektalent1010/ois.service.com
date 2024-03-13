@@ -20,7 +20,7 @@
                 </form>
                 <div class="list-detail d-none">
                     @foreach ($users as $user)
-                        <div class="detail">{{$user}}</div>
+                        <div class="detail" value="{{$user}}">{{$user}}</div>
                     @endforeach
                 </div>
             </div>
