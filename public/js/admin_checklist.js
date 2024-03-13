@@ -234,7 +234,7 @@ $(document).ready(function () {
                             if(miniSpan.textContent == '') continue;
                             newSpans.push(miniSpan);
                         } else {
-                            const tempSpan = document.createElement('span');
+                            const tempSpan = document.createElement(span.tagName);
                             tempSpan.style.fontWeight = span.style.fontWeight;
                             tempSpan.style.textDecoration = span.style.textDecoration;
                             tempSpan.textContent = miniSpan.textContent;
