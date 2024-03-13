@@ -26,10 +26,12 @@
         <div class="welcome-section">
             <div class="greet-section">
                 @foreach ($content as $key => $con)
-                    <div class="welcome-greet">{{$con->content}}</div>
-                    @if ($key == 4)
-                        <a style="color: white" href="https://ois.brandfields.com/admin/login">OIS - CMS Log In</a>
-                    @endif
+                    <div class="welcome-greet">{{$con->content}}
+                        @if ($key == 4)
+                            <a style="color: white" href="https://ois.brandfields.com/admin/login">OIS - CMS Log In</a>
+                        @endif
+                    </div>
+
                 @endforeach
             </div>
             <div class="visit-website">
