@@ -111,6 +111,7 @@ $(document).ready(function () {
 
     $('.regular-text-but').click(function(e) {
         formatTextStyle();
+        if(range.commonAncestorContainer.tagName == 'TBODY' || range.commonAncestorContainer.tagName == 'TR') return;
         const selectText = range.toString();
         if(selectText) {
             const span = document.createElement('span');
@@ -127,6 +128,7 @@ $(document).ready(function () {
     $('.bold-text-but').click(function() {
         const status = $(this).hasClass('focused');
         formatTextStyle();
+        if(range.commonAncestorContainer.tagName == 'TBODY' || range.commonAncestorContainer.tagName == 'TR') return;
         const selectText = range.toString();
         if(selectText) {
             const span = document.createElement('span');
@@ -150,6 +152,7 @@ $(document).ready(function () {
     $('.underline-text-but').click(function() {
         const status = $(this).hasClass('focused');
         formatTextStyle();
+        if(range.commonAncestorContainer.tagName == 'TBODY' || range.commonAncestorContainer.tagName == 'TR') return;
         const selectText = range.toString();
         if(selectText) {
             const span = document.createElement('span');
@@ -173,6 +176,7 @@ $(document).ready(function () {
     $('.bold-underline-text-but').click(function() {
         const status = $(this).hasClass('focused');
         formatTextStyle();
+        if(range.commonAncestorContainer.tagName == 'TBODY' || range.commonAncestorContainer.tagName == 'TR') return;
 
         const selectText = range.toString();
         if(selectText) {
