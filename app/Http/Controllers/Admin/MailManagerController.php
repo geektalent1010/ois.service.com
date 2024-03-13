@@ -14,11 +14,15 @@ class MailManagerController extends Controller
         if(!$user->isSuperAdmin()) {
             return redirect()->route('admin.dashboard.index');
         }
-        $content = Content::where('title', 'MAIL')
+        $content1 = Content::where('title', 'MAIL1')
+        ->orderBy('order_num')
+        ->get();
+        $content2 = Content::where('title', 'MAIL2')
         ->orderBy('order_num')
         ->get();
         return view('admin.mail.index')
-            ->with('content', $content);
+            ->with('content1', $content1)
+            ->with('content2', $content2);
     }
 
     public function updateMail(Request $request) {

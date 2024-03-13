@@ -85,7 +85,7 @@ $(document).ready(function () {
         e.preventDefault();
         const userid = $("#userid").val();
         let dataNum = 0;
-        if(userid) dataNum = 8;
+        if(userid) dataNum = 9;
         else dataNum = 9;
         for (let i = 1 ; i <= dataNum ; i ++) {
             if(i == 7) continue;

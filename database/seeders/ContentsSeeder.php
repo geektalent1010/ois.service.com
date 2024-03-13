@@ -1009,35 +1009,91 @@ class ContentsSeeder extends Seeder
       'lang' => 'en',
     ]);
     Content::create([
-      'title' => 'MAIL',
+      'title' => 'MAIL1',
       'content' => 'Hi',
       'order_num' => 1,
       'lang' => 'en',
     ]);
     Content::create([
-      'title' => 'MAIL',
+      'title' => 'MAIL1',
       'content' => 'Welcome to OIS Services and thank your for creating a client account.',
       'order_num' => 2,
       'lang' => 'en',
     ]);
     Content::create([
-      'title' => 'MAIL',
+      'title' => 'MAIL1',
       'content' => 'Since we protect our clients data and personal information, we kindly ask you to confirm your email address by clicking the email confirmation button below.',
       'order_num' => 3,
       'lang' => 'en',
     ]);
     Content::create([
-      'title' => 'MAIL',
+      'title' => 'MAIL1',
       'content' => 'Thank you for joining our community.',
       'order_num' => 4,
       'lang' => 'en',
     ]);
     Content::create([
-      'title' => 'MAIL',
+      'title' => 'MAIL1',
       'content' => 'Your OIS Support Team',
       'order_num' => 5,
       'lang' => 'en',
     ]);
+
+
+    Content::create([
+        'title' => 'MAIL2',
+        'content' => 'Hi',
+        'order_num' => 1,
+        'lang' => 'en',
+      ]);
+      Content::create([
+        'title' => 'MAIL2',
+        'content' => 'Welcome to the OIS Admin Team.',
+        'order_num' => 2,
+        'lang' => 'en',
+      ]);
+      Content::create([
+        'title' => 'MAIL2',
+        'content' => 'Your account as a Center Head is now officially confirmed.',
+        'order_num' => 3,
+        'lang' => 'en',
+      ]);
+      Content::create([
+        'title' => 'MAIL2',
+        'content' => 'Kindly login to the OIS ADMIN PORTAL using the following details.',
+        'order_num' => 4,
+        'lang' => 'en',
+      ]);
+      Content::create([
+        'title' => 'MAIL2',
+        'content' => 'Login: ',
+        'order_num' => 5,
+        'lang' => 'en',
+      ]);
+      Content::create([
+        'title' => 'MAIL2',
+        'content' => 'Username: ',
+        'order_num' => 6,
+        'lang' => 'en',
+      ]);
+      Content::create([
+        'title' => 'MAIL2',
+        'content' => 'Password: ',
+        'order_num' => 7,
+        'lang' => 'en',
+      ]);
+      Content::create([
+        'title' => 'MAIL2',
+        'content' => 'Thanks again for joining, looking forward to build a successful future together.',
+        'order_num' => 8,
+        'lang' => 'en',
+      ]);
+      Content::create([
+        'title' => 'MAIL2',
+        'content' => 'Your OIS Support Team',
+        'order_num' => 9,
+        'lang' => 'en',
+      ]);
 
     //cn
     Content::create([

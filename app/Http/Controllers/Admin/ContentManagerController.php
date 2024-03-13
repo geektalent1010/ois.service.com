@@ -18,7 +18,8 @@ class ContentManagerController extends Controller
         $contents = Content::select('title', 'id')
             ->where('order_num', 1)
             ->where('lang', 'en')
-            ->where('title', '<>', 'MAIL')
+            ->where('title', '<>', 'MAIL1')
+            ->where('title', '<>', 'MAIL2')
             ->groupBy('title', 'id')
             ->orderBy('id')
             ->get();

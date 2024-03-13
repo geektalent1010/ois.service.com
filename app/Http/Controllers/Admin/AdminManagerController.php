@@ -10,6 +10,8 @@ use App\User;
 use App\Profile;
 use App\Role;
 use App\Office;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\Welcome1;
 use Illuminate\Support\Facades\Auth;
 
 class AdminManagerController extends Controller
@@ -98,6 +100,11 @@ class AdminManagerController extends Controller
         $role->save();
 
         $res['status'] = 'success';
+        $userData['first_name'] = $profile->first_name;
+        $userData['last_name'] = $profile->last_name;
+        $userData['username'] = $user->username;
+        $userData['password'] = $request->input('password');
+        Mail::to($user->email)->send(new Welcome1($userData));
         return json_encode($res);
     }
 
@@ -194,6 +201,11 @@ class AdminManagerController extends Controller
             $role->save();
         }
         $res['status'] = 'success';
+        $userData['first_name'] = $profile->first_name;
+        $userData['last_name'] = $profile->last_name;
+        $userData['username'] = $user->username;
+        $userData['password'] = $request->input('password');
+        Mail::to($user->email)->send(new Welcome1($userData));
         return json_encode($res);
     }
 

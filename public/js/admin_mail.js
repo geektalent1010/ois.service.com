@@ -27,5 +27,13 @@ $(document).ready(function() {
                 }
             }
         })
+    });
+
+    $('.content-panel').click(function() {
+        const index = $(this).attr('value');
+        $('.content-panel').removeClass('active');
+        $(this).addClass('active');
+        $('.mail-text').addClass('d-none');
+        $('.mail-text' + index).removeClass('d-none');
     })
 })
