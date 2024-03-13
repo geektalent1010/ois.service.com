@@ -13,8 +13,8 @@
         <div class="manager-body">
             <div class="main-title">MAIL MANAGER</div>
             <div class="content-panel-part mt-30px">
-                <div class="content-panel active">MAIL 1</div>
-                <div class="content-panel">MAIL 2</div>
+                <div class="content-panel active" value="1">MAIL 1</div>
+                <div class="content-panel" value="2">MAIL 2</div>
                 <div class="content-panel">MAIL 3</div>
                 <div class="content-panel">MAIL 4</div>
             </div>
@@ -33,9 +33,23 @@
                     <img src="{{ asset('images/Globe.png') }}" alt="" />
                 </div>
                 <div class="mail-edit-text">
-                    <div class="mail-text">
-                        @foreach ($content as $key => $item)
-                            <div class="mail-text-para"><span contentId="{{$item->id}}" contenteditable="true">{{$item->content}}</span> {{$key == 0 ? 'name' : ''}}</div>
+                    <div class="mail-text mail-text1">
+                        @foreach ($content1 as $key => $item)
+                            <div class="mail-text-para"><span contentId="{{$item->id}}" contenteditable="true">{{$item->content}}</span> {{$key == 0 ? '***' : ''}}</div>
+                        @endforeach
+                    </div>
+                    <div class="mail-text mail-text2 d-none">
+                        @foreach ($content2 as $key => $item)
+                            <div class="mail-text-para">
+                                <span contentId="{{$item->id}}" contenteditable="true">{{$item->content}}</span>
+                                {{$key == 0 ? '***' : ''}}
+                                @if ($key == 4)
+                                    <a style="color: white" href="https://ois.brandfields.com/admin/login">OIS - CMS Log In</a>
+                                @endif
+                                {{$key == 5 ? '***' : ''}}
+                                {{$key == 6 ? '***' : ''}}
+                            </div>
+
                         @endforeach
                     </div>
                     <div class="mail-confirm-button">
