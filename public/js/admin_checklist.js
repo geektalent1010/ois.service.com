@@ -52,7 +52,9 @@ $(document).ready(function () {
                 $('.editor-panel').removeClass('show');
                 $('.list-group').html(html);
                 $(".card-body-custom > div").attr("tabindex", 0);
+                $(".card-body-custom > div").addClass("primary");
                 $(".card-body-custom table tr td>div").attr("tabindex", 0);
+                $(".card-body-custom table tr td>div").addClass("primary");
                 $('.edit-form input.token').val($('#office-select-form input:first-child()').val());
                 $('.price-button-section').removeClass('d-none');
             }
@@ -207,39 +209,45 @@ $(document).ready(function () {
     timer = setInterval(getSelectedRange, 150);
 
     const format = () => {
-        const totElements = document.getElementsByClassName('card-body-custom');
-        for(const totElement of totElements) {
-            const element = totElement.childNodes;
-            for(const ele of element) { //each div
-                const spanEles = ele.childNodes;
-                const newSpans = [];
-                for(const span of spanEles) {
-                    if(span.nodeType == Node.ELEMENT_NODE) {
-                        if(span.textContent == '') continue;
-                        for(const miniSpan of span.childNodes) {
-                            if(miniSpan.nodeType == Node.ELEMENT_NODE) {
-                                if(miniSpan.textContent == '') continue;
-                                newSpans.push(miniSpan);
-                            } else {
-                                const tempSpan = document.createElement('span');
-                                tempSpan.style.fontWeight = span.style.fontWeight;
-                                tempSpan.style.textDecoration = span.style.textDecoration;
-                                tempSpan.textContent = miniSpan.textContent;
-                                newSpans.push(tempSpan);
-                            }
-                        }
-                    } else {
-                        const tempSpan = document.createElement('span');
-                        tempSpan.style.fontWeight = ele.style.fontWeight;
-                        tempSpan.style.textDecoration = ele.style.textDecoration;
-                        tempSpan.textContent = span.textContent;
-                        newSpans.push(tempSpan);
+        const totElements = document.getElementsByClassName('primary');
+        for(const ele of totElements) { //each div
+            const spanEles = ele.childNodes;
+            const newSpans = [];
+            for(const span of spanEles) {
+
+                if(span.nodeType == Node.ELEMENT_NODE) {
+                    if(span.tagName.toLowerCase() == 'br') {
+                        newSpans.push(span);
+                        continue;
                     }
+                    // if(span.textContent == '') continue;
+                    for(const miniSpan of span.childNodes) {
+                        if(miniSpan.nodeType == Node.ELEMENT_NODE) {
+                            if(miniSpan.tagName.toLowerCase() == 'br') {
+                                newSpans.push(miniSpan);
+                                continue;
+                            }
+                            if(miniSpan.textContent == '') continue;
+                            newSpans.push(miniSpan);
+                        } else {
+                            const tempSpan = document.createElement('span');
+                            tempSpan.style.fontWeight = span.style.fontWeight;
+                            tempSpan.style.textDecoration = span.style.textDecoration;
+                            tempSpan.textContent = miniSpan.textContent;
+                            newSpans.push(tempSpan);
+                        }
+                    }
+                } else {
+                    const tempSpan = document.createElement('span');
+                    tempSpan.style.fontWeight = ele.style.fontWeight;
+                    tempSpan.style.textDecoration = ele.style.textDecoration;
+                    tempSpan.textContent = span.textContent;
+                    newSpans.push(tempSpan);
                 }
-                ele.innerHTML = '';
-                for(const newSpan of newSpans) {
-                    ele.appendChild(newSpan);
-                }
+            }
+            ele.innerHTML = '';
+            for(const newSpan of newSpans) {
+                ele.appendChild(newSpan);
             }
         }
     }
@@ -247,30 +255,31 @@ $(document).ready(function () {
     $('.add-table-but').click(function() {
         let focusDiv = $('.card-body-custom div.focused');
         if(focusDiv.length) {
+            focusDiv = focusDiv[focusDiv.length - 1];
             let newElement = '';
             newElement += `
                 <table class="custom-edit-table">
                     <tbody>
                         <tr>
                             <td>
-                                <div tabindex="0">No</div>
+                                <div tabindex="0" class="primary">No</div>
                             </td>
                             <td>
-                                <div tabindex="0">Requirements</div>
+                                <div tabindex="0" class="primary">Requirements</div>
                             </td>
                             <td>
-                                <div tabindex="0">Description</div>
+                                <div tabindex="0" class="primary">Description</div>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <div tabindex="0">[no]</div>
+                                <div tabindex="0" class="primary">[no]</div>
                             </td>
                             <td>
-                                <div tabindex="0">[requirements]</div>
+                                <div tabindex="0" class="primary">[requirements]</div>
                             </td>
                             <td>
-                                <div tabindex="0">[description]</div>
+                                <div tabindex="0" class="primary">[description]</div>
                             </td>
                         </tr>
                     </tbody>
@@ -287,7 +296,7 @@ $(document).ready(function () {
             let len = $(table).find('tbody tr:first-child td').length;
             let tr = '<tr>';
             while(len) {
-                tr += '<td><div tabindex="0">[New]</div></td>';
+                tr += '<td><div tabindex="0" class="primary">[New]</div></td>';
                 len --;
             }
             tr += '</tr>';
@@ -338,6 +347,7 @@ $(document).ready(function () {
         e.preventDefault();
         $(this).find(".card-body-custom div").removeAttr("tabindex");
         $(this).find(".card-body-custom div").removeClass("focused");
+        $(this).find(".card-body-custom div").removeClass("primary");
         const title = $(this).find('.card-header-custom').text();
         const description = $(this).find('.card-body-custom').html();
         const id = $(this).find('.edit-id').val();
@@ -361,6 +371,7 @@ $(document).ready(function () {
                 if(res.status == 'success') {
                     customAlert('Success', 'Updated successfully.', 'success');
                     $(".card-body-custom div").attr("tabindex", 0);
+                    $(".card-body-custom div").addClass("primary");
                     $('.editor-panel').removeClass('show');
                 } else {
                     customAlert('We are so sorry', '500 Error!', 'error');
@@ -379,7 +390,7 @@ $(document).ready(function () {
         }
         let html = '';
         const title = 'TITLE';
-        const description = '<div>DESCRIPTION</div>';
+        const description = '<div class="primary">DESCRIPTION</div>';
         html += '<form class="edit-form mt-35px">';
         html += '<input type="hidden" name="_token" class="token" />';
         html += '<input type="hidden" class="edit-id" name="edit-id" value="">';
@@ -394,6 +405,7 @@ $(document).ready(function () {
 
         $('.list-group').prepend(html);
         $(".list-group .card-body-custom > div:first-child()").attr("tabindex", 0);
+        $(".list-group .card-body-custom > div:first-child()").addClass("primary");
         $('.edit-form input.token').val($('#office-select-form input:first-child()').val());
     });
 
