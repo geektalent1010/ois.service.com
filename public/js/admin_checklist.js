@@ -255,6 +255,34 @@ $(document).ready(function () {
             }
         }
     }
+    let copyTarget;
+    let pasteTarget;
+
+    document.addEventListener('copy', function(e) {
+        copyTarget = range.commonAncestorContainer;
+        console.log(copyTarget)
+    })
+
+    document.addEventListener('paste', function(e) {
+        pasteTarget = document.querySelectorAll('.card-body-custom div.focused')[0];
+        if(copyTarget.nodeType == Node.ELEMENT_NODE) {
+            e.preventDefault();
+            if(copyTarget.classList.contains('card-body-custom')) {
+                let html = '';
+                for(const ele of copyTarget.childNodes) {
+                    html += ele.outerHTML;
+                }
+                pasteTarget.insertAdjacentHTML('afterend', html)
+            } else if(!copyTarget.classList.contains('primary') && !copyTarget.classList.contains('custom-edit-table')) {
+                console.log('hihi')
+                pasteTarget.insertAdjacentHTML('afterend', copyTarget.innerHTML);
+            } else {
+                pasteTarget.insertAdjacentHTML('afterend', copyTarget.innerHTML);
+            }
+        }
+
+
+    });
 
     $('.add-table-but').click(function() {
         let focusDiv = $('.card-body-custom div.focused');
