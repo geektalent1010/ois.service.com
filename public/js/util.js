@@ -227,6 +227,7 @@ for (let element of searchPartDom) {
     let inputPartDom = element.getElementsByClassName("search-input")[0];
     let inputDom = inputPartDom.getElementsByClassName("custom-input")[0];
     let listDetailsDom = element.getElementsByClassName("list-detail")[0];
+    console.log({listDetailsDom})
 
     function textChange(value) {
         listDetailsDom = element.getElementsByClassName("list-detail")[0];
