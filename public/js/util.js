@@ -228,18 +228,6 @@ for (let element of searchPartDom) {
     let inputDom = inputPartDom.getElementsByClassName("custom-input")[0];
     let listDetailsDom = element.getElementsByClassName("list-detail")[0];
 
-    function textChange(value) {
-        listDetailsDom = document.getElementsByClassName("list-detail")[0];
-        console.log({element})
-        for(let listEle of listDetailsDom.children) {
-            if(listEle.textContent.toLowerCase().includes(value)) {
-                listEle.classList.remove('d-none');
-            } else {
-                listEle.classList.add('d-none');
-            }
-        }
-    }
-
     inputDom.addEventListener("focus", function (e) {
         listDetailsDom.classList.remove("d-none");
     });
@@ -248,7 +236,14 @@ for (let element of searchPartDom) {
         listEle.addEventListener("click", function (e) {
             inputDom.value = listEle.getAttribute('value').toLowerCase();
             inputDom.focus();
-            textChange(inputDom.value);
+
+            for(let listEle of listDetailsDom.children) {
+                if(listEle.textContent.toLowerCase().includes(inputDom.value)) {
+                    listEle.classList.remove('d-none');
+                } else {
+                    listEle.classList.add('d-none');
+                }
+            }
         });
     }
 
@@ -259,7 +254,13 @@ for (let element of searchPartDom) {
     });
 
     inputDom.addEventListener('input', function(e) {
-        textChange(e.target.value);
+        for(let listEle of listDetailsDom.children) {
+            if(listEle.textContent.toLowerCase().includes(e.target.value)) {
+                listEle.classList.remove('d-none');
+            } else {
+                listEle.classList.add('d-none');
+            }
+        }
     });
 
     document.addEventListener('click', function(e) {
