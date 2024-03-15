@@ -227,8 +227,11 @@ for (let element of searchPartDom) {
     let inputPartDom = element.getElementsByClassName("search-input")[0];
     let inputDom = inputPartDom.getElementsByClassName("custom-input")[0];
     let listDetailsDom = element.getElementsByClassName("list-detail")[0];
+    console.log({listDetailsDom})
 
     function textChange(value) {
+        console.log({listDetailsDom})
+        listDetailsDom = element.getElementsByClassName("list-detail")[0];
         for(let listEle of listDetailsDom.children) {
             if(listEle.textContent.toLowerCase().includes(value)) {
                 listEle.classList.remove('d-none');
