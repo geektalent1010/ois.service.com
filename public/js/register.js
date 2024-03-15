@@ -5,6 +5,10 @@ $.ajaxSetup({
 });
 let emailTimer = null;
 
+$('#email').on('input', function(e) {
+    $('#login-email').val($(this).val());
+});
+
 const register = {
     init: function () {
         this.letiables();
