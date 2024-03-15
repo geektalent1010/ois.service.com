@@ -16,7 +16,8 @@ class Profile extends Model
         'street',
         'house_number',
         'postal_code',
-        'city'
+        'city',
+        'country_center',
     ];
 
     public function user() {

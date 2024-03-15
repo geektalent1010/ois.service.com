@@ -263,6 +263,11 @@ $(document).ready(function () {
         console.log(copyTarget)
     })
 
+    document.addEventListener('cut', function(e) {
+        copyTarget = range.commonAncestorContainer;
+        console.log(copyTarget)
+    })
+
     document.addEventListener('paste', function(e) {
         pasteTarget = document.querySelectorAll('.card-body-custom div.focused')[0];
         if(copyTarget.nodeType == Node.ELEMENT_NODE) {

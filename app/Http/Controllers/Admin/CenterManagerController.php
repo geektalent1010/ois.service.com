@@ -24,7 +24,7 @@ class CenterManagerController extends Controller
     public function getCenterInfo(Request $request) {
         $officeId = $request->input('officeId');
         $office = Office::where('id', $officeId)->first();
-        if(!Auth::guard('admin')->user()->isSuperAdmin() && (Auth::guard('admin')->user()->isAllowCenterEditor() && Auth::guard('admin')->user()->profile->country->name != $office->country)) {
+        if(!Auth::guard('admin')->user()->isSuperAdmin() && (Auth::guard('admin')->user()->isAllowCenterEditor() && Auth::guard('admin')->user()->profile->country_center != $office->country)) {
             $res['status'] = 'unauthorize';
             return json_encode($res);
         }
@@ -50,7 +50,7 @@ class CenterManagerController extends Controller
         }
 
         $office->country = $request->input('country');
-        if(!Auth::guard('admin')->user()->isSuperAdmin() && (Auth::guard('admin')->user()->isAllowCenterEditor() && Auth::guard('admin')->user()->profile->country->name != $office->country)) {
+        if(!Auth::guard('admin')->user()->isSuperAdmin() && (Auth::guard('admin')->user()->isAllowCenterEditor() && Auth::guard('admin')->user()->profile->country_center != $office->country)) {
             $res['status'] = 'unauthorize';
             return json_encode($res);
         }
