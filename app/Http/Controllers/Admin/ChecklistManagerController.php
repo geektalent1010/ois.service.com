@@ -25,7 +25,7 @@ class ChecklistManagerController extends Controller
     public function getChecklist(Request $request) {
         $officeId = $request->input('officeId');
         $office = Office::where('id', $officeId)->first();
-        if(!Auth::guard('admin')->user()->isSuperAdmin() && (Auth::guard('admin')->user()->isAllowPriceEditor() && Auth::guard('admin')->user()->profile->country->name != $office->country)) {
+        if(!Auth::guard('admin')->user()->isSuperAdmin() && (Auth::guard('admin')->user()->isAllowPriceEditor() && Auth::guard('admin')->user()->profile->country_center != $office->country)) {
             $res['status'] = 'unauthorize';
             return json_encode($res);
         }

@@ -198,7 +198,7 @@ $(document).ready(function () {
                     const roleOptions = $('#data7 option');
                     for(let i = 1 ; i < roleOptions.length ; i ++) {
                         if(roleOptions[i].value == res.role) {
-                            $('#role-select .select-items div:nth-child(' + i + ')').click();
+                            $('#role-select .select-items>div:nth-child(' + i + ')').click();
                             break;
                         }
                     }

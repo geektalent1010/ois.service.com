@@ -66,7 +66,7 @@
                                             <option value="{{$office->id}}"
                                                 data-data1="{{$office->country}}"
                                                 data-data2="{{$office->city}}"
-                                                @if ($office->country == $user->profile->country->name && $office->city == $user->profile->city)
+                                                @if ($office->country == $user->profile->country_center && $office->city == $user->profile->city)
                                                     selected
                                                 @endif
                                                 >

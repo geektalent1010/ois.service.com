@@ -73,7 +73,8 @@ class AdminManagerController extends Controller
         $profile->last_name = $request->input('lastName');
         $profile->phone_number = $request->input('phoneCode').' '.$request->input('phoneNumber');
         $profile->city = $request->input('city');
-        $profile->country_id = Country::where('name', $request->input('country'))->first()->id;
+        $profile->country_id = 1;
+        $profile->country_center = $request->input('country');
         $profile->gender = 'm';
         $profile->user_id = $user->id;
 
@@ -108,7 +109,7 @@ class AdminManagerController extends Controller
         $userData['last_name'] = $profile->last_name;
         $userData['username'] = $user->username;
         $userData['password'] = $request->input('password');
-        // Mail::to($user->email)->send(new Welcome1($userData));
+        Mail::to($user->email)->send(new Welcome1($userData));
         return json_encode($res);
     }
 
@@ -143,7 +144,7 @@ class AdminManagerController extends Controller
         $profile->last_name = $request->input('lastName');
         $profile->phone_number = $request->input('phoneCode').' '.$request->input('phoneNumber');
         $profile->city = $request->input('city');
-        $profile->country_id = Country::where('name', $request->input('country'))->first()->id;
+        $profile->country_center = $request->input('country');
         $profile->gender = 'm';
         $profile->user_id = $user->id;
         $profile->save();
@@ -225,7 +226,7 @@ class AdminManagerController extends Controller
             $res['phoneNumber'] = $user->profile->phone_number;
             $res['email'] = $user->email;
             $res['city'] = $user->profile->city;
-            $res['country'] = $user->profile->country->name;
+            $res['country'] = $user->profile->country_center;
             $res['username'] = $user->username;
             $res['role'] = $user->is_admin;
             $res['roles'] = [];
