@@ -139,8 +139,8 @@
                         <p class="form-label">{{__('login_details')}}</p>
                     </div>
                     <div class="col-md-6 form-group">
-                        <input type="text" id="login-email" name="login_email" class="form-control"
-                            placeholder="{{__('email_L')}}" readonly value="{{ old('login_email') }}">
+                        <input type="text" id="login-email" name="" class="form-control"
+                            placeholder="{{__('email_L')}}" value="{{ old('login_email') }}">
                     </div>
                     <div class="col-md-6 form-group">
                         <input type="password" id="password" name="password" class="form-control"
