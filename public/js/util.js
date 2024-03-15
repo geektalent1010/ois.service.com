@@ -238,7 +238,7 @@ for (let element of searchPartDom) {
             inputDom.focus();
 
             for(let listEle of listDetailsDom.children) {
-                if(listEle.textContent.toLowerCase().includes(inputDom.value)) {
+                if(listEle.textContent.toLowerCase().includes(inputDom.value.toLowerCase())) {
                     listEle.classList.remove('d-none');
                 } else {
                     listEle.classList.add('d-none');
@@ -255,7 +255,7 @@ for (let element of searchPartDom) {
 
     inputDom.addEventListener('input', function(e) {
         for(let listEle of listDetailsDom.children) {
-            if(listEle.textContent.toLowerCase().includes(e.target.value)) {
+            if(listEle.textContent.toLowerCase().includes(e.target.value.toLowerCase())) {
                 listEle.classList.remove('d-none');
             } else {
                 listEle.classList.add('d-none');
