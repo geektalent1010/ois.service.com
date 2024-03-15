@@ -38,7 +38,7 @@ class ClientManagerController extends Controller
             ->all();
         } else {
             $users = User::leftJoin('profiles', 'users.id', '=', 'profiles.user_id')
-            ->where('profiles.country_id', $userCountry)
+            // ->where('profiles.country_id', $userCountry)
             ->where('status', 1)
             ->where('is_admin', 0)
             ->orderBy('email')

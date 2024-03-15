@@ -30,10 +30,13 @@ class AdminManagerController extends Controller
             ->get()
             ->pluck('phone_code')
             ->all();
-        $adminUsers = User::where('is_admin', 1)
-            ->where('status', 1)
-            ->orderBy('email')
-            ->get();
+        $adminUsers = User::where(function($query) {
+            $query->where('is_admin', 1)
+                  ->orWhere('is_admin', 2);
+                })
+                ->where('status', 1)
+                ->orderBy('email')
+                ->get();
         $offices = Office::orderBy('country', 'asc')->orderBy('city', 'asc')->get()->groupBy(function ($data) {
             return $data->country;
         });
@@ -73,6 +76,7 @@ class AdminManagerController extends Controller
         $profile->country_id = Country::where('name', $request->input('country'))->first()->id;
         $profile->gender = 'm';
         $profile->user_id = $user->id;
+
         $profile->save();
 
         $role = new Role();
@@ -104,7 +108,7 @@ class AdminManagerController extends Controller
         $userData['last_name'] = $profile->last_name;
         $userData['username'] = $user->username;
         $userData['password'] = $request->input('password');
-        Mail::to($user->email)->send(new Welcome1($userData));
+        // Mail::to($user->email)->send(new Welcome1($userData));
         return json_encode($res);
     }
 
