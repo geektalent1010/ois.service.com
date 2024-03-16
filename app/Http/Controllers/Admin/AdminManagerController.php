@@ -217,7 +217,7 @@ class AdminManagerController extends Controller
     public function getManagerInfo(Request $request) {
         $email = $request->input('search');
         $user = User::leftJoin('profiles', 'users.id', '=', 'profiles.user_id')
-            ->where('users.is_admin', [1, 2])
+            ->whereIn('users.is_admin', [1, 2])
             ->where(function($query) use ($email) {
                 $query->where('users.email', $email)
                     ->orWhere('profiles.first_name', $email)
