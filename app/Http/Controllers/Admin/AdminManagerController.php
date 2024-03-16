@@ -216,24 +216,27 @@ class AdminManagerController extends Controller
 
     public function getManagerInfo(Request $request) {
         $email = $request->input('search');
-        $user = User::leftJoin('profiles', 'users.id', '=', 'profiles.user_id')
-            ->whereIn('users.is_admin', [1, 2])
+        $user = User::with('profile')
+            ->where('status', 1)
+            ->whereIn('is_admin', [1, 2])
             ->where(function($query) use ($email) {
-                $query->where('users.email', $email)
-                    ->orWhere('profiles.first_name', $email)
-                    ->orWhere('profiles.last_name', $email);
+                $query->where('email', $email)
+                    ->orWhereHas('profile', function($query) use ($email) {
+                        $query->where('first_name', $email)
+                            ->orWhere('last_name', $email);
+                    });
             })
-            ->select('users.id', 'users.email', 'profiles.first_name', 'profiles.last_name', 'profiles.phone_number', 'profiles.city', 'profiles.country_center', 'users.username', 'users.is_admin')
             ->first();
+
         if($user) {
             $res['status'] = 'success';
             $res['userId'] = $user->id;
-            $res['firstName'] = $user->first_name;
-            $res['lastName'] = $user->last_name;
-            $res['phoneNumber'] = $user->phone_number;
+            $res['firstName'] = $user->profile->first_name;
+            $res['lastName'] = $user->profile->last_name;
+            $res['phoneNumber'] = $user->profile->phone_number;
             $res['email'] = $user->email;
-            $res['city'] = $user->city;
-            $res['country'] = $user->country_center;
+            $res['city'] = $user->profile->city;
+            $res['country'] = $user->profile->country_center;
             $res['username'] = $user->username;
             $res['role'] = $user->is_admin;
             $res['roles'] = [];

@@ -17,7 +17,7 @@ class ClientManagerController extends Controller
         if(!$isAllow) {
             return redirect()->route('admin.dashboard.index');
         }
-        $userCountry = Auth::guard('admin')->user()->profile->country_id;
+        $userCountry = Auth::guard('admin')->user()->profile->country_center;
 
         $countries = Country::where('active', 1)->get();
         $phoneCodes = Country::where('active', 1)
@@ -29,9 +29,18 @@ class ClientManagerController extends Controller
             ->pluck('phone_code')
             ->all();
 
+        Auth::guard('admin')->user()->isSuperAdmin() ?
             $users = User::where('status', 1)
+                ->where('is_admin', 0)
+                ->orderBy('email')
+                ->get() :
+            $users = User::whereHas('profile', function($query) use ($userCountry) {
+                $query->whereHas('country', function($query) use ($userCountry) {
+                    $query->where('name', $userCountry);
+                });
+            })
+            ->where('status', 1)
             ->where('is_admin', 0)
-            ->orderBy('email')
             ->get();
 
         return view('admin.client.index')
@@ -123,28 +132,48 @@ class ClientManagerController extends Controller
     }
 
     public function getClientInfo(Request $request) {
+
         $email = $request->input('search');
-        $user = User::leftJoin('profiles', 'users.id', '=', 'profiles.user_id')
-            ->where('users.status', 1)
-            ->where('users.is_admin', 0)
-            ->where(function($query) use ($email) {
-                $query->where('users.email', $email)
-                    ->orWhere('profiles.first_name', $email)
-                    ->orWhere('profiles.last_name', $email);
-            })
-            ->select('users.id', 'users.email', 'profiles.first_name', 'profiles.last_name', 'profiles.street', 'profiles.house_number', 'profiles.phone_number', 'profiles.city', 'profiles.country_id', 'users.username')
-            ->first();
+        $userCountry = Auth::guard('admin')->user()->profile->country_center;
+
+        Auth::guard('admin')->user()->isSuperAdmin() ?
+            $user = User::with('profile')
+                ->where('status', 1)
+                ->where('is_admin', 0)
+                ->where(function($query) use ($email) {
+                    $query->where('email', $email)
+                        ->orWhereHas('profile', function($query) use ($email) {
+                            $query->where('first_name', $email)
+                                ->orWhere('last_name', $email);
+                        });
+                })
+                ->first() :
+            $user = User::with('profile')
+                ->where('status', 1)
+                ->where('is_admin', 0)
+                ->where(function($query) use ($email) {
+                    $query->where('email', $email)
+                        ->orWhereHas('profile', function($query) use ($email) {
+                            $query->where('first_name', $email)
+                                ->orWhere('last_name', $email);
+                        });
+                })
+                ->whereHas('profile.country', function($query) use ($userCountry) {
+                    $query->where('name', $userCountry);
+                })
+                ->first();
+
         if($user) {
             $res['status'] = 'success';
             $res['userId'] = $user->id;
-            $res['firstName'] = $user->first_name;
-            $res['lastName'] = $user->last_name;
-            $res['street'] = $user->street;
-            $res['houseNr'] = $user->house_number;
-            $res['phoneNumber'] = $user->phone_number;
+            $res['firstName'] = $user->profile->first_name;
+            $res['lastName'] = $user->profile->last_name;
+            $res['street'] = $user->profile->street;
+            $res['houseNr'] = $user->profile->house_number;
+            $res['phoneNumber'] = $user->profile->phone_number;
             $res['email'] = $user->email;
-            $res['city'] = $user->city;
-            $res['country'] = $user->country_id;
+            $res['city'] = $user->profile->city;
+            $res['country'] = $user->profile->country_id;
             $res['username'] = $user->username;
             $res['registDate'] = date('m-d-Y');
         } else {

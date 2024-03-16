@@ -263,6 +263,32 @@ $(document).ready(function () {
 
     });
 
+    const setAllRolesDisabled = () => {
+        $('.access-detail').removeClass('active');
+        $('.access-detail').removeClass('only-super');
+        $('.access-detail').addClass('disabled');
+
+    }
+
+    $('#role-select').click(function() {
+        const role = $('#data7').val();
+        setAllRolesDisabled();
+        if(role == 2) {
+            $('.access-detail').addClass('active');
+        } else if(role == 1) {
+            $('#profile-edit-button').addClass('active');
+
+            $('#content-edit-button').addClass('only-super');
+            $('#admin-man-button').addClass('only-super');
+            $('#mail-man-button').addClass('only-super');
+
+            $('#center-edit-button').removeClass('disabled');
+            $('#client-edit-button').removeClass('disabled');
+            $('#price-edit-button').removeClass('disabled');
+            $('#checklist-edit-button').removeClass('disabled');
+        }
+    })
+
     const phoneSelDom = document.getElementById('phone-code-select');
     drawSelectForm(phoneSelDom);
     const countrySelDom = document.getElementById('center-select');

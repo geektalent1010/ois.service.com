@@ -25,7 +25,6 @@
                             <span class="d-none">
                                 {{$user->profile->first_name}}
                                 {{$user->profile->last_name}}
-                                {{$user->profile->country->name}}
                             </span>
                         </div>
                     @endforeach
