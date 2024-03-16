@@ -15,7 +15,7 @@ $(document).ready(function () {
         $('#export-button-right').removeClass('disabled');
         $('#export-all-button-right').removeClass('disabled');
 
-        $("#create-user-form input").val('');
+        $("#create-user-form input:not(:first-child)").val('');
     });
 
     $("#create-user-form").submit(function(e) {

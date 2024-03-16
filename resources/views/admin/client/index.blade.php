@@ -20,7 +20,14 @@
                 </form>
                 <div class="list-detail d-none">
                     @foreach ($users as $user)
-                        <div class="detail" value="{{$user}}">{{$user}}</div>
+                        <div class="detail" value="{{$user->email}}">
+                            {{$user->email}}
+                            <span class="d-none">
+                                {{$user->profile->first_name}}
+                                {{$user->profile->last_name}}
+                                {{$user->profile->country->name}}
+                            </span>
+                        </div>
                     @endforeach
                 </div>
             </div>
