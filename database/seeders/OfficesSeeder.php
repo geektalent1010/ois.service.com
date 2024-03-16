@@ -59,7 +59,7 @@ class OfficesSeeder extends Seeder
             'providedby' => '',
         ]);
         Office::create([
-            'country' => 'USA',
+            'country' => 'United States',
             'city' => 'Atlanta',
             'key' => '',
             'flag' => 'USA.svg',
@@ -124,7 +124,7 @@ class OfficesSeeder extends Seeder
             'providedby' => '',
         ]);
         Office::create([
-            'country' => 'USA',
+            'country' => 'United States',
             'city' => 'Chicago',
             'key' => 'CHICAGO',
             'flag' => 'USA.svg',
@@ -137,7 +137,7 @@ class OfficesSeeder extends Seeder
             'providedby' => '',
         ]);
         Office::create([
-            'country' => 'UAE',
+            'country' => 'United Arab Emirates',
             'city' => 'Dubai',
             'key' => 'DUBAI',
             'flag' => 'UAE.svg',
@@ -163,7 +163,7 @@ class OfficesSeeder extends Seeder
             'providedby' => '',
         ]);
         Office::create([
-            'country' => 'USA',
+            'country' => 'United States',
             'city' => 'Houston',
             'key' => 'Houston',
             'flag' => 'USA.svg',
@@ -189,7 +189,7 @@ class OfficesSeeder extends Seeder
             'providedby' => '',
         ]);
         Office::create([
-            'country' => 'UK',
+            'country' => 'United Kingdom',
             'city' => 'London',
             'key' => 'LONDON',
             'flag' => 'UK.svg',
@@ -202,7 +202,7 @@ class OfficesSeeder extends Seeder
             'providedby' => '',
         ]);
         Office::create([
-            'country' => 'USA',
+            'country' => 'United States',
             'city' => 'Los Angeles',
             'key' => '',
             'flag' => 'USA.svg',
@@ -254,7 +254,7 @@ class OfficesSeeder extends Seeder
             'providedby' => '',
         ]);
         Office::create([
-            'country' => 'USA',
+            'country' => 'United States',
             'city' => 'New York',
             'key' => '',
             'flag' => 'USA.svg',
@@ -319,7 +319,7 @@ class OfficesSeeder extends Seeder
             'providedby' => '',
         ]);
         Office::create([
-            'country' => 'USA',
+            'country' => 'United States',
             'city' => 'Washington DC',
             'key' => '',
             'flag' => 'USA.svg',
@@ -371,7 +371,7 @@ class OfficesSeeder extends Seeder
             'providedby' => '',
         ]);
         Office::create([
-            'country' => 'UK',
+            'country' => 'United Kingdom',
             'city' => 'Manchester',
             'key' => '',
             'flag' => 'UK.svg',
@@ -735,7 +735,7 @@ class OfficesSeeder extends Seeder
             'providedby' => '',
         ]);
         Office::create([
-            'country' => 'USA',
+            'country' => 'United States',
             'city' => 'Minneapolis',
             'key' => '',
             'flag' => 'USA.svg',
