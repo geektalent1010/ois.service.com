@@ -283,7 +283,7 @@ $(document).ready(function () {
             $('#mail-man-button').addClass('only-super');
 
             $('#center-edit-button').removeClass('disabled');
-            $('#client-edit-button').removeClass('disabled');
+            $('#client-man-button').removeClass('disabled');
             $('#price-edit-button').removeClass('disabled');
             $('#checklist-edit-button').removeClass('disabled');
         }
