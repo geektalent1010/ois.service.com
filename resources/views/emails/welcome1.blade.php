@@ -23,7 +23,7 @@
             </table>
 
             <table class="welcome-text-body" align="center">
-                @foreach ($content as $con)
+                @foreach ($content as $key => $con)
                     <tr>
                         <td class="welcome-greet">
                             {{$con->content}}
