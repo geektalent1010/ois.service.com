@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Content;
 
 class HomeController extends Controller
 {
@@ -26,7 +27,15 @@ class HomeController extends Controller
         // return view('home');
         $userData['first_name'] = 'Yu';
         $userData['last_name'] = 'Guobin';
+        $userData['id'] = '123456';
+        $content = Content::where('title', 'MAIL1')
+            ->orderBy('order_num')
+            ->get();
+        if(count($content) >= 1) {
+            $content[0]->content = $content[0]->content.' '.$userData['first_name'].' '.$userData['last_name'];
+        }
         return view('welcome')
-            ->with('userData', $userData);
+            ->with('userData', $userData)
+            ->with('content', $content);
     }
 }
