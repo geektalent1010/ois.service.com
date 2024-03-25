@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Content;
 use App\Country;
+use App\AdminLog;
 
 class ContentManagerController extends Controller
 {
@@ -49,6 +50,12 @@ class ContentManagerController extends Controller
             ->first();
         $content->content = $request->input('content');
         $content->save();
+
+        AdminLog::create([
+            'user_id'=>Auth::guard('admin')->user()->id,
+            'action'=>'Edited Content',
+        ]);
+
         $res['status'] = 'success';
         return json_encode($res);
     }

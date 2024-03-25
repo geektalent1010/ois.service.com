@@ -26,6 +26,7 @@
             </div>
             <div class="button-part mt-30px">
                 <button id="create-user-button">CREATE NEW USER</button>
+                <button id="log-button">ADMIN LOG</button>
             </div>
             <form class="my-profile-part d-none" id="create-user-form">
                 @csrf
@@ -136,11 +137,15 @@
                     <input type="button" id="delete-but" value="DELETE">
                 </div>
             </form>
+            <div class="admin-log-body d-none">
+            </div>
         </div>
+
         <div class="manager-right-body">
             <div class="right-button" id="create-button-right">CREATE ADMIN</div>
             <div class="right-button disabled" id="update-button-right">UPDATE ADMIN</div>
             <div class="right-button disabled" id="delete-button-right">DELETE ADMIN</div>
+            <div class="right-button" id="log-button-right">ADMIN LOG</div>
         </div>
     </div>
 </div>

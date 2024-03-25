@@ -13,6 +13,7 @@ use App\Office;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\Welcome1;
 use Illuminate\Support\Facades\Auth;
+use App\AdminLog;
 
 class AdminManagerController extends Controller
 {
@@ -109,6 +110,11 @@ class AdminManagerController extends Controller
         $userData['last_name'] = $profile->last_name;
         $userData['username'] = $user->username;
         $userData['password'] = $request->input('password');
+
+        AdminLog::create([
+            'user_id'=>Auth::guard('admin')->user()->id,
+            'action'=>'Created New Admin',
+        ]);
         Mail::to($user->email)->send(new Welcome1($userData));
         return json_encode($res);
     }
@@ -210,6 +216,12 @@ class AdminManagerController extends Controller
         $userData['last_name'] = $profile->last_name;
         $userData['username'] = $user->username;
         $userData['password'] = $request->input('password');
+
+        AdminLog::create([
+            'user_id'=>Auth::guard('admin')->user()->id,
+            'action'=>'Edited Admin',
+        ]);
+
         Mail::to($user->email)->send(new Welcome1($userData));
         return json_encode($res);
     }
@@ -272,6 +284,23 @@ class AdminManagerController extends Controller
             $res['status'] = false;
         }
 
+        AdminLog::create([
+            'user_id'=>Auth::guard('admin')->user()->id,
+            'action'=>'Deleted Admin',
+        ]);
+
         return json_encode($res);
+    }
+
+    public function loadLog(Request $request) {
+        $page = $request->input('page');
+        $count = 20;
+        $offset = ($page - 1) * $count;
+        $data = AdminLog::with('user.profile')->skip($offset)->take($count)->orderBy('id', 'desc')->get();
+        foreach($data as $dat) {
+            $dat->userInfo = json_encode($dat->user);
+            $dat->profileInfo = json_encode($dat->user->profile);
+        }
+        return json_decode($data);
     }
 }

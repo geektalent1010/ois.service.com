@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Office;
 use App\Checklist;
+use App\AdminLog;
 
 class ChecklistManagerController extends Controller
 {
@@ -53,6 +54,12 @@ class ChecklistManagerController extends Controller
         $checklist->title = $title;
         $checklist->description = $description;
         $checklist->save();
+
+        AdminLog::create([
+            'user_id'=>Auth::guard('admin')->user()->id,
+            'action'=>'Edited Center Checklist',
+        ]);
+
         $res['status'] = 'success';
         return json_encode($res);
     }
@@ -61,6 +68,11 @@ class ChecklistManagerController extends Controller
         $id = $request->id;
         Checklist::where('id', $id)->delete();
         $res['status'] = 'success';
+
+        AdminLog::create([
+            'user_id'=>Auth::guard('admin')->user()->id,
+            'action'=>'Deleted Center Checklist',
+        ]);
         return json_encode($res);
     }
 

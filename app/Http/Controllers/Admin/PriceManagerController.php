@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Office;
 use App\Checklist;
+use App\AdminLog;
 
 class PriceManagerController extends Controller
 {
@@ -52,6 +53,12 @@ class PriceManagerController extends Controller
         $checklist->title = $request->input('title');
         $checklist->description = $request->input('description');
         $checklist->save();
+
+        AdminLog::create([
+            'user_id'=>Auth::guard('admin')->user()->id,
+            'action'=>'Edited Center Price',
+        ]);
+
         $res['status'] = 'success';
         return json_encode($res);
     }

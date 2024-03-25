@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Office;
+use App\AdminLog;
 
 class CenterManagerController extends Controller
 {
@@ -59,6 +60,12 @@ class CenterManagerController extends Controller
         $office->working_days = $request->input('workingDay');
         $office->working_time = $request->input('workingTime');
         $office->save();
+
+        AdminLog::create([
+            'user_id'=>Auth::guard('admin')->user()->id,
+            'action'=>'Edited City Center',
+        ]);
+
         $res['status'] = 'success';
         return json_encode($res);
     }

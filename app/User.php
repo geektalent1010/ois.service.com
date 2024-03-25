@@ -50,6 +50,10 @@ class User extends Authenticatable
         return $this->hasMany('App\Role');
     }
 
+    public function adminLog() {
+        return $this->hasMany('App\AdminLog');
+    }
+
     public function isAdmin() {
         return $this->is_admin === 1;
     }

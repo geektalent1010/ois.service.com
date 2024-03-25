@@ -164,6 +164,38 @@
             display: none;
             gap: 20px;
         }
+
+        .admin-log-body {
+            padding-bottom: 30px;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            max-height: 300px;
+            overflow-y: auto;
+            .log-detail {
+                width: 100%;
+                display: flex;
+                font-size: 15px;
+                margin-top: 1px;
+                div {
+                    display: flex;
+                    align-items: center;
+                    padding: 5px 10px;
+                }
+                .log-user {
+                    width: 30%;
+                    background-color: #003366;
+                }
+                .log-action {
+                    width: 40%;
+                    background-color: #266ea5;
+                }
+                .log-time {
+                    width: 40%;
+                    background-color: #00447e;
+                }
+            }
+        }
     }
 
     .manager-right-body {
@@ -210,6 +242,7 @@
 
             .button-part {
                 display: flex;
+                gap: 10px;
             }
 
             .my-profile-part {

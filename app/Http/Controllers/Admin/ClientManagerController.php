@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Country;
 use App\User;
 use App\Profile;
+use App\AdminLog;
 
 class ClientManagerController extends Controller
 {
@@ -85,6 +86,11 @@ class ClientManagerController extends Controller
 
         $profile->save();
 
+        AdminLog::create([
+            'user_id'=>Auth::guard('admin')->user()->id,
+            'action'=>'Created New Client',
+        ]);
+
         $res['status'] = 'success';
         return json_encode($res);
     }
@@ -126,6 +132,11 @@ class ClientManagerController extends Controller
         $profile->street = $request->input('street');
         $profile->house_number = $request->input('houseNr');
         $profile->save();
+
+        AdminLog::create([
+            'user_id'=>Auth::guard('admin')->user()->id,
+            'action'=>'Edited Client',
+        ]);
 
         $res['status'] = 'success';
         return json_encode($res);

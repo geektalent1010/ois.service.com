@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Content;
+use App\AdminLog;
 
 class MailManagerController extends Controller
 {
@@ -32,6 +33,11 @@ class MailManagerController extends Controller
             $contentObj->content = $dat->content;
             $contentObj->save();
         }
+
+        AdminLog::create([
+            'user_id'=>Auth::guard('admin')->user()->id,
+            'action'=>'Edited Mail',
+        ]);
 
         $res['status'] = 'success';
         return json_encode($res);

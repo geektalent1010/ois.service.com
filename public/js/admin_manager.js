@@ -18,8 +18,10 @@ $(document).ready(function () {
         $(".button-part").addClass('d-none');
         $('#create-button-right').addClass('disabled');
 
+        $('.admin-log-body').addClass('d-none');
         $("#create-user-form").removeClass('d-none');
         $('#update-button-right').removeClass('disabled');
+        $('#log-button-right').removeClass('disabled');
 
         $("#create-user-form input.form-input-custom").val('');
         $("#data6")[0].selectedIndex = 0;
@@ -41,13 +43,27 @@ $(document).ready(function () {
         $('#create-user-form').submit();
     });
 
+    $('#log-button-right').click(function(e) {
+        $('#log-button').click();
+    })
+
     $('#delete-button-right').click(function(e) {
         if($(this).hasClass('disabled')) return;
         deleteUser();
     });
 
+    $('#delete-button-right').click(function(e) {
+        if($(this).hasClass('disabled')) return;
+        logUser();
+    });
+
     $('#delete-but').click(function(e) {
         deleteUser();
+    })
+
+    $('#log-button').click(function(e) {
+
+        $('.admin-log-body').removeClass('d-none');
     })
 
     const deleteUser = () => {
@@ -65,7 +81,6 @@ $(document).ready(function () {
                     contentType: false,
                     processData: false,
                     success: function(res) {
-                        console.log(res);
                         if(res.status) {
                             customAlert('Success', 'Delete successfully.', 'success');
                             setTimeout(() => {
@@ -136,7 +151,6 @@ $(document).ready(function () {
                 contentType: false,
                 processData: false,
                 success: function (res) {
-                    console.log(res)
                     if(res.status == 'success') {
                         customAlert('Success', 'Updated successfully', 'success');
                         setTimeout(() => {
@@ -162,6 +176,7 @@ $(document).ready(function () {
         e.preventDefault();
         const search = $("#search").val();
         if(!search) return;
+        $('.admin-log-body').addClass('d-none');
         $.ajax({
             url: '/admin/getManagerInfo',
             type: 'POST',
@@ -204,6 +219,7 @@ $(document).ready(function () {
                     }
                     $("#create-user-form").removeClass('d-none');
                     $('#update-button-right').removeClass('disabled');
+                    $('#log-button-right').removeClass('disabled');
                     $('#delete-button-right').removeClass('disabled');
 
                     $(".button-part").addClass('d-none');
@@ -238,6 +254,7 @@ $(document).ready(function () {
 
         $("#create-user-form").addClass('d-none');
         $('#update-button-right').addClass('disabled');
+        $('#log-button-right').addClass('disabled');
         $('#delete-button-right').addClass('disabled');
 
     });
@@ -248,6 +265,7 @@ $(document).ready(function () {
 
         $("#create-user-form").addClass('d-none');
         $('#update-button-right').addClass('disabled');
+        $('#log-button-right').addClass('disabled');
         $('#delete-button-right').addClass('disabled');
 
     });
@@ -259,6 +277,7 @@ $(document).ready(function () {
 
         document.getElementById('create-user-form').classList.add('d-none');
         $('#update-button-right').addClass('disabled');
+        $('#log-button-right').addClass('disabled');
         $('#delete-button-right').addClass('disabled');
 
     });
@@ -286,6 +305,48 @@ $(document).ready(function () {
             $('#client-man-button').removeClass('disabled');
             $('#price-edit-button').removeClass('disabled');
             $('#checklist-edit-button').removeClass('disabled');
+        }
+    });
+
+    let page = 1;
+    const loadLogs = () => {
+        const formData = new FormData();
+        formData.append('page', page);
+        formData.append('_token', $('#create-user-form input:first-child').val());
+        $.ajax({
+            url: '/admin/loadLog',
+            type: 'POST',
+            data: formData,
+            dataType: 'json',
+            contentType: false,
+            processData: false,
+            success: function(res) {
+                if(res.length == 0) {
+                    return;
+                }
+                page ++;
+                res.map((data) => {
+                    const date = new Date(data.created_at);
+                    const profileInfo = JSON.parse(data.profileInfo);
+                    let html = `
+                        <div class="log-detail">
+                            <div class="log-user">${profileInfo.first_name} ${profileInfo.last_name}</div>
+                            <div class="log-action">${data.action}</div>
+                            <div class="log-time">${date.toISOString().replace('T', ' ').replace(/\.\d{3}Z$/, '')}</div>
+                        </div>
+                    `;
+                    $('.admin-log-body').append(html);
+                })
+            }
+        });
+    }
+    loadLogs();
+
+    const logElement = document.getElementsByClassName('admin-log-body')[0];
+    logElement.addEventListener('scroll', () => {
+
+        if(logElement.scrollTop + logElement.clientHeight >= logElement.scrollHeight) {
+            loadLogs();
         }
     })
 

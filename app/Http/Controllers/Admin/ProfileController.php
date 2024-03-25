@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\AdminLog;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -91,6 +92,11 @@ class ProfileController extends Controller
         $user->profile->last_name = $request->input('lastName');
         $user->profile->phone_number = $request->input('phoneCode').' '.$request->input('phoneNumber');
         $user->profile->save();
+
+        AdminLog::create([
+            'user_id'=>auth()->guard('admin')->user()->id,
+            'action'=>'Edited My Profile',
+        ]);
 
         $res['status'] = 'success';
         return json_encode($res);

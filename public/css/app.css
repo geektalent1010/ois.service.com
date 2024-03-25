@@ -5485,6 +5485,43 @@ body {
   gap: 20px;
 }
 
+.admin-manager-section .manager-body .admin-log-body {
+  padding-bottom: 30px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.admin-manager-section .manager-body .admin-log-body .log-detail {
+  width: 100%;
+  display: flex;
+  font-size: 15px;
+  margin-top: 1px;
+}
+
+.admin-manager-section .manager-body .admin-log-body .log-detail div {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.admin-manager-section .manager-body .admin-log-body .log-detail .log-user {
+  width: 30%;
+  background-color: #003366;
+}
+
+.admin-manager-section .manager-body .admin-log-body .log-detail .log-action {
+  width: 40%;
+  background-color: #266ea5;
+}
+
+.admin-manager-section .manager-body .admin-log-body .log-detail .log-time {
+  width: 40%;
+  background-color: #00447e;
+}
+
 .admin-manager-section .manager-right-body {
   width: 25vw;
   padding-top: 80px;
@@ -5528,6 +5565,7 @@ body {
 
   .admin-manager-section .manager-body .button-part {
     display: flex;
+    gap: 10px;
   }
 
   .admin-manager-section .manager-body .my-profile-part .info-button {

@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 
+use App\AdminLog;
+
 class LoginController extends Controller
 {
     use AuthenticatesUsers;
@@ -29,6 +31,10 @@ class LoginController extends Controller
         $credetials['is_admin'] = [1, 2];
 
         if(Auth::guard('admin')->attempt($credetials)) {
+            AdminLog::create([
+                'user_id'=>Auth::guard('admin')->user()->id,
+                'action'=>'Login',
+            ]);
             return redirect()->intended('/admin/dashboard');
         } else {
             return back()->withErrors(['email'=> 'Invalid credentials']);
@@ -36,6 +42,10 @@ class LoginController extends Controller
     }
 
     public function logout() {
+        AdminLog::create([
+            'user_id'=>Auth::guard('admin')->user()->id,
+            'action'=>'Logout',
+        ]);
         Auth::guard('admin')->logout();
         return redirect()->route('admin.login');
     }
