@@ -1,4 +1,8 @@
 $(document).ready(function () {
+    let searchIndex = 0;
+    let searchCount = 0;
+
+
     let accessDetailDoms = document.querySelectorAll(".access-detail");
     accessDetailDoms.forEach(function (element) {
         element.addEventListener("click", function (event) {
@@ -177,12 +181,17 @@ $(document).ready(function () {
         const search = $("#search").val();
         if(!search) return;
         $('.admin-log-body').addClass('d-none');
+        const formData = new FormData(this);
+        formData.append('searchIndex', searchIndex);
         $.ajax({
             url: '/admin/getManagerInfo',
             type: 'POST',
             dataType: 'json',
-            data: $(this).serialize(),
+            data: formData,
+            contentType: false,
+            processData: false,
             success: function(res) {
+                console.log(res);
                 if(res.status == 'success') {
                     $("#userid").val(res.userId);
                     $("#data1").val(res.firstName);
@@ -239,6 +248,14 @@ $(document).ready(function () {
                     if(res.roles.checklistEditor) {
                         $('#checklist-edit-button').addClass('active');
                     }
+
+                    if(res.num > 1) {
+                        $('.arrow-body').removeClass('d-none');
+                    } else {
+                        $('.arrow-body').addClass('d-none');
+                    }
+                    searchCount = res.num;
+
                 } else if(res.status == 'nodata') {
                     customAlert('We are so sorry', 'No search result', 'error');
                 } else {
@@ -348,7 +365,38 @@ $(document).ready(function () {
         if(logElement.scrollTop + logElement.clientHeight >= logElement.scrollHeight) {
             loadLogs();
         }
-    })
+    });
+
+    $('#arrow-back-button').click(function() {
+        console.log('b')
+        searchIndex --;
+        if(searchIndex < 0) {
+            searchIndex = searchCount - 1;
+        }
+        $('html, body').animate({ scrollTop: 0 }, 'slow');
+        $('#search-manager').submit();
+    });
+
+    $('#arrow-next-button').click(function() {
+        console.log('a')
+        searchIndex ++;
+        if(searchIndex >= searchCount) {
+            searchIndex = 0;
+        }
+        console.log('a')
+        $('html, body').animate({ scrollTop: 0 }, 'slow');
+        $('#search-manager').submit();
+    });
+
+    $('.custom-input').on('input', function() {
+        searchIndex = 0;
+        searchCount = 0;
+    });
+
+    $('.list-detail').click(function() {
+        searchIndex = 0;
+        searchCount = 0;
+    });
 
     const phoneSelDom = document.getElementById('phone-code-select');
     drawSelectForm(phoneSelDom);

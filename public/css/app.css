@@ -5324,10 +5324,10 @@ body {
   margin-top: 80px;
   display: flex;
   overflow-y: auto;
+  padding-bottom: 30px;
 }
 
 .admin-manager-section .manager-body {
-  padding-bottom: 30px;
   width: 50vw;
   margin-left: 25vw;
 }
@@ -5371,6 +5371,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding-bottom: 30px;
 }
 
 .admin-manager-section .manager-body .my-profile-part .info-details {
@@ -5436,6 +5437,22 @@ body {
 .admin-manager-section .manager-body .my-profile-part .info-details .info-detail .info-value .phone-code-input {
   width: 60%;
   padding-left: 0;
+}
+
+.admin-manager-section .manager-body .arrow-body {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+.admin-manager-section .manager-body .arrow-body > div {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  cursor: pointer;
 }
 
 .admin-manager-section .manager-body .roles-section {

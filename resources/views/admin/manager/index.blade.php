@@ -132,11 +132,15 @@
                     </div>
                 </div>
 
-                <div class="info-button mt-35px mb-35px">
+                <div class="info-button mt-35px">
                     <button id="save-but">{{__('PUBLISH')}}</button>
                     <input type="button" id="delete-but" value="DELETE">
                 </div>
             </form>
+            <div class="arrow-body d-none">
+                <div id="arrow-back-button"><i class="fa fa-long-arrow-left"></i>Back</div>
+                <div id="arrow-next-button">Next<i class="fa fa-long-arrow-right"></i></div>
+            </div>
             <div class="admin-log-body d-none">
             </div>
         </div>

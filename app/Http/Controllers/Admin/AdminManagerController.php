@@ -227,8 +227,10 @@ class AdminManagerController extends Controller
     }
 
     public function getManagerInfo(Request $request) {
+        $searchIndex = $request->input('searchIndex');
+
         $email = $request->input('search');
-        $user = User::with('profile')
+        $users = User::with('profile')
             ->where('status', 1)
             ->whereIn('is_admin', [1, 2])
             ->where(function($query) use ($email) {
@@ -238,8 +240,11 @@ class AdminManagerController extends Controller
                             ->orWhere('last_name', $email);
                     });
             })
-            ->first();
-
+            ->get();
+        $user;
+        if($users[$searchIndex]) {
+            $user = $users[$searchIndex];
+        }
         if($user) {
             $res['status'] = 'success';
             $res['userId'] = $user->id;
@@ -271,6 +276,7 @@ class AdminManagerController extends Controller
         } else {
             $res['status'] = 'nodata';
         }
+        $res['num'] = count($users);
         return json_encode($res);
     }
 
