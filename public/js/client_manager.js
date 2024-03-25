@@ -234,38 +234,79 @@ $(document).ready(function () {
 
     $('#delete-button-right').click(function(e) {
         if($(this).hasClass('disabled')) return;
-        deleteUser();
+        deletePopup();
     });
 
     const deleteUser = () => {
         const userid = $('#userid').val();
         if(userid) {
-            if(window.confirm('Delete this admin user?')) {
-                const formData = new FormData();
-                formData.append('userid', userid);
-                formData.append('_token', $('#create-user-form input:first-child').val());
-                $.ajax({
-                    url: '/admin/deleteAdmin',
-                    type: 'POST',
-                    data: formData,
-                    dataType: 'json',
-                    contentType: false,
-                    processData: false,
-                    success: function(res) {
-                        if(res.status) {
-                            customAlert('Success', 'Delete successfully.', 'success');
-                            setTimeout(() => {
-                                location.href = ("");
-                            }, 800);
-                        } else {
-                            customAlert('We are so sorry', 'Error occurred', 'error');
-                        }
+            const formData = new FormData();
+            formData.append('userid', userid);
+            formData.append('_token', $('#create-user-form input:first-child').val());
+            $.ajax({
+                url: '/admin/deleteAdmin',
+                type: 'POST',
+                data: formData,
+                dataType: 'json',
+                contentType: false,
+                processData: false,
+                success: function(res) {
+                    if(res.status) {
+                        customAlert('Success', 'Delete successfully.', 'success');
+                        setTimeout(() => {
+                            location.href = ("");
+                        }, 800);
+                    } else {
+                        customAlert('We are so sorry', 'Error occurred', 'error');
                     }
-                })
-            }
+                }
+            })
         }
 
     }
+
+    const deletePopup = () => {
+        let doms = document.createElement('div');
+        doms.innerHTML += `
+            <div class="custom-alert-popup">
+                <div class="alert-body error">
+                    <div class="alert-text-part">
+                        <div class="alert-title-text">Delete User</div>
+                        <div class="alert-message-text">ARE YOU SURE YOU WANT TO PROCEED TO DELETE THIS CLIENT</div>
+                        <div class="custom-alert-button">
+                            <Button class="confirm-yes">YES</Button>
+                            <Button class="confirm-no">NO</Button>
+                        </div>
+                    </div>
+                    <div class="alert-icon-part">
+                        <img src="/images/PopupSmile_error.svg" alt="icon"/>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        for(const element of doms.getElementsByClassName('alert-body')) {
+            element.addEventListener('click', function() {
+                gsap.to('.custom-alert-popup', { duration: 0.5, opacity: 0, scale: 1, ease: 'power4.out' });
+                gsap.to(this, { duration: 0.5, opacity: 0, scale: 1.2, ease: 'power4.out' });
+                setTimeout(() => {
+                    this.parentNode.remove();
+                }, 500);
+
+            });
+        }
+
+        document.body.appendChild(doms);
+        $('.confirm-yes').on('click', function() {
+            deleteUser();
+        });
+
+        gsap.fromTo('.alert-body', {opacity: 0, scale: 0}, { duration: 0.3, opacity: 1, scale: 1, ease: 'power4.out' });
+    }
+
+    $('#remove-but').click(function() {
+        deletePopup();
+    })
 
     const countrySelDom = document.getElementById('country-select');
     drawSelectForm(countrySelDom);

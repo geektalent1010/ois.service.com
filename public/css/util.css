@@ -303,6 +303,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
 }
 
@@ -345,6 +346,19 @@
     right: 10px;
     top: 10px;
     width: 25px;
+}
+
+.custom-alert-popup .custom-alert-button {
+    display: flex;
+    gap: 50px;
+}
+
+.custom-alert-popup .custom-alert-button button {
+    width:100px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    outline: none;
 }
 
 /* custom alert pop-up  end*/
