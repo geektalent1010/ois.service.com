@@ -232,6 +232,41 @@ $(document).ready(function () {
         searchCount = 0;
     });
 
+    $('#delete-button-right').click(function(e) {
+        if($(this).hasClass('disabled')) return;
+        deleteUser();
+    });
+
+    const deleteUser = () => {
+        const userid = $('#userid').val();
+        if(userid) {
+            if(window.confirm('Delete this admin user?')) {
+                const formData = new FormData();
+                formData.append('userid', userid);
+                formData.append('_token', $('#create-user-form input:first-child').val());
+                $.ajax({
+                    url: '/admin/deleteAdmin',
+                    type: 'POST',
+                    data: formData,
+                    dataType: 'json',
+                    contentType: false,
+                    processData: false,
+                    success: function(res) {
+                        if(res.status) {
+                            customAlert('Success', 'Delete successfully.', 'success');
+                            setTimeout(() => {
+                                location.href = ("");
+                            }, 800);
+                        } else {
+                            customAlert('We are so sorry', 'Error occurred', 'error');
+                        }
+                    }
+                })
+            }
+        }
+
+    }
+
     const countrySelDom = document.getElementById('country-select');
     drawSelectForm(countrySelDom);
     const phoneSelDom = document.getElementById('phone-code-select');

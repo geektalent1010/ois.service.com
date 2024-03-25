@@ -56,11 +56,6 @@ $(document).ready(function () {
         deleteUser();
     });
 
-    $('#delete-button-right').click(function(e) {
-        if($(this).hasClass('disabled')) return;
-        logUser();
-    });
-
     $('#delete-but').click(function(e) {
         deleteUser();
     })

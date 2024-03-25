@@ -198,4 +198,22 @@ class ClientManagerController extends Controller
         $res['num'] = count($users);
         return json_encode($res);
     }
+
+    public function deleteClient(Request $request) {
+        $userid = $request->input('userid');
+        $user = User::find($userid);
+        if($user) {
+            $user->delete();
+            $res['status'] = true;
+        } else {
+            $res['status'] = false;
+        }
+
+        AdminLog::create([
+            'user_id'=>Auth::guard('admin')->user()->id,
+            'action'=>'Deleted Client',
+        ]);
+
+        return json_encode($res);
+    }
 }
