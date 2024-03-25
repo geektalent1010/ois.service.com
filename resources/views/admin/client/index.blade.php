@@ -135,6 +135,10 @@
                     <button id="export-all-but">{{__('EXPORT ALL')}}</button>
                 </div>
             </form>
+            <div class="arrow-body d-none">
+                <div id="arrow-back-button"><i class="fa fa-long-arrow-left"></i>Back</div>
+                <div id="arrow-next-button">Next<i class="fa fa-long-arrow-right"></i></div>
+            </div>
         </div>
         <div class="manager-right-body">
             <div class="right-button" id="create-button-right">CREATE CLIENT</div>

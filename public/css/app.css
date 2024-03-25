@@ -5743,6 +5743,22 @@ body {
   transition: 0.3s;
 }
 
+.client-manager-section .manager-body .arrow-body {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+.client-manager-section .manager-body .arrow-body > div {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  cursor: pointer;
+}
+
 .client-manager-section .manager-right-body {
   width: 25vw;
   padding-top: 80px;

@@ -1,4 +1,8 @@
 $(document).ready(function () {
+
+    let searchIndex = 0;
+    let searchCount = 0;
+
     let accessDetailDoms = document.querySelectorAll(".access-detail");
     accessDetailDoms.forEach(function (element) {
         element.addEventListener("click", function (event) {
@@ -99,11 +103,15 @@ $(document).ready(function () {
         e.preventDefault();
         const search = $("#search").val();
         if(!search) return;
+        const formData = new FormData(this);
+        formData.append('searchIndex', searchIndex);
         $.ajax({
             url: '/admin/getClientInfo',
             type: 'POST',
             dataType: 'json',
-            data: $(this).serialize(),
+            data: formData,
+            contentType: false,
+            processData: false,
             success: function(res) {
                 if(res.status == 'success') {
                     $("#userid").val(res.userId);
@@ -141,6 +149,13 @@ $(document).ready(function () {
                     $('#create-button-right').addClass('disabled');
 
                     $(".list-detail").addClass('d-none');
+
+                    if(res.num > 1) {
+                        $('.arrow-body').removeClass('d-none');
+                    } else {
+                        $('.arrow-body').addClass('d-none');
+                    }
+                    searchCount = res.num;
                 } else if(res.status == 'nodata') {
                     customAlert('We are so sorry', 'No search result', 'error');
                 } else {
@@ -184,6 +199,37 @@ $(document).ready(function () {
         $('#delete-button-right').addClass('disabled');
         $('#export-button-right').addClass('disabled');
         $('#export-all-button-right').addClass('disabled');
+    });
+
+    $('#arrow-back-button').click(function() {
+        console.log('b')
+        searchIndex --;
+        if(searchIndex < 0) {
+            searchIndex = searchCount - 1;
+        }
+        $('html, body').animate({ scrollTop: 0 }, 'slow');
+        $('#search-manager').submit();
+    });
+
+    $('#arrow-next-button').click(function() {
+        console.log('a')
+        searchIndex ++;
+        if(searchIndex >= searchCount) {
+            searchIndex = 0;
+        }
+        console.log('a')
+        $('html, body').animate({ scrollTop: 0 }, 'slow');
+        $('#search-manager').submit();
+    });
+
+    $('.custom-input').on('input', function() {
+        searchIndex = 0;
+        searchCount = 0;
+    });
+
+    $('.list-detail').click(function() {
+        searchIndex = 0;
+        searchCount = 0;
     });
 
     const countrySelDom = document.getElementById('country-select');

@@ -144,11 +144,13 @@ class ClientManagerController extends Controller
 
     public function getClientInfo(Request $request) {
 
+        $searchIndex = $request->input('searchIndex');
+
         $email = $request->input('search');
         $userCountry = Auth::guard('admin')->user()->profile->country_center;
 
         Auth::guard('admin')->user()->isSuperAdmin() ?
-            $user = User::with('profile')
+            $users = User::with('profile')
                 ->where('status', 1)
                 ->where('is_admin', 0)
                 ->where(function($query) use ($email) {
@@ -158,8 +160,8 @@ class ClientManagerController extends Controller
                                 ->orWhere('last_name', $email);
                         });
                 })
-                ->first() :
-            $user = User::with('profile')
+                ->get() :
+            $users = User::with('profile')
                 ->where('status', 1)
                 ->where('is_admin', 0)
                 ->where(function($query) use ($email) {
@@ -172,8 +174,11 @@ class ClientManagerController extends Controller
                 ->whereHas('profile.country', function($query) use ($userCountry) {
                     $query->where('name', $userCountry);
                 })
-                ->first();
-
+                ->get();
+        $user;
+        if($users[$searchIndex]) {
+            $user = $users[$searchIndex];
+        }
         if($user) {
             $res['status'] = 'success';
             $res['userId'] = $user->id;
@@ -190,6 +195,7 @@ class ClientManagerController extends Controller
         } else {
             $res['status'] = 'nodata';
         }
+        $res['num'] = count($users);
         return json_encode($res);
     }
 }
