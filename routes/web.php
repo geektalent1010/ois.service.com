@@ -124,6 +124,7 @@ Route::post('/password', 'LandingController@password')->name('password');
             Route::post('updateClient', 'Admin\ClientManagerController@updateClient')->name('admin.client.update');
             Route::post('getClientInfo', 'Admin\ClientManagerController@getClientInfo')->name('admin.client.info');
             Route::post('deleteClient', 'Admin\AdminManagerController@deleteClient')->name('admin.client.delete');
+            Route::get('exportCSV', 'Admin\ClientManagerController@exportCSV')->name('admin.client.export');
 
             Route::get('mail', 'Admin\MailManagerController@index')->name('admin.mail.index');
             Route::post('updateMail', 'Admin\MailManagerController@updateMail')->name('admin.mail.update');

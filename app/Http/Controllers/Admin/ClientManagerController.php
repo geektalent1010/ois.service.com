@@ -216,4 +216,74 @@ class ClientManagerController extends Controller
 
         return json_encode($res);
     }
+
+    public function exportCSV(Request $request) {
+        $userid = $request->input('userid');
+        if($userid != -1) {
+            $results[0] = User::where('id', $userid)->first();
+        } else {
+            $results = User::where('is_admin', '0')->get();
+        }
+
+
+        if (!$results) {
+            return response()->json(['error' => 'User not found'], 404);
+        }
+
+        $filename = 'client-data.csv';
+        $headers = [
+            'Content-Type' => 'text/csv',
+            'Content-Disposition' => "attachment; filename=\"$filename\"",
+            'Pragma' => 'no-cache',
+            'Cache-Control' => 'must-revalidate, post-check=0, pre-check=0',
+            'Expires' => '0',
+        ];
+
+        return response()->stream(function() use ($results) {
+            $handle = fopen('php://output', 'w');
+
+            fputcsv($handle, [
+                'User Id',
+                'Email',
+                'Username',
+                'First Name',
+                'Last Name',
+                'Birthday',
+                'Gender',
+                'Phone Number',
+                'Country',
+                'City',
+                'Street',
+                'House Number',
+                'Postal Code',
+                'Status',
+                'Created At',
+            ]);
+
+            foreach($results as $result) {
+                $data = [
+                    isset($result->id) ? $result->id : '',
+                    isset($result->email) ? $result->email : '',
+                    isset($result->username) ? $result->username : '',
+                    isset($result->profile->first_name) ? $result->profile->first_name : '',
+                    isset($result->profile->last_name) ? $result->profile->last_name : '',
+                    isset($result->profile->birthday) ? $result->profile->birthday : '',
+                    isset($result->profile->gender) ? $result->profile->gender : '',
+                    isset($result->profile->phone_number) ? $result->profile->phone_number : '',
+                    isset($result->profile->country->name) ? $result->profile->country->name : '',
+                    isset($result->profile->city) ? $result->profile->city : '',
+                    isset($result->profile->street) ? $result->profile->street : '',
+                    isset($result->profile->house_number) ? $result->profile->house_number : '',
+                    isset($result->profile->postal_code) ? $result->profile->postal_code : '',
+                    isset($result->status) ? $result->status : '',
+                    isset($result->created_at) ? $result->created_at : '',
+                ];
+
+
+                fputcsv($handle, $data);
+            }
+
+            fclose($handle);
+        }, 200, $headers);
+    }
 }

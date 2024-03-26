@@ -306,6 +306,60 @@ $(document).ready(function () {
 
     $('#remove-but').click(function() {
         deletePopup();
+    });
+
+    $('#export-button-right').click(function() {
+        $('#export-but').click();
+    });
+
+    $('#export-but').click(function() {
+        const userid = $('#userid').val();
+
+        $.ajax({
+            url: '/admin/exportCSV',
+            type: 'get',
+            headers: {
+                'X-CSRF-TOKEN': '{{ csrf_token() }}',
+            },
+            contentType: 'application/json',
+            data: {'userid': userid},
+            success: function(data, status, xhr) {
+                let blob = new Blob([data], { type: xhr.getResponseHeader('Content-Type') });
+
+                let link = document.createElement('a');
+                link.href = window.URL.createObjectURL(blob);
+                link.download = 'client-data.csv';
+                link.click();
+
+                window.URL.revokeObjectURL(link.href);
+            }
+        })
+    });
+
+    $('#export-all-button-right').click(function() {
+        $('#export-all-but').click();
+    });
+
+    $('#export-all-but').click(function() {
+        $.ajax({
+            url: '/admin/exportCSV',
+            type: 'get',
+            headers: {
+                'X-CSRF-TOKEN': '{{ csrf_token() }}',
+            },
+            contentType: 'application/json',
+            data: {'userid': '-1'},
+            success: function(data, status, xhr) {
+                let blob = new Blob([data], { type: xhr.getResponseHeader('Content-Type') });
+
+                let link = document.createElement('a');
+                link.href = window.URL.createObjectURL(blob);
+                link.download = 'client-data.csv';
+                link.click();
+
+                window.URL.revokeObjectURL(link.href);
+            }
+        })
     })
 
     const countrySelDom = document.getElementById('country-select');
