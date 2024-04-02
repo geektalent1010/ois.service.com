@@ -6513,6 +6513,8 @@ body {
 }
 
 .checklist-manager-section .manager-body .list-group .edit-form .card-custom .card-body-section .card-body-custom {
+  max-height: 300px;
+  overflow-y: auto;
   padding: 20px 30px;
   outline: none;
   min-height: 70px;
