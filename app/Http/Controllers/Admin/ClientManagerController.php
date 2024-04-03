@@ -144,41 +144,49 @@ class ClientManagerController extends Controller
 
     public function getClientInfo(Request $request) {
 
-        $searchIndex = $request->input('searchIndex');
+        if($request->input('id')) {
+            $id = $request->input('id');
+            $user = User::where('id', $id)->first();
+            $res['num'] = 1;
+        } else {
+            $searchIndex = $request->input('searchIndex');
+            $email = $request->input('search');
+            $userCountry = Auth::guard('admin')->user()->profile->country_center;
 
-        $email = $request->input('search');
-        $userCountry = Auth::guard('admin')->user()->profile->country_center;
-
-        Auth::guard('admin')->user()->isSuperAdmin() ?
-            $users = User::with('profile')
-                ->where('status', 1)
-                ->where('is_admin', 0)
-                ->where(function($query) use ($email) {
-                    $query->where('email', $email)
-                        ->orWhereHas('profile', function($query) use ($email) {
-                            $query->where('first_name', $email)
-                                ->orWhere('last_name', $email);
-                        });
-                })
-                ->get() :
-            $users = User::with('profile')
-                ->where('status', 1)
-                ->where('is_admin', 0)
-                ->where(function($query) use ($email) {
-                    $query->where('email', $email)
-                        ->orWhereHas('profile', function($query) use ($email) {
-                            $query->where('first_name', $email)
-                                ->orWhere('last_name', $email);
-                        });
-                })
-                ->whereHas('profile.country', function($query) use ($userCountry) {
-                    $query->where('name', $userCountry);
-                })
-                ->get();
-        $user;
-        if($users[$searchIndex]) {
-            $user = $users[$searchIndex];
+            Auth::guard('admin')->user()->isSuperAdmin() ?
+                $users = User::with('profile')
+                    ->where('status', 1)
+                    ->where('is_admin', 0)
+                    ->where(function($query) use ($email) {
+                        $query->where('email', $email)
+                            ->orWhereHas('profile', function($query) use ($email) {
+                                $query->where('first_name', $email)
+                                    ->orWhere('last_name', $email);
+                            });
+                    })
+                    ->get() :
+                $users = User::with('profile')
+                    ->where('status', 1)
+                    ->where('is_admin', 0)
+                    ->where(function($query) use ($email) {
+                        $query->where('email', $email)
+                            ->orWhereHas('profile', function($query) use ($email) {
+                                $query->where('first_name', $email)
+                                    ->orWhere('last_name', $email);
+                            });
+                    })
+                    ->whereHas('profile.country', function($query) use ($userCountry) {
+                        $query->where('name', $userCountry);
+                    })
+                    ->get();
+            $user;
+            if($users[$searchIndex]) {
+                $user = $users[$searchIndex];
+            }
+            $res['num'] = count($users);
         }
+
+
         if($user) {
             $res['status'] = 'success';
             $res['userId'] = $user->id;
@@ -195,7 +203,6 @@ class ClientManagerController extends Controller
         } else {
             $res['status'] = 'nodata';
         }
-        $res['num'] = count($users);
         return json_encode($res);
     }
 

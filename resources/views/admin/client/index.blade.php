@@ -30,6 +30,13 @@
                     @endforeach
                 </div>
             </div>
+            <div class="info-details-part">
+                @foreach ($users as $user)
+                    <div class="info-detail-item" value="{{$user->id}}">
+                        <div class="info-email">{{$user->email}}</div>
+                    </div>
+                @endforeach
+            </div>
             @if ($isSuperAdmin)
                 <div class="button-part mt-30px">
                     <button id="create-user-button">CREATE NEW USER</button>
