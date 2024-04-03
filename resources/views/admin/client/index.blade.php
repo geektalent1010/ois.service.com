@@ -142,9 +142,9 @@
         </div>
         <div class="manager-right-body">
             <div class="right-button" id="create-button-right">CREATE CLIENT</div>
-            <div class="right-button disabled" id="update-button-right">UPDATE CLIENT</div>
-            <div class="right-button disabled" id="delete-button-right">DELETE CLIENT</div>
-            <div class="right-button disabled" id="export-button-right">EXPORT CLIENT</div>
+            <div class="right-button" id="update-button-right">UPDATE CLIENT</div>
+            <div class="right-button" id="delete-button-right">DELETE CLIENT</div>
+            <div class="right-button" id="export-button-right">EXPORT CLIENT</div>
             <div class="right-button" id="export-all-button-right">EXPORT ALL</div>
         </div>
     </div>

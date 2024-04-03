@@ -12,14 +12,12 @@ $(document).ready(function () {
 
     $("#create-user-button").click(function() {
         $(".button-part").addClass('d-none');
-        $('#create-button-right').addClass('disabled');
 
         $("#create-user-form").removeClass('d-none');
-        $('#update-button-right').removeClass('disabled');
-        $('#export-button-right').removeClass('disabled');
-        $('#export-all-button-right').removeClass('disabled');
 
-        $("#create-user-form input:not(:first-child)").val('');
+        $("#create-user-form input.form-input-custom").val('');
+        $('#userid').val('');
+
     });
 
     $("#create-user-form").submit(function(e) {
@@ -27,30 +25,16 @@ $(document).ready(function () {
     });
 
     $('#create-button-right').click(function(e) {
-        if($(this).hasClass('disabled')) return;
         $('#create-user-button').click();
     });
 
     $('#update-button-right').click(function(e) {
-        if($(this).hasClass('disabled')) return;
         $('#publish-but').click();
-    })
+    });
 
-    $('#publish-but').click(function() {
+    const publishUser = () => {
         const formData = new FormData(document.querySelector('.my-profile-part'));
         const userid = $("#userid").val();
-        let dataNum = 13;
-        for (let i = 1 ; i <= dataNum ; i ++) {
-            if(userid && i == 11) continue;
-            if (!$("#data" + i).val() || $("#data" + i).val() == 0) {
-                customAlert('We are so sorry', 'Please input or select the ' + $("#data" + i).attr('text') + ' field.', 'error');
-                return;
-            }
-        }
-        if (!validateEmail($('#data9').val())) {
-            customAlert('We are so sorry', 'Invalid Email address', 'error');
-            return;
-        }
         if(userid) {
             $.ajax({
                 url: '/admin/updateClient',
@@ -93,6 +77,62 @@ $(document).ready(function () {
                 }
             });
         }
+    }
+
+    const publishPopUp = () => {
+        let doms = document.createElement('div');
+        doms.innerHTML += `
+            <div class="custom-alert-popup">
+                <div class="alert-body error">
+                    <div class="alert-text-part">
+                        <div class="alert-title-text">Create Or Update User</div>
+                        <div class="alert-message-text">ARE YOU SURE YOU WANT TO PROCEED TO CREATE OR UPDATE THIS CLIENT</div>
+                        <div class="custom-alert-button">
+                            <Button class="confirm-yes">YES</Button>
+                            <Button class="confirm-no">NO</Button>
+                        </div>
+                    </div>
+                    <div class="alert-icon-part">
+                        <img src="/images/PopupSmile_error.svg" alt="icon"/>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        for(const element of doms.getElementsByClassName('alert-body')) {
+            element.addEventListener('click', function() {
+                gsap.to('.custom-alert-popup', { duration: 0.5, opacity: 0, scale: 1, ease: 'power4.out' });
+                gsap.to(this, { duration: 0.5, opacity: 0, scale: 1.2, ease: 'power4.out' });
+                setTimeout(() => {
+                    this.parentNode.remove();
+                }, 500);
+            });
+        }
+
+        document.body.appendChild(doms);
+        $('.confirm-yes').on('click', function() {
+            publishUser();
+        });
+
+        gsap.fromTo('.alert-body', {opacity: 0, scale: 0}, { duration: 0.3, opacity: 1, scale: 1, ease: 'power4.out' });
+    }
+
+    $('#publish-but').click(function() {
+        const userid = $("#userid").val();
+        let dataNum = 13;
+        for (let i = 1 ; i <= dataNum ; i ++) {
+            if(userid && i == 11) continue;
+            if (!$("#data" + i).val() || $("#data" + i).val() == 0) {
+                customAlert('We are so sorry', 'Please input or select the ' + $("#data" + i).attr('text') + ' field.', 'error');
+                return;
+            }
+        }
+        if (!validateEmail($('#data9').val())) {
+            customAlert('We are so sorry', 'Invalid Email address', 'error');
+            return;
+        }
+        publishPopUp();
+
     })
 
     $("#search-manager i").click(function() {
@@ -140,13 +180,8 @@ $(document).ready(function () {
                         }
                     }
                     $("#create-user-form").removeClass('d-none');
-                    $('#update-button-right').removeClass('disabled');
-                    $('#delete-button-right').removeClass('disabled');
-                    $('#export-button-right').removeClass('disabled');
-                    $('#export-all-button-right').removeClass('disabled');
 
                     $(".button-part").addClass('d-none');
-                    $('#create-button-right').addClass('disabled');
 
                     $(".list-detail").addClass('d-none');
 
@@ -167,38 +202,23 @@ $(document).ready(function () {
 
     $("#search").change(function() {
         $(".button-part").removeClass('d-none');
-        $('#create-button-right').removeClass('disabled');
 
         $("#create-user-form").addClass('d-none');
-        $('#update-button-right').addClass('disabled');
-        $('#delete-button-right').addClass('disabled');
-        $('#export-button-right').addClass('disabled');
-        $('#export-all-button-right').addClass('disabled');
     });
 
     $("#search").on("input", function() {
         $(".button-part").removeClass('d-none');
-        $('#create-button-right').removeClass('disabled');
 
         $("#create-user-form").addClass('d-none');
-        $('#update-button-right').addClass('disabled');
-        $('#delete-button-right').addClass('disabled');
-        $('#export-button-right').addClass('disabled');
-        $('#export-all-button-right').addClass('disabled');
     });
 
     const searchManagerDom = document.getElementById('search');
     searchManagerDom.addEventListener('focus', function(e) {
         if(document.getElementsByClassName('button-part')[0]) {
             document.getElementsByClassName('button-part')[0].classList.remove('d-none');
-            $('#create-button-right').removeClass('disabled');
 
         }
         document.getElementById('create-user-form').classList.add('d-none');
-        $('#update-button-right').addClass('disabled');
-        $('#delete-button-right').addClass('disabled');
-        $('#export-button-right').addClass('disabled');
-        $('#export-all-button-right').addClass('disabled');
     });
 
     $('#arrow-back-button').click(function() {
@@ -233,7 +253,6 @@ $(document).ready(function () {
     });
 
     $('#delete-button-right').click(function(e) {
-        if($(this).hasClass('disabled')) return;
         deletePopup();
     });
 
@@ -266,6 +285,11 @@ $(document).ready(function () {
     }
 
     const deletePopup = () => {
+        const userid = $('#userid').val();
+        if(!userid) {
+            customAlert('We are so sorry', 'User is not selected', 'error');
+            return;
+        }
         let doms = document.createElement('div');
         doms.innerHTML += `
             <div class="custom-alert-popup">
@@ -314,7 +338,10 @@ $(document).ready(function () {
 
     $('#export-but').click(function() {
         const userid = $('#userid').val();
-
+        if(!userid) {
+            customAlert('We are so sorry', 'User is not selected.', 'error');
+            return;
+        }
         $.ajax({
             url: '/admin/exportCSV',
             type: 'get',

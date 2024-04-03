@@ -25,6 +25,7 @@ $(document).ready(function () {
         $("#create-user-form").removeClass('d-none');
 
         $("#create-user-form input.form-input-custom").val('');
+        $('#userid').val('');
         $("#data6")[0].selectedIndex = 0;
         drawSelectForm($('#center-select')[0]);
         $('#data3')[0].selectedIndex = 0;
@@ -417,6 +418,11 @@ $(document).ready(function () {
     }
 
     const deletePopup = () => {
+        const userid = $('#userid').val();
+        if(!userid) {
+            customAlert('We are so sorry', 'User is not selected', 'error');
+            return;
+        }
         let doms = document.createElement('div');
         doms.innerHTML += `
             <div class="custom-alert-popup">
