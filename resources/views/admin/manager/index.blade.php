@@ -147,8 +147,8 @@
 
         <div class="manager-right-body">
             <div class="right-button" id="create-button-right">CREATE ADMIN</div>
-            <div class="right-button disabled" id="update-button-right">UPDATE ADMIN</div>
-            <div class="right-button disabled" id="delete-button-right">DELETE ADMIN</div>
+            <div class="right-button" id="update-button-right">UPDATE ADMIN</div>
+            <div class="right-button" id="delete-button-right">DELETE ADMIN</div>
             <div class="right-button" id="log-button-right">ADMIN LOG</div>
         </div>
     </div>

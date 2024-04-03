@@ -20,12 +20,9 @@ $(document).ready(function () {
 
     $("#create-user-button").click(function() {
         $(".button-part").addClass('d-none');
-        $('#create-button-right').addClass('disabled');
 
         $('.admin-log-body').addClass('d-none');
         $("#create-user-form").removeClass('d-none');
-        $('#update-button-right').removeClass('disabled');
-        $('#log-button-right').removeClass('disabled');
 
         $("#create-user-form input.form-input-custom").val('');
         $("#data6")[0].selectedIndex = 0;
@@ -38,12 +35,10 @@ $(document).ready(function () {
     });
 
     $('#create-button-right').click(function(e) {
-        if($(this).hasClass('disabled')) return;
         $('#create-user-button').click();
     });
 
     $('#update-button-right').click(function (e) {
-        if($(this).hasClass('disabled')) return;
         $('#create-user-form').submit();
     });
 
@@ -52,7 +47,6 @@ $(document).ready(function () {
     })
 
     $('#delete-button-right').click(function(e) {
-        if($(this).hasClass('disabled')) return;
         deletePopup();
     });
 
@@ -63,26 +57,50 @@ $(document).ready(function () {
     $('#log-button').click(function(e) {
 
         $('.admin-log-body').removeClass('d-none');
-    })
+    });
 
-    $("#create-user-form").submit(function(e) {
-        e.preventDefault();
+    const updatePopUp = () => {
+        let doms = document.createElement('div');
+        doms.innerHTML += `
+            <div class="custom-alert-popup">
+                <div class="alert-body error">
+                    <div class="alert-text-part">
+                        <div class="alert-title-text">Delete User</div>
+                        <div class="alert-message-text">ARE YOU SURE YOU WANT TO PROCEED TO CREATE OR UPDATE THIS CLIENT</div>
+                        <div class="custom-alert-button">
+                            <Button class="confirm-yes" id="update-confirm-but">YES</Button>
+                            <Button class="confirm-no">NO</Button>
+                        </div>
+                    </div>
+                    <div class="alert-icon-part">
+                        <img src="/images/PopupSmile_error.svg" alt="icon"/>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        for(const element of doms.getElementsByClassName('alert-body')) {
+            element.addEventListener('click', function() {
+                gsap.to('.custom-alert-popup', { duration: 0.5, opacity: 0, scale: 1, ease: 'power4.out' });
+                gsap.to(this, { duration: 0.5, opacity: 0, scale: 1.2, ease: 'power4.out' });
+                setTimeout(() => {
+                    this.parentNode.remove();
+                }, 500);
+
+            });
+        }
+
+        document.body.appendChild(doms);
+        $('#update-confirm-but').on('click', function() {
+            updateUser();
+        });
+
+        gsap.fromTo('.alert-body', {opacity: 0, scale: 0}, { duration: 0.3, opacity: 1, scale: 1, ease: 'power4.out' });
+    }
+
+    const updateUser = () => {
+        let formData = new FormData($("#create-user-form")[0]);
         const userid = $("#userid").val();
-        let dataNum = 0;
-        if(userid) dataNum = 8;
-        else dataNum = 9;
-        for (let i = 1 ; i <= dataNum ; i ++) {
-            if(i == 7) continue;
-            if (!$("#data" + i).val() || $("#data" + i).val() == 0) {
-                customAlert('We are so sorry', 'Please input or select the ' + $("#data" + i).attr('text') + ' field.', 'error');
-                return;
-            }
-        }
-        if (!validateEmail($('#data5').val())) {
-            customAlert('We are so sorry', 'Invalid Email address', 'error');
-            return;
-        }
-        let formData = new FormData(this);
         formData.append('clientStatus', $('#client-man-button').hasClass('active'));
         formData.append('centerStatus', $('#center-edit-button').hasClass('active'));
         formData.append('priceStatus', $('#price-edit-button').hasClass('active'));
@@ -135,7 +153,29 @@ $(document).ready(function () {
                 }
             });
         }
+    }
+
+    $("#create-user-form").submit(function(e) {
+        e.preventDefault();
+        const userid = $("#userid").val();
+        let dataNum = 0;
+        if(userid) dataNum = 8;
+        else dataNum = 9;
+        for (let i = 1 ; i <= dataNum ; i ++) {
+            if(i == 7) continue;
+            if (!$("#data" + i).val() || $("#data" + i).val() == 0) {
+                customAlert('We are so sorry', 'Please input or select the ' + $("#data" + i).attr('text') + ' field.', 'error');
+                return;
+            }
+        }
+        if (!validateEmail($('#data5').val())) {
+            customAlert('We are so sorry', 'Invalid Email address', 'error');
+            return;
+        }
+
+        updatePopUp();
     });
+
 
     $("#search-manager i").click(function() {
         $("#search-manager").submit();
@@ -192,12 +232,8 @@ $(document).ready(function () {
                         }
                     }
                     $("#create-user-form").removeClass('d-none');
-                    $('#update-button-right').removeClass('disabled');
-                    $('#log-button-right').removeClass('disabled');
-                    $('#delete-button-right').removeClass('disabled');
 
                     $(".button-part").addClass('d-none');
-                    $('#create-button-right').addClass('disabled');
 
                     $(".list-detail").addClass('d-none');
                     $('.access-detail:not(.disabled)').removeClass('active');
@@ -232,35 +268,23 @@ $(document).ready(function () {
 
     $("#search").change(function() {
         $(".button-part").removeClass('d-none');
-        $('#create-button-right').removeClass('disabled');
 
         $("#create-user-form").addClass('d-none');
-        $('#update-button-right').addClass('disabled');
-        $('#log-button-right').addClass('disabled');
-        $('#delete-button-right').addClass('disabled');
 
     });
 
     $("#search").on("input", function() {
         $(".button-part").removeClass('d-none');
-        $('#create-button-right').removeClass('disabled');
 
         $("#create-user-form").addClass('d-none');
-        $('#update-button-right').addClass('disabled');
-        $('#log-button-right').addClass('disabled');
-        $('#delete-button-right').addClass('disabled');
 
     });
 
     const searchManagerDom = document.getElementById('search');
     searchManagerDom.addEventListener('focus', function(e) {
         document.getElementsByClassName('button-part')[0].classList.remove('d-none');
-        $('#create-button-right').removeClass('disabled');
 
         document.getElementById('create-user-form').classList.add('d-none');
-        $('#update-button-right').addClass('disabled');
-        $('#log-button-right').addClass('disabled');
-        $('#delete-button-right').addClass('disabled');
 
     });
 
