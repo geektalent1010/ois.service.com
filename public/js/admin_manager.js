@@ -23,6 +23,7 @@ $(document).ready(function () {
 
         $('.admin-log-body').addClass('d-none');
         $("#create-user-form").removeClass('d-none');
+        $(".info-details-part").addClass('d-none');
 
         $("#create-user-form input.form-input-custom").val('');
         $('#userid').val('');
@@ -180,6 +181,14 @@ $(document).ready(function () {
 
     $("#search-manager i").click(function() {
         $("#search-manager").submit();
+    });
+
+    $(".info-detail-item").click(function(e) {
+        const id = $(this).attr("value");
+        const formData = new FormData();
+        formData.append('_token', $("#create-user-form input:first-child").val());
+        formData.append('id', id);
+        getAdminInfo(formData);
     })
 
     $("#search-manager").submit(function(e) {
@@ -189,6 +198,10 @@ $(document).ready(function () {
         $('.admin-log-body').addClass('d-none');
         const formData = new FormData(this);
         formData.append('searchIndex', searchIndex);
+        getAdminInfo(formData);
+    });
+
+    const getAdminInfo = (formData) => {
         $.ajax({
             url: '/admin/getManagerInfo',
             type: 'POST',
@@ -233,6 +246,7 @@ $(document).ready(function () {
                         }
                     }
                     $("#create-user-form").removeClass('d-none');
+                    $(".info-details-part").addClass('d-none');
 
                     $(".button-part").addClass('d-none');
 
@@ -265,12 +279,13 @@ $(document).ready(function () {
                 }
             }
         })
-    });
+    }
 
     $("#search").change(function() {
         $(".button-part").removeClass('d-none');
 
         $("#create-user-form").addClass('d-none');
+        $(".info-details-part").addClass('d-none');
 
     });
 
@@ -278,6 +293,7 @@ $(document).ready(function () {
         $(".button-part").removeClass('d-none');
 
         $("#create-user-form").addClass('d-none');
+        $(".info-details-part").addClass('d-none');
 
     });
 
@@ -286,6 +302,7 @@ $(document).ready(function () {
         document.getElementsByClassName('button-part')[0].classList.remove('d-none');
 
         document.getElementById('create-user-form').classList.add('d-none');
+        $(".info-details-part").addClass('d-none');
 
     });
 

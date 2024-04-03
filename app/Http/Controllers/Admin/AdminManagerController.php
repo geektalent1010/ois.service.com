@@ -227,23 +227,30 @@ class AdminManagerController extends Controller
     }
 
     public function getManagerInfo(Request $request) {
-        $searchIndex = $request->input('searchIndex');
 
-        $email = $request->input('search');
-        $users = User::with('profile')
-            ->where('status', 1)
-            ->whereIn('is_admin', [1, 2])
-            ->where(function($query) use ($email) {
-                $query->where('email', $email)
-                    ->orWhereHas('profile', function($query) use ($email) {
-                        $query->where('first_name', $email)
-                            ->orWhere('last_name', $email);
-                    });
-            })
-            ->get();
-        $user;
-        if($users[$searchIndex]) {
-            $user = $users[$searchIndex];
+        if($request->input('id')) {
+            $id = $request->input('id');
+            $user = User::where('id', $id)->first();
+            $res['num'] = 1;
+        } else {
+            $searchIndex = $request->input('searchIndex');
+            $email = $request->input('search');
+            $users = User::with('profile')
+                ->where('status', 1)
+                ->whereIn('is_admin', [1, 2])
+                ->where(function($query) use ($email) {
+                    $query->where('email', $email)
+                        ->orWhereHas('profile', function($query) use ($email) {
+                            $query->where('first_name', $email)
+                                ->orWhere('last_name', $email);
+                        });
+                })
+                ->get();
+            $user;
+            if($users[$searchIndex]) {
+                $user = $users[$searchIndex];
+            }
+            $res['num'] = count($users);
         }
         if($user) {
             $res['status'] = 'success';
@@ -276,7 +283,6 @@ class AdminManagerController extends Controller
         } else {
             $res['status'] = 'nodata';
         }
-        $res['num'] = count($users);
         return json_encode($res);
     }
 
