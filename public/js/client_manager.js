@@ -183,13 +183,16 @@ $(document).ready(function () {
         $("#search-manager").submit();
     });
 
-    $(".info-detail-item").click(function(e) {
+    $(".info-detail-item").click(function (e) {
         const id = $(this).attr("value");
         const formData = new FormData();
-        formData.append('_token', $("#create-user-form input:first-child").val());
-        formData.append('id', id);
+        formData.append(
+            "_token",
+            $("#create-user-form input:first-child").val()
+        );
+        formData.append("id", id);
         getClientInfo(formData);
-    })
+    });
 
     $("#search-manager").submit(function (e) {
         e.preventDefault();
@@ -210,6 +213,7 @@ $(document).ready(function () {
             processData: false,
             success: function (res) {
                 if (res.status == "success") {
+                    $(".arrow-index-body").removeClass("d-none");
                     $("#userid").val(res.userId);
                     $("#data1").val(res.firstName);
                     $("#data2").val(res.lastName);
@@ -266,7 +270,7 @@ $(document).ready(function () {
                 }
             },
         });
-    }
+    };
 
     $("#search").change(function () {
         $(".button-part").removeClass("d-none");
@@ -291,7 +295,6 @@ $(document).ready(function () {
         }
         document.getElementById("create-user-form").classList.add("d-none");
         $(".info-details-part").addClass("d-none");
-
     });
 
     $("#arrow-back-button").click(function () {
@@ -488,6 +491,44 @@ $(document).ready(function () {
             },
         });
     });
+
+    $("#arrow-index-back-button").click(function () {
+        const id = $("#userid").val();
+        const list = $(".info-detail-item");
+        let beforeId = 0;
+        for(let i = 0 ; i < list.length ; i ++) {
+            if($(list[i]).attr("value") == id) {
+                beforeId = $(list[i - 1 < 0 ? list.length - 1 : i - 1]).attr('value');
+                break;
+            }
+        }
+        const formData = new FormData();
+        formData.append(
+            "_token",
+            $("#create-user-form input:first-child").val()
+        );
+        formData.append("id", beforeId);
+        getClientInfo(formData);
+    });
+
+    $("#arrow-index-next-button").click(function() {
+        const id = $("#userid").val();
+        const list = $(".info-detail-item");
+        let beforeId = 0;
+        for(let i = 0 ; i < list.length ; i ++) {
+            if($(list[i]).attr("value") == id) {
+                beforeId = $(list[i + 1 >= list.length ? 0 : i + 1]).attr('value');
+                break;
+            }
+        }
+        const formData = new FormData();
+        formData.append(
+            "_token",
+            $("#create-user-form input:first-child").val()
+        );
+        formData.append("id", beforeId);
+        getClientInfo(formData);
+    })
 
     const countrySelDom = document.getElementById("country-select");
     drawSelectForm(countrySelDom);

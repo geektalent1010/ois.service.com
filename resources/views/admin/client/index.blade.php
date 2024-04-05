@@ -146,6 +146,10 @@
                 <div id="arrow-back-button"><i class="fa fa-long-arrow-left"></i>Back</div>
                 <div id="arrow-next-button">Next<i class="fa fa-long-arrow-right"></i></div>
             </div>
+            <div class="arrow-index-body d-none">
+                <div id="arrow-index-back-button"><i class="fa fa-long-arrow-left"></i>Back</div>
+                <div id="arrow-index-next-button">Next<i class="fa fa-long-arrow-right"></i></div>
+            </div>
         </div>
         <div class="manager-right-body">
             <div class="right-button" id="create-button-right">CREATE CLIENT</div>

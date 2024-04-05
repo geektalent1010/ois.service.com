@@ -212,6 +212,7 @@ $(document).ready(function () {
             success: function(res) {
                 console.log(res);
                 if(res.status == 'success') {
+                    $(".arrow-index-body").removeClass("d-none");
                     $("#userid").val(res.userId);
                     $("#data1").val(res.firstName);
                     $("#data2").val(res.lastName);
@@ -477,6 +478,44 @@ $(document).ready(function () {
 
         gsap.fromTo('.alert-body', {opacity: 0, scale: 0}, { duration: 0.3, opacity: 1, scale: 1, ease: 'power4.out' });
     }
+
+    $("#arrow-index-back-button").click(function () {
+        const id = $("#userid").val();
+        const list = $(".info-detail-item");
+        let beforeId = 0;
+        for(let i = 0 ; i < list.length ; i ++) {
+            if($(list[i]).attr("value") == id) {
+                beforeId = $(list[i - 1 < 0 ? list.length - 1 : i - 1]).attr('value');
+                break;
+            }
+        }
+        const formData = new FormData();
+        formData.append(
+            "_token",
+            $("#create-user-form input:first-child").val()
+        );
+        formData.append("id", beforeId);
+        getAdminInfo(formData);
+    });
+
+    $("#arrow-index-next-button").click(function() {
+        const id = $("#userid").val();
+        const list = $(".info-detail-item");
+        let beforeId = 0;
+        for(let i = 0 ; i < list.length ; i ++) {
+            if($(list[i]).attr("value") == id) {
+                beforeId = $(list[i + 1 >= list.length ? 0 : i + 1]).attr('value');
+                break;
+            }
+        }
+        const formData = new FormData();
+        formData.append(
+            "_token",
+            $("#create-user-form input:first-child").val()
+        );
+        formData.append("id", beforeId);
+        getAdminInfo(formData);
+    })
 
     const phoneSelDom = document.getElementById('phone-code-select');
     drawSelectForm(phoneSelDom);

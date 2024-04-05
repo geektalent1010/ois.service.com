@@ -183,6 +183,22 @@
             }
         }
 
+        .arrow-index-body {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            gap: 30px;
+            margin-top: 30px;
+            padding-bottom: 30px;
+
+            & > div {
+                display: flex;
+                gap: 15px;
+                align-items: center;
+                cursor: pointer;
+            }
+        }
+
     }
 
     .manager-right-body {

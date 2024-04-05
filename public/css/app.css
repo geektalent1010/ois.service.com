@@ -5464,6 +5464,22 @@ body {
   cursor: pointer;
 }
 
+.admin-manager-section .manager-body .arrow-index-body {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+.admin-manager-section .manager-body .arrow-index-body > div {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  cursor: pointer;
+}
+
 .admin-manager-section .manager-body .roles-section {
   width: 100%;
   display: flex;
@@ -5783,6 +5799,22 @@ body {
 }
 
 .client-manager-section .manager-body .arrow-body > div {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.client-manager-section .manager-body .arrow-index-body {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+.client-manager-section .manager-body .arrow-index-body > div {
   display: flex;
   gap: 15px;
   align-items: center;
