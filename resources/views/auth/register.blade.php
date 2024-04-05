@@ -148,12 +148,25 @@
                         <label id="password-error" class="has-error" for="password" style="display: none"></label>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="terms-of-service">
+                            <input type="checkbox" id="terms-of-service" />
+                            I have read and agree to the terms of service
+                        </label>
+                        | <a href="{{route('terms.index')}}" class="modalhref" target="_blank">Terms of use</a>
+                        | <a href="{{route('policy.index')}}" class="modalhref" target="_blank">Privacy policies</a>
+                    </div>
+                </div>
 
                 <div class="row justify-content-center">
                     <div class="col-md-6 form-group mt-19px mb-30px">
-                        <button class="btn btn-primary register-button button-submit" data-button="submit">
+                        <button class="btn btn-primary register-button button-submit d-none" data-button="submit" id="register-but">
                             {{ __('save') }}
                         </button>
+                        <div class="btn btn-primary register-button" disabled id="register-but-disabled">
+                            {{ __('save') }}
+                        </div>
                     </div>
                 </div>
             </form>

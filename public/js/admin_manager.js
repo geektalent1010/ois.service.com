@@ -515,7 +515,7 @@ $(document).ready(function () {
         );
         formData.append("id", beforeId);
         getAdminInfo(formData);
-    })
+    });
 
     const phoneSelDom = document.getElementById('phone-code-select');
     drawSelectForm(phoneSelDom);

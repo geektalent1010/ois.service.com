@@ -334,3 +334,17 @@ $(document).ready(function () {
     $(".birthday-group select.month").addClass("editable");
     $(".birthday-group select.year").addClass("editable");
 });
+
+$("#terms-of-service").change(function() {
+    if($(this).is(':checked')) {
+        $("#register-but").removeClass('d-none');
+        $("#register-but-disabled").addClass('d-none');
+    } else {
+        $("#register-but").addClass('d-none');
+        $("#register-but-disabled").removeClass('d-none');
+    }
+});
+
+$("#register-but-disabled").click(function() {
+    customAlert("We are so sorry", "You should agree the terms of service", "error");
+})

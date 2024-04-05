@@ -784,6 +784,11 @@
   text-align: center;
 }
 
+.register-section .modalhref:hover {
+  color: white;
+  transition: 0.3s;
+}
+
 .register-section .form-section {
   width: 680px;
 }

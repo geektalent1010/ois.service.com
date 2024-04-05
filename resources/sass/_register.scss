@@ -26,6 +26,13 @@
         text-align: center;
     }
 
+    .modalhref {
+        &:hover {
+            color: white;
+            transition: 0.3s;
+        }
+    }
+
     .form-section {
         width: 680px;
         .form-label {
