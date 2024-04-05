@@ -29,7 +29,7 @@
                                 <select id="country-select" name="country">
                                     <option value="0" >{{__('country')}}</option>
                                     @foreach ($countries as $country)
-                                        <option value="{{$country->id}}" data-data1="{{$country->name}}"></option>
+                                        <option value="{{$country->name}}" data-data1="{{$country->name}}"></option>
                                     @endforeach
                                 </select>
                             </div>

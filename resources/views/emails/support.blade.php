@@ -25,27 +25,32 @@
             <table class="welcome-text-body" align="center">
                 <tr>
                     <td class="welcome-greet">
-                        From: {{$userData->email}}
+                        From: {{$userData['email']}}
                     </td>
                 </tr>
                 <tr>
                     <td class="welcome-greet">
-                        Name: {{$userData->name}}
+                        Name: {{$userData['name']}}
                     </td>
                 </tr>
                 <tr>
                     <td class="welcome-greet">
-                        Phone Number: {{$userData->phone}}
+                        Phone Number: {{$userData['phone']}}
                     </td>
                 </tr>
                 <tr>
                     <td class="welcome-greet">
-                        Subject: {{$userData->subject}}
+                        Country: {{$userData['country']}}
                     </td>
                 </tr>
                 <tr>
                     <td class="welcome-greet">
-                        Message: {{$userData->message}}
+                        Subject: {{$userData['subject']}}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="welcome-greet">
+                        Message: {{$userData['message']}}
                     </td>
                 </tr>
             </table>
