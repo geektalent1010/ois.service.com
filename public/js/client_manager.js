@@ -534,4 +534,17 @@ $(document).ready(function () {
     drawSelectForm(countrySelDom);
     const phoneSelDom = document.getElementById("phone-code-select");
     drawSelectForm(phoneSelDom);
+
+    const init = () => {
+        const id = $("#userid").attr("value");
+        const formData = new FormData();
+        formData.append(
+            "_token",
+            $("#create-user-form input:first-child").val()
+        );
+        formData.append("id", id);
+        getClientInfo(formData);
+    }
+
+    init();
 });

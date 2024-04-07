@@ -30,7 +30,7 @@
                     @endforeach
                 </div>
             </div>
-            <div class="info-details-part">
+            <div class="info-details-part d-none">
                 @foreach ($users as $user)
                     <div class="info-detail-item" value="{{$user->id}}">
                         <div class="info-email">{{$user->email}}</div>
@@ -42,9 +42,9 @@
                     <button id="create-user-button">CREATE NEW USER</button>
                 </div>
             @endif
-            <form class="my-profile-part d-none" id="create-user-form">
+            <form class="my-profile-part" id="create-user-form">
                 @csrf
-                <input type="hidden" id="userid" name="userid" />
+                <input type="hidden" id="userid" name="userid" value="{{count($users) > 0 ? $users[0]->id : null}}" />
                 <div class="info-details">
                     <div class="info-detail">
                         <div class="info-head">First Name</div>
@@ -71,7 +71,7 @@
                         </div>
                     </div>
                     <div class="info-detail">
-                        <div class="info-head">city</div>
+                        <div class="info-head">City</div>
                         <div class="info-value">
                             <input type="text" id="data5" name="city" text="City" value="" class="form-input-custom" />
                         </div>

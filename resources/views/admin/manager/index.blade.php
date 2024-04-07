@@ -24,7 +24,7 @@
                     @endforeach
                 </div>
             </div>
-            <div class="info-details-part">
+            <div class="info-details-part d-none">
                 @foreach ($adminUsers as $user)
                     <div class="info-detail-item" value="{{$user->id}}">
                         <div class="info-email">{{$user->email}}</div>
@@ -32,12 +32,10 @@
                 @endforeach
             </div>
             <div class="button-part mt-30px">
-                <button id="create-user-button">CREATE NEW USER</button>
-                <button id="log-button">ADMIN LOG</button>
             </div>
-            <form class="my-profile-part d-none" id="create-user-form">
+            <form class="my-profile-part" id="create-user-form">
                 @csrf
-                <input type="hidden" id="userid" name="userid" />
+                <input type="hidden" id="userid" name="userid" value="{{count($adminUsers) > 0 ? $adminUsers[0]->id : null}}" />
                 <div class="info-details">
                     <div class="info-detail">
                         <div class="info-head">First Name</div>
@@ -142,6 +140,8 @@
                 <div class="info-button mt-35px">
                     <button id="save-but">{{__('PUBLISH')}}</button>
                     <input type="button" id="delete-but" value="DELETE">
+                    <input type="button" id="create-user-button" value="CREATE NEW USER">
+                    <input type="button" id="log-button" value="ADMIN LOG">
                 </div>
             </form>
             <div class="arrow-body d-none">
@@ -150,7 +150,7 @@
             </div>
             <div class="admin-log-body d-none">
             </div>
-            <div class="arrow-index-body d-none">
+            <div class="arrow-index-body">
                 <div id="arrow-index-back-button"><i class="fa fa-long-arrow-left"></i>Back</div>
                 <div id="arrow-index-next-button">Next<i class="fa fa-long-arrow-right"></i></div>
             </div>
