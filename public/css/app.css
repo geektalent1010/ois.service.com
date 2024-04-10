@@ -5265,6 +5265,16 @@ body {
   padding-left: 0;
 }
 
+.admin-profile-section .profile-body .my-profile-part .info-details .center-part .info-value {
+  justify-content: space-between;
+  padding: 0 35px;
+}
+
+.admin-profile-section .profile-body .my-profile-part .info-details .center-part .info-value img {
+  cursor: pointer;
+  width: 20px;
+}
+
 .admin-profile-section .profile-body .my-access-part {
   width: 100%;
   display: flex;
@@ -5297,6 +5307,21 @@ body {
 
 .admin-profile-section .profile-body .my-access-part .access-detail-group .active {
   background-color: #00a9ea;
+}
+
+.admin-profile-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.admin-profile-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.admin-profile-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -5453,6 +5478,16 @@ body {
   padding-left: 0;
 }
 
+.admin-manager-section .manager-body .my-profile-part .info-details .center-part .info-value {
+  justify-content: space-between;
+  padding: 0 35px;
+}
+
+.admin-manager-section .manager-body .my-profile-part .info-details .center-part .info-value img {
+  cursor: pointer;
+  width: 20px;
+}
+
 .admin-manager-section .manager-body .arrow-body {
   display: flex;
   width: 100%;
@@ -5602,6 +5637,21 @@ body {
 .admin-manager-section .manager-right-body .right-button.disabled {
   opacity: 0.7;
   cursor: not-allowed;
+}
+
+.admin-manager-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.admin-manager-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.admin-manager-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -5861,6 +5911,21 @@ body {
   cursor: not-allowed;
 }
 
+.client-manager-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.client-manager-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.client-manager-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
+}
+
 @media only screen and (max-width: 1080px) {
   .client-manager-section .manager-body {
     width: 70%;
@@ -6084,6 +6149,21 @@ body {
   color: #338dc9;
 }
 
+.mail-manager-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.mail-manager-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.mail-manager-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
+}
+
 @media only screen and (max-width: 1080px) {
   .mail-manager-section .manager-body {
     width: 70%;
@@ -6241,6 +6321,21 @@ body {
   background-color: rgba(0, 60, 113, 0.3019607843);
 }
 
+.content-manager-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.content-manager-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.content-manager-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
+}
+
 @media only screen and (max-width: 1080px) {
   .content-manager-section .manager-body {
     width: 90%;
@@ -6335,6 +6430,21 @@ body {
 
 .center-manager-section .manager-body .office-detail-form .office-detail div.outline {
   outline: 1px solid #266ea5;
+}
+
+.center-manager-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.center-manager-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.center-manager-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -6458,6 +6568,21 @@ body {
 
 .price-manager-section .manager-right-body .right-button:not(:first-child) {
   margin-top: 2px;
+}
+
+.price-manager-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.price-manager-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.price-manager-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
 }
 
 @media only screen and (max-width: 1080px) {

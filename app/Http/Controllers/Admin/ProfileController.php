@@ -61,12 +61,17 @@ class ProfileController extends Controller
         $offices = Office::orderBy('country', 'asc')->orderBy('city', 'asc')->get()->groupBy(function ($data) {
             return $data->country;
         });
+        $myCenterIds = explode(",", $user->profile->country_center);
+        for($i = 0 ; $i < count($myCenterIds) ; $i ++) {
+            $myCenters[$i] = Office::where('id', $myCenterIds[$i])->first();
+        }
         return view('admin.profile.index')
             ->with('user', $user)
             ->with('countries', $countries)
             ->with('phoneCodes', $phoneCodes)
             ->with('roles', $roles)
-            ->with('offices', $offices);
+            ->with('offices', $offices)
+            ->with('myCenters', $myCenters);
     }
 
     public function updateProfile(Request $request) {

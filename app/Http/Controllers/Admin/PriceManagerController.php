@@ -25,10 +25,19 @@ class PriceManagerController extends Controller
 
     public function getPrice(Request $request) {
         $officeId = $request->input('officeId');
-        $office = Office::where('id', $officeId)->first();
-        if(!Auth::guard('admin')->user()->isSuperAdmin() && (Auth::guard('admin')->user()->isAllowPriceEditor() && Auth::guard('admin')->user()->profile->country_center != $office->country)) {
-            $res['status'] = 'unauthorize';
-            return json_encode($res);
+        if(!Auth::guard('admin')->user()->isSuperAdmin()) {
+            $centers = explode(",", Auth::guard('admin')->user()->profile->country_center);
+            $isAllowCenter = false;
+            foreach($centers as $center) {
+                if($center == $officeId) {
+                    $isAllowCenter = true;
+                    break;
+                }
+            }
+            if(!$isAllowCenter) {
+                $res['status'] = 'unauthorize';
+                return json_encode($res);
+            }
         }
         $checklist = Checklist::where('office_id', $officeId)
             ->where('visa_type', 'Fees')

@@ -108,7 +108,7 @@ $(document).ready(function () {
         let doms = document.createElement("div");
         doms.innerHTML += `
             <div class="custom-alert-popup">
-                <div class="alert-body error">
+                <div class="alert-body success">
                     <div class="alert-text-part">
                         <div class="alert-title-text">Create Or Update User</div>
                         <div class="alert-message-text">ARE YOU SURE YOU WANT TO PROCEED TO CREATE OR UPDATE THIS CLIENT</div>
@@ -118,7 +118,7 @@ $(document).ready(function () {
                         </div>
                     </div>
                     <div class="alert-icon-part">
-                        <img src="/images/PopupSmile_error.svg" alt="icon"/>
+                        <img src="/images/PopupSmile_success.svg" alt="icon"/>
                     </div>
                 </div>
             </div>

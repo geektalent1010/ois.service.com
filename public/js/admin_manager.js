@@ -31,7 +31,10 @@ $(document).ready(function () {
         $(".admin-log-body").addClass("d-none");
         $("#create-user-form").removeClass("d-none");
         $(".info-details-part").addClass("d-none");
-
+        $(".center-part").html('');
+        centerId = [];
+        $(".access-detail").removeClass('active super-only');
+        $('.access-detail').addClass('disabled');
         $("#create-user-form input.form-input-custom").val("");
         $("#userid").val("");
         $("#data6")[0].selectedIndex = 0;
@@ -71,9 +74,9 @@ $(document).ready(function () {
         let doms = document.createElement("div");
         doms.innerHTML += `
             <div class="custom-alert-popup">
-                <div class="alert-body error">
+                <div class="alert-body success">
                     <div class="alert-text-part">
-                        <div class="alert-title-text">Delete User</div>
+                        <div class="alert-title-text">Create Or Update User</div>
                         <div class="alert-message-text">ARE YOU SURE YOU WANT TO PROCEED TO CREATE OR UPDATE THIS CLIENT</div>
                         <div class="custom-alert-button">
                             <Button class="confirm-yes" id="update-confirm-but">YES</Button>
@@ -81,7 +84,7 @@ $(document).ready(function () {
                         </div>
                     </div>
                     <div class="alert-icon-part">
-                        <img src="/images/PopupSmile_error.svg" alt="icon"/>
+                        <img src="/images/PopupSmile_success.svg" alt="icon"/>
                     </div>
                 </div>
             </div>
@@ -138,16 +141,7 @@ $(document).ready(function () {
             "checklistStatus",
             $("#checklist-edit-button").hasClass("active")
         );
-        const countrySelIndex = $("#data6")[0].selectedIndex + 1;
-
-        formData.append(
-            "country",
-            $("#data6 option:nth-child(" + countrySelIndex + ")").data("data1")
-        );
-        formData.append(
-            "city",
-            $("#data6 option:nth-child(" + countrySelIndex + ")").data("data2")
-        );
+        formData.append("center", centerId);
         if (userid) {
             $.ajax({
                 url: "/admin/updateAdmin",
@@ -225,7 +219,7 @@ $(document).ready(function () {
         if (userid) dataNum = 8;
         else dataNum = 9;
         for (let i = 1; i <= dataNum; i++) {
-            if (i == 7) continue;
+            if (i == 7 || i == 6) continue;
             if (!$("#data" + i).val() || $("#data" + i).val() == 0) {
                 customAlert(
                     "We are so sorry",
@@ -288,26 +282,6 @@ $(document).ready(function () {
                     $("#data4").val(res.phoneNumber.split(" ")[1]);
                     $("#data5").val(res.email);
                     $("#data8").val(res.username);
-                    const countryOptions = $("#data6 option");
-                    let flag = false;
-                    for (let i = 1; i < countryOptions.length; i++) {
-                        if (
-                            countryOptions[i].dataset.data1 == res.country &&
-                            countryOptions[i].dataset.data2 == res.city
-                        ) {
-                            flag = true;
-                            $(
-                                "#center-select .select-items div:nth-child(" +
-                                    i +
-                                    ")"
-                            ).click();
-                            break;
-                        }
-                    }
-                    if (!flag) {
-                        document.getElementById("data6").selectedIndex = 0;
-                        drawSelectForm($("#center-select")[0]);
-                    }
                     const phoneCodeOptions = $("#data3 option");
                     for (let i = 1; i < phoneCodeOptions.length; i++) {
                         if (
@@ -339,18 +313,33 @@ $(document).ready(function () {
                     $(".button-part").addClass("d-none");
 
                     $(".list-detail").addClass("d-none");
-                    $(".access-detail:not(.disabled)").removeClass("active");
-                    if (res.roles.clientManager) {
-                        $("#client-man-button").addClass("active");
-                    }
-                    if (res.roles.priceEditor) {
-                        $("#price-edit-button").addClass("active");
-                    }
-                    if (res.roles.centerEditor) {
-                        $("#center-edit-button").addClass("active");
-                    }
-                    if (res.roles.checklistEditor) {
-                        $("#checklist-edit-button").addClass("active");
+
+                    if (res.role == 1) {
+                        $(".access-detail").removeClass(
+                            "active disabled only-super"
+                        );
+                        $("#profile-edit-button").addClass("active disabled");
+                        $("#content-edit-button").addClass(
+                            "disabled only-super"
+                        );
+                        $("#admin-man-button").addClass("disabled only-super");
+                        $("#mail-man-button").addClass("disabled only-super");
+
+                        if (res.roles.clientManager) {
+                            $("#client-man-button").addClass("active");
+                        }
+                        if (res.roles.priceEditor) {
+                            $("#price-edit-button").addClass("active");
+                        }
+                        if (res.roles.centerEditor) {
+                            $("#center-edit-button").addClass("active");
+                        }
+                        if (res.roles.checklistEditor) {
+                            $("#checklist-edit-button").addClass("active");
+                        }
+                    } else if (res.role == 2) {
+                        $(".access-detail").removeClass("only-super");
+                        $(".access-detail").addClass("active disabled");
                     }
 
                     if (res.num > 1) {
@@ -359,6 +348,47 @@ $(document).ready(function () {
                         $(".arrow-body").addClass("d-none");
                     }
                     searchCount = res.num;
+
+                    centerId = [];
+                    $(".center-part").html('');
+                    const center = res.country.split(',');
+                    if(center && center.length > 0) {
+                        const formData = new FormData();
+                        formData.append(
+                            "_token",
+                            $("#create-user-form input:first-child").val()
+                        );
+                        formData.append("id", res.country);
+
+                        $.ajax({
+                            url: "/admin/centerSelect",
+                            type: "POST",
+                            data: formData,
+                            dataType: "json",
+                            contentType: false,
+                            processData: false,
+                            success: function (res) {
+                                console.log(res);
+                                let html = ``;
+                                if (res && res.length > 0) {
+                                    for(const item of res) {
+                                        html += `
+                                            <div class="info-detail center-part-${item.id}">
+                                                <div class="info-head"></div>
+                                                <div class="info-value">
+                                                    <div>${item.country} - ${item.city}</div>
+                                                    <img src="/images/close.png" alt="" onClick="closeCenter(${item.id})" />
+                                                </div>
+                                            </div>
+                                        `;
+                                        centerId.push(item.id);
+                                    }
+
+                                }
+                                $(".center-part").append(html);
+                            },
+                        });
+                    }
                 } else if (res.status == "nodata") {
                     customAlert("We are so sorry", "No search result", "error");
                 } else {
@@ -644,6 +674,41 @@ $(document).ready(function () {
     const roleSelDom = document.getElementById("role-select");
     drawSelectForm(roleSelDom);
 
+    $("#center-select").click(function (e) {
+        const formData = new FormData();
+        formData.append(
+            "_token",
+            $("#create-user-form input:first-child").val()
+        );
+        formData.append("id", $("#data6").val());
+
+        $.ajax({
+            url: "/admin/centerSelect",
+            type: "POST",
+            data: formData,
+            dataType: "json",
+            contentType: false,
+            processData: false,
+            success: function (res) {
+                if (res[0]) {
+                    if (centerId.indexOf(res[0].id) === -1) {
+                        let html = `
+                            <div class="info-detail center-part-${res[0].id}">
+                                <div class="info-head"></div>
+                                <div class="info-value">
+                                    <div>${res[0].country} - ${res[0].city}</div>
+                                    <img src="/images/close.png" alt="" onClick="closeCenter(${res[0].id})" />
+                                </div>
+                            </div>
+                        `;
+                        $(".center-part").append(html);
+                        centerId.push(res[0].id);
+                    }
+                }
+            },
+        });
+    });
+
     const init = () => {
         const id = $("#userid").val();
         const formData = new FormData();
@@ -653,7 +718,16 @@ $(document).ready(function () {
         );
         formData.append("id", id);
         getAdminInfo(formData);
-    }
+    };
 
     init();
 });
+
+let centerId = [];
+
+const closeCenter = (id) => {
+    $(".center-part-" + id).remove();
+    if (centerId.indexOf(id) !== -1) {
+        centerId = centerId.filter((ids) => ids !== id);
+    }
+};

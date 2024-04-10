@@ -70,26 +70,6 @@
                         </div>
                     </div>
                     <div class="info-detail">
-                        <div class="info-head">Center</div>
-                        <div class="info-value">
-                            <div class="form-select-custom select-left-icon" id="center-select">
-                                <select class="" id="data6" name="center" text="Center">
-                                    <option value="0">Country + Center</option>
-                                    @foreach($offices as $country => $cities)
-                                        @foreach ($cities as $key => $office)
-                                            <option value="{{$office->id}}"
-                                                data-data1="{{$office->country}}"
-                                                data-data2="{{$office->city}}">
-                                                {{$office->country}} - {{$office->city}}
-                                            </option>
-                                        @endforeach
-
-                                    @endforeach
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info-detail">
                         <div class="info-head">Role</div>
                         <div class="info-value">
                             <div class="form-select-custom role-select select-left-icon" id="role-select">
@@ -114,6 +94,28 @@
                             <input type="password" id="data9" name="password" text="Password" value="" class="form-input-custom" />
                         </div>
                     </div>
+                    <div class="info-detail center-select-part">
+                        <div class="info-head">Center</div>
+                        <div class="info-value">
+                            <div class="form-select-custom select-left-icon" id="center-select">
+                                <select class="" id="data6" name="" text="Center">
+                                    <option value="0">Country + Center</option>
+                                    @foreach($offices as $country => $cities)
+                                        @foreach ($cities as $key => $office)
+                                            <option value="{{$office->id}}"
+                                                data-data1="{{$office->country}}"
+                                                data-data2="{{$office->city}}">
+                                                {{$office->country}} - {{$office->city}}
+                                            </option>
+                                        @endforeach
+                                    @endforeach
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center-part">
+                    </div>
+
                 </div>
                 <div class="roles-section">
                     <div class="main-title mt-35px">MY ACCESS</div>

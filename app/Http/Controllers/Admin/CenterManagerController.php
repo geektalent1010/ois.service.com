@@ -25,9 +25,19 @@ class CenterManagerController extends Controller
     public function getCenterInfo(Request $request) {
         $officeId = $request->input('officeId');
         $office = Office::where('id', $officeId)->first();
-        if(!Auth::guard('admin')->user()->isSuperAdmin() && (Auth::guard('admin')->user()->isAllowCenterEditor() && Auth::guard('admin')->user()->profile->country_center != $office->country)) {
-            $res['status'] = 'unauthorize';
-            return json_encode($res);
+        if(!Auth::guard('admin')->user()->isSuperAdmin()) {
+            $centers = explode(",", Auth::guard('admin')->user()->profile->country_center);
+            $isAllowCenter = false;
+            foreach($centers as $center) {
+                if($center == $officeId) {
+                    $isAllowCenter = true;
+                    break;
+                }
+            }
+            if(!$isAllowCenter) {
+                $res['status'] = 'unauthorize';
+                return json_encode($res);
+            }
         }
         return json_encode($office);
     }
@@ -35,6 +45,10 @@ class CenterManagerController extends Controller
     public function updateOffice(Request $request) {
         $id = $request->input('officeId');
         if($id == 0) {
+            if(!Auth::guard('admin')->user()->isSuperAdmin()) {
+                $res['status'] = 'unauthorize';
+                return json_encode($res);
+            }
             $office = new Office();
             $office->postal = '';
             $office->phone = '';
@@ -51,10 +65,6 @@ class CenterManagerController extends Controller
         }
 
         $office->country = $request->input('country');
-        if(!Auth::guard('admin')->user()->isSuperAdmin() && (Auth::guard('admin')->user()->isAllowCenterEditor() && Auth::guard('admin')->user()->profile->country_center != $office->country)) {
-            $res['status'] = 'unauthorize';
-            return json_encode($res);
-        }
         $office->city = $request->input('city');
         $office->address = $request->input('address');
         $office->working_days = $request->input('workingDay');

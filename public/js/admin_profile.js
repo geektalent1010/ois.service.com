@@ -2,6 +2,7 @@ $(document).ready(function () {
     $('#profile-edit-form').submit(function (e) {
         e.preventDefault();
         for (let i = 1; i <= 8; i++) {
+            if(i == 6) continue;
             if (!$("#data" + i).val()) {
                 customAlert('We are so sorry', 'Please input or select the ' + $("#data" + i).attr('text') + ' field.', 'error');
                 return;
@@ -9,10 +10,6 @@ $(document).ready(function () {
         }
         if (!validateEmail($('#data5').val())) {
             customAlert('We are so sorry', 'Invalid Email address', 'error');
-            return;
-        }
-        if($("#data6").val() == 0 && !$("#data6").val()) {
-            customAlert('We are so sorry', 'Please select the center', 'error');
             return;
         }
         let formData = new FormData(this);
@@ -42,6 +39,3 @@ $(document).ready(function () {
 
 const phoneSelDom = document.getElementById('phone-code-select');
 drawSelectForm(phoneSelDom);
-
-const centerSelDom = document.getElementById('center-select');
-drawSelectForm(centerSelDom);

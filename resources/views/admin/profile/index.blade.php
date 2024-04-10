@@ -55,31 +55,6 @@
                         </div>
                     </div>
                     <div class="info-detail">
-                        <div class="info-head">Center</div>
-                        <div class="info-value">
-                            {{-- <input type="text" id="data6" name="city" text="Center" value="{{$user->profile->city}}" class="form-input-custom" /> --}}
-                            <div class="form-select-custom select-left-icon disabled" id="center-select">
-                                <select class="" id="data6" name="center" text="Center">
-                                    <option value="0">Country + Center</option>
-                                    @foreach($offices as $country => $cities)
-                                        @foreach ($cities as $key => $office)
-                                            <option value="{{$office->id}}"
-                                                data-data1="{{$office->country}}"
-                                                data-data2="{{$office->city}}"
-                                                @if ($office->country == $user->profile->country_center && $office->city == $user->profile->city)
-                                                    selected
-                                                @endif
-                                                >
-                                                {{$office->country}} - {{$office->city}}
-                                            </option>
-                                        @endforeach
-
-                                    @endforeach
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info-detail">
                         <div class="info-head">Role</div>
                         <div class="info-value">
                             <input type="text" id="data7" name="role" text="Role" value="Admin" disabled class="form-input-custom" />
@@ -97,6 +72,19 @@
                             <input type="password" id="data9" name="password" text="Password" value="" class="form-input-custom" />
                         </div>
                     </div>
+                    <div class="center-part">
+                        @foreach ($myCenters as $key => $center)
+                            <div class="info-detail center-part-${item.id}">
+                                <div class="info-head">
+                                    @if ($key == 0) Center @endif
+                                </div>
+                                <div class="info-value">
+                                    <div>{{$center->country}} - {{$center->city}}</div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+
                 </div>
                 <div class="info-button mt-35px">
                     <button id="save-but">{{__('SAVE')}}</button>

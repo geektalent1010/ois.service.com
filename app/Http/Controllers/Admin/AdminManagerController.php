@@ -73,9 +73,9 @@ class AdminManagerController extends Controller
         $profile->first_name = $request->input('firstName');
         $profile->last_name = $request->input('lastName');
         $profile->phone_number = $request->input('phoneCode').' '.$request->input('phoneNumber');
-        $profile->city = $request->input('city');
+        $profile->city = "";
         $profile->country_id = 1;
-        $profile->country_center = $request->input('country');
+        $profile->country_center = $request->input('center');
         $profile->gender = 'm';
         $profile->user_id = $user->id;
 
@@ -149,8 +149,7 @@ class AdminManagerController extends Controller
         $profile->first_name = $request->input('firstName');
         $profile->last_name = $request->input('lastName');
         $profile->phone_number = $request->input('phoneCode').' '.$request->input('phoneNumber');
-        $profile->city = $request->input('city');
-        $profile->country_center = $request->input('country');
+        $profile->country_center = $request->input('center');
         $profile->gender = 'm';
         $profile->user_id = $user->id;
         $profile->save();
@@ -314,5 +313,15 @@ class AdminManagerController extends Controller
             $dat->profileInfo = json_encode($dat->user->profile);
         }
         return json_decode($data);
+    }
+
+    public function centerSelect(Request $request) {
+        $ids = $request->input('id');
+        $idArr = explode(",", $ids);
+        for($i = 0 ; $i < count($idArr) ; $i ++) {
+            $office[$i] = Office::where('id', $idArr[$i])->first();
+        }
+
+        return json_encode($office);
     }
 }
