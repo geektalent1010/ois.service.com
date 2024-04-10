@@ -62,9 +62,14 @@ class ProfileController extends Controller
             return $data->country;
         });
         $myCenterIds = explode(",", $user->profile->country_center);
-        for($i = 0 ; $i < count($myCenterIds) ; $i ++) {
-            $myCenters[$i] = Office::where('id', $myCenterIds[$i])->first();
+        if($myCenterIds && $myCenterIds[0] != "") {
+            for($i = 0 ; $i < count($myCenterIds) ; $i ++) {
+                $myCenters[$i] = Office::where('id', $myCenterIds[$i])->first();
+            }
+        } else {
+            $myCenters = [];
         }
+
         return view('admin.profile.index')
             ->with('user', $user)
             ->with('countries', $countries)

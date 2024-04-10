@@ -73,16 +73,27 @@
                         </div>
                     </div>
                     <div class="center-part">
-                        @foreach ($myCenters as $key => $center)
+                        @if ($myCenters)
+                            @foreach ($myCenters as $key => $center)
+                                <div class="info-detail center-part-${item.id}">
+                                    <div class="info-head">
+                                        @if ($key == 0) Center @endif
+                                    </div>
+                                    <div class="info-value">
+                                        <div>{{$center->country}} - {{$center->city}}</div>
+                                    </div>
+                                </div>
+                            @endforeach
+                        @else
                             <div class="info-detail center-part-${item.id}">
                                 <div class="info-head">
-                                    @if ($key == 0) Center @endif
+                                    Center
                                 </div>
                                 <div class="info-value">
-                                    <div>{{$center->country}} - {{$center->city}}</div>
+                                    <div>No centers for you</div>
                                 </div>
                             </div>
-                        @endforeach
+                        @endif
                     </div>
 
                 </div>
