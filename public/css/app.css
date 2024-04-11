@@ -6926,3 +6926,199 @@ body {
   }
 }
 
+.admin-forgot-section {
+  width: 100vw;
+  height: calc(100vh - 120px);
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.admin-forgot-section .manager-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  width: 50vw;
+  height: 100%;
+}
+
+.admin-forgot-section .manager-body .main-titles {
+  font-size: 21px;
+  font-family: "DinPro Medium", sans-serif;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.admin-forgot-section .manager-body .send-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  justify-content: center;
+}
+
+.admin-forgot-section .manager-body .send-form .form-control {
+  background: rgba(255, 255, 255, 0.1490196078);
+  border: none;
+  border-radius: 10rem;
+  box-shadow: none;
+  height: 44px;
+  font-weight: 400;
+  outline: medium none;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 16px;
+  font-family: "DinPro", sans-serif;
+  line-height: 1.4;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.admin-forgot-section .manager-body .send-form button {
+  width: 100%;
+  height: 44px;
+  background: #003366;
+  display: block;
+  color: #ffffff;
+  border-radius: 10rem;
+  font-size: 16px;
+  font-family: "DinPro", sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+.admin-forgot-section .manager-body .send-form button:hover {
+  background-color: #0f609c;
+}
+
+.admin-forgot-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.admin-forgot-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.admin-forgot-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
+}
+
+@media only screen and (max-width: 1080px) {
+  .admin-forgot-section .manager-body {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .admin-forgot-section .manager-body {
+    width: 100%;
+  }
+}
+
+.admin-forgot-reset-section {
+  width: 100vw;
+  height: calc(100vh - 120px);
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.admin-forgot-reset-section .manager-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  width: 50vw;
+  height: 100%;
+}
+
+.admin-forgot-reset-section .manager-body .main-titles {
+  font-size: 21px;
+  font-family: "DinPro Medium", sans-serif;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.admin-forgot-reset-section .manager-body .reset-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  justify-content: center;
+}
+
+.admin-forgot-reset-section .manager-body .reset-form .form-control {
+  background: rgba(255, 255, 255, 0.1490196078);
+  border: none;
+  border-radius: 10rem;
+  box-shadow: none;
+  height: 44px;
+  font-weight: 400;
+  outline: medium none;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 16px;
+  font-family: "DinPro", sans-serif;
+  line-height: 1.4;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.admin-forgot-reset-section .manager-body .reset-form button {
+  width: 100%;
+  height: 44px;
+  background: #003366;
+  display: block;
+  color: #ffffff;
+  border-radius: 10rem;
+  font-size: 16px;
+  font-family: "DinPro", sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+.admin-forgot-reset-section .manager-body .reset-form button:hover {
+  background-color: #0f609c;
+}
+
+.admin-forgot-reset-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.admin-forgot-reset-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.admin-forgot-reset-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
+}
+
+@media only screen and (max-width: 1080px) {
+  .admin-forgot-reset-section .manager-body {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .admin-forgot-reset-section .manager-body {
+    width: 100%;
+  }
+}
+

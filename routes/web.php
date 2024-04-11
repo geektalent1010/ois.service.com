@@ -107,6 +107,10 @@ Route::post('/password', 'LandingController@password')->name('password');
         Route::get('login', 'AdminAuth\LoginController@showLoginForm')->name('admin.login');
         Route::post('login', 'AdminAuth\LoginController@login')->name('admin.login');
         Route::post('logout', 'AdminAuth\LoginController@logout')->name('admin.logout');
+        Route::get('forgot', 'Admin\ForgotPasswordController@index')->name('admin.forgot.index');
+        Route::post('forgotSend', 'Admin\ForgotPasswordController@send')->name('admin.forgot.send');
+        Route::get('forgotReset', 'Admin\ForgotPasswordController@reset')->name('admin.forgot.reset');
+        Route::post('forgotResetPassword', 'Admin\ForgotPasswordController@resetPassword')->name('admin.forgot.resetPost');
         Route::middleware(['admin'])->group(function () {
             Route::get('dashboard', 'Admin\DashboardController@index')->name('admin.dashboard.index');
 
@@ -125,7 +129,6 @@ Route::post('/password', 'LandingController@password')->name('password');
             Route::get('clientDetail', 'Admin\ClientManagerController@detailIndex')->name('admin.client.detail');
             Route::post('createClient', 'Admin\ClientManagerController@createClient')->name('admin.client.create');
             Route::post('updateClient', 'Admin\ClientManagerController@updateClient')->name('admin.client.update');
-            Route::post('getClientInfo', 'Admin\ClientManagerController@getClientInfo')->name('admin.client.info');
             Route::post('deleteClient', 'Admin\AdminManagerController@deleteClient')->name('admin.client.delete');
             Route::get('exportCSV', 'Admin\ClientManagerController@exportCSV')->name('admin.client.export');
 

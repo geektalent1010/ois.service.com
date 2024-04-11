@@ -1,0 +1,109 @@
+.admin-forgot-section {
+    width: 100vw;
+    height: calc(100vh - 120px);
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+
+    .manager-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+        width: 50vw;
+        height: 100%;
+
+        .main-titles {
+            font-size: 21px;
+            font-family: "DinPro Medium", sans-serif;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .send-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            height: 100%;
+            justify-content: center;
+
+            .form-control {
+                background: #ffffff26;
+                border: none;
+                -webkit-border-radius: 10rem;
+                -moz-border-radius: 10rem;
+                -ms-border-radius: 10rem;
+                border-radius: 10rem;
+                box-shadow: none;
+                height: 44px;
+                font-weight: 400;
+                outline: medium none;
+                padding-left: 40px;
+                padding-right: 40px;
+                font-size: 16px;
+                font-family: "DinPro", sans-serif;
+                line-height: 1.4;
+                color: #fff;
+                -webkit-transition: all 0.2s ease-in-out;
+                -moz-transition: all 0.2s ease-in-out;
+                transition: all 0.2s ease-in-out;
+            }
+
+            button {
+                width: 100%;
+                height: 44px;
+                background: #003366;
+                display: block;
+                color: #ffffff;
+                -webkit-border-radius: 10rem;
+                -moz-border-radius: 10rem;
+                -ms-border-radius: 10rem;
+                border-radius: 10rem;
+                font-size: 16px;
+                font-family: "DinPro", sans-serif;
+                border: none;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #0f609c;
+                }
+            }
+        }
+    }
+}
+
+.admin-forgot-section::-webkit-scrollbar{
+    width: 10px;
+    cursor: pointer;
+}
+
+.admin-forgot-section::-webkit-scrollbar-thumb {
+    background-color: #003366;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.admin-forgot-section::-webkit-scrollbar-track {
+    background-color: #0f609c;
+}
+
+@media only screen and (max-width: 1080px) {
+    .admin-forgot-section {
+        .manager-body {
+            width: 90%;
+        }
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .admin-forgot-section {
+        .manager-body {
+            width: 100%;
+        }
+    }
+}
