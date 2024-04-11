@@ -12,151 +12,57 @@
     <div class="body-section client-manager-section">
         <div class="manager-body">
             <div class="main-title">CLIENT MANAGER</div>
-            <div class="mt-30px custom-input-dropdown">
-                <form class="search-input" id="search-manager">
-                    @csrf
-                    <input type="text" name="search" id="search" placeholder="Search Name, Email, Country" class="custom-input" />
-                    <i class="fa fa-search"></i>
+            <div class="filter-section">
+                <form class="filter-left-section" id="search-form">
+                    <input type="text" placeholder="Search name, email" autofocus id="search-key" value="{{$searchKey}}" />
                 </form>
-                <div class="list-detail d-none">
-                    @foreach ($users as $user)
-                        <div class="detail" value="{{$user->email}}">
-                            {{$user->email}}
-                            <span class="d-none">
-                                {{$user->profile->first_name}}
-                                {{$user->profile->last_name}}
-                            </span>
-                        </div>
-                    @endforeach
-                </div>
-            </div>
-            <div class="info-details-part d-none">
-                @foreach ($users as $user)
-                    <div class="info-detail-item" value="{{$user->id}}">
-                        <div class="info-email">{{$user->email}}</div>
-                    </div>
-                @endforeach
-            </div>
-            @if ($isSuperAdmin)
-                <div class="button-part mt-30px">
-                    <button id="create-user-button">CREATE NEW USER</button>
-                </div>
-            @endif
-            <form class="my-profile-part" id="create-user-form">
-                @csrf
-                <input type="hidden" id="userid" name="userid" value="{{count($users) > 0 ? $users[0]->id : null}}" />
-                <div class="info-details">
-                    <div class="info-detail">
-                        <div class="info-head">First Name</div>
-                        <div class="info-value">
-                            <input type="text" id="data1" name="firstName" text="First Name" value="" class="form-input-custom" />
-                        </div>
-                    </div>
-                    <div class="info-detail">
-                        <div class="info-head">Last Name</div>
-                        <div class="info-value">
-                            <input type="text" id="data2" name="lastName" text="Last Name" value="" class="form-input-custom" />
-                        </div>
-                    </div>
-                    <div class="info-detail">
-                        <div class="info-head">Street</div>
-                        <div class="info-value">
-                            <input type="text" id="data3" name="street" text="Street" value="" class="form-input-custom" />
-                        </div>
-                    </div>
-                    <div class="info-detail">
-                        <div class="info-head">House Nr</div>
-                        <div class="info-value">
-                            <input type="text" id="data4" name="houseNr" text="House Nr" value="" class="form-input-custom" />
-                        </div>
-                    </div>
-                    <div class="info-detail">
-                        <div class="info-head">City</div>
-                        <div class="info-value">
-                            <input type="text" id="data5" name="city" text="City" value="" class="form-input-custom" />
-                        </div>
-                    </div>
-                    <div class="info-detail">
-                        <div class="info-head">Country</div>
-                        <div class="info-value" >
-                            <div class="country-select form-select-custom select-left-icon" id="country-select">
-                                <select class="" id="data6" name="country" text="Country">
-                                    <option value="0">select country</option>
-                                    @foreach($countries as $country)
-                                        <option value="{{$country->id}}"
-                                            data-data1="{{$country->name}}">{{$country->name}}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info-detail">
-                        <div class="info-head">Phone</div>
-                        <div class="info-value">
-                            <div class="form-select-custom phone-code-select select-left-icon" id="phone-code-select">
-                                <select id="data7" name="phoneCode" text="Phone Code">
-                                    <option value="0">select</option>
-                                    @foreach($phoneCodes as $phoneCode)
-                                        <option data-data1="+{{$phoneCode}}">+{{$phoneCode}}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-                            <input type="text" id="data8" name="phoneNumber" text="Phone Number" value="" class="form-input-custom phone-code-input" />
-                        </div>
-                    </div>
-                    <div class="info-detail">
-                        <div class="info-head">E-mail</div>
-                        <div class="info-value">
-                            <input type="text" id="data9" name="email" text="Email" value="" class="form-input-custom" />
-                        </div>
-                    </div>
-                    <div class="info-detail">
-                        <div class="info-head">User Name</div>
-                        <div class="info-value">
-                            <input type="text" id="data10" name="username" text="User Name" value="" class="form-input-custom" />
-                        </div>
-                    </div>
-                    <div class="info-detail">
-                        <div class="info-head">Password</div>
-                        <div class="info-value">
-                            <input type="password" id="data11" name="password" text="Password" value="" class="form-input-custom" />
-                        </div>
-                    </div>
-                    <div class="info-detail">
-                        <div class="info-head">User ID</div>
-                        <div class="info-value">
-                            <input type="text" id="data12" name="" text="User ID" value="" class="form-input-custom" />
-                        </div>
-                    </div>
-                    <div class="info-detail">
-                        <div class="info-head">Registration Date</div>
-                        <div class="info-value">
-                            <input type="text" id="data13" name="" text="Registration Date" value="" class="form-input-custom" />
-                        </div>
+                <div class="filter-right-section">
+                    <div id="export-but" class="export-but">EXPORT</div>
+                    <div id="export-all-but" class="export-but">EXPORT ALL</div>
+                    <input type="hidden" value="{{$page}}" id="page">
+                    <div>
+                        @if ($skip != 0)
+                            <i class="fa fa-angle-left" id="previous-page"></i>{{' '}}
+                        @endif
+                        <b>{{$skip + 1}}</b> - <b>{{$skip + $take > $count ? $count : $skip + $take}}</b> of <b>{{$count}}</b>{{' '}}
+                        @if ($skip + $take < $count)
+                            <i class="fa fa-angle-right" id="right-page"></i>
+                        @endif
                     </div>
                 </div>
-                <div class="info-button mt-35px">
-                    <button id="publish-but">{{__('PUBLISH')}}</button>
-                    <button id="remove-but">{{__('REMOVE USER')}}</button>
-                    <button id="export-but">{{__('EXPORT USER')}}</button>
-                    <button id="export-all-but">{{__('EXPORT ALL')}}</button>
-                </div>
-            </form>
-            <div class="arrow-body d-none">
-                <div id="arrow-back-button"><i class="fa fa-long-arrow-left"></i>Back</div>
-                <div id="arrow-next-button">Next<i class="fa fa-long-arrow-right"></i></div>
             </div>
-            <div class="arrow-index-body d-none">
-                <div id="arrow-index-back-button"><i class="fa fa-long-arrow-left"></i>Back</div>
-                <div id="arrow-index-next-button">Next<i class="fa fa-long-arrow-right"></i></div>
+            <div class="table-section">
+                <table class="manager-table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>No</th>
+                            <th>User ID</th>
+                            <th>Full Name</th>
+                            <th>Email</th>
+                            <th>Address</th>
+                            <th>Phone</th>
+                            <th>User Name</th>
+                            <th>Register Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($users as $key => $user)
+                            <tr value="{{$user->id}}">
+                                <td><input type="checkbox" class="checked-client" value="{{$user->id}}"></td>
+                                <td>{{$skip + $key + 1}}</td>
+                                <td>{{$user->id}}</td>
+                                <td>{{$user->profile->first_name}} {{$user->profile->last_name}}</td>
+                                <td>{{$user->email}}</td>
+                                <td>{{$user->profile->country->name}} {{$user->profile->country->city}} {{$user->profile->street}} {{$user->profile->house_number}}</td>
+                                <td>{{$user->phone_number}}</td>
+                                <td>{{$user->username}}</td>
+                                <td>{{$user->created_at}}</td>
+                            </tr>
+                        @endforeach
+                    </tbody>
+                </table>
             </div>
-        </div>
-        <div class="manager-right-body">
-            <div class="right-button" id="create-button-right">CREATE CLIENT</div>
-            <div class="right-button" id="update-button-right">UPDATE CLIENT</div>
-            <div class="right-button" id="delete-button-right">DELETE CLIENT</div>
-            <div class="right-button" id="export-button-right">EXPORT CLIENT</div>
-            <div class="right-button" id="export-all-button-right">EXPORT ALL</div>
         </div>
     </div>
 </div>

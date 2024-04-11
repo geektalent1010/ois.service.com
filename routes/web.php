@@ -122,6 +122,7 @@ Route::post('/password', 'LandingController@password')->name('password');
             Route::post('centerSelect', 'Admin\AdminManagerController@centerSelect')->name('admin.manager.centerSelect');
 
             Route::get('client', 'Admin\ClientManagerController@index')->name('admin.client.index');
+            Route::get('clientDetail', 'Admin\ClientManagerController@detailIndex')->name('admin.client.detail');
             Route::post('createClient', 'Admin\ClientManagerController@createClient')->name('admin.client.create');
             Route::post('updateClient', 'Admin\ClientManagerController@updateClient')->name('admin.client.update');
             Route::post('getClientInfo', 'Admin\ClientManagerController@getClientInfo')->name('admin.client.info');

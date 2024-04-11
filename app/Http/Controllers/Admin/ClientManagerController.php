@@ -13,7 +13,52 @@ use App\AdminLog;
 
 class ClientManagerController extends Controller
 {
-    public function index() {
+
+    public function index(Request $request) {
+        $page = $request->input('page') ?? 1;
+        $searchKey = $request->input('search') ?? "";
+        $isAllow = Auth::guard('admin')->user()->isAllowClientManager();
+        if(!$isAllow) {
+            return redirect()->route('admin.dashboard.index');
+        }
+        $take = 10;
+        $skip = ($page - 1) * $take;
+
+        $users = User::where('status', 1)
+            ->where('is_admin', 0)
+            ->where(function($query) use ($searchKey) {
+                $query->where('email', 'like', "%$searchKey%")
+                ->orWhereHas('profile', function($query1) use ($searchKey) {
+                    $query1->where('first_name', 'like', "%$searchKey%")
+                    ->orWhere('last_name', 'like', "%$searchKey%");
+                });
+            })
+            ->skip($skip)
+            ->take($take)
+            ->orderBy('email')
+            ->get();
+        $count = User::where('status', 1)
+            ->where('is_admin', 0)
+            ->where(function($query) use ($searchKey) {
+                $query->where('email', 'like', "%$searchKey%")
+                ->orWhereHas('profile', function($query1) use ($searchKey) {
+                    $query1->where('first_name', 'like', "%$searchKey%")
+                    ->orWhere('last_name', 'like', "%$searchKey%");
+                });
+            })
+            ->count();
+
+        return view('admin.client.index')
+            ->with('users', $users)
+            ->with('page', $page)
+            ->with('count', $count)
+            ->with('skip', $skip)
+            ->with('take', $take)
+            ->with('searchKey', $searchKey)
+            ->with('isSuperAdmin', Auth::guard('admin')->user()->isSuperAdmin());
+    }
+    public function detailIndex(Request $request) {
+        $id = $request->input('id') ?? 0;
         $isAllow = Auth::guard('admin')->user()->isAllowClientManager();
         if(!$isAllow) {
             return redirect()->route('admin.dashboard.index');
@@ -30,24 +75,17 @@ class ClientManagerController extends Controller
             ->pluck('phone_code')
             ->all();
 
-        Auth::guard('admin')->user()->isSuperAdmin() ?
-            $users = User::where('status', 1)
-                ->where('is_admin', 0)
-                ->orderBy('email')
-                ->get() :
-            $users = User::whereHas('profile', function($query) use ($userCountry) {
-                $query->whereHas('country', function($query) use ($userCountry) {
-                    $query->where('name', $userCountry);
-                });
-            })
-            ->where('status', 1)
-            ->where('is_admin', 0)
-            ->get();
+        if($id != 0) {
+            $user = User::where('id', $id)->first();
+        } else {
+            $user = "";
+        }
 
-        return view('admin.client.index')
+        return view('admin.client.detailIndex')
             ->with('countries', $countries)
             ->with('phoneCodes', $phoneCodes)
-            ->with('users', $users)
+            ->with('user', $user)
+            ->with('id', $id)
             ->with('isSuperAdmin', Auth::guard('admin')->user()->isSuperAdmin());
     }
 
@@ -66,7 +104,6 @@ class ClientManagerController extends Controller
             $res['status'] = 'duplicatedUsername';
             return json_encode($res);
         }
-
         $user->email = $request->input('email');
         $user->username = $request->input('username');
         $user->password = Hash::make($request->input('password'));
@@ -142,70 +179,6 @@ class ClientManagerController extends Controller
         return json_encode($res);
     }
 
-    public function getClientInfo(Request $request) {
-
-        if($request->input('id')) {
-            $id = $request->input('id');
-            $user = User::where('id', $id)->first();
-            $res['num'] = 1;
-        } else {
-            $searchIndex = $request->input('searchIndex');
-            $email = $request->input('search');
-            $userCountry = Auth::guard('admin')->user()->profile->country_center;
-
-            Auth::guard('admin')->user()->isSuperAdmin() ?
-                $users = User::with('profile')
-                    ->where('status', 1)
-                    ->where('is_admin', 0)
-                    ->where(function($query) use ($email) {
-                        $query->where('email', $email)
-                            ->orWhereHas('profile', function($query) use ($email) {
-                                $query->where('first_name', $email)
-                                    ->orWhere('last_name', $email);
-                            });
-                    })
-                    ->get() :
-                $users = User::with('profile')
-                    ->where('status', 1)
-                    ->where('is_admin', 0)
-                    ->where(function($query) use ($email) {
-                        $query->where('email', $email)
-                            ->orWhereHas('profile', function($query) use ($email) {
-                                $query->where('first_name', $email)
-                                    ->orWhere('last_name', $email);
-                            });
-                    })
-                    ->whereHas('profile.country', function($query) use ($userCountry) {
-                        $query->where('name', $userCountry);
-                    })
-                    ->get();
-            $user;
-            if($users[$searchIndex]) {
-                $user = $users[$searchIndex];
-            }
-            $res['num'] = count($users);
-        }
-
-
-        if($user) {
-            $res['status'] = 'success';
-            $res['userId'] = $user->id;
-            $res['firstName'] = $user->profile->first_name;
-            $res['lastName'] = $user->profile->last_name;
-            $res['street'] = $user->profile->street;
-            $res['houseNr'] = $user->profile->house_number;
-            $res['phoneNumber'] = $user->profile->phone_number;
-            $res['email'] = $user->email;
-            $res['city'] = $user->profile->city;
-            $res['country'] = $user->profile->country_id;
-            $res['username'] = $user->username;
-            $res['registDate'] = date('m-d-Y');
-        } else {
-            $res['status'] = 'nodata';
-        }
-        return json_encode($res);
-    }
-
     public function deleteClient(Request $request) {
         $userid = $request->input('userid');
         $user = User::find($userid);
@@ -227,7 +200,9 @@ class ClientManagerController extends Controller
     public function exportCSV(Request $request) {
         $userid = $request->input('userid');
         if($userid != -1) {
-            $results[0] = User::where('id', $userid)->first();
+            foreach($userid as $key => $user) {
+                $results[$key] = User::where('id', $userid[$key])->first();
+            }
         } else {
             $results = User::where('is_admin', '0')->get();
         }

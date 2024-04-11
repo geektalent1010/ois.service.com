@@ -5691,29 +5691,8 @@ body {
 
 .client-manager-section .manager-body {
   padding-bottom: 30px;
-  width: 50vw;
-  margin-left: 25vw;
-}
-
-.client-manager-section .manager-body .info-details-part {
-  max-height: 500px;
-  overflow-y: auto;
-}
-
-.client-manager-section .manager-body .info-details-part .info-detail-item {
-  border-top: 1px solid #266ea5;
-  border-bottom: 1px solid #266ea5;
-  padding: 5px 30px;
-  background-color: #003366;
-  cursor: pointer;
-  display: flex;
-  transition: 0.3s;
-  gap: 10px;
-}
-
-.client-manager-section .manager-body .info-details-part .info-detail-item:hover {
-  background-color: #266ea5;
-  transition: 0.3s;
+  width: 90vw;
+  margin-left: 5vw;
 }
 
 .client-manager-section .manager-body .main-title {
@@ -5726,39 +5705,191 @@ body {
   align-items: center;
 }
 
-.client-manager-section .manager-body .button-part {
+.client-manager-section .manager-body .filter-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
   width: 100%;
-  display: none;
-  justify-content: center;
 }
 
-.client-manager-section .manager-body .button-part button {
-  height: 44px;
-  width: 300px;
-  border-radius: 10rem;
-  font-size: 16px;
-  font-family: "DinPro", sans-serif;
-  cursor: pointer;
-  background-color: #003366;
+.client-manager-section .manager-body .filter-section .filter-left-section input {
+  background-color: transparent;
+  outline: none;
+  padding: 3px 7px;
   border: none;
   color: white;
-  transition: 0.3s;
-  outline: none;
 }
 
-.client-manager-section .manager-body .button-part button:hover {
-  background-color: #00a9ea;
+.client-manager-section .manager-body .filter-section .filter-right-section {
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+  align-items: center;
+}
+
+.client-manager-section .manager-body .filter-section .filter-right-section .export-but {
+  background-color: #003366;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.client-manager-section .manager-body .filter-section .filter-right-section .export-but:hover {
+  opacity: 0.7;
+}
+
+.client-manager-section .manager-body .filter-section .filter-right-section i {
+  cursor: pointer;
+}
+
+.client-manager-section .manager-body .filter-section .filter-right-section i:hover {
+  opacity: 0.7;
+}
+
+.client-manager-section .manager-body .table-section {
+  margin-top: 10px;
+  overflow-x: auto;
+}
+
+.client-manager-section .manager-body .table-section::-webkit-scrollbar {
+  height: 10px;
+  cursor: pointer;
+}
+
+.client-manager-section .manager-body .table-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.client-manager-section .manager-body .table-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
+}
+
+.client-manager-section .manager-body .table-section .manager-table {
+  width: 100%;
+}
+
+.client-manager-section .manager-body .table-section .manager-table th,
+.client-manager-section .manager-body .table-section .manager-table td {
+  padding: 5px 5px;
+  text-align: center;
+}
+
+.client-manager-section .manager-body .table-section .manager-table th {
+  background-color: #003366;
+}
+
+.client-manager-section .manager-body .table-section .manager-table th:nth-of-type(3) {
+  min-width: 80px;
+}
+
+.client-manager-section .manager-body .table-section .manager-table th:nth-of-type(4) {
+  min-width: 150px;
+}
+
+.client-manager-section .manager-body .table-section .manager-table th:nth-of-type(5) {
+  min-width: 200px;
+}
+
+.client-manager-section .manager-body .table-section .manager-table th:nth-of-type(6) {
+  min-width: 300px;
+}
+
+.client-manager-section .manager-body .table-section .manager-table th:nth-of-type(7) {
+  min-width: 150px;
+}
+
+.client-manager-section .manager-body .table-section .manager-table th:nth-of-type(8) {
+  min-width: 100px;
+}
+
+.client-manager-section .manager-body .table-section .manager-table th:nth-of-type(9) {
+  min-width: 200px;
+}
+
+.client-manager-section .manager-body .table-section .manager-table tbody tr {
+  cursor: pointer;
   transition: 0.3s;
 }
 
-.client-manager-section .manager-body .my-profile-part {
+.client-manager-section .manager-body .table-section .manager-table tbody tr:hover {
+  background-color: #003366;
+  transition: 0.3s;
+}
+
+.client-manager-section .manager-body .table-section tr,
+.client-manager-section .manager-body .table-section th,
+.client-manager-section .manager-body .table-section td {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.client-manager-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.client-manager-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.client-manager-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
+}
+
+@media only screen and (max-width: 1080px) {
+  .client-manager-section .manager-body {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .client-manager-section .manager-right-body {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .client-manager-section .manager-body {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.client-manager-detail {
+  width: 100vw;
+  height: calc(100vh - 120px);
+  margin-top: 80px;
+  display: flex;
+  overflow-y: auto;
+}
+
+.client-manager-detail .manager-body {
+  padding-bottom: 30px;
+  width: 50vw;
+  margin-left: 25vw;
+}
+
+.client-manager-detail .manager-body .main-title {
+  font-size: 21px;
+  font-family: "DinPro Medium", sans-serif;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.client-manager-detail .manager-body .my-profile-part {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding-bottom: 35px;
+  margin-top: 30px;
 }
 
-.client-manager-section .manager-body .my-profile-part .info-details {
+.client-manager-detail .manager-body .my-profile-part .info-details {
   display: flex;
   flex-direction: column;
   font-size: 16px;
@@ -5766,7 +5897,7 @@ body {
   width: 100%;
 }
 
-.client-manager-section .manager-body .my-profile-part .info-details .info-detail {
+.client-manager-detail .manager-body .my-profile-part .info-details .info-detail {
   display: flex;
   border-top: 2px solid transparent;
   height: 48px;
@@ -5774,7 +5905,7 @@ body {
   width: 100%;
 }
 
-.client-manager-section .manager-body .my-profile-part .info-details .info-detail .info-head {
+.client-manager-detail .manager-body .my-profile-part .info-details .info-detail .info-head {
   width: 33.3%;
   background-color: #003366;
   display: flex;
@@ -5782,14 +5913,14 @@ body {
   align-items: center;
 }
 
-.client-manager-section .manager-body .my-profile-part .info-details .info-detail .info-value {
+.client-manager-detail .manager-body .my-profile-part .info-details .info-detail .info-value {
   width: 66.6%;
   background-color: #266ea5;
   display: flex;
   align-items: center;
 }
 
-.client-manager-section .manager-body .my-profile-part .info-details .info-detail .info-value .form-input-custom {
+.client-manager-detail .manager-body .my-profile-part .info-details .info-detail .info-value .form-input-custom {
   width: 100%;
   height: 100%;
   padding-left: 40px;
@@ -5800,32 +5931,32 @@ body {
   color: white;
 }
 
-.client-manager-section .manager-body .my-profile-part .info-details .info-detail .info-value .phone-code-select {
+.client-manager-detail .manager-body .my-profile-part .info-details .info-detail .info-value .phone-code-select {
   width: 40%;
   height: 100%;
 }
 
-.client-manager-section .manager-body .my-profile-part .info-details .info-detail .info-value .phone-code-input {
+.client-manager-detail .manager-body .my-profile-part .info-details .info-detail .info-value .phone-code-input {
   width: 60%;
   padding-left: 0;
 }
 
-.client-manager-section .manager-body .my-profile-part .info-details .info-detail .info-value .form-select-custom.select-left-icon .select-selected {
+.client-manager-detail .manager-body .my-profile-part .info-details .info-detail .info-value .form-select-custom.select-left-icon .select-selected {
   padding-left: 7px;
   gap: 8px;
 }
 
-.client-manager-section .manager-body .my-profile-part .info-details .info-detail .info-value .form-select-custom {
+.client-manager-detail .manager-body .my-profile-part .info-details .info-detail .info-value .form-select-custom {
   width: 100%;
 }
 
-.client-manager-section .manager-body .my-profile-part .info-button {
+.client-manager-detail .manager-body .my-profile-part .info-button {
   display: none;
   justify-content: center;
   gap: 15px;
 }
 
-.client-manager-section .manager-body .my-profile-part .info-button button {
+.client-manager-detail .manager-body .my-profile-part .info-button button {
   height: 44px;
   width: 300px;
   border-radius: 10rem;
@@ -5839,44 +5970,12 @@ body {
   outline: none;
 }
 
-.client-manager-section .manager-body .my-profile-part .info-button button:hover {
+.client-manager-detail .manager-body .my-profile-part .info-button button:hover {
   background-color: #00a9ea;
   transition: 0.3s;
 }
 
-.client-manager-section .manager-body .arrow-body {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  gap: 30px;
-  margin-top: 30px;
-  padding-bottom: 30px;
-}
-
-.client-manager-section .manager-body .arrow-body > div {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-  cursor: pointer;
-}
-
-.client-manager-section .manager-body .arrow-index-body {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  gap: 30px;
-  margin-top: 30px;
-  padding-bottom: 30px;
-}
-
-.client-manager-section .manager-body .arrow-index-body > div {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-  cursor: pointer;
-}
-
-.client-manager-section .manager-right-body {
+.client-manager-detail .manager-right-body {
   width: 25vw;
   padding-top: 80px;
   display: flex;
@@ -5884,7 +5983,7 @@ body {
   align-items: flex-end;
 }
 
-.client-manager-section .manager-right-body .right-button {
+.client-manager-detail .manager-right-body .right-button {
   width: 150px;
   background-color: #003366;
   height: 45px;
@@ -5897,16 +5996,16 @@ body {
   font-size: 14px;
 }
 
-.client-manager-section .manager-right-body .right-button:hover:not(.disabled) {
+.client-manager-detail .manager-right-body .right-button:hover:not(.disabled) {
   background-color: #00a9ea;
   transition: 0.3s;
 }
 
-.client-manager-section .manager-right-body .right-button:not(:first-child) {
+.client-manager-detail .manager-right-body .right-button:not(:first-child) {
   margin-top: 2px;
 }
 
-.client-manager-section .manager-right-body .right-button.disabled {
+.client-manager-detail .manager-right-body .right-button.disabled {
   opacity: 0.7;
   cursor: not-allowed;
 }
@@ -5927,37 +6026,33 @@ body {
 }
 
 @media only screen and (max-width: 1080px) {
-  .client-manager-section .manager-body {
+  .client-manager-detail .manager-body {
     width: 70%;
     margin-left: 15%;
   }
 
-  .client-manager-section .manager-body .button-part {
+  .client-manager-detail .manager-body .my-profile-part .info-button {
     display: flex;
   }
 
-  .client-manager-section .manager-body .my-profile-part .info-button {
-    display: flex;
-  }
-
-  .client-manager-section .manager-right-body {
+  .client-manager-detail .manager-right-body {
     display: none;
   }
 }
 
 @media only screen and (max-width: 575.98px) {
-  .client-manager-section .manager-body {
+  .client-manager-detail .manager-body {
     width: 100%;
     margin-left: 0;
   }
 
-  .client-manager-section .manager-body .my-profile-part .info-button {
+  .client-manager-detail .manager-body .my-profile-part .info-button {
     flex-direction: column;
     width: 100%;
     align-items: center;
   }
 
-  .client-manager-section .manager-body .my-profile-part .info-button button {
+  .client-manager-detail .manager-body .my-profile-part .info-button button {
     width: 80%;
   }
 }
