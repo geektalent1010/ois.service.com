@@ -22,9 +22,17 @@
                 </td>
             </table>
 
+            <table class="welcome-text-body" align="center">
+                <tr>
+                    <td class="welcome-greet">
+                        If you want to reset your password: <a href="{{ route('offices.index') }}">Click here</a>
+                    </td>
+                </tr>
+            </table>
+
             <div class="welcome-top-footer">
                 <div class="welcome-footer-center">
-                    <div class="center-text">If you want to format the password: </div>
+                    <div class="center-text">OIS GLOBAL CENTERS</div>
                     <div class="center-click">
                         <a href="{{ route('admin.forgot.reset', ['confirmId' => $userData['confirmId']]) }}">Click here</a>
                     </div>
