@@ -25,7 +25,7 @@
             <table class="welcome-text-body" align="center">
                 <tr>
                     <td class="welcome-greet">
-                        If you want to reset your password: <a href="{{ route('offices.index') }}">Click here</a>
+                        If you want to reset your password: <a href="{{ route('admin.forgot.reset', ['confirmId' => $userData['confirmId']]) }}">Click here</a>
                     </td>
                 </tr>
             </table>
