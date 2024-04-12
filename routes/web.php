@@ -102,6 +102,8 @@ Route::post('/password', 'LandingController@password')->name('password');
 
 
     Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('forgot', 'Admin\ForgotPasswordController@index')->name('forgot.index');
+    Route::get('forgotReset', 'Admin\ForgotPasswordController@reset')->name('forgot.reset');
 
     Route::prefix('admin')->group(function () {
         Route::get('login', 'AdminAuth\LoginController@showLoginForm')->name('admin.login');

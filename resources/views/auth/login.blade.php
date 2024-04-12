@@ -61,7 +61,7 @@
                         </button>
 
                         @if (Route::has('password.request'))
-                            <a class="btn btn-link text-white" href="javascript:;">
+                            <a class="btn btn-link text-white" href="{{route('forgot.index')}}">
                                 {{ __('forgot_your_password?') }}
                             </a>
                         @endif
