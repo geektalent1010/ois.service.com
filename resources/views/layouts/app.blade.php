@@ -26,6 +26,18 @@
     <script type="text/javascript" src="{{ asset('plugin/combodate-1.0.7/combodate.js') }}"></script>
     <script type="text/javascript" src="{{ asset('plugin/bootstrap-toastr/toastr.min.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KX83Z102NF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KX83Z102NF');
+    </script>
 </head>
 
 <body>
