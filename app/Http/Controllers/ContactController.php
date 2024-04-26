@@ -30,7 +30,7 @@ class ContactController extends Controller
             'subject' => $request->input('subject'),
             'message' => $request->input('message'),
         ];
-        $support = 'jikhalia@oisservices.com';
+        $support = 'customer.support@oisservices.com';
         Mail::to($support)->send(new SupportEmail($data));
         return true;
     }
