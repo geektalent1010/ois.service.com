@@ -57,7 +57,7 @@
                     <div class="info-detail">
                         <div class="info-head">Role</div>
                         <div class="info-value">
-                            <input type="text" id="data7" name="role" text="Role" value="Admin" disabled class="form-input-custom" />
+                            <input type="text" id="data7" name="role" text="Role" value="{{ $user->is_admin == 1 ? "Admin" : "Super Admin" }}" disabled class="form-input-custom" />
                         </div>
                     </div>
                     <div class="info-detail">
