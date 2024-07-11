@@ -36,10 +36,11 @@
                             <div class="form-select-custom">
                                 <select name="subject" id="subject-select">
                                     <option value="0" >{{__('subject')}}</option>
-                                    <option value="Subject 1" data-data1="Subject 1"></option>
-                                    <option value="Subject 2" data-data1="Subject 2"></option>
-                                    <option value="Subject 3" data-data1="Subject 3"></option>
-                                    <option value="Subject 4" data-data1="Subject 4"></option>
+                                    <option value="Visa application" data-data1="Visa application"></option>
+                                    <option value="Passport Application" data-data1="Passport Application"></option>
+                                    <option value="NIN Enrolment" data-data1="NIN Enrolment"></option>
+                                    <option value="BVN Entolment" data-data1="BVN Entolment"></option>
+                                    <option value="Others" data-data1="Others"></option>
                                 </select>
                             </div>
                             <textarea type="text" class="input-field" name="message" id="message" placeholder="{{__('message_L')}}" rows="4"></textarea>
