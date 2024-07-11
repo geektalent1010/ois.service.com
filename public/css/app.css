@@ -241,6 +241,21 @@
   }
 }
 
+.main-bg .landing-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.main-bg .landing-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main-bg .landing-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
+}
+
 .foot-section {
   padding: 80px 0px;
   background-color: #005696;
@@ -893,6 +908,21 @@
   font-family: "DinPro Bold", sans-serif;
 }
 
+.register-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.register-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
+}
+
 @media only screen and (max-width: 787.98px) {
   .register-section .form-section {
     width: 100%;
@@ -1053,6 +1083,21 @@
   font-size: 14px;
 }
 
+.profile-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.profile-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profile-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
+}
+
 @media only screen and (max-width: 787.98px) {
   .profile-section .form-section {
     width: 100%;
@@ -1081,6 +1126,21 @@
   align-items: center;
   overflow-y: auto;
   z-index: 2;
+}
+
+.calendar-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.calendar-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.calendar-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
 }
 
 .files-section {
@@ -1156,6 +1216,21 @@
   text-align: center;
 }
 
+.main-bg .container-section .news-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.main-bg .container-section .news-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main-bg .container-section .news-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
+}
+
 @media only screen and (max-width: 1080px) {
   .main-bg .container-section .shopping-section .title {
     font-size: 24px;
@@ -1225,6 +1300,21 @@
 .booking-section .click-here-button:disabled,
 .booking-section .click-here-button[disabled] {
   opacity: 1 !important;
+}
+
+.booking-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.booking-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.booking-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
 }
 
 .welcome-body {
@@ -1523,6 +1613,21 @@
 .main-bg .intro-section .content-section .block-section .text-section .button-section a:hover {
   background: #00a9ea;
   border: 0.1rem solid #00a9ea;
+}
+
+.main-bg .intro-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.main-bg .intro-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main-bg .intro-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
 }
 
 .desktop-version {
@@ -1964,6 +2069,21 @@ body[data-aos-easing=ease-out-back] [data-aos] {
   display: none;
 }
 
+.solution-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.solution-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.solution-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
+}
+
 @media only screen and (max-width: 575.98px) {
   .solution-section .image-section {
     background-position: unset;
@@ -2141,6 +2261,21 @@ body[data-aos-easing=ease-out-back] [data-aos] {
   width: 120px;
 }
 
+.main-bg .services-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.main-bg .services-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main-bg .services-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
+}
+
 @media only screen and (max-width: 1080px) {
   .main-bg .services-section .title-section .title {
     font-size: 24px;
@@ -2280,6 +2415,21 @@ body[data-aos-easing=ease-out-back] [data-aos] {
   text-align: justify;
 }
 
+.main-bg .faq-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.main-bg .faq-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main-bg .faq-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
+}
+
 @media only screen and (max-width: 1080px) {
   .main-bg .faq-section .content-section {
     width: 80%;
@@ -2394,6 +2544,21 @@ body[data-aos-easing=ease-out-back] [data-aos] {
 
 .main-bg .innovation-section .content-section .block-section .icon-section img {
   width: 120px;
+}
+
+.main-bg .innovation-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.main-bg .innovation-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main-bg .innovation-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -2612,6 +2777,21 @@ body[data-aos-easing=ease-out-back] [data-aos] {
 
 .main-bg .security-section .content-section .block-section .icon-section img {
   width: 120px;
+}
+
+.main-bg .security-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.main-bg .security-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main-bg .security-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -3462,6 +3642,21 @@ body[data-aos-easing=ease-out-back] [data-aos] {
   }
 }
 
+.contact-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.contact-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
+}
+
 .container-section .shopping-section {
   height: calc(100vh - 120px);
   position: absolute;
@@ -3519,6 +3714,21 @@ body[data-aos-easing=ease-out-back] [data-aos] {
   color: white;
   line-height: 0px;
   text-align: center;
+}
+
+.container-section .shopping-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.container-section .shopping-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container-section .shopping-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -3600,6 +3810,21 @@ body[data-aos-easing=ease-out-back] [data-aos] {
   text-align: center;
 }
 
+.main-bg .container-section .passport-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.main-bg .container-section .passport-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main-bg .container-section .passport-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
+}
+
 @media only screen and (max-width: 1080px) {
   .main-bg .container-section .shopping-section .title {
     font-size: 24px;
@@ -3679,6 +3904,21 @@ body[data-aos-easing=ease-out-back] [data-aos] {
   text-align: center;
 }
 
+.main-bg .container-section .nin-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.main-bg .container-section .nin-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main-bg .container-section .nin-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
+}
+
 @media only screen and (max-width: 1080px) {
   .main-bg .container-section .shopping-section .title {
     font-size: 24px;
@@ -3756,6 +3996,21 @@ body[data-aos-easing=ease-out-back] [data-aos] {
   color: white;
   line-height: 0px;
   text-align: center;
+}
+
+.container-section .money-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.container-section .money-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container-section .money-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -4095,6 +4350,21 @@ body[data-aos-easing=ease-out-back] [data-aos] {
   font-family: "Montserrat Regular", sans-serif;
   color: white;
   text-align: center;
+}
+
+.main-bg .ehealth-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.main-bg .ehealth-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main-bg .ehealth-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -4439,6 +4709,21 @@ body {
   opacity: 1 !important;
 }
 
+.application-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.application-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.application-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
+}
+
 .checklists-section {
   width: 100%;
   height: calc(100vh - 120px);
@@ -4708,6 +4993,21 @@ body {
 
 .checklists-section #document .card:first-child .card-header .btn-header-link {
   margin-top: 0;
+}
+
+.checklists-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.checklists-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checklists-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
 }
 
 @media only screen and (max-width: 787.98px) {
@@ -5073,6 +5373,21 @@ body {
   margin-top: 0;
 }
 
+.bvn-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.bvn-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bvn-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
+}
+
 @media only screen and (max-width: 787.98px) {
   .bvn-section .form-section {
     width: 100%;
@@ -5168,6 +5483,21 @@ body {
   .container-section .video-section-mobile {
     display: block;
   }
+}
+
+.client-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.client-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.client-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
 }
 
 .admin-profile-section {

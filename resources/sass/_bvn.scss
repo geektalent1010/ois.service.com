@@ -10,7 +10,6 @@
     z-index: 2;
 
     .checklists-section-content {
-
         .checklists-section-body {
             display: flex;
             flex-direction: column;
@@ -21,7 +20,7 @@
 
     .main-title {
         font-size: 21px;
-        font-family: 'DinPro Medium', sans-serif;
+        font-family: "DinPro Medium", sans-serif;
         height: 50px;
         min-height: 50px;
         display: flex;
@@ -120,7 +119,7 @@
                     -ms-border-radius: 20px;
                     border-radius: 20px;
                     font-size: 16px;
-                    font-family: 'DinPro', sans-serif;
+                    font-family: "DinPro", sans-serif;
                     border: none;
                     color: $white;
                     outline: none;
@@ -194,14 +193,14 @@
 
                 p {
                     color: white;
-                    font-family: 'DinPro', sans-serif;
+                    font-family: "DinPro", sans-serif;
                     font-size: 16px;
                     margin-left: 30px;
                 }
 
                 label {
                     color: white;
-                    font-family: 'DinPro', sans-serif;
+                    font-family: "DinPro", sans-serif;
                     font-size: 16px;
                 }
 
@@ -211,7 +210,7 @@
                 }
 
                 .country {
-                    font-family: 'DinPro Medium', sans-serif;
+                    font-family: "DinPro Medium", sans-serif;
                     // margin-top: 38px;
                 }
 
@@ -227,7 +226,7 @@
                         -ms-border-radius: 20px;
                         border-radius: 20px;
                         font-size: 16px;
-                        font-family: 'DinPro', sans-serif;
+                        font-family: "DinPro", sans-serif;
                         cursor: pointer;
                         border: 0.1rem solid $hover-color;
                         text-decoration: none;
@@ -370,6 +369,21 @@
     }
 }
 
+.bvn-section::-webkit-scrollbar {
+    width: 10px;
+    cursor: pointer;
+}
+
+.bvn-section::-webkit-scrollbar-thumb {
+    background-color: #003366;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bvn-section::-webkit-scrollbar-track {
+    background-color: #0f609c;
+}
+
 @media only screen and (max-width: 787.98px) {
     .bvn-section {
         .form-section {
@@ -378,7 +392,6 @@
             padding-right: 15px;
 
             .form-group {
-
                 .offices-body {
                     .basic-info {
                         flex-direction: column;

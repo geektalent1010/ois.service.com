@@ -286,6 +286,21 @@
     }
 }
 
+.checklists-section::-webkit-scrollbar{
+    width: 10px;
+    cursor: pointer;
+}
+
+.checklists-section::-webkit-scrollbar-thumb {
+    background-color: #003366;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checklists-section::-webkit-scrollbar-track {
+    background-color: #0f609c;
+}
+
 @media only screen and (max-width: 787.98px) {
     .checklists-section {
         .form-section {

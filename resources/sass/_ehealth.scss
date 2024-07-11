@@ -71,7 +71,7 @@
 
             .reviewing-title {
                 font-size: 18px;
-                font-family: 'Montserrat SemiBold', sans-serif;
+                font-family: "Montserrat SemiBold", sans-serif;
                 margin-bottom: 40px;
                 color: white;
                 text-align: center;
@@ -79,7 +79,7 @@
 
             .title {
                 font-size: 28px;
-                font-family: 'Montserrat Medium', sans-serif;
+                font-family: "Montserrat Medium", sans-serif;
                 margin-top: 40px;
                 margin-bottom: 40px;
                 color: white;
@@ -88,11 +88,26 @@
 
             .subtitle {
                 font-size: 16px;
-                font-family: 'Montserrat Regular', sans-serif;
+                font-family: "Montserrat Regular", sans-serif;
                 color: white;
                 text-align: center;
             }
         }
+    }
+
+    .ehealth-section::-webkit-scrollbar {
+        width: 10px;
+        cursor: pointer;
+    }
+
+    .ehealth-section::-webkit-scrollbar-thumb {
+        background-color: #003366;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .ehealth-section::-webkit-scrollbar-track {
+        background-color: #0f609c;
     }
 }
 
