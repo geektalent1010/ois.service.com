@@ -156,7 +156,14 @@
         }
 
         function toggleNisVisaModal() {
-            nis_visa_modal.classList.toggle("show-modal");
+            
+            if (!localStorage.getItem('isVisible')) {
+                nis_visa_modal.classList.toggle("show-modal");
+                localStorage.setItem('isVisible', JSON.stringify(true));
+            }
+            else {
+                    window.location.href='{{ route('application.index') }}'
+            }
         }
 
         function windowOnClick(event) {

@@ -3843,100 +3843,6 @@ body[data-aos-easing=ease-out-back] [data-aos] {
   }
 }
 
-.main-bg .container-section .video-section {
-  min-height: calc(100vh - 120px);
-  top: 80px;
-}
-
-.main-bg .container-section .video-section-mobile {
-  min-height: calc(100vh - 120px);
-  top: 80px;
-}
-
-.main-bg .container-section .menu-bg {
-  min-height: calc(100vh - 120px);
-  top: 80px;
-}
-
-.main-bg .container-section .menu-bg-mobile {
-  min-height: calc(100vh - 120px);
-  top: 80px;
-}
-
-.main-bg .container-section .nin-section {
-  height: calc(100vh - 120px);
-  position: absolute;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: 2;
-  top: 80px;
-  overflow-y: scroll;
-}
-
-.main-bg .container-section .nin-section .nin-section-content {
-  min-height: calc(100vh - 120px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.main-bg .container-section .nin-section .icon {
-  width: 120px;
-}
-
-.main-bg .container-section .nin-section .title {
-  font-size: 28px;
-  font-family: "Montserrat Medium", sans-serif;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  color: white;
-  text-align: center;
-}
-
-.main-bg .container-section .nin-section .subtitle {
-  font-size: 16px;
-  font-family: "Montserrat Regular", sans-serif;
-  color: white;
-  line-height: 0px;
-  text-align: center;
-}
-
-.main-bg .container-section .nin-section::-webkit-scrollbar {
-  width: 10px;
-  cursor: pointer;
-}
-
-.main-bg .container-section .nin-section::-webkit-scrollbar-thumb {
-  background-color: #003366;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.main-bg .container-section .nin-section::-webkit-scrollbar-track {
-  background-color: #0f609c;
-}
-
-@media only screen and (max-width: 1080px) {
-  .main-bg .container-section .shopping-section .title {
-    font-size: 24px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-}
-
-@media only screen and (max-width: 575.98px) {
-  .main-bg .container-section .video-section {
-    display: none;
-  }
-
-  .main-bg .container-section .video-section-mobile {
-    display: block;
-  }
-}
-
 .container-section .menu-bg {
   top: 0;
 }
@@ -5047,10 +4953,6 @@ body {
   justify-content: flex-end;
 }
 
-.bvn-section .form-section {
-  width: 680px;
-}
-
 .bvn-section .form-section .form-label {
   font-size: 12px;
   margin-left: 28px;
@@ -5396,6 +5298,388 @@ body {
   }
 
   .bvn-section .form-section .form-group .offices-body .basic-info {
+    flex-direction: column;
+  }
+}
+
+.nin-section {
+  width: 100%;
+  height: calc(100vh - 120px);
+  position: absolute;
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  z-index: 2;
+}
+
+.nin-section .checklists-section-content .checklists-section-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh - 120px);
+}
+
+.nin-section .main-title {
+  font-size: 21px;
+  font-family: "DinPro Medium", sans-serif;
+  height: 50px;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.nin-section .form-section {
+  width: 680px;
+}
+
+.nin-section .form-section .form-label {
+  font-size: 12px;
+  margin-left: 28px;
+}
+
+.nin-section .form-section .form-group .form-control {
+  background: rgba(255, 255, 255, 0.1490196078);
+  border: none;
+  border-radius: 10rem;
+  box-shadow: none;
+  height: 44px;
+  font-weight: 400;
+  outline: medium none;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 16px;
+  font-family: "DinPro", sans-serif;
+  line-height: 1.4;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.nin-section .form-section .form-group .form-control:-webkit-autofill,
+.nin-section .form-section .form-group .form-control:-webkit-autofill:hover,
+.nin-section .form-section .form-group .form-control:-webkit-autofill:focus {
+  caret-color: white;
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(33, 44, 88, 0.2509803922) inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.nin-section .form-section .form-group .form-control:hover,
+.nin-section .form-section .form-group .form-control:focus {
+  box-shadow: none;
+}
+
+.nin-section .form-section .form-group .form-control::-webkit-input-placeholder {
+  color: white !important;
+}
+
+.nin-section .form-section .form-group .form-control::-moz-placeholder {
+  color: white !important;
+}
+
+.nin-section .form-section .form-group .form-control:-moz-placeholder {
+  color: white !important;
+}
+
+.nin-section .form-section .form-group .form-control:-ms-input-placeholder {
+  color: white !important;
+}
+
+.nin-section .form-section .form-group .info-box {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+}
+
+.nin-section .form-section .form-group .info-box .search-field {
+  position: relative;
+}
+
+.nin-section .form-section .form-group .info-box .search-field .search-icon {
+  visibility: visible;
+  width: 16px;
+  position: absolute;
+  top: 14px;
+  right: 18px;
+}
+
+.nin-section .form-section .form-group .info-box .input-field {
+  width: 100%;
+  height: 44px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: rgba(255, 255, 255, 0.1490196078);
+  border-radius: 20px;
+  font-size: 16px;
+  font-family: "DinPro", sans-serif;
+  border: none;
+  color: white;
+  outline: none;
+}
+
+.nin-section .form-section .form-group .info-box .input-field::-moz-placeholder {
+  color: white;
+}
+
+.nin-section .form-section .form-group .info-box .input-field::placeholder {
+  color: white;
+}
+
+.nin-section .form-section .form-group .info-box .input-field:hover {
+  box-shadow: none;
+  border: none;
+}
+
+.nin-section .form-section .form-group .info-box .input-field:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.nin-section .form-section .form-group .info-box .field-label {
+  color: #003366;
+  font-family: "DinPro", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  margin-top: 32px;
+}
+
+.nin-section .form-section .form-group .info-box .offices-menus {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  background-color: #b2c8db;
+  padding: 12px;
+  border-radius: 8px;
+  z-index: 1;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.nin-section .form-section .form-group .info-box .offices-menus .office-menu-item {
+  display: flex;
+  padding: 2px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #003366;
+}
+
+.nin-section .form-section .form-group .info-box .offices-menus .office-menu-item:hover {
+  background-color: #003366;
+  color: white;
+}
+
+.nin-section .form-section .form-group .info-box .offices-menus .office-menu-item .office-country {
+  min-width: 40%;
+}
+
+.nin-section .form-section .form-group .offices-body {
+  width: 100%;
+}
+
+.nin-section .form-section .form-group .offices-body .basic-info {
+  display: flex;
+}
+
+.nin-section .form-section .form-group .offices-body .country-flag {
+  padding-top: 6px;
+  width: 120px;
+}
+
+.nin-section .form-section .form-group .offices-body p {
+  color: white;
+  font-family: "DinPro", sans-serif;
+  font-size: 16px;
+  margin-left: 30px;
+}
+
+.nin-section .form-section .form-group .offices-body label {
+  color: white;
+  font-family: "DinPro", sans-serif;
+  font-size: 16px;
+}
+
+.nin-section .form-section .form-group .offices-body span {
+  color: white;
+  margin-left: 30px;
+}
+
+.nin-section .form-section .form-group .offices-body .country {
+  font-family: "DinPro Medium", sans-serif;
+}
+
+.nin-section .form-section .form-group .offices-body .contact-btn-section .contact-btn {
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #00a9ea;
+  color: #ffffff;
+  border-radius: 20px;
+  font-size: 16px;
+  font-family: "DinPro", sans-serif;
+  cursor: pointer;
+  border: 0.1rem solid #00a9ea;
+  text-decoration: none;
+}
+
+.nin-section .form-section .form-group .offices-body .contact-btn-section .contact-btn:hover {
+  background: #003366;
+  border: 0.1rem solid #003366;
+}
+
+.nin-section .form-section .form-group .prefix-label {
+  font-size: 12px;
+}
+
+.nin-section .form-section .form-group .confirm-button {
+  width: 100%;
+  height: 44px;
+  background: #00a9ea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  border-radius: 10rem;
+  font-size: 16px;
+  font-family: "DinPro", sans-serif;
+  border: 0.1rem solid #00a9ea;
+  cursor: pointer;
+}
+
+.nin-section .form-section .form-group .confirm-button:hover {
+  background: #003366 !important;
+  color: white !important;
+  border-color: #003366 !important;
+}
+
+.nin-section .form-section .form-group .confirm-button:focus,
+.nin-section .form-section .form-group .confirm-button:active {
+  background: #003366;
+  color: white;
+  border-color: #003366 !important;
+  outline: none;
+  box-shadow: none;
+}
+
+.nin-section .form-section .form-group .confirm-button.disabled,
+.nin-section .form-section .form-group .confirm-button:disabled,
+.nin-section .form-section .form-group .confirm-button[disabled] {
+  opacity: 1 !important;
+}
+
+.nin-section #document .card {
+  border: none;
+  border-radius: 0px;
+  background-color: transparent;
+}
+
+.nin-section #document .card .card-header {
+  border: 0;
+  border-radius: 0px;
+  padding: 0;
+  margin-bottom: 0px !important;
+}
+
+.nin-section #document .card .card-header .btn-header-link {
+  color: white;
+  display: block;
+  text-align: left;
+  padding: 20px;
+  padding-left: 42px;
+  font-size: 18px;
+  font-family: "DinPro Medium", sans-serif;
+  background: rgba(255, 255, 255, 0.1490196078);
+  margin-top: 2px;
+  border: none;
+  border-radius: 0px;
+}
+
+.nin-section #document .card .card-header .btn-header-link::after {
+  content: "\F068";
+  font-family: "FontAwesome";
+  font-weight: 900;
+  float: right;
+}
+
+.nin-section #document .card .card-header .btn-header-link.collapsed {
+  color: white;
+  background: rgba(255, 255, 255, 0.1490196078);
+}
+
+.nin-section #document .card .card-header .btn-header-link.collapsed::after {
+  content: "\F067";
+}
+
+.nin-section #document .card .card-header .btn-header-link:focus,
+.nin-section #document .card .card-header .btn-header-link:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.nin-section #document .card .card-body {
+  padding-left: 42px;
+  padding-right: 42px;
+  font-size: 16px;
+  font-family: "DinPro Light", sans-serif;
+  line-height: 1.5;
+  background-color: rgba(255, 255, 255, 0.062745098);
+  margin-top: 2px;
+}
+
+.nin-section #document .card .collapsing {
+  background: rgba(255, 255, 255, 0.062745098);
+  line-height: 30px;
+  color: white;
+  font-size: 16px;
+  font-family: "DinPro", sans-serif;
+}
+
+.nin-section #document .card .collapse {
+  border: 0;
+}
+
+.nin-section #document .card .collapse.show {
+  line-height: 30px;
+  color: white;
+  font-size: 16px;
+  font-family: "DinPro", sans-serif;
+}
+
+.nin-section #document .card:first-child .card-header .btn-header-link {
+  margin-top: 0;
+}
+
+.nin-section::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.nin-section::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nin-section::-webkit-scrollbar-track {
+  background-color: #0f609c;
+}
+
+@media only screen and (max-width: 787.98px) {
+  .nin-section .form-section {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .nin-section .form-section .form-group .offices-body .basic-info {
     flex-direction: column;
   }
 }

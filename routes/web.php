@@ -47,6 +47,8 @@ Route::post('/password', 'LandingController@password')->name('password');
         Route::get('/application', 'ApplicationController@index')->name('application.index');
 
         Route::get('/bvn-application', 'ApplicationController@bvn')->name('application.bvn');
+        
+        Route::get('/nin', 'ApplicationController@nin')->name('application.nin');
 
         Route::get('/checklists', 'ApplicationController@checklists')->name('checklists.index');
 
@@ -89,8 +91,6 @@ Route::post('/password', 'LandingController@password')->name('password');
     Route::get('/protection', 'ProtectionController@index')->name('protection.index');
 
     Route::get('/passport', 'PassportController@index')->name('passport.index');
-
-    Route::get('/nin', 'NinController@index')->name('nin.index');
 
     Route::get('/solutions', 'SolutionsController@index')->name('solutions.index');
     Route::get('/faq', 'FaqController@index')->name('faq.index');

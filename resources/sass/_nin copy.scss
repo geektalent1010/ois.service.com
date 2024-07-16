@@ -1,0 +1,106 @@
+.main-bg {
+    .container-section {
+        .video-section {
+            min-height: calc(100vh - 120px);
+            top: 80px;
+        }
+        .video-section-mobile {
+            min-height: calc(100vh - 120px);
+            top: 80px;
+        }
+        .menu-bg {
+            min-height: calc(100vh - 120px);
+            top: 80px;
+        }
+        .menu-bg-mobile {
+            min-height: calc(100vh - 120px);
+            top: 80px;
+        }
+        .nin-section {
+            height: calc(100vh - 120px);
+            position: absolute;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 2;
+            top: 80px;
+            overflow-y: scroll;
+
+            .nin-section-content {
+                min-height: calc(100vh - 120px);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .icon {
+                width: 120px;
+            }
+
+            .title {
+                font-size: 28px;
+                font-family: "Montserrat Medium", sans-serif;
+                margin-top: 40px;
+                margin-bottom: 40px;
+                color: white;
+                text-align: center;
+            }
+
+            .subtitle {
+                font-size: 16px;
+                font-family: "Montserrat Regular", sans-serif;
+                color: white;
+                line-height: 0px;
+                text-align: center;
+            }
+        }
+
+        .nin-section::-webkit-scrollbar{
+            width: 10px;
+            cursor: pointer;
+        }
+        
+        .nin-section::-webkit-scrollbar-thumb {
+            background-color: #003366;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .nin-section::-webkit-scrollbar-track {
+            background-color: #0f609c;
+        }
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .main-bg {
+        .container-section {
+            .shopping-section {
+                .title {
+                    font-size: 24px;
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .main-bg {
+        .container-section {
+            .video-section {
+                display: none;
+            }
+
+            .video-section-mobile {
+                display: block;
+            }
+
+            .shopping-section {
+            }
+        }
+    }
+}

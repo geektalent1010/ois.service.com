@@ -17,17 +17,17 @@
         <video autoplay muted loop class="video-section-mobile" playsinline>
             <source type="video/mp4">
         </video>
-        <div class="m-0 bvn-section">
+        <div class="m-0 nin-section">
             <div class="checklists-section-content mb-3">
                 <div class="checklists-section-body">
                     <div class="main-title">
-                        {{ __('bvn_enrolment_checklist') }}
+                        {{__('nin_enrolment_checklist')}}
                     </div>
                     <div class="section-body body-section mt-30px">
                         <form class="form-section">
-                            <div class="row justify-content-center">
-                                <div class="row row justify-content-center form-group">
-                                    <p class="form-label">{{ __('select_country') }} + {{ __('city_enrolling_from') }}</p>
+                            <div class="row mb-24px">
+                                <div class="col-md-6 form-group">
+                                    <p class="form-label">{{__('select_country')}} + {{__('city_enrolling_from')}}</p>
                                     <div class="info-box">
                                         <div class="search-field">
                                             <input type="text" class="input-field office-id-input" name="office"
@@ -55,6 +55,13 @@
                                             @endforeach
                                         </div>
                                     </div>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <p class="form-label">{{__('select_passport_type_applying_with')}}</p>
+                                    <select class="form-control webkit-style country-select w-100" name="visa_type"
+                                        id="visaType">
+                                        <option value="">Passport Type</option>
+                                    </select>
                                 </div>
                             </div>
 
@@ -126,18 +133,20 @@
                 data: send_data,
                 success: function(res) {
                     var html = '';
+                    var visaType = '';
                     if (res.length) {
                         for (var resIndex = 0; resIndex < res.length; resIndex++) {
                             html +=
                                 '<div class="d-flex align-items-start justify-content-center"><img class="country-flag" src="{{ asset('images/Flags') }}/' +
                                 res[resIndex].flag + '">';
-                            html += '<div class="basic-info"><div><p class="country mb-0">' + res[resIndex]
-                                .country + '</p>';
+                            html += '<div class="basic-info"><div><p class="country mb-0">' + res[resIndex].country + '</p>';
                             if (res[resIndex].address == 'COMING SOON') {
                                 html += '<p class="mb-0">' + res[resIndex].city + '</p>';
                                 for (const add of res[resIndex].address.split(' && ')) {
                                     html += '<p class="mb-0">' + add + '</p>';
                                 }
+                                visaType += '<option value="">Coming soon</option>';
+                                $('#visaType').html(visaType);
                             } else {
                                 for (const add of res[resIndex].address.split(' && ')) {
                                     html += '<p class="mb-0">' + add + '</p>'
@@ -156,10 +165,17 @@
                                 }
 
                                 html += '</div></div></div>';
+                                visaType += '<option value="">Passport Type</option>';
+                                visaType += '<option value="Diplomatic">Diplomatic Passport</option>';
+                                visaType += '<option value="Official">Official Passport</option>';
+                                visaType += '<option value="Standard">Standard Passport</option>';
+                                visaType += '<option value="UN">UN Passport</option>';
                             }
                         }
                         $('.offices-body').html(html);
                         $('.offices-body').show();
+
+                        $('#visaType').html(visaType);
                     } else {
                         html += '<p class="country mt-5">No Office</p>';
                         $('.offices-body').html(html);
@@ -198,7 +214,7 @@
             const filter = document.getElementsByClassName('checklistsFilters')[0];
             const rectFilter = filter.getBoundingClientRect();
             const height = rectFilter.height;
-            if (height > 0) {
+            if(height > 0) {
                 $('.bvn-section').animate({
                     scrollTop: rect.height - rectFilter.height
                 }, 500, 'swing')

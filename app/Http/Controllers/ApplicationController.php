@@ -24,6 +24,16 @@ class ApplicationController extends Controller
             ->with('offices', $offices);
     }
 
+    public function nin()
+    {
+        $offices = Office::orderBy('country', 'asc')->orderBy('city', 'asc')->get()->groupBy(function ($data) {
+            return $data->country;
+        });
+        return view('pages.application.ninApplication')
+            ->with('modalData', $this->modalData)
+            ->with('offices', $offices);
+    }
+
     public function checklists()
     {
         $offices = Office::orderBy('country', 'asc')->orderBy('city', 'asc')->get()->groupBy(function ($data) {
