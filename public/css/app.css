@@ -4957,6 +4957,10 @@ body {
   justify-content: flex-end;
 }
 
+.bvn-section .checklist-section-body {
+  width: 50%;
+}
+
 .bvn-section .form-section .form-label {
   font-size: 12px;
   margin-left: 28px;
