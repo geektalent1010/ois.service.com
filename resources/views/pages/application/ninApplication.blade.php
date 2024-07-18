@@ -42,7 +42,8 @@
                                                 @foreach ($cities as $key => $office)
                                                     <div class="d-flex office-menu-item"
                                                         data-country="{{ $office->country }} - {{ $office->city }}"
-                                                        data-id="{{ $office->id }}">
+                                                        data-id="{{ $office->id }}"
+                                                        data-location="{{ $office->location }}">
                                                         <div class="office-country">
                                                             @if ($key < 1)
                                                                 {{ $country }}
@@ -57,7 +58,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <p class="form-label">{{__('select_passport_type_applying_with')}}</p>
+                                    <p class="form-label">{{ __('select_passport_type_applying_with') }}</p>
                                     <select class="form-control webkit-style country-select w-100" name="visa_type"
                                         id="visaType">
                                         <option value="">Passport Type</option>
@@ -70,11 +71,7 @@
                                     <div class="offices-body"></div>
                                 </div>
                             </div>
-
-                            <div class="row mt-19px">
-                                <div class="col-md-12 checklistsFilters" id="filter-content">
-                                </div>
-                            </div>
+                            @include('_includes.ninTable')
                         </form>
                     </div>
                 </div>
@@ -97,7 +94,7 @@
         });
 
         var officeId = '';
-
+        var officeLocation = 0;
         $('.office-input').click(function() {
             $(".offices-menus").removeClass('d-none');
         });
@@ -119,8 +116,29 @@
         $('.office-menu-item').click(function() {
             $('.input-field').val($(this).data('country'));
             officeId = $(this).data('id');
+            officeLocation = $(this).data('location');
+            console.log($(this).data('location'), "$(this).data('location')")
             $('.office-id-input').val(officeId);
             showOffices();
+            $('#reqCard').show();
+            if (officeLocation == 1) {
+                $('#allCountryFeeInfo').hide();
+                $('#africaFeeInfo').show();
+                $('#nigeriaFeeInfo').hide();
+                $('#nigeriaVerifyFeeInfo').hide();
+            }
+            if (officeLocation == 2) {
+                $('#allCountryFeeInfo').hide();
+                $('#africaFeeInfo').hide();
+                $('#nigeriaFeeInfo').show();
+                $('#nigeriaVerifyFeeInfo').show();
+            }
+            if (officeLocation == 0) {
+                $('#allCountryFeeInfo').show();
+                $('#africaFeeInfo').hide();
+                $('#nigeriaFeeInfo').hide();
+                $('#nigeriaVerifyFeeInfo').hide();
+            }
         });
 
         function showOffices() {
@@ -139,7 +157,8 @@
                             html +=
                                 '<div class="d-flex align-items-start justify-content-center"><img class="country-flag" src="{{ asset('images/Flags') }}/' +
                                 res[resIndex].flag + '">';
-                            html += '<div class="basic-info"><div><p class="country mb-0">' + res[resIndex].country + '</p>';
+                            html += '<div class="basic-info"><div><p class="country mb-0">' + res[resIndex]
+                                .country + '</p>';
                             if (res[resIndex].address == 'COMING SOON') {
                                 html += '<p class="mb-0">' + res[resIndex].city + '</p>';
                                 for (const add of res[resIndex].address.split(' && ')) {
@@ -185,7 +204,7 @@
 
                         $('#visaType').html(visaType);
                     }
-                    checklistsFilters();
+                    // checklistsFilters();
                 },
                 error: function(err) {}
             });
@@ -197,7 +216,7 @@
 
         $('#visaType').on('change', function() {
             if (officeId && this.value) {
-                checklistsFilters();
+                // checklistsFilters();
             }
         });
 
@@ -214,7 +233,7 @@
             const filter = document.getElementsByClassName('checklistsFilters')[0];
             const rectFilter = filter.getBoundingClientRect();
             const height = rectFilter.height;
-            if(height > 0) {
+            if (height > 0) {
                 $('.bvn-section').animate({
                     scrollTop: rect.height - rectFilter.height
                 }, 500, 'swing')

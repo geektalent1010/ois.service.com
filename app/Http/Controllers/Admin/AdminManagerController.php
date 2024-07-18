@@ -245,7 +245,6 @@ class AdminManagerController extends Controller
                         });
                 })
                 ->get();
-            $user;
             if($users[$searchIndex]) {
                 $user = $users[$searchIndex];
             }

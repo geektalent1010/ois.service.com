@@ -4936,6 +4936,10 @@ body {
   z-index: 2;
 }
 
+.bvn-section .checklists-section-content {
+  width: 100%;
+}
+
 .bvn-section .checklists-section-content .checklists-section-body {
   display: flex;
   flex-direction: column;

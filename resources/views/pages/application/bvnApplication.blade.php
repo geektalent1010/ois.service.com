@@ -23,7 +23,7 @@
                     <div class="main-title">
                         {{ __('bvn_enrolment_checklist') }}
                     </div>
-                    <div class="section-body body-section mt-30px">
+                    <div class="checklist-section-body mt-30px">
                         <form class="form-section">
                             <div class="row justify-content-center">
                                 <div class="row row justify-content-center form-group">
