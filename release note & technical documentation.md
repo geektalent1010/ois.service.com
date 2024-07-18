@@ -6,7 +6,9 @@
 
 #### Overview of Application
 
-The OIS web application is designed to streamline and enhance user interactions by providing a robust platform for managing personal profiles, customizing dashboards, and receiving notifications. Key features include:
+OIS (Online Integrated Services) stands at the forefront of innovation as a leading provider of cutting-edge software solutions spanning various industries. Our journey began as a Visa Application Centre and Support Services Provider, and we have since evolved to extend our services to all of Nigeria's diplomatic missions worldwide. Our success is underpinned by advanced technology, unparalleled quality, scalability, and the seamless transferability of our solutions.
+
+Key features include:
 
 -   User-friendly interface for profile management.
 -   Customizable dashboard with various widgets.
@@ -15,26 +17,25 @@ This project is built using Laravel for the backend, MySQL for the database, SCS
 
 User roles and permissions are categorized as follows:
 
--   SuperAdmin: Has full access to all features and settings.
--   Admin: Has access to features and settings assigned by the SuperAdmin.
--   User: Has access to their personal dashboard and profile management only.
+-   **SuperAdmin**: Has full access to all features and settings.
+-   **Admin**: Has access to features and settings assigned by the SuperAdmin.
+-   **User**: Has access to their personal dashboard and profile management only.
 
 ### Getting Started
 
 #### Account Creation and Login
 
 1. **Create an Account**:
-    - Click on the "Sign Up" button on the homepage.
-    - Fill in the required information (name, email, password).
+    - Click on the "REGISTER" button on the homepage.
+    - Fill in the required information (ex: First Name, Last Name, Email, Password).
     - Verify your email address through the link sent to your inbox.
 2. **Log In**:
     - Enter your email and password on the login page.
-    - Click "Log In" to access your dashboard.
+    - Click "LOGIN" to access your dashboard.
 
 #### Navigating the Dashboard
 
 -   The dashboard is the main hub where you can manage your profile, customize widgets.
--   Use the sidebar menu to switch between different sections such as Profile, Dashboard Settings.
 
 ### Features
 
@@ -48,25 +49,6 @@ User roles and permissions are categorized as follows:
     -   Navigate to Security Settings in your profile.
     -   Enter your current password and the new password.
     -   Confirm the new password and click "Change Password".
-
-#### Dashboard Customization
-
--   **Customizing Layout and Widgets**:
-    -   Go to Dashboard Settings.
-    -   Drag and drop widgets to rearrange them.
-    -   Add new widgets by clicking "Add Widget" and selecting from the list.
--   **Setting Preferences**:
-    -   Adjust settings for each widget (e.g., data sources, display options).
-    -   Save configurations by clicking "Save Preferences".
-
-#### Notifications
-
--   **Managing Notification Settings**:
-    -   Access Notification Settings from the sidebar.
-    -   Choose which types of notifications to receive (e.g., email, SMS, push notifications).
--   **Viewing and Interacting with Notifications**:
-    -   Notifications are displayed in the Notification Center.
-    -   Click on a notification to view details or mark it as read.
 
 ### Troubleshooting
 
@@ -89,8 +71,6 @@ User roles and permissions are categorized as follows:
 
 -   **How do I change my email address?**
     -   Navigate to Profile > Email Settings and follow the instructions.
--   **Can I customize the notification sound?**
-    -   Yes, go to Notification Settings and select your preferred sound.
 
 ## API Documentation
 
