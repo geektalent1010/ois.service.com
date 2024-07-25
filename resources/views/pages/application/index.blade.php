@@ -19,11 +19,29 @@
         </video>
         <div class="application-section">
             <div class="application-section-content body-section">
-                <div class="mb-4">{{__('i_want_to_apply_for_visa')}}</div>
+                {{-- <div class="mb-4">{{__('i_want_to_apply_for_visa')}}</div>
 
                 <button class="click-here-button" onclick="window.location.href='{{ route('checklists.index') }}'">
                     {{__('click_here_U')}}
-                </button>
+                </button> --}}
+
+                <div class="row visa-section">
+                    <div class="col-md-6 visa-section-item">
+                        <div class="mb-4 visa-section-item-label">{{ __('i_want_to_apply_for_usa_visa') }}</div>
+
+                        <button class="click-here-button" onclick="window.location.href='{{ route('usaChecklists.index') }}'">
+                            {{ __('click_here_U') }}
+                        </button>
+                    </div>
+
+                    <div class="col-md-6 visa-section-item">
+                        <div class="mb-4 visa-section-item-label">{{ __('i_want_to_apply_for_nigerian_visa') }}</div>
+
+                        <button class="click-here-button" onclick="window.location.href='{{ route('nigerianChecklists.index') }}'">
+                            {{ __('click_here_U') }}
+                        </button>
+                    </div>
+                </div>
 
                 <div class="mt-5 mb-4">{{__('i_want_to_book_an_appointment')}}</div>
 

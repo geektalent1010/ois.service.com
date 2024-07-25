@@ -20,9 +20,21 @@
         justify-content: center;
     }
 
+    .visa-section{
+        min-width: 40%;
+
+        .visa-section-item{
+            padding:0 40px 40px 40px;
+            display: flex;
+            flex-direction:column;
+            align-items:center;
+        }
+    }
+
     .click-here-button {
         width: 100%;
         max-width: 300px;
+        min-width: 300px;
         height: 44px;
         background: $main-color;
         display: flex;

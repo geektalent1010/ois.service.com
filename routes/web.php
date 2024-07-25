@@ -52,6 +52,10 @@ Route::post('/password', 'LandingController@password')->name('password');
 
         Route::get('/checklists', 'ApplicationController@checklists')->name('checklists.index');
 
+        Route::get('/usa-checklists', 'ApplicationController@usaChecklists')->name('usaChecklists.index');
+        
+        Route::get('/nigerian-checklists', 'ApplicationController@nigerianChecklists')->name('nigerianChecklists.index');
+
         Route::post('/checklists/filter', 'ApplicationController@checklistFilter')->name('checklists.filter');
 
         Route::group(['middleware' => ['admin']], function () {

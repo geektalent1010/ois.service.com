@@ -44,6 +44,26 @@ class ApplicationController extends Controller
             ->with('offices', $offices);
     }
 
+    public function usaChecklists()
+    {
+        $offices = Office::where('country','!=','Nigeria')->orderBy('country', 'asc')->orderBy('city', 'asc')->get()->groupBy(function ($data) {
+            return $data->country;
+        });
+        return view('pages.application.usaChecklists')
+            ->with('modalData', $this->modalData)
+            ->with('offices', $offices);
+    }
+
+    public function nigerianChecklists()
+    {
+        $offices = Office::where('country','!=','Nigeria')->orderBy('country', 'asc')->orderBy('city', 'asc')->get()->groupBy(function ($data) {
+            return $data->country;
+        });
+        return view('pages.application.nigerianChecklists')
+            ->with('modalData', $this->modalData)
+            ->with('offices', $offices);
+    }
+
     public function checklistFilter(Request $request)
     {
         $office = $request->get('office');
