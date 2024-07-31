@@ -1,3 +1,18 @@
+// // Function to sanitize pasted content
+function sanitizeContent(content) {
+    // Create a temporary div element to hold the content
+    let tempDiv = document.createElement('div');
+    tempDiv.innerHTML = content;
+
+    // Remove all style attributes and other unwanted tags or attributes
+    tempDiv.querySelectorAll('*').forEach(el => {
+        el.removeAttribute('style'); // Remove inline styles
+        el.removeAttribute('class'); // Remove classes if needed
+    });
+
+    return tempDiv.innerHTML;
+}
+
 const contentPanel = document.getElementsByClassName('content-panel');
 
 for(const ele of contentPanel) {
@@ -45,6 +60,12 @@ $("#title-form").submit(function(e) {
                     });
                     element.addEventListener('blur', function(){
                         element.classList.remove('editable-focus');
+                    });
+
+                    element.addEventListener('paste', function(e) {
+                        e.preventDefault();
+                        const text = (e.originalEvent || e).clipboardData.getData('text/plain');
+                        document.execCommand('insertHTML', false, sanitizeContent(text));
                     });
                 }
 
