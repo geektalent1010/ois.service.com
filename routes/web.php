@@ -27,7 +27,7 @@ Route::post('/password', 'LandingController@password')->name('password');
     });
 
     // Auth Panel
-    Route::group(['middleware' => ['auth']], function () {
+    Route::group(['middleware' => ['auth','session.timeout']], function () {
 
         Route::get('/profile', 'ProfileController@index')->name('profile.index');
         Route::post('/profile/update', 'ProfileController@updateProfile')->name('profile.update');

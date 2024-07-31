@@ -64,5 +64,6 @@ class Kernel extends HttpKernel
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         'password.protected' => \App\Http\Middleware\PasswordProtectionMiddleware::class,
         'admin' => \App\Http\Middleware\AdminMiddleware::class,
+        'session.timeout' => \App\Http\Middleware\SessionTimeout::class,
     ];
 }
