@@ -1,0 +1,194 @@
+<?php
+
+namespace App\Http\Controllers\Auth;
+
+use App\Http\Controllers\Controller;
+use App\Mail\Welcome;
+use App\Providers\RouteServiceProvider;
+use App\User;
+use App\Profile;
+use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Http\Request;
+use Illuminate\Auth\Events\Registered;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Str;
+
+
+
+
+use App\Country;
+
+class RegisterController extends Controller
+{
+    /*
+    |--------------------------------------------------------------------------
+    | Register Controller
+    |--------------------------------------------------------------------------
+    |
+    | This controller handles the registration of new users as well as their
+    | validation and creation. By default this controller uses a trait to
+    | provide this functionality without requiring any additional code.
+    |
+    */
+
+    use RegistersUsers;
+
+    /**
+     * Where to redirect users after registration.
+     *
+     * @var string
+     */
+    protected $redirectTo = RouteServiceProvider::HOME;
+
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('guest');
+    }
+
+    /**
+     * Show the application registration form.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function showRegistrationForm() {
+        $countries = Country::where('active', 1)->get();
+        $phoneCodes = Country::
+            where('active', 1)->
+            where('phone_code', '<>', 0) ->
+            orderBy('phone_code', 'asc') ->
+            select('phone_code') ->
+            distinct() ->
+            get() ->
+            pluck('phone_code') ->
+            all();
+        return view('auth.register')
+            ->with('countries', $countries)
+            ->with('phoneCodes', $phoneCodes);
+    }
+
+    /**
+     * Handle a registration request for the application.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\JsonResponse
+     */
+    public function register(Request $request) {
+        $this->validator($request->all())->validate();
+        event(new Registered($user = $this->create($request->all())));
+        if($response = $this->registered($request, $user)) {
+            return redirect()->route('login');
+        }
+        return $request->wantsJson() ? new JsonResponse([], 201) : redirect($this->redirectPath());
+    }
+
+    /**
+     * The user has been registered.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  mixed  $user
+     * @return mixed
+     */
+    protected function registered(Request $request, $user) {
+        $userData = [
+            'first_name' => $user->profile->first_name,
+            'last_name' => $user->profile->last_name,
+            'id' => $user->confirmId,
+        ];
+
+        try {
+            Mail::to($user->email)->send(new Welcome($userData));
+
+            return true;
+        } catch (Exception $e) {
+            echo "Message could not be sent. Mailer Error: {$e->ErrorInfo}";
+            return false;
+        }
+    }
+
+    /**
+     * Get a validator for an incoming registration request.
+     *
+     * @param  array  $data
+     * @return \Illuminate\Contracts\Validation\Validator
+     */
+    protected function validator(array $data)
+    {
+        return Validator::make($data, [
+            'first_name' => ['required', 'string', 'min: 2', 'max:50'],
+            'last_name' => ['required', 'string', 'min: 2', 'max:50'],
+            'birthday' => ['required', 'date'],
+            'phone' => ['required', 'digits_between:7,50'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users', 'unique:users'],
+            'street' => ['required', 'string', 'min:3', 'max:50'],
+            'house_number' => ['required', 'string', 'min:1', 'max:50'],
+            'postal_code' => ['required', 'string', 'min:3', 'max:50'],
+            'city' => ['required', 'string', 'min:3', 'max:50'],
+            'password' => ['required', 'string', 'min:8'],
+        ]);
+    }
+
+    /**
+     * Create a new user instance after a valid registration.
+     *
+     * @param  array  $data
+     * @return \App\User
+     */
+    protected function create(array $data)
+    {
+        $randomNumber = rand(100000, 999999);
+        $confirmationToken = Str::random(60);
+        $user = User::create([
+            'email' => $data['email'],
+            'password' => Hash::make($data['password']),
+            'status' => 0,
+            'username' => '',
+            'confirmId' => $randomNumber,
+            'email_confirm_token' => $confirmationToken,
+        ]);
+
+        Profile::create([
+            'user_id' => $user->id,
+            'country_id' => $data['country'],
+            'first_name' => $data['first_name'],
+            'last_name' => $data['last_name'],
+            'birthday' => $data['birthday'],
+            'gender' => $data['gender'],
+            'phone_number' => $data['pre_phone'].' '.$data['phone'],
+            'street' => $data['street'],
+            'house_number' => $data['house_number'],
+            'postal_code' => $data['postal_code'],
+            'city' => $data['city'],
+        ]);
+
+        $userData = [
+            'first_name' => $user->profile->first_name,
+            'last_name' => $user->profile->last_name,
+            'id' => $user->confirmId,
+            'token' => $confirmationToken,
+        ];
+
+        Mail::to($user->email)->send(new Welcome($userData));
+
+        return $user;
+    }
+
+    public function confirmEmail($token)
+{
+    $user = User::where('email_confirm_token', $token)->firstOrFail();
+    $user->update(['is_email_confirmed' => true, 'email_confirm_token' => null]);
+
+    // Auto login the user if necessary, otherwise redirect to login page
+
+    return redirect($this->redirectPath());
+}
+
+
+}
