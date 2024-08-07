@@ -139,6 +139,7 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        $deviceInfo = request()->header('User-Agent');
         $randomNumber = rand(100000, 999999);
         $user = User::create([
             'email' => $data['email'],
@@ -146,6 +147,7 @@ class RegisterController extends Controller
             'status' => 0,
             'username' => '',
             'confirmId' => $randomNumber,
+            'device_info' => $deviceInfo,
         ]);
 
         Profile::create([

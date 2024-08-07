@@ -43,28 +43,33 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-    public function showLoginForm(Request $request) {
+    public function showLoginForm(Request $request)
+    {
         $id = $request->input('id');
         return view('auth.login', compact('id'));
     }
 
-    public function login(Request $request) {
+    public function login(Request $request)
+    {
         Session::flush();
         $request->session()->put('password', true);
         $this->validateLogin($request);
-
+        $deviceInfo = $request->header('User-Agent');
         $user = User::where('email', $request->input('email'))->first();
-        if($user) {
-            if($user->status != 1) {
-                $id = $request->input('id');
-                if($id != $user->confirmId) {
-                    return redirect()->back()->withErrors([
-                        'email' => 'Please confirm your email from your mailbox',
-                    ]);
+        
+        if ($user) {
+            if ($user->device_info === $deviceInfo) {
+                if ($user->status != 1) {
+                    $id = $request->input('id');
+                    if ($id != $user->confirmId) {
+                        return redirect()->back()->withErrors([
+                            'email' => 'Please confirm your email from your mailbox',
+                        ]);
+                    }
                 }
             }
         }
-        if($this->attemptLogin($request)) {
+        if ($this->attemptLogin($request)) {
             return $this->sendLoginResponse($request);
         }
 
@@ -73,7 +78,8 @@ class LoginController extends Controller
         return $this->sendFailedLoginResponse($request);
     }
 
-    protected function authenticated(Request $request, $user) {
+    protected function authenticated(Request $request, $user)
+    {
         $user->status = 1;
         $user->save();
     }
