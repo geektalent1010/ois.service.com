@@ -22,6 +22,7 @@ class User extends Authenticatable
         'status',
         'username',
         'confirmId',
+        'device_info',
     ];
 
     /**
