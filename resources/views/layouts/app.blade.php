@@ -29,6 +29,7 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KX83Z102NF"></script>
     <script>
+
         window.dataLayer = window.dataLayer || [];
 
         function gtag() {
@@ -74,7 +75,7 @@
     @include('_includes.cookies')
 
     @include('_includes.offices')
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></scrip>
     <script>
         AOS.init({
             easing: 'ease-out-back',

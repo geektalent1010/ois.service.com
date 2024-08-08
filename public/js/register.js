@@ -1,3 +1,4 @@
+
 $.ajaxSetup({
     headers: {
         "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content"),
@@ -5,8 +6,8 @@ $.ajaxSetup({
 });
 let emailTimer = null;
 
-$('#email').on('input', function(e) {
-    $('#login-email').val($(this).val());
+$("#email").on("input", function (e) {
+    $("#login-email").val($(this).val());
 });
 
 const register = {
@@ -48,17 +49,17 @@ const register = {
             "submit",
             function (event) {
                 if (
-                    (this.validateFirstNameInput() &&
-                        this.validateLastNameInput() &&
-                        this.validatePhoneInput() &&
-                        this.validateEmailInput() &&
-                        this.validateStreetInput() &&
-                        this.validateHouseNumberInput() &&
-                        this.validatePostalCodeInput() &&
-                        this.validateCityInput() &&
-                        this.validateCountrySelect() &&
-                        this.validatePasswordInput() &&
-                        this.validateBirthdayInput())
+                    this.validateFirstNameInput() &&
+                    this.validateLastNameInput() &&
+                    this.validatePhoneInput() &&
+                    this.validateEmailInput() &&
+                    this.validateStreetInput() &&
+                    this.validateHouseNumberInput() &&
+                    this.validatePostalCodeInput() &&
+                    this.validateCityInput() &&
+                    this.validateCountrySelect() &&
+                    this.validatePasswordInput() &&
+                    this.validateBirthdayInput()
                 ) {
                     $(".button-submit").attr("disabled", true);
                     return true;
@@ -100,8 +101,8 @@ const register = {
             validationMessage =
                 "The name must contain only letter and be minimum of 2 characters.";
         }
-        if(validationMessage) {
-            customAlert('We are so sorry', validationMessage, 'error');
+        if (validationMessage) {
+            customAlert("We are so sorry", validationMessage, "error");
         }
         this.scrollToError = this.firstNameInput;
         return false;
@@ -120,8 +121,8 @@ const register = {
             validationMessage =
                 "The last name must contain only letter and be minimum of 2 characters.";
         }
-        if(validationMessage) {
-            customAlert('We are so sorry', validationMessage, 'error');
+        if (validationMessage) {
+            customAlert("We are so sorry", validationMessage, "error");
         }
         this.scrollToError = this.lastNameInput;
         return false;
@@ -139,8 +140,8 @@ const register = {
         } else {
             validationMessage = "Minimum 7 digits.";
         }
-        if(validationMessage) {
-            customAlert('We are so sorry', validationMessage, 'error');
+        if (validationMessage) {
+            customAlert("We are so sorry", validationMessage, "error");
         }
         this.scrollToError = this.phoneInput;
         return false;
@@ -160,8 +161,8 @@ const register = {
         } else {
             validationMessage = "Email is not valid.";
         }
-        if(validationMessage) {
-            customAlert('We are so sorry', validationMessage, 'error');
+        if (validationMessage) {
+            customAlert("We are so sorry", validationMessage, "error");
         }
         this.scrollToError = this.emailInput;
         return false;
@@ -180,8 +181,8 @@ const register = {
             validationMessage =
                 "The street name must contain letter and number and be minimum of 3 characters.";
         }
-        if(validationMessage) {
-            customAlert('We are so sorry', validationMessage, 'error');
+        if (validationMessage) {
+            customAlert("We are so sorry", validationMessage, "error");
         }
         this.scrollToError = this.streetInput;
         return false;
@@ -197,8 +198,8 @@ const register = {
             validationMessage =
                 "The house number must contain letter and number and be minimum of 3 characters.";
         }
-        if(validationMessage) {
-            customAlert('We are so sorry', validationMessage, 'error');
+        if (validationMessage) {
+            customAlert("We are so sorry", validationMessage, "error");
         }
         this.scrollToError = this.houseNumberInput;
         return false;
@@ -213,8 +214,8 @@ const register = {
         } else {
             validationMessage = "Minimum 3 characters / digits.";
         }
-        if(validationMessage) {
-            customAlert('We are so sorry', validationMessage, 'error');
+        if (validationMessage) {
+            customAlert("We are so sorry", validationMessage, "error");
         }
         this.scrollToError = this.postalCodeInput;
         return false;
@@ -233,8 +234,8 @@ const register = {
             validationMessage =
                 "The city name must contain letter and number and be minimum of 3 characters.";
         }
-        if(validationMessage) {
-            customAlert('We are so sorry', validationMessage, 'error');
+        if (validationMessage) {
+            customAlert("We are so sorry", validationMessage, "error");
         }
         this.scrollToError = this.cityInput;
         return false;
@@ -247,8 +248,8 @@ const register = {
         } else {
             validationMessage = "The country name is required";
         }
-        if(validationMessage) {
-            customAlert('We are so sorry', validationMessage, 'error');
+        if (validationMessage) {
+            customAlert("We are so sorry", validationMessage, "error");
         }
         this.scrollToError = this.countrySelect;
         return false;
@@ -284,8 +285,8 @@ const register = {
             validationMessage =
                 "Password must contain a <strong>letter</strong> and a <strong>number</strong>, and be minimum of <strong>7 characters</strong>.";
         }
-        if(validationMessage) {
-            customAlert('We are so sorry', validationMessage, 'error');
+        if (validationMessage) {
+            customAlert("We are so sorry", validationMessage, "error");
         }
         this.scrollToError = this.passwordInput;
         return false;
@@ -295,18 +296,20 @@ const register = {
         let value = this.birthdayInput.val();
         if (/^(\d{2})-(\d{2})-(\d{4})$/.test(value)) {
             this.birthdayInput.val(
-                value.split('-')[2] + '-' +
-                value.split('-')[1] + '-' +
-                value.split('-')[0]
+                value.split("-")[2] +
+                    "-" +
+                    value.split("-")[1] +
+                    "-" +
+                    value.split("-")[0]
             );
             return true;
-        } else if(/^(\d{4})-(\d{2})-(\d{2})$/.test(value)) {
+        } else if (/^(\d{4})-(\d{2})-(\d{2})$/.test(value)) {
             validationMessage = "Now, that's a birthday.";
         } else {
             validationMessage = "The birthday is required.\n";
         }
-        if(validationMessage) {
-            customAlert('We are so sorry', validationMessage, 'error');
+        if (validationMessage) {
+            customAlert("We are so sorry", validationMessage, "error");
         }
         this.scrollToError = this.birthdayInput;
         return false;
@@ -321,10 +324,10 @@ $(document).ready(function () {
         maxYear: currentDate.getFullY,
     });
     var date = $("#birthday").val();
-    if(/^(\d{4})-(\d{2})-(\d{2})$/.test(date)) {
-        $(".birthday-group select.day").val(date.split('-')[2]);
-        $(".birthday-group select.month").val(date.split('-')[1] - 1);
-        $(".birthday-group select.year").val(date.split('-')[0]);
+    if (/^(\d{4})-(\d{2})-(\d{2})$/.test(date)) {
+        $(".birthday-group select.day").val(date.split("-")[2]);
+        $(".birthday-group select.month").val(date.split("-")[1] - 1);
+        $(".birthday-group select.year").val(date.split("-")[0]);
     }
     $(".birthday-group select.day").addClass("webkit-style");
     $(".birthday-group select.month").addClass("webkit-style");
@@ -335,16 +338,20 @@ $(document).ready(function () {
     $(".birthday-group select.year").addClass("editable");
 });
 
-$("#terms-of-service").change(function() {
-    if($(this).is(':checked')) {
-        $("#register-but").removeClass('d-none');
-        $("#register-but-disabled").addClass('d-none');
+$("#terms-of-service").change(function () {
+    if ($(this).is(":checked")) {
+        $("#register-but").removeClass("d-none");
+        $("#register-but-disabled").addClass("d-none");
     } else {
-        $("#register-but").addClass('d-none');
-        $("#register-but-disabled").removeClass('d-none');
+        $("#register-but").addClass("d-none");
+        $("#register-but-disabled").removeClass("d-none");
     }
 });
 
-$("#register-but-disabled").click(function() {
-    customAlert("We are so sorry", "You should agree the terms of service", "error");
-})
+$("#register-but-disabled").click(function () {
+    customAlert(
+        "We are so sorry",
+        "You should agree the terms of service",
+        "error"
+    );
+});
