@@ -29,7 +29,6 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KX83Z102NF"></script>
     <script>
-
         window.dataLayer = window.dataLayer || [];
 
         function gtag() {
@@ -75,7 +74,7 @@
     @include('_includes.cookies')
 
     @include('_includes.offices')
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></scrip>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
             easing: 'ease-out-back',
@@ -157,13 +156,12 @@
         }
 
         function toggleNisVisaModal() {
-            
+
             if (!localStorage.getItem('isVisible')) {
                 nis_visa_modal.classList.toggle("show-modal");
                 localStorage.setItem('isVisible', JSON.stringify(true));
-            }
-            else {
-                    window.location.href='{{ route('application.index') }}'
+            } else {
+                window.location.href = '{{ route('application.index') }}'
             }
         }
 
@@ -798,6 +796,30 @@
             customAlert('We are so sorry', '{{ $message }}', 'error');
         </script>
     @endif
+
+    <script>
+        let inactivityTime = function() {
+            let time;
+            // Reset the timer on any of these events
+            window.onload = resetTimer;
+            document.onmousemove = resetTimer;
+            document.onkeypress = resetTimer;
+            document.ontouchstart = resetTimer; // For mobile devices
+
+            function logout() {
+                alert(
+                    "We noticed you've been inactive for a while. For your security, we'll redirect you to the login page shortly."
+                    );
+                window.location.href = '/login'; // Redirect to the login page
+            }
+
+            function resetTimer() {
+                clearTimeout(time);
+                time = setTimeout(logout, 60000*15); // 15 minutes
+            }
+        };
+        inactivityTime();
+    </script>
 
 </body>
 

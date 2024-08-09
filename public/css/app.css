@@ -5482,6 +5482,36 @@ body {
   overflow-y: auto;
 }
 
+.info-box .offices-menus::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.info-box .offices-menus::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.info-box .offices-menus::-webkit-scrollbar-track {
+  background-color: #0f609c;
+}
+
+.form-select-custom .select-items::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+.form-select-custom .select-items::-webkit-scrollbar-thumb {
+  background-color: #003366;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.form-select-custom .select-items::-webkit-scrollbar-track {
+  background-color: #0f609c;
+}
+
+
 .nin-section .form-section .form-group .info-box .offices-menus .office-menu-item {
   display: flex;
   padding: 2px 6px;

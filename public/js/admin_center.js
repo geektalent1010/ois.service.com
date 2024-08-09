@@ -21,6 +21,13 @@ $(document).ready(function() {
                     html += '<img src="/images/Flags/' + res.flag + '" />';
                     html += '</div>';
                     html += '<div class="">';
+                    html += '<div class="mb-0 id="africa-submit">';
+                    html += '<label class="checkbox-container">' ;
+                    html += '<input type="checkbox" class="location" id="location" name="location" />';
+                    html +=  '<span class="checkbox-circle"></span>';
+                    html +=  '<span class="checkbox-name">Is this country in Africa?</span>';
+                    html +=  '</label>';
+                    html +=  '</div>';
                     html += '<div class="mb-0 editable" id="office-country" contenteditable="true" title="country"><b>' + res.country + '</b></div>';
                     html += '<div class="editable" id="office-address" contenteditable="true" title="address">';
                     for(const address of res.address.split(' && ')) {
@@ -64,6 +71,9 @@ $(document).ready(function() {
 
     $(".office-detail-form").submit(function(e) {
         e.preventDefault();
+        const locationCheckbox = document.getElementById('location');
+        const location = locationCheckbox.checked;
+        console.log(location,"location")
         $(".office-detail .csrftoken").val($("#country-select-form input").val());
         const country = $(".office-detail-form #office-country").text();
         const city = $(".office-detail-form #office-city").text();
@@ -91,6 +101,7 @@ $(document).ready(function() {
         formData.append('address', address);
         formData.append('workingDay', workingDays);
         formData.append('workingTime', workingTime);
+        formData.append('location', location);
         $.ajax({
             url: '/admin/updateOffice',
             type: 'POST',
@@ -125,6 +136,13 @@ $(document).ready(function() {
                         <img src="/images/ImageIcon.svg" class="image-icon" id="flag-image"/>
                     </div>
                     <div class="">
+                        <div class="mb-0 id="africa-submit">
+                            <label class="checkbox-container">
+                                <input type="checkbox" class="location" id="location" name="location"/>
+                                <span class="checkbox-circle"></span>
+                                <span class="checkbox-name">Is this country in Africa?</span>
+                            </label>
+                        </div>
                         <div class="mb-0 editable" id="office-country" contenteditable="true" title="country"><b>Country</b></div>
                         <div class="editable" id="office-address" contenteditable="true" title="address">
                             <div class="mb-0">Street</div>
