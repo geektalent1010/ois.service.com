@@ -62,6 +62,11 @@ class CenterManagerController extends Controller
                 $fileName = $request->file->getClientOriginalName();
                 $file->move(public_path('images/Flags'), $fileName);
                 $office->flag = $fileName;
+            } else {
+                $country = Office::where('country', ($request->input('country')))->first();
+                if ($country) {
+                    $office->flag = $country->flag;
+                }
             }
         } else {
             $office = Office::where('id', $id)->first();
