@@ -30,6 +30,7 @@
                                     <p class="form-label">{{__('select_country')}} + {{__('city_enrolling_from')}}</p>
                                     <div class="info-box">
                                         <div class="search-field">
+                                            <input type="text" class="input-field app-type-input" name="app_type" hidden />
                                             <input type="text" class="input-field office-id-input" name="office"
                                                 hidden />
                                             <input type="text" class="input-field office-input cursor-default"
@@ -71,7 +72,10 @@
                                     <div class="offices-body"></div>
                                 </div>
                             </div>
-                            @include('_includes.ninTable')
+                            <div class="row mt-19px">
+                                <div class="col-md-12 checklistsFilters" id="filter-content1">
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -117,28 +121,10 @@
             $('.input-field').val($(this).data('country'));
             officeId = $(this).data('id');
             officeLocation = $(this).data('location');
-            console.log($(this).data('location'), "$(this).data('location')")
             $('.office-id-input').val(officeId);
+            $('.app-type-input').val("nin");
             showOffices();
             $('#reqCard').show();
-            if (officeLocation == 1) {
-                $('#allCountryFeeInfo').hide();
-                $('#africaFeeInfo').show();
-                $('#nigeriaFeeInfo').hide();
-                $('#nigeriaVerifyFeeInfo').hide();
-            }
-            if (officeLocation == 2) {
-                $('#allCountryFeeInfo').hide();
-                $('#africaFeeInfo').hide();
-                $('#nigeriaFeeInfo').show();
-                $('#nigeriaVerifyFeeInfo').show();
-            }
-            if (officeLocation == 0) {
-                $('#allCountryFeeInfo').show();
-                $('#africaFeeInfo').hide();
-                $('#nigeriaFeeInfo').hide();
-                $('#nigeriaVerifyFeeInfo').hide();
-            }
         });
 
         function showOffices() {
@@ -204,7 +190,7 @@
 
                         $('#visaType').html(visaType);
                     }
-                    // checklistsFilters();
+                    checklistsFilters();
                 },
                 error: function(err) {}
             });
@@ -216,7 +202,8 @@
 
         $('#visaType').on('change', function() {
             if (officeId && this.value) {
-                // checklistsFilters();
+                console.log("checklist")
+                checklistsFilters();
             }
         });
 

@@ -68,7 +68,10 @@ class ApplicationController extends Controller
     {
         $office = $request->get('office');
         $visaType = $request->get('visa_type');
+        $appType = $request->get('app_type');
+        $data['apptype'] =$appType;
         $data['fees'] = Checklist::where('office_id', $office)->where('visa_type', 'Fees')->first();
+        $data['office'] = Office::where('id', $office)->first();
         if ($office && $visaType) {
             $data['checklists'] = Checklist::where('office_id', $office)->where('visa_type', $visaType)->get();
             return view('pages.application.partials.documents', $data);
