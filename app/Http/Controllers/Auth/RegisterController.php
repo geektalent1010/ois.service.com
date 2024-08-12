@@ -139,7 +139,6 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        $deviceInfo = request()->header('sec-ch-ua-mobile');
         $randomNumber = rand(100000, 999999);
         $user = User::create([
             'email' => $data['email'],

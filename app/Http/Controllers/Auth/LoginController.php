@@ -54,7 +54,6 @@ class LoginController extends Controller
         Session::flush();
         $request->session()->put('password', true);
         $this->validateLogin($request);
-        $deviceInfo = $request->header('sec-ch-ua-mobile');
         $user = User::where('email', $request->input('email'))->first();
 
         if ($user) {
