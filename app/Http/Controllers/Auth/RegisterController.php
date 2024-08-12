@@ -106,7 +106,7 @@ class RegisterController extends Controller
         } catch (Exception $e) {
             return redirect('/login')->with('error', 'Registration successful, but the welcome email could not be sent.');
         }
-        return redirect('/login')->with('success', 'Registration successful. Please check your email and login.');
+        return redirect('/login')->with('success', 'Registration Successful, Please verify your email address to login.');
     }
 
     /**
