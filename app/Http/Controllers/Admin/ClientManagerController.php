@@ -24,8 +24,7 @@ class ClientManagerController extends Controller
         $take = 10;
         $skip = ($page - 1) * $take;
 
-        $users = User::where('status', 1)
-            ->where('is_admin', 0)
+        $users = User::where('is_admin', 0)
             ->where(function($query) use ($searchKey) {
                 $query->where('email', 'like', "%$searchKey%")
                 ->orWhereHas('profile', function($query1) use ($searchKey) {
