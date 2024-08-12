@@ -22,7 +22,6 @@ class CreateUsersTable extends Migration
             $table->boolean('is_admin')->nullable()->default(false);
             $table->boolean('status')->nullable()->default(true);
             $table->timestamps();
-            $table->string('device_info');
         });
     }
 

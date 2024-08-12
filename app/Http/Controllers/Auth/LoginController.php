@@ -59,12 +59,8 @@ class LoginController extends Controller
 
         if ($user) {
             if ($user->status != 1) {
-                if ($deviceInfo != $user->device_info) {
-                    return redirect()->back()->withErrors([
-                        'email' => 'Please login with your device that confirm your eamil',
-                    ]);
-                }
                 $id = $request->input('id');
+                // dd($id);
                 if ($id != $user->confirmId) {
                     return redirect()->back()->withErrors([
                         'email' => 'Please confirm your email from your mailbox',

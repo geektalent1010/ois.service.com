@@ -126,7 +126,6 @@ class RegisterController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users', 'unique:users'],
             'street' => ['required', 'string', 'min:3', 'max:50'],
             'house_number' => ['required', 'string', 'min:1', 'max:50'],
-            'postal_code' => ['required', 'string', 'min:3', 'max:50'],
             'city' => ['required', 'string', 'min:3', 'max:50'],
             'password' => ['required', 'string', 'min:8'],
         ]);
@@ -148,7 +147,6 @@ class RegisterController extends Controller
             'status' => 0,
             'username' => '',
             'confirmId' => $randomNumber,
-            'device_info' => $deviceInfo,
         ]);
 
         Profile::create([

@@ -50,7 +50,6 @@ const register = {
                         this.validateEmailInput() &&
                         this.validateStreetInput() &&
                         this.validateHouseNumberInput() &&
-                        this.validatePostalCodeInput() &&
                         this.validateCityInput() &&
                         this.validateCountrySelect() &&
                         this.validatePasswordInput() &&
@@ -200,20 +199,7 @@ const register = {
         return false;
     },
     validatePostalCodeInput: function () {
-        let validationMessage = "";
-        let value = this.postalCodeInput.val();
-        if (/^.{3,50}$/.test(value)) {
-            return true;
-        } else if (value === "") {
-            validationMessage = "Zip code is required";
-        } else {
-            validationMessage = "Minimum 3 characters / digits.";
-        }
-        if(validationMessage) {
-            customAlert('We are so sorry', validationMessage, 'error');
-        }
-        this.scrollToError = this.postalCodeInput;
-        return false;
+        return true
     },
     validateCityInput: function () {
         let validationMessage = "";
@@ -296,8 +282,6 @@ const register = {
                 value.split('-')[0]
             );
             return true;
-        } else if(/^(\d{4})-(\d{2})-(\d{2})$/.test(value)) {
-            validationMessage = "Now, that's a birthday.";
         } else {
             validationMessage = "The birthday is required.\n";
         }
