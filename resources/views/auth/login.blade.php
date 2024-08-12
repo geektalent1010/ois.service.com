@@ -19,7 +19,6 @@
                     <p>{{ __('secure_client_portal') }}</p>
                     <span>{{ __('for_registered_clients_only') }}</span>
                 </div>
-
                 <form method="POST" class="mt-3" action="{{ route('login', ['id' => $id]) }}">
                     @csrf
                     <div class="form-group row justify-content-center">

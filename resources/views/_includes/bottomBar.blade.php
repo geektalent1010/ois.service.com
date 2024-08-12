@@ -5,7 +5,7 @@
         @endif
         @if (isset($VIDEO_LOCK) && $VIDEO_LOCK == true)
             <a>
-                <img src="{{ asset('images/IconLock.svg') }}" alt="Lock Icon">
+                <img class="play-video" src="{{ asset('images/Play.svg') }}" alt="">
             </a>
         @else
             @if (isset($VIDEO_BACKGROUND) && $VIDEO_BACKGROUND == true)

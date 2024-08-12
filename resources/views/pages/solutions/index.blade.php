@@ -69,7 +69,7 @@
                                 is why having a secure and efficient system in place is of critical importance.</p>
                         </div>
                         <div class="w-50 d-flex flex-column align-items-center">
-                            <img class="icon hidden-icon-first" src="{{ asset('images/IconLock.svg') }}">
+                            <img class="icon hidden-icon-first" src="{{ asset('images/Play.svg') }}">
                         </div>
                     </div>
                     <button class="read-more-btn first-btn" id="pc-first-btn" onclick="showFirstDetail()">READ MORE</button>

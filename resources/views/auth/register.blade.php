@@ -47,7 +47,7 @@
                 <div class="row mb-24px">
                     <div class="col-md-6 form-group birthday-group">
                         <p class="form-label">{{__('date_of_birth')}}</p>
-                        <input type="text" id="birthday" data-format="DD-MM-YYYY" data-template="D MMM YYYY"
+                        <input type="text" id="birthday" data-format="DD-MM-YYYY" data-template="DD MMM YYYY"
                             name="birthday" value="{{ old('birthday') }}" hidden>
                         <label id="birthday-error" class="has-error" for="birthday" style="display: none"></label>
                     </div>
@@ -184,9 +184,8 @@
 
     <script>
         if($('#error-input').val()) {
-            customAlert('We are so sorry', $('.error-input').val(), 'error');
+            customAlert('We are so sorry', $('#error-input').val(), 'error');
         }
-
     </script>
 
 @endsection

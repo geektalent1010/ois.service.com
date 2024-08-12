@@ -101,13 +101,12 @@ class RegisterController extends Controller
         ];
 
         try {
-            Mail::to($user->email)->send(new Welcome($userData));
+            // Mail::to($user->email)->send(new Welcome($userData));
 
-            return true;
         } catch (Exception $e) {
-            echo "Message could not be sent. Mailer Error: {$e->ErrorInfo}";
-            return false;
+            return redirect('/login')->with('error', 'Registration successful, but the welcome email could not be sent.');
         }
+        return redirect('/login')->with('success', 'Registration successful. Please check your email and login.');
     }
 
     /**
