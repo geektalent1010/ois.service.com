@@ -32,8 +32,8 @@ class ClientManagerController extends Controller
                     ->orWhere('last_name', 'like', "%$searchKey%");
                 });
             })
-            ->skip($skip)
-            ->take($take)
+            // ->skip($skip)
+            // ->take($take)
             ->orderBy('email')
             ->get();
         $count = User::where('is_admin', 0)
