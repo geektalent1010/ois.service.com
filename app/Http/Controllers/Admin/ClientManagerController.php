@@ -36,8 +36,7 @@ class ClientManagerController extends Controller
             ->take($take)
             ->orderBy('email')
             ->get();
-        $count = User::where('status', 1)
-            ->where('is_admin', 0)
+        $count = User::where('is_admin', 0)
             ->where(function($query) use ($searchKey) {
                 $query->where('email', 'like', "%$searchKey%")
                 ->orWhereHas('profile', function($query1) use ($searchKey) {
