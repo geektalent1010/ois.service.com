@@ -48,7 +48,7 @@ class HomeController extends Controller
                 $user->save();
                 $res['status'] = 'success';
             }
-        return json_encode($res);
+        return response()->json_encode($res);
 
     }
 }
