@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Content;
+use App\User;
 
 class HomeController extends Controller
 {
@@ -37,5 +38,17 @@ class HomeController extends Controller
         return view('welcome')
             ->with('userData', $userData)
             ->with('content', $content);
+    }
+
+    public function confirmEmail(Request $request) {
+        $user = User::where('email', $request->input('email'))->first();
+        $res['status'] = "failed";
+            if($user && $user->confirmId == $request->input('confirmId')) {
+                $user->status = 1;
+                $uesr->save();
+                $res['status'] = 'success';
+            }
+        return json_encode($res);
+
     }
 }

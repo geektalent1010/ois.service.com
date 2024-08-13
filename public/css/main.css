@@ -460,11 +460,20 @@ footer .social-section .icon-section .social-icon:hover {
     width: auto;
     height: 100%;
 }
-
-::-webkit-scrollbar {
-    width: 0px;
+::-webkit-scrollbar{
+    width: 5px;
+    cursor: pointer;
 }
 
+::-webkit-scrollbar-thumb {
+    background-color: #003366;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #0f609c;
+}
 .show-modal {
     opacity: 1;
     visibility: visible;

@@ -106,6 +106,7 @@ Route::post('/offices/office-filter', 'OfficesController@officeFilter')->name('o
 
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/confirm-email', 'HomeController@confirmEmail')->name('confirm.email');
 Route::get('forgot', 'Admin\ForgotPasswordController@index')->name('forgot.index');
 Route::get('forgotReset', 'Admin\ForgotPasswordController@reset')->name('forgot.reset');
 

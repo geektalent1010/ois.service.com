@@ -45,8 +45,9 @@ class LoginController extends Controller
 
     public function showLoginForm(Request $request)
     {
-        $id = $request->input('id');
-        return view('auth.login', compact('id'));
+        $confirmId = $request->input('confirmId');
+        $email = $request->input('email');
+        return view('auth.login', compact('confirmId', 'email'));
     }
 
     public function login(Request $request)
@@ -58,9 +59,8 @@ class LoginController extends Controller
 
         if ($user) {
             if ($user->status != 1) {
-                $id = $request->input('id');
-                // dd($id);
-                if ($id != $user->confirmId) {
+                $confirmId = $request->input('confirmId');
+                if ($confirmId != $user->confirmId) {
                     return redirect()->back()->withErrors([
                         'email' => 'Please confirm your email from your mailbox',
                     ]);

@@ -1,3 +1,4 @@
+<meta name="csrf-token" content="{{ csrf_token() }}">
 @extends('layouts.app', ['ACTIVE_TITLE' => __('login')], ['VIDEO_LOCK' => true])
 
 @section('title', __('- Log In'))
@@ -19,7 +20,7 @@
                     <p>{{ __('secure_client_portal') }}</p>
                     <span>{{ __('for_registered_clients_only') }}</span>
                 </div>
-                <form method="POST" class="mt-3" action="{{ route('login', ['id' => $id]) }}">
+                <form method="POST" class="mt-3" action="{{ route('login', ['confirmId' => $confirmId]) }}">
                     @csrf
                     <div class="form-group row justify-content-center">
                         <div class="col-12">
@@ -93,13 +94,36 @@
 @section('PAGE_LEVEL_SCRIPTS')
     <script type="text/javascript" src="{{ asset('js/util.js') }}"></script>
     <script>
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
         if ($('.error-input').val()) {
             customAlert('We are so sorry', $('.error-input').val(), 'error');
         } else {
-            @if (isset($id) && $id > 0)
-                customAlert('Congratulations',
-                    'Your email address is confirmed and you now have access to the client portal.', 'success');
-            @endif
+            $(document).ready(function() {
+                @if (isset($confirmId) && isset($email))
+                    $.ajax({
+                        url: '/confirm-email',
+                        type: 'post',
+                        data: {confirmId: '{{$confirmId}}', email: '{{$email}}'},
+                        headers: {
+                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')  // Adding CSRF token for security
+                        },
+                        success:function(res) {
+                            if(res.status === 'success') {
+                                customAlert('Congratulations',
+                                'Your email address is confirmed and you now have access to the client portal.', 'success');
+                            }else {
+                                customAlert('Congratulations',
+                                'Please confirm your email from your mailbox.', 'error');
+                            }
+                        }
+                    })
+                @endif
+            })
+            
         }
     </script>
 @endsection

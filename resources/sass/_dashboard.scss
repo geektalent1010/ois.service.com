@@ -390,13 +390,13 @@
         max-height: 520px;
         overflow: hidden;
         border-radius: 24px;
-        padding: 32px;
+        padding: 24px;
         text-align: justify;
 
         .modal-content {
             height: 100%;
             border: none;
-            padding: 0;
+            padding: 12;
             font-size: 12px;
             font-family: "DinPro", sans-serif;
             color: $main-color;
