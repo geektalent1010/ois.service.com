@@ -186,7 +186,7 @@
         });
 
         function checklistsFilters() {
-            $.post('{{ route('checklists.filter') }}', $('.form-section').serialize(), function(response) {
+            $.post('{{ route('checklists.bvnfilter') }}', $('.form-section').serialize(), function(response) {
                 $('.checklistsFilters').html(response);
                 scrollToList();
             })

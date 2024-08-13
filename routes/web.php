@@ -58,6 +58,10 @@ Route::group(['middleware' => ['auth']], function () {
 
     Route::post('/checklists/filter', 'ApplicationController@checklistFilter')->name('checklists.filter');
 
+    Route::post('/checklists/ninfilter', 'ApplicationController@ninChecklistFilter')->name('checklists.ninfilter');
+
+    Route::post('/checklists/bvnfilter', 'ApplicationController@bvnChecklistFilter')->name('checklists.bvnfilter');
+
     Route::group(['middleware' => ['admin']], function () {
         Route::get('/roles', 'RolesController@index')->name('roles.index');
 

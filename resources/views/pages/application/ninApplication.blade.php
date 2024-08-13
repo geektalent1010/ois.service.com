@@ -26,7 +26,7 @@
                     <div class="section-body body-section mt-30px">
                         <form class="form-section">
                             <div class="row mb-24px">
-                                <div class="col-md-6 form-group">
+                                <div class="col-md-6 offset-md-3 form-group">
                                     <p class="form-label">{{__('select_country')}} + {{__('city_enrolling_from')}}</p>
                                     <div class="info-box">
                                         <div class="search-field">
@@ -57,13 +57,6 @@
                                             @endforeach
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-md-6 form-group">
-                                    <p class="form-label">{{ __('select_passport_type_applying_with') }}</p>
-                                    <select class="form-control webkit-style country-select w-100" name="visa_type"
-                                        id="visaType">
-                                        <option value="">Passport Type</option>
-                                    </select>
                                 </div>
                             </div>
 
@@ -208,7 +201,7 @@
         });
 
         function checklistsFilters() {
-            $.post('{{ route('checklists.filter') }}', $('.form-section').serialize(), function(response) {
+            $.post('{{ route('checklists.ninfilter') }}', $('.form-section').serialize(), function(response) {
                 $('.checklistsFilters').html(response);
                 scrollToList();
             })

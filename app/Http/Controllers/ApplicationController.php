@@ -68,9 +68,7 @@ class ApplicationController extends Controller
     {
         $office = $request->get('office');
         $visaType = $request->get('visa_type');
-        $appType = $request->get('app_type');
-        $data['apptype'] =$appType;
-        $data['fees'] = Checklist::where('office_id', $office)->where('visa_type', 'Fees')->first();
+        $data['fees'] = Checklist::where('office_id', $office)->where('visa_type', 'Fees')->get();
         $data['office'] = Office::where('id', $office)->first();
         if ($office && $visaType) {
             $data['checklists'] = Checklist::where('office_id', $office)->where('visa_type', $visaType)->get();
@@ -80,5 +78,27 @@ class ApplicationController extends Controller
 
             return view('pages.application.partials.documents', $data);
         }
+    }
+
+    public function ninChecklistFilter(Request $request)
+    {
+        $office = $request->get('office');
+        $visaType = $request->get('visa_type');
+        $data['office'] = Office::where('id', $office)->first();
+        $data['fees'] = Checklist::where('visa_type', 'NIN_Common')
+            ->orWhere('visa_type', 'NIN_Common_'.$data['office']->location)->get();
+
+        return view('pages.application.partials.documents', $data);
+    }
+
+    public function bvnChecklistFilter(Request $request) {
+        $office = $request->get('office');
+        $visaType = $request->get('visa_type');
+        $data['fees'] = Checklist::where(function ($query) use ($office) {
+            $query->where('office_id', $office)
+            ->where('visa_type', 'BVN_Fees');
+        })->orWhere('visa_type', 'BVN_Common')->get();
+        $data['office'] = Office::where('id', $office)->first();
+        return view('pages.application.partials.documents', $data);
     }
 }
