@@ -108,6 +108,7 @@
                         url: '/confirm-email',
                         type: 'post',
                         data: {confirmId: '{{$confirmId}}', email: '{{$email}}'},
+                        dataType: 'json',
                         headers: {
                             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')  // Adding CSRF token for security
                         },
