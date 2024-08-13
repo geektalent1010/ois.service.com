@@ -32,7 +32,7 @@
                 @endforeach
                 <tr align="center">
                     <td>
-                        <a class="welcome-confirm-email-button" href="{{ route('login', ['confirmId' => $userData['id'], 'email' => $userData['email]]) }}">CONFIRM YOUR EMAIL</a>
+                        <a class="welcome-confirm-email-button" href="{{ route('login', ['confirmId' => $userData['confirmId'], 'email'=> $userData['email']]) }}">CONFIRM YOUR EMAIL</a>
                     </td>
                 </tr>
             </table>

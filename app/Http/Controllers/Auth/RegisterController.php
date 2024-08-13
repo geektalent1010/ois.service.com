@@ -96,7 +96,7 @@ class RegisterController extends Controller
         $userData = [
             'first_name' => $user->profile->first_name,
             'last_name' => $user->profile->last_name,
-            'id' => $user->confirmId,
+            'confirmId' => $user->confirmId,
             'email' => $user->email,
             
         ];
