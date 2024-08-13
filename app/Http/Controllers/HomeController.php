@@ -45,7 +45,7 @@ class HomeController extends Controller
         $res['status'] = "failed";
             if($user && $user->confirmId == $request->input('confirmId')) {
                 $user->status = 1;
-                $uesr->save();
+                $user->save();
                 $res['status'] = 'success';
             }
         return json_encode($res);
