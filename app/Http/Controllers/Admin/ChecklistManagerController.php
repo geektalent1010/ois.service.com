@@ -16,7 +16,11 @@ class ChecklistManagerController extends Controller
         if(!$isAllow) {
             return redirect()->route('admin.dashboard.index');
         }
-        $offices = Office::orderBy('country', 'asc')->orderBy('city', 'asc')->get()->groupBy(function ($data) {
+        $offices = Office::where('type', 'VISA_NIGERIA')
+            ->orderBy('country', 'asc')
+            ->orderBy('city', 'asc')
+            ->get()
+            ->groupBy(function ($data) {
             return $data->country;
         });
         return view('admin.checklist.index')

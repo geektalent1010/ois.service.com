@@ -7113,6 +7113,69 @@ body {
   align-items: center;
 }
 
+.center-manager-section .manager-body .content-panel-part {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.center-manager-section .manager-body .content-panel-part .content-panel {
+  width: 33.33%;
+  font-family: "DinPro", sans-serif;
+  font-size: 16px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #003366;
+  border: 1px solid #005695;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  color: white;
+}
+
+.center-manager-section .manager-body .content-panel-part .content-panel:hover {
+  transition: 0.3s;
+  background-color: #00a9ea;
+}
+
+.center-manager-section .manager-body .content-panel-part .content-panel.active {
+  background-color: #00a9ea;
+}
+
+.center-manager-section .manager-body .content-small-panel-part {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: left;
+}
+
+.center-manager-section .manager-body .content-small-panel-part .content-small-panel {
+  width: 16.665%;
+  font-family: "DinPro", sans-serif;
+  font-size: 16px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #003366;
+  border: 1px solid #005695;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  color: white;
+}
+
+.center-manager-section .manager-body .content-small-panel-part .content-small-panel:hover {
+  transition: 0.3s;
+  background-color: #00a9ea;
+}
+
+.center-manager-section .manager-body .content-small-panel-part .content-small-panel.active {
+  background-color: #00a9ea;
+}
+
 .center-manager-section .manager-body .select-form {
   width: 300px;
   height: 45px;
@@ -7216,6 +7279,69 @@ body {
   align-items: center;
 }
 
+.price-manager-section .manager-body .content-panel-part {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.price-manager-section .manager-body .content-panel-part .content-panel {
+  width: 33.33%;
+  font-family: "DinPro", sans-serif;
+  font-size: 16px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #003366;
+  border: 1px solid #005695;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  color: white;
+}
+
+.price-manager-section .manager-body .content-panel-part .content-panel:hover {
+  transition: 0.3s;
+  background-color: #00a9ea;
+}
+
+.price-manager-section .manager-body .content-panel-part .content-panel.active {
+  background-color: #00a9ea;
+}
+
+.price-manager-section .manager-body .content-small-panel-part {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: left;
+}
+
+.price-manager-section .manager-body .content-small-panel-part .content-small-panel {
+  width: 16.665%;
+  font-family: "DinPro", sans-serif;
+  font-size: 16px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #003366;
+  border: 1px solid #005695;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  color: white;
+}
+
+.price-manager-section .manager-body .content-small-panel-part .content-small-panel:hover {
+  transition: 0.3s;
+  background-color: #00a9ea;
+}
+
+.price-manager-section .manager-body .content-small-panel-part .content-small-panel.active {
+  background-color: #00a9ea;
+}
+
 .price-manager-section .manager-body .select-part {
   width: 100%;
   display: flex;
@@ -7228,19 +7354,23 @@ body {
   border-radius: 23px;
 }
 
-.price-manager-section .manager-body .edit-form {
+.price-manager-section .manager-body .price-list {
+  width: 100%;
+}
+
+.price-manager-section .manager-body .price-list .edit-form {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.price-manager-section .manager-body .edit-form .card-custom {
+.price-manager-section .manager-body .price-list .edit-form .card-custom {
   display: flex;
   flex-direction: column;
   gap: 2px;
 }
 
-.price-manager-section .manager-body .edit-form .card-custom .card-header-custom {
+.price-manager-section .manager-body .price-list .edit-form .card-custom .card-header-custom {
   padding-left: 30px;
   padding-right: 30px;
   cursor: pointer;
@@ -7251,19 +7381,19 @@ body {
   outline: none;
 }
 
-.price-manager-section .manager-body .edit-form .card-custom .card-body-custom {
+.price-manager-section .manager-body .price-list .edit-form .card-custom .card-body-custom {
   padding: 20px 30px;
   background-color: rgba(255, 255, 255, 0.06);
   outline: none;
   min-height: 70px;
 }
 
-.price-manager-section .manager-body .edit-form .card-custom .card-body-custom .custom-panel-header {
+.price-manager-section .manager-body .price-list .edit-form .card-custom .card-body-custom .custom-panel-header {
   font-family: "DinPro Medium", serif;
   font-size: 18px;
 }
 
-.price-manager-section .manager-body .edit-form .card-custom .outline {
+.price-manager-section .manager-body .price-list .edit-form .card-custom .outline {
   outline: 1px solid white;
 }
 

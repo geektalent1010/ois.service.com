@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class ApplicationController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         return view('pages.application.index')
             ->with('modalData', $this->modalData);
@@ -16,9 +16,13 @@ class ApplicationController extends Controller
 
     public function bvn()
     {
-        $offices = Office::orderBy('country', 'asc')->orderBy('city', 'asc')->get()->groupBy(function ($data) {
-            return $data->country;
-        });
+        $offices = Office::where('type', 'BVN')
+            ->orderBy('country', 'asc')
+            ->orderBy('city', 'asc')
+            ->get()
+            ->groupBy(function ($data) {
+                return $data->country;
+            });
         return view('pages.application.bvnApplication')
             ->with('modalData', $this->modalData)
             ->with('offices', $offices);
@@ -26,9 +30,13 @@ class ApplicationController extends Controller
 
     public function nin()
     {
-        $offices = Office::orderBy('country', 'asc')->orderBy('city', 'asc')->get()->groupBy(function ($data) {
-            return $data->country;
-        });
+        $offices = Office::where('type', 'NIN')
+            ->orderBy('country', 'asc')
+            ->orderBy('city', 'asc')
+            ->get()
+            ->groupBy(function ($data) {
+                return $data->country;
+            });
         return view('pages.application.ninApplication')
             ->with('modalData', $this->modalData)
             ->with('offices', $offices);
@@ -46,7 +54,11 @@ class ApplicationController extends Controller
 
     public function usaChecklists()
     {
-        $offices = Office::where('country','!=','Nigeria')->orderBy('country', 'asc')->orderBy('city', 'asc')->get()->groupBy(function ($data) {
+        $offices = Office::where('country','!=','Nigeria')
+            ->where('type', 'VISA_USA')
+            ->orderBy('country', 'asc')
+            ->orderBy('city', 'asc')
+            ->get()->groupBy(function ($data) {
             return $data->country;
         });
         return view('pages.application.usaChecklists')
@@ -56,9 +68,14 @@ class ApplicationController extends Controller
 
     public function nigerianChecklists()
     {
-        $offices = Office::where('country','!=','Nigeria')->orderBy('country', 'asc')->orderBy('city', 'asc')->get()->groupBy(function ($data) {
-            return $data->country;
-        });
+        $offices = Office::where('type', 'VISA_NIGERIA')
+            ->where('country','!=','Nigeria')
+            ->orderBy('country', 'asc')
+            ->orderBy('city', 'asc')
+            ->get()
+            ->groupBy(function ($data) {
+                return $data->country;
+            });
         return view('pages.application.nigerianChecklists')
             ->with('modalData', $this->modalData)
             ->with('offices', $offices);

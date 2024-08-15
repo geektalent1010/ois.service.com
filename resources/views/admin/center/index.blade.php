@@ -12,6 +12,15 @@
     <div class="body-section center-manager-section">
         <div class="manager-body">
             <div class="main-title">CENTER EDITOR</div>
+                <div class="content-panel-part mt-30px">
+                    <a class="content-panel @if($type=='VISA_USA') active @endif" href="{{route('admin.center.index', ['type' => 'VISA_USA'])}}">VISA</a>
+                    <a class="content-panel @if($type=='BVN') active @endif" href="{{route('admin.center.index', ['type' => 'BVN'])}}">BVN</a>
+                    <a class="content-panel @if($type=='NIN') active @endif" href="{{route('admin.center.index', ['type' => 'NIN'])}}">NIN</a>
+                </div>
+                <div class="content-small-panel-part">
+                    <a class="content-small-panel @if($type=='VISA_USA') active @endif" href="{{route('admin.center.index', ['type' => 'VISA_USA'])}}">USA</a>
+                    <a class="content-small-panel @if($type=='VISA_NIGERIA') active @endif" href="{{route('admin.center.index', ['type' => 'VISA_NIGERIA'])}}">NIGERIA</a>
+                </div>
                 <form class="select-form form-select-custom mt-30px" id="country-select-form">
                     @csrf
                     <select name="officeId" id="country-select" class="">
@@ -28,6 +37,7 @@
                     </select>
                 </form>
                 <form class="office-detail-form">
+                    <input type="hidden" value="{{$type}}" name="type" id="type" />
                     <div class="office-detail mt-30px d-none"></div>
                     <div class="publish-button info-button mt-35px d-none">
                         <button>PUBLISH</button>

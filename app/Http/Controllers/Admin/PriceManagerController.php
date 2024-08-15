@@ -11,20 +11,29 @@ use App\AdminLog;
 
 class PriceManagerController extends Controller
 {
-    public function index() {
+    public function index(Request $request) {
+        $type = $request->input('type');
+        if(!$type) $type = "VISA_USA";
+
         $isAllow = Auth::guard('admin')->user()->isAllowPriceEditor();
         if(!$isAllow) {
             return redirect()->route('admin.dashboard.index');
         }
-        $offices = Office::orderBy('country', 'asc')->orderBy('city', 'asc')->get()->groupBy(function ($data) {
+        $offices = Office::where('type', $type)
+            ->orderBy('country', 'asc')
+            ->orderBy('city', 'asc')
+            ->get()
+            ->groupBy(function ($data) {
             return $data->country;
         });
         return view('admin.price.index')
-            ->with('offices', $offices);
+            ->with('offices', $offices)
+            ->with('type', $type);
     }
 
     public function getPrice(Request $request) {
         $officeId = $request->input('officeId');
+        $type = $request->input('type');
         if(!Auth::guard('admin')->user()->isSuperAdmin()) {
             $centers = explode(",", Auth::guard('admin')->user()->profile->country_center);
             $isAllowCenter = false;
@@ -39,21 +48,44 @@ class PriceManagerController extends Controller
                 return json_encode($res);
             }
         }
-        $checklist = Checklist::where('office_id', $officeId)
-            ->where('visa_type', 'Fees')
-            ->first();
-        if(!$checklist) {
+        $office = Office::where('id', $officeId)->first();
+
+        $checklists = Checklist::where(function ($query) use ($type, $officeId, $office) {
+            if($type == 'VISA_USA' || $type == 'VISA_NIGERIA') {
+                $query->where('office_id', $officeId)
+                    ->where('visa_type', 'Fees');
+            } else if($type == 'BVN') {
+                $query->where('visa_type', 'BVN_Common')
+                    ->orWhere(function ($query) use ($officeId) {
+                        $query->where('visa_type', 'BVN_Fees')
+                            ->where('office_id', $officeId);
+                    });
+            } else if($type == 'NIN') {
+                $query->where('visa_type', 'NIN_Common')
+                    ->orWhere('visa_type', 'NIN_Common_'.$office->location);
+            }
+        })->get();
+        
+        if(!$checklists) {
             $res['status'] = 'nodata';
             return json_encode($res);
         }
-        return json_encode($checklist);
+        return json_encode($checklists);
     }
 
     public function updatePrice(Request $request) {
         $id = $request->input('edit-id');
+        $type = $request->input('type');
+        $office = Office::where('id', $request->input('officeId'))->first();
         if(!$id) {
             $checklist = new Checklist();
-            $checklist->visa_type = 'Fees';
+            if($type == 'VISA_USA' || $type == 'VISA_NIGERIA') {
+                $checklist->visa_type = 'Fees';
+            } else if($type == 'BVN') {
+                $checklist->visa_type = 'BVN_Fees';
+            } else if($type == 'NIN') {
+                $checklist->visa_type = 'NIN_Fees';
+            }
             $checklist->office_id = $request->input('officeId');
             $checklist->file_name = '';
         } else {

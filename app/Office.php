@@ -19,6 +19,7 @@ class Office extends Model
         'working_time',
         'working_days',
         'location',
+        'type',
     ];
 
     public function checklists(): HasMany

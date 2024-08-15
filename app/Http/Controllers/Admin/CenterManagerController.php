@@ -10,17 +10,26 @@ use App\AdminLog;
 
 class CenterManagerController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
+        $type = $request->input('type');
+        if(!$type) $type = "VISA_USA";
+
         $isAllow = Auth::guard('admin')->user()->isAllowCenterEditor();
         if (!$isAllow) {
             return redirect()->route('admin.dashboard.index');
         }
-        $offices = Office::orderBy('country', 'asc')->orderBy('city', 'asc')->get()->groupBy(function ($data) {
+
+        $offices = Office::where('type', $type)
+            ->orderBy('country', 'asc')
+            ->orderBy('city', 'asc')
+            ->get()
+            ->groupBy(function ($data) {
             return $data->country;
         });
         return view('admin.center.index')
-            ->with('offices', $offices);
+            ->with('offices', $offices)
+            ->with('type', $type);
     }
 
     public function getCenterInfo(Request $request)
@@ -47,6 +56,7 @@ class CenterManagerController extends Controller
     public function updateOffice(Request $request)
     {
         $id = $request->input('officeId');
+
         if ($id == 0) {
             if (!Auth::guard('admin')->user()->isSuperAdmin()) {
                 $res['status'] = 'unauthorize';
@@ -77,6 +87,7 @@ class CenterManagerController extends Controller
         $office->address = $request->input('address');
         $office->working_days = $request->input('workingDay');
         $office->working_time = $request->input('workingTime');
+        $office->type = $request->input('type');
         if ($location) {
             if ($request->input('country') === 'Nigeria') {
                 $office->location = 2;

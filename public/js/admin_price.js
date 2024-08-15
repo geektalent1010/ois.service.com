@@ -3,41 +3,76 @@ $(document).ready(function () {
         $(this).submit();
     });
 
-    $("#country-select-form").submit(function (e) {
+    $(document).on("submit", "#country-select-form", function (e) {
         e.preventDefault();
-        $('.right-button').addClass('disabled');
+        
+        $(".right-button").addClass("disabled");
+        const token = $("#country-select-form>input:first-of-type").val();
+        const type = $("#type").val()
         $.ajax({
             url: "/admin/getPrice",
             type: "post",
+            headers: {
+                "X-CSRF-TOKEN": "{{ csrf_token() }}",
+            },
             data: $(this).serialize(),
             dataType: "json",
             success: function (res) {
-                if(res.status == 'unauthorize') {
-                    customAlert('We are so sorry', 'You do not have the access to this page.', 'error');
+                if (res.status == "unauthorize") {
+                    customAlert(
+                        "We are so sorry",
+                        "You do not have the access to this page.",
+                        "error"
+                    );
                     $(".edit-form").addClass("d-none");
                     return;
                 }
                 let title = "Center Fees";
                 let description = "Please input here";
                 let id = 0;
-                if (res.status != 'nodata') {
-                    title = res.title;
-                    description = res.description;
-                    id = res.id;
-                }
-                let descriptionHtml = "";
-                for (const element of description.split("<br/>")) {
-                    if (!element) continue;
-                    if (element.includes("<div")) {
-                        descriptionHtml += element;
-                    } else {
-                        descriptionHtml += "<div>" + element + "</div>";
+                let html = `
+                    <form class="edit-form">
+                        <input type="hidden" id="edit-id" name="edit-id" value="0">
+                        <input type="hidden" name="type" value="${type}" />
+                                <input type="hidden" class="form-token" name="_token" value="${token}" />
+                        <div class="card-custom mt-30px">
+                            <div class="card-header-custom editable" contenteditable="true">Center Fees</div>
+                            <div class="card-body-custom collapse show editable" contenteditable="true"><div>Please input here</div></div>
+                        </div>
+                        <div class="price-button-section info-button mt-35px mb-35px">
+                            <button>PUBLISH</button>
+                        </div>
+                    </form>
+                `;
+                if (res && res.length) {
+                    for (let index = 1; index <= res.length; index++) {
+                        const result = res[index - 1]
+                        let descriptionHtml = "";
+                        for (const element of result.description.split("<br/>")) {
+                            if (!element) continue;
+                            if (element.includes("<div")) {
+                                descriptionHtml += element;
+                            } else {
+                                descriptionHtml += "<div>" + element + "</div>";
+                            }
+                        }
+                        html += `
+                            <form class="edit-form">
+                                <input type="hidden" id="edit-id" name="edit-id" value="${result.id}">
+                                <input type="hidden" name="type" value="${type}" />
+                                <input type="hidden" class="form-token" name="_token" value="${token}" />
+                                <div class="card-custom mt-30px">
+                                    <div class="card-header-custom editable" contenteditable="true">${result.title}</div>
+                                    <div class="card-body-custom collapse show editable" contenteditable="true">${descriptionHtml}</div>
+                                </div>
+                                <div class="price-button-section info-button mt-35px mb-35px">
+                                    <button>PUBLISH</button>
+                                </div>
+                            </form>
+                        `;
                     }
                 }
-                $("#edit-id").val(id);
-                $(".card-header-custom").html(title);
-                $(".card-body-custom").html(descriptionHtml);
-                $(".edit-form").removeClass("d-none");
+                $(".price-list").html(html);
                 $(".card-body-custom > div").attr("tabindex", 0);
             },
         });
@@ -50,15 +85,17 @@ $(document).ready(function () {
         $(this).removeClass("outline");
     });
 
-    $(".edit-form").submit(function (e) {
+    $(document).on("submit", ".edit-form", function (e) {
         e.preventDefault();
-        $(".card-body-custom > div").removeAttr("tabindex");
-        $(".card-body-custom > div").removeClass("focused");
+
+        const $form = $(this);
+        $form.find('.card-body-custom > div').removeAttr("tabindex").removeClass("focused");
+
         let formData = new FormData(this);
-        formData.append("title", $(".edit-form .card-header-custom").text());
+        formData.append("title", $form.find('.card-header-custom').text());
         formData.append(
             "description",
-            $(".edit-form .card-body-custom").html()
+            $form.find(".card-body-custom").html()
         );
         formData.append("officeId", $("#country-select").val());
         $.ajax({
@@ -66,23 +103,26 @@ $(document).ready(function () {
             type: "POST",
             dataType: "json",
             data: formData,
+            headers: {
+                "X-CSRF-TOKEN": "{{ csrf_token() }}",
+            },
             contentType: false,
             processData: false,
             success: function (res) {
                 console.log(res);
-                $(".card-body-custom > div").attr("tabindex", 0);
-                if ((res.status == "success")) {
-                    $('.right-button').addClass('disabled');
-                    customAlert('Success', 'Published successfully', 'success');
+                $form.find(".card-body-custom > div").attr("tabindex", 0);
+                if (res.status == "success") {
+                    $(".right-button").addClass("disabled");
+                    customAlert("Success", "Published successfully", "success");
                 } else {
-                    customAlert('We are so sorry', '500 Error', 'error');
+                    customAlert("We are so sorry", "500 Error", "error");
                 }
             },
         });
     });
 
     $(".editable").on("focus", function () {
-        $('.right-button').removeClass('disabled');
+        $(".right-button").removeClass("disabled");
     });
 
     $(document).on("focus", ".card-body-custom > div", function () {
@@ -92,7 +132,7 @@ $(document).ready(function () {
 
     $("#subtitle-button-right").click(function () {
         let focusedDiv = $(".card-body-custom > div.focused");
-        console.log('aaa');
+        console.log("aaa");
         if (focusedDiv.length) {
             focusedDiv.addClass("custom-sub-title");
             focusedDiv.removeClass("custom-content");
@@ -107,6 +147,6 @@ $(document).ready(function () {
         }
     });
 
-    const selectDom = document.getElementById('country-select-form');
+    const selectDom = document.getElementById("country-select-form");
     drawSelectForm(selectDom);
 });

@@ -42,7 +42,7 @@
                             <th>Email</th>
                             <th>Address</th>
                             <th>Phone</th>
-                            <th>User Name</th>
+                            <th>Confirmed</th>
                             <th>Register Date</th>
                         </tr>
                     </thead>
@@ -56,7 +56,7 @@
                                 <td>{{$user->email}}</td>
                                 <td>{{$user->profile->country->name}} {{$user->profile->country->city}} {{$user->profile->street}} {{$user->profile->house_number}}</td>
                                 <td>{{$user->phone_number}}</td>
-                                <td>{{$user->username}}</td>
+                                <td>@if($user->status == 1) Yes @else No @endif</td>
                                 <td>{{$user->created_at}}</td>
                             </tr>
                         @endforeach

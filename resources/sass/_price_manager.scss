@@ -24,6 +24,69 @@
             align-items: center;
         }
 
+        .content-panel-part {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+
+            .content-panel {
+                width: 33.33%;
+                font-family: "DinPro", sans-serif;
+                font-size: 16px;
+                height: 70px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #003366;
+                border: 1px solid #005695;
+                cursor: pointer;
+                transition: 0.3s;
+                text-decoration: none;
+                color: white;
+            }
+
+            .content-panel:hover {
+                transition: 0.3s;
+                background-color: #00a9ea;
+            }
+
+            .content-panel.active {
+                background-color: #00a9ea;
+            }
+        }
+
+        .content-small-panel-part {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: left;
+
+            .content-small-panel {
+                width: 16.665%;
+                font-family: "DinPro", sans-serif;
+                font-size: 16px;
+                height: 70px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #003366;
+                border: 1px solid #005695;
+                cursor: pointer;
+                transition: 0.3s;
+                text-decoration: none;
+                color: white;
+            }
+
+            .content-small-panel:hover {
+                transition: 0.3s;
+                background-color: #00a9ea;
+            }
+
+            .content-small-panel.active {
+                background-color: #00a9ea;
+            }
+        }
+
         .select-part {
             width: 100%;
             display: flex;
@@ -36,43 +99,44 @@
             }
         }
 
-        .edit-form {
+        .price-list {
             width: 100%;
-            display: flex;
-            flex-direction: column;
-
-            .card-custom {
+            .edit-form {
+                width: 100%;
                 display: flex;
                 flex-direction: column;
-                gap: 2px;
 
-                .card-header-custom {
-                    padding-left: 30px;
-                    padding-right: 30px;
-                    cursor: pointer;
-                    height: 70px;
-                    align-items: center;
+                .card-custom {
                     display: flex;
-                    background-color: rgba(255,255,255,0.14);
-                    outline: none;
-                }
+                    flex-direction: column;
+                    gap: 2px;
 
-                .card-body-custom {
-                    padding: 20px 30px;
-                    background-color: rgba(255,255,255,0.06);
-                    outline: none;
-                    min-height: 70px;
-
-                    .custom-panel-header {
-                        font-family: "DinPro Medium", serif;
-                        font-size: 18px;
+                    .card-header-custom {
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        cursor: pointer;
+                        height: 70px;
+                        align-items: center;
+                        display: flex;
+                        background-color: rgba(255, 255, 255, 0.14);
+                        outline: none;
                     }
 
+                    .card-body-custom {
+                        padding: 20px 30px;
+                        background-color: rgba(255, 255, 255, 0.06);
+                        outline: none;
+                        min-height: 70px;
 
-                }
+                        .custom-panel-header {
+                            font-family: "DinPro Medium", serif;
+                            font-size: 18px;
+                        }
+                    }
 
-                .outline {
-                    outline: 1px solid white;
+                    .outline {
+                        outline: 1px solid white;
+                    }
                 }
             }
         }
@@ -116,7 +180,7 @@
     }
 }
 
-.price-manager-section::-webkit-scrollbar{
+.price-manager-section::-webkit-scrollbar {
     width: 10px;
     cursor: pointer;
 }

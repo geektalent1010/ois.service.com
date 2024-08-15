@@ -807,9 +807,6 @@
             document.ontouchstart = resetTimer; // For mobile devices
 
             function logout() {
-                alert(
-                    "We noticed you've been inactive for a while. For your security, we'll redirect you to the login page shortly."
-                    );
                 window.location.href = '/login'; // Redirect to the login page
             }
 

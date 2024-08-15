@@ -12,9 +12,19 @@
     <div class="body-section price-manager-section">
         <div class="manager-body">
             <div class="main-title">PRICE EDITOR</div>
+            <div class="content-panel-part mt-30px">
+                <a class="content-panel @if($type=='VISA_USA') active @endif" href="{{route('admin.price.index', ['type' => 'VISA_USA'])}}">VISA</a>
+                <a class="content-panel @if($type=='BVN') active @endif" href="{{route('admin.price.index', ['type' => 'BVN'])}}">BVN</a>
+                <a class="content-panel @if($type=='NIN') active @endif" href="{{route('admin.price.index', ['type' => 'NIN'])}}">NIN</a>
+            </div>
+            <div class="content-small-panel-part">
+                <a class="content-small-panel @if($type=='VISA_USA') active @endif" href="{{route('admin.price.index', ['type' => 'VISA_USA'])}}">USA</a>
+                <a class="content-small-panel @if($type=='VISA_NIGERIA') active @endif" href="{{route('admin.price.index', ['type' => 'VISA_NIGERIA'])}}">NIGERIA</a>
+            </div>
             <div class="select-part">
                 <form class="select-form form-select-custom mt-30px" id="country-select-form">
                     @csrf
+                    <input type="hidden" value="{{$type}}" name="type" id="type" />
                     <select name="officeId" id="country-select" class="">
                         <option value="0">Country + City</option>
                         @foreach ($offices as $country => $cities)
@@ -29,17 +39,9 @@
                     </select>
                 </form>
             </div>
-            <form class="edit-form d-none">
-                @csrf
-                <input type="hidden" id="edit-id" name="edit-id" value="0">
-                <div class="card-custom mt-30px">
-                    <div class="card-header-custom editable" contenteditable="true">Center Fees</div>
-                    <div class="card-body-custom collapse show editable" contenteditable="true"><div>Please input here</div></div>
-                </div>
-                <div class="price-button-section info-button mt-35px mb-35px">
-                    <button>PUBLISH</button>
-                </div>
-            </form>
+            <div class="price-list">
+
+            </div>
         </div>
         <div class="manager-right-body">
             <div class="right-button disabled" id="subtitle-button-right">SUBTITLE</div>

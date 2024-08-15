@@ -121,6 +121,7 @@ $(document).ready(function () {
             }
             workingTime += $(workingTimes[i]).text();
         }
+        const type = $("#type").val();
 
         let formData = new FormData(this);
         formData.append("country", country);
@@ -129,6 +130,7 @@ $(document).ready(function () {
         formData.append("workingDay", workingDays);
         formData.append("workingTime", workingTime);
         formData.append("location", location);
+        formData.append("type", type);
         $.ajax({
             url: "/admin/updateOffice",
             type: "POST",
