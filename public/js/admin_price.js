@@ -40,7 +40,7 @@ $(document).ready(function () {
                             <div class="card-body-custom collapse show editable" contenteditable="true"><div>Please input here</div></div>
                         </div>
                         <div class="price-button-section info-button mt-35px mb-35px">
-                            <button>PUBLISH</button>
+                            <button>NEW PUBLISH</button>
                         </div>
                     </form>
                 `;
