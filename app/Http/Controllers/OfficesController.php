@@ -23,4 +23,16 @@ class OfficesController extends Controller
             return response()->json($offices);
         }
     }
+
+    public function getCenters(Request $request) {
+        $type = $request->input('type');
+        $offices = Office::where('type', $type)
+            ->orderBy('country', 'asc')
+            ->orderBy('city', 'asc')
+            ->get()
+            ->groupBy(function($data) {
+                return $data->country;
+        });
+        return response()->json($offices);
+    }
 }

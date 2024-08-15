@@ -92,6 +92,8 @@ Route::post('/support', 'ContactController@send')->name('contact.send');
 
 Route::get('/centers', 'OfficesController@index')->name('offices.index');
 
+Route::post('/getCenters', 'OfficesController@getCenters')->name('offices.center.getCenters');
+
 Route::get('/terms', 'TermsController@index')->name('terms.index');
 
 Route::get('/policy', 'PolicyController@index')->name('policy.index');

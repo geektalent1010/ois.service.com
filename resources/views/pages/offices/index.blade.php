@@ -16,35 +16,34 @@
             <source type="video/mp4">
         </video>
         <div class="d-flex justify-content-center">
-            <div class="contact-section body-section">
-                <div class="contact-section-content">
+            <div class="center-section body-section">
+                <div class="center-section-content">
                     <p class="page-title">{{__('find_a_center')}}</p>
-                    <div class="info-container w-100 d-flex justify-content-center">
+                    <div class="info-container w-50 d-flex justify-content-center">
                         <div class="info-box office-box">
-                            <div class="search-field office-search">
-                                <input type="text" class="input-field office-input cursor-default"
-                                    placeholder="{{__('country')}} + {{__('city_L')}}" />
-                                <img class="search-icon cursor-default" src="{{ asset('images/select-arrows.svg') }}">
+                            <div class="select-group">
+                                <div class="type-select form-select-custom" id="type-select">
+                                    <select class="" id="type_id" name="office" text="Country">
+                                        <option value="0">Type</option>
+                                        <option value="VISA" data-data1="VISA">VISA</option>
+                                        <option value="BVN" data-data1="BVN">BVN</option>
+                                        <option value="NIN" data-data1="NIN">NIN</option>
+                                    </select>
+                                </div>
+                                <div class="select-button mt-3 d-none">
+                                    <div class="button-detail">USA</div>
+                                    <div class="button-detail">NIGERIA</div>
+                                </div>
                             </div>
-                            <div class="offices-menus d-none">
-                                @foreach ($offices as $country => $cities)
-                                    @foreach ($cities as $key => $office)
-                                        <div class="d-flex office-menu-item"
-                                            data-country="{{ $office->country }} - {{ $office->city }}"
-                                            data-id="{{ $office->id }}">
-                                            <div class="office-country">
-                                                @if ($key < 1)
-                                                    {{ $country }}
-                                                @endif
-                                            </div>
-                                            <div>- </div>
-                                            <div class="pl-2">{{ $office->city }}</div>
-                                        </div>
-                                    @endforeach
-                                @endforeach
+                            <div class="select-group">
+                                <div class="center-select form-select-custom" id="center-select">
+                                    <select class="" id="center_id" name="office" text="Country">
+                                        <option value="0">Country + City</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="offices-body"></div>
                         </div>
+                        <div class="offices-body"></div>
                     </div>
                 </div>
                 @include('_includes.footer')
@@ -58,42 +57,80 @@
 @endsection
 
 @section('PAGE_LEVEL_SCRIPTS')
+    <script type="text/javascript" src="{{ asset('js/util.js') }}"></script>
+
+    <script>
+        drawSelectForm(document.getElementById('center-select'));
+        drawSelectForm(document.getElementById('type-select'));
+
+    </script>
     <script type="text/javascript">
         $.ajaxSetup({
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             }
         });
-        var officeId = '';
 
-        $('.office-input').click(function() {
-            $(".offices-menus").removeClass('d-none');
-        });
-
-        $('.search-icon').click(function() {
-            $(".offices-menus").removeClass('d-none');
-        });
-
-        function windowOnClick(event) {
-            $('.offices-menus').addClass('d-none');
-        }
-
-        $(document).on('click', '.main-bg', function(event) {
-            if (!$(event.target).hasClass('office-input') && !$(event.target).hasClass('search-icon')) {
-                $('.offices-menus').addClass('d-none');
-            }
-        });
-
-        $('.office-menu-item').click(function() {
-            $('.input-field').val($(this).data('country'));
-            officeId = $(this).data('id');
+        $(document).on('click','#center-select .select-items>div', function() {
             showOffices();
         });
 
+        $("#type-select .select-items>div").on('click', function() {
+            const type = $("#type_id").val()
+            $("#center-select").html('')
+            $(".button-detail").removeClass('active')
+            $(".select-button").addClass('d-none');
+            $(".offices-body").html('')
+            if(type === "VISA") {
+                $(".select-button").removeClass('d-none');
+                return;
+            }
+            selectType(type);
+        })
+
+        $(".button-detail").click(function() {
+            $(".button-detail").removeClass('active')
+            $(this).addClass("active")
+            $("#center-select").html('')
+            selectType('VISA_' + $(this).text())
+            $(".offices-body").html('')
+        })
+
+        function selectType (type) {
+            $.ajax({
+                url: '{{route('offices.center.getCenters')}}',
+                method: "POST",
+                data: {'type': type},
+                dataType: 'json',
+                success:function(res) {
+                    let html = `<select class="" id="center_id" name="office" text="Country">
+                        <option value="0">Country + City</option>`
+
+                    for(const key in res) {
+                        const country = res[key]
+                        for(const center of country) {
+                            html += `
+                                <option value="${center.id}"
+                                    data-data1="${center.country}"
+                                    data-data2="${center.city}"
+                                    >
+                                    ${center.country} - ${center.city}
+                                </option>
+                            `
+                        }
+                    }
+
+                    html += `</select>`
+
+                    $("#center-select").html(html);
+                    drawSelectForm(document.getElementById('center-select'));
+                }
+            })
+        }
+
         function showOffices() {
-            let country_name = $('.input-field').val();
             var send_data = {};
-            send_data['office_id'] = officeId;
+            send_data['office_id'] = $("#center_id").val();
             $.ajax({
                 url: '{{ route('offices.search') }}',
                 method: "POST",
@@ -145,6 +182,4 @@
             });
         }
     </script>
-
-    <script type="text/javascript" src="{{ asset('js/util.js') }}"></script>
 @endsection
