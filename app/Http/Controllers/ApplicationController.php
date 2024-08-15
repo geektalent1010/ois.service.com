@@ -54,8 +54,7 @@ class ApplicationController extends Controller
 
     public function usaChecklists()
     {
-        $offices = Office::where('country','!=','Nigeria')
-            ->where('type', 'VISA_USA')
+        $offices = Office::where('type', 'VISA_USA')
             ->orderBy('country', 'asc')
             ->orderBy('city', 'asc')
             ->get()->groupBy(function ($data) {
