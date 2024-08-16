@@ -47,7 +47,7 @@
                                         <select name="type-select" id="type-select" class="">
                                             <option value="0">Type of Service</option>
                                             @foreach($services as $service)
-                                                <option value="{{$service}}" data-data1={{$service}}>{{$service}}</option>
+                                                <option value="{{$service}}" data-data1="{{$service}}">{{$service}}</option>
                                             @endforeach
                                         </select>
                                     </div>

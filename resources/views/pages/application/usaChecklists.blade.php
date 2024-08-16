@@ -51,12 +51,10 @@
                                     <div class="info-box">
                                         <div class="center-select form-select-custom" id="type-select">
                                             <select id="type_id" name="visa_type" text="">
-                                                <option value="0">Passport Type</option>
+                                                <option value="0">Services</option>
                                                 @if(isset($services))
                                                     @foreach($services as $service)
-                                                        <option value="{{$service}}"
-                                                            data-data1="{{$service}}"
-                                                        >{{$service}}</option>
+                                                        <option value="{{$service}}" data-data1="{{$service}}">{{$service}}</option>
                                                     @endforeach
                                                 @endif
                                             </select>
