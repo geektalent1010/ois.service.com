@@ -471,20 +471,18 @@ $(document).ready(function () {
         }
         formData.append("title", title);
         formData.append("description", description);
-        if (
-            !id &&
-            (!$("#office-select").val() ||
-                $("#office-select").val() == 0 ||
-                !$("#type-select").val() ||
-                $("#type-select").val() == 0)
-        ) {
-            customAlert(
-                "We are so sorry",
-                "Please select Center and Passport type.",
-                "error"
-            );
-            return;
+
+        if(!id) {
+            if(!$("#office-select").val()) {
+                customAlert(
+                    "We are so sorry",
+                    "Please select Center.",
+                    "error"
+                );
+                return;
+            }
         }
+        
         $.ajax({
             url: "/admin/updateChecklist",
             type: "POST",
