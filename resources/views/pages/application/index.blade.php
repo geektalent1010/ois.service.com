@@ -49,7 +49,7 @@
                 CLICK HERE
             </a> -->
 
-                <button class="click-here-button" onclick="window.location.href='{{ route('booking.iframe') }}'">
+                <button class="click-here-button" onclick="https://apt.oisservices.com/">
                     {{__('click_here_U')}}
                 </button>
             </div>

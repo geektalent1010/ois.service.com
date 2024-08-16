@@ -18,7 +18,7 @@
                             @endphp
                             <div class="row flex-column justify-content-center align-items-center mt-3">
                                 <div class="col-md-6 form-group mt-2">
-                                    <a class="btn btn-primary confirm-button" href="{{ route('booking.iframe') }}"
+                                    <a class="btn btn-primary confirm-button" href="https://apt.oisservices.com/"
                                         target="_blank">
                                         {{ __('BOOK APPOINTMENT') }}
                                     </a>
@@ -62,7 +62,7 @@
                                     </a>
                                 </div>
                                 <div class="col-md-6 form-group mt-2">
-                                    <a class="btn btn-primary confirm-button" href="{{ route('booking.iframe') }}"
+                                    <a class="btn btn-primary confirm-button" href="https://apt.oisservices.com/"
                                         target="_blank">
                                         {{ __('BOOK APPOINTMENT') }}
                                     </a>
