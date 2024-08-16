@@ -47,7 +47,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <p class="form-label">{{__('select_passport_type_applying_with')}}</p>
+                                    <p class="form-label">SELECT TYPE OF SERVIECES APPLYING WITH</p>
                                     <div class="info-box">
                                         <div class="center-select form-select-custom" id="type-select">
                                             <select id="type_id" name="visa_type" text="">
