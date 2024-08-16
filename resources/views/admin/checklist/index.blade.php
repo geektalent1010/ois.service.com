@@ -12,9 +12,14 @@
     <div class="body-section checklist-manager-section">
         <div class="manager-body">
             <div class="main-title">CHECKLIST EDITOR</div>
+            <div class="content-panel-part mt-30px">
+                <a class="content-panel @if($type=='VISA_USA') active @endif" href="{{route('admin.checklist.index', ['type' => 'VISA_USA'])}}">USA</a>
+                <a class="content-panel @if($type=='VISA_NIGERIA') active @endif" href="{{route('admin.checklist.index', ['type' => 'VISA_NIGERIA'])}}">NIGERIGA</a>
+            </div>
             <div class="select-group">
                 <form class="select-form mt-30px" id="office-select-form">
                     @csrf
+                    <input type="hidden" name="type" id="type" value={{$type}} />
                     <div>
                         <label for="">SELECT CENTER</label>
                         <div class="form-select-custom" id="office-select-div">
@@ -33,16 +38,41 @@
                         </div>
                     </div>
                     <div>
-                        <label for="">SELECT PASSPORT TYPE</label>
-                        <div class="form-select-custom" id="type-select-div">
-                            <select name="type" id="type-select" class="">
-                                <option value="0">Passport Type</option>
-                                <option value="Diplomatic" data-data1="Diplomatic Passport"></option>
-                                <option value="Official" data-data1="Official Passport"></option>
-                                <option value="Standard" data-data1="Standard Passport"></option>
-                                <option value="UN" data-data1="UN Passport"></option>
-                            </select>
-                        </div>
+                        @if($type == 'VISA_USA')
+                            <label for="">TYPE OF SERVICE</label>
+                            <div class="service-type-group">
+                                <div class="d-flex">
+                                    <input type="radio" name="edit-type" value="1" class="edit-type" checked />
+                                    <div class="form-select-custom" id="type-select-div">
+                                        <select name="type-select" id="type-select" class="">
+                                            <option value="0">Type of Service</option>
+                                            @foreach($services as $service)
+                                                <option value="{{$service}}" data-data1={{$service}}>{{$service}}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <input type="radio" name="edit-type" class="edit-type" value="2" />
+                                    <div class="info-value">
+                                        <input type="text" name="type-input" id="type-input" text="Last Name"
+                                            value="" placeholder="New type of Service" class="form-input-custom" disabled />
+                                    </div>
+                                </div>
+                            </div>
+                            @elseif($type == 'VISA_NIGERIA')
+                            <label for="">SELECT PASSPORT TYPE</label>
+                            <div class="form-select-custom" id="type-select-div">
+                                <select name="type-select" id="type-select" class="">
+                                    <option value="0">Passport Type</option>
+                                    <option value="Diplomatic" data-data1="Diplomatic Passport"></option>
+                                    <option value="Official" data-data1="Official Passport"></option>
+                                    <option value="Standard" data-data1="Standard Passport"></option>
+                                    <option value="UN" data-data1="UN Passport"></option>
+                                </select>
+                            </div>
+                        @endif
+                        
                     </div>
 
                 </form>
@@ -66,6 +96,7 @@
             <div class="editor-but add-table-but" id="add-table-button-right">ADD TABLE</div>
             <div class="editor-but remove-table-but" id="remove-table-button-right">REMOVE TABLE</div>
             <div class="editor-but add-row-but" id="add-row-button-right">ADD ROW</div>
+            <div class="editor-but add-column-but" id="add-column-button-right">ADD COLUMN</div>
             <div class="editor-but remove-row-but" id="remove-row-button-right">REMOVE ROW</div>
             <div class="editor-but remove-column-but" id="remove-column-button-right">REMOVE COLUMN</div>
         </div>

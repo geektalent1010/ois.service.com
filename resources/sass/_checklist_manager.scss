@@ -24,6 +24,38 @@
             align-items: center;
         }
 
+        .content-panel-part {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+
+            .content-panel {
+                width: 30%;
+                font-family: "DinPro", sans-serif;
+                font-size: 16px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #003366;
+                border: 1px solid #005695;
+                cursor: pointer;
+                transition: 0.3s;
+                text-decoration: none;
+                color: white;
+            }
+
+            .content-panel:hover {
+                transition: 0.3s;
+                background-color: #00a9ea;
+            }
+
+            .content-panel.active {
+                background-color: #00a9ea;
+            }
+        }
+
         .select-group {
             display: flex;
             gap: 20px;
@@ -42,6 +74,58 @@
                 .form-select-custom {
                     height: 45px;
                     border-radius: 24px;
+                    width: 100%;
+                }
+
+                .service-type-group {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+
+                    > div {
+                        gap: 8px;
+                    }
+
+                    .info-value {
+                        background-color: #266ea5;
+                        display: flex;
+                        align-items: center;
+                        height: 48px;
+                        border-radius: 25px;
+                        width: 100%;
+
+                        .center-select {
+                            width: 100%;
+                        }
+
+                        .form-input-custom {
+                            width: 100%;
+                            height: 100%;
+                            padding-left: 40px;
+                            padding-right: 40px;
+                            background-color: transparent;
+                            outline: none;
+                            border: none;
+                            color: white;
+                        }
+
+                        .phone-code-select {
+                            width: 40%;
+                            height: 100%;
+                        }
+
+                        .phone-code-input {
+                            width: 60%;
+                            padding-left: 0;
+                        }
+                    }
+                }
+
+                .form-select-custom.select-left-icon {
+                    .select-selected {
+                        padding-left: 7px;
+                        gap: 8px;
+                    }
                 }
 
                 > div {
@@ -85,12 +169,12 @@
                         height: 70px;
                         align-items: center;
                         display: flex;
-                        background-color: rgba(255,255,255,0.14);
+                        background-color: rgba(255, 255, 255, 0.14);
                         outline: none;
                     }
 
                     .card-body-section {
-                        background-color: rgba(255,255,255,0.06);
+                        background-color: rgba(255, 255, 255, 0.06);
                         padding-bottom: 30px;
                         .card-body-custom {
                             padding: 20px 30px;
@@ -136,7 +220,8 @@
             gap: 2px;
         }
 
-        .editor-group .editor-but, .editor-but {
+        .editor-group .editor-but,
+        .editor-but {
             width: 100%;
             background-color: #003366;
             height: 45px;
@@ -145,12 +230,12 @@
             align-items: center;
             transition: 0.3s;
             cursor: pointer;
-            font-family: 'DinPro', sans-serif;
+            font-family: "DinPro", sans-serif;
             font-size: 14px;
             user-select: none;
 
             &.subtitle-but {
-                font-family: 'DinPro Medium', sans-serif;
+                font-family: "DinPro Medium", sans-serif;
                 font-size: 16px;
             }
 
@@ -164,12 +249,14 @@
                 opacity: 1;
             }
 
-            &.regular-text-but, &.underline-text-but {
+            &.regular-text-but,
+            &.underline-text-but {
                 font-family: "Montserrat Regular", sans-serif;
                 font-size: 21px;
             }
 
-            &.bold-text-but, &.bold-underline-text-but {
+            &.bold-text-but,
+            &.bold-underline-text-but {
                 font-family: "Montserrat Bold", sans-serif;
                 font-size: 21px;
             }
@@ -177,7 +264,7 @@
     }
 }
 
-.checklist-manager-section::-webkit-scrollbar{
+.checklist-manager-section::-webkit-scrollbar {
     width: 10px;
     cursor: pointer;
 }

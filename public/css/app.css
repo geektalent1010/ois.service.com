@@ -7936,6 +7936,38 @@ body {
   align-items: center;
 }
 
+.checklist-manager-section .manager-body .content-panel-part {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.checklist-manager-section .manager-body .content-panel-part .content-panel {
+  width: 30%;
+  font-family: "DinPro", sans-serif;
+  font-size: 16px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #003366;
+  border: 1px solid #005695;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  color: white;
+}
+
+.checklist-manager-section .manager-body .content-panel-part .content-panel:hover {
+  transition: 0.3s;
+  background-color: #00a9ea;
+}
+
+.checklist-manager-section .manager-body .content-panel-part .content-panel.active {
+  background-color: #00a9ea;
+}
+
 .checklist-manager-section .manager-body .select-group {
   display: flex;
   gap: 20px;
@@ -7956,6 +7988,56 @@ body {
 .checklist-manager-section .manager-body .select-group .select-form .form-select-custom {
   height: 45px;
   border-radius: 24px;
+  width: 100%;
+}
+
+.checklist-manager-section .manager-body .select-group .select-form .service-type-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.checklist-manager-section .manager-body .select-group .select-form .service-type-group > div {
+  gap: 8px;
+}
+
+.checklist-manager-section .manager-body .select-group .select-form .service-type-group .info-value {
+  background-color: #266ea5;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  border-radius: 25px;
+  width: 100%;
+}
+
+.checklist-manager-section .manager-body .select-group .select-form .service-type-group .info-value .center-select {
+  width: 100%;
+}
+
+.checklist-manager-section .manager-body .select-group .select-form .service-type-group .info-value .form-input-custom {
+  width: 100%;
+  height: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: white;
+}
+
+.checklist-manager-section .manager-body .select-group .select-form .service-type-group .info-value .phone-code-select {
+  width: 40%;
+  height: 100%;
+}
+
+.checklist-manager-section .manager-body .select-group .select-form .service-type-group .info-value .phone-code-input {
+  width: 60%;
+  padding-left: 0;
+}
+
+.checklist-manager-section .manager-body .select-group .select-form .form-select-custom.select-left-icon .select-selected {
+  padding-left: 7px;
+  gap: 8px;
 }
 
 .checklist-manager-section .manager-body .select-group .select-form > div {

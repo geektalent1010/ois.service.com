@@ -11,25 +11,35 @@ use App\AdminLog;
 
 class ChecklistManagerController extends Controller
 {
-    public function index() {
+    public function index(Request $request) {
         $isAllow = Auth::guard('admin')->user()->isAllowChecklistEditor();
+        $type = $request->input('type');
+        if(!$type) $type = "VISA_USA";
         if(!$isAllow) {
             return redirect()->route('admin.dashboard.index');
         }
-        $offices = Office::where('type', 'VISA_NIGERIA')
+        $offices = Office::where('type', $type)
             ->orderBy('country', 'asc')
             ->orderBy('city', 'asc')
             ->get()
             ->groupBy(function ($data) {
             return $data->country;
         });
+        $exceptVisa = ["Diplomatic", "Official", "Standard", "UN", "BVN_Common", "BVN_Fees", "NIN_Common", "Fees", "NIN_Common_0", "NIN_Common_1", "NIN_Common_2"];
+        $services = Checklist::groupBy('visa_type')->pluck('visa_type')->toArray();
+        $filteredServices = array_diff($services, $exceptVisa);
         return view('admin.checklist.index')
-            ->with('offices', $offices);
+            ->with('offices', $offices)
+            ->with('type', $type)
+            ->with('services', $filteredServices);
     }
 
     public function getChecklist(Request $request) {
         $officeId = $request->input('officeId');
+        $type = $request->input('type');
         $office = Office::where('id', $officeId)->first();
+        $editType = $request->input('edit-type');
+        $typeInput = $request->input('type-input');
         if(!Auth::guard('admin')->user()->isSuperAdmin()) {
             $centers = explode(",", Auth::guard('admin')->user()->profile->country_center);
             $isAllowCenter = false;
@@ -44,9 +54,10 @@ class ChecklistManagerController extends Controller
                 return json_encode($res);
             }
         }
-        $type = $request->input('type');
+        $typeSelect = $request->input('type-select');
+        if($editType == 2 && $type == "VISA_USA") $typeSelect = $typeInput;
         $checklist = Checklist::where('office_id', $officeId)
-            ->where('visa_type', $type)
+            ->where('visa_type', $typeSelect)
             ->get();
         return json_encode($checklist);
     }
