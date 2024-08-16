@@ -52,13 +52,16 @@
                                         <div class="center-select form-select-custom" id="type-select">
                                             <select id="type_id" name="visa_type" text="">
                                                 <option value="0">Passport Type</option>
+                                                @if(isset($services))
+                                                    @foreach($services as $service)
+                                                        <option value="{{$service}}"
+                                                            data-data1="{{$service}}"
+                                                        >{{$service}}</option>
+                                                    @endforeach
+                                                @endif
                                             </select>
                                         </div>
                                     </div>
-                                    {{-- <select class="form-control webkit-style country-select w-100" name="visa_type"
-                                        id="visaType">
-                                        <option value="">Pasport Type</option>
-                                    </select> --}}
                                 </div>
                             </div>
 
@@ -112,7 +115,6 @@
                 data: send_data,
                 success: function(res) {
                     var html = '';
-                    var visaType = '';
                     if (res.length) {
                         for (var resIndex = 0; resIndex < res.length; resIndex++) {
                             html +=
@@ -124,8 +126,6 @@
                                 for (const add of res[resIndex].address.split(' && ')) {
                                     html += '<p class="mb-0">' + add + '</p>';
                                 }
-                                visaType += '<option value="">Coming soon</option>';
-                                $('#visaType').html(visaType);
                             } else {
                                 for (const add of res[resIndex].address.split(' && ')) {
                                     html += '<p class="mb-0">' + add + '</p>'
@@ -144,25 +144,17 @@
                                 }
 
                                 html += '</div></div>';
-                                visaType += '<option value="0">Passport Type</option>';
-                                visaType += '<option value="Diplomatic" data-data1="Diplomatic Passport"></option>';
-                                visaType += '<option value="Official" data-data1="Official Passport"></option>';
-                                visaType += '<option value="Standard" data-data1="Standard Passport"></option>';
-                                visaType += '<option value="UN" data-data1="UN Passport"></option>';
                             }
                         }
                         $('.offices-body').html(html);
                         $('.offices-body').show();
 
-                        $('#type_id').html(visaType);
                     } else {
                         html += '<p class="country mt-5">No Office</p>';
                         $('.offices-body').html(html);
                         $('.offices-body').show();
 
-                        visaType += '<option value="0">Coming soon</option>';
 
-                        $('#type_id').html(visaType);
                     }
 
                     drawSelectForm(document.getElementById('type-select'));
@@ -183,7 +175,7 @@
         });
 
         function checklistsFilters() {
-            $.post('{{ route('checklists.filter') }}', $('.form-section').serialize(), function(response) {
+            $.post('{{ route('checklists.usafilter') }}', $('.form-section').serialize(), function(response) {
                 $('.checklistsFilters').html(response);
                 scrollToList();
             })

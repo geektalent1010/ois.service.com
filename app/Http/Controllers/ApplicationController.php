@@ -60,9 +60,13 @@ class ApplicationController extends Controller
             ->get()->groupBy(function ($data) {
             return $data->country;
         });
+        $exceptVisa = ["Diplomatic", "Official", "Standard", "UN", "BVN_Common", "BVN_Fees", "NIN_Common", "Fees", "NIN_Common_0", "NIN_Common_1", "NIN_Common_2"];
+        $services = Checklist::groupBy('visa_type')->pluck('visa_type')->toArray();
+        $filteredServices = array_diff($services, $exceptVisa);
         return view('pages.application.usaChecklists')
             ->with('modalData', $this->modalData)
-            ->with('offices', $offices);
+            ->with('offices', $offices)
+            ->with('services', $filteredServices);
     }
 
     public function nigerianChecklists()
@@ -85,6 +89,21 @@ class ApplicationController extends Controller
         $office = $request->get('office');
         $visaType = $request->get('visa_type');
         $data['fees'] = Checklist::where('office_id', $office)->where('visa_type', 'Fees')->get();
+        $data['office'] = Office::where('id', $office)->first();
+        if ($office && $visaType) {
+            $data['checklists'] = Checklist::where('office_id', $office)->where('visa_type', $visaType)->get();
+            return view('pages.application.partials.documents', $data);
+        } else {
+            $data['checklists'] = Checklist::where('office_id', -1)->get();
+
+            return view('pages.application.partials.documents', $data);
+        }
+    }
+
+    public function usaChecklistFilter(Request $request)
+    {
+        $office = $request->get('office');
+        $visaType = $request->get('visa_type');
         $data['office'] = Office::where('id', $office)->first();
         if ($office && $visaType) {
             $data['checklists'] = Checklist::where('office_id', $office)->where('visa_type', $visaType)->get();
