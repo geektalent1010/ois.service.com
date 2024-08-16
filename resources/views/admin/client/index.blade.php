@@ -55,7 +55,7 @@
                                 <td>{{$user->profile->first_name}} {{$user->profile->last_name}}</td>
                                 <td>{{$user->email}}</td>
                                 <td>{{$user->profile->country->name}} {{$user->profile->country->city}} {{$user->profile->street}} {{$user->profile->house_number}}</td>
-                                <td>{{$user->phone_number}}</td>
+                                <td>{{$user->profile->phone_number}}</td>
                                 <td>@if($user->status == 1) Yes @else No @endif</td>
                                 <td>{{$user->created_at}}</td>
                             </tr>
