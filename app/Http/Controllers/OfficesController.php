@@ -25,6 +25,7 @@ class OfficesController extends Controller
                 $query->where('id', $id);
             })
                 ->groupBy('visa_type')
+                ->orderBy('visa_type')
                 ->pluck('visa_type')
                 ->toArray();
             return response()->json($data);

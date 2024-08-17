@@ -25,7 +25,6 @@ class ChecklistManagerController extends Controller
             ->groupBy(function ($data) {
             return $data->country;
         });
-        $services = Checklist::groupBy('visa_type')->pluck('visa_type')->toArray();
         return view('admin.checklist.index')
             ->with('offices', $offices)
             ->with('type', $type);
@@ -37,6 +36,7 @@ class ChecklistManagerController extends Controller
             $query->where('id', $officeId);
         })
             ->groupBy('visa_type')
+                ->orderBy('visa_type')
             ->pluck('visa_type')
             ->toArray();
         return json_encode($services);
