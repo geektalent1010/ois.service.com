@@ -52,11 +52,6 @@
                                         <div class="center-select form-select-custom" id="type-select">
                                             <select id="type_id" name="visa_type" text="">
                                                 <option value="0">Services</option>
-                                                @if(isset($services))
-                                                    @foreach($services as $service)
-                                                        <option value="{{$service}}" data-data1="{{$service}}">{{$service}}</option>
-                                                    @endforeach
-                                                @endif
                                             </select>
                                         </div>
                                     </div>
@@ -113,29 +108,29 @@
                 data: send_data,
                 success: function(res) {
                     var html = '';
-                    if (res.length) {
-                        for (var resIndex = 0; resIndex < res.length; resIndex++) {
+                    if (res.offices.length) {
+                        for (var resIndex = 0; resIndex < res.offices.length; resIndex++) {
                             html +=
                                 '<div class="d-flex align-items-start"><img class="country-flag" src="{{ asset('images/Flags') }}/' +
-                                res[resIndex].flag + '">';
-                            html += '<div><p class="country mb-0">' + res[resIndex].country + '</p>';
-                            if (res[resIndex].address == 'COMING SOON') {
-                                html += '<p class="mb-0">' + res[resIndex].city + '</p>';
-                                for (const add of res[resIndex].address.split(' && ')) {
+                                res.offices[resIndex].flag + '">';
+                            html += '<div><p class="country mb-0">' + res.offices[resIndex].country + '</p>';
+                            if (res.offices[resIndex].address == 'COMING SOON') {
+                                html += '<p class="mb-0">' + res.offices[resIndex].city + '</p>';
+                                for (const add of res.offices[resIndex].address.split(' && ')) {
                                     html += '<p class="mb-0">' + add + '</p>';
                                 }
                             } else {
-                                for (const add of res[resIndex].address.split(' && ')) {
+                                for (const add of res.offices[resIndex].address.split(' && ')) {
                                     html += '<p class="mb-0">' + add + '</p>'
                                 }
-                                html += '<p>' + res[resIndex].city + '</p>';
+                                html += '<p>' + res.offices[resIndex].city + '</p>';
                                 html += '<p class="country mt-4">Opening Hours</p>';
 
-                                if (res[resIndex].working_days == 'N.A') {
-                                    html += '<p class="mb-0">' + res[resIndex].working_days + '</p>';
+                                if (res.offices[resIndex].working_days == 'N.A') {
+                                    html += '<p class="mb-0">' + res.offices[resIndex].working_days + '</p>';
                                 } else {
-                                    html += '<p class="mb-0">' + res[resIndex].working_days + ':</p>';
-                                    const times = res[resIndex].working_time.split(' && ');
+                                    html += '<p class="mb-0">' + res.offices[resIndex].working_days + ':</p>';
+                                    const times = res.offices[resIndex].working_time.split(' && ');
                                     times.forEach((element) => {
                                         html += '<p class="mb-0">' + element + '</p>';
                                     });
@@ -151,8 +146,14 @@
                         html += '<p class="country mt-5">No Office</p>';
                         $('.offices-body').html(html);
                         $('.offices-body').show();
+                    }
 
-
+                    if(res.services.length) {
+                        html = '<option value="0">Services</option>';
+                        for(const result of res.services) {
+                            html += `<option value="${result}" data-data1="${result}">${result}</option>`
+                        }
+                        $("#type_id").html(html)
                     }
 
                     drawSelectForm(document.getElementById('type-select'));

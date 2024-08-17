@@ -168,6 +168,7 @@ Route::prefix('admin')->group(function () {
         Route::post('updateChecklist', 'Admin\ChecklistManagerController@updateChecklist')->name('admin.checklist.update');
         Route::post('deleteChecklist', 'Admin\ChecklistManagerController@deleteChecklist')->name('admin.checklist.delete');
         Route::post('uploadChecklistFile', 'Admin\ChecklistManagerController@uploadChecklistFile')->name('admin.checklist.uploadFile');
+        Route::post('getServiceType', 'Admin\ChecklistManagerController@getServiceType')->name('admin.checklist.getServiceType');
     });
 });
 

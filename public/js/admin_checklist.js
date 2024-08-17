@@ -1,12 +1,51 @@
 $(document).ready(function () {
     let range;
 
-    $("#office-select-form").click(function () {
+    $("#type-select-div").click(function () {
         $("#office-select-form").submit();
+    });
+
+    $("#office-select-div").click(function () {
+        const formData = new FormData();
+        formData.append("data", $("#office-select").val());
+        formData.append(
+            "_token",
+            $("#office-select-form>input:first-of-type").val()
+        );
+        let html = '<option value="0">Type of Service</option>';
+        const officeSelectDom = document.getElementById("type-select-div");
+        drawSelectForm(officeSelectDom);
+        $("#type-select").html(html);
+        $(".list-group").html("");
+        $.ajax({
+            url: "/admin/getServiceType",
+            type: "POST",
+            data: formData,
+            dataType: "json",
+            contentType: false,
+            processData: false,
+            success: function (res) {
+                if (res) {
+                    for (const result of res) {
+                        html += `
+                            <option value="${result}"
+                                data-data1="${result}">
+                                ${result}
+                            </option>
+                        `;
+                    }
+                    $("#type-select").html(html);
+                    const officeSelectDom =
+                        document.getElementById("type-select-div");
+                    drawSelectForm(officeSelectDom);
+                }
+            },
+        });
     });
 
     $("#office-select-form").submit(function (e) {
         e.preventDefault();
+        $(".list-group").html("");
         $.ajax({
             url: "/admin/getChecklist",
             type: "POST",
@@ -472,8 +511,8 @@ $(document).ready(function () {
         formData.append("title", title);
         formData.append("description", description);
 
-        if(!id) {
-            if(!$("#office-select").val()) {
+        if (!id) {
+            if (!$("#office-select").val()) {
                 customAlert(
                     "We are so sorry",
                     "Please select Center.",
@@ -482,7 +521,7 @@ $(document).ready(function () {
                 return;
             }
         }
-        
+
         $.ajax({
             url: "/admin/updateChecklist",
             type: "POST",

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Office;
+use App\Checklist;
 
 class OfficesController extends Controller
 {
@@ -19,8 +20,14 @@ class OfficesController extends Controller
     public function officeFilter(Request $request) {
         $id = $request->get('office_id');
         if ($id) {
-            $offices = Office::where('id', '=', $id)->get();
-            return response()->json($offices);
+            $data['offices'] = Office::where('id', '=', $id)->get();
+            $data['services'] = Checklist::whereHas('office', function ($query) use ($id) {
+                $query->where('id', $id);
+            })
+                ->groupBy('visa_type')
+                ->pluck('visa_type')
+                ->toArray();
+            return response()->json($data);
         }
     }
 

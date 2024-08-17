@@ -135,7 +135,9 @@
                 url: '{{ route('offices.search') }}',
                 method: "POST",
                 data: send_data,
-                success: function(res) {
+                success: function(result) {
+                    let res;
+                    if(result) res = result.offices;
                     if (res.length) {
                         var html = '';
                         for (var resIndex = 0; resIndex < res.length; resIndex++) {

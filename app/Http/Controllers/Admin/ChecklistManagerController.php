@@ -25,13 +25,21 @@ class ChecklistManagerController extends Controller
             ->groupBy(function ($data) {
             return $data->country;
         });
-        $exceptVisa = ["Diplomatic", "Official", "Standard", "UN", "BVN_Common", "BVN_Fees", "NIN_Common", "Fees", "NIN_Common_0", "NIN_Common_1", "NIN_Common_2"];
         $services = Checklist::groupBy('visa_type')->pluck('visa_type')->toArray();
-        $filteredServices = array_diff($services, $exceptVisa);
         return view('admin.checklist.index')
             ->with('offices', $offices)
-            ->with('type', $type)
-            ->with('services', $filteredServices);
+            ->with('type', $type);
+    }
+
+    public function getServiceType(Request $request) {
+        $officeId = $request->input('data');
+        $services = Checklist::whereHas('office', function ($query) use ($officeId) {
+            $query->where('id', $officeId);
+        })
+            ->groupBy('visa_type')
+            ->pluck('visa_type')
+            ->toArray();
+        return json_encode($services);
     }
 
     public function getChecklist(Request $request) {

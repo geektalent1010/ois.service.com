@@ -60,13 +60,9 @@ class ApplicationController extends Controller
             ->get()->groupBy(function ($data) {
             return $data->country;
         });
-        $exceptVisa = ["Diplomatic", "Official", "Standard", "UN", "BVN_Common", "BVN_Fees", "NIN_Common", "Fees", "NIN_Common_0", "NIN_Common_1", "NIN_Common_2"];
-        $services = Checklist::groupBy('visa_type')->pluck('visa_type')->toArray();
-        $filteredServices = array_diff($services, $exceptVisa);
         return view('pages.application.usaChecklists')
             ->with('modalData', $this->modalData)
-            ->with('offices', $offices)
-            ->with('services', $filteredServices);
+            ->with('offices', $offices);
     }
 
     public function nigerianChecklists()

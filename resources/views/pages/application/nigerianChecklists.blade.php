@@ -110,7 +110,9 @@
                 url: '{{ route('offices.search') }}',
                 method: "POST",
                 data: send_data,
-                success: function(res) {
+                success: function(result) {
+                    let res;
+                    if(result) res = result.offices;
                     var html = '';
                     var visaType = '';
                     if (res.length) {
