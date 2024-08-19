@@ -146,9 +146,8 @@
                         $('.offices-body').show();
                     }
 
-                    html = '';
+                    html = '<option value="0">Services</option>';
                     if(res.services.length) {
-                        html = '<option value="0">Services</option>';
                         for(const result of res.services) {
                             html += `<option value="${result}" data-data1="${result}">${result}</option>`
                         }
