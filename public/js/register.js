@@ -302,13 +302,15 @@ const register = {
         const lowercasePattern = /[a-z]/;
         const numberPattern = /\d/;
         const specialCharPattern = /[!@#$%^&*(),.?":{}|<>]/;
+        const disallowSemicolonPattern = /;/;
 
         if (
             minLengthPattern.test(value) &&
             uppercasePattern.test(value) &&
             lowercasePattern.test(value) &&
             numberPattern.test(value) &&
-            specialCharPattern.test(value)
+            specialCharPattern.test(value)&&
+            !disallowSemicolonPattern.test(value)
         ) {
             return true;
         }
@@ -327,6 +329,8 @@ const register = {
         } else if (!specialCharPattern.test(value)) {
             validationMessage =
                 "Password must contain at least one special character (e.g., !, @, #, $, etc.).";
+        } else if (disallowSemicolonPattern.test(value)) {
+            validationMessage = "Password cannot contain a semicolon (;).";
         }
 
         if (validationMessage) {
