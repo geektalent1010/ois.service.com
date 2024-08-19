@@ -116,9 +116,7 @@
                             html += '<div><p class="country mb-0">' + res.offices[resIndex].country + '</p>';
                             if (res.offices[resIndex].address == 'COMING SOON') {
                                 html += '<p class="mb-0">' + res.offices[resIndex].city + '</p>';
-                                for (const add of res.offices[resIndex].address.split(' && ')) {
-                                    html += '<p class="mb-0">' + add + '</p>';
-                                }
+                                html += '<p class="mb-0">' + res.offices[resIndex].address + '</p>';
                             } else {
                                 for (const add of res.offices[resIndex].address.split(' && ')) {
                                     html += '<p class="mb-0">' + add + '</p>'
@@ -148,13 +146,14 @@
                         $('.offices-body').show();
                     }
 
+                    html = '';
                     if(res.services.length) {
                         html = '<option value="0">Services</option>';
                         for(const result of res.services) {
                             html += `<option value="${result}" data-data1="${result}">${result}</option>`
                         }
-                        $("#type_id").html(html)
                     }
+                    $("#type_id").html(html)
 
                     drawSelectForm(document.getElementById('type-select'));
                     checklistsFilters();
