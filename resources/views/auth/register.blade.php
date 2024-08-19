@@ -30,7 +30,7 @@
 
                 <div class="row mb-24px">
                     <div class="col-md-12">
-                        <p class="form-label">{{__('as_stated_in_your_passport')}}</p>
+                        <p class="form-label">{{__('as_stated_in_your_passport')}} <span color="red">*</span></p>
                     </div>
                     <div class="col-md-6 form-group">
                         <input type="text" name="first_name" class="form-control" id="first-name"
@@ -46,7 +46,7 @@
 
                 <div class="row mb-24px">
                     <div class="col-md-6 form-group birthday-group">
-                        <p class="form-label">{{__('date_of_birth')}}</p>
+                        <p class="form-label">{{__('date_of_birth')}} <span color="red">*</span></p>
                         <input type="text" id="birthday" data-format="DD-MM-YYYY" data-template="DD MMM YYYY"
                             name="birthday" value="{{ old('birthday') }}" hidden>
                         <label id="birthday-error" class="has-error" for="birthday" style="display: none"></label>
@@ -70,7 +70,7 @@
 
                 <div class="row mb-24px">
                     <div class="col-md-6 form-group d-flex flex-column">
-                        <p class="form-label">{{__('phone_number')}}</p>
+                        <p class="form-label">{{__('phone_number')}} <span color="red">*</span></p>
                         <div class="d-flex">
                             <select class="form-control phone-select webkit-style small" id="pre-phone" name="pre_phone">
                                 @foreach ($phoneCodes as $code)
@@ -87,7 +87,7 @@
                         <label id="phone-error" class="has-error" for="phone-name" style="display: none"></label>
                     </div>
                     <div class="col-md-6 form-group">
-                        <p class="form-label">{{__('email')}}</p>
+                        <p class="form-label">{{__('email')}} <span color="red">*</span></p>
                         <input type="text" name="email" class="form-control" id="email" placeholder="{{__('email_L')}}"
                             tabindex="1" value="{{ old('email') }}">
                         <label id="email-error" class="has-error" for="email" style="display: none"></label>
@@ -96,7 +96,7 @@
 
                 <div class="row mb-24px">
                     <div class="col-md-12">
-                        <p class="form-label">{{__('address')}}</p>
+                        <p class="form-label">{{__('address')}} <span color="red">*</span></p>
                     </div>
                     <div class="col-md-6 form-group">
                         <input type="text" id="street" name="street" class="form-control" placeholder="{{__('street')}}"
@@ -136,7 +136,7 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <p class="form-label">{{__('login_details')}}</p>
+                        <p class="form-label">{{__('login_details')}} <span color="red">*</span></p>
                     </div>
                     <div class="col-md-6 form-group">
                         <input type="text" id="login-email" name="login_email" class="form-control"

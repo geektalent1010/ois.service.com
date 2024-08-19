@@ -128,7 +128,7 @@ class RegisterController extends Controller
             'house_number' => ['required', 'string', 'min:1', 'max:50'],
             'city' => ['required', 'string', 'min:3', 'max:50'],
             'password' => ['required', 'string', 'min:8', 'max:100'],
-            'postal_code' => ['max:50'],
+            'postal_code' => ['max:10'],
         ]);
     }
 
