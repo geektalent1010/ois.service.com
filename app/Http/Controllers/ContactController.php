@@ -15,11 +15,6 @@ class ContactController extends Controller
             ->with('modalData', $this->modalData)
             ->with('countries', $countries);
     }
-    public function reviewing() {
-        return view ('pages.contact.reviewing')
-        ->with('modalData', $this->modalData)
-        ;
-    }
 
     public function send(Request $request) {
         $data = [

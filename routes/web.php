@@ -107,7 +107,6 @@ Route::get('/passport', 'PassportController@index')->name('passport.index');
 Route::get('/solutions', 'SolutionsController@index')->name('solutions.index');
 Route::get('/faq', 'FaqController@index')->name('faq.index');
 Route::get('/book', 'BookController@index')->name('book.index');
-Route::get('/contact/reviewing', 'ContactController@reviewing')->name('contact.reviewing');
 Route::get('/backoffice', 'BackOfficeController@index')->name('backoffice.index');
 Route::post('/offices/office-filter', 'OfficesController@officeFilter')->name('offices.search');
 

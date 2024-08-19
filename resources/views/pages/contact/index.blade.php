@@ -45,7 +45,7 @@
                             </div>
                             <textarea type="text" class="input-field" name="message" id="message" placeholder="{{__('message_L')}}" rows="4"></textarea>
                             <div class="btn-section">
-                                <button href="{{ route('contact.reviewing') }}" class="send-btn">{{__('send')}}</button>
+                                <button class="send-btn">{{__('send')}}</button>
                             </div>
                         </form>
 
@@ -70,19 +70,36 @@
             drawSelectForm(selectDom);
         }
 
+        const nameRegex = /^[a-zA-Z\s\-]{1,50}$/;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const phoneRegex = /^[0-9\s]{7,15}$/;
+
+
         $("#support-form").submit(function(e) {
             e.preventDefault();
             if(!$("#name").val()) {
-                customAlert('We are so sorry', "Should input name field", 'error');
+                customAlert('We are so sorry', "The name field is required.", 'error');
+                return;
+            }
+            if(!nameRegex.test($("#name").val())) {
+                customAlert('We are so sorry', "The name field should contain only letters, spaces, and hyphens.", 'error');
                 return;
             }
             if(!$("#email").val()) {
                 customAlert("We are so sorry", "Should input email field", "error");
                 return;
             }
+            if(!emailRegex.test($("#email").val())) {
+                customAlert("We are so sorry", "Please enter a valid email address.", "error");
+                return  
+            }
             if(!$("#phone").val()) {
                 customAlert("We are so sorry", "Should input phone field", "error");
                 return;
+            }
+            if(!phoneRegex.test($("#phone").val())) {
+                customAlert("We are so sorry", "The phone field should contain only numeric characters and spaces.", "error");
+                return
             }
             if(!$("#country-select").val()) {
                 customAlert("We are so sorry", "Should select country field", "error");
@@ -94,6 +111,11 @@
             if(!$("#message").val()) {
                 customAlert("We are so sorry", "Should input message field", "error");
                 return;
+            }
+            console.log($("#message").val().length)
+            if($("#message").val().length > 100) {
+                customAlert("We are so sorry", "The message should be less than 100 characters.", "error");
+                return
             }
             $.ajax({
                 url: '/support',
