@@ -71,7 +71,7 @@
         }
 
         const nameRegex = /^[a-zA-Z\s\-]{1,50}$/;
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         const phoneRegex = /^[0-9\s]{7,15}$/;
 
 
@@ -82,7 +82,7 @@
                 return;
             }
             if(!nameRegex.test($("#name").val())) {
-                customAlert('We are so sorry', "The name field should contain only letters, spaces, and hyphens.", 'error');
+                customAlert('We are so sorry', "The name field should contain only one to 50 letters, spaces, and hyphens.", 'error');
                 return;
             }
             if(!$("#email").val()) {
@@ -98,7 +98,7 @@
                 return;
             }
             if(!phoneRegex.test($("#phone").val())) {
-                customAlert("We are so sorry", "The phone field should contain only numeric characters and spaces.", "error");
+                customAlert("We are so sorry", "The phone field should contain only 7-15 numeric characters and spaces.", "error");
                 return
             }
             if(!$("#country-select").val()) {
@@ -112,11 +112,12 @@
                 customAlert("We are so sorry", "Should input message field", "error");
                 return;
             }
-            console.log($("#message").val().length)
             if($("#message").val().length > 100) {
                 customAlert("We are so sorry", "The message should be less than 100 characters.", "error");
                 return
             }
+            $("#name").val($("#name").val().replace(/[<>;]/g, ""))
+            $("#message").val($("#message").val().replace(/[<>;]/g, ""))
             $.ajax({
                 url: '/support',
                 type: 'post',
