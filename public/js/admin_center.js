@@ -26,7 +26,7 @@ $(document).ready(function () {
                     html +=
                         '<input type="hidden" name="_token" class="csrftoken" value=""/>';
                     html += '<div class="flag-section">';
-                    html += '<img style="width: 100%" src="/images/Flags/' + res.flag + '" />';
+                    html += '<img style="width: 100%; height:100%" src="/images/Flags/' + res.flag + '" />';
                     html += "</div>";
                     html += '<div class="">';
                     if (res.location == 1 || res.location == 2) {

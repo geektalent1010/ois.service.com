@@ -29,7 +29,7 @@
         flex-direction: column;
         justify-content: flex-end;
     }
-    
+
     .checklist-section-body {
         width: 50%;
     }
@@ -401,6 +401,12 @@
                         flex-direction: column;
                     }
                 }
+            }
+        }
+
+        #document .card {
+            .card-body {
+                padding: 0;
             }
         }
     }

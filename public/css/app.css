@@ -5382,6 +5382,10 @@ body {
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  .checklists-section #document .card .card-body {
+    padding: 0;
+  }
 }
 
 .bvn-section {
@@ -5768,6 +5772,10 @@ body {
   .bvn-section .form-section .form-group .offices-body .basic-info {
     flex-direction: column;
   }
+
+  .bvn-section #document .card .card-body {
+    padding: 0;
+  }
 }
 
 .nin-section {
@@ -6149,6 +6157,10 @@ body {
 
   .nin-section .form-section .form-group .offices-body .basic-info {
     flex-direction: column;
+  }
+
+  .nin-section #document .card .card-body {
+    padding: 0;
   }
 }
 

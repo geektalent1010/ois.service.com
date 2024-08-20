@@ -308,5 +308,11 @@
             padding-left: 15px;
             padding-right: 15px;
         }
+
+        #document .card {
+            .card-body {
+                padding: 0;
+            }
+        }
     }
 }
