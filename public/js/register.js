@@ -129,14 +129,14 @@ const register = {
     validatePhoneInput: function () {
         let validationMessage = "";
         let value = this.phoneInput.val().trim();
-        const phonePattern = /^(\+?\d[\d\s]{6,49}\d)$/;
+        const phonePattern = /^\+?[\d\s]{7,20}$/;
         if (phonePattern.test(value)) {
             return true;
         } else if (value === "") {
             validationMessage = "The phone number field is required.";
         } else {
             validationMessage =
-                "Phone number must contain between 7 and 50 digits, with optional spaces and a leading +.";
+                "Phone number must contain between 7 and 20 digits, with optional spaces and a leading +.";
         }
 
         if (validationMessage) {
