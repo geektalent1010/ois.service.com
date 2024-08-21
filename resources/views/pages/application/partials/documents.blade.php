@@ -49,7 +49,7 @@
                             @endphp
                             <div class="row flex-column justify-content-center align-items-center mt-3">
                                 <div class="col-md-6 form-group mt-2">
-                                    <a class="btn btn-primary confirm-button" href="https://visa.immigration.gov.ng"
+                                    <a class="btn btn-primary confirm-button" @if($location == 'usa') href="https://www.usvisaappt.com/visa/" @else href="https://visa.immigration.gov.ng" @endif 
                                         target="_blank">
                                         {{ __('APPLY HERE') }}
                                     </a>

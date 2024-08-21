@@ -101,6 +101,7 @@ class ApplicationController extends Controller
         $office = $request->get('office');
         $visaType = $request->get('visa_type');
         $data['office'] = Office::where('id', $office)->first();
+        $data['location'] = 'usa';
         if ($office && $visaType) {
             $data['checklists'] = Checklist::where('office_id', $office)->where('visa_type', $visaType)->get();
             return view('pages.application.partials.documents', $data);
@@ -118,6 +119,7 @@ class ApplicationController extends Controller
         $data['office'] = Office::where('id', $office)->first();
         $data['fees'] = Checklist::where('visa_type', 'NIN_Common')
             ->orWhere('visa_type', 'NIN_Common_'.$data['office']->location)->get();
+        $data['location'] = 'nin';
 
         return view('pages.application.partials.documents', $data);
     }
@@ -130,6 +132,7 @@ class ApplicationController extends Controller
             ->where('visa_type', 'BVN_Fees');
         })->orWhere('visa_type', 'BVN_Common')->get();
         $data['office'] = Office::where('id', $office)->first();
+        $data['location'] = 'bvn';
         return view('pages.application.partials.documents', $data);
     }
 }
