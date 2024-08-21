@@ -119,7 +119,7 @@
             $("#name").val($("#name").val().replace(/[<>;]/g, ""))
             $("#message").val($("#message").val().replace(/[<>;]/g, ""))
             $.ajax({
-                url: '/support',
+                url: '/support-mail',
                 type: 'post',
                 data: $(this).serialize(),
                 success:function(res) {

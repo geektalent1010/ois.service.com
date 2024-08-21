@@ -90,7 +90,7 @@ Route::get('/shopping', 'ShoppingController@index')->name('shopping.index');
 Route::get('/reach', 'ReachController@index')->name('reach.index');
 
 Route::get('/support', 'ContactController@index')->name('contact.index');
-Route::post('/support', 'ContactController@send')->name('contact.send');
+Route::post('/support-mail', 'ContactController@send')->name('contact.send');
 
 Route::get('/centers', 'OfficesController@index')->name('offices.index');
 
