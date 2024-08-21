@@ -112,8 +112,8 @@
                 customAlert("We are so sorry", "Should input message field", "error");
                 return;
             }
-            if($("#message").val().length > 100) {
-                customAlert("We are so sorry", "The message should be less than 100 characters.", "error");
+            if($("#message").val().length > 500) {
+                customAlert("We are so sorry", "The message should be less than 500 characters.", "error");
                 return
             }
             $("#name").val($("#name").val().replace(/[<>;]/g, ""))
