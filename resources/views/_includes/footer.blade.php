@@ -24,7 +24,7 @@
             <a onclick="toggleData()">{{__('data_protect_policy')}}</a>
         </div>
         <div class="d-flex justify-content-center align-items-center mt-4">
-            <a class="company" href="https://brandfields.com">{{__('powered_by')}}</a>
+            <a class="company" href="{{route('home')}}">{{__('powered_by')}}</a>
         </div>
     </div>
     <div class="foot-section mobile-version">
