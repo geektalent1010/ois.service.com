@@ -14,7 +14,7 @@
             <div class="main-title">CHECKLIST EDITOR</div>
             <div class="content-panel-part mt-30px">
                 <a class="content-panel @if($type=='VISA_USA') active @endif" href="{{route('admin.checklist.index', ['type' => 'VISA_USA'])}}">USA</a>
-                <a class="content-panel @if($type=='VISA_NIGERIA') active @endif" href="{{route('admin.checklist.index', ['type' => 'VISA_NIGERIA'])}}">NIGERIGA</a>
+                <a class="content-panel @if($type=='VISA_NIGERIA') active @endif" href="{{route('admin.checklist.index', ['type' => 'VISA_NIGERIA'])}}">NIGERIA</a>
             </div>
             <div class="select-group">
                 <form class="select-form mt-30px" id="office-select-form">
