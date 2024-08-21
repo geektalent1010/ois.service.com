@@ -25,7 +25,8 @@
                                 <div class="type-select form-select-custom" id="type-select">
                                     <select class="" id="type_id" name="office" text="Country">
                                         <option value="0">Type</option>
-                                        <option value="VISA" data-data1="VISA">VISA</option>
+                                        <option value="VISA_NIGERIA" data-data1="VISA">VISA</option>
+                                        <!-- <option value="VISA" data-data1="VISA">VISA</option> -->
                                         <option value="BVN" data-data1="BVN">BVN</option>
                                         <option value="NIN" data-data1="NIN">NIN</option>
                                     </select>
@@ -81,10 +82,10 @@
             $(".button-detail").removeClass('active')
             $(".select-button").addClass('d-none');
             $(".offices-body").html('')
-            if(type === "VISA") {
-                $(".select-button").removeClass('d-none');
-                return;
-            }
+            // if(type === "VISA") {
+            //     $(".select-button").removeClass('d-none');
+            //     return;
+            // }
             selectType(type);
         })
 
