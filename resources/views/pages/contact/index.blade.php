@@ -125,6 +125,9 @@
                 success:function(res) {
                     if(res) {
                         customAlert("Success", "Your support message has been successfully sent! Our team will review your inquiry and get back to you as soon as possible", "success");
+                        $("#name").val("");
+                        $("email").val("")
+                        $("#message").val("")
                     }
                 }
             })

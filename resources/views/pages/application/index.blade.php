@@ -49,7 +49,7 @@
                 CLICK HERE
             </a> -->
 
-                <button class="click-here-button" onclick="https://apt.oisservices.com/">
+                <button class="click-here-button" onclick="window.open('https://apt.oisservices.com/', '_blank')">
                     {{__('click_here_U')}}
                 </button>
             </div>
