@@ -69,13 +69,13 @@ class ChecklistManagerController extends Controller
             ->get();
 
         // html validation
-        foreach($checklist as $che) {
-            $dom = new \DOMDocument();
-            libxml_use_internal_errors(true);
-            $dom->loadHTML($che->description, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
-            libxml_clear_errors();
-            $che->description = $dom->saveHTML();
-        }
+        // foreach($checklist as $che) {
+        //     $dom = new \DOMDocument();
+        //     libxml_use_internal_errors(true);
+        //     $dom->loadHTML($che->description, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
+        //     libxml_clear_errors();
+        //     $che->description = $dom->saveHTML();
+        // }
         return json_encode($checklist);
     }
 
