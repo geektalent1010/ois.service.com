@@ -799,6 +799,7 @@
 
     <script>
         let inactivityTime = function() {
+            const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
             let time;
             // Reset the timer on any of these events
             window.onload = resetTimer;
@@ -807,12 +808,22 @@
             document.ontouchstart = resetTimer; // For mobile devices
 
             function logout() {
-                window.location.href = '/login'; // Redirect to the login page
+                $.ajax({
+                    url: "{{route('logout')}}",
+                    type: "POST",
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRF-TOKEN': csrfToken
+                    },
+                    success:function() {
+                        location.href = ("/login")
+                    }
+                })
             }
 
             function resetTimer() {
                 clearTimeout(time);
-                time = setTimeout(logout, 60000*15); // 15 minutes
+                time = setTimeout(logout, 60000 * 15); // 15 minutes
             }
         };
         inactivityTime();
