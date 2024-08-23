@@ -116,8 +116,8 @@
                 customAlert("We are so sorry", "The message should be less than 500 characters.", "error");
                 return
             }
-            $("#name").val($("#name").val().replace(/[<>;]/g, ""))
-            $("#message").val($("#message").val().replace(/[<>;]/g, ""))
+            $("#name").val($("#name").val().replace(/[<>;]/g, ""));
+            $("#message").val($("#message").val().replace(/[<>;]/g, ""));
             $.ajax({
                 url: '/support-mail',
                 type: 'post',
