@@ -31,7 +31,7 @@ class SupportEmail extends Mailable
      */
     public function build()
     {
-        return $this->subject('Welcome to OIS')
+        return $this->subject('OIS Support Message')
             ->markdown('emails.support')
             ->with('userData', $this->userData);
     }

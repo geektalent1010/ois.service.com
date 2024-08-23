@@ -112,10 +112,11 @@
                 customAlert("We are so sorry", "Should input message field", "error");
                 return;
             }
-            if($("#message").val().length > 500) {
-                customAlert("We are so sorry", "The message should be less than 500 characters.", "error");
-                return
+            if ($("#message").val().trim().split(/\s+/).length > 500) {
+                customAlert("We are so sorry", "The message should be less than 500 words.", "error");
+                return;
             }
+            $(".send-btn").prop("disabled", true)
             $("#name").val($("#name").val().replace(/[<>;]/g, ""));
             $("#message").val($("#message").val().replace(/[<>;]/g, ""));
             $.ajax({
@@ -125,9 +126,10 @@
                 success:function(res) {
                     if(res) {
                         customAlert("Success", "Your support message has been successfully sent! Our team will review your inquiry and get back to you as soon as possible", "success");
-                        $("#name").val("");
-                        $("#email").val("")
-                        $("#message").val("")
+                        
+                        setTimeout(() => {
+                            location.href=("")
+                        }, 500)
                     }
                 }
             })

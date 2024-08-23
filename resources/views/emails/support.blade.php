@@ -7,7 +7,7 @@
                     <img src="{{ asset('images/Icon1.png') }}" alt="" />
                 </td>
                 <td class="welcome-text" align="center">
-                    WELCOME
+                    OIS Support Message
                 </td>
                 <td class="welcome-login-icon" align="center">
                     <a href="{{ route('login') }}" class="d-flex align-items-center">
