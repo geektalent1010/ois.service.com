@@ -170,7 +170,7 @@
                             class="back-unvisible navItemWrap-front d-flex flex-column justify-content-center align-items-center">
                         </div>
                         <a class="menu-item navItemWrap-front d-flex justify-content-center align-items-center"
-                            href="{{ route('login') }}">
+                            href="https://my.oisservices.com/">
                             <div class="menu-detail">
                                 <img src="{{ asset('images/Logo/OISIcon.svg') }}">
                                 <div>
