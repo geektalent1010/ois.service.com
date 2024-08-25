@@ -37,13 +37,13 @@
                         <div class="description-section">
                             {!! $content[1] !!}
                             <div class="button-section d-flex justify-content-center mt-5">
-                                <a href="{{ route('login') }}">{{__('apply_here')}}</a>
+                                <a href="{{ route('login') }}">{{__('click_here_U')}}</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="block-section">
-                    <img src="{{ asset('images/IconSCAN.svg') }}">
+                    <img src="{{ asset('images/IconFingerprint.svg') }}">
                     <div class="text-section d-flex justify-content-center">
                         <div class="description-section">
                             {!! $content[2] !!}
@@ -54,10 +54,32 @@
                     </div>
                 </div>
                 <div class="block-section">
-                    <img src="{{ asset('images/IconChatBot.svg') }}">
+                    <img src="{{ asset('images/IconFingerprint.svg') }}">
                     <div class="text-section d-flex justify-content-center">
                         <div class="description-section">
                             {!! $content[3] !!}
+                            <div class="button-section d-flex justify-content-center mt-5">
+                                <a href="{{ route('login') }}">{{__('apply_here')}}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-section">
+                    <img src="{{ asset('images/IconSCAN.svg') }}">
+                    <div class="text-section d-flex justify-content-center">
+                        <div class="description-section">
+                            {!! $content[4] !!}
+                            <div class="button-section d-flex justify-content-center mt-5">
+                                <a href="{{ route('login') }}">{{__('apply_here')}}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-section">
+                    <img src="{{ asset('images/IconChatBot.svg') }}">
+                    <div class="text-section d-flex justify-content-center">
+                        <div class="description-section">
+                            {!! $content[5] !!}
                             <div class="button-section d-flex justify-content-center mt-5">
                                 <a href="{{ route('contact.index') }}">{{__('chat_here')}}</a>
                             </div>
@@ -68,7 +90,7 @@
                     <img src="{{ asset('images/IconEHEALTH.svg') }}">
                     <div class="text-section d-flex justify-content-center">
                         <div class="description-section">
-                            {!! $content[4] !!}
+                            {!! $content[6] !!}
 
                             <div class="button-section d-flex justify-content-center mt-5">
                                 <a href="{{ route('ehealth.index') }}">{{__('apply_here')}}</a>
@@ -80,7 +102,7 @@
                     <img src="{{ asset('images/IconMONEYTRANSFER.svg') }}">
                     <div class="text-section d-flex justify-content-center">
                         <div class="description-section">
-                            {!! $content[5] !!}
+                            {!! $content[7] !!}
                             <div class="button-section justify-content-between mt-5">
                                 <a href="{{ route('money.index') }}">{{__('transfer_here')}}</a>
                                 <a href="{{ route('innovation.index') }}">{{__('go_to_innovation')}}</a>
