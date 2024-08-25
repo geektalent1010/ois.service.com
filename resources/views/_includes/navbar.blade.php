@@ -115,7 +115,7 @@
                 <div class="lang-item"><a class="item" href="{{ route('login') }}">{{__('passport')}} {{__('application')}}</a></div>
                 <div class="lang-item"><a class="item" href="{{ route('login') }}">{{__('bvn')}} {{__('application')}}</a></div>
                 <div class="lang-item"><a class="item" href="{{ route('login') }}">{{__('nin')}} {{__('application')}}</a></div>
-                <div class="lang-item"><a class="item" href="https://my.oisservices.com/">{{__('track_visa')}} {{__('application')}}</a></div>
+                <div class="lang-item"><a class="item" href="https://my.oisservices.com/" target="_blank">{{__('track_visa')}} {{__('application')}}</a></div>
             </div>
             <div class="lang-section">
                 <div class="lang-item"><a class="item" href="{{ route('ehealth.index') }}">{{__('e_health')}} {{__('portal')}}</a></div>
